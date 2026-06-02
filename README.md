@@ -117,6 +117,15 @@ There is more we can do here, but have not yet implemented. For instance:
 Sadly the OSM `man_made=survey_point` data is quite inconsistent in the use of tags and their contents,
 which makes correlating them and doing 'clean updates' potentially quite difficult.
 
+>   A note on importing the OSM data. Underneath the `sf` library we use, it uses the
+>  [GDAL](https://gdal.org/en/stable/) library. By default, when importing `osm` files, that library
+>  drops some tags and merges a whole bunch of others into a single `other_tags` column. This by
+>  default for us is not that useful, as it makes accessing some data we'd like quite hard. Thus,
+>  we carry our own `my_osmconf.ini` file that we pass in to `sf/GDAL` to put all the data we'd like
+>  in their own columns, and thus easier for us to process.
+>   Originally I did write the code to expand `other_tags` out, but it was slow and painful, and having
+>  our own config file is a much better way.
+
 ## Generating output
 
 Ultimately, the goal is to import all the pillar trigpoints into OSM. With somewhere in the region
