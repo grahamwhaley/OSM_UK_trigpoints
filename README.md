@@ -292,6 +292,22 @@ and then you can run the script
 
 This should print out a bunch of information and leave you with some files in the `data` subfolder.
 
+If you want to run the R code by hand maybe to do some debug or repeated runs without having to
+instantiate a new container each time, you can use the `dockershell.sh` script, which will place
+you inside a Docker container at a prompt. You can then do something like:
+
+```
+$ ./dockershell.sh
+# cd data
+# R
+> source('process.R')
+ # then maybe examine the internal data
+> osm_sf
+ # or do an external edit on process.R and run it again
+> source('process.R')
+ # etc. etc.
+```
+
 ## TODO
 
 A few thoughts on things left to do, apart from community discussions and documentation on the
