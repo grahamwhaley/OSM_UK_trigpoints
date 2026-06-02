@@ -1,140 +1,160 @@
-# Ordnance Survey triangulation pillars (trigpoints) for OpenStreetMap
+# UK Ordnance Survey triangulation pillars (trigpoints) for OpenStreetMap
 
 The code in this repository can be used to process and assess the
 [Ordnance Survey complete trig archive](https://www.ordnancesurvey.co.uk/documents/gps/CompleteTrigArchive.zip)
 CSV with a view of importing some of that data into
-[OpenStreetMap](https://www.openstreetmap.org/#map=19/53.967917/-1.850778).
+[OpenStreetMap (**OSM**)](https://www.openstreetmap.org/).
+
+Presently (as of 2026/06/02) the OSM data for UK trigpoints is incomplete.
+
+This is a work in progress. If the data is successfully imported into OSM then this repository will
+be updated accordingly.
 
 ## Motivation
 
-I've made a few very minor contributions to OpenStreeMap (OSM) in the past, mainly small objects near
+I've made a few very minor contributions to OSM in the past, mainly small objects near
 where I live that were missing or missing places and roads I've noticed when on holiday (which is when
 I use OSM maps the most).
 
 In this instance, whilst thinking about what was not on the map near me, I realised there is a
-`trigpoint` (we'll discuss what `trigpoint` might encompass in a bit...) about 1km from me that is
+[`trigpoint`](https://wiki.openstreetmap.org/wiki/Ordnance_Survey_triangulation_stations)
+(we'll discuss what `trigpoint` might encompass in a bit...) about 1km from me that is
 not in OSM. Well, that set me off looking for `trigpoint` data and led me down this rabbit hole...
 
 ## What is a `trigpoint`
 
 Ah, well, it's not quite that simple a question. Technically it is a
-[Triangulation Station](https://en.wikipedia.org/wiki/Triangulation_station), also called a
-*triangulation station*, hence *trig* - or **trigpoint**.
+[Triangulation Station](https://en.wikipedia.org/wiki/Triangulation_station), often abbreviated to
+*trig* or  **trigpoint**. If you are a hiker you may be familiar with the concrete pillars you often
+find when you reach the top of a summit.
 
-But, no, it's not quite that simple. There are a number of forms of survey marks created by the
-Ordnance Survey (OS) dotted throughout the country. So, to be clear, initially at least we are interested
-in the *classic* [Pillar](https://en.wikipedia.org/wiki/Triangulation_station) trigpoints. We will
-discuss other items a bit more in the analysis section.
+But, no, it's still not quite that simple. There are a number of forms of survey marks created by the
+Ordnance Survey (**OS**) dotted throughout the country. So, to be clear, initially at least we are
+interested in the *classic* [Pillar](https://en.wikipedia.org/wiki/Triangulation_station) trigpoints.
 
-## References
+## Existing data
+
+This topic has been discussed before. There is a **very useful** 
+[wiki page](https://wiki.openstreetmap.org/wiki/Ordnance_Survey_triangulation_stations)
+from around 2016 - **do** give that a read (it took me more then one read to absorb all
+the information!).
+
+Then there was a thread on the
+[Talk-GB OSM mailing list](https://lists.openstreetmap.org/pipermail/talk-gb/2019-July/023176.html).
+discussing the topic and the related [TrigpointingUK](https://trigpointing.uk/) site that didn't
+change the status quo.
+
+The main sources of data then are from the OS and the OSM.
 
 You can download the [Ordnance Survey complete trig archive](https://www.ordnancesurvey.co.uk/documents/gps/CompleteTrigArchive.zip).
-In fact you will need to download that if you want to run the code here.
+In fact you will need to download that if you want to run the code here. It contains something in the
+region of 31521 entries. Not all of these are PILLARs, and if we trim that dataset down to just PILLARs
+then we get 6081 items.
 
-Then you will also need the OSM data nodes that represent all current `trigpoints` in OSM. See the
-Analysis secton for more details of where I got mine from and how I pre-processed/filtered it.
+We will also make use of the
+[OS Benchmark data](https://www.ordnancesurvey.co.uk/documents/resources/CompleteBenchMarkArchive.zip)
+as the trigpoint archive does **not** contain the
+[Flush Bracket](https://wiki.trigpointing.uk/Flush_Bracket)
+information, which ideally we will be adding to each OSM trigpoint entry. Sadly there is no easy to
+use common index between the two OS datasets, but with a bit of 'fuzzing' we can extract a lot of
+useful data. Oh, and note, the Benchmark archive contains **half a million** entries. Luckily
+it is not too hard to extract just the trigpoints from that. We end up with 3957 trigpoint entries
+from that database. Yes, that is only about 2/3rds of the trigpoints compared with the OS trigpoint
+data. I have not yet investigated if the other 1/3rd of the data is in there but maybe does not
+conform the the `TP` marking scheme.
 
-Back in 2016/2019 there was already some really good analysis done on this topic, which can be found
-in the OSM [wiki page](https://en.wikipedia.org/wiki/Triangulation_station). Do give that a read.
+Then you will also need the OSM data nodes that represent all current `trigpoints` in OSM.
+I downloaded my data from [geofabrik.de](https://download.geofabrik.de/europe/united-kingdom.html)
+and used [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) to extract all entries with the tag
+`man_made=survey_point`. I got 2804 nodes from that export.
 
-A thread can also be found on the [Talk-GB OSM mailing list](https://lists.openstreetmap.org/pipermail/talk-gb/2019-July/023176.html).
+After filtering out items where the `survery_point` and `survey_point_structure` tags indicate they
+are not pillars, we end up with 2558 OSM datapoints.
 
-## The plan
+In summary for the potential pillar datapoints we have then:
 
-As I learnt more about the data the plan slowly changed. The current plan can be summarised as two
-distint actions:
+| Source | Number |
+| ------ | ------ |
+| OS Trigpoint database | 6081 |
+| OS Benchmark database | 3957 |
+| OSM database |  2558 |
 
-  - Update any existing OSM trigpoints that can be aligned with OS data so they match (using the OS
-    data as the definitive source)
-  - Add new OSM `trigpoint` nodes for any OS Pillar trigpoints that do not appear in the OSM data.
+## Processing the data
 
-This of course leaves us with some data processing and a bit of fuzzing to do - how do we match OS
-data points to potential OSM data points. More of that in the Analysis section then...
+Here is a rough outline of how we process the data:
 
-## Coding
+  - Load the databases
+    - that is, read in the data from the OS trigpoint, OS benchmark and OSM files
+  - Trim the data
+    - For the OS trigpoint data
+	  - Remove any DESTROYED items
+	  - Remove any item not marked as a PILLAR
+    - For the OS Benchmark data
+	  - Only keep entries that are marked with the `TP` indicator
+    - For the OSM data
+	  - Filter out any item that specifically states in a `survey_point` or `survey_point_structure`
+	    tag that it is *not* a pillar - for instance, `bolt`, `beacon` etc.
+  - Correlate the data
+    - Calculate and record which OSM node is nearest to each OS trigpoint and how far away it is
+    - Calculate and record which OS benchmark node is nearest to each OS trigpoint and how far away it is
+	- Extract the Flush Bracket data from OS Benchmark data
+  - Sanity check the data
+    - Ensure we only use 'neighbours' that are not too far away (<=15m is a good start)
+	- Do a name check between OS trigpoints and their OS benchmark neighbours
+  - And then try to make sense of it all...
+    - If we have an OS Benchmark pillar within 15m of an OS pillar, and we can match up their
+	  respective names, then assign the Benchmark Flush Bracket number to the OS pillar.
+    - If we have an OSM node within 15m of an OS trigpoint, mark the pair as potentially 'snappable,
+	  that is - can we update the OSM node with new co-ordinates from the OS pillar.
+    - If an OS pillar does not have an OSM node within 15m of it, mark that OS pillar data as a
+	  potentially new OSM node.
+    
+There is more we can do here, but have not yet implemented. For instance:
 
-I chose to write the analysis code in [R](https://www.r-project.org/), because I have some familiarity
-with it already. I also configure and run the R code within a Docker container. This has two benefits:
+  - Check if the OSM node has a `ref` that looks like a Flush Bracket number, and correlate
+  - Similarly if we think the OSM node has a 'name'
 
-  - You don't have to configure your host machine with the exact `R` setup required
-  - We have a fixed `R` environment to run in, so we should not run into any version issues etc.
+Sadly the OSM `man_made=survey_point` data is quite inconsistent in the use of tags and their contents,
+which makes correlating them and doing 'clean updates' potentially quite difficult.
 
-## Analysis
+## Generating output
 
-First, we should get the data and do some initial process to see what we have. The OS data comes as a
-DOS formatted CSV file. I run linux, so I converted that over to Unix format to start with. Within
-`R` I read this CSV file and use the [`sf` package](https://r-spatial.github.io/sf/) to convert the
-data from its supplied OSGB National Grid (`Easting` and `Northing`) references into `WGS84`, which
-is the format OSM uses. This then makes all future calculations and comparisons easier. The `sf`
-package is specifically made for storing geographic features.
+Ultimately, the goal is to import all the pillar trigpoints into OSM. With somewhere in the region
+of 6000 points, that would be quite an undertaking to do by hand. Ideally we'll be able to automate
+some of the process.
 
-If we take a quick look at the OS data, there are some notable stats and elements:
+To that end, the code currently generates two
+[OsmChange (OSC)](https://wiki.openstreetmap.org/wiki/OsmChange) files. One contains all the
+proposed edits to existing OSM nodes, and the other all the proposed new nodes.
 
-  - There are 31521 entries !
-  - The `TYPE.OF.MARK` field tells us what item is being described. For us, we want `PILLAR`.
-    - 7111 of those entries are for `PILLAR`s
-  - The `DESTROYED.MARK.INDICATOR` tells us if that entry has physically been destroyed (aka, no longer
-    exists!)
-	- 1030 of the `PILLAR` entries have been destroyed
-	- Leaving us with 6079 valid `PILLAR` entries
+## What do the results 'look like'
 
-Now, let's have a peek at the OSM data. First we should get the data. I got my data by downloading
-a complete UK OSM `osm.pbf` file from
-[geofabrik.de](https://download.geofabrik.de/europe/united-kingdom.html). Note, it is a moderately
-hefty file at around 2GB.
+To aid debug and analysis, you can enable some code in the scripts that will reduce the dataset
+to a defined area and then plot those results. Zooming in makes the plots much more readable, as having
+~10,000 dots splatted across a UK map does not make a meaningful image.
 
-Now, that contains *all* OSM data for the UK, and we only need the trigpoint data. As noted on the
-existing OSM wiki page about UK trigpoints, that will be `node` entries with a tag of
-`man_made=survey_point`. In order to extract those I used the OSM `osmosis` tool:
+Here is an example image zoomed around Ilkley in West Yorkshire, and below it an explanation of
+what the point colours are indicating. It helps to understand how the alignments, matching and
+subsequent filtering are working out.
 
-```bash
-> osmosis --read-pbf ./united-kingdom-260519.osm.pbf --node-key-value keyValueList="man_made.survey_point" --write-xml trigpoints.osm
-```
-I then read that into `R` using `read_sf()`, which underneath uses the
-[GDAL](https://gdal.org/en/stable/) libray to do the import. This has some limitations which will be
-discussed later in the document.
-
-If we take a peek at that OSM data then:
-
-  - It has 5857 entries with that `survey_point` tag.
-
-The optimist might think that having 6079 OS entries and 5857 OSM entries could indicate that we
-are potentially 96% OSM complete already! Sadly further analysis will show that is likely not the
-case...
-
-### Crunch the data some more
-
-OK, the `R` code does a bunch of crunching. Things it churns out are:
-
- - What is the nearest OSM point for each OS point, giving us an indication of
-   - correlation of datasets
-   - and pointing to which OSM point we might need to coerce to match the OS data
- - Plots on a map showing all the:
-   - OS destroyed points
-   - OSM points
-   - OS points that have potential 'snappable' OSM points near them
-   - OS points that do not have any OSM candidates near them to compare against
-
-This allows us a quick visual analysis of how things are working out. If you enable a debug mode in
-the `R` code then it will subset the data down to a small part of the UK to make viewing easier, as
-trying to view ~12000 points on a map of the UK is rather dense and messy.
-
-Here is a plot of an area around Ilkley:
-
-![trigpoint analysis near Ilkley](images/plot2.jpg)
+![trigpoint analysis near Ilkley, width="200"](images/plot2.jpg)
 
 Here is a quick overview of the sort of data that is showing:
 
   - Any purple dots (snappable OS) with a blue fringe (OSM point behind it) shows there is potential
     to update an OSM datapoint to match the OS datapoint
   - Any green dot is showing an OS point that does not have any OSM point near enough to be considered
-    - (we will discuss how that is decided in a moment)
 	- the red line pointing to a blue dot is showing where the nearest OSM point is
-  - Any glue dots are showing OSM data points that are not the nearest to any OS point (and thus
-    are potential candidates for review?)
+  - Any blue dots are showing OSM data points that are not the nearest to any OS point (and thus
+    are potential candidates for review? There do seem to be *many* historic trigpoints recorded
+	in the OSM data that potentially no longer physically exist)
   - Orange dots are deleted points. These become interesting when they overlay other points, showing
     that, for OS points, the point may have been udpated/replaced, and for OSM points, that the OSM
 	point might be referencing a destroyed OS point (and also thus may be a candidate for review).
+
+## More technical details
+
+Here we will dive into a few of the inner details and decisions around the code.
 
 ### Deciding what is 'snappable'
 
@@ -143,19 +163,142 @@ We need some method to try and decide if there is any OSM data point that may re
 say their precise co-ordinates, then we would want to consider updating the exsiting OSM data points
 co-ordinates to match that of the definitive OS data.
 
-If we plot the distances from the OS points to their nearest OSM points we get:
+If we plot the distances from the OS points to their nearest OSM points we get (the Y scale is in
+metres):
 
-![Distances from OS to OSM nearest neighbour](images/dist.jpg)
+![Distances from OS to OSM nearest neighbour](images/OS_to_OSM_distance.jpg)
 
-OK, that shows that many of them are very short, which is good. Now let's zoom in on that a bit:
+OK, that shows that many of them (~1750?) are very short distances, which is good.
+And then we can see that there are many others that are 5000m or more away. That feels like there is
+a fairly good delineation between points to consider as close and those which are almost definitely
+unrelated. Now let's zoom in on that a bit:
 
-![Zoomed distances from OS to OSM nearest neighbour](images/distzoom.jpg)
+![Zoomed distances from OS to OSM nearest neighbour](images/OS_to_OSM_distance_zoom.jpg)
 
-Ah, that's better. That shows us that many points are within 10m
+Ah, that's better. That shows us that many points are within maybe 7.5m, and things have definitely
+tailed off by say 15m. Thus, we are experimenting with 15m as the 'snappable' cutoff distance.
 
-## Running the code
+### OS co-ordinates
 
-## How it works
+Oh, and then we have the co-ordinates systems used in the OS data. The trigpoint data is not so bad,
+that comes as OSBG36 format data, which the R `sf` package can translate for us.
 
-## Current status
+The OS benchmark data however comes as UK National Grid data with a two letter grid code and two
+four digit numbers. I could not find a way for `sf` to translate that, but did find that the OS have
+released a library called [osbng](https://github.com/OrdnanceSurvey/osbng-r) that we can use to do
+the translation for us - phew. Note, that 8 digit British National Grid references only give us
+[a resolution of 10m](https://digimap.edina.ac.uk/help/our-maps-and-data/bng/) afaict, so having
+small positional discrepencies between OS and OSB data I think should be expected.
+
+Ultimately we convert everything to WGS84 before crunching the data.
+
+### Extracting the Flush Bracket data
+
+The flush bracket data is buried in the `DESCRIPTION` field of the Benchmark data, along with other
+keywords and the name of the trigpoint. Here is an example:
+
+>    `FL BR S1695 W FACE DANEBURY HILL TP'
+
+OK, as described in the
+[Benchmark abbreviations document](https://www.ordnancesurvey.co.uk/documents/resources/OSBM-list-abbreviations.pdf)
+we can see `FL BR` for **Fl**ush **Br**acket, followed by a bracket number. We can parse for that. Ah,
+but, if it were only so easy. The data is inconsistent. You will find a comment in the code detailing
+the many variations I came across. There were at least 20 variations, and they are now captured using
+a set of nine different regular expressions.
+
+### Matching OS trigpoint names to benchmark names
+
+We need some way to try and correlate or confirm (apart from just checking for identical co-ordinates)
+between the OS trigpoints and the OS benchmark data. Apart from the co-ordinates the only common
+entry is the 'name' of the trigpoint. Sadly this is not the uniform `STATION NAME` or `New Name` found
+in the trigpoint data, but is the rather more informal freeform `Trig Name` - i.e., the 'name of the
+place'.
+
+The names are again buried in the OS benchmark `DESCRIPTION` field, but we can do a first pass search
+by checking for a substring match with the OS name. That gave us a pretty good set of results, but
+there were still hundreds not matching. Now, some of those I expect to not match as maybe they are
+not the same trigpoint or something had been destroyed but still referenced etc., but, if we have
+a look at some of the items that do not match we can see the data is inconsistent:
+
+```
+	OS [Under-The-Hill] 3.91099111685471m from OSB [FL BR S5376 UNDER THE HILL TP]
+	OS [Unity Farm] 5.58125716774579m from OSB [FL BR 3249 UNITY FM TP]
+	OS [Upper Hartsay] 5.0274007217178m from OSB [FL BR S4534 UPPER HARTSHAY TP SW FACE]
+	OS [Upper Norton Farm] 3.70760782183571m from OSB [FL BR S3821 UPPER NORTON TP E FACE  ]
+	OS [Vatches Farm] 9.24280452986345m from OSB [FL BR S4513 VATCHES FM TP]
+	OS [Walk Farm] 3.40441532822191m from OSB [FL BR S4919 WALK FM TP NW FACE  ]
+```
+
+So, we have a whole bunch of mixture of abbreviations (Farm vs FM), punctuation (Under-The vs
+UNDER THE) and different spellings (Hartsay vs HARTSHAY). This is not going to be resolved with
+some simple expressions.
+
+I am strongly considering some 'fuzzy logic' matching. I am considering investigating using
+[fedmatch](https://cran.r-project.org/web/packages/fedmatch/vignettes/Intro-to-fedmatch.html)
+as a starting point, as it looks like it has some flexibility in pre-check data cleansing as well
+as fuzzy matching.
+
+### Running the code
+
+The code is predominantly written in [`R`](https://www.r-project.org/about.html) as that is the
+data processing language I'm most familiar with - but, I am by no means an expert.
+
+The actual code is run inside a [Docker container](https://en.wikipedia.org/wiki/Docker_(software))
+because not only did I want to have to install and maintain an R installation on my main machine, but
+it gives us a bit of insulation against future library version changes, hopefully.
+
+First, you will need to obtain and install some data files
+
+#### Getting the data
+
+Before processing we need to obtain three sets of data, and one needs a little preperation:
+
+##### OS Trigpoint data
+
+The OS Trigpoint data CSV file can be obtained
+[here](https://www.ordnancesurvey.co.uk/documents/gps/CompleteTrigArchive.zip)
+
+Unzip the archive and place the `CompleteTrigArchive.csv` file in the `data` folder.
+
+##### OS Benchmark data
+The OS Benchmark data CSV file can be obtained
+[here](https://www.ordnancesurvey.co.uk/documents/resources/CompleteBenchMarkArchive.zip)
+
+Unzip the archive and place the `CompleteBenchMarkArchive.csv` file in the `data` folder.
+
+##### OSM `man_made=survey_point` data
+
+Obtain or generate an OSM `.osm` XML file with all the nodes that match the `man_made=survey_point`
+tag. I did this by obtaining the complete `pbf` for the UK from
+[geofabrik.de](https://download.geofabrik.de/europe/great-britain.html) and then used
+[osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) to extract the tags:
+
+```
+$ osmosis --read-pbf ./great-britain-260527.osm.pbf --node-key-value keyValueList="man_made.survey_point" --write-xml gb_trigpoints.osm 
+```
+
+Then copy that `gb_trigpoints.osm` file to the `data` folder.
+
+##### Finally, run the code
+
+Presuming you have a working Docker installed (an exercise for the user), you need to build the
+docker image:
+
+```$ ./dockerbuild.sh```
+
+and then you can run the script
+
+```$ ./dockerrun.sh```
+
+This should print out a bunch of information and leave you with some files in the `data` subfolder.
+
+## TODO
+
+A few thoughts on things left to do, apart from community discussions and documentation on the
+OSM wiki etc.:
+
+  - At some point add descriptions of the generated data files here - right now you will have to stare
+    hard to understand what you are getting out of the scripts.
+  - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere
+  - Do fuzzy matching on the OS/OSB names to associate FB numbers
 
