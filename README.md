@@ -251,10 +251,11 @@ So, we have a whole bunch of mixture of abbreviations (Farm vs FM), punctuation 
 UNDER THE) and different spellings (Hartsay vs HARTSHAY). This is not going to be resolved with
 some simple expressions.
 
-I am strongly considering some 'fuzzy logic' matching. I am considering investigating using
-[fedmatch](https://cran.r-project.org/web/packages/fedmatch/vignettes/Intro-to-fedmatch.html)
-as a starting point, as it looks like it has some flexibility in pre-check data cleansing as well
-as fuzzy matching.
+I've added some 'fuzzy matching' to the name matching code between OS and OSB/OSM names. We do some
+rudimentary filtering on the name strings and then use a
+[`stringdist`](https://cran.r-project.org/web/packages/stringdist/index.html) with the
+[Jaro Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance) algorithm to do a fuzzy
+compare. That has gained us an extra 289 OSB matches and 18 OSM matches.
 
 ### Running the code
 
@@ -334,5 +335,4 @@ OSM wiki etc.:
   - At some point add descriptions of the generated data files here - right now you will have to stare
     hard to understand what you are getting out of the scripts.
   - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere
-  - Do fuzzy matching on the OS/OSB names to associate FB numbers
 

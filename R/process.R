@@ -62,6 +62,93 @@ osm_good_types = c(
 	)
 
 ####################################################################################################### 
+###################################### functions ######################################################
+####################################################################################################### 
+
+# Try to clean up an OSB description field to just leave the name. Possibly non-trivial!
+#  Note - strings should be all lower by the time they reach here
+clean_osb_desc <- function(s) {
+	os <- s
+
+	## Strip out things we don't want
+	s <- gsub(" tp", "", s)
+	s <- gsub("tp ", "", s)
+	s <- gsub("fl br ", "", s)
+	s <- gsub(" s[0-9]{3,5}", "", s)
+	s <- gsub("^s[0-9]{3,5}", "", s)
+
+	# Note - some of the ordering here matters, such as we get things like ' sw face$',
+	# so we need to be careful about matching the spaces. It might make sense when we match
+	# something surrounded by spaces *or* at the end of a line to leave a space in its place
+	# to aid further matches. Also, look at the 'fedmatch' package string_clean as an option.
+
+	s <- gsub(" n ", " ", s)
+	s <- gsub(" s ", " ", s)
+	s <- gsub(" e ", " ", s)
+	s <- gsub(" w ", " ", s)
+
+	s <- gsub(" nw ", " ", s)
+	s <- gsub(" ne ", " ", s)
+	s <- gsub(" sw ", " ", s)
+	s <- gsub(" se ", " ", s)
+
+	s <- gsub(" face", "", s)
+
+	## Now some translations of what is left
+	## First, stick a space on the end of the string... to simplify the number of scans
+	s <- gsub("$", " ", s)
+	s <- gsub(" rd ", " road ", s)
+	s <- gsub(" fm ", " farm ", s)
+
+	# And handle the remaining spaces
+	s <- gsub(" +", " ", s)		## drop multiple spaces
+	s <- gsub("^ +", "", s)		## clean the front
+	s <- gsub(" +$", "", s)		## clean the back
+	message("  clean_osb_desc: [", os, "] -> [", s, "]")
+
+	return(s)
+}
+
+# Try to clean up OS 'names' - see if we can find some common idioms that cause us name
+# match problems.
+#  Note - strings should be all lower by the time they reach here
+clean_os_desc <- function(s) {
+	os <- s
+
+	s <- gsub(" \\([0-9]{4}\\)", " ", s)	# Some names have ()'d year addition
+
+	## Now some translations of what is left
+	## First, stick a space on the end of the string... to simplify the number of scans
+	s <- gsub("$", " ", s)
+	s <- gsub(" rd ", " road ", s)
+	s <- gsub(" fm ", " farm ", s)
+
+	# And handle the remaining spaces
+	s <- gsub(" +", " ", s)		## drop multiple spaces
+	s <- gsub("^ +", "", s)		## clean the front
+	s <- gsub(" +$", "", s)		## clean the back
+	message("  clean_os_desc: [", os, "] -> [", s, "]")
+
+	return(s)
+}
+
+#Fuzzy string matching - try and work out if we think string 'm' might contain (a corrupted
+# form of) string 's'
+fuzzywuzzy <- function(s, m) {
+	jw_cutoff = 0.1
+
+	jw = stringdist(s, m, method=c("jw"))
+
+	if( jw <= jw_cutoff ) {
+		message(" jw score: [", s, "] [", m, "] ", jw, " PASS")
+		return(TRUE)
+	} else {
+		message(" jw score: [", s, "] [", m, "] ", jw, " FAIL")
+		return(FALSE)
+	}
+}
+
+####################################################################################################### 
 ###################################### Read raw data ###############################################
 ####################################################################################################### 
 message(">>> Reading OS CSV")
@@ -189,6 +276,8 @@ if(trim_dataset) {
 message(" extracting FB numbers from OS benchmarks")
 os_b_sf$FB <- NA
 
+# I guess in theory we might only need to do this for OSB entries that are nearest neighbours
+# to an OS entry, but it's not too arduous to do them all right now
 for(i in 1:nrow(os_b_sf)) {
 	r <- os_b_sf[i,]
 
@@ -298,85 +387,6 @@ for(i in 1:nrow(os_b_sf)) {
 message(" Found ", sum(!is.na(os_b_sf$FB)), " FB's. Got ", sum(is.na(os_b_sf$FB)), " empty entries")
 
 ####################################################################################################### 
-############################################# Examine the OSM other_tags info ########################
-####################################################################################################### 
-
-osm_tags_df <- data.frame(id=c(), ref=c())
-
-## collect all the OSM tags into an id indexed df so we can search it later if need be
-if( 0 ) { 	# Some debug output for the OSM extra data fields
-	count = 1
-	message(">>> Indexing OSM tags")
-	# property to vectorise a function down a df/sf column
-	for(i in 1:nrow(osm_sf)) {
-		osm_row <- osm_sf[i,]
-
-		message("   >> id ", osm_row$osm_id, " ref: ", osm_row$ref)
-
-		# Did we find some other_tags data?
-		if( !is.na(c(d)[1]) ) {
-			if( !is.null(d$survey_point) ) {
-				if( d$survey_point == "pillar") {
-					#message(" >> FOUND A PILLAR")
-					osm_sf[count,]$keep <- TRUE
-				}
-
-				if( d$survey_point %in% osm_drop_types ) {
-					#message(" >> DROP")
-					osm_sf[count,]$drop <- TRUE
-					osm_sf[count,]$score <- osm_sf[count,]$score - 1
-				}
-				if( d$survey_point %in% osm_good_types ) {
-					#message(" >> KEEP")
-					osm_sf[count,]$keep <- TRUE
-					osm_sf[count,]$score <- osm_sf[count,]$score + 1
-				}
-			}
-
-			if( !is.null(d$"survey_point:structure") ) {
-				if( d$"survey_point:structure" == "pillar") {
-					#message(" >> FOUND A PILLAR (structure)")
-					osm_sf[count,]$keep <- TRUE
-				}
-
-				if( d$"survey_point:structure" %in% osm_drop_types ) {
-					#message(" >> DROP")
-					osm_sf[count,]$drop <- TRUE
-					osm_sf[count,]$score <- osm_sf[count,]$score - 1
-				}
-				if( d$"survey_point:structure" %in% osm_good_types ) {
-					#message(" >> KEEP")
-					osm_sf[count,]$keep <- TRUE
-					osm_sf[count,]$score <- osm_sf[count,]$score + 1
-				}
-			}
-
-			if( !is.null(d$note) ) {
-				if( grepl("not move", tolower(d$note)) ) {
-					#message(" >> PROTECTED")
-					osm_sf[count,]$protected <- TRUE
-				}
-			}
-		}
-
-		count <- count + 1
-
-		#if( count > 4) break
-	}
-
-	message(">> After looking for pillars....")
-	message(">>  We have ", nrow(osm_sf), " rows of osm")
-	message(">>  We have ", sum(osm_sf$keep == TRUE), " keepers")
-	message(">>  We have ", sum(osm_sf$drop == TRUE), " drops")
-
-	osm_sf <- filter(osm_sf, drop!=TRUE)
-	message(">>  After dropping drops we have ", nrow(osm_sf), " rows of osm")
-} else {
-	# See if we can do the tag expansion quicker!
-	osm_tags_df <- data.frame(id=osm_sf$osm_id, ref=osm_sf$ref)
-}
-
-####################################################################################################### 
 ############################################# Drop deleted and non-pillar OS items  ###################
 ####################################################################################################### 
 # Drop OS items very early if we are not going to use them, as having them in the dataset
@@ -440,6 +450,23 @@ longest_snap=max(nearest_dist)
 message(" Shortest snap distance is ", shortest_snap, "m. Longest snap is ", longest_snap, "m.")
 
 ####################################################################################################### 
+############################################# And find nearest Benchmark to each OS trigpoint ########
+####################################################################################################### 
+message(" Calculate nearest Benchmark to each OS trigpoint")
+# And try calculating the nearest OS Benchmark for each OS Trigpoint
+osb_nearest_id = st_nearest_feature(os_sf, os_b_sf)
+osb_nearest_point <- os_b_sf[osb_nearest_id,]
+osb_nearest_dist <- st_distance(os_sf, os_b_sf[osb_nearest_id,], by_element = TRUE)
+# And store those back into the df
+os_sf$nearest_osb_id = osb_nearest_id
+os_sf$osb_distance = osb_nearest_dist
+
+shortest_osb_snap=min(osb_nearest_dist)
+longest_osb_snap=max(osb_nearest_dist)
+message(" Shortest snap distance (from OS point to OS benchmark nearest neighbour) is ", shortest_osb_snap, "m.")
+message(" Longest snap distance (from OS point to OS benchmark nearest neighbour) is ", longest_osb_snap, "m.")
+
+####################################################################################################### 
 ############################################# Separate snappable from not ############################
 ####################################################################################################### 
 ## OK, now iterate the list of OS points and check how well, or not, their chose OSM neighbours
@@ -457,6 +484,76 @@ lines <- st_set_crs(lines, 4326)
 os_total_points = nrow(os_sf)
 osm_total_points = nrow(osm_sf)
 
+####################################################################################################### 
+############################## Try to match OS trigpoints to OS benchmark flush bracket data ##########
+####################################################################################################### 
+message("Trying to match OS trigpoints to OS benchmarks and OSM trigpoints")
+osb_max_distance = set_units(15, "m")
+
+os_sf$osb_name_match = FALSE
+os_sf$osm_name_match = FALSE
+os_sf$osb_fb_match = FALSE
+
+fuzzymatches_osb = 0
+fuzzymatches_osm = 0
+
+for(i in 1:nrow(os_sf)) {
+	r <- os_sf[i,]
+
+	if( r$osb_distance <= osb_max_distance ) {
+		osm_r <- osm_sf[r$nearest_osm_id,]
+		osb_r <- os_b_sf[r$nearest_osb_id,]
+
+		# Check if the OS name appears in the OSB description...
+		x = tolower(r$Trig.Name)
+		s = tolower(osb_r$DESCRIPTION)
+		if( !is.na(x) && !is.na(s) ) {
+			if( grepl(x, s, fixed=TRUE) == TRUE ) {
+				os_sf[i,]$osb_name_match = TRUE
+			} else {
+				s = clean_osb_desc(tolower(s))
+				x = clean_os_desc(tolower(x))
+				message(" try fuzzywuzzy OSB on [", x, "] [", s, "]")
+				if( fuzzywuzzy(x, s) == TRUE ) {
+					os_sf[i,]$osb_name_match = TRUE
+					fuzzymatches_osb <- fuzzymatches_osb + 1
+				}
+			}
+		}
+
+		# Check if the OS name matches the OSM name
+		s = tolower(osm_r$name)
+		if( !is.na(x) && !is.na(s) ) {
+			if( grepl(x, s, fixed=TRUE) == TRUE ) {
+				os_sf[i,]$osm_name_match = TRUE
+			} else {
+				x = clean_os_desc(tolower(x))
+				message(" try fuzzywuzzy OSM on [", x, "] [", s, "]")
+				if( fuzzywuzzy(x, s) == TRUE ) {
+					os_sf[i,]$osm_name_match = TRUE
+					fuzzymatches_osm <- fuzzymatches_osm + 1
+				}
+			}
+		}
+
+		# Check if the OSM ref 'FB' name matches the OSB FB data
+		#  Just be aware, we are comparing the OSM and OSB neighbours of the current
+		#  OS here, and storing the result in the OS sf - it's not quite obvious!
+		if( identical(tolower(osm_r$ref), tolower(osb_r$FB)) ) {
+			os_sf[i,]$osb_fb_match = TRUE
+		}
+	}
+}
+
+message("matching OSM names: ", nrow(filter(os_sf, osm_name_match==TRUE)) )
+message("matching OSB names: ", nrow(filter(os_sf, osb_name_match==TRUE)) )
+message("matching OSB FBs: ", nrow(filter(os_sf, osb_fb_match==TRUE)) )
+message(" got ", fuzzymatches_osb, " extra OSB due to fuzzing")
+message(" got ", fuzzymatches_osm, " extra OSM due to fuzzing")
+
+####################################################################################################### 
+############################################# And generate some plots #################################
+####################################################################################################### 
 message(">>> Plotting")
 
 if(1) {
