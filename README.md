@@ -201,6 +201,15 @@ small positional discrepencies between OS and OSB data I think should be expecte
 
 Ultimately we convert everything to WGS84 before crunching the data.
 
+One more thing I did here was to have a look at the data to try and ensure our co-ordinates translation
+didn't contain any obvious errors. To do that I looked at the bearing direction for each 'neighbour'
+pair between the OS and OSM data. My theory was that if our translation was off by a uniform direction
+then that would show as a bias in 'nearest neighbour' - maybe. Anyhow, here is how the data looks:
+
+![Polar plot of nearest neighbour](images/polar_snap.jpg)
+
+That looks pretty uniform to me.
+
 ### Extracting the Flush Bracket data
 
 The flush bracket data is buried in the `DESCRIPTION` field of the Benchmark data, along with other

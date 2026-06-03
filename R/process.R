@@ -21,7 +21,8 @@ library(geosphere)
 library(stringdist)
 library(osbng)
 
-trim_dataset = 1	#Geographically trim down the data to aid development and analysis
+trim_dataset = 0	#Geographically trim down the data to aid development and analysis
+generate_osc = 0	#Produce OsmChangeset files or not
 
 ####################################################################################################### 
 ###################################### Global data type things ###################################
@@ -306,9 +307,7 @@ osm_tags_df <- data.frame(id=c(), ref=c())
 if( 0 ) { 	# Some debug output for the OSM extra data fields
 	count = 1
 	message(">>> Indexing OSM tags")
-	# FIXME - replace the 'by' with a 'for' - or figure out how to do this
 	# property to vectorise a function down a df/sf column
-	#by(osm_sf, seq_len(nrow(osm_sf)), function(osm_row) {
 	for(i in 1:nrow(osm_sf)) {
 		osm_row <- osm_sf[i,]
 
@@ -535,134 +534,139 @@ p2 <- ggplot(data = full_sf) +
   coord_sf(crs = 4326) # Uses standard WGS84 coordinates
 ggsave("/data/plot2.jpg", plot=p2)
 
-## And now try to generate the OSC xml change files
-
-# File of 'edits' - anything that is 'snappable'
-message(">>> Generate snappable edit OSC file")
-edit_doc = newXMLDoc()
-attrs = c(
-	version="0.6",
-	generator="github.com/grahamwhaley/OSM_UK_trigpoints"
-)
-root = newXMLNode("osmChange", attrs=attrs, doc=edit_doc)
-
-
-count = 1
+## Make a 'polar' plot of snap distance and bearings so we can try to judge if there is a pattern
+#  to the errors (which might indicate a problem with our mapping translations), or if they are
+#  fairly random, in which case it is probably just mapping/accuracy problems.
+	
 os_sf$bearing <- NA
-
 snappable_df <- filter(os_sf, distance<=set_units(max_snap_distance, "m"))
-# FIXME - replace this with a for (by has strange error/warning 'seq_len' side effects
-#by(snappable_df, seq_len(nrow(snappable_df)), function(os_row)
 for(i in 1:nrow(snappable_df)) {
 	os_row <- snappable_df[i,]
-	mod = newXMLNode("modify", parent=root)
 	osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
 	os_coords=st_coordinates(os_row$geometry)
-	attrs = c(
-		id=osm_sf[os_row$nearest_osm_id,]$osm_id,
-		changeset="1",		#FIXME - what should this be??
-		version="1",		#FIXME - what should this be??
-		# Unclear if we should use the old OSM co-ords here, or the new OS ones?
-		# *BUT* - using the updated OS ones makes the new point show up in the right
-		# (moved) place in JSOM when I load the OSC file as a layer!
-		# lat=as.double(osm_coords[,"Y"]),
-		# lon=as.double(osm_coords[,"X"])
-		lat=as.double(os_coords[,"Y"]),
-		lon=as.double(os_coords[,"X"])
-		)
-	node = newXMLNode("node", attrs=attrs, parent=mod)
-	attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
-	newXMLNode("tag", attrs=attrs, parent=node)
-	attrs = c( k="lon", v=as.double(os_coords[,"X"]))
-	newXMLNode("tag", attrs=attrs, parent=node)
-	# Let's, for now, drop the OS New.Name in - we might need to be smarter later on for
-	# OSM entries that already have some tagging (in 'ref' and 'tpuk_ref' perhaps)
-
-	osm_row <- osm_sf[os_row$nearest_osm_id,]
-	if( trim_dataset ) message("  > Snap OS ", os_row$New.Name, " to OSM ", osm_row$osm_id, " ", osm_row$name)
-	if( !is.na(osm_row$ref) ) {
-		if( trim_dataset ) message("  >   REFS: OS <", os_row$New.Name, "> <", os_row$STATION.NAME, "> OSM <", osm_row$ref, ">")
-	} else {
-		if( trim_dataset ) message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
-	}
-	# Let's try to make a comment?
-	attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
-	newXMLNode("tag", attrs=attrs, parent=node)
-	attrs = c( k="OS_new_name", v=os_row$New.Name)
-	newXMLNode("tag", attrs=attrs, parent=node)
-	cmt = paste(sep=" ", "OS Station Name", os_row$STATION.NAME, "OS New Name", os_row$New.Name)
-	newXMLCommentNode(cmt, parent=node)
-	# And calculate the bearing - we can comment on bearing/distance the point is being moved!
-	b = bearing(osm_coords, os_coords)
-	cmt = paste(sep=" ", "Move bearing", b, "degrees for", os_row$distance, "m")
-	newXMLCommentNode(cmt, parent=node)
-
-	# And store that bearing for later
-	snappable_df[count,]$bearing <- b
-
-	count <- count + 1
+	snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
 }
-
-saveXML(edit_doc, file="edits.osc")
 
 ## Make a 'polar' plot of snap distance and bearings so we can try to judge if there is a pattern
 #  to the errors (which might indicate a problem with our mapping translations), or if they are
 #  fairly random, in which case it is probably just mapping/accuracy problems.
-
 p_polar <- ggplot(data = snappable_df, aes(bearing, drop_units(distance))) +
 	geom_segment(aes(xend=bearing, yend=0.1)) +
 	geom_point() +
 	scale_x_continuous(limits = c(-180, 180), breaks = seq(-180, 180, 90)) +
 	scale_y_continuous(limits = c(0, drop_units(max(snappable_df$distance)) )) +
 	coord_polar(start=pi)
-
+	
 ggsave("/data/polar_snap.jpg", plot=p_polar)
-
-# Now generate the new elements XML
-message(">>> Generate new node OSC file")
-newnode_doc = newXMLDoc()
-attrs = c(
-	version="0.6",
-	generator="github.com/grahamwhaley/OSM_UK_trigpoints"
-)
-root = newXMLNode("osmChange", attrs=attrs, doc=newnode_doc)
-
-nodecount = -1
-
-newnode_df = filter(os_sf, distance>set_units(max_snap_distance, "m"))
-# FIXME - replace this with a for (by has strange error/warning 'seq_len' side effects
-#by(newnode_df, seq_len(nrow(newnode_df)), function(os_row)
-for(i in 1:nrow(newnode_df)) {
-	os_row <- newnode_df[i,]
-
-	mod = newXMLNode("create", parent=root)
-	os_coords=st_coordinates(os_row$geometry)
+	
+####################################################################################################### 
+############################################# Generate the OsmChange files ############################
+####################################################################################################### 
+if( generate_osc ) {
+	# File of 'edits' - anything that is 'snappable'
+	message(">>> Generate snappable edit OSC file")
+	edit_doc = newXMLDoc()
 	attrs = c(
-		id=nodecount,	#New node
-		changeset="1",		#FIXME - what should this be??
-		version="1",		#FIXME - what should this be??
-		lat=as.double(os_coords[,"Y"]),
-		lon=as.double(os_coords[,"X"])
-		)
-	node = newXMLNode("node", attrs=attrs, parent=mod)
-	attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
-	newXMLNode("tag", attrs=attrs, parent=node)
-	attrs = c( k="lon", v=as.double(os_coords[,"X"]))
-	newXMLNode("tag", attrs=attrs, parent=node)
-	# Let's, for now, drop the OS New.Name in - we might need to be smarter later on for
-	# OSM entries that already have some tagging (in 'ref' and 'tpuk_ref' perhaps)
+		version="0.6",
+		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
+	)
+	root = newXMLNode("osmChange", attrs=attrs, doc=edit_doc)
+	
+	for(i in 1:nrow(snappable_df)) {
+		os_row <- snappable_df[i,]
+		mod = newXMLNode("modify", parent=root)
+		osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
+		os_coords=st_coordinates(os_row$geometry)
+		attrs = c(
+			id=osm_sf[os_row$nearest_osm_id,]$osm_id,
+			changeset="1",		#FIXME - what should this be??
+			version="1",		#FIXME - what should this be??
+			# Unclear if we should use the old OSM co-ords here, or the new OS ones?
+			# *BUT* - using the updated OS ones makes the new point show up in the right
+			# (moved) place in JSOM when I load the OSC file as a layer!
+			# lat=as.double(osm_coords[,"Y"]),
+			# lon=as.double(osm_coords[,"X"])
+			lat=as.double(os_coords[,"Y"]),
+			lon=as.double(os_coords[,"X"])
+			)
+		node = newXMLNode("node", attrs=attrs, parent=mod)
+		attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="lon", v=as.double(os_coords[,"X"]))
+		newXMLNode("tag", attrs=attrs, parent=node)
+		# Let's, for now, drop the OS New.Name in - we might need to be smarter later on for
+		# OSM entries that already have some tagging (in 'ref' and 'tpuk_ref' perhaps)
+	
+		osm_row <- osm_sf[os_row$nearest_osm_id,]
+		if( trim_dataset ) message("  > Snap OS ", os_row$New.Name, " to OSM ", osm_row$osm_id, " ", osm_row$name)
+		if( !is.na(osm_row$ref) ) {
+			if( trim_dataset ) message("  >   REFS: OS <", os_row$New.Name, "> <", os_row$STATION.NAME, "> OSM <", osm_row$ref, ">")
+		} else {
+			if( trim_dataset ) message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
+		}
+		# Let's try to make a comment?
+		attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="OS_new_name", v=os_row$New.Name)
+		newXMLNode("tag", attrs=attrs, parent=node)
+		cmt = paste(sep=" ", "OS Station Name", os_row$STATION.NAME, "OS New Name", os_row$New.Name)
+		newXMLCommentNode(cmt, parent=node)
+		b = snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
+		cmt = paste(sep=" ", "Move bearing", b, "degrees for", os_row$distance, "m")
+		newXMLCommentNode(cmt, parent=node)
+	
+		# And store that bearing for later
+		snappable_df[i,]$bearing <- b
+	}
+	
+	saveXML(edit_doc, file="edits.osc")
+	
+	# Now generate the new elements XML
+	message(">>> Generate new node OSC file")
+	newnode_doc = newXMLDoc()
+	attrs = c(
+		version="0.6",
+		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
+	)
+	root = newXMLNode("osmChange", attrs=attrs, doc=newnode_doc)
+	
+	nodecount = -1
+	
+	newnode_df = filter(os_sf, distance>set_units(max_snap_distance, "m"))
+	for(i in 1:nrow(newnode_df)) {
+		os_row <- newnode_df[i,]
+	
+		mod = newXMLNode("create", parent=root)
+		os_coords=st_coordinates(os_row$geometry)
+		attrs = c(
+			id=nodecount,	#New node
+			changeset="1",		#FIXME - what should this be??
+			version="1",		#FIXME - what should this be??
+			lat=as.double(os_coords[,"Y"]),
+			lon=as.double(os_coords[,"X"])
+			)
+		node = newXMLNode("node", attrs=attrs, parent=mod)
+		attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="lon", v=as.double(os_coords[,"X"]))
+		newXMLNode("tag", attrs=attrs, parent=node)
+		# Let's, for now, drop the OS New.Name in - we might need to be smarter later on for
+		# OSM entries that already have some tagging (in 'ref' and 'tpuk_ref' perhaps)
+	
+		if( trim_dataset ) message("  > New OS ", os_row$New.Name)
+		if( trim_dataset ) message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
+		# Let's try to make a comment?
+		attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="OS_new_name", v=os_row$New.Name)
+		newXMLNode("tag", attrs=attrs, parent=node)
+		cmt = paste(sep=" ", "OS Station Name", os_row$STATION.NAME, "OS New Name", os_row$New.Name)
+		newXMLCommentNode(cmt, parent=node)
+	
+		nodecount <- nodecount - 1
+	}
 
-	if( trim_dataset ) message("  > New OS ", os_row$New.Name)
-	if( trim_dataset ) message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
-	# Let's try to make a comment?
-	attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
-	newXMLNode("tag", attrs=attrs, parent=node)
-	attrs = c( k="OS_new_name", v=os_row$New.Name)
-	newXMLNode("tag", attrs=attrs, parent=node)
-	cmt = paste(sep=" ", "OS Station Name", os_row$STATION.NAME, "OS New Name", os_row$New.Name)
-	newXMLCommentNode(cmt, parent=node)
-
-	nodecount <- nodecount - 1
+	saveXML(newnode_doc, file="newnodes.osc")
+} else {
+	message(" Skipping OSC file generation")
 }
-
-saveXML(newnode_doc, file="newnodes.osc")
