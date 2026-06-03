@@ -5,7 +5,8 @@ The code in this repository can be used to process and assess the
 CSV with a view of importing some of that data into
 [OpenStreetMap (**OSM**)](https://www.openstreetmap.org/).
 
-Presently (as of 2026/06/02) the OSM data for UK trigpoints is incomplete.
+Presently (as of 2026/06/02) the OSM data for UK trigpoints represents maybe only 1/3rd of the UK
+pillar trigpoints - likely less as many OSM nodes do not represent current trigpoints afaict.
 
 This is a work in progress. If the data is successfully imported into OSM then this repository will
 be updated accordingly.
