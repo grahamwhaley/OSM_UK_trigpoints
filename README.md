@@ -255,7 +255,7 @@ I've added some 'fuzzy matching' to the name matching code between OS and OSB/OS
 rudimentary filtering on the name strings and then use a
 [`stringdist`](https://cran.r-project.org/web/packages/stringdist/index.html) with the
 [Jaro Winkler](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance) algorithm to do a fuzzy
-compare. That has gained us an extra 289 OSB matches and 18 OSM matches.
+compare. That has gained us an extra 377 OSB matches and 18 OSM matches.
 
 ### Running the code
 

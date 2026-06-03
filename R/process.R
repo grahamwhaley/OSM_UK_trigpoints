@@ -21,7 +21,7 @@ library(geosphere)
 library(stringdist)
 library(osbng)
 
-trim_dataset = 0	#Geographically trim down the data to aid development and analysis
+trim_dataset = 1	#Geographically trim down the data to aid development and analysis
 generate_osc = 0	#Produce OsmChangeset files or not
 
 ####################################################################################################### 
@@ -71,11 +71,14 @@ clean_osb_desc <- function(s) {
 	os <- s
 
 	## Strip out things we don't want
-	s <- gsub(" tp", "", s)
-	s <- gsub("tp ", "", s)
-	s <- gsub("fl br ", "", s)
-	s <- gsub(" s[0-9]{3,5}", "", s)
-	s <- gsub("^s[0-9]{3,5}", "", s)
+	s <- gsub(" tp", " ", s)
+	s <- gsub("tp ", " ", s)
+	s <- gsub("fl br ", " ", s)
+	s <- gsub(" nbm ", " ", s)
+	s <- gsub("^nbm ", " ", s)
+	s <- gsub(" no s[0-9]{3,5}", " ", s)
+	s <- gsub(" s[0-9]{3,5}", " ", s)
+	s <- gsub("^s[0-9]{3,5}", " ", s)
 
 	# Note - some of the ordering here matters, such as we get things like ' sw face$',
 	# so we need to be careful about matching the spaces. It might make sense when we match
@@ -94,17 +97,22 @@ clean_osb_desc <- function(s) {
 
 	s <- gsub(" face", "", s)
 
+	# And we should not have any series of numbers should we? ... anywhere
+	s <- gsub("[0-9]{1,6}", " ", s)
+
 	## Now some translations of what is left
 	## First, stick a space on the end of the string... to simplify the number of scans
 	s <- gsub("$", " ", s)
 	s <- gsub(" rd ", " road ", s)
 	s <- gsub(" fm ", " farm ", s)
+	s <- gsub(" mtn", " mountain ", s)
+	s <- gsub(" resr", " reservoir", s)
 
 	# And handle the remaining spaces
 	s <- gsub(" +", " ", s)		## drop multiple spaces
 	s <- gsub("^ +", "", s)		## clean the front
 	s <- gsub(" +$", "", s)		## clean the back
-	message("  clean_osb_desc: [", os, "] -> [", s, "]")
+	#message("  clean_osb_desc: [", os, "] -> [", s, "]")
 
 	return(s)
 }
@@ -122,12 +130,16 @@ clean_os_desc <- function(s) {
 	s <- gsub("$", " ", s)
 	s <- gsub(" rd ", " road ", s)
 	s <- gsub(" fm ", " farm ", s)
+	s <- gsub(" resr", " reservoir", s)
+
+	# There are a number of hyphenated names - turn those into spaces
+	s <- gsub("-", " ", s)
 
 	# And handle the remaining spaces
 	s <- gsub(" +", " ", s)		## drop multiple spaces
 	s <- gsub("^ +", "", s)		## clean the front
 	s <- gsub(" +$", "", s)		## clean the back
-	message("  clean_os_desc: [", os, "] -> [", s, "]")
+	#message("  clean_os_desc: [", os, "] -> [", s, "]")
 
 	return(s)
 }
@@ -135,15 +147,21 @@ clean_os_desc <- function(s) {
 #Fuzzy string matching - try and work out if we think string 'm' might contain (a corrupted
 # form of) string 's'
 fuzzywuzzy <- function(s, m) {
+	# Looking at the failed matches, 0.18 is definitely too high - it matches things that should fail
+	# 1.7 might be a touch optimistic, but is looking pretty good...
 	jw_cutoff = 0.1
 
 	jw = stringdist(s, m, method=c("jw"))
 
+	# If you want to diagnose and try to improve the fuzzy matching, uncomment the below
+	# messages(), capture and filter them by the word 'FAIL' into a file. Sort them by score
+	# (I stick them in a spreadsheet), and then stare at the data to see if there are any
+	# common easy to fix bad matches.
 	if( jw <= jw_cutoff ) {
-		message(" jw score: [", s, "] [", m, "] ", jw, " PASS")
+		#message(" jw score: [", s, "] [", m, "] ", jw, " PASS")
 		return(TRUE)
 	} else {
-		message(" jw score: [", s, "] [", m, "] ", jw, " FAIL")
+		#message(" jw score: [", s, "] [", m, "] ", jw, " FAIL")
 		return(FALSE)
 	}
 }
@@ -513,7 +531,7 @@ for(i in 1:nrow(os_sf)) {
 			} else {
 				s = clean_osb_desc(tolower(s))
 				x = clean_os_desc(tolower(x))
-				message(" try fuzzywuzzy OSB on [", x, "] [", s, "]")
+				#message(" try fuzzywuzzy OSB on [", x, "] [", s, "]")
 				if( fuzzywuzzy(x, s) == TRUE ) {
 					os_sf[i,]$osb_name_match = TRUE
 					fuzzymatches_osb <- fuzzymatches_osb + 1
@@ -528,7 +546,7 @@ for(i in 1:nrow(os_sf)) {
 				os_sf[i,]$osm_name_match = TRUE
 			} else {
 				x = clean_os_desc(tolower(x))
-				message(" try fuzzywuzzy OSM on [", x, "] [", s, "]")
+				#message(" try fuzzywuzzy OSM on [", x, "] [", s, "]")
 				if( fuzzywuzzy(x, s) == TRUE ) {
 					os_sf[i,]$osm_name_match = TRUE
 					fuzzymatches_osm <- fuzzymatches_osm + 1
@@ -548,8 +566,8 @@ for(i in 1:nrow(os_sf)) {
 message("matching OSM names: ", nrow(filter(os_sf, osm_name_match==TRUE)) )
 message("matching OSB names: ", nrow(filter(os_sf, osb_name_match==TRUE)) )
 message("matching OSB FBs: ", nrow(filter(os_sf, osb_fb_match==TRUE)) )
-message(" got ", fuzzymatches_osb, " extra OSB due to fuzzing")
-message(" got ", fuzzymatches_osm, " extra OSM due to fuzzing")
+message(" got ", fuzzymatches_osb, " extra OSB matches due to fuzzing")
+message(" got ", fuzzymatches_osm, " extra OSM matches due to fuzzing")
 
 ####################################################################################################### 
 ############################################# And generate some plots #################################
@@ -659,6 +677,8 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 ####################################################################################################### 
 ############################################# Generate the OsmChange files ############################
 ####################################################################################################### 
+newnode_df = filter(os_sf, distance>set_units(max_snap_distance, "m"))
+
 if( generate_osc ) {
 	# File of 'edits' - anything that is 'snappable'
 	message(">>> Generate snappable edit OSC file")
@@ -729,7 +749,6 @@ if( generate_osc ) {
 	
 	nodecount = -1
 	
-	newnode_df = filter(os_sf, distance>set_units(max_snap_distance, "m"))
 	for(i in 1:nrow(newnode_df)) {
 		os_row <- newnode_df[i,]
 	
@@ -766,4 +785,6 @@ if( generate_osc ) {
 	saveXML(newnode_doc, file="newnodes.osc")
 } else {
 	message(" Skipping OSC file generation")
+	message("  Found ", nrow(snappable_df), " potentially snappable (updatable) OSM trigpoints")
+	message("  Found ", nrow(newnode_df), " potentially new OSM trigpoints")
 }
