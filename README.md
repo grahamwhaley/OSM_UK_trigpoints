@@ -327,6 +327,21 @@ $ ./dockershell.sh
  # etc. etc.
 ```
 
+## Next Steps
+
+The next thing to do is approach the
+[UK OSM community](https://community.openstreetmap.org/c/communities/uk/86) to discuss viability
+and path forward. Then, given the whole idea is not shot down, and if we think we might be able
+to do an automatic import, we should study the
+[OSM import guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines)
+and write an [import plan](https://wiki.openstreetmap.org/wiki/Import/Plan_Outline). That will also
+force us to push the code forwards, as there are at least a couple of items left to enhance:
+
+  - We can use the name and flush bracket matching data to make better decisions about what is
+    an updatable existing OSM node and what is a new node.
+  - We have not discussed or formalised what data will go into what named tag - and how we will handle
+    this between updates or new nodes.
+
 ## TODO
 
 A few thoughts on things left to do, apart from community discussions and documentation on the
