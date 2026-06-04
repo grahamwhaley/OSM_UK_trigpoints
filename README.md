@@ -328,6 +328,82 @@ $ ./dockershell.sh
  # etc. etc.
 ```
 
+## Tags
+
+Before we can push any data to OSM we need to decide what data will go into what tags. This is also
+likely a key discussion with the community.
+
+If we extract all the tag key names from the list of `man_made=trig_point` nodes, count their frequency
+and sort them we get 151 different keys.
+
+There is an R script `osm_tags.R` in the R subdirectory you can use to generate this data, and a full
+table is provided in [TAGS.md](TAGS.md) to save you having to run it yourself.
+
+Here are the top 20 entries:
+
+| key | frequency |
+| --- | --------- |
+| source | 1172
+| natural | 618
+| tpuk_ref | 335
+| description | 311
+| note | 284
+| wikidata | 138
+| ele:ft | 85
+| wikipedia | 84
+| website | 82
+| communication:amateur_radio:sota | 80
+| communication:amateur_radio:sota:points | 80
+| survey_point:purpose | 77
+| image | 74
+| material | 65
+| is_in:county | 57
+| operator | 55
+| access | 49
+| type | 40
+| is_in:country_code | 39
+| munro | 38
+
+As we can see, there is a real mix of tags there. Let's look down the full table and see if there
+are any specific ones that might be specifically useful for our OS data updates:
+
+| Position | tag key                     | frequency |
+| 18 |                                   type   | 40 |
+| 47 |                                desc:os    | 5 |
+| 50 |                                 ref:os    | 5 |
+| 63 |                      ref:flush_bracket    | 3 |
+| 67 |                      survey_point:type    | 3 |
+| 83 |                                 OS_ref    | 1 |
+| 129 |                      ref:survey_point    | 1 |
+| 146 |                      survey_point:ref    | 1 |
+| 149 |                       trig_point_type    | 1 |
+
+
+Well, that's probably a fair start. Now, let's consider what interesting data we have when creating a
+'new' OS data based trigpoint:
+
+| Item | Description |
+| Name | There is both a 'station name' and a 'new name'. I'd suggest we use the 'new name' |
+| Height | Which should map well to one of the `ele` elevation OSM tags |
+| Type | In our case, 'pillar', but we should leave flexibility for other types later |
+| FB   | The flush bracket number if we have managed to associate it with this trigpoint |
+| Order | Such as Primary, Secondary, Tertiary and Fourth Order |
+
+### tags proposal
+
+I guess I should make a first pass stab at what we are going to store where. We'll start with any
+'new' trigpoints, as that saves us having to work out any potential merging and clashes with existing
+OSM nodes...
+
+| Item | tag | Notes |
+| Name | `name` | Use the *New.Name* from the OS Trigpoint csv |
+| Height | `ele` | Use the height from the OS Trigpoing csv in *metres* | 
+| Type | `survey_point:structure`=`pillar` | Seems to be common on OSM nodes |
+| FB   | `ref` | Seems to be predominant in existing data. |
+| Order | 
+| Source | 
+
+
 ## Next Steps
 
 The next thing to do is approach the

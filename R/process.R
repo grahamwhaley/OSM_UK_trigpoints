@@ -22,7 +22,7 @@ library(stringdist)
 library(osbng)
 
 trim_dataset = 1	#Geographically trim down the data to aid development and analysis
-generate_osc = 0	#Produce OsmChangeset files or not
+generate_osc = 1	#Produce OsmChangeset files or not
 
 ####################################################################################################### 
 ###################################### Global data type things ###################################
@@ -677,7 +677,74 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 ####################################################################################################### 
 ############################################# Generate the OsmChange files ############################
 ####################################################################################################### 
-newnode_df = filter(os_sf, distance>set_units(max_snap_distance, "m"))
+
+# Try to figure out what is a 'new node', and what is a 'snap/merge' node...
+# We have a number of factors to consider:
+#
+# - If the snap distance is larger than the threshold then they are new nodes
+# - if the snap distance is below the threshold, BUT, we have failed to match
+#   the OS name to the OSM name AND the OSM name is not 'NA', then this moved
+#   into being a new node
+# - If we have qualified on the snap distance and the name matching BUT the
+#   osm ref looks like flush bracket number AND we fail to match that to any
+#   FB we matched from the OSB data... then this will be a new node
+#
+#  And after all that, we should end up with a list of new and a list of merge nodes
+#  Phew.
+
+# Process the nodes!
+{
+	message(" Filtering new nodes according to name and FB matches")
+	# presume all are new nodes by default
+	os_sf$new_node = TRUE
+
+	for(i in 1:nrow(os_sf) ) {
+		r <- os_sf[i,]
+
+		### Is the snap too big?
+		if( r$distance > set_units(max_snap_distance, "m") ) {
+			# Is a new node - nothing to do here!
+		} else {
+			# Extract the matching OSM row
+			osm_r <- osm_sf[r$nearest_osm_id,]
+
+			### Check if we have matched the OS and OSM names...
+			if( !is.na(osm_r$name) ) {
+				if( r$osm_name_match != TRUE ) {
+					# Names did not match - leave it as new node
+				} else {
+					# We have a name match and are in distance
+					# Now check if we have a pair of FB numbers, and see if they can be
+					# matched?
+					osb_r <- os_b_sf[r$nearest_osb_id,]
+
+					osm_fb <- osm_r$ref
+					osb_fb <- osb_r$FB
+					if( !is.na(osm_fb) && !is.na(osb_fb) ) {
+						# Is the osb fb string a substring of the osm ref?
+						if( grepl(tolower(osb_fb), tolower(osm_fb), fixed=TRUE) == TRUE ) {
+							# We got a match?
+							os_sf[i,]$new_node = FALSE
+						} else {
+							# We failed the ref/FB check - so implicitly this stays as a
+							# new node
+						}
+					} else {
+						# OK, so one or the other of the OSM ref or OSB FB was 'NA' - so we can
+						# still merge these...
+						os_sf[i,]$new_node = FALSE
+					}
+				}
+			}
+		}
+	}
+}
+
+newnode_df = filter(os_sf, new_node == TRUE)
+snappable_df = filter(os_sf, new_node == FALSE)
+num_newnodes = nrow(filter(os_sf, new_node == TRUE))
+num_mergenodes = nrow(filter(os_sf, new_node == FALSE))
+message(" We end up with ", num_mergenodes, " merge nodes, and ", num_newnodes," newnodes")
 
 if( generate_osc ) {
 	# File of 'edits' - anything that is 'snappable'
@@ -689,6 +756,7 @@ if( generate_osc ) {
 	)
 	root = newXMLNode("osmChange", attrs=attrs, doc=edit_doc)
 	
+	############################ MERGE NODES ###################################
 	for(i in 1:nrow(snappable_df)) {
 		os_row <- snappable_df[i,]
 		mod = newXMLNode("modify", parent=root)
@@ -707,31 +775,71 @@ if( generate_osc ) {
 			lon=as.double(os_coords[,"X"])
 			)
 		node = newXMLNode("node", attrs=attrs, parent=mod)
-		attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
-		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="lon", v=as.double(os_coords[,"X"]))
-		newXMLNode("tag", attrs=attrs, parent=node)
-		# Let's, for now, drop the OS New.Name in - we might need to be smarter later on for
-		# OSM entries that already have some tagging (in 'ref' and 'tpuk_ref' perhaps)
-	
-		osm_row <- osm_sf[os_row$nearest_osm_id,]
-		if( trim_dataset ) message("  > Snap OS ", os_row$New.Name, " to OSM ", osm_row$osm_id, " ", osm_row$name)
-		if( !is.na(osm_row$ref) ) {
-			if( trim_dataset ) message("  >   REFS: OS <", os_row$New.Name, "> <", os_row$STATION.NAME, "> OSM <", osm_row$ref, ">")
-		} else {
-			if( trim_dataset ) message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
-		}
-		# Let's try to make a comment?
-		attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
-		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="OS_new_name", v=os_row$New.Name)
-		newXMLNode("tag", attrs=attrs, parent=node)
+
+		# Add comments describing what we know
 		cmt = paste(sep=" ", "OS Station Name", os_row$STATION.NAME, "OS New Name", os_row$New.Name)
 		newXMLCommentNode(cmt, parent=node)
 		b = snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
 		cmt = paste(sep=" ", "Move bearing", b, "degrees for", os_row$distance, "m")
 		newXMLCommentNode(cmt, parent=node)
 	
+		#  attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
+		#  newXMLNode("tag", attrs=attrs, parent=node)
+		#  attrs = c( k="lon", v=as.double(os_coords[,"X"]))
+		#  newXMLNode("tag", attrs=attrs, parent=node)
+
+		#  attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
+		#  newXMLNode("tag", attrs=attrs, parent=node)
+		#  attrs = c( k="OS_new_name", v=os_row$New.Name)
+		#  newXMLNode("tag", attrs=attrs, parent=node)
+
+		osm_row <- osm_sf[os_row$nearest_osm_id,]
+		osb_row <- os_b_sf[os_row$nearest_osb_id,]
+
+		if( trim_dataset )
+			message("  > Snap OS ", os_row$New.Name, " to OSM ", osm_row$osm_id, " ", osm_row$name)
+
+		if( is.na(osm_row$name) ) {
+			# We can fill the name slot
+			cmt = paste(sep=" ", "Add new name:", os_row$New.Name)
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="name", v=os_row$New.Name)
+			newXMLNode("tag", attrs=attrs, parent=node)
+		}
+
+		if( is.na(osm_row$ref) ) {
+			# No ref - do we have a new FB?
+			if( !is.na(osb_row$FB) ) {
+				# We have a new FB to add - make comment and create field
+				cmt = paste(sep=" ", "Add new FB ref:", osb_row$FB)
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="ref", v=osb_row$FB)
+				newXMLNode("tag", attrs=attrs, parent=node)
+			}
+
+			if( trim_dataset )
+				message("  >   REFS: OS <", os_row$New.Name, "> <", os_row$STATION.NAME, "> OSM <", osm_row$ref, ">")
+		} else {
+			if( trim_dataset )
+				message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
+		}
+
+		if( is.na(osm_row$ele) ) {
+			# We can fill the ele slot
+			cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="ele", v=os_row$HEIGHT)
+			newXMLNode("tag", attrs=attrs, parent=node)
+		}
+
+		if( is.na(osm_row$survey_point_structure) ) {
+			# We can fill the structure slot
+			cmt = paste(sep=" ", "Add new structure: pillar")
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="survey_point:structure", v="pillar")
+			newXMLNode("tag", attrs=attrs, parent=node)
+		}
+
 		# And store that bearing for later
 		snappable_df[i,]$bearing <- b
 	}
@@ -749,6 +857,7 @@ if( generate_osc ) {
 	
 	nodecount = -1
 	
+	############################ NEW NODES ###################################
 	for(i in 1:nrow(newnode_df)) {
 		os_row <- newnode_df[i,]
 	
