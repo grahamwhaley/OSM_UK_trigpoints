@@ -129,13 +129,22 @@ which makes correlating them and doing 'clean updates' potentially quite difficu
 
 ## Generating output
 
-Ultimately, the goal is to import all the pillar trigpoints into OSM. With somewhere in the region
-of 6000 points, that would be quite an undertaking to do by hand. Ideally we'll be able to automate
-some of the process.
+Ultimately, the goal is to have the OS data 'matching' the OSM nodes, within reason.
+With somewhere in the region of 6000 points, that would be quite an undertaking to do by hand.
+Ideally we'll be able to automate some of the process. Given the OS data is not going to change
+(at least not in any significant way - there will be no new OS trigpoints, and they only vanish
+if they are vandalised or fall into the sea etc.), then this should hopefully be a 'one time' process.
 
-To that end, the code currently generates two
-[OsmChange (OSC)](https://wiki.openstreetmap.org/wiki/OsmChange) files. One contains all the
-proposed edits to existing OSM nodes, and the other all the proposed new nodes.
+To that end, the code currently generates four
+[OsmChange (OSC)](https://wiki.openstreetmap.org/wiki/OsmChange) files.
+
+  1. new nodes - OS pillars that are not near any OSM nodes
+  2. 'good' nodes - where the OS data matches near enough an existing OSM node - nothing to do!
+  3. 'updatable' nodes - where an OS pillar 'matches' an OSM node, but we can update or add to it
+  4. 'reviewable' nodes - where an OS pillar is near an OSM node, but they do not match - so we should
+     probably do a manual check of why, and see if there are any corrections to be done
+
+See the [**Output examples**](#Output-examples) section below for example OSC XML output.
 
 ## What do the results 'look like'
 
@@ -161,6 +170,117 @@ Here is a quick overview of the sort of data that is showing:
   - Orange dots are deleted points. These become interesting when they overlay other points, showing
     that, for OS points, the point may have been udpated/replaced, and for OSM points, that the OSM
 	point might be referencing a destroyed OS point (and also thus may be a candidate for review).
+
+## Output examples
+
+Here are some XML snippets extracted from the `OSC` change files to give an example of the current
+state of output generated:
+
+### New nodes
+
+An example of a completely new OSM trigpoint node. Here we can see there was no OSM trigpoint
+within >12km.
+
+```xml
+  <create>
+    <node id="-1" changeset="1" version="1" lat="56.8704163192219" lon="-4.19885500044844">
+      <!--OS Name A' Bhuideaneach Bheag OS New Name NN96S001-->
+      <tag k="name" v="A' Bhuideaneach Bheag"/>
+      <tag k="ele" v="936.345"/>
+      <tag k="survey_point:structure" v="pillar"/>
+      <tag k="ref" v="S9394"/>
+      <!-- Distance to nearest OSM node 5983922717 is 12777.7049454148 m-->
+    </node>
+  </create>
+```
+
+### Review nodes
+
+Nodes that could do with human review. There are a number of different examples. We can see:
+
+  - An OS node 2.7m from an OSM node, but the names and FBs do not match.
+  - An OS node 4.7m from an OSM node. The OSM node has no ref, but the names are different
+  - An OS node 2.6m from an OSM node that have matching names, but the FBs don't match
+
+
+```xml
+  <create>
+    <node id="8542056676" changeset="1" version="1" lat="53.3114462" lon="-1.7306529">
+      <!--OS Name Abney Moor OS New Name SK39S011-->
+      <!--OS node co-ords are 53.311422770863 , -1.73066534075847-->
+      <!--That is 2.73316732798893 from its nearest OSM node-->
+      <!--OS node called [ Abney Moor ] vs OSM [ Durham Edge ]-->
+      <!--OSM ref is: S4190-->
+      <!--OS FB is S4148-->
+    </node>
+  </create>
+  <create>
+    <node id="538839570" changeset="1" version="1" lat="51.9931998" lon="-2.7210463">
+      <!--OS Name Aconbury Camp OS New Name SO52S001-->
+      <!--OS node co-ords are 51.99320626526 , -2.72111407577948-->
+      <!--That is 4.69589112174154 from its nearest OSM node-->
+      <!--OS node called [ Aconbury Camp ] vs OSM [ Aconbury Hill ]-->
+      <!--OSM node has no ref-->
+      <!--OS FB is S6311-->
+    </node>
+  </create>
+  <create>
+    <node id="13530060503" changeset="1" version="1" lat="52.5847839" lon="-0.8223651">
+      <!--OS Name Allexton OS New Name SP69T001-->
+      <!--OS node co-ords are 52.5847711561337 , -0.822397328061124-->
+      <!--That is 2.59786426800517 from its nearest OSM node-->
+      <!--OS node called [ Allexton ] vs OSM [ Allexton ]-->
+      <!--OSM ref is: S5194-->
+      <!--OS FB is S4849-->
+    </node>
+  </create>
+```
+
+### Good nodes
+
+Here we see an example of an OSM and OS node closely matching on all fields, and has thus
+been classified as 'good' already.
+
+Long term I suspect it would be nice to have one of the tags (probably a new tag) to be a strong
+indicator that the node has been checked or created against the OS data - possibly the `source`
+tag or a new `name:OS` type tag etc. That will greatly aid the automatic detection of nodes that
+do not need further checking in the future.
+
+```xml
+  <create>
+    <node id="448899243" changeset="1" version="1" lat="53.09458" lon="-1.562629">
+      <!--Lat: OSM: 53.09458 OS 53.0945790054199-->
+      <!--Lon: OSM: -1.562629 OS -1.56263314573495-->
+      <!--Separation distance: 0.298093794926768 m-->
+      <!--Name: OSM: Bolehill East OS: Bolehill East-->
+      <!--Ele: OSM: 322.350 OS: 322.35-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S1716 OS: S1716-->
+    </node>
+  </create>
+```
+
+### Edit nodes
+
+An example of an edit node, where we see many fields are already set in the OSM node, but we
+can adjust the location 8m to match the OS coordinates, and also add the FB data into the ref
+field.
+
+```xml
+  <modify>
+    <node id="3491677765" changeset="1" version="1" lat="54.2138644764761" lon="-3.15863523070798">
+      <!--OS Name Bank House Moor OS New Name SD47S001-->
+      <!--Move bearing 177.448040032893 degrees for 8.00544646826026 m-->
+      <!-- from lat: 54.2139364 lon: -3.1586407-->
+      <!--Name field already set: Bank House Moor-->
+      <!--Add new FB ref: S5385-->
+      <tag k="ref" v="S5385"/>
+      <!--ele field already set: 310-->
+      <!--Add new structure: pillar-->
+      <tag k="survey_point:structure" v="pillar"/>
+    </node>
+  </modify>
+```
 
 ## More technical details
 
@@ -427,4 +547,10 @@ OSM wiki etc.:
   - At some point add descriptions of the generated data files here - right now you will have to stare
     hard to understand what you are getting out of the scripts.
   - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere
+  - Accuracy and Precison - we should work out how precise the co-ordinates we are getting from the
+    OS and OSB are, and at least note that - and probably round the data to a smaller number of decimal
+	points when we are generating XML. We don't want to be representing a false accuracy that does
+	not exist. We also need to take this into account when comparing the positions of nodes when
+	looking for 'existing good matches'.
+	[This wiki page](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates) is useful.
 

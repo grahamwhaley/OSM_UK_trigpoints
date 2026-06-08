@@ -21,8 +21,12 @@ library(geosphere)
 library(stringdist)
 library(osbng)
 
-trim_dataset = 1	#Geographically trim down the data to aid development and analysis
+trim_dataset = 0	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
+
+max_snap_distance = set_units(15, "m")	#How near a neighbour will we consider to be 'the same'
+min_snap_distance = set_units(1	,"m")   #At what distance do we not bother to 'snap' co-ordinates?
+osb_max_distance = set_units(15, "m")   #And test for OSB neighbour matching
 
 ####################################################################################################### 
 ###################################### Global data type things ###################################
@@ -431,13 +435,6 @@ if( 1 ) {
 }
 
 
-# Make a semi-random guess about how far away we might find an OSM point to an OS point that
-# are theoretically the same thing, so we can/should 'snap' the OSM one to the correct OS position?
-# 
-# Examining the data it seems there are quite a lot of matching points <15m, but not that many above
-# that - so, snap anything up to 10m to the OS datapoint...
-max_snap_distance = 15
-
 ####################################################################################################### 
 ############################################# Find nearest OSM neighbour for each OS ##################
 ####################################################################################################### 
@@ -489,6 +486,7 @@ message(" Longest snap distance (from OS point to OS benchmark nearest neighbour
 ####################################################################################################### 
 ## OK, now iterate the list of OS points and check how well, or not, their chose OSM neighbours
 dist_df <- data.frame(distances=as.vector(nearest_dist))
+dist_df$distances <- set_units(dist_df$distances, "m")
 snappable <- nrow(filter(dist_df, distances<max_snap_distance))
 un_snappable = nrow(dist_df) - snappable
 message(" Snappable points < ", max_snap_distance, "m : ", snappable, ". Unsnappable (new) points: ", un_snappable)
@@ -506,7 +504,6 @@ osm_total_points = nrow(osm_sf)
 ############################## Try to match OS trigpoints to OS benchmark flush bracket data ##########
 ####################################################################################################### 
 message("Trying to match OS trigpoints to OS benchmarks and OSM trigpoints")
-osb_max_distance = set_units(15, "m")
 
 os_sf$osb_name_match = FALSE
 os_sf$osm_name_match = FALSE
@@ -597,14 +594,14 @@ if(1) {
 	
 	# Plot a distribution of our nearest neighbour distances to help guide 'match and snap'
 	# only plot things within 40km - removes outliers and makes the graph scale nicer.
-	dist_df <- filter(dist_df, distances<40000)
+	dist_df <- filter(dist_df, distances<set_units(40000, "m"))
 	p_distr = ggplot(data = dist_df) +
 	  geom_histogram((aes(distances)))
 	
 	ggsave("/data/OS_to_OSM_distance.jpg", plot=p_distr)
 	
 	## And zoom in - remove any distance larger than 100m
-	dist_df <- filter(dist_df, distances<100)
+	dist_df <- filter(dist_df, distances<set_units(100, "m"))
 	
 	p_distr = ggplot(data = dist_df) +
 	  geom_histogram((aes(distances)))
@@ -691,6 +688,14 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 #
 #  And after all that, we should end up with a list of new and a list of merge nodes
 #  Phew.
+#
+# And then... it occurs to me we should end up with *four* different categories:
+#
+# - new nodes - OS pillars that are not near any OSM nodes
+# - 'good' nodes - where the OS data matches near enough an existing OSM node - nothing to do!
+# - 'updatable' nodes - where an OS pillar 'matches' an OSM node, but we can update or add to it
+# - 'reviewable' nodes - where an OS pillar is near an OSM node, but they do not match - so we should
+#    probably do a manual check of why, and see if there are any corrections to be done
 
 # Process the nodes!
 {
@@ -740,25 +745,252 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 	}
 }
 
-newnode_df = filter(os_sf, new_node == TRUE)
-snappable_df = filter(os_sf, new_node == FALSE)
-num_newnodes = nrow(filter(os_sf, new_node == TRUE))
-num_mergenodes = nrow(filter(os_sf, new_node == FALSE))
-message(" We end up with ", num_mergenodes, " merge nodes, and ", num_newnodes," newnodes")
 
 if( generate_osc ) {
-	# File of 'edits' - anything that is 'snappable'
-	message(">>> Generate snappable edit OSC file")
-	edit_doc = newXMLDoc()
+	# We have four categories to work out...
+	#
+	# 'good' nodes - good match between OS and OSM, and small snap distance
+	# 'edit' nodes - good match between OS and OSM, and snappable distance
+	# 'new' nodes  - no OSM match for OS trigpoint, so create a new OSM node
+	# 'review' nodes - good match between OS and OSM position, but failed other matches,
+	#   so qualify for a human review to see what's going on...
+
+	# Now filter them....
+
+	# The easy one - we've already done the processing for these - they are either too far
+	#  away from a neighbour or they failed some sanity checks. But the ones that failed
+	#  the sanity checks will fall into the 'review' category, so filter here on distance.
+	newnode_df = filter(os_sf, new_node == TRUE & distance > max_snap_distance)
+
+	# If we have marked a node as new, but it is within snappable distance, then it must
+	#  have failed some sanity checks - so give it a human review
+	reviewnode_df = filter(os_sf, new_node == TRUE & distance <= max_snap_distance)
+
+	# If this is not a new node (so, it is near and passed sanity checks), but it is very
+	# near its neighbour, then consider it already 'OK', and thus leave it alone? But, tbh,
+	# they could do with human review in the first instance, and we could probably code it up
+	# fairly easily to add any missing information like the FB numbers or elevations.
+	# So, FIXME, and make it add any extra fields that are missing!
+	goodnode_df = filter(os_sf, new_node == FALSE & distance <= min_snap_distance)
+
+	# And that leaves us with nodes that are not new, but are not very near their neighbours
+	#  and have passed their sanity checks
+	editnode_df = filter(os_sf, new_node == FALSE & distance <= max_snap_distance )
+	editnode_df = filter(editnode_df, distance >= min_snap_distance )
+
+	num_new_nodes = nrow(newnode_df)
+	num_review_nodes = nrow(reviewnode_df)
+	num_good_nodes = nrow(goodnode_df)
+	num_edit_nodes = nrow(editnode_df)
+
+	message("Node count: New: ", num_new_nodes,
+		" Review: ", num_review_nodes,
+		" Good: ", num_good_nodes,
+		" Edit: ", num_edit_nodes
+		)
+	message(" That should add up to (total)",
+		num_new_nodes + num_review_nodes + num_good_nodes + num_edit_nodes,
+		" == (nrow OS) ", nrow(os_sf) )
+
+	############################ NEW NODES ###################################
+	# Now generate the new elements XML
+	message(">>> Generate new node OSC file")
+	newnode_doc = newXMLDoc()
 	attrs = c(
 		version="0.6",
 		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
 	)
-	root = newXMLNode("osmChange", attrs=attrs, doc=edit_doc)
+	root = newXMLNode("osmChange", attrs=attrs, doc=newnode_doc)
+
+	cmt = paste(sep=" ", "OSM new Nodes. Generated on:", Sys.Date())
+	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", nrow(newnode_df), "nodes to process")
+	newXMLCommentNode(cmt, parent=root)
+
+	for(i in 1:nrow(newnode_df)) {
+		os_row <- newnode_df[i,]
+		osm_row <- osm_sf[os_row$nearest_osm_id,]
+		osb_row <- os_b_sf[os_row$nearest_osb_id,]
 	
-	############################ MERGE NODES ###################################
-	for(i in 1:nrow(snappable_df)) {
-		os_row <- snappable_df[i,]
+		mod = newXMLNode("create", parent=root)
+		os_coords=st_coordinates(os_row$geometry)
+		attrs = c(
+			id=-i,	#New node
+			changeset="1",		#FIXME - what should this be??
+			version="1",		#FIXME - what should this be??
+			lat=as.double(os_coords[,"Y"]),
+			lon=as.double(os_coords[,"X"])
+			)
+		node = newXMLNode("node", attrs=attrs, parent=mod)
+
+		cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
+		newXMLCommentNode(cmt, parent=node)
+
+		# As this is a new node, we can add all our trigpoint defined fields
+		attrs = c( k="name", v=os_row$Trig.Name)
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="ele", v=os_row$HEIGHT)
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="survey_point:structure", v="pillar")
+		newXMLNode("tag", attrs=attrs, parent=node)
+
+		if( !is.na(osb_row$FB) ) {
+			attrs = c( k="ref", v=osb_row$FB)
+			newXMLNode("tag", attrs=attrs, parent=node)
+		} else {
+			cmt = paste(sep=" ", "No Flush Bracket name to add as a ref")
+			newXMLCommentNode(cmt, parent=node)
+		}
+
+		cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", os_row$distance, "m")
+		newXMLCommentNode(cmt, parent=node)
+	}
+	saveXML(newnode_doc, file="newnodes.osc")
+
+	############################ REVIEW NODES ###################################
+	# Now generate the new elements XML
+	message(">>> Generate review node OSC file")
+	reviewnode_doc = newXMLDoc()
+	attrs = c(
+		version="0.6",
+		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
+	)
+	root = newXMLNode("osmChange", attrs=attrs, doc=reviewnode_doc)
+
+	cmt = paste(sep=" ", "OSM Nodes for potential review. Generated on:", Sys.Date())
+	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", nrow(reviewnode_df), "nodes to process")
+	newXMLCommentNode(cmt, parent=root)
+
+	for(i in 1:nrow(reviewnode_df)) {
+		os_row <- reviewnode_df[i,]
+		osm_row <- osm_sf[os_row$nearest_osm_id,]
+		osb_row <- os_b_sf[os_row$nearest_osb_id,]
+	
+		# Let's try to make a comment?
+		mod = newXMLNode("create", parent=root)
+		osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
+		os_coords=st_coordinates(os_row$geometry)
+		attrs = c(
+			id=osm_sf[os_row$nearest_osm_id,]$osm_id,
+			changeset="1",		#FIXME - what should this be??
+			version="1",		#FIXME - what should this be??
+			# We could use either OS or OSM co-ords here. Using the OSM ones should
+			# show the point to review directly on top of the one in the OSM layer you are
+			# comparing against. Lets at least drop a comment about where the new coords
+			# might be...
+			lat=as.double(osm_coords[,"Y"]),
+			lon=as.double(osm_coords[,"X"])
+			)
+		node = newXMLNode("node", attrs=attrs, parent=mod)
+
+		cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
+		newXMLCommentNode(cmt, parent=node)
+
+		# Add comments describing what the OS co-ords are
+		cmt = paste(sep=" ", "OS node co-ords are", as.double(os_coords[,"Y"]),
+			",", as.double(os_coords[,"X"]) )
+		newXMLCommentNode(cmt, parent=node)
+		cmt = paste(sep=" ", "That is", os_row$distance, "from its nearest OSM node")
+		newXMLCommentNode(cmt, parent=node)
+		if( !is.na(osm_row$name) ) {
+			cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "] vs OSM [", osm_row$name, "]")
+		} else {
+			cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "]. OSM node has no name") 
+		}
+		newXMLCommentNode(cmt, parent=node)
+
+		if (!is.na(osm_row$ref) ) {
+			cmt = paste(sep=" ", "OSM ref is:", osm_row$ref)
+		} else {
+			cmt = paste(sep=" ", "OSM node has no ref")
+		}
+		newXMLCommentNode(cmt, parent=node)
+
+		if (!is.na(osb_row$FB) ) {
+			cmt = paste(sep=" ", "OS FB is", osb_row$FB)
+		} else {
+			cmt = paste(sep=" ", "OS node has no FB")
+		}
+		newXMLCommentNode(cmt, parent=node)
+	}
+	saveXML(reviewnode_doc, file="reviewnodes.osc")
+
+	############################ GOOD NODES ###################################
+	# Now generate the new elements XML
+	message(">>> Generate good node OSC file")
+	goodnode_doc = newXMLDoc()
+	attrs = c(
+		version="0.6",
+		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
+	)
+	root = newXMLNode("osmChange", attrs=attrs, doc=goodnode_doc)
+
+	cmt = paste(sep=" ", "OSM Nodes that already look 'good' on OSM. Generated on:", Sys.Date())
+	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", nrow(goodnode_df), "nodes to process")
+	newXMLCommentNode(cmt, parent=root)
+
+	if( nrow(goodnode_df) != 0 ) {
+		for(i in 1:nrow(goodnode_df)) {
+			os_row <- goodnode_df[i,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+
+			mod = newXMLNode("create", parent=root)
+			os_coords=st_coordinates(os_row$geometry)
+			osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
+			attrs = c(
+				id=osm_row$osm_id,	#Actual OSM node
+				changeset="1",		#FIXME - what should this be??
+				version="1",		#FIXME - what should this be??
+				# Use OSM co-ords, as we are not intending to edit this OSM node.
+				lat=as.double(osm_coords[,"Y"]),
+				lon=as.double(osm_coords[,"X"])
+				)
+			node = newXMLNode("node", attrs=attrs, parent=mod)
+
+			cmt = paste(sep=" ", "Lat: OSM:", as.double(osm_coords[,"Y"]), "OS",
+				as.double(os_coords[,"Y"]) )
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "Lon: OSM:", as.double(osm_coords[,"X"]), "OS",
+				as.double(os_coords[,"X"]) )
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "Separation distance:", os_row$distance, "m")
+			newXMLCommentNode(cmt, parent=node)
+
+			cmt = paste(sep=" ", "Name: OSM:", osm_row$name, "OS:", os_row$Trig.Name)
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "Ele: OSM:", osm_row$ele, "OS:", os_row$HEIGHT)
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "Type: OSM:", osm_row$survey_point,
+				"/", osm_row$survey_point_structure,
+				"OS:", os_row$TYPE.OF.MARK)
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS:", osb_row$FB)
+			newXMLCommentNode(cmt, parent=node)
+		}
+	}
+
+	saveXML(goodnode_doc, file="goodnodes.osc")
+
+	############################ EDIT NODES ###################################
+	# Now generate the new elements XML
+	message(">>> Generate edit node OSC file")
+	editnode_doc = newXMLDoc()
+	attrs = c(
+		version="0.6",
+		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
+	)
+	root = newXMLNode("osmChange", attrs=attrs, doc=editnode_doc)
+
+	cmt = paste(sep=" ", "OSM Nodes for potential edit/merge. Generated on:", Sys.Date())
+	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", nrow(editnode_df), "nodes to process")
+	newXMLCommentNode(cmt, parent=root)
+
+	for(i in 1:nrow(editnode_df)) {
+		os_row <- editnode_df[i,]
 		mod = newXMLNode("modify", parent=root)
 		osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
 		os_coords=st_coordinates(os_row$geometry)
@@ -777,10 +1009,13 @@ if( generate_osc ) {
 		node = newXMLNode("node", attrs=attrs, parent=mod)
 
 		# Add comments describing what we know
-		cmt = paste(sep=" ", "OS Station Name", os_row$STATION.NAME, "OS New Name", os_row$New.Name)
+		cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
 		newXMLCommentNode(cmt, parent=node)
 		b = snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
 		cmt = paste(sep=" ", "Move bearing", b, "degrees for", os_row$distance, "m")
+		newXMLCommentNode(cmt, parent=node)
+		cmt = paste(sep=" ", " from lat:", as.double(osm_coords[,"Y"]),
+			"lon:", as.double(osm_coords[,"X"]) )
 		newXMLCommentNode(cmt, parent=node)
 	
 		#  attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
@@ -796,15 +1031,15 @@ if( generate_osc ) {
 		osm_row <- osm_sf[os_row$nearest_osm_id,]
 		osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
-		if( trim_dataset )
-			message("  > Snap OS ", os_row$New.Name, " to OSM ", osm_row$osm_id, " ", osm_row$name)
-
 		if( is.na(osm_row$name) ) {
 			# We can fill the name slot
 			cmt = paste(sep=" ", "Add new name:", os_row$New.Name)
 			newXMLCommentNode(cmt, parent=node)
 			attrs = c( k="name", v=os_row$New.Name)
 			newXMLNode("tag", attrs=attrs, parent=node)
+		} else {
+			cmt = paste(sep=" ", "Name field already set:", osm_row$name)
+			newXMLCommentNode(cmt, parent=node)
 		}
 
 		if( is.na(osm_row$ref) ) {
@@ -816,12 +1051,9 @@ if( generate_osc ) {
 				attrs = c( k="ref", v=osb_row$FB)
 				newXMLNode("tag", attrs=attrs, parent=node)
 			}
-
-			if( trim_dataset )
-				message("  >   REFS: OS <", os_row$New.Name, "> <", os_row$STATION.NAME, "> OSM <", osm_row$ref, ">")
 		} else {
-			if( trim_dataset )
-				message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
+			cmt = paste(sep=" ", "Ref field already set:", osm_row$ref)
+			newXMLCommentNode(cmt, parent=node)
 		}
 
 		if( is.na(osm_row$ele) ) {
@@ -830,70 +1062,34 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 			attrs = c( k="ele", v=os_row$HEIGHT)
 			newXMLNode("tag", attrs=attrs, parent=node)
+		} else {
+			cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
+			newXMLCommentNode(cmt, parent=node)
 		}
 
-		if( is.na(osm_row$survey_point_structure) ) {
+		if( is.na(osm_row$survey_point_structure) && is.na(osm_row$survey_point) ) {
 			# We can fill the structure slot
 			cmt = paste(sep=" ", "Add new structure: pillar")
 			newXMLCommentNode(cmt, parent=node)
 			attrs = c( k="survey_point:structure", v="pillar")
 			newXMLNode("tag", attrs=attrs, parent=node)
+		} else {
+			cmt = paste(sep=" ", "survey_point[_structure] field already set:",
+				osm_row$survey_point,
+				"/", osm_row$survey_point_structure)
+			newXMLCommentNode(cmt, parent=node)
 		}
 
 		# And store that bearing for later
 		snappable_df[i,]$bearing <- b
 	}
 	
-	saveXML(edit_doc, file="edits.osc")
+	saveXML(editnode_doc, file="editnodes.osc")
 	
-	# Now generate the new elements XML
-	message(">>> Generate new node OSC file")
-	newnode_doc = newXMLDoc()
-	attrs = c(
-		version="0.6",
-		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
-	)
-	root = newXMLNode("osmChange", attrs=attrs, doc=newnode_doc)
-	
-	nodecount = -1
-	
-	############################ NEW NODES ###################################
-	for(i in 1:nrow(newnode_df)) {
-		os_row <- newnode_df[i,]
-	
-		mod = newXMLNode("create", parent=root)
-		os_coords=st_coordinates(os_row$geometry)
-		attrs = c(
-			id=nodecount,	#New node
-			changeset="1",		#FIXME - what should this be??
-			version="1",		#FIXME - what should this be??
-			lat=as.double(os_coords[,"Y"]),
-			lon=as.double(os_coords[,"X"])
-			)
-		node = newXMLNode("node", attrs=attrs, parent=mod)
-		attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
-		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="lon", v=as.double(os_coords[,"X"]))
-		newXMLNode("tag", attrs=attrs, parent=node)
-		# Let's, for now, drop the OS New.Name in - we might need to be smarter later on for
-		# OSM entries that already have some tagging (in 'ref' and 'tpuk_ref' perhaps)
-	
-		if( trim_dataset ) message("  > New OS ", os_row$New.Name)
-		if( trim_dataset ) message("  >   REFS: OS only <", os_row$New.Name, "> <", os_row$STATION.NAME, ">")
-		# Let's try to make a comment?
-		attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
-		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="OS_new_name", v=os_row$New.Name)
-		newXMLNode("tag", attrs=attrs, parent=node)
-		cmt = paste(sep=" ", "OS Station Name", os_row$STATION.NAME, "OS New Name", os_row$New.Name)
-		newXMLCommentNode(cmt, parent=node)
-	
-		nodecount <- nodecount - 1
-	}
-
-	saveXML(newnode_doc, file="newnodes.osc")
 } else {
 	message(" Skipping OSC file generation")
-	message("  Found ", nrow(snappable_df), " potentially snappable (updatable) OSM trigpoints")
-	message("  Found ", nrow(newnode_df), " potentially new OSM trigpoints")
+	message("  Found ", nrow(newnode_df), " New OSM trigpoints")
+	message("  Found ", nrow(reviewnode_df), " Reviewable OSM trigpoints")
+	message("  Found ", nrow(goodnode_df), " Good (already matched) OSM trigpoints")
+	message("  Found ", nrow(editnode_df), " editable (snapable) OSM trigpoints")
 }
