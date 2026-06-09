@@ -452,7 +452,7 @@ $ ./dockershell.sh
 Before we can push any data to OSM we need to decide what data will go into what tags. This is also
 likely a key discussion with the community.
 
-If we extract all the tag key names from the list of `man_made=trig_point` nodes, count their frequency
+If we extract all the tag key names from the list of `man_made=survey_point` nodes, count their frequency
 and sort them we get 151 different keys!.
 
 There is an R script `osm_tags.R` in the R subdirectory you can use to generate this data, and a full
