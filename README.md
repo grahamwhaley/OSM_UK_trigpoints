@@ -56,12 +56,13 @@ We will also make use of the
 [OS Benchmark data](https://www.ordnancesurvey.co.uk/documents/resources/CompleteBenchMarkArchive.zip)
 as the trigpoint archive does **not** contain the
 [Flush Bracket](https://wiki.trigpointing.uk/Flush_Bracket)
-information, which ideally we will be adding to each OSM trigpoint entry. Sadly there is no easy to
+information, which ideally we will be adding to each OSM trigpoint entry - but the Benchmark file does
+contain Flush Bracket data.. Sadly there is no easy to
 use common index between the two OS datasets, but with a bit of 'fuzzing' we can extract a lot of
 useful data. Oh, and note, the Benchmark archive contains **half a million** entries. Luckily
 it is not too hard to extract just the trigpoints from that. We end up with 3957 trigpoint entries
 from that database. Yes, that is only about 2/3rds of the trigpoints compared with the OS trigpoint
-data. I have not yet investigated if the other 1/3rd of the data is in there but maybe does not
+data. I have not yet investigated if the other 1/3rd of the data is hiding in there but maybe does not
 conform the the `TP` marking scheme.
 
 Then you will also need the OSM data nodes that represent all current `trigpoints` in OSM.
@@ -69,7 +70,7 @@ I downloaded my data from [geofabrik.de](https://download.geofabrik.de/europe/un
 and used [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) to extract all entries with the tag
 `man_made=survey_point`. I got 2804 nodes from that export.
 
-After filtering out items where the `survery_point` and `survey_point_structure` tags indicate they
+After filtering out items where the `survery_point` and `survey_point:structure` tags indicate they
 are not pillars, we end up with 2558 OSM datapoints.
 
 In summary for the potential pillar datapoints we have then:
@@ -93,7 +94,7 @@ Here is a rough outline of how we process the data:
     - For the OS Benchmark data
 	  - Only keep entries that are marked with the `TP` indicator
     - For the OSM data
-	  - Filter out any item that specifically states in a `survey_point` or `survey_point_structure`
+	  - Filter out any item that specifically states in a `survey_point` or `survey_point:structure`
 	    tag that it is *not* a pillar - for instance, `bolt`, `beacon` etc.
   - Correlate the data
     - Calculate and record which OSM node is nearest to each OS trigpoint and how far away it is
@@ -110,11 +111,6 @@ Here is a rough outline of how we process the data:
     - If an OS pillar does not have an OSM node within 15m of it, mark that OS pillar data as a
 	  potentially new OSM node.
     
-There is more we can do here, but have not yet implemented. For instance:
-
-  - Check if the OSM node has a `ref` that looks like a Flush Bracket number, and correlate
-  - Similarly if we think the OSM node has a 'name'
-
 Sadly the OSM `man_made=survey_point` data is quite inconsistent in the use of tags and their contents,
 which makes correlating them and doing 'clean updates' potentially quite difficult.
 
@@ -129,7 +125,7 @@ which makes correlating them and doing 'clean updates' potentially quite difficu
 
 ## Generating output
 
-Ultimately, the goal is to have the OS data 'matching' the OSM nodes, within reason.
+Ultimately, the goal is to have OSM nodes matching the OS data, within reason.
 With somewhere in the region of 6000 points, that would be quite an undertaking to do by hand.
 Ideally we'll be able to automate some of the process. Given the OS data is not going to change
 (at least not in any significant way - there will be no new OS trigpoints, and they only vanish
@@ -138,9 +134,10 @@ if they are vandalised or fall into the sea etc.), then this should hopefully be
 To that end, the code currently generates four
 [OsmChange (OSC)](https://wiki.openstreetmap.org/wiki/OsmChange) files.
 
-  1. new nodes - OS pillars that are not near any OSM nodes
+  1. 'new nodes' - OS pillars that are not near any OSM nodes
   2. 'good' nodes - where the OS data matches near enough an existing OSM node - nothing to do!
-  3. 'updatable' nodes - where an OS pillar 'matches' an OSM node, but we can update or add to it
+  3. 'editable' nodes - where an OS pillar 'matches' an OSM node, but we can update or add to it
+     (position, FB ref, elevation etc.)
   4. 'reviewable' nodes - where an OS pillar is near an OSM node, but they do not match - so we should
      probably do a manual check of why, and see if there are any corrections to be done
 
@@ -161,15 +158,17 @@ subsequent filtering are working out.
 Here is a quick overview of the sort of data that is showing:
 
   - Any purple dots (snappable OS) with a blue fringe (OSM point behind it) shows there is potential
-    to update an OSM datapoint to match the OS datapoint
+    to update an OSM datapoint to match the OS datapoint, or the points already match.
   - Any green dot is showing an OS point that does not have any OSM point near enough to be considered
+    and thus is likely a new OSM node candidate
 	- the red line pointing to a blue dot is showing where the nearest OSM point is
   - Any blue dots are showing OSM data points that are not the nearest to any OS point (and thus
     are potential candidates for review? There do seem to be *many* historic trigpoints recorded
 	in the OSM data that potentially no longer physically exist)
-  - Orange dots are deleted points. These become interesting when they overlay other points, showing
-    that, for OS points, the point may have been udpated/replaced, and for OSM points, that the OSM
-	point might be referencing a destroyed OS point (and also thus may be a candidate for review).
+  - Orange dots are deleted OS trigpoints. These become interesting when they overlay other points,
+    showing that, when overlaying an OS point, the point may have been udpated/replaced, and when
+	overlaying OSM points, that the OSM point might be referencing a destroyed OS point (and also
+	thus may be a candidate for review).
 
 ## Output examples
 
@@ -241,10 +240,10 @@ Nodes that could do with human review. There are a number of different examples.
 Here we see an example of an OSM and OS node closely matching on all fields, and has thus
 been classified as 'good' already.
 
-Long term I suspect it would be nice to have one of the tags (probably a new tag) to be a strong
-indicator that the node has been checked or created against the OS data - possibly the `source`
-tag or a new `name:OS` type tag etc. That will greatly aid the automatic detection of nodes that
-do not need further checking in the future.
+Long term I suspect it would be nice to have one of the tags (probably a new or infrequently used
+tag) to be a strong indicator that the node has been checked or created against the OS data -
+possibly the `source` tag or a new `name:OS` type tag etc. That will greatly aid the automatic
+detection of nodes that do not need further checking in the future.
 
 ```xml
   <create>
@@ -263,7 +262,7 @@ do not need further checking in the future.
 ### Edit nodes
 
 An example of an edit node, where we see many fields are already set in the OSM node, but we
-can adjust the location 8m to match the OS coordinates, and also add the FB data into the ref
+can adjust the location by 8m to match the OS coordinates, and also add the FB data into the `ref`
 field.
 
 ```xml
@@ -336,7 +335,7 @@ That looks pretty uniform to me.
 The flush bracket data is buried in the `DESCRIPTION` field of the Benchmark data, along with other
 keywords and the name of the trigpoint. Here is an example:
 
->    `FL BR S1695 W FACE DANEBURY HILL TP'
+>    `FL BR S1695 W FACE DANEBURY HILL TP`
 
 OK, as described in the
 [Benchmark abbreviations document](https://www.ordnancesurvey.co.uk/documents/resources/OSBM-list-abbreviations.pdf)
@@ -349,9 +348,9 @@ a set of nine different regular expressions.
 
 We need some way to try and correlate or confirm (apart from just checking for identical co-ordinates)
 between the OS trigpoints and the OS benchmark data. Apart from the co-ordinates the only common
-entry is the 'name' of the trigpoint. Sadly this is not the uniform `STATION NAME` or `New Name` found
-in the trigpoint data, but is the rather more informal freeform `Trig Name` - i.e., the 'name of the
-place'.
+entry is the 'name' of the trigpoint. Sadly this is not the uniform `STATION NAME` or `New Name` fields
+found in the trigpoint data, but is the rather more informal freeform `Trig Name` - i.e., the 'name
+of the place'.
 
 The names are again buried in the OS benchmark `DESCRIPTION` field, but we can do a first pass search
 by checking for a substring match with the OS name. That gave us a pretty good set of results, but
@@ -384,27 +383,27 @@ The code is predominantly written in [`R`](https://www.r-project.org/about.html)
 data processing language I'm most familiar with - but, I am by no means an expert.
 
 The actual code is run inside a [Docker container](https://en.wikipedia.org/wiki/Docker_(software))
-because not only did I want to have to install and maintain an R installation on my main machine, but
+because not only did I not want to have to install and maintain an R installation on my main machine, but
 it gives us a bit of insulation against future library version changes, hopefully.
 
 First, you will need to obtain and install some data files
 
 #### Getting the data
 
-Before processing we need to obtain three sets of data, and one needs a little preperation:
+Before processing we need to obtain three sets of data, and one needs a little preparation:
 
 ##### OS Trigpoint data
 
 The OS Trigpoint data CSV file can be obtained
 [here](https://www.ordnancesurvey.co.uk/documents/gps/CompleteTrigArchive.zip)
 
-Unzip the archive and place the `CompleteTrigArchive.csv` file in the `data` folder.
+Unzip the archive and place the `CompleteTrigArchive.csv` file in the `R/data` folder.
 
 ##### OS Benchmark data
 The OS Benchmark data CSV file can be obtained
 [here](https://www.ordnancesurvey.co.uk/documents/resources/CompleteBenchMarkArchive.zip)
 
-Unzip the archive and place the `CompleteBenchMarkArchive.csv` file in the `data` folder.
+Unzip the archive and place the `CompleteBenchMarkArchive.csv` file in the `R/data` folder.
 
 ##### OSM `man_made=survey_point` data
 
@@ -417,7 +416,7 @@ tag. I did this by obtaining the complete `pbf` for the UK from
 $ osmosis --read-pbf ./great-britain-260527.osm.pbf --node-key-value keyValueList="man_made.survey_point" --write-xml gb_trigpoints.osm 
 ```
 
-Then copy that `gb_trigpoints.osm` file to the `data` folder.
+Then copy that `gb_trigpoints.osm` file to the `R/data` folder.
 
 ##### Finally, run the code
 
@@ -454,7 +453,7 @@ Before we can push any data to OSM we need to decide what data will go into what
 likely a key discussion with the community.
 
 If we extract all the tag key names from the list of `man_made=trig_point` nodes, count their frequency
-and sort them we get 151 different keys.
+and sort them we get 151 different keys!.
 
 There is an R script `osm_tags.R` in the R subdirectory you can use to generate this data, and a full
 table is provided in [TAGS.md](TAGS.md) to save you having to run it yourself.
@@ -485,9 +484,10 @@ Here are the top 20 entries:
 | munro | 38
 
 As we can see, there is a real mix of tags there. Let's look down the full table and see if there
-are any specific ones that might be specifically useful for our OS data updates:
+are any specific ones that might be useful for our OS data updates:
 
 | Position | tag key                     | frequency |
+| -------- | --------------------------- | --------- |
 | 18 |                                   type   | 40 |
 | 47 |                                desc:os    | 5 |
 | 50 |                                 ref:os    | 5 |
@@ -503,11 +503,11 @@ Well, that's probably a fair start. Now, let's consider what interesting data we
 'new' OS data based trigpoint:
 
 | Item | Description |
+| ---- | ----------- |
 | Name | There is both a 'station name' and a 'new name'. I'd suggest we use the 'new name' |
 | Height | Which should map well to one of the `ele` elevation OSM tags |
 | Type | In our case, 'pillar', but we should leave flexibility for other types later |
 | FB   | The flush bracket number if we have managed to associate it with this trigpoint |
-| Order | Such as Primary, Secondary, Tertiary and Fourth Order |
 
 ### tags proposal
 
@@ -516,12 +516,13 @@ I guess I should make a first pass stab at what we are going to store where. We'
 OSM nodes...
 
 | Item | tag | Notes |
-| Name | `name` | Use the *New.Name* from the OS Trigpoint csv |
-| Height | `ele` | Use the height from the OS Trigpoing csv in *metres* | 
+| ---- | --- | ----- |
+| Name | `name` | Use the `Trig.Name` from the OS Trigpoint csv |
+| Height | `ele` | Use the height from the OS Trigpoint csv in *metres* | 
 | Type | `survey_point:structure`=`pillar` | Seems to be common on OSM nodes |
 | FB   | `ref` | Seems to be predominant in existing data. |
-| Order | 
-| Source | 
+| Source | ??? | We should identify a tag to add an OS source reference |
+| `New.Name` | OS_ref | Store the unique OS trigpoint identifier in a unique OS tag - open to discussion! |
 
 
 ## Next Steps
@@ -531,13 +532,7 @@ The next thing to do is approach the
 and path forward. Then, given the whole idea is not shot down, and if we think we might be able
 to do an automatic import, we should study the
 [OSM import guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines)
-and write an [import plan](https://wiki.openstreetmap.org/wiki/Import/Plan_Outline). That will also
-force us to push the code forwards, as there are at least a couple of items left to enhance:
-
-  - We can use the name and flush bracket matching data to make better decisions about what is
-    an updatable existing OSM node and what is a new node.
-  - We have not discussed or formalised what data will go into what named tag - and how we will handle
-    this between updates or new nodes.
+and write an [import plan](https://wiki.openstreetmap.org/wiki/Import/Plan_Outline).
 
 ## TODO
 
@@ -545,8 +540,10 @@ A few thoughts on things left to do, apart from community discussions and docume
 OSM wiki etc.:
 
   - At some point add descriptions of the generated data files here - right now you will have to stare
-    hard to understand what you are getting out of the scripts.
-  - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere
+    hard to understand what you are getting out of the scripts. The XML files now have more comments,
+	but the graphs need improvements on labelling and axis.
+  - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere.
+	I have a feeling it is not, but we should stare harder to confirm.
   - Accuracy and Precison - we should work out how precise the co-ordinates we are getting from the
     OS and OSB are, and at least note that - and probably round the data to a smaller number of decimal
 	points when we are generating XML. We don't want to be representing a false accuracy that does
