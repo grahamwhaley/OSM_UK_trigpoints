@@ -409,6 +409,33 @@ for(i in 1:nrow(os_b_sf)) {
 message(" Found ", sum(!is.na(os_b_sf$FB)), " FB's. Got ", sum(is.na(os_b_sf$FB)), " empty entries")
 
 ####################################################################################################### 
+############################################# Drop OSM items that are not pillars #####################
+####################################################################################################### 
+
+message(" Dropping OSM non-pillar items")
+
+osm_sf$drop <- FALSE
+
+for(i in 1:nrow(osm_sf)) {
+	osm_row <- osm_sf[i,]
+	if( osm_row$survey_point %in% osm_drop_types ) {
+		osm_sf[i,]$drop <- TRUE
+	}
+
+	if( osm_row$survey_point_structure %in% osm_drop_types ) {
+		osm_sf[i,]$drop <- TRUE
+	}
+
+	# FIXME - if we find a 'not move' note, we should accomodate that in or processing
+	#if( grepl("not move", tolower(d$note)) ) {
+	#message(" >> PROTECTED")
+}
+	
+message(" Drop ", sum(osm_sf$drop == TRUE), " OSM nodes as not pillars")
+osm_sf <- filter(osm_sf, drop==FALSE)
+message(">>  After dropping drops we have ", nrow(osm_sf), " rows of osm")
+
+####################################################################################################### 
 ############################################# Drop deleted and non-pillar OS items  ###################
 ####################################################################################################### 
 # Drop OS items very early if we are not going to use them, as having them in the dataset
