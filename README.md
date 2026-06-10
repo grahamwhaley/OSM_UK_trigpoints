@@ -184,6 +184,7 @@ within >12km.
   <create>
     <node id="-1" changeset="1" version="1" lat="56.8704163192219" lon="-4.19885500044844">
       <!--OS Name A' Bhuideaneach Bheag OS New Name NN96S001-->
+      <tag k="man_made" v="survey_point"/>
       <tag k="name" v="A' Bhuideaneach Bheag"/>
       <tag k="ele" v="936.345"/>
       <tag k="survey_point:structure" v="pillar"/>

@@ -854,6 +854,8 @@ if( generate_osc ) {
 		newXMLCommentNode(cmt, parent=node)
 
 		# As this is a new node, we can add all our trigpoint defined fields
+		attrs = c( k="man_made", v="survey_point")
+		newXMLNode("tag", attrs=attrs, parent=node)
 		attrs = c( k="name", v=os_row$Trig.Name)
 		newXMLNode("tag", attrs=attrs, parent=node)
 		attrs = c( k="ele", v=os_row$HEIGHT)
