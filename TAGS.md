@@ -4,6 +4,7 @@ A table showing the keys and frequencies of occurence in OSM data to aid in disc
 around adding new or modifying existing keys during data updates.
 
 | Position | tag key                     | frequency |
+| -------- | --------------------------- | --------- |
 | 1 |                                  source | 1172 |
 | 2 |                                 natural  | 618 |
 | 3 |                                tpuk_ref  | 335 |
