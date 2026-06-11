@@ -208,7 +208,12 @@ OS_benchmark_csv <- read.csv(OS_benchmark_csv_file, header=TRUE,
 	colClasses=c("EASTING"="character", "NORTHING"="character") )
 message(" Benchmark file has ", nrow(OS_benchmark_csv), " entries")
 # Now, see if we can filter this down to just trigpoints, which have the abbrv 'TP'
-os_b_df <- subset(OS_benchmark_csv, grepl("TP$| TP ", OS_benchmark_csv$DESCRIPTION))
+# But... also appear with extra spacing, such as 'TP $' and ' T P [$]'
+# Staring at the acronym decoder for the dataset, 'P' on its own can stand for 'pillar/pole/post',
+# but there is nothing for 'T' on its own, so I'm currently taking forms of 'T P' to be a badly
+# typed version of 'TP'???
+# Note - " TP$" excludes accidentally picking up " GTP$" entries
+os_b_df <- subset(OS_benchmark_csv, grepl(" TP$| TP | T P ", OS_benchmark_csv$DESCRIPTION))
 message(" Benchmark trimmed to trigpoints has ", nrow(os_b_df), " entries")
 # Now let's translate their positions to WSG84
 
@@ -921,6 +926,8 @@ if( generate_osc ) {
 
 		if( !is.na(osb_row$FB) ) {
 			if( os_row$osb_distance <= osb_max_distance ) {
+				cmt = paste(sep=" ", "Nearest FB is at", os_row$osb_distance, "m")
+				newXMLCommentNode(cmt, parent=node)
 				attrs = c( k="ref", v=osb_row$FB)
 				newXMLNode("tag", attrs=attrs, parent=node)
 			} else {
@@ -1003,7 +1010,7 @@ if( generate_osc ) {
 
 		if (!is.na(osb_row$FB) ) {
 			if( os_row$osb_distance <= osb_max_distance ) {
-				cmt = paste(sep=" ", "OS FB is", osb_row$FB)
+				cmt = paste(sep=" ", "OS FB is", osb_row$FB, "at", os_row$osb_distance, "m away")
 			} else {
 				cmt = paste(sep=" ", "OS FB is too far away at", os_row$osb_distance, "m")
 			}

@@ -60,10 +60,10 @@ information, which ideally we will be adding to each OSM trigpoint entry - but t
 contain Flush Bracket data.. Sadly there is no easy to
 use common index between the two OS datasets, but with a bit of 'fuzzing' we can extract a lot of
 useful data. Oh, and note, the Benchmark archive contains **half a million** entries. Luckily
-it is not too hard to extract just the trigpoints from that. We end up with 3957 trigpoint entries
-from that database. Yes, that is only about 2/3rds of the trigpoints compared with the OS trigpoint
-data. I have not yet investigated if the other 1/3rd of the data is hiding in there but maybe does not
-conform the the `TP` marking scheme.
+it is not too hard to extract just the trigpoints from that. We end up with 4020 trigpoint entries
+from that database (but only 3917 have FB entries).  Yes, that is only about 2/3rds of the trigpoints
+compared with the OS trigpoint data. I have not yet investigated if the other 1/3rd of the data is
+hiding in there but maybe does not conform the the `TP` marking scheme.
 
 Then you will also need the OSM data nodes that represent all current `trigpoints` in OSM.
 I downloaded my data from [geofabrik.de](https://download.geofabrik.de/europe/united-kingdom.html)
@@ -78,7 +78,7 @@ In summary for the potential pillar datapoints we have then:
 | Source | Number |
 | ------ | ------ |
 | OS Trigpoint database | 6081 |
-| OS Benchmark database | 3957 |
+| OS Benchmark database | 4020 (3917 with FB's) |
 | OSM database |  2558 |
 
 ## Processing the data
