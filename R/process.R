@@ -21,6 +21,8 @@ library(geosphere)
 library(stringdist)
 library(osbng)
 
+debug = FALSE		#debugging prints - mostly useful for restricted runs
+
 trim_dataset = 0	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
 
@@ -261,6 +263,31 @@ if(trim_dataset) {
 		chosen_zoom=12
 	}
 
+	filter_by_shape <- FALSE
+
+	# county shapefiles
+	if(1) {
+		#subdivision_name="Isle of Wight"
+		subdivision_name="Rutland"
+
+		message("Loading county shapefile")
+		#subdivision_name="Isle of Wight"
+
+		# Shapefile acquired from data.gov.uk. As we are not pushing any of the
+		# actual data from this shapefile into OSM, licensing should be fine. We are
+		# merely using this data to filter our main data down into subsets to make it
+		# easier to evaluate or do a number of smaller controlled OSM updates - we are
+		# *not* using it to change, enhance or add to our base OS/OSM data...
+		county_shapefile="data/counties/CTYUA_DEC_2024_UK_BUC.shp"
+		county_shapes=read_sf(county_shapefile)
+
+		filter_shape = filter(county_shapes, CTYUA24NM==subdivision_name)
+		# And transform from OSGB36 into WGS85
+		sub_poly <- filter_shape %>% st_transform(crs=4326)
+		message(" Filtering to shape of [", subdivision_name, "]")
+		filter_by_shape <- TRUE
+	}
+
 	# further around Ilkley
 	if(1) {
 		# WGS84 for Ilkley
@@ -271,10 +298,13 @@ if(trim_dataset) {
 		chosen_zoom=10
 	}
 
-	sub_point <- data.frame(place = sub_name, lat = sub_lat, lon = sub_lon) %>% st_as_sf(coords = c('lat', 'lon')) %>% st_set_crs(4326)
-	sub_poly <- st_buffer(sub_point, sub_span)
+	if( filter_by_shape == FALSE ) {
+		# Create the poly shape by applying a 'distance buffer' around the chosen centre point
+		sub_point <- data.frame(place = sub_name, lat = sub_lat, lon = sub_lon) %>% st_as_sf(coords = c('lat', 'lon')) %>% st_set_crs(4326)
+		sub_poly <- st_buffer(sub_point, sub_span)
+	}
   
-	message(">>>  Applying")
+	message(">>>  Applying sub poly filter")
 	os_sf <- st_intersection(os_sf, sub_poly)
 	os_b_sf <- st_intersection(os_b_sf, sub_poly)
 	osm_sf <- st_intersection(osm_sf, sub_poly)
@@ -398,11 +428,11 @@ for(i in 1:nrow(os_b_sf)) {
 		idx <- matches[[1]][2]
 		len <- attr(matches[[1]], "match.length")[2]
 		result <- substring(r$DESCRIPTION, idx, idx+len-1)
-		#message("idx ", idx, " len ", len, " -> ", result)
 
 		os_b_sf[i,]$FB <- gsub(" ", "", result)
+		if(debug) message("FB match [", os_b_sf[i,]$FB, "] from [", r$DESCRIPTION, "]")
 	} else {
-		#message("empty: [", r$DESCRIPTION, "]")
+		if(debug) message("FB fail match from [", r$DESCRIPTION, "]")
 	}
 }
 
@@ -487,6 +517,15 @@ if(1) {
 	nearest_lines <- cbind(osm_sf, os_sf[nearest_id,])
 }
 
+if(debug) {
+	for(i in 1:nrow(os_sf)) {
+		r <- os_sf[i,]
+		osm_r <- osm_sf[r$nearest_osm_id,]
+		message(" OS node [", r$Trig.Name, "] matched at distance ", r$distance,
+		  "to OSM [", osm_r$name, "]")
+	}
+}
+
 shortest_snap=min(nearest_dist)
 longest_snap=max(nearest_dist)
 message(" Shortest snap distance is ", shortest_snap, "m. Longest snap is ", longest_snap, "m.")
@@ -502,6 +541,15 @@ osb_nearest_dist <- st_distance(os_sf, os_b_sf[osb_nearest_id,], by_element = TR
 # And store those back into the df
 os_sf$nearest_osb_id = osb_nearest_id
 os_sf$osb_distance = osb_nearest_dist
+
+if(debug) {
+	for(i in 1:nrow(os_sf)) {
+		r <- os_sf[i,]
+		osb_r <- os_b_sf[r$nearest_osb_id,]
+		message(" OS node [", r$Trig.Name, "] matched at distance ", r$osb_distance,
+		  "to OSB [", osb_r$DESCRIPTION, "]")
+	}
+}
 
 shortest_osb_snap=min(osb_nearest_dist)
 longest_osb_snap=max(osb_nearest_dist)
@@ -745,25 +793,33 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 				if( r$osm_name_match != TRUE ) {
 					# Names did not match - leave it as new node
 				} else {
-					# We have a name match and are in distance
+					# We have a name match and are in distance between OS/OSM
 					# Now check if we have a pair of FB numbers, and see if they can be
-					# matched?
-					osb_r <- os_b_sf[r$nearest_osb_id,]
+					# matched? *BUT*, we should check that the BM FB is within distance!
 
-					osm_fb <- osm_r$ref
-					osb_fb <- osb_r$FB
-					if( !is.na(osm_fb) && !is.na(osb_fb) ) {
-						# Is the osb fb string a substring of the osm ref?
-						if( grepl(tolower(osb_fb), tolower(osm_fb), fixed=TRUE) == TRUE ) {
-							# We got a match?
-							os_sf[i,]$new_node = FALSE
+					if( r$osb_distance <= osb_max_distance ) {
+						osb_r <- os_b_sf[r$nearest_osb_id,]
+
+						osm_fb <- osm_r$ref
+						osb_fb <- osb_r$FB
+						if( !is.na(osm_fb) && !is.na(osb_fb) ) {
+							# Is the osb fb string a substring of the osm ref?
+							if( grepl(tolower(osb_fb), tolower(osm_fb), fixed=TRUE) == TRUE ) {
+								# We got a match?
+								os_sf[i,]$new_node = FALSE
+							} else {
+								# We failed the ref/FB check - so implicitly this stays as a
+								# new node
+							}
 						} else {
-							# We failed the ref/FB check - so implicitly this stays as a
-							# new node
+							# OK, so one or the other of the OSM ref or OSB FB was 'NA' - so we can
+							# still merge these...
+							os_sf[i,]$new_node = FALSE
 						}
 					} else {
-						# OK, so one or the other of the OSM ref or OSB FB was 'NA' - so we can
-						# still merge these...
+						#The FB is not within a reasonable distance to check against, so we
+						# can default to the name matches, and leave this as a merge node
+						# (new == FALSE)
 						os_sf[i,]$new_node = FALSE
 					}
 				}
@@ -864,8 +920,13 @@ if( generate_osc ) {
 		newXMLNode("tag", attrs=attrs, parent=node)
 
 		if( !is.na(osb_row$FB) ) {
-			attrs = c( k="ref", v=osb_row$FB)
-			newXMLNode("tag", attrs=attrs, parent=node)
+			if( os_row$osb_distance <= osb_max_distance ) {
+				attrs = c( k="ref", v=osb_row$FB)
+				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				cmt = paste(sep=" ", "FB too far away to add at", os_row$osb_distance, "m")
+				newXMLCommentNode(cmt, parent=node)
+			}
 		} else {
 			cmt = paste(sep=" ", "No Flush Bracket name to add as a ref")
 			newXMLCommentNode(cmt, parent=node)
@@ -936,8 +997,16 @@ if( generate_osc ) {
 		}
 		newXMLCommentNode(cmt, parent=node)
 
+		#Not necessary, but can help with debugging
+		#cmt = paste(sep=" ", "Nearest FB ref is", os_row$osb_distance, "m away")
+		#newXMLCommentNode(cmt, parent=node)
+
 		if (!is.na(osb_row$FB) ) {
-			cmt = paste(sep=" ", "OS FB is", osb_row$FB)
+			if( os_row$osb_distance <= osb_max_distance ) {
+				cmt = paste(sep=" ", "OS FB is", osb_row$FB)
+			} else {
+				cmt = paste(sep=" ", "OS FB is too far away at", os_row$osb_distance, "m")
+			}
 		} else {
 			cmt = paste(sep=" ", "OS node has no FB")
 		}
@@ -996,7 +1065,12 @@ if( generate_osc ) {
 				"/", osm_row$survey_point_structure,
 				"OS:", os_row$TYPE.OF.MARK)
 			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS:", osb_row$FB)
+			if( os_row$osb_distance <= osb_max_distance ) {
+				cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS:", osb_row$FB)
+			} else {
+				cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS: FB too far at",
+					os_row$osb_diatnce, "m")
+			}
 			newXMLCommentNode(cmt, parent=node)
 		}
 	}
