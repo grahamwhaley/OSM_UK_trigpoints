@@ -23,7 +23,7 @@ library(osbng)
 
 debug = FALSE		#debugging prints - mostly useful for restricted runs
 
-trim_dataset = 0	#Geographically trim down the data to aid development and analysis
+trim_dataset = 1	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
 
 max_snap_distance = set_units(15, "m")	#How near a neighbour will we consider to be 'the same'
@@ -273,7 +273,8 @@ if(trim_dataset) {
 	# county shapefiles
 	if(1) {
 		#subdivision_name="Isle of Wight"
-		subdivision_name="Rutland"
+		#subdivision_name="Rutland"
+		subdivision_name="Bristol, City of"
 
 		message("Loading county shapefile")
 		#subdivision_name="Isle of Wight"
@@ -465,7 +466,7 @@ for(i in 1:nrow(osm_sf)) {
 	#if( grepl("not move", tolower(d$note)) ) {
 	#message(" >> PROTECTED")
 }
-	
+
 message(" Drop ", sum(osm_sf$drop == TRUE), " OSM nodes as not pillars")
 osm_sf <- filter(osm_sf, drop==FALSE)
 message(">>  After dropping drops we have ", nrow(osm_sf), " rows of osm")
@@ -654,7 +655,7 @@ message(">>> Plotting")
 if(1) {
 	osm_sf$source="OSM"
 	os_sf$source="OS"
-	
+
 	# We now generate a better version of this later on once we have collected all the points
 	# into a single df
 	if(0) {
@@ -668,24 +669,24 @@ if(1) {
 	  	#theme(legend.position="bottom") +
 	  	ggtitle("Map of the United Kingdom") +
 	  	coord_sf(crs = 4326) # Uses standard WGS84 coordinates
-	
+
 		ggsave("/data/plot.jpg", plot=p)
 	}
-	
+
 	# Plot a distribution of our nearest neighbour distances to help guide 'match and snap'
 	# only plot things within 40km - removes outliers and makes the graph scale nicer.
 	dist_df <- filter(dist_df, distances<set_units(40000, "m"))
 	p_distr = ggplot(data = dist_df) +
 	  geom_histogram((aes(distances)))
-	
+
 	ggsave("/data/OS_to_OSM_distance.jpg", plot=p_distr)
-	
+
 	## And zoom in - remove any distance larger than 100m
 	dist_df <- filter(dist_df, distances<set_units(100, "m"))
-	
+
 	p_distr = ggplot(data = dist_df) +
 	  geom_histogram((aes(distances)))
-	
+
 	ggsave("/data/OS_to_OSM_distance_zoom.jpg", plot=p_distr)
 }
 
@@ -729,7 +730,7 @@ ggsave("/data/plot2.jpg", plot=p2)
 ## Make a 'polar' plot of snap distance and bearings so we can try to judge if there is a pattern
 #  to the errors (which might indicate a problem with our mapping translations), or if they are
 #  fairly random, in which case it is probably just mapping/accuracy problems.
-	
+
 os_sf$bearing <- NA
 snappable_df <- filter(os_sf, distance<=set_units(max_snap_distance, "m"))
 for(i in 1:nrow(snappable_df)) {
@@ -748,9 +749,9 @@ p_polar <- ggplot(data = snappable_df, aes(bearing, drop_units(distance))) +
 	scale_x_continuous(limits = c(-180, 180), breaks = seq(-180, 180, 90)) +
 	scale_y_continuous(limits = c(0, drop_units(max(snappable_df$distance)) )) +
 	coord_polar(start=pi)
-	
+
 ggsave("/data/polar_snap.jpg", plot=p_polar)
-	
+
 ####################################################################################################### 
 ############################################# Generate the OsmChange files ############################
 ####################################################################################################### 
@@ -899,7 +900,7 @@ if( generate_osc ) {
 		os_row <- newnode_df[i,]
 		osm_row <- osm_sf[os_row$nearest_osm_id,]
 		osb_row <- os_b_sf[os_row$nearest_osb_id,]
-	
+
 		mod = newXMLNode("create", parent=root)
 		os_coords=st_coordinates(os_row$geometry)
 		attrs = c(
@@ -945,7 +946,7 @@ if( generate_osc ) {
 	saveXML(newnode_doc, file="newnodes.osc")
 
 	############################ REVIEW NODES ###################################
-	# Now generate the new elements XML
+	# Now generate the review elements XML
 	message(">>> Generate review node OSC file")
 	reviewnode_doc = newXMLDoc()
 	attrs = c(
@@ -963,7 +964,7 @@ if( generate_osc ) {
 		os_row <- reviewnode_df[i,]
 		osm_row <- osm_sf[os_row$nearest_osm_id,]
 		osb_row <- os_b_sf[os_row$nearest_osb_id,]
-	
+
 		# Let's try to make a comment?
 		mod = newXMLNode("create", parent=root)
 		osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
@@ -1099,103 +1100,105 @@ if( generate_osc ) {
 	cmt = paste(sep=" ", nrow(editnode_df), "nodes to process")
 	newXMLCommentNode(cmt, parent=root)
 
-	for(i in 1:nrow(editnode_df)) {
-		os_row <- editnode_df[i,]
-		mod = newXMLNode("modify", parent=root)
-		osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
-		os_coords=st_coordinates(os_row$geometry)
-		attrs = c(
-			id=osm_sf[os_row$nearest_osm_id,]$osm_id,
-			changeset="1",		#FIXME - what should this be??
-			version="1",		#FIXME - what should this be??
-			# Unclear if we should use the old OSM co-ords here, or the new OS ones?
-			# *BUT* - using the updated OS ones makes the new point show up in the right
-			# (moved) place in JSOM when I load the OSC file as a layer!
-			# lat=as.double(osm_coords[,"Y"]),
-			# lon=as.double(osm_coords[,"X"])
-			lat=as.double(os_coords[,"Y"]),
-			lon=as.double(os_coords[,"X"])
-			)
-		node = newXMLNode("node", attrs=attrs, parent=mod)
+	if( nrow(editnode_df) != 0 ) {
+		for(i in 1:nrow(editnode_df)) {
+			os_row <- editnode_df[i,]
+			mod = newXMLNode("modify", parent=root)
+			osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
+			os_coords=st_coordinates(os_row$geometry)
+			attrs = c(
+				id=osm_sf[os_row$nearest_osm_id,]$osm_id,
+				changeset="1",		#FIXME - what should this be??
+				version="1",		#FIXME - what should this be??
+				# Unclear if we should use the old OSM co-ords here, or the new OS ones?
+				# *BUT* - using the updated OS ones makes the new point show up in the right
+				# (moved) place in JSOM when I load the OSC file as a layer!
+				# lat=as.double(osm_coords[,"Y"]),
+				# lon=as.double(osm_coords[,"X"])
+				lat=as.double(os_coords[,"Y"]),
+				lon=as.double(os_coords[,"X"])
+				)
+			node = newXMLNode("node", attrs=attrs, parent=mod)
 
-		# Add comments describing what we know
-		cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
-		newXMLCommentNode(cmt, parent=node)
-		b = snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
-		cmt = paste(sep=" ", "Move bearing", b, "degrees for", os_row$distance, "m")
-		newXMLCommentNode(cmt, parent=node)
-		cmt = paste(sep=" ", " from lat:", as.double(osm_coords[,"Y"]),
-			"lon:", as.double(osm_coords[,"X"]) )
-		newXMLCommentNode(cmt, parent=node)
-	
-		#  attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
-		#  newXMLNode("tag", attrs=attrs, parent=node)
-		#  attrs = c( k="lon", v=as.double(os_coords[,"X"]))
-		#  newXMLNode("tag", attrs=attrs, parent=node)
-
-		#  attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
-		#  newXMLNode("tag", attrs=attrs, parent=node)
-		#  attrs = c( k="OS_new_name", v=os_row$New.Name)
-		#  newXMLNode("tag", attrs=attrs, parent=node)
-
-		osm_row <- osm_sf[os_row$nearest_osm_id,]
-		osb_row <- os_b_sf[os_row$nearest_osb_id,]
-
-		if( is.na(osm_row$name) ) {
-			# We can fill the name slot
-			cmt = paste(sep=" ", "Add new name:", os_row$New.Name)
+			# Add comments describing what we know
+			cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
 			newXMLCommentNode(cmt, parent=node)
-			attrs = c( k="name", v=os_row$New.Name)
-			newXMLNode("tag", attrs=attrs, parent=node)
-		} else {
-			cmt = paste(sep=" ", "Name field already set:", osm_row$name)
+			b = snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
+			cmt = paste(sep=" ", "Move bearing", b, "degrees for", os_row$distance, "m")
 			newXMLCommentNode(cmt, parent=node)
-		}
+			cmt = paste(sep=" ", " from lat:", as.double(osm_coords[,"Y"]),
+				"lon:", as.double(osm_coords[,"X"]) )
+			newXMLCommentNode(cmt, parent=node)
 
-		if( is.na(osm_row$ref) ) {
-			# No ref - do we have a new FB?
-			if( !is.na(osb_row$FB) ) {
-				# We have a new FB to add - make comment and create field
-				cmt = paste(sep=" ", "Add new FB ref:", osb_row$FB)
+			#  attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
+			#  newXMLNode("tag", attrs=attrs, parent=node)
+			#  attrs = c( k="lon", v=as.double(os_coords[,"X"]))
+			#  newXMLNode("tag", attrs=attrs, parent=node)
+
+			#  attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
+			#  newXMLNode("tag", attrs=attrs, parent=node)
+			#  attrs = c( k="OS_new_name", v=os_row$New.Name)
+			#  newXMLNode("tag", attrs=attrs, parent=node)
+
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+
+			if( is.na(osm_row$name) ) {
+				# We can fill the name slot
+				cmt = paste(sep=" ", "Add new name:", os_row$New.Name)
 				newXMLCommentNode(cmt, parent=node)
-				attrs = c( k="ref", v=osb_row$FB)
+				attrs = c( k="name", v=os_row$New.Name)
 				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				cmt = paste(sep=" ", "Name field already set:", osm_row$name)
+				newXMLCommentNode(cmt, parent=node)
 			}
-		} else {
-			cmt = paste(sep=" ", "Ref field already set:", osm_row$ref)
-			newXMLCommentNode(cmt, parent=node)
-		}
 
-		if( is.na(osm_row$ele) ) {
-			# We can fill the ele slot
-			cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
-			newXMLCommentNode(cmt, parent=node)
-			attrs = c( k="ele", v=os_row$HEIGHT)
-			newXMLNode("tag", attrs=attrs, parent=node)
-		} else {
-			cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
-			newXMLCommentNode(cmt, parent=node)
-		}
+			if( is.na(osm_row$ref) ) {
+				# No ref - do we have a new FB?
+				if( !is.na(osb_row$FB) ) {
+					# We have a new FB to add - make comment and create field
+					cmt = paste(sep=" ", "Add new FB ref:", osb_row$FB)
+					newXMLCommentNode(cmt, parent=node)
+					attrs = c( k="ref", v=osb_row$FB)
+					newXMLNode("tag", attrs=attrs, parent=node)
+				}
+			} else {
+				cmt = paste(sep=" ", "Ref field already set:", osm_row$ref)
+				newXMLCommentNode(cmt, parent=node)
+			}
 
-		if( is.na(osm_row$survey_point_structure) && is.na(osm_row$survey_point) ) {
-			# We can fill the structure slot
-			cmt = paste(sep=" ", "Add new structure: pillar")
-			newXMLCommentNode(cmt, parent=node)
-			attrs = c( k="survey_point:structure", v="pillar")
-			newXMLNode("tag", attrs=attrs, parent=node)
-		} else {
-			cmt = paste(sep=" ", "survey_point[_structure] field already set:",
-				osm_row$survey_point,
-				"/", osm_row$survey_point_structure)
-			newXMLCommentNode(cmt, parent=node)
-		}
+			if( is.na(osm_row$ele) ) {
+				# We can fill the ele slot
+				cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="ele", v=os_row$HEIGHT)
+				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
+				newXMLCommentNode(cmt, parent=node)
+			}
 
-		# And store that bearing for later
-		snappable_df[i,]$bearing <- b
+			if( is.na(osm_row$survey_point_structure) && is.na(osm_row$survey_point) ) {
+				# We can fill the structure slot
+				cmt = paste(sep=" ", "Add new structure: pillar")
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="survey_point:structure", v="pillar")
+				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				cmt = paste(sep=" ", "survey_point[_structure] field already set:",
+					osm_row$survey_point,
+					"/", osm_row$survey_point_structure)
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			# And store that bearing for later
+			snappable_df[i,]$bearing <- b
+		}
 	}
-	
+
 	saveXML(editnode_doc, file="editnodes.osc")
-	
+
 } else {
 	message(" Skipping OSC file generation")
 	message("  Found ", nrow(newnode_df), " New OSM trigpoints")
