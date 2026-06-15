@@ -301,7 +301,9 @@ if(trim_dataset) {
 		# merely using this data to filter our main data down into subsets to make it
 		# easier to evaluate or do a number of smaller controlled OSM updates - we are
 		# *not* using it to change, enhance or add to our base OS/OSM data...
-		county_shapefile="data/counties/CTYUA_DEC_2024_UK_BUC.shp"
+		county_shapefile="/data/data/counties/CTYUA_DEC_2024_UK_BUC.shp"
+		# FIXME - we should proabaly do a 'file exists' check and handle it gracefully
+		# if it does not. At present we fall on our face.
 		county_shapes=read_sf(county_shapefile)
 
 		filter_shape = filter(county_shapes, CTYUA24NM==subdivision_name)
@@ -960,7 +962,7 @@ if( generate_osc ) {
 		cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", round(os_row$distance, digits=DIST_DIGITS), "m")
 		newXMLCommentNode(cmt, parent=node)
 	}
-	saveXML(newnode_doc, file="newnodes.osc")
+	saveXML(newnode_doc, file="/data/newnodes.osc")
 
 	############################ REVIEW NODES ###################################
 	# Now generate the review elements XML
@@ -1037,7 +1039,7 @@ if( generate_osc ) {
 		}
 		newXMLCommentNode(cmt, parent=node)
 	}
-	saveXML(reviewnode_doc, file="reviewnodes.osc")
+	saveXML(reviewnode_doc, file="/data/reviewnodes.osc")
 
 	############################ GOOD NODES ###################################
 	# Now generate the new elements XML
@@ -1101,7 +1103,7 @@ if( generate_osc ) {
 		}
 	}
 
-	saveXML(goodnode_doc, file="goodnodes.osc")
+	saveXML(goodnode_doc, file="/data/goodnodes.osc")
 
 	############################ EDIT NODES ###################################
 	# Now generate the new elements XML
@@ -1205,7 +1207,7 @@ if( generate_osc ) {
 		}
 	}
 
-	saveXML(editnode_doc, file="editnodes.osc")
+	saveXML(editnode_doc, file="/data/editnodes.osc")
 
 } else {
 	message(" Skipping OSC file generation")
