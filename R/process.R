@@ -10,6 +10,17 @@
 
 version="v1.0"
 
+# We are mostly handling WGS84 lat/lon. We'd like to see them as 7 decimal places, as that is what
+# OSM stores - so this is a max of 3 digits for integer degrees (eg. 180), plus 7 digits for the
+# decimal places. Of course, for most of the UK work we only have 2 digits integer, so we will end
+# up getting 8 decimal digits. But, this is better than the R default of 'digits=7', as it gets
+# *very* confusing during debug when you only see 5 digits on a position, but when you later dump
+# it to a file or the XML, you get 13 decimal places!
+#
+# Mostly this is for helping when debugging, as we will hard wire the 7 decimal plasces into the
+# XML code generation, to match OSM
+options(digits=3+7)
+
 library(tidyverse)
 library(sf)
 library(mapview)
@@ -23,12 +34,18 @@ library(osbng)
 
 debug = FALSE		#debugging prints - mostly useful for restricted runs
 
-trim_dataset = 1	#Geographically trim down the data to aid development and analysis
+trim_dataset = 0	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
 
 max_snap_distance = set_units(15, "m")	#How near a neighbour will we consider to be 'the same'
 min_snap_distance = set_units(1	,"m")   #At what distance do we not bother to 'snap' co-ordinates?
 osb_max_distance = set_units(15, "m")   #And test for OSB neighbour matching
+
+#Number of decimal places to generate output in. Generally applying to the coordinates.
+OSM_DIGITS = 7
+
+#Number of decimal digits to show when storing distances, such as distance between two nodes
+DIST_DIGITS = 2
 
 ####################################################################################################### 
 ###################################### Global data type things ###################################
@@ -907,8 +924,8 @@ if( generate_osc ) {
 			id=-i,	#New node
 			changeset="1",		#FIXME - what should this be??
 			version="1",		#FIXME - what should this be??
-			lat=as.double(os_coords[,"Y"]),
-			lon=as.double(os_coords[,"X"])
+			lat=round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS),
+			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS)
 			)
 		node = newXMLNode("node", attrs=attrs, parent=mod)
 
@@ -927,12 +944,12 @@ if( generate_osc ) {
 
 		if( !is.na(osb_row$FB) ) {
 			if( os_row$osb_distance <= osb_max_distance ) {
-				cmt = paste(sep=" ", "Nearest FB is at", os_row$osb_distance, "m")
+				cmt = paste(sep=" ", "Nearest FB is at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
 				newXMLCommentNode(cmt, parent=node)
 				attrs = c( k="ref", v=osb_row$FB)
 				newXMLNode("tag", attrs=attrs, parent=node)
 			} else {
-				cmt = paste(sep=" ", "FB too far away to add at", os_row$osb_distance, "m")
+				cmt = paste(sep=" ", "FB too far away to add at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
 				newXMLCommentNode(cmt, parent=node)
 			}
 		} else {
@@ -940,7 +957,7 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 		}
 
-		cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", os_row$distance, "m")
+		cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", round(os_row$distance, digits=DIST_DIGITS), "m")
 		newXMLCommentNode(cmt, parent=node)
 	}
 	saveXML(newnode_doc, file="newnodes.osc")
@@ -977,8 +994,8 @@ if( generate_osc ) {
 			# show the point to review directly on top of the one in the OSM layer you are
 			# comparing against. Lets at least drop a comment about where the new coords
 			# might be...
-			lat=as.double(osm_coords[,"Y"]),
-			lon=as.double(osm_coords[,"X"])
+			lat=round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
+			lon=round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS)
 			)
 		node = newXMLNode("node", attrs=attrs, parent=mod)
 
@@ -986,10 +1003,10 @@ if( generate_osc ) {
 		newXMLCommentNode(cmt, parent=node)
 
 		# Add comments describing what the OS co-ords are
-		cmt = paste(sep=" ", "OS node co-ords are", as.double(os_coords[,"Y"]),
-			",", as.double(os_coords[,"X"]) )
+		cmt = paste(sep=" ", "OS node co-ords are", round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS),
+			",", round(as.double(os_coords[,"X"]), digits=OSM_DIGITS) )
 		newXMLCommentNode(cmt, parent=node)
-		cmt = paste(sep=" ", "That is", os_row$distance, "from its nearest OSM node")
+		cmt = paste(sep=" ", "That is", round(os_row$distance, digits=DIST_DIGITS), "m from its nearest OSM node")
 		newXMLCommentNode(cmt, parent=node)
 		if( !is.na(osm_row$name) ) {
 			cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "] vs OSM [", osm_row$name, "]")
@@ -1006,14 +1023,14 @@ if( generate_osc ) {
 		newXMLCommentNode(cmt, parent=node)
 
 		#Not necessary, but can help with debugging
-		#cmt = paste(sep=" ", "Nearest FB ref is", os_row$osb_distance, "m away")
+		#cmt = paste(sep=" ", "Nearest FB ref is", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
 		#newXMLCommentNode(cmt, parent=node)
 
 		if (!is.na(osb_row$FB) ) {
 			if( os_row$osb_distance <= osb_max_distance ) {
-				cmt = paste(sep=" ", "OS FB is", osb_row$FB, "at", os_row$osb_distance, "m away")
+				cmt = paste(sep=" ", "OS FB is", osb_row$FB, "at", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
 			} else {
-				cmt = paste(sep=" ", "OS FB is too far away at", os_row$osb_distance, "m")
+				cmt = paste(sep=" ", "OS FB is too far away at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
 			}
 		} else {
 			cmt = paste(sep=" ", "OS node has no FB")
@@ -1051,18 +1068,19 @@ if( generate_osc ) {
 				changeset="1",		#FIXME - what should this be??
 				version="1",		#FIXME - what should this be??
 				# Use OSM co-ords, as we are not intending to edit this OSM node.
-				lat=as.double(osm_coords[,"Y"]),
-				lon=as.double(osm_coords[,"X"])
+				lat=round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
+				lon=round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS)
 				)
 			node = newXMLNode("node", attrs=attrs, parent=mod)
 
-			cmt = paste(sep=" ", "Lat: OSM:", as.double(osm_coords[,"Y"]), "OS",
-				as.double(os_coords[,"Y"]) )
+			cmt = paste(sep=" ", "Lat: OSM:", round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS), "OS",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS) )
 			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "Lon: OSM:", as.double(osm_coords[,"X"]), "OS",
-				as.double(os_coords[,"X"]) )
+			cmt = paste(sep=" ", "Lon: OSM:",
+				round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS), "OS",
+				round(as.double(os_coords[,"X"]), digits=OSM_DIGITS) )
 			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "Separation distance:", os_row$distance, "m")
+			cmt = paste(sep=" ", "Separation distance:", round(os_row$distance, digits=DIST_DIGITS), "m")
 			newXMLCommentNode(cmt, parent=node)
 
 			cmt = paste(sep=" ", "Name: OSM:", osm_row$name, "OS:", os_row$Trig.Name)
@@ -1113,10 +1131,10 @@ if( generate_osc ) {
 				# Unclear if we should use the old OSM co-ords here, or the new OS ones?
 				# *BUT* - using the updated OS ones makes the new point show up in the right
 				# (moved) place in JSOM when I load the OSC file as a layer!
-				# lat=as.double(osm_coords[,"Y"]),
-				# lon=as.double(osm_coords[,"X"])
-				lat=as.double(os_coords[,"Y"]),
-				lon=as.double(os_coords[,"X"])
+				# lat=round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
+				# lon=round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS)
+				lat=round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS),
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS)
 				)
 			node = newXMLNode("node", attrs=attrs, parent=mod)
 
@@ -1124,21 +1142,11 @@ if( generate_osc ) {
 			cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
 			newXMLCommentNode(cmt, parent=node)
 			b = snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
-			cmt = paste(sep=" ", "Move bearing", b, "degrees for", os_row$distance, "m")
+			cmt = paste(sep=" ", "Move bearing", b, "degrees for", round(os_row$distance, digits=DIST_DIGITS), "m")
 			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", " from lat:", as.double(osm_coords[,"Y"]),
-				"lon:", as.double(osm_coords[,"X"]) )
+			cmt = paste(sep=" ", " from lat:", round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
+				"lon:", round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS) )
 			newXMLCommentNode(cmt, parent=node)
-
-			#  attrs = c( k="lat", v=as.double(os_coords[,"Y"]))
-			#  newXMLNode("tag", attrs=attrs, parent=node)
-			#  attrs = c( k="lon", v=as.double(os_coords[,"X"]))
-			#  newXMLNode("tag", attrs=attrs, parent=node)
-
-			#  attrs = c( k="OS_station_name", v=os_row$STATION.NAME)
-			#  newXMLNode("tag", attrs=attrs, parent=node)
-			#  attrs = c( k="OS_new_name", v=os_row$New.Name)
-			#  newXMLNode("tag", attrs=attrs, parent=node)
 
 			osm_row <- osm_sf[os_row$nearest_osm_id,]
 			osb_row <- os_b_sf[os_row$nearest_osb_id,]
