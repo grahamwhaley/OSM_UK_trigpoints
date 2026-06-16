@@ -34,8 +34,9 @@ library(osbng)
 
 debug = FALSE		#debugging prints - mostly useful for restricted runs
 
-trim_dataset = 0	#Geographically trim down the data to aid development and analysis
+trim_dataset = 1	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
+check_ref_os = 0	#Check if ref:os tags match - indicating known 'good' nodes
 
 max_snap_distance = set_units(15, "m")	#How near a neighbour will we consider to be 'the same'
 min_snap_distance = set_units(1	,"m")   #At what distance do we not bother to 'snap' co-ordinates?
@@ -289,9 +290,11 @@ if(trim_dataset) {
 
 	# county shapefiles
 	if(1) {
-		#subdivision_name="Isle of Wight"
-		#subdivision_name="Rutland"
-		subdivision_name="Bristol, City of"
+		#subdivision_name="Isle of Wight"		# pretty small
+		#subdivision_name="Rutland"				# pretty small
+		#subdivision_name="Bristol, City of"	# pretty small
+		#subdivision_name="Torbay"				#Has 'goodish' nodes, 1.5m away from their refs.
+		subdivision_name="West Lothian"			#Has all 4 types! including 'good'
 
 		message("Loading county shapefile")
 		#subdivision_name="Isle of Wight"
@@ -841,6 +844,7 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 							# still merge these...
 							os_sf[i,]$new_node = FALSE
 						}
+
 					} else {
 						#The FB is not within a reasonable distance to check against, so we
 						# can default to the name matches, and leave this as a merge node
@@ -849,8 +853,33 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 					}
 				}
 			}
+
+			# Are we checking ref:os yet?
+			if( check_ref_os ) {
+				# If we get here and a node is qualifying as 'good', then finally check if
+				# it has a matching ref:os - which is the ultimate indicator that we have
+				# already 'fixed' this node in the past, and it needs no further attention
+				if( os_sf[i,]$new_node == FALSE && r$distance <= min_snap_distance) {
+					if( !is.na(osm_r$ref_os) ) {
+						if( osm_r$ref_os != r$New.Name ) {
+							message("*** Good node gone bad: [", osm_r$ref_os, "] [", r$New.Name, "]")
+							# ref:os failure, so force this to be a new node, which as it is at a close
+							# distance, should force it into the review list...
+							os_sf[i,]$new_node = TRUE
+						} else {
+							message("*** Good node matches: [", osm_r$ref_os, "] [", r$New.Name, "]")
+						}
+					} else
+					{
+						message("*** Good node has NA ref:os - mark as bad")
+						os_sf[i,]$new_node = TRUE
+					}
+				}
+			}
 		}
 	}
+
+	if( !check_ref_os ) { message(">>> SKIPPED ref:os matching stage") }
 }
 
 
@@ -959,6 +988,9 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 		}
 
+		attrs = c( k="ref:os", v=os_row$New.Name)
+		newXMLNode("tag", attrs=attrs, parent=node)
+
 		cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", round(os_row$distance, digits=DIST_DIGITS), "m")
 		newXMLCommentNode(cmt, parent=node)
 	}
@@ -1021,6 +1053,13 @@ if( generate_osc ) {
 			cmt = paste(sep=" ", "OSM ref is:", osm_row$ref)
 		} else {
 			cmt = paste(sep=" ", "OSM node has no ref")
+		}
+		newXMLCommentNode(cmt, parent=node)
+
+		if (!is.na(osm_row$ref_os) ) {
+			cmt = paste(sep=" ", "OSM ref:os is:", osm_row$ref_os)
+		} else {
+			cmt = paste(sep=" ", "OSM node has no ref:os")
 		}
 		newXMLCommentNode(cmt, parent=node)
 
@@ -1100,6 +1139,8 @@ if( generate_osc ) {
 					os_row$osb_diatnce, "m")
 			}
 			newXMLCommentNode(cmt, parent=node)
+
+			# FIXME - add ref:os code here!
 		}
 	}
 
@@ -1177,6 +1218,23 @@ if( generate_osc ) {
 				cmt = paste(sep=" ", "Ref field already set:", osm_row$ref)
 				newXMLCommentNode(cmt, parent=node)
 			}
+
+			if( is.na(osm_row$ref_os) ) {
+				# We need to set the ref:os
+				cmt = paste(sep=" ", "Add new ref:os:", os_row$New.Name)
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="ref:os", v=os_row$New.Name)
+				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				if( osm_row$ref_os == os_row$New.Name ) {
+					cmt = paste(sep=" ", "ref:os field already set:", osm_row$ref_os)
+				} else {
+					cmt = paste(sep=" ", "ref:os field already set, but wrong:",
+						osm_row$ref_os, "!=", os_row$New.Name)
+				}
+				newXMLCommentNode(cmt, parent=node)
+			}
+
 
 			if( is.na(osm_row$ele) ) {
 				# We can fill the ele slot
