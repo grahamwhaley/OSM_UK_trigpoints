@@ -34,9 +34,14 @@ library(osbng)
 
 debug = FALSE		#debugging prints - mostly useful for restricted runs
 
-trim_dataset = 1	#Geographically trim down the data to aid development and analysis
+trim_dataset = 0	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
+
+# If we set this before we've imported, all 'good' nodes fail
 check_ref_os = 0	#Check if ref:os tags match - indicating known 'good' nodes
+
+# If we set this before we've imported, 60 out of 66 good nodes fail
+check_pillar = 0	#Check if structure=='pillar', and fail if not
 
 max_snap_distance = set_units(15, "m")	#How near a neighbour will we consider to be 'the same'
 min_snap_distance = set_units(1	,"m")   #At what distance do we not bother to 'snap' co-ordinates?
@@ -876,10 +881,34 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 					}
 				}
 			}
+
+			# Are we checking 'pillar' yet?
+			if( check_pillar ) {
+				# If we get here and a node is qualifying as 'good', then check if it has a
+				# 'pillar' tag. We are really looking for 'survey_point:structure', and not just
+				# 'survey_point' as found in some nodes...
+				if( os_sf[i,]$new_node == FALSE && r$distance <= min_snap_distance) {
+					if( !is.na(osm_r$survey_point_structure) ) {
+						if( osm_r$survey_point_structure != "pillar" ) {
+							message("*** Good node gone bad: [", osm_r$survey_point_struture, "] != [pillar]")
+							# pillar failure, so force this to be a new node, which as it is at a close
+							# distance, should force it into the review list...
+							os_sf[i,]$new_node = TRUE
+						} else {
+							message("*** Good node matches: [", osm_r$survey_point_structure, "] == [pillar]")
+						}
+					} else
+					{
+						message("*** Good node has NA survey_point:structure - mark as bad")
+						os_sf[i,]$new_node = TRUE
+					}
+				}
+			}
 		}
 	}
 
 	if( !check_ref_os ) { message(">>> SKIPPED ref:os matching stage") }
+	if( !check_pillar ) { message(">>> SKIPPED survey_point:structure matching stage") }
 }
 
 
@@ -1048,6 +1077,31 @@ if( generate_osc ) {
 			cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "]. OSM node has no name") 
 		}
 		newXMLCommentNode(cmt, parent=node)
+
+		if( is.na(osm_row$ele) ) {
+			# We can fill the ele slot
+			cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+			newXMLCommentNode(cmt, parent=node)
+		} else {
+			cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
+			newXMLCommentNode(cmt, parent=node)
+		}
+
+		# Just note if 'survey_point' is set or not - we don't generate those
+		if( is.na(osm_row$survey_point) )
+			cmt = paste(sep=" ", "survey_point tag is empty (good)")
+		else
+			cmt = paste(sep=" ", "survey_point tag not empty (good)", osm_row$survey_point)
+		newXMLCommentNode(cmt, parent=node)
+
+		if( is.na(osm_row$survey_point_structure) ) {
+			# We can fill the survey_point:structure
+			cmt = paste(sep=" ", "Add new survey_point:structure: pillar")
+			newXMLCommentNode(cmt, parent=node)
+		} else {
+			cmt = paste(sep=" ", "survey_point:structure field already set:", osm_row$survey_point_structure)
+			newXMLCommentNode(cmt, parent=node)
+		}
 
 		if (!is.na(osm_row$ref) ) {
 			cmt = paste(sep=" ", "OSM ref is:", osm_row$ref)
@@ -1234,7 +1288,6 @@ if( generate_osc ) {
 				}
 				newXMLCommentNode(cmt, parent=node)
 			}
-
 
 			if( is.na(osm_row$ele) ) {
 				# We can fill the ele slot
