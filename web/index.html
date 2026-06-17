@@ -36,7 +36,10 @@ https://github.com/grahamwhaley/OSM_UK_trigpoints"
 
 <script>
 	var map = L.map('map').setView([55.8, -3.5], 10);
-	var markers = L.markerClusterGroup();
+	var new_markers = L.markerClusterGroup();
+	var review_markers = L.markerClusterGroup();
+	var good_markers = L.markerClusterGroup();
+	var edit_markers = L.markerClusterGroup();
 
 	//And add the OSM layer
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -45,32 +48,71 @@ https://github.com/grahamwhaley/OSM_UK_trigpoints"
 		referrerPolicy: 'strict-origin-when-cross-origin'
 		}).addTo(map);
 
+	var greenIcon = new L.Icon({
+		iconUrl: 'icons/marker-icon-green.png',
+		shadowUrl: 'icons/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+		});
+
+	var redIcon = new L.Icon({
+		iconUrl: 'icons/marker-icon-red.png',
+		shadowUrl: 'icons/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+		});
+
+	var blueIcon = new L.Icon({
+		iconUrl: 'icons/marker-icon-blue.png',
+		shadowUrl: 'icons/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+		});
+
+	var orangeIcon = new L.Icon({
+		iconUrl: 'icons/marker-icon-orange.png',
+		shadowUrl: 'icons/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+		});
+
 	//Add our nodes to their categories/layers
 	for( j in newnode_array ) {
-		var m = L.marker([ newnode_array[j][0], newnode_array[j][1] ]);
+		var m = L.marker([ newnode_array[j][0], newnode_array[j][1] ], {icon: redIcon});
 		m.bindPopup(newnode_array[j][2]).openPopup();
-		markers.addLayer(m);
+		new_markers.addLayer(m);
 	}
 
 	for( j in reviewnode_array ) {
-		var m = L.marker([ reviewnode_array[j][0], reviewnode_array[j][1] ]);
+		var m = L.marker([ reviewnode_array[j][0], reviewnode_array[j][1] ], {icon: orangeIcon});
 		m.bindPopup(reviewnode_array[j][2]).openPopup();
-		markers.addLayer(m);
+		review_markers.addLayer(m);
 	}
 
 	for( j in goodnode_array ) {
-		var m = L.marker([ goodnode_array[j][0], goodnode_array[j][1] ]);
+		var m = L.marker([ goodnode_array[j][0], goodnode_array[j][1] ], {icon: greenIcon});
 		m.bindPopup(goodnode_array[j][2]).openPopup();
-		markers.addLayer(m);
+		good_markers.addLayer(m);
 	}
 
 	for( j in editnode_array ) {
-		var m = L.marker([ editnode_array[j][0], editnode_array[j][1] ])
+		var m = L.marker([ editnode_array[j][0], editnode_array[j][1] ], {icon: blueIcon})
 		m.bindPopup(editnode_array[j][2]).openPopup();
-		markers.addLayer(m);
+		edit_markers.addLayer(m);
 	}
 
-	map.addLayer(markers);
+	map.addLayer(new_markers);
+	map.addLayer(review_markers);
+	map.addLayer(good_markers);
+	map.addLayer(edit_markers);
                 
 </script>
 
