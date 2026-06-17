@@ -9,6 +9,10 @@
 		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
 		crossorigin=""></script>
 
+	<link rel="stylesheet" href="mk/MarkerCluster.css" />
+	<link rel="stylesheet" href="mk/MarkerCluster.Default.css" />
+	<script type="text/javascript" src="mk/leaflet.markercluster.js"></script>
+
 	<script type="text/javascript" src="data/newnodes.js"></script>
 	<script type="text/javascript" src="data/reviewnodes.js"></script>
 	<script type="text/javascript" src="data/goodnodes.js"></script>
@@ -32,6 +36,7 @@ https://github.com/grahamwhaley/OSM_UK_trigpoints"
 
 <script>
 	var map = L.map('map').setView([55.8, -3.5], 10);
+	var markers = L.markerClusterGroup();
 
 	//And add the OSM layer
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -40,25 +45,32 @@ https://github.com/grahamwhaley/OSM_UK_trigpoints"
 		referrerPolicy: 'strict-origin-when-cross-origin'
 		}).addTo(map);
 
+	//Add our nodes to their categories/layers
 	for( j in newnode_array ) {
-		var m = L.marker([ newnode_array[j][0], newnode_array[j][1] ]).addTo(map);
+		var m = L.marker([ newnode_array[j][0], newnode_array[j][1] ]);
 		m.bindPopup(newnode_array[j][2]).openPopup();
+		markers.addLayer(m);
 	}
 
 	for( j in reviewnode_array ) {
-		var m = L.marker([ reviewnode_array[j][0], reviewnode_array[j][1] ]).addTo(map);
+		var m = L.marker([ reviewnode_array[j][0], reviewnode_array[j][1] ]);
 		m.bindPopup(reviewnode_array[j][2]).openPopup();
+		markers.addLayer(m);
 	}
 
 	for( j in goodnode_array ) {
-		var m = L.marker([ goodnode_array[j][0], goodnode_array[j][1] ]).addTo(map);
+		var m = L.marker([ goodnode_array[j][0], goodnode_array[j][1] ]);
 		m.bindPopup(goodnode_array[j][2]).openPopup();
+		markers.addLayer(m);
 	}
 
 	for( j in editnode_array ) {
-		var m = L.marker([ editnode_array[j][0], editnode_array[j][1] ]).addTo(map);
+		var m = L.marker([ editnode_array[j][0], editnode_array[j][1] ])
 		m.bindPopup(editnode_array[j][2]).openPopup();
+		markers.addLayer(m);
 	}
+
+	map.addLayer(markers);
                 
 </script>
 
