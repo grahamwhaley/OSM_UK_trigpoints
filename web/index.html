@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+	       crossorigin=""/>
+	 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+		crossorigin=""></script>
+
+	<script type="text/javascript" src="data/newnodes.js"></script>
+	<script type="text/javascript" src="data/reviewnodes.js"></script>
+	<script type="text/javascript" src="data/goodnodes.js"></script>
+	<script type="text/javascript" src="data/editnodes.js"></script>
+</head>
+
+<style>
+</style>
+
+<body>
+
+<title>OSM OK trig pillar import status</title>
+<center>
+<h1>Status of OSM import of UK OS trig pillar dataset</h1>
+This map shows the status of the OS trig pillar data import into OpenStreetMap. See <a href="
+https://github.com/grahamwhaley/OSM_UK_trigpoints"
+ target="_blank">the github repository</a> for more details.
+
+<div id="map" style="width: 90%; height: 80vh; margin: 0 1em 1em 1em;"></div>
+</center>
+
+<script>
+	var map = L.map('map').setView([55.8, -3.5], 10);
+
+	//And add the OSM layer
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		referrerPolicy: 'strict-origin-when-cross-origin'
+		}).addTo(map);
+
+	for( j in newnode_array ) {
+		var m = L.marker([ newnode_array[j][0], newnode_array[j][1] ]).addTo(map);
+		m.bindPopup(newnode_array[j][2]).openPopup();
+	}
+
+	for( j in reviewnode_array ) {
+		var m = L.marker([ reviewnode_array[j][0], reviewnode_array[j][1] ]).addTo(map);
+		m.bindPopup(reviewnode_array[j][2]).openPopup();
+	}
+
+	for( j in goodnode_array ) {
+		var m = L.marker([ goodnode_array[j][0], goodnode_array[j][1] ]).addTo(map);
+		m.bindPopup(goodnode_array[j][2]).openPopup();
+	}
+
+	for( j in editnode_array ) {
+		var m = L.marker([ editnode_array[j][0], editnode_array[j][1] ]).addTo(map);
+		m.bindPopup(editnode_array[j][2]).openPopup();
+	}
+                
+</script>
+
+</body>
+</html>
+

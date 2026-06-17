@@ -37,6 +37,10 @@ debug = FALSE		#debugging prints - mostly useful for restricted runs
 trim_dataset = 0	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
 
+# Note - we only generate js if we are also generating osc
+# (but, that could be trivially fixed in the code if need be)
+generate_js = 1		#Produce slippy map leaflet javascript files
+
 # If we set this before we've imported, all 'good' nodes fail
 check_ref_os = 0	#Check if ref:os tags match - indicating known 'good' nodes
 
@@ -1320,6 +1324,110 @@ if( generate_osc ) {
 
 	saveXML(editnode_doc, file="/data/editnodes.osc")
 
+	###############################################################################
+	############################ OSC generation ###################################
+	###############################################################################
+
+	if( generate_osc ) {
+		message(">>> Generating slippy leaflet JS files")
+
+		############################ NEW NODES ###################################
+		newnode_file = "/data/newnodes.js"
+		message(">>>  generate new nodes js")
+
+		write(paste("var newnode_array = ["), file=newnode_file, append=FALSE)
+
+		for(i in 1:nrow(newnode_df)) {
+			os_row <- newnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+
+			os_coords=st_coordinates(os_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				"\"",
+					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
+					"ele=", os_row$HEIGHT, "<br/>",
+					"ref=", osb_row$FB, "<br/>",
+				"\" ],"),
+				file=newnode_file,append=TRUE)
+		}
+		write(paste("];"), file=newnode_file, append=TRUE)
+
+		############################ REVIEW NODES ###################################
+		reviewnode_file = "/data/reviewnodes.js"
+		message(">>>  generate review nodes js")
+
+		write(paste("var reviewnode_array = ["), file=reviewnode_file, append=FALSE)
+
+		for(i in 1:nrow(reviewnode_df)) {
+			os_row <- reviewnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+
+			os_coords=st_coordinates(os_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				"\"",
+					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
+					"ele=", os_row$HEIGHT, "<br/>",
+					"ref=", osb_row$FB, "<br/>",
+				"\" ],"),
+				file=reviewnode_file,append=TRUE)
+		}
+		write(paste("];"), file=reviewnode_file, append=TRUE)
+
+		############################ GOOD NODES ###################################
+		goodnode_file = "/data/goodnodes.js"
+		message(">>>  generate good nodes js")
+
+		write(paste("var goodnode_array = ["), file=goodnode_file, append=FALSE)
+
+		for(i in 1:nrow(goodnode_df)) {
+			os_row <- goodnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+
+			os_coords=st_coordinates(os_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				"\"",
+					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
+					"ele=", os_row$HEIGHT, "<br/>",
+					"ref=", osb_row$FB, "<br/>",
+				"\" ],"),
+				file=goodnode_file,append=TRUE)
+		}
+		write(paste("];"), file=goodnode_file, append=TRUE)
+
+		############################ EDIT NODES ###################################
+		editnode_file = "/data/editnodes.js"
+		message(">>>  generate edit nodes js")
+
+		write(paste("var editnode_array = ["), file=editnode_file, append=FALSE)
+
+		for(i in 1:nrow(editnode_df)) {
+			os_row <- editnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+
+			os_coords=st_coordinates(os_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				"\"",
+					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
+					"ele=", os_row$HEIGHT, "<br/>",
+					"ref=", osb_row$FB, "<br/>",
+				"\" ],"),
+				file=editnode_file,append=TRUE)
+		}
+		write(paste("];"), file=editnode_file, append=TRUE)
+	}
+
 } else {
 	message(" Skipping OSC file generation")
 	message("  Found ", nrow(newnode_df), " New OSM trigpoints")
@@ -1327,3 +1435,4 @@ if( generate_osc ) {
 	message("  Found ", nrow(goodnode_df), " Good (already matched) OSM trigpoints")
 	message("  Found ", nrow(editnode_df), " editable (snapable) OSM trigpoints")
 }
+
