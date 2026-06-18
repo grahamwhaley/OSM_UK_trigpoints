@@ -1426,8 +1426,28 @@ if( generate_osc ) {
 				file=editnode_file,append=TRUE)
 		}
 		write(paste("];"), file=editnode_file, append=TRUE)
-	}
 
+		############################ STATUS text ###################################
+		# Also dump some status text into a js var so we can load and display that
+		status_file = "/data/statustext.js"
+		message(">>>  generate status text js")
+
+		txt = paste(sep=" ", "Data gathered on:", Sys.Date(), "<br>")
+		txt = paste(sep=" ", txt,
+			"Total nodes:", nrow(os_sf),
+			"New:", num_new_nodes,
+			"Review:", num_review_nodes,
+			"Good:", num_good_nodes,
+			"Edit:", num_edit_nodes
+			)
+		write(
+			paste(
+				"var status_text = \"",
+				txt,
+				"\""
+			),
+			file=status_file, append=FALSE)
+	}
 } else {
 	message(" Skipping OSC file generation")
 	message("  Found ", nrow(newnode_df), " New OSM trigpoints")
