@@ -199,6 +199,44 @@ fuzzywuzzy <- function(s, m) {
 	}
 }
 
+node_compare_html <- function(os_r, osb_r, osm_r) {
+	s = paste(sep="",
+		"\"",
+		"<table style='border:1px solid black;'>",
+			"<tr><th>Item</th><th>OS</th><th>OSM</th></tr>",
+			"<tr><td>Name</td>",
+				"<td>", os_r$Trig.Name, "</td>",
+				"<td>", osm_r$name, "</td></tr>",
+			"<tr><td>ele</td>",
+				"<td>", os_r$HEIGHT, "</td>",
+				"<td>", osm_r$ele, "</td></tr>",
+			"<tr><td>FB/ref</td>",
+				"<td>", osb_r$FB, "</td>",
+				"<td>", osm_r$ref, "</td></tr>",
+			"<tr><td>Structure</td>",
+				"<td>", os_r$TYPE.OF.MARK, "</td>",
+				"<td>", osm_r$survey_point_structure, "</td></tr>",
+		"</table><br>"
+		)
+
+	if( os_r$distance > max_snap_distance )
+		s = paste(sep="", s,
+			"<span style='color: red'>",
+			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
+			osm_r$osm_id, "</a> is ",
+			round(os_r$distance, digits=DIST_DIGITS), " m away<br>",
+			"</span>" )
+	else
+		s = paste(sep="", s,
+			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
+			osm_r$osm_id, "</a> is ",
+			round(os_r$distance, digits=DIST_DIGITS), " m away<br>" )
+
+	s = paste(sep="", s, "\" ],")
+
+	return(s)
+}
+
 ####################################################################################################### 
 ###################################### Read raw data ###############################################
 ####################################################################################################### 
@@ -1325,10 +1363,10 @@ if( generate_osc ) {
 	saveXML(editnode_doc, file="/data/editnodes.osc")
 
 	###############################################################################
-	############################ OSC generation ###################################
+	############################ JS generation ###################################
 	###############################################################################
 
-	if( generate_osc ) {
+	if( generate_js ) {
 		message(">>> Generating slippy leaflet JS files")
 
 		############################ NEW NODES ###################################
@@ -1346,11 +1384,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				"\"",
-					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
-					"ele=", os_row$HEIGHT, "<br/>",
-					"ref=", osb_row$FB, "<br/>",
-				"\" ],"),
+				node_compare_html(os_row, osb_row, osm_row) ),
 				file=newnode_file,append=TRUE)
 		}
 		write(paste("];"), file=newnode_file, append=TRUE)
@@ -1370,11 +1404,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				"\"",
-					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
-					"ele=", os_row$HEIGHT, "<br/>",
-					"ref=", osb_row$FB, "<br/>",
-				"\" ],"),
+				node_compare_html(os_row, osb_row, osm_row) ),
 				file=reviewnode_file,append=TRUE)
 		}
 		write(paste("];"), file=reviewnode_file, append=TRUE)
@@ -1394,11 +1424,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				"\"",
-					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
-					"ele=", os_row$HEIGHT, "<br/>",
-					"ref=", osb_row$FB, "<br/>",
-				"\" ],"),
+				node_compare_html(os_row, osb_row, osm_row) ),
 				file=goodnode_file,append=TRUE)
 		}
 		write(paste("];"), file=goodnode_file, append=TRUE)
@@ -1418,11 +1444,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				"\"",
-					os_row$Trig.Name, " : ", os_row$New.Name, "<br/>",
-					"ele=", os_row$HEIGHT, "<br/>",
-					"ref=", osb_row$FB, "<br/>",
-				"\" ],"),
+				node_compare_html(os_row, osb_row, osm_row) ),
 				file=editnode_file,append=TRUE)
 		}
 		write(paste("];"), file=editnode_file, append=TRUE)
