@@ -32,21 +32,37 @@ https://github.com/grahamwhaley/OSM_UK_trigpoints"
  target="_blank">the github repository</a> for more details.
 
 <div id="map" style="width: 90%; height: 80vh; margin: 0 1em 1em 1em;"></div>
+
+<!-- And add an index of our marker types -->
+
+<b>Marker Key</b>: <img src="icons/marker-icon-2x-red.png" height=20px> New <img src="icons/marker-icon-2x-orange.png" height=20px> Review <img src="icons/marker-icon-2x-green.png" height=20px> Good <img src="icons/marker-icon-2x-blue.png" height=20px> Edit
 </center>
 
 <script>
-	var map = L.map('map').setView([55.8, -3.5], 10);
 	var new_markers = L.markerClusterGroup();
 	var review_markers = L.markerClusterGroup();
 	var good_markers = L.markerClusterGroup();
 	var edit_markers = L.markerClusterGroup();
 
+	//Sort out our attributions
+	var IconsAttrib = ' | <a href="https://github.com/pointhi/leaflet-color-markers/">Markers</a> under BSD Licence.'
+	var MarkerClusterAttrib = ' | <a href="https://github.com/leaflet/leaflet.markercluster/">MarkerCluster</a>'
+	var OSMAttrib = '<a href="http://openstreetmap.org">OpenStreetMap</a>.';
+
+	var all_attribs = '&copy; ' + OSMAttrib + IconsAttrib + MarkerClusterAttrib;
+
 	//And add the OSM layer
-	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	var OSMmap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		attribution: all_attribs,
 		referrerPolicy: 'strict-origin-when-cross-origin'
-		}).addTo(map);
+		});
+
+	var map = L.map('map', {
+		center: [55.8, -3.5],
+		zoom: 10,
+		layers: [OSMmap]
+		});
 
 	var greenIcon = new L.Icon({
 		iconUrl: 'icons/marker-icon-green.png',
@@ -113,6 +129,19 @@ https://github.com/grahamwhaley/OSM_UK_trigpoints"
 	map.addLayer(review_markers);
 	map.addLayer(good_markers);
 	map.addLayer(edit_markers);
+
+	var baselayers = {
+		"OSM": OSMmap
+	};
+
+	var overlays = {
+		"New": new_markers,
+		"Review": review_markers,
+		"Good": good_markers,
+		"Edit": edit_markers
+	};
+
+	L.control.layers(baselayers, overlays).addTo(map);
                 
 </script>
 
