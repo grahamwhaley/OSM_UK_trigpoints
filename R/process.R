@@ -232,8 +232,6 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 			osm_r$osm_id, "</a> is ",
 			round(os_r$distance, digits=DIST_DIGITS), " m away<br>" )
 
-	s = paste(sep="", s, "\" ],")
-
 	return(s)
 }
 
@@ -1384,10 +1382,11 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row) ),
+				node_compare_html(os_row, osb_row, osm_row),
+				"\" ],"),
 				file=newnode_file,append=TRUE)
 		}
-		write(paste("];"), file=newnode_file, append=TRUE)
+		write("];", file=newnode_file, append=TRUE)
 
 		############################ REVIEW NODES ###################################
 		reviewnode_file = "/data/reviewnodes.js"
@@ -1404,10 +1403,11 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row) ),
+				node_compare_html(os_row, osb_row, osm_row),
+				"\" ],"),
 				file=reviewnode_file,append=TRUE)
 		}
-		write(paste("];"), file=reviewnode_file, append=TRUE)
+		write("];", file=reviewnode_file, append=TRUE)
 
 		############################ GOOD NODES ###################################
 		goodnode_file = "/data/goodnodes.js"
@@ -1424,10 +1424,11 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row) ),
+				node_compare_html(os_row, osb_row, osm_row),
+				"\" ],"),
 				file=goodnode_file,append=TRUE)
 		}
-		write(paste("];"), file=goodnode_file, append=TRUE)
+		write("];", file=goodnode_file, append=TRUE)
 
 		############################ EDIT NODES ###################################
 		editnode_file = "/data/editnodes.js"
@@ -1444,10 +1445,11 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row) ),
+				node_compare_html(os_row, osb_row, osm_row),
+				"\" ],"),
 				file=editnode_file,append=TRUE)
 		}
-		write(paste("];"), file=editnode_file, append=TRUE)
+		write("];", file=editnode_file, append=TRUE)
 
 		############################ STATUS text ###################################
 		# Also dump some status text into a js var so we can load and display that
@@ -1456,11 +1458,15 @@ if( generate_osc ) {
 
 		txt = paste(sep=" ", "Data gathered on:", Sys.Date(), "<br>")
 		txt = paste(sep=" ", txt,
-			"Total nodes:", nrow(os_sf),
+			"Total OS nodes:", nrow(os_sf),
 			"New:", num_new_nodes,
 			"Review:", num_review_nodes,
 			"Good:", num_good_nodes,
-			"Edit:", num_edit_nodes
+			"Edit:", num_edit_nodes,
+			"<br>"
+			)
+		txt = paste(sep=" ", txt,
+			"OSM nodes shown:", nrow(osm_sf)
 			)
 		write(
 			paste(
@@ -1469,6 +1475,29 @@ if( generate_osc ) {
 				"\""
 			),
 			file=status_file, append=FALSE)
+
+		############################ OSM nodes ###################################
+		# And dump out the OSM nodes - that way we optionally can have them enabled
+		# on the map for comparison purposes
+		osmnode_file = "/data/osmnodes.js"
+		message(">>>  generate OSM nodes js")
+
+		write(paste("var osmnode_array = ["), file=osmnode_file, append=FALSE)
+
+		for(i in 1:nrow(osm_sf)) {
+			osm_row <- osm_sf[i,]
+
+			os_coords=st_coordinates(osm_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				"\"OSM <a href=\\\"http://openstreetmap.org/node/", osm_row$osm_id, "\\\">",
+				osm_row$osm_id, "</a>\"",
+				"],"
+				),
+				file=osmnode_file,append=TRUE)
+		}
+		write("];", file=osmnode_file, append=TRUE)
 	}
 } else {
 	message(" Skipping OSC file generation")
