@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
+  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-06-18-->
+  <!--66 nodes to process-->
+  <create>
+    <node id="8561011506" changeset="1" version="1" lat="55.854672" lon="-3.5073222">
+      <!--Lat: OSM: 55.854672 OS 55.8546739-->
+      <!--Lon: OSM: -3.5073222 OS -3.5073269-->
+      <!--Separation distance: 0.36 m-->
+      <!--Name: OSM: Balgreen OS: Balgreen-->
+      <!--Ele: OSM: 210 OS: 209.976-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S2685 OS: S2685-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011514" changeset="1" version="1" lat="55.9227298" lon="-3.6218519">
+      <!--Lat: OSM: 55.9227298 OS 55.9227342-->
+      <!--Lon: OSM: -3.6218519 OS -3.6218598-->
+      <!--Separation distance: 0.7 m-->
+      <!--Name: OSM: Ballencrieff Hill OS: Ballencrieff Hill-->
+      <!--Ele: OSM: 312 OS: 312.203-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3241 OS: S3241-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011511" changeset="1" version="1" lat="55.8640984" lon="-3.8736168">
+      <!--Lat: OSM: 55.8640984 OS 55.8641023-->
+      <!--Lon: OSM: -3.8736168 OS -3.8736271-->
+      <!--Separation distance: 0.78 m-->
+      <!--Name: OSM: Black Hill Wester Bracco OS: Black Hill Wester Bracco-->
+      <!--Ele: OSM: 285 OS: 285.024-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3615 OS: S3615-->
+    </node>
+  </create>
+  <create>
+    <node id="448899243" changeset="1" version="1" lat="53.09458" lon="-1.562629">
+      <!--Lat: OSM: 53.09458 OS 53.094579-->
+      <!--Lon: OSM: -1.562629 OS -1.5626331-->
+      <!--Separation distance: 0.3 m-->
+      <!--Name: OSM: Bolehill East OS: Bolehill East-->
+      <!--Ele: OSM: 322.350 OS: 322.35-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S1716 OS: S1716-->
+    </node>
+  </create>
+  <create>
+    <node id="10007271740" changeset="1" version="1" lat="51.0905593" lon="-1.5785637">
+      <!--Lat: OSM: 51.0905593 OS 51.0905636-->
+      <!--Lon: OSM: -1.5785637 OS -1.578559-->
+      <!--Separation distance: 0.58 m-->
+      <!--Name: OSM: Broughton Down OS: Broughton Down-->
+      <!--Ele: OSM: 138 OS: 138.616-->
+      <!--Type: OSM: NA / pillar OS: PILLAR-->
+      <!--FB: OSM: NA OS: 2622-->
+    </node>
+  </create>
+  <create>
+    <node id="8739361590" changeset="1" version="1" lat="53.302621" lon="-3.753913">
+      <!--Lat: OSM: 53.302621 OS 53.3026207-->
+      <!--Lon: OSM: -3.753913 OS -3.7539167-->
+      <!--Separation distance: 0.25 m-->
+      <!--Name: OSM: Bryn Euryn OS: Bryn Euryn-->
+      <!--Ele: OSM: 130.878 OS: 130.878-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S7330 OS: S7330-->
+    </node>
+  </create>
+  <create>
+    <node id="3101253389" changeset="1" version="1" lat="51.8230142" lon="-4.057167">
+      <!--Lat: OSM: 51.8230142 OS 51.8230107-->
+      <!--Lon: OSM: -4.057167 OS -4.0571572-->
+      <!--Separation distance: 0.78 m-->
+      <!--Name: OSM: Carmel OS: Carmel-->
+      <!--Ele: OSM: NA OS: 273.359-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S2283 OS: S2283-->
+    </node>
+  </create>
+  <create>
+    <node id="8756152410" changeset="1" version="1" lat="52.951476" lon="-4.252855">
+      <!--Lat: OSM: 52.951476 OS 52.9514749-->
+      <!--Lon: OSM: -4.252855 OS -4.2528528-->
+      <!--Separation distance: 0.19 m-->
+      <!--Name: OSM: Cefn-Uchaf OS: Cefn-Uchaf-->
+      <!--Ele: OSM: 111.834 OS: 111.834-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S8130 OS: S8130-->
+    </node>
+  </create>
+  <create>
+    <node id="10867275041" changeset="1" version="1" lat="52.1435991" lon="0.0490131">
+      <!--Lat: OSM: 52.1435991 OS 52.1435965-->
+      <!--Lon: OSM: 0.0490131 OS 0.0490098-->
+      <!--Separation distance: 0.37 m-->
+      <!--Name: OSM: Chapel Hill OS: Chapel Hill-->
+      <!--Ele: OSM: 61.462 OS: 61.462-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5061 OS: S5061-->
+    </node>
+  </create>
+  <create>
+    <node id="11724672810" changeset="1" version="1" lat="52.2138467" lon="0.042598">
+      <!--Lat: OSM: 52.2138467 OS 52.2138509-->
+      <!--Lon: OSM: 0.042598 OS 0.0425962-->
+      <!--Separation distance: 0.48 m-->
+      <!--Name: OSM: Coton OS: Coton-->
+      <!--Ele: OSM: 62.904 OS: 62.904-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5074 OS: S5074-->
+    </node>
+  </create>
+  <create>
+    <node id="8739151864" changeset="1" version="1" lat="53.312055" lon="-3.413127">
+      <!--Lat: OSM: 53.312055 OS 53.3120589-->
+      <!--Lon: OSM: -3.413127 OS -3.4131266-->
+      <!--Separation distance: 0.44 m-->
+      <!--Name: OSM: Craig Fawr OS: Craig Fawr-->
+      <!--Ele: OSM: 152.933 OS: 152.933-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S3535 OS: S3535-->
+    </node>
+  </create>
+  <create>
+    <node id="6711760501" changeset="1" version="1" lat="53.702422" lon="-1.9724301">
+      <!--Lat: OSM: 53.702422 OS 53.7024148-->
+      <!--Lon: OSM: -1.9724301 OS -1.9724323-->
+      <!--Separation distance: 0.81 m-->
+      <!--Name: OSM: Crow Hill OS: Crow Hill-->
+      <!--Ele: OSM: 383 OS: 383.801-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S4371-->
+    </node>
+  </create>
+  <create>
+    <node id="4477853311" changeset="1" version="1" lat="52.1271619" lon="-0.0907959">
+      <!--Lat: OSM: 52.1271619 OS 52.1271646-->
+      <!--Lon: OSM: -0.0907959 OS -0.0907972-->
+      <!--Separation distance: 0.31 m-->
+      <!--Name: OSM: Croydon Hill OS: Croydon Hill-->
+      <!--Ele: OSM: 78.144 OS: 78.144-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5950 OS: S5950-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011510" changeset="1" version="1" lat="55.9110784" lon="-3.5470716">
+      <!--Lat: OSM: 55.9110784 OS 55.9110828-->
+      <!--Lon: OSM: -3.5470716 OS -3.5470763-->
+      <!--Separation distance: 0.57 m-->
+      <!--Name: OSM: Dechmont Law OS: Dechmont Law-->
+      <!--Ele: OSM: 217 OS: 217.051-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3242 OS: S3242-->
+    </node>
+  </create>
+  <create>
+    <node id="344098678" changeset="1" version="1" lat="51.6221392" lon="-1.2140392">
+      <!--Lat: OSM: 51.6221392 OS 51.6221478-->
+      <!--Lon: OSM: -1.2140392 OS -1.2140394-->
+      <!--Separation distance: 0.96 m-->
+      <!--Name: OSM: Down Hill OS: Down Hill-->
+      <!--Ele: OSM: NA OS: 76.364-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S4667 OS: 4667-->
+    </node>
+  </create>
+  <create>
+    <node id="12311639569" changeset="1" version="1" lat="56.5622056" lon="-3.5104375">
+      <!--Lat: OSM: 56.5622056 OS 56.5622069-->
+      <!--Lon: OSM: -3.5104375 OS -3.5104272-->
+      <!--Separation distance: 0.65 m-->
+      <!--Name: OSM: East Cult Trig Point OS: East Cult-->
+      <!--Ele: OSM: NA OS: 203.804-->
+      <!--Type: OSM: NA / pillar OS: PILLAR-->
+      <!--FB: OSM: OSBM 10258 OS: 10258-->
+    </node>
+  </create>
+  <create>
+    <node id="6754460534" changeset="1" version="1" lat="51.0508093" lon="-3.1385171">
+      <!--Lat: OSM: 51.0508093 OS 51.0508045-->
+      <!--Lon: OSM: -3.1385171 OS -3.1385123-->
+      <!--Separation distance: 0.63 m-->
+      <!--Name: OSM: Edgeborough OS: Edgeborough-->
+      <!--Ele: OSM: 44 OS: 45.406-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3733 OS: S3733-->
+    </node>
+  </create>
+  <create>
+    <node id="7554871194" changeset="1" version="1" lat="54.8056516" lon="-1.6208284">
+      <!--Lat: OSM: 54.8056516 OS 54.8056495-->
+      <!--Lon: OSM: -1.6208284 OS -1.6208162-->
+      <!--Separation distance: 0.82 m-->
+      <!--Name: OSM: Findon Cottages OS: Findon Cottages-->
+      <!--Ele: OSM: 153.3 OS: 153.286-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: OS BM S4176 OS: S4176-->
+    </node>
+  </create>
+  <create>
+    <node id="1493733260" changeset="1" version="1" lat="52.3025357" lon="-2.3652685">
+      <!--Lat: OSM: 52.3025357 OS 52.302529-->
+      <!--Lon: OSM: -2.3652685 OS -2.3652712-->
+      <!--Separation distance: 0.77 m-->
+      <!--Name: OSM: Flagstaff Wood Abberley OS: Flagstaff Wood Abberley-->
+      <!--Ele: OSM: NA OS: 283.704-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3870 OS: S3870-->
+    </node>
+  </create>
+  <create>
+    <node id="430122652" changeset="1" version="1" lat="54.6493661" lon="-2.8320565">
+      <!--Lat: OSM: 54.6493661 OS 54.6493587-->
+      <!--Lon: OSM: -2.8320565 OS -2.832053-->
+      <!--Separation distance: 0.85 m-->
+      <!--Name: OSM: Flusco Pike OS: Flusco Pike-->
+      <!--Ele: OSM: 280.7 OS: 280.729-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6481 OS: S6481-->
+    </node>
+  </create>
+  <create>
+    <node id="8733477681" changeset="1" version="1" lat="53.148272" lon="-3.463099">
+      <!--Lat: OSM: 53.148272 OS 53.1482692-->
+      <!--Lon: OSM: -3.463099 OS -3.4630958-->
+      <!--Separation distance: 0.38 m-->
+      <!--Name: OSM: Foel Gasyth OS: Foel Gasyth-->
+      <!--Ele: OSM: 378.198 OS: 378.198-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S3509 OS: 3509-->
+    </node>
+  </create>
+  <create>
+    <node id="340366974" changeset="1" version="1" lat="50.726382" lon="-2.8412028">
+      <!--Lat: OSM: 50.726382 OS 50.7263797-->
+      <!--Lon: OSM: -2.8412028 OS -2.8412088-->
+      <!--Separation distance: 0.5 m-->
+      <!--Name: OSM: Golden Cap OS: Golden Cap-->
+      <!--Ele: OSM: 191 OS: 190.948-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: BM53752 OS: 3752-->
+    </node>
+  </create>
+  <create>
+    <node id="323147190" changeset="1" version="1" lat="54.8230108" lon="-2.211771">
+      <!--Lat: OSM: 54.8230108 OS 54.8230036-->
+      <!--Lon: OSM: -2.211771 OS -2.2117636-->
+      <!--Separation distance: 0.93 m-->
+      <!--Name: OSM: Green Hill OS: Green Hill-->
+      <!--Ele: OSM: 529.8 OS: 529.842-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S6658-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057082" changeset="1" version="1" lat="54.6954688" lon="-2.9225555">
+      <!--Lat: OSM: 54.6954688 OS 54.6954614-->
+      <!--Lon: OSM: -2.9225555 OS -2.9225512-->
+      <!--Separation distance: 0.87 m-->
+      <!--Name: OSM: Greystoke Park OS: Greystoke Park-->
+      <!--Ele: OSM: 365.6 OS: 365.613-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6953 OS: S6953-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011507" changeset="1" version="1" lat="55.7590635" lon="-3.6394063">
+      <!--Lat: OSM: 55.7590635 OS 55.7590662-->
+      <!--Lon: OSM: -3.6394063 OS -3.6394128-->
+      <!--Separation distance: 0.5 m-->
+      <!--Name: OSM: Hardgatehead Farm OS: Hardgatehead Farm-->
+      <!--Ele: OSM: 278 OS: 277.709-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S2664 OS: S2664-->
+    </node>
+  </create>
+  <create>
+    <node id="8734315008" changeset="1" version="1" lat="52.678924" lon="-3.017541">
+      <!--Lat: OSM: 52.678924 OS 52.6789255-->
+      <!--Lon: OSM: -3.017541 OS -3.0175472-->
+      <!--Separation distance: 0.45 m-->
+      <!--Name: OSM: Hargrave Bank OS: Hargrave Bank-->
+      <!--Ele: OSM: 324.825 OS: 324.825-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S4752 OS: S4752-->
+    </node>
+  </create>
+  <create>
+    <node id="6066111932" changeset="1" version="1" lat="52.1561017" lon="-0.1066912">
+      <!--Lat: OSM: 52.1561017 OS 52.1561016-->
+      <!--Lon: OSM: -0.1066912 OS -0.1066849-->
+      <!--Separation distance: 0.43 m-->
+      <!--Name: OSM: Hatley Wilds OS: Hatley Wilds-->
+      <!--Ele: OSM: 81.037 OS: 81.037-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5951 OS: S5951-->
+    </node>
+  </create>
+  <create>
+    <node id="2870664826" changeset="1" version="1" lat="55.2633645" lon="-1.7764932">
+      <!--Lat: OSM: 55.2633645 OS 55.2633597-->
+      <!--Lon: OSM: -1.7764932 OS -1.7764819-->
+      <!--Separation distance: 0.89 m-->
+      <!--Name: OSM: Hedley Hill OS: Hedley Hill-->
+      <!--Ele: OSM: NA OS: 147.48-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S3691-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057074" changeset="1" version="1" lat="54.7448468" lon="-2.9772726">
+      <!--Lat: OSM: 54.7448468 OS 54.7448394-->
+      <!--Lon: OSM: -2.9772726 OS -2.9772679-->
+      <!--Separation distance: 0.88 m-->
+      <!--Name: OSM: Hewer Hill Quarry OS: Hewer Hill Quarry-->
+      <!--Ele: OSM: 257.1 OS: 257.12-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S7000 OS: S7000-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057076" changeset="1" version="1" lat="54.4054932" lon="-3.0179429">
+      <!--Lat: OSM: 54.4054932 OS 54.4054858-->
+      <!--Lon: OSM: -3.0179429 OS -3.0179395-->
+      <!--Separation distance: 0.85 m-->
+      <!--Name: OSM: High Arnside OS: High Arnside-->
+      <!--Ele: OSM: 322.3 OS: 322.329-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5334 OS: S5334-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057078" changeset="1" version="1" lat="54.687638" lon="-2.8086938">
+      <!--Lat: OSM: 54.687638 OS 54.6876303-->
+      <!--Lon: OSM: -2.8086938 OS -2.8086894-->
+      <!--Separation distance: 0.9 m-->
+      <!--Name: OSM: High Dykes OS: High Dykes-->
+      <!--Ele: OSM: 197.8 OS: 197.803-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6995 OS: S6995-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011508" changeset="1" version="1" lat="55.7598991" lon="-3.7736676">
+      <!--Lat: OSM: 55.7598991 OS 55.7599014-->
+      <!--Lon: OSM: -3.7736676 OS -3.7736772-->
+      <!--Separation distance: 0.66 m-->
+      <!--Name: OSM: Hill of Westerhouse OS: Hill Of Westerhouse-->
+      <!--Ele: OSM: 313 OS: 312.642-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3586 OS: S3586-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057085" changeset="1" version="1" lat="54.7190105" lon="-2.9443146">
+      <!--Lat: OSM: 54.7190105 OS 54.7190033-->
+      <!--Lon: OSM: -2.9443146 OS -2.9443095-->
+      <!--Separation distance: 0.87 m-->
+      <!--Name: OSM: How Hill OS: How Hill-->
+      <!--Ele: OSM: 317.0 OS: 317.013-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6996 OS: S6996-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057093" changeset="1" version="1" lat="54.7285801" lon="-2.8510651">
+      <!--Lat: OSM: 54.7285801 OS 54.7285726-->
+      <!--Lon: OSM: -2.8510651 OS -2.8510608-->
+      <!--Separation distance: 0.88 m-->
+      <!--Name: OSM: Hutton Bank OS: Hutton Bank-->
+      <!--Ele: OSM: 202.8 OS: 202.804-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6994 OS: S6994-->
+    </node>
+  </create>
+  <create>
+    <node id="2837389601" changeset="1" version="1" lat="52.4448377" lon="-2.2476174">
+      <!--Lat: OSM: 52.4448377 OS 52.4448341-->
+      <!--Lon: OSM: -2.2476174 OS -2.2476056-->
+      <!--Separation distance: 0.9 m-->
+      <!--Name: OSM: Kinver Edge OS: Kinver Edge-->
+      <!--Ele: OSM: 164 OS: 163.936-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S2291-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011516" changeset="1" version="1" lat="55.865611" lon="-3.7845044">
+      <!--Lat: OSM: 55.865611 OS 55.8656147-->
+      <!--Lon: OSM: -3.7845044 OS -3.784516-->
+      <!--Separation distance: 0.83 m-->
+      <!--Name: OSM: Knowehead OS: Knowehead-->
+      <!--Ele: OSM: 251 OS: 251.069-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3614 OS: S3614-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011515" changeset="1" version="1" lat="55.800089" lon="-3.68228">
+      <!--Lat: OSM: 55.800089 OS 55.8000919-->
+      <!--Lon: OSM: -3.68228 OS -3.6822875-->
+      <!--Separation distance: 0.57 m-->
+      <!--Name: OSM: Leven Seat OS: Leven Seat-->
+      <!--Ele: OSM: NA OS: 356.497-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S9464 OS: S9464-->
+    </node>
+  </create>
+  <create>
+    <node id="3441469136" changeset="1" version="1" lat="55.0383312" lon="-2.1927017">
+      <!--Lat: OSM: 55.0383312 OS 55.0383247-->
+      <!--Lon: OSM: -2.1927017 OS -2.1926966-->
+      <!--Separation distance: 0.79 m-->
+      <!--Name: OSM: Limestone Bank OS: Limestone Bank-->
+      <!--Ele: OSM: 250.6 OS: 250.551-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S6659 OS: 6659-->
+    </node>
+  </create>
+  <create>
+    <node id="12089096469" changeset="1" version="1" lat="52.0588676" lon="-0.0724559">
+      <!--Lat: OSM: 52.0588676 OS 52.0588646-->
+      <!--Lon: OSM: -0.0724559 OS -0.072452-->
+      <!--Separation distance: 0.43 m-->
+      <!--Name: OSM: Limlow Hill OS: Limlow Hill-->
+      <!--Ele: OSM: 59.051 OS: 59.051-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5956 OS: S5956-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057090" changeset="1" version="1" lat="54.608021" lon="-2.894467">
+      <!--Lat: OSM: 54.608021 OS 54.6080136-->
+      <!--Lon: OSM: -2.894467 OS -2.8944641-->
+      <!--Separation distance: 0.84 m-->
+      <!--Name: OSM: Little Mell Fell OS: Little Mell Fell-->
+      <!--Ele: OSM: 505.4 OS: 505.361-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6992 OS: S6992-->
+    </node>
+  </create>
+  <create>
+    <node id="8739378718" changeset="1" version="1" lat="53.325014" lon="-3.783646">
+      <!--Lat: OSM: 53.325014 OS 53.3250102-->
+      <!--Lon: OSM: -3.783646 OS -3.7836476-->
+      <!--Separation distance: 0.43 m-->
+      <!--Name: OSM: Little Ormes Head OS: Little Ormes Head-->
+      <!--Ele: OSM: 141.716 OS: 141.716-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S7323 OS: S7323-->
+    </node>
+  </create>
+  <create>
+    <node id="8729036456" changeset="1" version="1" lat="53.229978" lon="-3.65233">
+      <!--Lat: OSM: 53.229978 OS 53.2299757-->
+      <!--Lon: OSM: -3.65233 OS -3.6523372-->
+      <!--Separation distance: 0.55 m-->
+      <!--Name: OSM: Moelfre Uchaf OS: Moelfre Uchaf-->
+      <!--Ele: OSM: 396.300 OS: 396.3-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S7336 OS: S7336-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011512" changeset="1" version="1" lat="55.9460794" lon="-3.733465">
+      <!--Lat: OSM: 55.9460794 OS 55.9460837-->
+      <!--Lon: OSM: -3.733465 OS -3.7334728-->
+      <!--Separation distance: 0.68 m-->
+      <!--Name: OSM: Muirhead OS: Muirhead-->
+      <!--Ele: OSM: 198 OS: 198.141-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3610 OS: S3610-->
+    </node>
+  </create>
+  <create>
+    <node id="9002289211" changeset="1" version="1" lat="53.0478623" lon="-1.8249623">
+      <!--Lat: OSM: 53.0478623 OS 53.0478564-->
+      <!--Lon: OSM: -1.8249623 OS -1.8249529-->
+      <!--Separation distance: 0.91 m-->
+      <!--Name: OSM: Musden Low OS: Musden Low-->
+      <!--Ele: OSM: 360 OS: 359.712-->
+      <!--Type: OSM: NA / pillar OS: PILLAR-->
+      <!--FB: OSM: S4125 OS: S4125-->
+    </node>
+  </create>
+  <create>
+    <node id="8723047627" changeset="1" version="1" lat="52.839029" lon="-3.123791">
+      <!--Lat: OSM: 52.839029 OS 52.8390298-->
+      <!--Lon: OSM: -3.123791 OS -3.1237906-->
+      <!--Separation distance: 0.09 m-->
+      <!--Name: OSM: Mynydd Myfyr OS: Mynydd Myfyr-->
+      <!--Ele: OSM: 341.180 OS: 341.18-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S3117 OS: S3117-->
+    </node>
+  </create>
+  <create>
+    <node id="8779775033" changeset="1" version="1" lat="52.154483" lon="-0.025525">
+      <!--Lat: OSM: 52.154483 OS 52.1544823-->
+      <!--Lon: OSM: -0.025525 OS -0.0255182-->
+      <!--Separation distance: 0.47 m-->
+      <!--Name: OSM: New Farm OS: New Farm-->
+      <!--Ele: OSM: 76.766 OS: 76.766-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6225 OS: 6225-->
+    </node>
+  </create>
+  <create>
+    <node id="9630117690" changeset="1" version="1" lat="51.6664315" lon="-4.7880193">
+      <!--Lat: OSM: 51.6664315 OS 51.6664298-->
+      <!--Lon: OSM: -4.7880193 OS -4.7880059-->
+      <!--Separation distance: 0.95 m-->
+      <!--Name: OSM: Norchard Beacon OS: Norchard Beacon-->
+      <!--Ele: OSM: 110 OS: 109.462-->
+      <!--Type: OSM: NA / pillar OS: PILLAR-->
+      <!--FB: OSM: S6310 OS: S6310-->
+    </node>
+  </create>
+  <create>
+    <node id="320730229" changeset="1" version="1" lat="56.0487964" lon="-2.7138172">
+      <!--Lat: OSM: 56.0487964 OS 56.0487929-->
+      <!--Lon: OSM: -2.7138172 OS -2.7138049-->
+      <!--Separation distance: 0.86 m-->
+      <!--Name: OSM: North Berwick Law OS: North Berwick Law-->
+      <!--Ele: OSM: 187 OS: 187.223-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3063 OS: S3063-->
+    </node>
+  </create>
+  <create>
+    <node id="8725101507" changeset="1" version="1" lat="53.049762" lon="-3.109829">
+      <!--Lat: OSM: 53.049762 OS 53.0497618-->
+      <!--Lon: OSM: -3.109829 OS -3.1098249-->
+      <!--Separation distance: 0.28 m-->
+      <!--Name: OSM: Park Lead Mines OS: Park Lead Mines-->
+      <!--Ele: OSM: 456.495 OS: 456.495-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S3108 OS: S3108-->
+    </node>
+  </create>
+  <create>
+    <node id="8561011513" changeset="1" version="1" lat="55.808063" lon="-3.5852169">
+      <!--Lat: OSM: 55.808063 OS 55.8080657-->
+      <!--Lon: OSM: -3.5852169 OS -3.5852224-->
+      <!--Separation distance: 0.46 m-->
+      <!--Name: OSM: Pearie Law OS: Pearie Law-->
+      <!--Ele: OSM: 302 OS: 301.517-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S2652 OS: S2652-->
+    </node>
+  </create>
+  <create>
+    <node id="1037565177" changeset="1" version="1" lat="51.7056839" lon="-0.8124979">
+      <!--Lat: OSM: 51.7056839 OS 51.7056846-->
+      <!--Lon: OSM: -0.8124979 OS -0.8125074-->
+      <!--Separation distance: 0.66 m-->
+      <!--Name: OSM: Pink Hill OS: Pink Hill-->
+      <!--Ele: OSM: 234 OS: 234.193-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S4758 OS: S4758-->
+    </node>
+  </create>
+  <create>
+    <node id="5714876748" changeset="1" version="1" lat="51.6363038" lon="-0.0015047">
+      <!--Lat: OSM: 51.6363038 OS 51.6363051-->
+      <!--Lon: OSM: -0.0015047 OS -0.0015131-->
+      <!--Separation distance: 0.6 m-->
+      <!--Name: OSM: Pole Hill OS: Pole Hill-->
+      <!--Ele: OSM: NA OS: 91.351-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S3276-->
+    </node>
+  </create>
+  <create>
+    <node id="8735872856" changeset="1" version="1" lat="53.242173" lon="-3.78955">
+      <!--Lat: OSM: 53.242173 OS 53.2421745-->
+      <!--Lon: OSM: -3.78955 OS -3.7895572-->
+      <!--Separation distance: 0.51 m-->
+      <!--Name: OSM: Prenol OS: Prenol-->
+      <!--Ele: OSM: 180.700 OS: 180.7-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S7341 OS: S7341-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057092" changeset="1" version="1" lat="54.6734835" lon="-2.7164621">
+      <!--Lat: OSM: 54.6734835 OS 54.6734762-->
+      <!--Lon: OSM: -2.7164621 OS -2.7164574-->
+      <!--Separation distance: 0.87 m-->
+      <!--Name: OSM: Roundthorn OS: Roundthorn-->
+      <!--Ele: OSM: 232.8 OS: 232.836-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S6476 OS: S6476-->
+    </node>
+  </create>
+  <create>
+    <node id="8738554961" changeset="1" version="1" lat="53.003241" lon="-3.139319">
+      <!--Lat: OSM: 53.003241 OS 53.0032381-->
+      <!--Lon: OSM: -3.139319 OS -3.1393256-->
+      <!--Separation distance: 0.55 m-->
+      <!--Name: OSM: Ruabon Mountain South OS: Ruabon Mountain South-->
+      <!--Ele: OSM: 502.773 OS: 502.773-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S3111 OS: S3111-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057087" changeset="1" version="1" lat="54.6661002" lon="-3.2086039">
+      <!--Lat: OSM: 54.6661002 OS 54.6660921-->
+      <!--Lon: OSM: -3.2086039 OS -3.2085998-->
+      <!--Separation distance: 0.94 m-->
+      <!--Name: OSM: Scarness OS: Scarness-->
+      <!--Ele: OSM: 91.4 OS: 91.385-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5706 OS: S5706-->
+    </node>
+  </create>
+  <create>
+    <node id="5673272098" changeset="1" version="1" lat="51.220816" lon="-3.5495047">
+      <!--Lat: OSM: 51.220816 OS 51.2208185-->
+      <!--Lon: OSM: -3.5495047 OS -3.5494942-->
+      <!--Separation distance: 0.78 m-->
+      <!--Name: OSM: Selworthy Beacon OS: Selworthy Beacon-->
+      <!--Ele: OSM: 308 OS: 308.856-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S3944-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057083" changeset="1" version="1" lat="54.5844321" lon="-2.685806">
+      <!--Lat: OSM: 54.5844321 OS 54.584424-->
+      <!--Lon: OSM: -2.685806 OS -2.685801-->
+      <!--Separation distance: 0.96 m-->
+      <!--Name: OSM: Sheriffs Park OS: Sheriffs Park-->
+      <!--Ele: OSM: 254.2 OS: 254.221-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: 10416 OS: 10416-->
+    </node>
+  </create>
+  <create>
+    <node id="534691015" changeset="1" version="1" lat="55.6029779" lon="-2.5800961">
+      <!--Lat: OSM: 55.6029779 OS 55.6029732-->
+      <!--Lon: OSM: -2.5800961 OS -2.580104-->
+      <!--Separation distance: 0.72 m-->
+      <!--Name: OSM: Smailholm OS: Smailholm-->
+      <!--Ele: OSM: 207 OS: 207.492-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S7476 OS: S7476-->
+    </node>
+  </create>
+  <create>
+    <node id="4363587842" changeset="1" version="1" lat="51.2727034" lon="-2.0643149">
+      <!--Lat: OSM: 51.2727034 OS 51.2727093-->
+      <!--Lon: OSM: -2.0643149 OS -2.0643129-->
+      <!--Separation distance: 0.67 m-->
+      <!--Name: OSM: Stoke Hill OS: Stoke Hill-->
+      <!--Ele: OSM: 221 OS: 221.699-->
+      <!--Type: OSM: NA / pillar OS: PILLAR-->
+      <!--FB: OSM: S2477 OS: S2477-->
+    </node>
+  </create>
+  <create>
+    <node id="3383693157" changeset="1" version="1" lat="51.3683291" lon="-2.3965416">
+      <!--Lat: OSM: 51.3683291 OS 51.3683249-->
+      <!--Lon: OSM: -2.3965416 OS -2.3965423-->
+      <!--Separation distance: 0.47 m-->
+      <!--Name: OSM: Twerton Roundhill OS: Twerton Hill-->
+      <!--Ele: OSM: NA OS: 141.29-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S3230-->
+    </node>
+  </create>
+  <create>
+    <node id="8756144883" changeset="1" version="1" lat="53.142763" lon="-4.270663">
+      <!--Lat: OSM: 53.142763 OS 53.1427606-->
+      <!--Lon: OSM: -4.270663 OS -4.270665-->
+      <!--Separation distance: 0.3 m-->
+      <!--Name: OSM: Twt Hill OS: Twt Hill-->
+      <!--Ele: OSM: 60.661 OS: 60.661-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S7216 OS: S7216-->
+    </node>
+  </create>
+  <create>
+    <node id="3690069025" changeset="1" version="1" lat="54.0972217" lon="-2.7252736">
+      <!--Lat: OSM: 54.0972217 OS 54.0972165-->
+      <!--Lon: OSM: -2.7252736 OS -2.7252791-->
+      <!--Separation distance: 0.68 m-->
+      <!--Name: OSM: View Field OS: View Field-->
+      <!--Ele: OSM: 153 OS: 153.049-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: NA OS: S5405-->
+    </node>
+  </create>
+  <create>
+    <node id="312021505" changeset="1" version="1" lat="51.299117" lon="-2.8519528">
+      <!--Lat: OSM: 51.299117 OS 51.2991226-->
+      <!--Lon: OSM: -2.8519528 OS -2.8519509-->
+      <!--Separation distance: 0.63 m-->
+      <!--Name: OSM: Wavering Down OS: Wavering Down-->
+      <!--Ele: OSM: 211 OS: 210.936-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S3247 OS: 3247-->
+    </node>
+  </create>
+  <create>
+    <node id="9630989688" changeset="1" version="1" lat="51.6470433" lon="-4.842948">
+      <!--Lat: OSM: 51.6470433 OS 51.6470376-->
+      <!--Lon: OSM: -4.842948 OS -4.842938-->
+      <!--Separation distance: 0.93 m-->
+      <!--Name: OSM: West Moor Cliff OS: West Moor Cliff-->
+      <!--Ele: OSM: 91 OS: 85.337-->
+      <!--Type: OSM: NA / pillar OS: PILLAR-->
+      <!--FB: OSM: NA OS: S6302-->
+    </node>
+  </create>
+  <create>
+    <node id="8125057088" changeset="1" version="1" lat="54.7324287" lon="-3.2870558">
+      <!--Lat: OSM: 54.7324287 OS 54.7324216-->
+      <!--Lon: OSM: -3.2870558 OS -3.2870537-->
+      <!--Separation distance: 0.8 m-->
+      <!--Name: OSM: Wharrels Hill OS: Wharrels Hill-->
+      <!--Ele: OSM: 221.2 OS: 221.217-->
+      <!--Type: OSM: pillar / NA OS: PILLAR-->
+      <!--FB: OSM: S5709 OS: S5709-->
+    </node>
+  </create>
+</osmChange>
