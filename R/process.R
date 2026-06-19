@@ -225,6 +225,7 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 			osm_r$osm_id, "</a> is ",
 			round(os_r$distance, digits=DIST_DIGITS), " m away<br>",
 			"</span>" )
+		s = paste(sep="", s, "\"")
 	} else {
 		s = paste(sep="",
 			"\"",
@@ -248,7 +249,46 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
 			osm_r$osm_id, "</a> is ",
 			round(os_r$distance, digits=DIST_DIGITS), " m away<br>" )
+		s = paste(sep="", s, "\"")
 	}
+
+	return(s)
+}
+
+# Generate HTML table info for an OSM node
+osm_node_html <- function( osm_r) {
+
+	#Drop quotes from other tags, as it breaks the html formatting
+	other_txt = gsub("\"", "", osm_r$other_tags)
+	#And, some encoded embedded stuff
+	other_txt = gsub("&#xA", "", other_txt)
+	#And linefeeds!
+	other_txt = gsub("\n", " ", other_txt)
+
+	s = paste(sep="",
+		"\"",
+		"<table style='border:1px solid black;'>",
+			"<tr><th>Item</th><th>OSM</th></tr>",
+			"<tr><td>Name</td>",
+				"<td>", osm_r$name, "</td></tr>",
+			"<tr><td>ele</td>",
+				"<td>", osm_r$ele, "</td></tr>",
+			"<tr><td>ref</td>",
+				"<td>", osm_r$ref, "</td></tr>",
+			"<tr><td>Structure</td>",
+				"<td>", osm_r$survey_point_structure, "</td></tr>",
+			"<tr><td>Survey_pt</td>",
+				"<td>", osm_r$survey_point, "</td></tr>",
+			"<tr><td>ref:os</td>",
+				"<td>", osm_r$ref_os, "</td></tr>",
+			"<tr><td>Other tags</td>",
+				"<td>", other_txt, "</td></tr>",
+		"</table><br>"
+		)
+	s = paste(sep="", s,
+		"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
+		osm_r$osm_id, "</a>")
+	s = paste(sep="", s, "\"")
 
 	return(s)
 }
@@ -1401,7 +1441,7 @@ if( generate_osc ) {
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
 				node_compare_html(os_row, osb_row, osm_row),
-				"\" ],"),
+				"],"),
 				file=newnode_file,append=TRUE)
 		}
 		write("];", file=newnode_file, append=TRUE)
@@ -1422,7 +1462,7 @@ if( generate_osc ) {
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
 				node_compare_html(os_row, osb_row, osm_row),
-				"\" ],"),
+				"],"),
 				file=reviewnode_file,append=TRUE)
 		}
 		write("];", file=reviewnode_file, append=TRUE)
@@ -1443,7 +1483,7 @@ if( generate_osc ) {
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
 				node_compare_html(os_row, osb_row, osm_row),
-				"\" ],"),
+				"],"),
 				file=goodnode_file,append=TRUE)
 		}
 		write("];", file=goodnode_file, append=TRUE)
@@ -1464,7 +1504,7 @@ if( generate_osc ) {
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
 				node_compare_html(os_row, osb_row, osm_row),
-				"\" ],"),
+				"],"),
 				file=editnode_file,append=TRUE)
 		}
 		write("];", file=editnode_file, append=TRUE)
@@ -1509,8 +1549,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				"\"OSM <a href=\\\"http://openstreetmap.org/node/", osm_row$osm_id, "\\\">",
-				osm_row$osm_id, "</a>\"",
+				osm_node_html(osm_row),
 				"],"
 				),
 				file=osmnode_file,append=TRUE)
