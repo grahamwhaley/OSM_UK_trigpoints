@@ -200,37 +200,55 @@ fuzzywuzzy <- function(s, m) {
 }
 
 node_compare_html <- function(os_r, osb_r, osm_r) {
-	s = paste(sep="",
-		"\"",
-		"<table style='border:1px solid black;'>",
-			"<tr><th>Item</th><th>OS</th><th>OSM</th></tr>",
-			"<tr><td>Name</td>",
-				"<td>", os_r$Trig.Name, "</td>",
-				"<td>", osm_r$name, "</td></tr>",
-			"<tr><td>ele</td>",
-				"<td>", os_r$HEIGHT, "</td>",
-				"<td>", osm_r$ele, "</td></tr>",
-			"<tr><td>FB/ref</td>",
-				"<td>", osb_r$FB, "</td>",
-				"<td>", osm_r$ref, "</td></tr>",
-			"<tr><td>Structure</td>",
-				"<td>", os_r$TYPE.OF.MARK, "</td>",
-				"<td>", osm_r$survey_point_structure, "</td></tr>",
-		"</table><br>"
-		)
 
-	if( os_r$distance > max_snap_distance )
+	# If the OSM node is too far away, don't populate its column as that info
+	# may just be misleading
+	if( os_r$distance > max_snap_distance ) {
+		s = paste(sep="",
+			"\"",
+			"<table style='border:1px solid black;'>",
+				"<tr><th>Item</th><th>OS</th></tr>",
+				"<tr><td>Name</td>",
+					"<td>", os_r$Trig.Name, "</td>",
+				"<tr><td>ele</td>",
+					"<td>", os_r$HEIGHT, "</td>",
+				"<tr><td>FB/ref</td>",
+					"<td>", osb_r$FB, "</td>",
+				"<tr><td>Structure</td>",
+					"<td>", os_r$TYPE.OF.MARK, "</td>",
+			"</table><br>"
+			)
+
 		s = paste(sep="", s,
 			"<span style='color: red'>",
 			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
 			osm_r$osm_id, "</a> is ",
 			round(os_r$distance, digits=DIST_DIGITS), " m away<br>",
 			"</span>" )
-	else
+	} else {
+		s = paste(sep="",
+			"\"",
+			"<table style='border:1px solid black;'>",
+				"<tr><th>Item</th><th>OS</th><th>OSM</th></tr>",
+				"<tr><td>Name</td>",
+					"<td>", os_r$Trig.Name, "</td>",
+					"<td>", osm_r$name, "</td></tr>",
+				"<tr><td>ele</td>",
+					"<td>", os_r$HEIGHT, "</td>",
+					"<td>", osm_r$ele, "</td></tr>",
+				"<tr><td>FB/ref</td>",
+					"<td>", osb_r$FB, "</td>",
+					"<td>", osm_r$ref, "</td></tr>",
+				"<tr><td>Structure</td>",
+					"<td>", os_r$TYPE.OF.MARK, "</td>",
+					"<td>", osm_r$survey_point_structure, "</td></tr>",
+			"</table><br>"
+			)
 		s = paste(sep="", s,
 			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
 			osm_r$osm_id, "</a> is ",
 			round(os_r$distance, digits=DIST_DIGITS), " m away<br>" )
+	}
 
 	return(s)
 }
