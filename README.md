@@ -11,6 +11,9 @@ pillar trigpoints - likely less as many OSM nodes do not represent current trigp
 This is a work in progress. If the data is successfully imported into OSM then this repository will
 be updated accordingly.
 
+If you are looking for the slippy map view of current status, have a look at the
+[github.io page for this repository](https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html).
+
 ## Motivation
 
 I've made a few very minor contributions to OSM in the past, mainly small objects near
@@ -143,7 +146,14 @@ To that end, the code currently generates four
 
 See the [**Output examples**](#Output-examples) section below for example OSC XML output.
 
+We also generate a [Leaflet](https://leafletjs.com/)
+slippy map to help both visualisation of the data and status and also to help with any manual
+checking of results or for hand updates. That map can be found on the
+[github.io page for this repository](https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html).
+
 ## What do the results 'look like'
+
+  Note: this data is probably now better accessed through the slippy map mentioned above.
 
 To aid debug and analysis, you can enable some code in the scripts that will reduce the dataset
 to a defined area and then plot those results. Zooming in makes the plots much more readable, as having
@@ -178,60 +188,55 @@ state of output generated:
 ### New nodes
 
 An example of a completely new OSM trigpoint node. Here we can see there was no OSM trigpoint
-within >12km.
+within >4km.
 
 ```xml
   <create>
-    <node id="-1" changeset="1" version="1" lat="56.8704163192219" lon="-4.19885500044844">
-      <!--OS Name A' Bhuideaneach Bheag OS New Name NN96S001-->
+    <node id="-1" changeset="1" version="1" lat="55.8184506" lon="-3.5182713">
+      <!--OS Name Camilty Hill OS New Name NT18T005-->
       <tag k="man_made" v="survey_point"/>
-      <tag k="name" v="A' Bhuideaneach Bheag"/>
-      <tag k="ele" v="936.345"/>
+      <tag k="name" v="Camilty Hill"/>
+      <tag k="ele" v="290.453"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <tag k="ref" v="S9394"/>
-      <!-- Distance to nearest OSM node 5983922717 is 12777.7049454148 m-->
+      <!--Nearest FB is at 2.98 m-->
+      <tag k="ref" v="S2681"/>
+      <tag k="ref:os" v="NT18T005"/>
+      <!-- Distance to nearest OSM node 8561011506 is 4085.25 m-->
     </node>
   </create>
 ```
 
 ### Review nodes
 
-Nodes that could do with human review. There are a number of different examples. We can see:
-
-  - An OS node 2.7m from an OSM node, but the names and FBs do not match.
-  - An OS node 4.7m from an OSM node. The OSM node has no ref, but the names are different
-  - An OS node 2.6m from an OSM node that have matching names, but the FBs don't match
-
+Nodes that could do with human review.
 
 ```xml
   <create>
-    <node id="8542056676" changeset="1" version="1" lat="53.3114462" lon="-1.7306529">
-      <!--OS Name Abney Moor OS New Name SK39S011-->
-      <!--OS node co-ords are 53.311422770863 , -1.73066534075847-->
-      <!--That is 2.73316732798893 from its nearest OSM node-->
-      <!--OS node called [ Abney Moor ] vs OSM [ Durham Edge ]-->
-      <!--OSM ref is: S4190-->
-      <!--OS FB is S4148-->
-    </node>
-  </create>
-  <create>
-    <node id="538839570" changeset="1" version="1" lat="51.9931998" lon="-2.7210463">
-      <!--OS Name Aconbury Camp OS New Name SO52S001-->
-      <!--OS node co-ords are 51.99320626526 , -2.72111407577948-->
-      <!--That is 4.69589112174154 from its nearest OSM node-->
-      <!--OS node called [ Aconbury Camp ] vs OSM [ Aconbury Hill ]-->
+    <node id="8381906378" changeset="1" version="1" lat="55.8553947" lon="-3.4478905">
+      <!--OS Name Corston Hill OS New Name NT18S004-->
+      <!--OS node co-ords are 55.8553867 , -3.4478745-->
+      <!--That is 1.34 m from its nearest OSM node-->
+      <!--OS node called [ Corston Hill ]. OSM node has no name-->
+      <!--Add new ele: 348.227-->
+      <!--survey_point tag is empty (good)-->
+      <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
-      <!--OS FB is S6311-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S2698 at 3.54 m away-->
     </node>
   </create>
   <create>
-    <node id="13530060503" changeset="1" version="1" lat="52.5847839" lon="-0.8223651">
-      <!--OS Name Allexton OS New Name SP69T001-->
-      <!--OS node co-ords are 52.5847711561337 , -0.822397328061124-->
-      <!--That is 2.59786426800517 from its nearest OSM node-->
-      <!--OS node called [ Allexton ] vs OSM [ Allexton ]-->
-      <!--OSM ref is: S5194-->
-      <!--OS FB is S4849-->
+    <node id="8561034217" changeset="1" version="1" lat="55.892738" lon="-3.7548167">
+      <!--OS Name Eastcraigs Hill OS New Name NS77S023-->
+      <!--OS node co-ords are 55.8927415 , -3.7548261-->
+      <!--That is 0.7 m from its nearest OSM node-->
+      <!--OS node called [ Eastcraigs Hill ] vs OSM [ Eastcraigs Hill ]-->
+      <!--ele field already set: 250-->
+      <!--survey_point tag is empty (good)-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: S3616-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is too far away at 8933.35 m-->
     </node>
   </create>
 ```
@@ -243,19 +248,20 @@ been classified as 'good' already.
 
 Long term I suspect it would be nice to have one of the tags (probably a new or infrequently used
 tag) to be a strong indicator that the node has been checked or created against the OS data -
-possibly the `source` tag or a new `name:OS` type tag etc. That will greatly aid the automatic
-detection of nodes that do not need further checking in the future.
+current suggestion is the `ref:os` tag, as that is already present in the OSM data (there being 5
+existing instances that do contain an OS ref, but in the 'old' style'. That will greatly aid the
+automatic detection of nodes that do not need further checking in the future.
 
 ```xml
   <create>
-    <node id="448899243" changeset="1" version="1" lat="53.09458" lon="-1.562629">
-      <!--Lat: OSM: 53.09458 OS 53.0945790054199-->
-      <!--Lon: OSM: -1.562629 OS -1.56263314573495-->
-      <!--Separation distance: 0.298093794926768 m-->
-      <!--Name: OSM: Bolehill East OS: Bolehill East-->
-      <!--Ele: OSM: 322.350 OS: 322.35-->
-      <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: S1716 OS: S1716-->
+    <node id="8561011513" changeset="1" version="1" lat="55.808063" lon="-3.5852169">
+      <!--Lat: OSM: 55.808063 OS 55.8080657-->
+      <!--Lon: OSM: -3.5852169 OS -3.5852224-->
+      <!--Separation distance: 0.46 m-->
+      <!--Name: OSM: Pearie Law OS: Pearie Law-->
+      <!--Ele: OSM: 302 OS: 301.517-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--FB: OSM: S2652 OS: S2652-->
     </node>
   </create>
 ```
@@ -263,19 +269,21 @@ detection of nodes that do not need further checking in the future.
 ### Edit nodes
 
 An example of an edit node, where we see many fields are already set in the OSM node, but we
-can adjust the location by 8m to match the OS coordinates, and also add the FB data into the `ref`
-field.
+can adjust the location by a short distance to match the OS coordinates, and also a few extra fields
+to fill out the entry.
 
 ```xml
   <modify>
-    <node id="3491677765" changeset="1" version="1" lat="54.2138644764761" lon="-3.15863523070798">
-      <!--OS Name Bank House Moor OS New Name SD47S001-->
-      <!--Move bearing 177.448040032893 degrees for 8.00544646826026 m-->
-      <!-- from lat: 54.2139364 lon: -3.1586407-->
-      <!--Name field already set: Bank House Moor-->
-      <!--Add new FB ref: S5385-->
-      <tag k="ref" v="S5385"/>
-      <!--ele field already set: 310-->
+    <node id="4517797418" changeset="1" version="1" lat="55.8105939" lon="-3.4259841">
+      <!--OS Name West Cairn Hill OS New Name NT18S001-->
+      <!--Move bearing -91.1638462224604 degrees for 1.32 m-->
+      <!-- from lat: 55.8105941 lon: -3.4259629-->
+      <!--Name field already set: West Cairn Hill-->
+      <!--Ref field already set: S3084-->
+      <!--Add new ref:os: NT18S001-->
+      <tag k="ref:os" v="NT18S001"/>
+      <!--Add new ele: 562.438-->
+      <tag k="ele" v="562.438"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
     </node>
@@ -319,6 +327,34 @@ released a library called [osbng](https://github.com/OrdnanceSurvey/osbng-r) tha
 the translation for us - phew. Note, that 8 digit British National Grid references only give us
 [a resolution of 10m](https://digimap.edina.ac.uk/help/our-maps-and-data/bng/) afaict, so having
 small positional discrepencies between OS and OSB data I think should be expected.
+
+As an update, I tried to work out what was the 'best', as in most accurate and 'correct', way to
+convert the OS data to WGS84. Currently we use the `sf` library routines, which are built on top
+of `GDAL` and `PROJ`, which afaict is no bad thing. I've also considered if the `osbng` library
+can do the same conversion, or to use the
+[`sgo` library](https://cran.r-project.org/web/packages/sgo/index.html). Ultimately, I finally found
+how to ask `sf` what it was doing underneath with `GDAL` and `PROJ`... if we type in:
+
+```R
+> sf_proj_pipelines(st_crs(27700), st_crs(4326))
+... after a bunch of info, at the end it says...
+Best instantiable operation has accuracy: 1 m
+Description: Inverse of British National Grid + OSGB36 to WGS 84 (9) + axis
+order change (2D)
+Definition:  +proj=pipeline +step +inv +proj=tmerc +lat_0=49 +lon_0=-2
++k=0.9996012717 +x_0=400000 +y_0=-100000
++ellps=airy +step +proj=hgridshift
++grids=uk_os_OSTN15_NTv2_OSGBtoETRS.tif +step
++proj=unitconvert +xy_in=rad +xy_out=deg
+```
+
+To my untrained eye, after a bit of research, the fact it is invoking some form of
+[`OSTN15`](https://www.ordnancesurvey.co.uk/documents/gps/updated-transformations-uk-ireland-geoid-model.pdf)
+in the conversion is a key indicator that it is likely doing a 'good thing' - and that the accuracy is
+stated as 1m should be OK for us.
+
+Now, **Please**, if somebody knows a better (more accurate) method to do the translation, or understands
+the above shown PROJ pipeline to confirm or deny this is a good thing - do let me know!
 
 Ultimately we convert everything to WGS84 before crunching the data.
 
@@ -448,6 +484,17 @@ $ ./dockershell.sh
  # etc. etc.
 ```
 
+##### Update the OSC and slippy map data
+
+If you have run the code and got new OSC and slippy map files, you migth want to update them. If you
+are rendering the slippy map locally you'll need to do that. But mostly the info is here in case
+somebody needs to update or push a PR update to update the main status of the github repository:
+
+```sh
+$ cp *.osc OSCS/all
+$ cp *.js ../web/data
+```
+
 ## Tags
 
 Before we can push any data to OSM we need to decide what data will go into what tags. This is also
@@ -525,7 +572,6 @@ OSM nodes...
 | Source | ??? | We should identify a tag to add an OS source reference |
 | `New.Name` | OS_ref | Store the unique OS trigpoint identifier in a unique OS tag - open to discussion! |
 
-
 ## Next Steps
 
 The next thing to do is approach the
@@ -545,10 +591,3 @@ OSM wiki etc.:
 	but the graphs need improvements on labelling and axis.
   - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere.
 	I have a feeling it is not, but we should stare harder to confirm.
-  - Accuracy and Precison - we should work out how precise the co-ordinates we are getting from the
-    OS and OSB are, and at least note that - and probably round the data to a smaller number of decimal
-	points when we are generating XML. We don't want to be representing a false accuracy that does
-	not exist. We also need to take this into account when comparing the positions of nodes when
-	looking for 'existing good matches'.
-	[This wiki page](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates) is useful.
-
