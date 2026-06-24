@@ -229,6 +229,18 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 			osm_r$osm_id, "</a> is ",
 			round(os_r$distance, digits=DIST_DIGITS), " m away<br>",
 			"</span>" )
+
+		if( os_r$osb_distance <= osb_max_distance ) {
+			s = paste(sep="", s,
+				"OSB FB is ",
+				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>")
+		} else {
+			s = paste(sep="", s,
+				"<span style='color: red'>",
+				"OSB FB is ",
+				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>",
+				"</span>" )
+		}
 		s = paste(sep="", s, "\"")
 	} else {
 		s = paste(sep="",
@@ -253,6 +265,18 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
 			osm_r$osm_id, "</a> is ",
 			round(os_r$distance, digits=DIST_DIGITS), " m away<br>" )
+
+		if( os_r$osb_distance <= osb_max_distance ) {
+			s = paste(sep="", s,
+				"OSB FB is ",
+				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>")
+		} else {
+			s = paste(sep="", s,
+				"<span style='color: red'>",
+				"OSB FB is ",
+				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>",
+				"</span>" )
+		}
 		s = paste(sep="", s, "\"")
 	}
 
@@ -1531,8 +1555,10 @@ if( generate_osc ) {
 			"Edit:", num_edit_nodes,
 			"<br>"
 			)
+		num_fbs = nrow(filter(os_sf, !is.na(FB)))
 		txt = paste(sep=" ", txt,
-			"OSM nodes shown:", nrow(osm_sf)
+			"OSM nodes shown:", nrow(osm_sf),
+			"OS nodes with FBs:",num_fbs
 			)
 		write(
 			paste(
