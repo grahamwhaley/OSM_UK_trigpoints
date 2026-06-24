@@ -201,6 +201,10 @@ fuzzywuzzy <- function(s, m) {
 
 node_compare_html <- function(os_r, osb_r, osm_r) {
 
+	# We should only have a valid FB in the os_r if it was both within distance and there
+	# was a name match - otherwise it will just be an NA
+	fb = os_r$FB
+
 	# If the OSM node is too far away, don't populate its column as that info
 	# may just be misleading
 	if( os_r$distance > max_snap_distance ) {
@@ -213,7 +217,7 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 				"<tr><td>ele</td>",
 					"<td>", os_r$HEIGHT, "</td>",
 				"<tr><td>FB/ref</td>",
-					"<td>", osb_r$FB, "</td>",
+					"<td>", fb, "</td>",
 				"<tr><td>Structure</td>",
 					"<td>", os_r$TYPE.OF.MARK, "</td>",
 			"</table><br>"
@@ -238,7 +242,7 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 					"<td>", os_r$HEIGHT, "</td>",
 					"<td>", osm_r$ele, "</td></tr>",
 				"<tr><td>FB/ref</td>",
-					"<td>", osb_r$FB, "</td>",
+					"<td>", fb, "</td>",
 					"<td>", osm_r$ref, "</td></tr>",
 				"<tr><td>Structure</td>",
 					"<td>", os_r$TYPE.OF.MARK, "</td>",
@@ -714,6 +718,7 @@ message("Trying to match OS trigpoints to OS benchmarks and OSM trigpoints")
 os_sf$osb_name_match = FALSE
 os_sf$osm_name_match = FALSE
 os_sf$osb_fb_match = FALSE
+os_sf$FB = NA
 
 fuzzymatches_osb = 0
 fuzzymatches_osm = 0
@@ -742,6 +747,16 @@ for(i in 1:nrow(os_sf)) {
 			}
 		}
 
+		# If we found an FB match, then copy the FB number over to the os_sf.
+		if( os_sf[i,]$osb_name_match == TRUE ) {
+			os_sf[i,]$FB = osb_r$FB
+
+			# And, if that matches the OSM ref, record that
+			if( identical(tolower(osm_r$ref), tolower(os_sf[i,]$FB)) ) {
+				os_sf[i,]$osb_fb_match = TRUE
+			}
+		}
+
 		# Check if the OS name matches the OSM name
 		s = tolower(osm_r$name)
 		if( !is.na(x) && !is.na(s) ) {
@@ -755,13 +770,6 @@ for(i in 1:nrow(os_sf)) {
 					fuzzymatches_osm <- fuzzymatches_osm + 1
 				}
 			}
-		}
-
-		# Check if the OSM ref 'FB' name matches the OSB FB data
-		#  Just be aware, we are comparing the OSM and OSB neighbours of the current
-		#  OS here, and storing the result in the OS sf - it's not quite obvious!
-		if( identical(tolower(osm_r$ref), tolower(osb_r$FB)) ) {
-			os_sf[i,]$osb_fb_match = TRUE
 		}
 	}
 }
@@ -1100,11 +1108,11 @@ if( generate_osc ) {
 		attrs = c( k="survey_point:structure", v="pillar")
 		newXMLNode("tag", attrs=attrs, parent=node)
 
-		if( !is.na(osb_row$FB) ) {
+		if( !is.na(os_row$FB) ) {
 			if( os_row$osb_distance <= osb_max_distance ) {
 				cmt = paste(sep=" ", "Nearest FB is at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
 				newXMLCommentNode(cmt, parent=node)
-				attrs = c( k="ref", v=osb_row$FB)
+				attrs = c( k="ref", v=os_row$FB)
 				newXMLNode("tag", attrs=attrs, parent=node)
 			} else {
 				cmt = paste(sep=" ", "FB too far away to add at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
@@ -1219,9 +1227,9 @@ if( generate_osc ) {
 		#cmt = paste(sep=" ", "Nearest FB ref is", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
 		#newXMLCommentNode(cmt, parent=node)
 
-		if (!is.na(osb_row$FB) ) {
+		if (!is.na(os_row$FB) ) {
 			if( os_row$osb_distance <= osb_max_distance ) {
-				cmt = paste(sep=" ", "OS FB is", osb_row$FB, "at", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
+				cmt = paste(sep=" ", "OS FB is", os_row$FB, "at", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
 			} else {
 				cmt = paste(sep=" ", "OS FB is too far away at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
 			}
@@ -1285,7 +1293,7 @@ if( generate_osc ) {
 				"OS:", os_row$TYPE.OF.MARK)
 			newXMLCommentNode(cmt, parent=node)
 			if( os_row$osb_distance <= osb_max_distance ) {
-				cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS:", osb_row$FB)
+				cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS:", os_row$FB)
 			} else {
 				cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS: FB too far at",
 					os_row$osb_diatnce, "m")
@@ -1359,11 +1367,11 @@ if( generate_osc ) {
 
 			if( is.na(osm_row$ref) ) {
 				# No ref - do we have a new FB?
-				if( !is.na(osb_row$FB) ) {
+				if( !is.na(os_row$FB) ) {
 					# We have a new FB to add - make comment and create field
-					cmt = paste(sep=" ", "Add new FB ref:", osb_row$FB)
+					cmt = paste(sep=" ", "Add new FB ref:", os_row$FB)
 					newXMLCommentNode(cmt, parent=node)
-					attrs = c( k="ref", v=osb_row$FB)
+					attrs = c( k="ref", v=os_row$FB)
 					newXMLNode("tag", attrs=attrs, parent=node)
 				}
 			} else {
