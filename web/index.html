@@ -18,6 +18,7 @@
 	<script type="text/javascript" src="data/goodnodes.js"></script>
 	<script type="text/javascript" src="data/editnodes.js"></script>
 	<script type="text/javascript" src="data/osmnodes.js"></script>
+	<script type="text/javascript" src="data/fbnodes.js"></script>
 	<script type="text/javascript" src="data/statustext.js"></script>
 </head>
 
@@ -51,6 +52,7 @@ Thus, Good nodes are not yet 'perfectly' good.
  <img src="icons/marker-icon-2x-green.png" height=20px> Good
  <img src="icons/marker-icon-2x-blue.png" height=20px> Edit
  <img src="icons/marker-icon-2x-violet.png" height=20px> OSM
+ <img src="icons/marker-icon-2x-grey.png" height=20px> FB
 </center>
 
 <script>
@@ -59,6 +61,7 @@ Thus, Good nodes are not yet 'perfectly' good.
 	var good_markers = L.markerClusterGroup();
 	var edit_markers = L.markerClusterGroup();
 	var osm_markers = L.markerClusterGroup();
+	var fb_markers = L.markerClusterGroup();
 
 	//Sort out our attributions
 	var IconsAttrib = ' | <a href="https://github.com/pointhi/leaflet-color-markers/">Markers</a> under BSD Licence.'
@@ -125,6 +128,15 @@ Thus, Good nodes are not yet 'perfectly' good.
 		shadowSize: [20, 20]
 		});
 
+	var greyIcon = new L.Icon({
+		iconUrl: 'icons/marker-icon-grey.png',
+		shadowUrl: 'icons/marker-shadow.png',
+		iconSize: [12, 20],
+		iconAnchor: [6, 20],
+		popupAnchor: [1, -15],
+		shadowSize: [20, 20]
+		});
+
 	//Add our nodes to their categories/layers
 	for( j in newnode_array ) {
 		var m = L.marker([ newnode_array[j][0], newnode_array[j][1] ], {icon: redIcon});
@@ -156,11 +168,18 @@ Thus, Good nodes are not yet 'perfectly' good.
 		osm_markers.addLayer(m);
 	}
 
+	for( j in fbnode_array ) {
+		var m = L.marker([ fbnode_array[j][0], fbnode_array[j][1] ], {icon: greyIcon});
+		m.bindPopup(fbnode_array[j][2]).openPopup();
+		fb_markers.addLayer(m);
+	}
+
 	map.addLayer(new_markers);
 	map.addLayer(review_markers);
 	map.addLayer(good_markers);
 	map.addLayer(edit_markers);
 	map.addLayer(osm_markers);
+	map.addLayer(fb_markers);
 
 	var baselayers = {
 		"OSM": OSMmap
@@ -171,7 +190,8 @@ Thus, Good nodes are not yet 'perfectly' good.
 		"Review": review_markers,
 		"Good": good_markers,
 		"Edit": edit_markers,
-		"OSM": osm_markers
+		"OSM": osm_markers,
+		"FB": fb_markers
 	};
 
 	L.control.layers(baselayers, overlays).addTo(map);

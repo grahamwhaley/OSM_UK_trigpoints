@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes for potential review. Generated on: 2026-06-18-->
+  <!--OSM Nodes for potential review. Generated on: 2026-06-24-->
   <!--1310 nodes to process-->
   <create>
     <node id="4452420827" changeset="1" version="1" lat="50.6764178" lon="-2.6289003">
@@ -13,7 +13,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: OS BM S5769-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5769 at 3.75 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -27,7 +27,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4190-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3801.57 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -69,7 +69,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 20721.16 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -97,7 +97,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8553.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -125,7 +125,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3888.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -139,7 +139,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S5194-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3342.12 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -153,7 +153,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4747-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6508.62 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -181,7 +181,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16489.62 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -195,7 +195,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S2574-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1679.9 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -209,7 +209,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3706-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11608.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -223,7 +223,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11648.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -237,7 +237,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1608-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 28253.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -251,7 +251,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8994-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16817.01 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -279,7 +279,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5137.21 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -293,7 +293,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1614-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 24136.55 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -335,7 +335,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4902-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3518.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -377,7 +377,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6141-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 22586.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -405,7 +405,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4374.71 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -419,7 +419,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7415-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7231.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -433,7 +433,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5276.45 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -447,7 +447,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6932.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -517,7 +517,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8074-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4987.86 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -573,7 +573,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: BM S7281-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5596.09 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -629,7 +629,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5925-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5565.38 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -657,7 +657,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4200.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -685,7 +685,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6580-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4080.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -713,7 +713,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12273.65 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -741,7 +741,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5223.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -783,7 +783,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 11491-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1114.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -895,7 +895,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S1682 at 6.84 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -965,7 +965,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S5299-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2153.67 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1007,7 +1007,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 19419.89 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1021,7 +1021,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9358-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8622.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1035,7 +1035,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9706-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5702.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1049,7 +1049,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6118-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7135.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1063,7 +1063,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7872.74 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1077,7 +1077,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15015.84 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1091,7 +1091,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6352.2 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1105,7 +1105,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6621.98 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1119,7 +1119,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9404-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6211.41 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1133,7 +1133,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8995-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16073 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1147,7 +1147,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8430.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1189,7 +1189,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6211.72 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1203,7 +1203,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/T2-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5593.01 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1231,7 +1231,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15651.41 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1245,7 +1245,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7517.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1259,7 +1259,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5909.87 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1273,7 +1273,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9268.71 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1287,7 +1287,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7039.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1301,7 +1301,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8982-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4091.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1329,7 +1329,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11321.79 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1343,7 +1343,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9230.03 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1357,7 +1357,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7216-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8406.41 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1371,7 +1371,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5774.86 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1385,7 +1385,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5634.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1399,7 +1399,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9444-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9113.59 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1413,7 +1413,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9442-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9282.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1427,7 +1427,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8424-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7057.78 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1441,7 +1441,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4996.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1455,7 +1455,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SD47T005-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4062.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1483,7 +1483,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3795.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1511,7 +1511,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7223.17 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1525,7 +1525,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7753-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10874.65 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1609,7 +1609,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5707-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4753.64 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1707,7 +1707,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S5044-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3516.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1721,7 +1721,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: 11602-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4288.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1735,7 +1735,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S2775-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2917.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1749,7 +1749,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7017.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1763,7 +1763,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2976.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1791,7 +1791,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11219.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1805,7 +1805,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1042.51 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1819,7 +1819,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5195-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6866.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1833,7 +1833,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8248.01 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1847,7 +1847,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3383.59 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1861,7 +1861,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6702.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1875,7 +1875,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1857.65 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1889,7 +1889,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4254.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1917,7 +1917,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6023.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -1987,7 +1987,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8979-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11864.09 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2001,7 +2001,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8278.61 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2015,7 +2015,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4839.09 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2043,7 +2043,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10019.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2071,7 +2071,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6326.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2099,7 +2099,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86T008-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3340.02 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2113,7 +2113,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: OS BM S6705-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S6705 at 5.1 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2155,7 +2155,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8548.86 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2169,7 +2169,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8138-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5381.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2379,7 +2379,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3029.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2393,7 +2393,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S9325-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 26984.24 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2407,7 +2407,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: TP1611-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3895.37 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2421,7 +2421,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: SJ44S005-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5215.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2519,7 +2519,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12567.06 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2547,7 +2547,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6127-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10757.2 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2575,7 +2575,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1367.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2617,7 +2617,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15.09 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2645,7 +2645,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7109.8 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2701,7 +2701,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S2782-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4637.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2729,7 +2729,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1772-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3721.98 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2743,7 +2743,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3545.94 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2771,7 +2771,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5229.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2785,7 +2785,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5519-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4850.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2813,7 +2813,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3109-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7617.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2841,7 +2841,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5593-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9440.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2869,7 +2869,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8287-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 26228.22 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2883,7 +2883,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4127.23 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2925,7 +2925,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5482.59 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2967,7 +2967,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4425.17 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2981,7 +2981,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3878.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -2995,7 +2995,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4740.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3009,7 +3009,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4492.19 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3037,7 +3037,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86S006-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3907.66 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3093,7 +3093,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7906-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3242.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3135,7 +3135,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7437-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7222.51 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3149,7 +3149,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7298-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9614.24 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3163,7 +3163,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1545-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11666.48 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3177,7 +3177,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SN 978123-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5063.89 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3191,7 +3191,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1603-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18184.75 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3219,7 +3219,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3095.9 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3233,7 +3233,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7799.28 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3261,7 +3261,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1697-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10612.9 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3275,7 +3275,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7269.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3303,7 +3303,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4949.32 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3317,7 +3317,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3381.64 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3345,7 +3345,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX76/24-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15.23 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3373,7 +3373,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5653.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3387,7 +3387,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4861.65 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3415,7 +3415,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 19879.88 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3429,7 +3429,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6673.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3443,7 +3443,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16467.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3457,7 +3457,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8325-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4916.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3471,7 +3471,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4472.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3485,7 +3485,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7835.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3499,7 +3499,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1721-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3513,7 +3513,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16829.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3541,7 +3541,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8141-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4454.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3555,7 +3555,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13423.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3569,7 +3569,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7587.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3583,7 +3583,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8139-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2067.25 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3597,7 +3597,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9282.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3611,7 +3611,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8547-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 25079.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3639,7 +3639,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7317-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16666.37 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3653,7 +3653,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 30811.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3667,7 +3667,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8519-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 22851.93 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3695,7 +3695,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12130.26 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3765,7 +3765,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3239 at 7.26 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3807,7 +3807,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7330.78 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3849,7 +3849,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7864-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3796.5 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3891,7 +3891,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6913-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4728.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3933,7 +3933,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8367.8 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3961,7 +3961,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5362-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4682.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3975,7 +3975,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7171.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -3989,7 +3989,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5120.34 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4003,7 +4003,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7480-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5389.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4017,7 +4017,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7314-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6845.66 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4073,7 +4073,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7833.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4087,7 +4087,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6219.67 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4129,7 +4129,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 2964-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3852.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4185,7 +4185,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9483.86 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4227,7 +4227,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5303 at 6.27 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4255,7 +4255,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7863-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2059.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4283,7 +4283,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10943.81 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4311,7 +4311,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NZ42T010-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5814.56 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4325,7 +4325,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NO80/9-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4340.19 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4395,7 +4395,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 54.59 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4409,7 +4409,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4998.16 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4437,7 +4437,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8559-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5102.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4451,7 +4451,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SP38S015-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4465,7 +4465,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5946-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9027.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4479,7 +4479,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3943.22 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4507,7 +4507,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6872.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4549,7 +4549,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: OSBM S9435-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5829.48 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4563,7 +4563,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9653-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3217.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4605,7 +4605,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3247.67 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4619,7 +4619,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13795.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4633,7 +4633,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 6059-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 22728.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4647,7 +4647,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3614.95 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4675,7 +4675,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6168.62 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4717,7 +4717,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/9-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5635 at 4.41 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4731,7 +4731,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: PP023-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4745,7 +4745,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NZ42T013-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10311.79 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4759,7 +4759,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5656-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8474.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4815,7 +4815,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S1814 at 2.46 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4829,7 +4829,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5473-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6323.55 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4843,7 +4843,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3806.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4871,7 +4871,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4768.97 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4885,7 +4885,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9184.79 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4927,7 +4927,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4985-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1584.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4941,7 +4941,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: Clova Hill-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9764.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4955,7 +4955,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6188-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15037.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -4969,7 +4969,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7972-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12563.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5011,7 +5011,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3281.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5025,7 +5025,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/3-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7306.8 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5039,7 +5039,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3534.81 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5067,7 +5067,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9509.58 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5081,7 +5081,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S4554 at 5.82 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5109,7 +5109,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5993-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7171.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5123,7 +5123,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8459-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 27526.39 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5137,7 +5137,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18870.57 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5179,7 +5179,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4109.03 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5193,7 +5193,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T9-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3656.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5207,7 +5207,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7445-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4300.71 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5221,7 +5221,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9342-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8990.48 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5235,7 +5235,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6956.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5249,7 +5249,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S8766-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4178.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5263,7 +5263,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 20.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5277,7 +5277,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1657-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6694.31 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5291,7 +5291,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4366.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5305,7 +5305,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7702.47 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5361,7 +5361,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4040.95 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5375,7 +5375,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18133.8 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5431,7 +5431,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8729-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 28152.5 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5459,7 +5459,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3745-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4677.19 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5487,7 +5487,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NZ42T015-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4806.71 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5515,7 +5515,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3318.63 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5529,7 +5529,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8451-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8054.18 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5543,7 +5543,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1546-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4489.95 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5557,7 +5557,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM ref:os is: SX76/T99-->
-      <!--OS FB is too far away at 1586.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5571,7 +5571,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: Rockbourne-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4531.06 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5613,7 +5613,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: SD74/2-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5282.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5627,7 +5627,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7817-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10344.02 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5641,7 +5641,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2522 at 7.93 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5697,7 +5697,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/4-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10458.37 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5711,7 +5711,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: OSBM S9413-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7275.19 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5753,7 +5753,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S5848-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7395.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5767,7 +5767,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8456-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8995.29 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5809,7 +5809,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10333.45 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5823,7 +5823,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4465.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5837,7 +5837,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7316-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4523.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5851,7 +5851,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2945.19 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5963,7 +5963,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86T022-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3656.06 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5977,7 +5977,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13583.48 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -5991,7 +5991,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY71T007-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7265.8 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6019,7 +6019,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15882.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6047,7 +6047,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3554.81 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6089,7 +6089,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13507.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6103,7 +6103,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3526.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6145,7 +6145,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8008.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6187,7 +6187,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4518-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10085.74 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6229,7 +6229,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7450.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6243,7 +6243,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S2806-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3565.68 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6271,7 +6271,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3149.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6327,7 +6327,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5058.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6341,7 +6341,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S1601 at 2.47 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6355,7 +6355,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3616-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3541.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6411,7 +6411,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4231-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4195.26 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6425,7 +6425,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T13-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15.48 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6551,7 +6551,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4407.86 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6579,7 +6579,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4157-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3739.19 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6663,7 +6663,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3006.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6705,7 +6705,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2511-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5051.59 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6719,7 +6719,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2147-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6886.58 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6733,7 +6733,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2146-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9146.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6747,7 +6747,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3791.52 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6831,7 +6831,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8058.68 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6845,7 +6845,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4318.52 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6859,7 +6859,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S478-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 19212.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6929,7 +6929,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3127-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7029.37 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6943,7 +6943,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 21690.24 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6957,7 +6957,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7491-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9615.97 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6971,7 +6971,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8550-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 20548.28 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6985,7 +6985,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8452-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13784.64 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -6999,7 +6999,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5218.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7013,7 +7013,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8545-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 24722.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7041,7 +7041,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2708 at 2.29 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7083,7 +7083,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5803.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7125,7 +7125,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6203.86 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7167,7 +7167,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T51-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5151.82 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7181,7 +7181,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5900-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4853.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7265,7 +7265,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8552-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15361.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7279,7 +7279,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4874-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10731.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7321,7 +7321,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5314-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6490.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7335,7 +7335,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7485-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5437.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7349,7 +7349,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1618-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13665.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7363,7 +7363,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15977.66 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7377,7 +7377,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4494.24 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7405,7 +7405,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9190.9 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7419,7 +7419,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 28641.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7475,7 +7475,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10335-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10407.87 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7489,7 +7489,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18707.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7517,7 +7517,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8975.22 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7545,7 +7545,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1607-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5898.94 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7559,7 +7559,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4365-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6149.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7587,7 +7587,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4814-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6011.2 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7643,7 +7643,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2541-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 89.47 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7671,7 +7671,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10790-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2690.56 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7685,7 +7685,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4094.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7741,7 +7741,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3141.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7769,7 +7769,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11760.56 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7783,7 +7783,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5405.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7797,7 +7797,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7616.61 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7811,7 +7811,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5729.52 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7825,7 +7825,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13595.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7881,7 +7881,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1746-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S1746 at 5.41 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7895,7 +7895,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9132.29 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7923,7 +7923,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15507.97 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7951,7 +7951,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6732.68 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7979,7 +7979,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8508-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 28921.28 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -7993,7 +7993,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5648-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11324.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8021,7 +8021,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: Hafod TP3560-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2980.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8035,7 +8035,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7439.5 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8119,7 +8119,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/6-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4302.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8133,7 +8133,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY71T005-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5088.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8175,7 +8175,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/2-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4026.19 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8217,7 +8217,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4096.02 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8287,7 +8287,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5603.21 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8301,7 +8301,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1556-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9272.58 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8357,7 +8357,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S7285 at 6.42 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8399,7 +8399,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2490 at 3.66 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8413,7 +8413,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7924-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5805.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8469,7 +8469,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6032.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8497,7 +8497,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5390.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8525,7 +8525,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/T15-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7536.97 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8539,7 +8539,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5948-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12017.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8609,7 +8609,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6093.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8623,7 +8623,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3992.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8721,7 +8721,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5641-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5949.6 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8791,7 +8791,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3953-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1943.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8847,7 +8847,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6945-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6518.82 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8861,7 +8861,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5989-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9908.63 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8875,7 +8875,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5987-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 14312.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8889,7 +8889,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1541-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13074.06 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -8959,7 +8959,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S2627-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3264.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9001,7 +9001,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86T035-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4102.98 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9043,7 +9043,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S4170 at 5.57 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9057,7 +9057,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11848.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9085,7 +9085,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6149.01 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9099,7 +9099,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6052.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9113,7 +9113,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3907.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9127,7 +9127,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3867.65 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9141,7 +9141,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: tp3915-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6738.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9253,7 +9253,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3973 at 5.34 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9267,7 +9267,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11404.94 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9281,7 +9281,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3279.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9295,7 +9295,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6258.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9407,7 +9407,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6542.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9421,7 +9421,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8316.34 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9477,7 +9477,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3880-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1288.6 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9491,7 +9491,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4249.94 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9505,7 +9505,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1725-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S1725 at 3.99 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9547,7 +9547,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12926.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9561,7 +9561,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/T17-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8894.38 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9673,7 +9673,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8549-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16233.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9743,7 +9743,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5636-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11294.84 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9757,7 +9757,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5665.82 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9771,7 +9771,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3990.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9813,7 +9813,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 603509-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is 3492 at 11.79 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9827,7 +9827,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86S012-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5294.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9841,7 +9841,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: OS BM S4161-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6184.81 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9855,7 +9855,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T52-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4622.37 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9883,7 +9883,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8774-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3740.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9897,7 +9897,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13175.84 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9911,7 +9911,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3860.89 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9925,7 +9925,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4113-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5524.59 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -9981,7 +9981,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6630.04 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10065,7 +10065,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4990.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10079,7 +10079,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3017.12 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10093,7 +10093,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7972.82 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10107,7 +10107,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5626.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10163,7 +10163,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8752-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 23136.29 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10177,7 +10177,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12885.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10205,7 +10205,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10219,7 +10219,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4141.26 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10247,7 +10247,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8142-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6722.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10275,7 +10275,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2445.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10303,7 +10303,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6002.31 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10317,7 +10317,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S7525 at 10.17 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10345,7 +10345,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5885.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10415,7 +10415,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S3671-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3344.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10429,7 +10429,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16.12 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10485,7 +10485,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2720.09 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10499,7 +10499,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5771-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4712.72 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10527,7 +10527,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86S011-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S6630 at 2.86 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10541,7 +10541,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3309-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3716.71 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10611,7 +10611,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7415.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10625,7 +10625,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11037.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10639,7 +10639,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1630-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3183.84 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10681,7 +10681,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5202 at 6.38 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10695,7 +10695,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10789-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6773.2 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10751,7 +10751,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3870.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10807,7 +10807,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7974-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6338.75 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10821,7 +10821,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5572.61 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10849,7 +10849,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5470-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3606.05 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10863,7 +10863,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6062.79 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10877,7 +10877,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4587.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10933,7 +10933,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S2407-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2407 at 4.01 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10975,7 +10975,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9526-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2924.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -10989,7 +10989,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3971.8 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11003,7 +11003,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7377.47 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11031,7 +11031,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3271.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11045,7 +11045,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6782.78 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11059,7 +11059,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8689.89 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11073,7 +11073,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8302.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11087,7 +11087,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: 2965-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5664.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11101,7 +11101,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8581-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6977.29 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11157,7 +11157,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2141-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6035.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11185,7 +11185,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5038.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11227,7 +11227,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5802 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11241,7 +11241,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12276.93 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11269,7 +11269,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8292-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11573.68 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11297,7 +11297,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7991.41 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11311,7 +11311,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1586-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7009.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11353,7 +11353,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9040.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11367,7 +11367,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5039.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11465,7 +11465,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SE38T060-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7944.74 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11479,7 +11479,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6882.45 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11493,7 +11493,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4503.39 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11507,7 +11507,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S7335 at 5.59 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11535,7 +11535,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12430.57 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11563,7 +11563,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10347-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18367.63 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11591,7 +11591,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3103-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4101.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11605,7 +11605,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8510-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9308.18 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11619,7 +11619,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18464.31 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11633,7 +11633,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3104-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5032.62 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11647,7 +11647,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: No Flush Bracket-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15238.97 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11661,7 +11661,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8548-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11357.18 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11675,7 +11675,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7321-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7189 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11689,7 +11689,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8450-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15378.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11703,7 +11703,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8455-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7510.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11717,7 +11717,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8380-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6773.12 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11731,7 +11731,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7442-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5051.81 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11759,7 +11759,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: BS8087-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6027.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11773,7 +11773,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2970.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11787,7 +11787,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9369-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5743.41 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11815,7 +11815,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8986-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 16998.62 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11857,7 +11857,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10759-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 27772.39 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11871,7 +11871,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8741-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 19665.34 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11913,7 +11913,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5377.76 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11927,7 +11927,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1584-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10155.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11955,7 +11955,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2654-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4445.66 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -11997,7 +11997,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7147.97 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12039,7 +12039,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8923.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12067,7 +12067,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 103.67 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12081,7 +12081,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10331-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 26339.59 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12109,7 +12109,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5887.63 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12151,7 +12151,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2513-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5203.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12179,7 +12179,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7329-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4645.79 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12193,7 +12193,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2978 at 4.4 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12207,7 +12207,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3095-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5188.62 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12221,7 +12221,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8183-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2922.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12235,7 +12235,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6281.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12277,7 +12277,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7334-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6835.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12291,7 +12291,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4727-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5502.71 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12305,7 +12305,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4938.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12333,7 +12333,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX76/T82-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3482 at 9.78 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12347,7 +12347,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3118-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3118 at 3.6 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12375,7 +12375,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2719.98 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12403,7 +12403,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7754.68 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12417,7 +12417,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NZ42S021-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4629.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12431,7 +12431,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7907.64 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12445,7 +12445,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7800.6 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12515,7 +12515,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SE22/T89-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 957.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12529,7 +12529,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: ST276-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6364.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12571,7 +12571,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4860.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12585,7 +12585,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T31-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4125.89 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12613,7 +12613,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 21570.41 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12641,7 +12641,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: OS BM S5462-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6404.17 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12697,7 +12697,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S3549-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 107.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12725,7 +12725,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3388-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3388 at 7.39 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12739,7 +12739,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4861.7 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12767,7 +12767,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5059-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2424.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12781,7 +12781,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX76/T212-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4323.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12795,7 +12795,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S1771-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3933.99 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12907,7 +12907,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15452.31 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12949,7 +12949,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4015.83 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -12977,7 +12977,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S4520 at 11.86 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13019,7 +13019,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6616.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13047,7 +13047,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S4611 at 5.19 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13061,7 +13061,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5005-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5005 at 2.61 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13089,7 +13089,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7822-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4483.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13117,7 +13117,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S1782-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7456.32 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13131,7 +13131,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10284.31 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13145,7 +13145,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S2178-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6600.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13159,7 +13159,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/T20-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6949.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13173,7 +13173,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2991.72 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13187,7 +13187,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7732-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3729.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13201,7 +13201,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8449-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15020.34 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13229,7 +13229,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SE38S014-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11348.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13313,7 +13313,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/8-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8698 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13327,7 +13327,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S8323-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4685.88 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13355,7 +13355,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4731.58 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13369,7 +13369,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5447-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5285.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13383,7 +13383,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3114-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3114 at 5.35 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13397,7 +13397,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: BMS5776-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5656.87 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13439,7 +13439,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8518-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8674.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13509,7 +13509,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5988-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12536.81 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13565,7 +13565,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5957-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7273.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13579,7 +13579,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1578-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12690.57 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13593,7 +13593,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 96.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13705,7 +13705,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3954.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13719,7 +13719,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7869-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5548.18 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13803,7 +13803,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4454-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is 4454 at 2.6 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13817,7 +13817,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2519 at 2.54 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13831,7 +13831,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9001.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13845,7 +13845,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1536-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7963.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13859,7 +13859,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8137-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7720.23 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13915,7 +13915,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5650.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13929,7 +13929,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NZ42T051-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5474.56 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13943,7 +13943,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NZ42S039-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4324.84 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13971,7 +13971,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6622-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4753.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13985,7 +13985,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: 10793-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5674.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -13999,7 +13999,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10809.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14027,7 +14027,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5639-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9098.32 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14055,7 +14055,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1815.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14083,7 +14083,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1832.96 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14125,7 +14125,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10339-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15286.47 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14153,7 +14153,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3867.01 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14167,7 +14167,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8546-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18648.21 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14181,7 +14181,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 20067.78 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14195,7 +14195,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7338.79 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14209,7 +14209,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: OS BM S7233-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S7233 at 1.17 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14237,7 +14237,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2301 at 2.96 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14279,7 +14279,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S4440 at 3.13 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14293,7 +14293,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3884.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14307,7 +14307,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5628.65 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14321,7 +14321,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4490-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5436.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14363,7 +14363,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2344.17 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14391,7 +14391,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6278.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14447,7 +14447,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8276.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14475,7 +14475,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/10-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7606.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14503,7 +14503,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4375.74 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14517,7 +14517,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86T044-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S6694 at 4.13 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14531,7 +14531,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3880.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14587,7 +14587,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6784.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14601,7 +14601,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7496-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4633.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14629,7 +14629,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: OS BM S8899-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4589.44 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14643,7 +14643,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 1740-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5362.25 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14699,7 +14699,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7237-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3995.05 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14727,7 +14727,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2648-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3854.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14783,7 +14783,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3839.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14825,7 +14825,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3802.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14839,7 +14839,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: OS Passive Station: T1NO1541-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5525.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14853,7 +14853,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8811.51 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14867,7 +14867,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3122-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5847.84 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14881,7 +14881,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86T045-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5536.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14895,7 +14895,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10768-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 22337.28 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14909,7 +14909,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2544.78 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14951,7 +14951,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6927.37 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -14965,7 +14965,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3720.55 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15021,7 +15021,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4255.34 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15035,7 +15035,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4664.01 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15063,7 +15063,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4261.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15077,7 +15077,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10741.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15091,7 +15091,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10122.93 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15189,7 +15189,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8457-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18899.74 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15203,7 +15203,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4783.63 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15245,7 +15245,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1543-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4238.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15273,7 +15273,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3890.86 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15329,7 +15329,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10143.21 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15357,7 +15357,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5718.29 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15371,7 +15371,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: 10684-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13682.38 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15413,7 +15413,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3904.64 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15497,7 +15497,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: STT11/T102-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2503.06 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15539,7 +15539,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/T26-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4688.53 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15553,7 +15553,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/11-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11050.21 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15567,7 +15567,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SU31/6-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2521 at 3.85 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15609,7 +15609,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 541.28 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15623,7 +15623,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4073.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15665,7 +15665,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2924.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15749,7 +15749,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/12-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7687.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15763,7 +15763,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4645.75 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15847,7 +15847,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11159.05 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15889,7 +15889,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4291.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15917,7 +15917,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S8076 at 6.89 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15931,7 +15931,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7213.75 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -15973,7 +15973,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3278 at 5.43 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16015,7 +16015,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2130-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4573.11 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16029,7 +16029,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7319-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6628.82 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16057,7 +16057,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11886.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16071,7 +16071,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8454-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 23392.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16085,7 +16085,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6057-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3158.82 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16099,7 +16099,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4333.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16113,7 +16113,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6676.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16127,7 +16127,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 8764-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5109.66 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16155,7 +16155,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8591.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16183,7 +16183,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7378-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9485.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16197,7 +16197,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S3443-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7034.5 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16211,7 +16211,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 18177.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16239,7 +16239,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S6957-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 15039.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16267,7 +16267,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6790.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16295,7 +16295,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6061.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16351,7 +16351,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1620-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4217.4 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16379,7 +16379,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7911.88 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16393,7 +16393,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3728.85 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16421,7 +16421,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY71T004-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5740.71 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16449,7 +16449,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T40-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5488 at 3.51 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16505,7 +16505,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3256.12 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16603,7 +16603,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11441.72 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16617,7 +16617,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 25559.28 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16645,7 +16645,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 1393.1 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16659,7 +16659,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6040.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16673,7 +16673,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM ref:os is: SX76/T108-->
-      <!--OS FB is too far away at 2415.13 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16687,7 +16687,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is 3494 at 3.66 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16701,7 +16701,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4983.12 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16715,7 +16715,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7530.07 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16743,7 +16743,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2975-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4726.08 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16757,7 +16757,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/T42-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5072.15 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16771,7 +16771,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SX06/13-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7459.6 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16827,7 +16827,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T44-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5692 at 0.27 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16855,7 +16855,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S7868-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3052.27 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16897,7 +16897,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11020.26 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16925,7 +16925,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 10237-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11392.88 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16953,7 +16953,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S4480 at 4.66 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -16995,7 +16995,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: TP6626-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2498.3 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17037,7 +17037,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3528.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17051,7 +17051,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8554-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 14741.77 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17065,7 +17065,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 14206.46 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17107,7 +17107,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8488.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17121,7 +17121,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4662.36 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17149,7 +17149,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8453-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 23520.38 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17163,7 +17163,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: TP6715-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 24.17 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17233,7 +17233,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 14775.54 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17247,7 +17247,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4192-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4761.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17261,7 +17261,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7940.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17275,7 +17275,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3531.73 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17317,7 +17317,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5326.79 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17345,7 +17345,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 13192.55 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17373,7 +17373,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86T052-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4177.22 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17401,7 +17401,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S1539-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2284.69 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17415,7 +17415,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4316.97 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17443,7 +17443,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S3143 at 4.24 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17457,7 +17457,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4298-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7517.14 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17513,7 +17513,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86S015-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3284.56 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17569,7 +17569,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11660.17 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17583,7 +17583,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: S4419-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 12158.91 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17611,7 +17611,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7619.49 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17625,7 +17625,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5436.05 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17653,7 +17653,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5002-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5044.78 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17667,7 +17667,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: 2987-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is 2987 at 1.33 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17681,7 +17681,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5671-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5898.12 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17695,7 +17695,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 9499.42 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17709,7 +17709,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: SS30/T47-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S5575 at 4.35 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17737,7 +17737,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NZ42S038-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4935.45 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17807,7 +17807,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 5315.7 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17835,7 +17835,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 7200.43 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17849,7 +17849,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 11239.06 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17863,7 +17863,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S2027-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2067.58 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17975,7 +17975,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: NY86T055-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4154.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -17989,7 +17989,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 6718.95 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18003,7 +18003,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S4400 at 5.26 m away-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18017,7 +18017,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: TP7025-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 3392.64 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18045,7 +18045,7 @@
       <!--survey_point:structure field already set: pillar-->
       <!--OSM ref is: ST11/21-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2509.89 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18227,7 +18227,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S9900-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8300.2 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18283,7 +18283,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8186-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8368.58 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18297,7 +18297,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 10989.33 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18325,7 +18325,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4755-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 4935.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
   <create>
@@ -18339,7 +18339,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S8143-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 2918.92 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
 </osmChange>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes for potential edit/merge. Generated on: 2026-06-18-->
+  <!--OSM Nodes for potential edit/merge. Generated on: 2026-06-24-->
   <!--265 nodes to process-->
   <modify>
     <node id="11697850761" changeset="1" version="1" lat="53.1321548" lon="-1.7398696">
@@ -2142,8 +2142,6 @@
       <!--Move bearing -145.274817433199 degrees for 7.15 m-->
       <!-- from lat: 53.1627679 lon: -1.6350091-->
       <!--Name field already set: Moor Plantations-->
-      <!--Add new FB ref: 4151-->
-      <tag k="ref" v="4151"/>
       <!--Add new ref:os: SK39S009-->
       <tag k="ref:os" v="SK39S009"/>
       <!--ele field already set: 323-->
@@ -2794,8 +2792,6 @@
       <!--Move bearing 152.804861284318 degrees for 1.06 m-->
       <!-- from lat: 50.8843285 lon: -2.2521175-->
       <!--Name field already set: Shillingstone Hill-->
-      <!--Add new FB ref: 6025-->
-      <tag k="ref" v="6025"/>
       <!--Add new ref:os: ST70T054-->
       <tag k="ref:os" v="ST70T054"/>
       <!--ele field already set: 223-->
@@ -3299,8 +3295,6 @@
       <!--Move bearing 142.87671650213 degrees for 1.63 m-->
       <!-- from lat: 51.8485293 lon: -3.4217021-->
       <!--Name field already set: Twyn Mwyalchod-->
-      <!--Add new FB ref: S2166-->
-      <tag k="ref" v="S2166"/>
       <!--Add new ref:os: SO11T003-->
       <tag k="ref:os" v="SO11T003"/>
       <!--ele field already set: 642-->
@@ -3486,8 +3480,6 @@
       <!--Move bearing 131.891891096024 degrees for 1.65 m-->
       <!-- from lat: 56.5268939 lon: -3.1703811-->
       <!--Name field already set: Westerkeith Hill-->
-      <!--Add new FB ref: S4604-->
-      <tag k="ref" v="S4604"/>
       <!--Add new ref:os: NO42S017-->
       <tag k="ref:os" v="NO42S017"/>
       <!--ele field already set: 353-->

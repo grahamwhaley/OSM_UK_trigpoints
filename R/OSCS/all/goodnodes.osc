@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-06-18-->
+  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-06-24-->
   <!--66 nodes to process-->
   <create>
     <node id="8561011506" changeset="1" version="1" lat="55.854672" lon="-3.5073222">
@@ -120,7 +120,7 @@
       <!--Name: OSM: Craig Fawr OS: Craig Fawr-->
       <!--Ele: OSM: 152.933 OS: 152.933-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: S3535 OS: S3535-->
+      <!--FB: OSM: S3535 OS: NA-->
     </node>
   </create>
   <create>
@@ -197,7 +197,7 @@
       <!--Name: OSM: Findon Cottages OS: Findon Cottages-->
       <!--Ele: OSM: 153.3 OS: 153.286-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
-      <!--FB: OSM: OS BM S4176 OS: S4176-->
+      <!--FB: OSM: OS BM S4176 OS: NA-->
     </node>
   </create>
   <create>

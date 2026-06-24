@@ -321,6 +321,26 @@ osm_node_html <- function( osm_r) {
 	return(s)
 }
 
+# Generate HTML table info for an FB node
+osb_node_html <- function( osb_r) {
+
+	s = paste(sep="",
+		"\"",
+		"<table style='border:1px solid black;'>",
+			"<tr><th>Item</th><th>FB</th></tr>",
+			"<tr><td>FB</td>",
+				"<td>", osb_r$FB, "</td></tr>",
+			"<tr><td>ele</td>",
+				"<td>", osb_r$HEIGHT, "</td></tr>",
+			"<tr><td>Descr</td>",
+				"<td>", osb_r$DESCRIPTION, "</td></tr>",
+		"</table><br>"
+		)
+	s = paste(sep="", s, "\"")
+
+	return(s)
+}
+
 ####################################################################################################### 
 ###################################### Read raw data ###############################################
 ####################################################################################################### 
@@ -1558,7 +1578,8 @@ if( generate_osc ) {
 		num_fbs = nrow(filter(os_sf, !is.na(FB)))
 		txt = paste(sep=" ", txt,
 			"OSM nodes shown:", nrow(osm_sf),
-			"OS nodes with FBs:",num_fbs
+			"OS nodes with FBs:",num_fbs,
+			"Total FBs:",nrow(os_b_sf)
 			)
 		write(
 			paste(
@@ -1589,6 +1610,25 @@ if( generate_osc ) {
 				file=osmnode_file,append=TRUE)
 		}
 		write("];", file=osmnode_file, append=TRUE)
+
+		############################ FB NODES ###################################
+		fbnode_file = "/data/fbnodes.js"
+		message(">>>  generate fb nodes js")
+
+		write(paste("var fbnode_array = ["), file=fbnode_file, append=FALSE)
+
+		for(i in 1:nrow(os_b_sf)) {
+			osb_row <- os_b_sf[i,]
+
+			os_coords=st_coordinates(osb_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				osb_node_html(osb_row),
+				"],"),
+				file=fbnode_file,append=TRUE)
+		}
+		write("];", file=fbnode_file, append=TRUE)
 	}
 } else {
 	message(" Skipping OSC file generation")
