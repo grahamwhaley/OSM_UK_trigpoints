@@ -22,6 +22,11 @@ version="v1.0"
 options(digits=3+7)
 
 library(tidyverse)
+
+# Enable PROJ network fetching in the env *before* loading the sf library. We enable this so
+# PROJ can go get the grid transform tif files needed for co-ordinate transforms if it cannot
+# find them locally
+Sys.setenv("PROJ_NETWORK"="ON")
 library(sf)
 library(mapview)
 library(ggplot2)
@@ -40,6 +45,10 @@ generate_osc = 1	#Produce OsmChangeset files or not
 # Note - we only generate js if we are also generating osc
 # (but, that could be trivially fixed in the code if need be)
 generate_js = 1		#Produce slippy map leaflet javascript files
+
+# We might need heights in EGM96 for OSM tags, rather than ODN (the UK normal 'heights') - optionall
+# do the work to do the conversion, and then as least we have the data available if we need it.
+do_height_conversion = 1
 
 # If we set this before we've imported, all 'good' nodes fail
 check_ref_os = 0	#Check if ref:os tags match - indicating known 'good' nodes
@@ -344,14 +353,82 @@ osb_node_html <- function( osb_r) {
 ####################################################################################################### 
 ###################################### Read raw data ###############################################
 ####################################################################################################### 
+
+# Before we go going any sf stuff, add our local data dir to its data search path so it might
+# pick up our grid coord transform tif files if they are present, which might mean it doesn't then
+# have to go pick them up over the network
+sf_proj_search_paths(
+   paths = c( sf_proj_search_paths(), "/data/data"),
+   with_proj = NA )
+
 message(">>> Reading OS CSV")
 OS_csv <- read.csv(OS_csv_file, header=TRUE)
+message(">>>  Got ", nrow(OS_csv), " rows")
 os_sf_27700 <- st_as_sf(OS_csv, coords=c("EASTING", "NORTHING"), crs=27700)
+
+## FIXME - pull the st_transform apart and hand-feed it the best pipeline we can find from
+#  sf_proj_pipelines() (like we do in the 3D section), to ensure we are not being defaulted
+#  to some poor quality transform!
 os_sf_4326 <- os_sf_27700 %>% st_transform(crs=4326)
 
 # FIXME - just a naming bodge due to re-arranging things below - fix it properly
 # sometime!
 os_sf <- os_sf_4326
+
+# Are we calculating the EGM96 heights?
+if(do_height_conversion) {
+	# OK, if we are doing height transforms we need to have a 3D dataset - so far we've
+	# just been working on co-ordinates, so have stuck to 2D...
+	# And, there is no direct (one step) conversion from ODN to EGM96 - we need to go
+	# via ETRS89. Here are the EPSG codes for the 3D steps...
+	#
+	#  EPSG:7405   : OSGB36 + ODN
+	#  EPSG:4937   : ETRS89 (3d?)
+	#  EPSG:9707   : WGS84 + EGM96 height
+	#
+	# FIXME - write code to check these transforms are available (aka, we have the downloaded
+	# files and they are in the search path)
+	#
+	# but! sf is smart enough to work out the double step for us, so we can do a single
+	# direct request and it will work out the multi-step pipeline. If you are unsure, you can
+	# examine the pipeline of `sf_proj_pipelines(st_crs(7405), st_crs(9707)) to see the steps.
+	#
+
+	message(">>> Processing 3D data to get EGM96 heights")
+	# Re-convert the CSV, this time including the HEIGHT to get 3D points
+	osz_sf_7405 <- st_as_sf(OS_csv, coords=c("EASTING", "NORTHING", "HEIGHT"), crs=7405)
+
+	# We do this as a two-step conversion (in theory you can get sf to do this in a single
+	# step), as not only does it seem to be more 'reliable', but we get to store the intermediate
+	# results for debug, and we also now get to error out at a finer level if something goes wrong.
+
+	### Apply 7405 -> 4937 ###
+	pl_7405_4937 <- sf_proj_pipelines(source_crs=st_crs(7405), target_crs=st_crs(4937))
+	if( nrow(pl_7405_4937) <= 1 ) stop("No transform for 7405 -> 4937 found")
+
+	pl4937 <- pl_7405_4937[1, "definition"]
+	ac4937 <- pl_7405_4937[1, "accuracy"]
+
+	message("Transforming 7405 -> 4937 with accuracy ", ac4937, "m")
+	# We invoke the 'basic' st_transform, but apply the required accuracy. This seems to be
+	# more reliable than trying to hand over the actual pipleline, but gives us the safety net
+	# that if the accuracy cannot be achieved (because maybe the grid conversion files cannot be
+	# found), then it fails...
+	osz_sf_4937 <- osz_sf_7405 %>% st_transform(crs=4937, desired_accuracy=ac4937)
+
+	### Apply 4937 -> 9707 ###
+	pl_4937_9707 <- sf_proj_pipelines(source_crs=st_crs(4937), target_crs=st_crs(9707))
+	if( nrow(pl_4937_9707) <= 1 ) stop("No transform for 4937 -> 9707 found")
+
+	pl9707 <- pl_4937_9707[1, "definition"]
+	ac9707 <- pl_4937_9707[1, "accuracy"]
+	message("Transforming 4937 -> 9707 with accuracy ", ac9707, "m")
+	osz_sf_9707 <- osz_sf_4937 %>% st_transform( crs=9707, desired_accuracy=ac9707)
+
+	# And now store those Z heights back into the os_sf...
+	os_sf$etrs89_height = st_coordinates(osz_sf_4937$geometry)[,"Z"]
+	os_sf$egm96_height = st_coordinates(osz_sf_9707$geometry)[,"Z"]
+}
 
 message(">>> Reading OSM XML")
 ### NOTE - WARNING - the underlying GDAL library has a default set of columns it reads, and others
