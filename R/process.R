@@ -39,7 +39,7 @@ library(osbng)
 
 debug = FALSE		#debugging prints - mostly useful for restricted runs
 
-trim_dataset = 0	#Geographically trim down the data to aid development and analysis
+trim_dataset = 1	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
 
 # Note - we only generate js if we are also generating osc
@@ -211,7 +211,7 @@ fuzzywuzzy <- function(s, m) {
 	}
 }
 
-node_compare_html <- function(os_r, osb_r, osm_r) {
+node_compare_html <- function(title, os_r, osb_r, osm_r) {
 
 	# We should only have a valid FB in the os_r if it was both within distance and there
 	# was a name match - otherwise it will just be an NA
@@ -220,8 +220,11 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 	# If the OSM node is too far away, don't populate its column as that info
 	# may just be misleading
 	if( os_r$distance > max_snap_distance ) {
-		s = paste(sep="",
-			"\"",
+		s = "\""
+		s = paste(sep="", s, "<center>", title, "</center><br>")
+
+		# General params table
+		s = paste(sep="", s,
 			"<table style='border:1px solid black;'>",
 				"<tr><th>Item</th><th>OS</th></tr>",
 				"<tr><td>Name</td>",
@@ -232,6 +235,19 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 					"<td>", fb, "</td>",
 				"<tr><td>Structure</td>",
 					"<td>", os_r$TYPE.OF.MARK, "</td>",
+			"</table><br>"
+			)
+
+		# new ele:* table
+		s = paste(sep="", s,
+			"<table style='border:1px solid black;'>",
+				"<tr><th>Item</th><th>OS</th></tr>",
+				"<tr><td>ele:EGM96</td>",
+					"<td>", round(os_r$egm96_height, digits=HEIGHT_DIGITS), "</td>",
+				"<tr><td>ele:ODN</td>",
+					"<td>", os_r$HEIGHT, "</td>",
+				"<tr><td>ele:WGS84</td>",
+					"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
 			"</table><br>"
 			)
 
@@ -255,8 +271,11 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 		}
 		s = paste(sep="", s, "\"")
 	} else {
-		s = paste(sep="",
-			"\"",
+		s = "\""
+		s = paste(sep="", s, "<center>", title, "</center><br>")
+
+		# General parameter table
+		s = paste(sep="", s,
 			"<table style='border:1px solid black;'>",
 				"<tr><th>Item</th><th>OS</th><th>OSM</th></tr>",
 				"<tr><td>Name</td>",
@@ -273,6 +292,20 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 					"<td>", osm_r$survey_point_structure, "</td></tr>",
 			"</table><br>"
 			)
+
+		# new ele:* table
+		s = paste(sep="", s,
+			"<table style='border:1px solid black;'>",
+				"<tr><th>Item</th><th>OS</th></tr>",
+				"<tr><td>ele:EGM96</td>",
+					"<td>", round(os_r$egm96_height, digits=HEIGHT_DIGITS), "</td>",
+				"<tr><td>ele:ODN</td>",
+					"<td>", os_r$HEIGHT, "</td>",
+				"<tr><td>ele:WGS84</td>",
+					"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
+			"</table><br>"
+			)
+
 		s = paste(sep="", s,
 			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
 			osm_r$osm_id, "</a> is ",
@@ -296,7 +329,7 @@ node_compare_html <- function(os_r, osb_r, osm_r) {
 }
 
 # Generate HTML table info for an OSM node
-osm_node_html <- function( osm_r) {
+osm_node_html <- function(osm_r) {
 
 	#Drop quotes from other tags, as it breaks the html formatting
 	other_txt = gsub("\"", "", osm_r$other_tags)
@@ -307,6 +340,7 @@ osm_node_html <- function( osm_r) {
 
 	s = paste(sep="",
 		"\"",
+		"<center>OSM Node</center><br>",
 		"<table style='border:1px solid black;'>",
 			"<tr><th>Item</th><th>OSM</th></tr>",
 			"<tr><td>Name</td>",
@@ -338,6 +372,7 @@ osb_node_html <- function( osb_r) {
 
 	s = paste(sep="",
 		"\"",
+		"<center>Benchmark Node</center><br>",
 		"<table style='border:1px solid black;'>",
 			"<tr><th>Item</th><th>FB</th></tr>",
 			"<tr><td>FB</td>",
@@ -388,7 +423,6 @@ if(do_height_conversion) {
 	#  EPSG:7405   : OSGB36 + ODN
 	#  EPSG:4937   : ETRS89 (3d?)
 	#  EPSG:9707   : WGS84 + EGM96 height
-	#  EPSG:4327   : WGS84
 	#
 	# FIXME - write code to check these transforms are available (aka, we have the downloaded
 	# files and they are in the search path)
@@ -429,21 +463,10 @@ if(do_height_conversion) {
 	message("Transforming 4937 (ETRS89) -> 9707 (WGS84/EGM96) with accuracy ", ac9707, "m")
 	osz_sf_9707 <- osz_sf_4937 %>% st_transform( crs=9707, desired_accuracy=ac9707)
 
-	### Apply 4937 -> 4327 ###
-	### NOTE - although, it seems across Europe ETRS89 and WGS84 heights are within 1m of each
-	### other, and for 'low resolution' stuff are considered equivalent?
-	pl_4937_4327 <- sf_proj_pipelines(source_crs=st_crs(4937), target_crs=st_crs(4327))
-	if( nrow(pl_4937_4327) <= 1 ) stop("No transform for 4937 -> 4327 found")
-
-	pl4327 <- pl_4937_4327[1, "definition"]
-	ac4327 <- pl_4937_4327[1, "accuracy"]
-	message("Transforming 4937 (ETRS89) -> 4327 (WGS84) with accuracy ", ac4327, "m")
-	osz_sf_4327 <- osz_sf_4937 %>% st_transform( crs=4327, desired_accuracy=ac4327)
-
 	# And now store those Z heights back into the os_sf...
+	# etrs89 is the height used with WGS84. Note that EPSG:4327, 3D WGS84, is deprecated
 	os_sf$etrs89_height = st_coordinates(osz_sf_4937$geometry)[,"Z"]
 	os_sf$egm96_height = st_coordinates(osz_sf_9707$geometry)[,"Z"]
-	os_sf$wgs84_height = st_coordinates(osz_sf_4327$geometry)[,"Z"]
 }
 
 message(">>> Reading OSM XML")
@@ -1630,7 +1653,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row),
+				node_compare_html("New Node", os_row, osb_row, osm_row),
 				"],"),
 				file=newnode_file,append=TRUE)
 		}
@@ -1651,7 +1674,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row),
+				node_compare_html("Review Node",os_row, osb_row, osm_row),
 				"],"),
 				file=reviewnode_file,append=TRUE)
 		}
@@ -1672,7 +1695,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row),
+				node_compare_html("Good Node", os_row, osb_row, osm_row),
 				"],"),
 				file=goodnode_file,append=TRUE)
 		}
@@ -1693,7 +1716,7 @@ if( generate_osc ) {
 			write(paste(sep="", "\t[",
 				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
 				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html(os_row, osb_row, osm_row),
+				node_compare_html("Edit Node", os_row, osb_row, osm_row),
 				"],"),
 				file=editnode_file,append=TRUE)
 		}
