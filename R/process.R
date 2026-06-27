@@ -39,7 +39,7 @@ library(osbng)
 
 debug = FALSE		#debugging prints - mostly useful for restricted runs
 
-trim_dataset = 1	#Geographically trim down the data to aid development and analysis
+trim_dataset = 0	#Geographically trim down the data to aid development and analysis
 generate_osc = 1	#Produce OsmChangeset files or not
 
 # Note - we only generate js if we are also generating osc
@@ -407,7 +407,15 @@ os_sf_27700 <- st_as_sf(OS_csv, coords=c("EASTING", "NORTHING"), crs=27700)
 ## FIXME - pull the st_transform apart and hand-feed it the best pipeline we can find from
 #  sf_proj_pipelines() (like we do in the 3D section), to ensure we are not being defaulted
 #  to some poor quality transform!
-os_sf_4326 <- os_sf_27700 %>% st_transform(crs=4326)
+#os_sf_4326 <- os_sf_27700 %>% st_transform(crs=4326)
+
+pl_27700_4326 <- sf_proj_pipelines(source_crs=st_crs(27700), target_crs=st_crs(4326))
+if( nrow(pl_27700_4326) <= 1 ) stop("No transform for 27700 -> 4326 found")
+
+pl4326 <- pl_27700_4326[1, "definition"]
+ac4326 <- pl_27700_4326[1, "accuracy"]
+message("Transforming 27700 (OSGB36 2D) -> 4326 (WGS84 2D) with accuracy ", ac4326, "m")
+os_sf_4326 <- os_sf_27700 %>% st_transform( crs=4326, desired_accuracy=ac4326)
 
 # FIXME - just a naming bodge due to re-arranging things below - fix it properly
 # sometime!
