@@ -66,6 +66,9 @@ OSM_DIGITS = 7
 #Number of decimal digits to show when storing distances, such as distance between two nodes
 DIST_DIGITS = 2
 
+#Number of decimal digits to show when storing heights - that are not raw ODN heights
+HEIGHT_DIGITS = 2
+
 ####################################################################################################### 
 ###################################### Global data type things ###################################
 ####################################################################################################### 
@@ -385,6 +388,7 @@ if(do_height_conversion) {
 	#  EPSG:7405   : OSGB36 + ODN
 	#  EPSG:4937   : ETRS89 (3d?)
 	#  EPSG:9707   : WGS84 + EGM96 height
+	#  EPSG:4327   : WGS84
 	#
 	# FIXME - write code to check these transforms are available (aka, we have the downloaded
 	# files and they are in the search path)
@@ -409,7 +413,7 @@ if(do_height_conversion) {
 	pl4937 <- pl_7405_4937[1, "definition"]
 	ac4937 <- pl_7405_4937[1, "accuracy"]
 
-	message("Transforming 7405 -> 4937 with accuracy ", ac4937, "m")
+	message("Transforming 7405 (OSGB36/ODN) -> 4937 (ETRS89) with accuracy ", ac4937, "m")
 	# We invoke the 'basic' st_transform, but apply the required accuracy. This seems to be
 	# more reliable than trying to hand over the actual pipleline, but gives us the safety net
 	# that if the accuracy cannot be achieved (because maybe the grid conversion files cannot be
@@ -422,12 +426,24 @@ if(do_height_conversion) {
 
 	pl9707 <- pl_4937_9707[1, "definition"]
 	ac9707 <- pl_4937_9707[1, "accuracy"]
-	message("Transforming 4937 -> 9707 with accuracy ", ac9707, "m")
+	message("Transforming 4937 (ETRS89) -> 9707 (WGS84/EGM96) with accuracy ", ac9707, "m")
 	osz_sf_9707 <- osz_sf_4937 %>% st_transform( crs=9707, desired_accuracy=ac9707)
+
+	### Apply 4937 -> 4327 ###
+	### NOTE - although, it seems across Europe ETRS89 and WGS84 heights are within 1m of each
+	### other, and for 'low resolution' stuff are considered equivalent?
+	pl_4937_4327 <- sf_proj_pipelines(source_crs=st_crs(4937), target_crs=st_crs(4327))
+	if( nrow(pl_4937_4327) <= 1 ) stop("No transform for 4937 -> 4327 found")
+
+	pl4327 <- pl_4937_4327[1, "definition"]
+	ac4327 <- pl_4937_4327[1, "accuracy"]
+	message("Transforming 4937 (ETRS89) -> 4327 (WGS84) with accuracy ", ac4327, "m")
+	osz_sf_4327 <- osz_sf_4937 %>% st_transform( crs=4327, desired_accuracy=ac4327)
 
 	# And now store those Z heights back into the os_sf...
 	os_sf$etrs89_height = st_coordinates(osz_sf_4937$geometry)[,"Z"]
 	os_sf$egm96_height = st_coordinates(osz_sf_9707$geometry)[,"Z"]
+	os_sf$wgs84_height = st_coordinates(osz_sf_4327$geometry)[,"Z"]
 }
 
 message(">>> Reading OSM XML")
@@ -1224,8 +1240,18 @@ if( generate_osc ) {
 		newXMLNode("tag", attrs=attrs, parent=node)
 		attrs = c( k="name", v=os_row$Trig.Name)
 		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="ele", v=os_row$HEIGHT)
+
+		cmt = paste(sep=" ", "ele tag is in EGM96")
+		newXMLCommentNode(cmt, parent=node)
+		attrs = c( k="ele", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="ele:ODN", v=os_row$HEIGHT)
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+		newXMLNode("tag", attrs=attrs, parent=node)
+
 		attrs = c( k="survey_point:structure", v="pillar")
 		newXMLNode("tag", attrs=attrs, parent=node)
 
@@ -1307,12 +1333,24 @@ if( generate_osc ) {
 
 		if( is.na(osm_row$ele) ) {
 			# We can fill the ele slot
-			cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+			cmt = paste(sep=" ", "ele tag is in EGM96")
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "Add new ele:", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 			newXMLCommentNode(cmt, parent=node)
 		} else {
 			cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
 			newXMLCommentNode(cmt, parent=node)
 		}
+
+		cmt = paste(sep=" ", "And add new ele:* tags")
+		newXMLCommentNode(cmt, parent=node)
+
+		cmt = paste(sep=" ", " ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+		newXMLCommentNode(cmt, parent=node)
+		cmt = paste(sep=" ", " ele:ODN =", os_row$HEIGHT)
+		newXMLCommentNode(cmt, parent=node)
+		cmt = paste(sep=" ", " ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+		newXMLCommentNode(cmt, parent=node)
 
 		# Just note if 'survey_point' is set or not - we don't generate those
 		if( is.na(osm_row$survey_point) )
@@ -1421,7 +1459,20 @@ if( generate_osc ) {
 			}
 			newXMLCommentNode(cmt, parent=node)
 
+			# FIXME - and, probalby going to need to change 'ele' from OSM default ODN to
+			# EGM96
+			cmt = paste(sep=" ", "NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags")
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="ele:ODN", v=os_row$HEIGHT)
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+			newXMLNode("tag", attrs=attrs, parent=node)
+
 			# FIXME - add ref:os code here!
+			cmt = paste(sep=" ", "NOTE: probably need to add new ref:os tag")
+			newXMLCommentNode(cmt, parent=node)
 		}
 	}
 
@@ -1518,14 +1569,24 @@ if( generate_osc ) {
 
 			if( is.na(osm_row$ele) ) {
 				# We can fill the ele slot
-				cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+				cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT, "in EGM96")
 				newXMLCommentNode(cmt, parent=node)
-				attrs = c( k="ele", v=os_row$HEIGHT)
+				attrs = c( k="ele", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 				newXMLNode("tag", attrs=attrs, parent=node)
 			} else {
 				cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
 				newXMLCommentNode(cmt, parent=node)
 			}
+
+			# FIXME - in the future we should check if these already exist?
+			cmt = paste(sep=" ", "And add new ele:[EGM96/ODN/WGS84] tags")
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="ele:ODN", v=os_row$HEIGHT)
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+			newXMLNode("tag", attrs=attrs, parent=node)
 
 			if( is.na(osm_row$survey_point_structure) && is.na(osm_row$survey_point) ) {
 				# We can fill the structure slot
