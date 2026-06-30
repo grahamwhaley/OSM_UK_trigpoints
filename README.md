@@ -153,7 +153,8 @@ checking of results or for hand updates. That map can be found on the
 
 ## What do the results 'look like'
 
-  Note: this data is probably now better accessed through the slippy map mentioned above.
+>  Note: this data is probably now better accessed through the [slippy map](https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html)
+>  mentioned above.
 
 To aid debug and analysis, you can enable some code in the scripts that will reduce the dataset
 to a defined area and then plot those results. Zooming in makes the plots much more readable, as having
@@ -192,16 +193,20 @@ within >4km.
 
 ```xml
   <create>
-    <node id="-1" changeset="1" version="1" lat="55.8184506" lon="-3.5182713">
+    <node id="-795" changeset="1" version="1" lat="55.8184475" lon="-3.5182668">
       <!--OS Name Camilty Hill OS New Name NT18T005-->
       <tag k="man_made" v="survey_point"/>
       <tag k="name" v="Camilty Hill"/>
-      <tag k="ele" v="290.453"/>
+      <!--ele tag is in EGM96-->
+      <tag k="ele" v="290.25"/>
+      <tag k="ele:EGM96" v="290.25"/>
+      <tag k="ele:ODN" v="290.453"/>
+      <tag k="ele:WGS84" v="343.85"/>
       <tag k="survey_point:structure" v="pillar"/>
       <!--Nearest FB is at 2.98 m-->
       <tag k="ref" v="S2681"/>
       <tag k="ref:os" v="NT18T005"/>
-      <!-- Distance to nearest OSM node 8561011506 is 4085.25 m-->
+      <!-- Distance to nearest OSM node 8561011506 is 4085.55 m-->
     </node>
   </create>
 ```
@@ -214,10 +219,15 @@ Nodes that could do with human review.
   <create>
     <node id="8381906378" changeset="1" version="1" lat="55.8553947" lon="-3.4478905">
       <!--OS Name Corston Hill OS New Name NT18S004-->
-      <!--OS node co-ords are 55.8553867 , -3.4478745-->
-      <!--That is 1.34 m from its nearest OSM node-->
+      <!--OS node co-ords are 55.8553828 , -3.4478707-->
+      <!--That is 1.81 m from its nearest OSM node-->
       <!--OS node called [ Corston Hill ]. OSM node has no name-->
-      <!--Add new ele: 348.227-->
+      <!--ele tag is in EGM96-->
+      <!--Add new ele: 348.01-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 348.01-->
+      <!-- ele:ODN = 348.227-->
+      <!-- ele:WGS84 = 401.42-->
       <!--survey_point tag is empty (good)-->
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
@@ -228,17 +238,22 @@ Nodes that could do with human review.
   <create>
     <node id="8561034217" changeset="1" version="1" lat="55.892738" lon="-3.7548167">
       <!--OS Name Eastcraigs Hill OS New Name NS77S023-->
-      <!--OS node co-ords are 55.8927415 , -3.7548261-->
-      <!--That is 0.7 m from its nearest OSM node-->
+      <!--OS node co-ords are 55.8927374 , -3.7548172-->
+      <!--That is 0.07 m from its nearest OSM node-->
       <!--OS node called [ Eastcraigs Hill ] vs OSM [ Eastcraigs Hill ]-->
       <!--ele field already set: 250-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 249.68-->
+      <!-- ele:ODN = 249.936-->
+      <!-- ele:WGS84 = 303.52-->
       <!--survey_point tag is empty (good)-->
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3616-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is too far away at 8933.35 m-->
+      <!--OS node has no FB-->
     </node>
   </create>
+
 ```
 
 ### Good nodes
@@ -252,16 +267,27 @@ current suggestion is the `ref:os` tag, as that is already present in the OSM da
 existing instances that do contain an OS ref, but in the 'old' style'. That will greatly aid the
 automatic detection of nodes that do not need further checking in the future.
 
+FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME
+we need to fix the new tags in the good.osc file
+FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME
+
 ```xml
   <create>
     <node id="8561011513" changeset="1" version="1" lat="55.808063" lon="-3.5852169">
-      <!--Lat: OSM: 55.808063 OS 55.8080657-->
-      <!--Lon: OSM: -3.5852169 OS -3.5852224-->
-      <!--Separation distance: 0.46 m-->
+      <!--Lat: OSM: 55.808063 OS 55.8080627-->
+      <!--Lon: OSM: -3.5852169 OS -3.5852171-->
+      <!--Separation distance: 0.04 m-->
       <!--Name: OSM: Pearie Law OS: Pearie Law-->
       <!--Ele: OSM: 302 OS: 301.517-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2652 OS: S2652-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
+      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
+      <!--tag ele:EGM96 = 301.31-->
+      <!--tag ele:ODN = 301.517-->
+      <!--tag ele:WGS84 = 355.02-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT18T002-->
     </node>
   </create>
 ```
@@ -274,16 +300,20 @@ to fill out the entry.
 
 ```xml
   <modify>
-    <node id="4517797418" changeset="1" version="1" lat="55.8105939" lon="-3.4259841">
+    <node id="4517797418" changeset="1" version="1" lat="55.810591" lon="-3.4259805">
       <!--OS Name West Cairn Hill OS New Name NT18S001-->
-      <!--Move bearing -91.1638462224604 degrees for 1.32 m-->
+      <!--Move bearing -107.328643666515 degrees for 1.15 m-->
       <!-- from lat: 55.8105941 lon: -3.4259629-->
       <!--Name field already set: West Cairn Hill-->
       <!--Ref field already set: S3084-->
       <!--Add new ref:os: NT18S001-->
       <tag k="ref:os" v="NT18S001"/>
-      <!--Add new ele: 562.438-->
-      <tag k="ele" v="562.438"/>
+      <!--Add new ele: 562.438 in EGM96-->
+      <tag k="ele" v="562.29"/>
+      <!--And add new ele:[EGM96/ODN/WGS84] tags-->
+      <tag k="ele:EGM96" v="562.29"/>
+      <tag k="ele:ODN" v="562.438"/>
+      <tag k="ele:WGS84" v="615.74"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
     </node>
@@ -328,35 +358,9 @@ the translation for us - phew. Note, that 8 digit British National Grid referenc
 [a resolution of 10m](https://digimap.edina.ac.uk/help/our-maps-and-data/bng/) afaict, so having
 small positional discrepencies between OS and OSB data I think should be expected.
 
-As an update, I tried to work out what was the 'best', as in most accurate and 'correct', way to
-convert the OS data to WGS84. Currently we use the `sf` library routines, which are built on top
-of `GDAL` and `PROJ`, which afaict is no bad thing. I've also considered if the `osbng` library
-can do the same conversion, or to use the
-[`sgo` library](https://cran.r-project.org/web/packages/sgo/index.html). Ultimately, I finally found
-how to ask `sf` what it was doing underneath with `GDAL` and `PROJ`... if we type in:
-
-```R
-> sf_proj_pipelines(st_crs(27700), st_crs(4326))
-... after a bunch of info, at the end it says...
-Best instantiable operation has accuracy: 1 m
-Description: Inverse of British National Grid + OSGB36 to WGS 84 (9) + axis
-order change (2D)
-Definition:  +proj=pipeline +step +inv +proj=tmerc +lat_0=49 +lon_0=-2
-+k=0.9996012717 +x_0=400000 +y_0=-100000
-+ellps=airy +step +proj=hgridshift
-+grids=uk_os_OSTN15_NTv2_OSGBtoETRS.tif +step
-+proj=unitconvert +xy_in=rad +xy_out=deg
-```
-
-To my untrained eye, after a bit of research, the fact it is invoking some form of
-[`OSTN15`](https://www.ordnancesurvey.co.uk/documents/gps/updated-transformations-uk-ireland-geoid-model.pdf)
-in the conversion is a key indicator that it is likely doing a 'good thing' - and that the accuracy is
-stated as 1m should be OK for us.
-
-Now, **Please**, if somebody knows a better (more accurate) method to do the translation, or understands
-the above shown PROJ pipeline to confirm or deny this is a good thing - do let me know!
-
-Ultimately we convert everything to WGS84 before crunching the data.
+After much staring, reading and good discussion on the GB OSM mailing list, finally I managed to get
+`sf` set up correctly to give us a good transformation from OSBG36 to ETRS89 - the UK 'equivalent' of
+WGS84. We now do all the working inside the scripts in ETRS89.
 
 One more thing I did here was to have a look at the data to try and ensure our co-ordinates translation
 didn't contain any obvious errors. To do that I looked at the bearing direction for each 'neighbour'
@@ -586,8 +590,5 @@ and write an [import plan](https://wiki.openstreetmap.org/wiki/Import/Plan_Outli
 A few thoughts on things left to do, apart from community discussions and documentation on the
 OSM wiki etc.:
 
-  - At some point add descriptions of the generated data files here - right now you will have to stare
-    hard to understand what you are getting out of the scripts. The XML files now have more comments,
-	but the graphs need improvements on labelling and axis.
   - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere.
 	I have a feeling it is not, but we should stare harder to confirm.
