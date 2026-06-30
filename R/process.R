@@ -1502,17 +1502,22 @@ if( generate_osc ) {
 
 			# FIXME - and, probalby going to need to change 'ele' from OSM default ODN to
 			# EGM96
+			cmt = paste(sep=" ", "NOTE: probably need to change existing ele tag to EGM96")
+			newXMLCommentNode(cmt, parent=node)
 			cmt = paste(sep=" ", "NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags")
 			newXMLCommentNode(cmt, parent=node)
-			attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-			newXMLNode("tag", attrs=attrs, parent=node)
-			attrs = c( k="ele:ODN", v=os_row$HEIGHT)
-			newXMLNode("tag", attrs=attrs, parent=node)
-			attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
-			newXMLNode("tag", attrs=attrs, parent=node)
+
+			cmt = paste(sep=" ", "tag ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "tag ele:ODN =", os_row$HEIGHT)
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "tag ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+			newXMLCommentNode(cmt, parent=node)
 
 			# FIXME - add ref:os code here!
-			cmt = paste(sep=" ", "NOTE: probably need to add new ref:os tag")
+			cmt = paste(sep=" ", "NOTE: probably need to add new ref:os tag:")
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "tag ref:os =", os_row$New.Name)
 			newXMLCommentNode(cmt, parent=node)
 		}
 	}
