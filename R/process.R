@@ -392,6 +392,12 @@ osb_node_html <- function( osb_r) {
 ###################################### Read raw data ###############################################
 ####################################################################################################### 
 
+# EPSG:27700 : OSBG36
+# EPSG:7405  : OSGB36 + ODN
+# EPSG:4326  : WGS84
+# EPSG:4937  : ETRS89 in degrees
+# EPSG:4936  : ETRS89 in metres (geocentric - not what we want?)
+
 # Before we go going any sf stuff, add our local data dir to its data search path so it might
 # pick up our grid coord transform tif files if they are present, which might mean it doesn't then
 # have to go pick them up over the network
@@ -402,65 +408,38 @@ sf_proj_search_paths(
 message(">>> Reading OS CSV")
 OS_csv <- read.csv(OS_csv_file, header=TRUE)
 message(">>>  Got ", nrow(OS_csv), " rows")
-os_sf_27700 <- st_as_sf(OS_csv, coords=c("EASTING", "NORTHING"), crs=27700)
+# The original OS CSV format is OSGB36 + ODN height
+# Note - we'd like to keep the original columns of the co-ords for later use (particulary
+# HEIGHT)
+os_sf_7405 <- st_as_sf(OS_csv, coords=c("EASTING", "NORTHING", "HEIGHT"), remove=FALSE, crs=7405)
 
-## FIXME - pull the st_transform apart and hand-feed it the best pipeline we can find from
-#  sf_proj_pipelines() (like we do in the 3D section), to ensure we are not being defaulted
-#  to some poor quality transform!
-#os_sf_4326 <- os_sf_27700 %>% st_transform(crs=4326)
+pl_7405_4937 <- sf_proj_pipelines(source_crs=st_crs(7405), target_crs=st_crs(4937))
+if( nrow(pl_7405_4937) <= 1 ) stop("No transform for 7405 -> 4937 found")
 
-pl_27700_4326 <- sf_proj_pipelines(source_crs=st_crs(27700), target_crs=st_crs(4326))
-if( nrow(pl_27700_4326) <= 1 ) stop("No transform for 27700 -> 4326 found")
-
-pl4326 <- pl_27700_4326[1, "definition"]
-ac4326 <- pl_27700_4326[1, "accuracy"]
-message("Transforming 27700 (OSGB36 2D) -> 4326 (WGS84 2D) with accuracy ", ac4326, "m")
-os_sf_4326 <- os_sf_27700 %>% st_transform( crs=4326, desired_accuracy=ac4326)
+pl4937 <- pl_7405_4937[1, "definition"]
+ac4937 <- pl_7405_4937[1, "accuracy"]
+message("Transforming 7405 (OSGB36+ODN) -> 4937 (ETRS89) with accuracy ", ac4937, "m")
+os_sf_4937 <- os_sf_7405 %>% st_transform( crs=4937, desired_accuracy=ac4937)
 
 # FIXME - just a naming bodge due to re-arranging things below - fix it properly
 # sometime!
-os_sf <- os_sf_4326
+os_sf <- os_sf_4937
 
 # Are we calculating the EGM96 heights?
 if(do_height_conversion) {
-	# OK, if we are doing height transforms we need to have a 3D dataset - so far we've
-	# just been working on co-ordinates, so have stuck to 2D...
-	# And, there is no direct (one step) conversion from ODN to EGM96 - we need to go
+	# Now we need to take note of the 3D (height) element we pulled in earlier. To this
+	# point we've been dealing with the 2D co-ords...
+	# The 'official' height type for OSM is EGM96, so we shoud atleast have that on hand.
+	# There is no direct (one step) conversion from ODN to EGM96 - we need to go
 	# via ETRS89. Here are the EPSG codes for the 3D steps...
 	#
 	#  EPSG:7405   : OSGB36 + ODN
 	#  EPSG:4937   : ETRS89 (3d?)
 	#  EPSG:9707   : WGS84 + EGM96 height
 	#
-	# FIXME - write code to check these transforms are available (aka, we have the downloaded
-	# files and they are in the search path)
-	#
-	# but! sf is smart enough to work out the double step for us, so we can do a single
-	# direct request and it will work out the multi-step pipeline. If you are unsure, you can
-	# examine the pipeline of `sf_proj_pipelines(st_crs(7405), st_crs(9707)) to see the steps.
-	#
 
-	message(">>> Processing 3D data to get EGM96 heights")
-	# Re-convert the CSV, this time including the HEIGHT to get 3D points
-	osz_sf_7405 <- st_as_sf(OS_csv, coords=c("EASTING", "NORTHING", "HEIGHT"), crs=7405)
-
-	# We do this as a two-step conversion (in theory you can get sf to do this in a single
-	# step), as not only does it seem to be more 'reliable', but we get to store the intermediate
-	# results for debug, and we also now get to error out at a finer level if something goes wrong.
-
-	### Apply 7405 -> 4937 ###
-	pl_7405_4937 <- sf_proj_pipelines(source_crs=st_crs(7405), target_crs=st_crs(4937))
-	if( nrow(pl_7405_4937) <= 1 ) stop("No transform for 7405 -> 4937 found")
-
-	pl4937 <- pl_7405_4937[1, "definition"]
-	ac4937 <- pl_7405_4937[1, "accuracy"]
-
-	message("Transforming 7405 (OSGB36/ODN) -> 4937 (ETRS89) with accuracy ", ac4937, "m")
-	# We invoke the 'basic' st_transform, but apply the required accuracy. This seems to be
-	# more reliable than trying to hand over the actual pipleline, but gives us the safety net
-	# that if the accuracy cannot be achieved (because maybe the grid conversion files cannot be
-	# found), then it fails...
-	osz_sf_4937 <- osz_sf_7405 %>% st_transform(crs=4937, desired_accuracy=ac4937)
+	# We already have the core data in ETRS89. So, now we can jump straight from that to
+	# WGS84+EGM96
 
 	### Apply 4937 -> 9707 ###
 	pl_4937_9707 <- sf_proj_pipelines(source_crs=st_crs(4937), target_crs=st_crs(9707))
@@ -469,11 +448,13 @@ if(do_height_conversion) {
 	pl9707 <- pl_4937_9707[1, "definition"]
 	ac9707 <- pl_4937_9707[1, "accuracy"]
 	message("Transforming 4937 (ETRS89) -> 9707 (WGS84/EGM96) with accuracy ", ac9707, "m")
-	osz_sf_9707 <- osz_sf_4937 %>% st_transform( crs=9707, desired_accuracy=ac9707)
+	osz_sf_9707 <- os_sf %>% st_transform( crs=9707, desired_accuracy=ac9707)
 
 	# And now store those Z heights back into the os_sf...
-	# etrs89 is the height used with WGS84. Note that EPSG:4327, 3D WGS84, is deprecated
-	os_sf$etrs89_height = st_coordinates(osz_sf_4937$geometry)[,"Z"]
+	# Note, we are extracting the Z height component of os_sf back into an os_sf
+	# column just to make it *much* easier to access later on - rather than having to tap
+	# the $geometry each time
+	os_sf$etrs89_height = st_coordinates(os_sf$geometry)[,"Z"]
 	os_sf$egm96_height = st_coordinates(osz_sf_9707$geometry)[,"Z"]
 }
 
@@ -484,6 +465,11 @@ message(">>> Reading OSM XML")
 ###  It might turn out we have to expand and search that other_tags list when processing...
 ###  Or apparently we might be able to construct our own local GDAL layer config file.
 osm_sf <- read_sf(OSM_OSM_file, options=READ_SF_OPTIONS)
+# osm file naturally read as WGS84, but as we are now working in ETRS89.
+# I would just st_set_crs() force its type, but then we get a warning. So, do the
+# 'right' thing, and use st_transform(), which for WGS84->ETRS89 is a null op in PROJ
+# anyway!
+osm_sf <- osm_sf %>% st_transform(crs=4937)
 
 # Try and work out if we want to keep (a pillar) or drop (a cut mark etc.) a row
 osm_sf$keep = FALSE		#Any evidence this is a real pillar?
@@ -522,8 +508,13 @@ colnames(new_coords) <- c("nEASTING", "nNORTHING")
 
 os_b_df <- cbind(os_b_df, new_coords)
 
+# EPSG:27700 rather than EPSG:7405 as we are not pulling in the height. We don't use the
+# height of the benchmarks. Having said that, FIXME - later on maybe we should do a compare
+# of the trig height vs benchmark height to ensure they are 'near' - and if not, note the
+# problem and stick the node in the review pack??
 os_b_sf_27700 <- st_as_sf(os_b_df, coords=c("nEASTING", "nNORTHING"), crs=27700)
-os_b_sf <- os_b_sf_27700 %>% st_transform(crs=4326)
+# And then into ETRS89
+os_b_sf <- os_b_sf_27700 %>% st_transform(crs=4937)
 
 ####################################################################################################### 
 ###################### Reduce the dataset if needed - helps with speed of development ###########
@@ -536,7 +527,7 @@ if(trim_dataset) {
 	os_b_sf_org = os_b_sf
 	osm_sf_org = osm_sf
 
-	org_num_os = nrow(os_sf_4326)
+	org_num_os = nrow(os_sf_4937)
 	org_num_os_b = nrow(os_b_sf)
 	org_num_osm = nrow(osm_sf)
 
@@ -585,8 +576,8 @@ if(trim_dataset) {
 		county_shapes=read_sf(county_shapefile)
 
 		filter_shape = filter(county_shapes, CTYUA24NM==subdivision_name)
-		# And transform from OSGB36 into WGS85
-		sub_poly <- filter_shape %>% st_transform(crs=4326)
+		# And transform from OSGB36 into ETRS89
+		sub_poly <- filter_shape %>% st_transform(crs=4937)
 		message(" Filtering to shape of [", subdivision_name, "]")
 		filter_by_shape <- TRUE
 	}
@@ -603,11 +594,14 @@ if(trim_dataset) {
 
 	if( filter_by_shape == FALSE ) {
 		# Create the poly shape by applying a 'distance buffer' around the chosen centre point
-		sub_point <- data.frame(place = sub_name, lat = sub_lat, lon = sub_lon) %>% st_as_sf(coords = c('lat', 'lon')) %>% st_set_crs(4326)
+		sub_point <- data.frame(place = sub_name, lat = sub_lat, lon = sub_lon) %>% st_as_sf(coords = c('lat', 'lon')) %>% st_set_crs(4937)
 		sub_poly <- st_buffer(sub_point, sub_span)
 	}
   
 	message(">>>  Applying sub poly filter")
+	## st_intersection is dropping the Z from the geometry! - but, we have done our 3D
+	# work earlier, and have HEIGHT for the ODN, so if we sequence things carefully then
+	# this should not be a problem??
 	os_sf <- st_intersection(os_sf, sub_poly)
 	os_b_sf <- st_intersection(os_b_sf, sub_poly)
 	osm_sf <- st_intersection(osm_sf, sub_poly)
@@ -871,8 +865,8 @@ message(" Snappable points < ", max_snap_distance, "m : ", snappable, ". Unsnapp
 
 # Turn the pairs of points into lines so we can plot them
 lines = st_sfc(mapply(function(a,b){st_cast(st_union(a,b),"LINESTRING")}, nearest_lines$geometry, nearest_lines$geometry.1, SIMPLIFY=FALSE))
-# and set them back to WGS84
-lines <- st_set_crs(lines, 4326)
+# and set them back to ETRS89
+lines <- st_set_crs(lines, 4937)
 
 ## Let's get and print some stats
 os_total_points = nrow(os_sf)
@@ -969,11 +963,12 @@ if(1) {
 	  	#theme_minimal(legend.position="bottom") +
 	  	#theme(legend.position="bottom") +
 	  	ggtitle("Map of the United Kingdom") +
-	  	coord_sf(crs = 4326) # Uses standard WGS84 coordinates
+		coord_sf(crs = 4937) # Uses standard ETRS89 coordinates
 
 		ggsave("/data/plot.jpg", plot=p)
 	}
 
+	message(">>>  Plot OS to OSM distance distribution")
 	# Plot a distribution of our nearest neighbour distances to help guide 'match and snap'
 	# only plot things within 40km - removes outliers and makes the graph scale nicer.
 	dist_df <- filter(dist_df, distances<set_units(40000, "m"))
@@ -995,6 +990,7 @@ if(1) {
 #  added), we should try and get the data in a 'tidy' format containing all snappable/new/deleted
 #  points... 
 
+message(">>>  Build tidy data to plot")
 # And the OSM points
 full_df <- data.frame(
 	geometry = osm_sf$geometry,
@@ -1018,6 +1014,7 @@ full_df <- rbind(full_df, data.frame(
 
 full_sf <- st_as_sf(full_df)
 
+message(">>>  Plot points on map")
 # And generate a plot from the 'full' data
 p2 <- ggplot(data = full_sf) +
   annotation_map_tile(zoom=chosen_zoom, forcedownload=FALSE) +
@@ -1025,19 +1022,20 @@ p2 <- ggplot(data = full_sf) +
   scale_size_continuous(range=c(0.1,1)) +
   geom_sf(data=lines, fill = "gray90", color = "red", size = 0.1) +
   ggtitle("Map of the United Kingdom") +
-  coord_sf(crs = 4326) # Uses standard WGS84 coordinates
+  coord_sf(crs = 4937) # Uses standard ETRS89 coordinates
 ggsave("/data/plot2.jpg", plot=p2)
 
 ## Make a 'polar' plot of snap distance and bearings so we can try to judge if there is a pattern
 #  to the errors (which might indicate a problem with our mapping translations), or if they are
 #  fairly random, in which case it is probably just mapping/accuracy problems.
 
+message(">>>  Polar plot of distances and bearings")
 os_sf$bearing <- NA
 snappable_df <- filter(os_sf, distance<=set_units(max_snap_distance, "m"))
 for(i in 1:nrow(snappable_df)) {
 	os_row <- snappable_df[i,]
 	osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
-	os_coords=st_coordinates(os_row$geometry)
+	os_coords=st_coordinates(st_zm(os_row$geometry))
 	snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
 }
 
@@ -1246,6 +1244,8 @@ if( generate_osc ) {
 	newXMLCommentNode(cmt, parent=root)
 	cmt = paste(sep=" ", nrow(newnode_df), "nodes to process")
 	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", "Note, geometries are in ETRS89")
+	newXMLCommentNode(cmt, parent=root)
 
 	for(i in 1:nrow(newnode_df)) {
 		os_row <- newnode_df[i,]
@@ -1322,6 +1322,8 @@ if( generate_osc ) {
 	cmt = paste(sep=" ", "OSM Nodes for potential review. Generated on:", Sys.Date())
 	newXMLCommentNode(cmt, parent=root)
 	cmt = paste(sep=" ", nrow(reviewnode_df), "nodes to process")
+	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", "Note, geometries are in ETRS89")
 	newXMLCommentNode(cmt, parent=root)
 
 	for(i in 1:nrow(reviewnode_df)) {
@@ -1444,6 +1446,8 @@ if( generate_osc ) {
 	newXMLCommentNode(cmt, parent=root)
 	cmt = paste(sep=" ", nrow(goodnode_df), "nodes to process")
 	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", "Note, geometries are in ETRS89")
+	newXMLCommentNode(cmt, parent=root)
 
 	if( nrow(goodnode_df) != 0 ) {
 		for(i in 1:nrow(goodnode_df)) {
@@ -1523,6 +1527,8 @@ if( generate_osc ) {
 	newXMLCommentNode(cmt, parent=root)
 	cmt = paste(sep=" ", nrow(editnode_df), "nodes to process")
 	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", "Note, geometries are in ETRS89")
+	newXMLCommentNode(cmt, parent=root)
 
 	if( nrow(editnode_df) != 0 ) {
 		for(i in 1:nrow(editnode_df)) {
@@ -1547,7 +1553,7 @@ if( generate_osc ) {
 			# Add comments describing what we know
 			cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
 			newXMLCommentNode(cmt, parent=node)
-			b = snappable_df[i,]$bearing <- bearing(osm_coords, os_coords)
+			b = snappable_df[i,]$bearing <- bearing(st_zm(osm_coords), st_zm(os_coords))
 			cmt = paste(sep=" ", "Move bearing", b, "degrees for", round(os_row$distance, digits=DIST_DIGITS), "m")
 			newXMLCommentNode(cmt, parent=node)
 			cmt = paste(sep=" ", " from lat:", round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
