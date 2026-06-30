@@ -583,7 +583,7 @@ if(trim_dataset) {
 	}
 
 	# further around Ilkley
-	if(1) {
+	if(0) {
 		# WGS84 for Ilkley
 		sub_name = "ilkley"
 		sub_lat = -1.82442
@@ -951,29 +951,15 @@ if(1) {
 	osm_sf$source="OSM"
 	os_sf$source="OS"
 
-	# We now generate a better version of this later on once we have collected all the points
-	# into a single df
-	if(0) {
-		p <- ggplot(data = osm_sf) +
-	  	annotation_map_tile(zoom=chosen_zoom, forcedownload=FALSE) +
-	  	geom_sf(data=osm_sf, color = "darkgreen", size = 1, aes(color=source), show.legend = "point") +
-	  	geom_sf(data=os_sf,  color = "blue", size = 0.5, aes(color=source), show.legend = "point") +
-	  	geom_sf(data=os_sf_destroyed,  color = "orange", size = 0.1, aes(color=source), show.legend = "point") +
-	  	geom_sf(data=lines, fill = "gray90", color = "red", size = 0.1) +
-	  	#theme_minimal(legend.position="bottom") +
-	  	#theme(legend.position="bottom") +
-	  	ggtitle("Map of the United Kingdom") +
-		coord_sf(crs = 4937) # Uses standard ETRS89 coordinates
-
-		ggsave("/data/plot.jpg", plot=p)
-	}
-
 	message(">>>  Plot OS to OSM distance distribution")
 	# Plot a distribution of our nearest neighbour distances to help guide 'match and snap'
 	# only plot things within 40km - removes outliers and makes the graph scale nicer.
 	dist_df <- filter(dist_df, distances<set_units(40000, "m"))
 	p_distr = ggplot(data = dist_df) +
-	  geom_histogram((aes(distances)))
+	  labs(title="Distances between OS and OSM nearest neighbours") +
+	  labs(x = "Distance to neighbour") +
+	  labs(y = "Number of nodes") +
+	  geom_histogram(aes(distances), bins=30)
 
 	ggsave("/data/OS_to_OSM_distance.jpg", plot=p_distr)
 
@@ -981,7 +967,10 @@ if(1) {
 	dist_df <- filter(dist_df, distances<set_units(100, "m"))
 
 	p_distr = ggplot(data = dist_df) +
-	  geom_histogram((aes(distances)))
+	  labs(title="Zoomed distances between OS and OSM nearest neighbours") +
+	  labs(x = "Distance to neighbour") +
+	  labs(y = "Number of nodes") +
+	  geom_histogram(aes(distances), bins=30)
 
 	ggsave("/data/OS_to_OSM_distance_zoom.jpg", plot=p_distr)
 }
@@ -1021,7 +1010,11 @@ p2 <- ggplot(data = full_sf) +
   geom_sf(aes(color=type, size=dotsize), show.legend = "point") +
   scale_size_continuous(range=c(0.1,1)) +
   geom_sf(data=lines, fill = "gray90", color = "red", size = 0.1) +
-  ggtitle("Map of the United Kingdom") +
+  labs(title="Map view comparing processed node locality") +
+  guides(
+    color = guide_legend(order = 1),
+    size = "none"
+	)+
   coord_sf(crs = 4937) # Uses standard ETRS89 coordinates
 ggsave("/data/plot2.jpg", plot=p2)
 
@@ -1045,6 +1038,9 @@ for(i in 1:nrow(snappable_df)) {
 p_polar <- ggplot(data = snappable_df, aes(bearing, drop_units(distance))) +
 	geom_segment(aes(xend=bearing, yend=0.1)) +
 	geom_point() +
+    labs(title="Distance and direction to snappable OSM nodes") +
+    labs(x = "Bearing (degrees)") +
+    labs(y = "Distance (m)") +
 	scale_x_continuous(limits = c(-180, 180), breaks = seq(-180, 180, 90)) +
 	scale_y_continuous(limits = c(0, drop_units(max(snappable_df$distance)) )) +
 	coord_polar(start=pi)
