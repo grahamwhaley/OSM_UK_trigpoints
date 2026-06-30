@@ -401,9 +401,18 @@ osb_node_html <- function( osb_r) {
 # Before we go going any sf stuff, add our local data dir to its data search path so it might
 # pick up our grid coord transform tif files if they are present, which might mean it doesn't then
 # have to go pick them up over the network
-sf_proj_search_paths(
-   paths = c( sf_proj_search_paths(), "/data/data"),
-   with_proj = NA )
+#
+# Check if we have added this already - for when we are running the script repeatedly interactively
+# whilst developing...
+if ( !exists("process_has_set_data_path") ) {
+	message("Adding local data path to GDAL/PROJ paths")
+	sf_proj_search_paths(
+		paths = c( sf_proj_search_paths(), "/data/data"),
+		with_proj = NA )
+	process_has_set_data_path = TRUE
+} else {
+	message("Local data path already added to GDAL/PROJ paths")
+}
 
 message(">>> Reading OS CSV")
 OS_csv <- read.csv(OS_csv_file, header=TRUE)
@@ -580,6 +589,7 @@ if(trim_dataset) {
 		sub_poly <- filter_shape %>% st_transform(crs=4937)
 		message(" Filtering to shape of [", subdivision_name, "]")
 		filter_by_shape <- TRUE
+		chosen_zoom=10
 	}
 
 	# further around Ilkley
