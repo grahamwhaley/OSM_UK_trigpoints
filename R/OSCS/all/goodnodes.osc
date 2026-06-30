@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-06-27-->
+  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-06-30-->
   <!--126 nodes to process-->
+  <!--Note, geometries are in ETRS89-->
   <create>
     <node id="11833821938" changeset="1" version="1" lat="53.5220433" lon="-1.9969976">
       <!--Lat: OSM: 53.5220433 OS 53.5220399-->
@@ -11,11 +12,13 @@
       <!--Ele: OSM: 469 OS: 468.922-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2803 OS: S2803-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="468.82"/>
-      <tag k="ele:ODN" v="468.922"/>
-      <tag k="ele:WGS84" v="519.78"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 468.82-->
+      <!--tag ele:ODN = 468.922-->
+      <!--tag ele:WGS84 = 519.78-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD80S001-->
     </node>
   </create>
   <create>
@@ -27,11 +30,13 @@
       <!--Ele: OSM: 159 OS: 159.114-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5406 OS: S5406-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="158.77"/>
-      <tag k="ele:ODN" v="159.114"/>
-      <tag k="ele:WGS84" v="211.43"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 158.77-->
+      <!--tag ele:ODN = 159.114-->
+      <!--tag ele:WGS84 = 211.43-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD47T001-->
     </node>
   </create>
   <create>
@@ -43,11 +48,13 @@
       <!--Ele: OSM: 85 OS: 84.908-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5065 OS: S5065-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="84.7"/>
-      <tag k="ele:ODN" v="84.908"/>
-      <tag k="ele:WGS84" v="133.69"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 84.7-->
+      <!--tag ele:ODN = 84.908-->
+      <!--tag ele:WGS84 = 133.69-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP26T001-->
     </node>
   </create>
   <create>
@@ -59,11 +66,13 @@
       <!--Ele: OSM: 193 OS: 193.529-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S4507 OS: S4507-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="193.27"/>
-      <tag k="ele:ODN" v="193.529"/>
-      <tag k="ele:WGS84" v="240.26"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 193.27-->
+      <!--tag ele:ODN = 193.529-->
+      <!--tag ele:WGS84 = 240.26-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP91T005-->
     </node>
   </create>
   <create>
@@ -75,11 +84,13 @@
       <!--Ele: OSM: 210 OS: 209.976-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2685 OS: S2685-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="209.74"/>
-      <tag k="ele:ODN" v="209.976"/>
-      <tag k="ele:WGS84" v="263.26"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 209.74-->
+      <!--tag ele:ODN = 209.976-->
+      <!--tag ele:WGS84 = 263.26-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT18T014-->
     </node>
   </create>
   <create>
@@ -91,11 +102,13 @@
       <!--Ele: OSM: 312 OS: 312.203-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3241 OS: S3241-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="311.94"/>
-      <tag k="ele:ODN" v="312.203"/>
-      <tag k="ele:WGS84" v="365.54"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 311.94-->
+      <!--tag ele:ODN = 312.203-->
+      <!--tag ele:WGS84 = 365.54-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT18T059-->
     </node>
   </create>
   <create>
@@ -107,11 +120,13 @@
       <!--Ele: OSM: 224.602 OS: 224.602-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S1706 OS: S1706-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="224.12"/>
-      <tag k="ele:ODN" v="224.602"/>
-      <tag k="ele:WGS84" v="277.7"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 224.12-->
+      <!--tag ele:ODN = 224.602-->
+      <!--tag ele:WGS84 = 277.7-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = PP180-->
     </node>
   </create>
   <create>
@@ -123,11 +138,13 @@
       <!--Ele: OSM: NA OS: 374.949-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S2769-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="374.79"/>
-      <tag k="ele:ODN" v="374.949"/>
-      <tag k="ele:WGS84" v="425.87"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 374.79-->
+      <!--tag ele:ODN = 374.949-->
+      <!--tag ele:WGS84 = 425.87-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD80T010-->
     </node>
   </create>
   <create>
@@ -139,11 +156,13 @@
       <!--Ele: OSM: 73.179 OS: 73.179-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7607 OS: S7607-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="73.1"/>
-      <tag k="ele:ODN" v="73.179"/>
-      <tag k="ele:WGS84" v="126.13"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 73.1-->
+      <!--tag ele:ODN = 73.179-->
+      <!--tag ele:WGS84 = 126.13-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SW63S001-->
     </node>
   </create>
   <create>
@@ -155,11 +174,13 @@
       <!--Ele: OSM: 285 OS: 285.024-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3615 OS: S3615-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="284.74"/>
-      <tag k="ele:ODN" v="285.024"/>
-      <tag k="ele:WGS84" v="338.77"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 284.74-->
+      <!--tag ele:ODN = 285.024-->
+      <!--tag ele:WGS84 = 338.77-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NS77S007-->
     </node>
   </create>
   <create>
@@ -171,11 +192,13 @@
       <!--Ele: OSM: 471 OS: 471.028-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4189 OS: S4189-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="471.13"/>
-      <tag k="ele:ODN" v="471.028"/>
-      <tag k="ele:WGS84" v="521.65"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 471.13-->
+      <!--tag ele:ODN = 471.028-->
+      <!--tag ele:WGS84 = 521.65-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK39T035-->
     </node>
   </create>
   <create>
@@ -187,11 +210,13 @@
       <!--Ele: OSM: 104 OS: 104.823-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2701 OS: 2701-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="104.31"/>
-      <tag k="ele:ODN" v="104.823"/>
-      <tag k="ele:WGS84" v="151.63"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 104.31-->
+      <!--tag ele:ODN = 104.823-->
+      <!--tag ele:WGS84 = 151.63-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SU31T034-->
     </node>
   </create>
   <create>
@@ -203,11 +228,13 @@
       <!--Ele: OSM: 165.701 OS: 165.701-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7694 OS: S7694-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="165.35"/>
-      <tag k="ele:ODN" v="165.701"/>
-      <tag k="ele:WGS84" v="218.52"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 165.35-->
+      <!--tag ele:ODN = 165.701-->
+      <!--tag ele:WGS84 = 218.52-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SW63S002-->
     </node>
   </create>
   <create>
@@ -219,11 +246,13 @@
       <!--Ele: OSM: 290 OS: 290.611-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S3735-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="290.51"/>
-      <tag k="ele:ODN" v="290.611"/>
-      <tag k="ele:WGS84" v="341.54"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 290.51-->
+      <!--tag ele:ODN = 290.611-->
+      <!--tag ele:WGS84 = 341.54-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST11S007-->
     </node>
   </create>
   <create>
@@ -235,11 +264,13 @@
       <!--Ele: OSM: 118.46 OS: 118.46-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7339 OS: S7339-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="118.48"/>
-      <tag k="ele:ODN" v="118.46"/>
-      <tag k="ele:WGS84" v="172.73"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 118.48-->
+      <!--tag ele:ODN = 118.46-->
+      <!--tag ele:WGS84 = 172.73-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T005-->
     </node>
   </create>
   <create>
@@ -251,11 +282,13 @@
       <!--Ele: OSM: 117.536 OS: 117.536-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7304 OS: S7304-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="117.54"/>
-      <tag k="ele:ODN" v="117.536"/>
-      <tag k="ele:WGS84" v="172.16"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 117.54-->
+      <!--tag ele:ODN = 117.536-->
+      <!--tag ele:WGS84 = 172.16-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T004-->
     </node>
   </create>
   <create>
@@ -267,11 +300,13 @@
       <!--Ele: OSM: 59.6 OS: 59.588-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5337 OS: S5337-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="59.29"/>
-      <tag k="ele:ODN" v="59.588"/>
-      <tag k="ele:WGS84" v="111.77"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 59.29-->
+      <!--tag ele:ODN = 59.588-->
+      <!--tag ele:WGS84 = 111.77-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD47S008-->
     </node>
   </create>
   <create>
@@ -283,11 +318,13 @@
       <!--Ele: OSM: NA OS: 52.614-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S4912 OS: S4912-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="52.41"/>
-      <tag k="ele:ODN" v="52.614"/>
-      <tag k="ele:WGS84" v="97.43"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 52.41-->
+      <!--tag ele:ODN = 52.614-->
+      <!--tag ele:WGS84 = 97.43-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TG12T010-->
     </node>
   </create>
   <create>
@@ -299,11 +336,13 @@
       <!--Ele: OSM: NA OS: 273.359-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2283 OS: S2283-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="273.17"/>
-      <tag k="ele:ODN" v="273.359"/>
-      <tag k="ele:WGS84" v="326.74"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 273.17-->
+      <!--tag ele:ODN = 273.359-->
+      <!--tag ele:WGS84 = 326.74-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SN61T005-->
     </node>
   </create>
   <create>
@@ -315,11 +354,13 @@
       <!--Ele: OSM: 235.738 OS: 235.738-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7938 OS: S7938-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="235.3"/>
-      <tag k="ele:ODN" v="235.738"/>
-      <tag k="ele:WGS84" v="288.54"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 235.3-->
+      <!--tag ele:ODN = 235.738-->
+      <!--tag ele:WGS84 = 288.54-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SW63T015-->
     </node>
   </create>
   <create>
@@ -331,11 +372,13 @@
       <!--Ele: OSM: 252 OS: 251.908-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S1731 OS: S1731-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="251.49"/>
-      <tag k="ele:ODN" v="251.908"/>
-      <tag k="ele:WGS84" v="304.73"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 251.49-->
+      <!--tag ele:ODN = 251.908-->
+      <!--tag ele:WGS84 = 304.73-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = PP177-->
     </node>
   </create>
   <create>
@@ -347,11 +390,13 @@
       <!--Ele: OSM: 164.125 OS: 164.125-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S3510 OS: S3510-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="164.2"/>
-      <tag k="ele:ODN" v="164.125"/>
-      <tag k="ele:WGS84" v="217.87"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 164.2-->
+      <!--tag ele:ODN = 164.125-->
+      <!--tag ele:WGS84 = 217.87-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD30T026-->
     </node>
   </create>
   <create>
@@ -363,11 +408,13 @@
       <!--Ele: OSM: 83.77 OS: 83.774-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7320 OS: S7320-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="83.68"/>
-      <tag k="ele:ODN" v="83.774"/>
-      <tag k="ele:WGS84" v="138.41"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 83.68-->
+      <!--tag ele:ODN = 83.774-->
+      <!--tag ele:WGS84 = 138.41-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T009-->
     </node>
   </create>
   <create>
@@ -379,11 +426,13 @@
       <!--Ele: OSM: 97 OS: 96.996-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: 3981-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="96.64"/>
-      <tag k="ele:ODN" v="96.996"/>
-      <tag k="ele:WGS84" v="141.64"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 96.64-->
+      <!--tag ele:ODN = 96.996-->
+      <!--tag ele:WGS84 = 141.64-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TQ00T014-->
     </node>
   </create>
   <create>
@@ -395,11 +444,13 @@
       <!--Ele: OSM: 328 OS: 327.788-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2770 OS: S2770-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="327.66"/>
-      <tag k="ele:ODN" v="327.788"/>
-      <tag k="ele:WGS84" v="378.65"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 327.66-->
+      <!--tag ele:ODN = 327.788-->
+      <!--tag ele:WGS84 = 378.65-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD80S013-->
     </node>
   </create>
   <create>
@@ -411,11 +462,13 @@
       <!--Ele: OSM: 192 OS: 191.856-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5503 OS: S5503-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="191.69"/>
-      <tag k="ele:ODN" v="191.856"/>
-      <tag k="ele:WGS84" v="241.45"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 191.69-->
+      <!--tag ele:ODN = 191.856-->
+      <!--tag ele:WGS84 = 241.45-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP26T008-->
     </node>
   </create>
   <create>
@@ -427,11 +480,13 @@
       <!--Ele: OSM: 412 OS: 426.595-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2780 OS: S2780-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="426.6"/>
-      <tag k="ele:ODN" v="426.595"/>
-      <tag k="ele:WGS84" v="477.35"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 426.6-->
+      <!--tag ele:ODN = 426.595-->
+      <!--tag ele:WGS84 = 477.35-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD80T024-->
     </node>
   </create>
   <create>
@@ -443,11 +498,13 @@
       <!--Ele: OSM: 383 OS: 383.801-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S4371-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="383.61"/>
-      <tag k="ele:ODN" v="383.801"/>
-      <tag k="ele:WGS84" v="434.54"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 383.61-->
+      <!--tag ele:ODN = 383.801-->
+      <!--tag ele:WGS84 = 434.54-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SE02S004-->
     </node>
   </create>
   <create>
@@ -459,11 +516,13 @@
       <!--Ele: OSM: 222.571 OS: 222.571-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7904 OS: S7904-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="222.13"/>
-      <tag k="ele:ODN" v="222.571"/>
-      <tag k="ele:WGS84" v="275.4"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 222.13-->
+      <!--tag ele:ODN = 222.571-->
+      <!--tag ele:WGS84 = 275.4-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SW63T023-->
     </node>
   </create>
   <create>
@@ -475,11 +534,13 @@
       <!--Ele: OSM: 157.7 OS: 157.682-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3734 OS: S3734-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="157.65"/>
-      <tag k="ele:ODN" v="157.682"/>
-      <tag k="ele:WGS84" v="209.04"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 157.65-->
+      <!--tag ele:ODN = 157.682-->
+      <!--tag ele:WGS84 = 209.04-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST11T027-->
     </node>
   </create>
   <create>
@@ -491,11 +552,13 @@
       <!--Ele: OSM: 217 OS: 217.051-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3242 OS: S3242-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="216.77"/>
-      <tag k="ele:ODN" v="217.051"/>
-      <tag k="ele:WGS84" v="270.26"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 216.77-->
+      <!--tag ele:ODN = 217.051-->
+      <!--tag ele:WGS84 = 270.26-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT18T015-->
     </node>
   </create>
   <create>
@@ -507,11 +570,13 @@
       <!--Ele: OSM: 64 OS: 217.072-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S4033-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="216.77"/>
-      <tag k="ele:ODN" v="217.072"/>
-      <tag k="ele:WGS84" v="262.11"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 216.77-->
+      <!--tag ele:ODN = 217.072-->
+      <!--tag ele:WGS84 = 262.11-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TQ00S009-->
     </node>
   </create>
   <create>
@@ -523,11 +588,13 @@
       <!--Ele: OSM: 164.579 OS: 164.579-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S5612 OS: S5612-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="164.4"/>
-      <tag k="ele:ODN" v="164.579"/>
-      <tag k="ele:WGS84" v="217.9"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 164.4-->
+      <!--tag ele:ODN = 164.579-->
+      <!--tag ele:WGS84 = 217.9-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SS30S011-->
     </node>
   </create>
   <create>
@@ -539,11 +606,13 @@
       <!--Ele: OSM: 172 OS: 172.553-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5095 OS: S5095-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="172.23"/>
-      <tag k="ele:ODN" v="172.553"/>
-      <tag k="ele:WGS84" v="217.67"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 172.23-->
+      <!--tag ele:ODN = 172.553-->
+      <!--tag ele:WGS84 = 217.67-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TQ53S005-->
     </node>
   </create>
   <create>
@@ -555,11 +624,13 @@
       <!--Ele: OSM: 220.278 OS: 220.278-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S3835 OS: NA-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="220.21"/>
-      <tag k="ele:ODN" v="220.278"/>
-      <tag k="ele:WGS84" v="270.94"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 220.21-->
+      <!--tag ele:ODN = 220.278-->
+      <!--tag ele:WGS84 = 270.94-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SO96T014-->
     </node>
   </create>
   <create>
@@ -571,11 +642,13 @@
       <!--Ele: OSM: 352 OS: 352.766-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: NA OS: S2036-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="352.65"/>
-      <tag k="ele:ODN" v="352.766"/>
-      <tag k="ele:WGS84" v="405.7"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 352.65-->
+      <!--tag ele:ODN = 352.766-->
+      <!--tag ele:WGS84 = 405.7-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SN80S021-->
     </node>
   </create>
   <create>
@@ -587,11 +660,13 @@
       <!--Ele: OSM: 153.3 OS: 153.286-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: OS BM S4176 OS: NA-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="152.79"/>
-      <tag k="ele:ODN" v="153.286"/>
-      <tag k="ele:WGS84" v="202.77"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 152.79-->
+      <!--tag ele:ODN = 153.286-->
+      <!--tag ele:WGS84 = 202.77-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NZ42T026-->
     </node>
   </create>
   <create>
@@ -603,11 +678,13 @@
       <!--Ele: OSM: 218 OS: 217.743-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S1836 OS: S1836-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="217.42"/>
-      <tag k="ele:ODN" v="217.743"/>
-      <tag k="ele:WGS84" v="262.52"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 217.42-->
+      <!--tag ele:ODN = 217.743-->
+      <!--tag ele:WGS84 = 262.52-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = PP199-->
     </node>
   </create>
   <create>
@@ -619,11 +696,13 @@
       <!--Ele: OSM: NA OS: 283.704-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3870 OS: S3870-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="283.54"/>
-      <tag k="ele:ODN" v="283.704"/>
-      <tag k="ele:WGS84" v="334.06"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 283.54-->
+      <!--tag ele:ODN = 283.704-->
+      <!--tag ele:WGS84 = 334.06-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SO96S002-->
     </node>
   </create>
   <create>
@@ -635,11 +714,13 @@
       <!--Ele: OSM: 395 OS: 395.429-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2131 OS: S2131-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="395.35"/>
-      <tag k="ele:ODN" v="395.429"/>
-      <tag k="ele:WGS84" v="445.32"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 395.35-->
+      <!--tag ele:ODN = 395.429-->
+      <!--tag ele:WGS84 = 445.32-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK39S001-->
     </node>
   </create>
   <create>
@@ -651,11 +732,13 @@
       <!--Ele: OSM: 280.7 OS: 280.729-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S6481 OS: S6481-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="280.6"/>
-      <tag k="ele:ODN" v="280.729"/>
-      <tag k="ele:WGS84" v="333.37"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 280.6-->
+      <!--tag ele:ODN = 280.729-->
+      <!--tag ele:WGS84 = 333.37-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45T022-->
     </node>
   </create>
   <create>
@@ -667,11 +750,13 @@
       <!--Ele: OSM: 234.074 OS: 234.074-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7338 OS: S7338-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="234.26"/>
-      <tag k="ele:ODN" v="234.074"/>
-      <tag k="ele:WGS84" v="288.53"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 234.26-->
+      <!--tag ele:ODN = 234.074-->
+      <!--tag ele:WGS84 = 288.53-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T020-->
     </node>
   </create>
   <create>
@@ -683,11 +768,13 @@
       <!--Ele: OSM: NA OS: 275.472-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S4632-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="275.17"/>
-      <tag k="ele:ODN" v="275.472"/>
-      <tag k="ele:WGS84" v="326.32"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 275.17-->
+      <!--tag ele:ODN = 275.472-->
+      <!--tag ele:WGS84 = 326.32-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD96T012-->
     </node>
   </create>
   <create>
@@ -699,11 +786,13 @@
       <!--Ele: OSM: 232 OS: 232.33-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S4512 OS: 4512-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="232.09"/>
-      <tag k="ele:ODN" v="232.33"/>
-      <tag k="ele:WGS84" v="279.12"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 232.09-->
+      <!--tag ele:ODN = 232.33-->
+      <!--tag ele:WGS84 = 279.12-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP91T022-->
     </node>
   </create>
   <create>
@@ -715,11 +804,13 @@
       <!--Ele: OSM: 529.8 OS: 529.842-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S6658-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="529.54"/>
-      <tag k="ele:ODN" v="529.842"/>
-      <tag k="ele:WGS84" v="581.17"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 529.54-->
+      <!--tag ele:ODN = 529.842-->
+      <!--tag ele:WGS84 = 581.17-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY86T027-->
     </node>
   </create>
   <create>
@@ -731,11 +822,13 @@
       <!--Ele: OSM: 365.6 OS: 365.613-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S6953 OS: S6953-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="365.55"/>
-      <tag k="ele:ODN" v="365.613"/>
-      <tag k="ele:WGS84" v="418.4"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 365.55-->
+      <!--tag ele:ODN = 365.613-->
+      <!--tag ele:WGS84 = 418.4-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45S014-->
     </node>
   </create>
   <create>
@@ -747,11 +840,13 @@
       <!--Ele: OSM: 169 OS: 165.28-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4666 OS: S4666-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="164.97"/>
-      <tag k="ele:ODN" v="165.28"/>
-      <tag k="ele:WGS84" v="213.32"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 164.97-->
+      <!--tag ele:ODN = 165.28-->
+      <!--tag ele:WGS84 = 213.32-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP69T021-->
     </node>
   </create>
   <create>
@@ -763,11 +858,13 @@
       <!--Ele: OSM: 82.113 OS: 82.113-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7315 OS: S7315-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="81.99"/>
-      <tag k="ele:ODN" v="82.113"/>
-      <tag k="ele:WGS84" v="136.73"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 81.99-->
+      <!--tag ele:ODN = 82.113-->
+      <!--tag ele:WGS84 = 136.73-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T023-->
     </node>
   </create>
   <create>
@@ -779,11 +876,13 @@
       <!--Ele: OSM: 278 OS: 277.709-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2664 OS: S2664-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="277.47"/>
-      <tag k="ele:ODN" v="277.709"/>
-      <tag k="ele:WGS84" v="331.33"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 277.47-->
+      <!--tag ele:ODN = 277.709-->
+      <!--tag ele:WGS84 = 331.33-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT18T001-->
     </node>
   </create>
   <create>
@@ -795,11 +894,13 @@
       <!--Ele: OSM: NA OS: 88.8-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2162 OS: S2162-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="88.49"/>
-      <tag k="ele:ODN" v="88.8"/>
-      <tag k="ele:WGS84" v="134.06"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 88.49-->
+      <!--tag ele:ODN = 88.8-->
+      <!--tag ele:WGS84 = 134.06-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TF92S006-->
     </node>
   </create>
   <create>
@@ -811,11 +912,13 @@
       <!--Ele: OSM: NA OS: 147.48-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S3691-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="147"/>
-      <tag k="ele:ODN" v="147.48"/>
-      <tag k="ele:WGS84" v="197.12"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 147-->
+      <!--tag ele:ODN = 147.48-->
+      <!--tag ele:WGS84 = 197.12-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NZ29T013-->
     </node>
   </create>
   <create>
@@ -827,11 +930,13 @@
       <!--Ele: OSM: 270 OS: 270.348-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S1935 OS: NA-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="270.32"/>
-      <tag k="ele:ODN" v="270.348"/>
-      <tag k="ele:WGS84" v="321.86"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 270.32-->
+      <!--tag ele:ODN = 270.348-->
+      <!--tag ele:WGS84 = 321.86-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SO79S005-->
     </node>
   </create>
   <create>
@@ -843,11 +948,13 @@
       <!--Ele: OSM: 257.1 OS: 257.12-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7000 OS: S7000-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="256.99"/>
-      <tag k="ele:ODN" v="257.12"/>
-      <tag k="ele:WGS84" v="309.9"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 256.99-->
+      <!--tag ele:ODN = 257.12-->
+      <!--tag ele:WGS84 = 309.9-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45T027-->
     </node>
   </create>
   <create>
@@ -859,11 +966,13 @@
       <!--Ele: OSM: 66 OS: 66.376-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4622 OS: S4622-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="65.88"/>
-      <tag k="ele:ODN" v="66.376"/>
-      <tag k="ele:WGS84" v="115.09"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 65.88-->
+      <!--tag ele:ODN = 66.376-->
+      <!--tag ele:WGS84 = 115.09-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK73T051-->
     </node>
   </create>
   <create>
@@ -875,11 +984,13 @@
       <!--Ele: OSM: 322.3 OS: 322.329-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S5334 OS: S5334-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="322.3"/>
-      <tag k="ele:ODN" v="322.329"/>
-      <tag k="ele:WGS84" v="375.19"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 322.3-->
+      <!--tag ele:ODN = 322.329-->
+      <!--tag ele:WGS84 = 375.19-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD47T028-->
     </node>
   </create>
   <create>
@@ -891,11 +1002,13 @@
       <!--Ele: OSM: 197.8 OS: 197.803-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S6995 OS: S6995-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="197.59"/>
-      <tag k="ele:ODN" v="197.803"/>
-      <tag k="ele:WGS84" v="250.33"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 197.59-->
+      <!--tag ele:ODN = 197.803-->
+      <!--tag ele:WGS84 = 250.33-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45T029-->
     </node>
   </create>
   <create>
@@ -907,11 +1020,13 @@
       <!--Ele: OSM: 458 OS: 458.138-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S2157-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="458.11"/>
-      <tag k="ele:ODN" v="458.138"/>
-      <tag k="ele:WGS84" v="508.28"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 458.11-->
+      <!--tag ele:ODN = 458.138-->
+      <!--tag ele:WGS84 = 508.28-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK39S004-->
     </node>
   </create>
   <create>
@@ -923,11 +1038,13 @@
       <!--Ele: OSM: 247 OS: 247.531-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S5767-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="247.59"/>
-      <tag k="ele:ODN" v="247.531"/>
-      <tag k="ele:WGS84" v="300.88"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 247.59-->
+      <!--tag ele:ODN = 247.531-->
+      <!--tag ele:WGS84 = 300.88-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY11S013-->
     </node>
   </create>
   <create>
@@ -939,11 +1056,13 @@
       <!--Ele: OSM: 313 OS: 312.642-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3586 OS: S3586-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="312.37"/>
-      <tag k="ele:ODN" v="312.642"/>
-      <tag k="ele:WGS84" v="366.41"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 312.37-->
+      <!--tag ele:ODN = 312.642-->
+      <!--tag ele:WGS84 = 366.41-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NS77S021-->
     </node>
   </create>
   <create>
@@ -955,11 +1074,13 @@
       <!--Ele: OSM: 76 OS: 76.452-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S6808 OS: S6808-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="75.94"/>
-      <tag k="ele:ODN" v="76.452"/>
-      <tag k="ele:WGS84" v="125.88"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 75.94-->
+      <!--tag ele:ODN = 76.452-->
+      <!--tag ele:WGS84 = 125.88-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NK03T018-->
     </node>
   </create>
   <create>
@@ -971,11 +1092,13 @@
       <!--Ele: OSM: NA OS: 36.719-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5270 OS: S5270-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="36.43"/>
-      <tag k="ele:ODN" v="36.719"/>
-      <tag k="ele:WGS84" v="81.37"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 36.43-->
+      <!--tag ele:ODN = 36.719-->
+      <!--tag ele:WGS84 = 81.37-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TG12S008-->
     </node>
   </create>
   <create>
@@ -987,11 +1110,13 @@
       <!--Ele: OSM: NA OS: 244.172-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2801 OS: S2801-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="243.98"/>
-      <tag k="ele:ODN" v="244.172"/>
-      <tag k="ele:WGS84" v="295.03"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 243.98-->
+      <!--tag ele:ODN = 244.172-->
+      <!--tag ele:WGS84 = 295.03-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD80T054-->
     </node>
   </create>
   <create>
@@ -1003,11 +1128,13 @@
       <!--Ele: OSM: 170 OS: 170.032-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S5588-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="169.8"/>
-      <tag k="ele:ODN" v="170.032"/>
-      <tag k="ele:WGS84" v="222.56"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 169.8-->
+      <!--tag ele:ODN = 170.032-->
+      <!--tag ele:WGS84 = 222.56-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD47T026-->
     </node>
   </create>
   <create>
@@ -1019,11 +1146,13 @@
       <!--Ele: OSM: 317.0 OS: 317.013-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S6996 OS: S6996-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="316.92"/>
-      <tag k="ele:ODN" v="317.013"/>
-      <tag k="ele:WGS84" v="369.8"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 316.92-->
+      <!--tag ele:ODN = 317.013-->
+      <!--tag ele:WGS84 = 369.8-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45T033-->
     </node>
   </create>
   <create>
@@ -1035,11 +1164,13 @@
       <!--Ele: OSM: 202.8 OS: 202.804-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S6994 OS: S6994-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="202.6"/>
-      <tag k="ele:ODN" v="202.804"/>
-      <tag k="ele:WGS84" v="255.37"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 202.6-->
+      <!--tag ele:ODN = 202.804-->
+      <!--tag ele:WGS84 = 255.37-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45T034-->
     </node>
   </create>
   <create>
@@ -1051,11 +1182,13 @@
       <!--Ele: OSM: 251 OS: 251.069-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3614 OS: S3614-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="250.81"/>
-      <tag k="ele:ODN" v="251.069"/>
-      <tag k="ele:WGS84" v="304.73"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 250.81-->
+      <!--tag ele:ODN = 251.069-->
+      <!--tag ele:WGS84 = 304.73-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NS77T087-->
     </node>
   </create>
   <create>
@@ -1067,11 +1200,13 @@
       <!--Ele: OSM: 405.65 OS: 405.658-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: 2771-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="405.7"/>
-      <tag k="ele:ODN" v="405.658"/>
-      <tag k="ele:WGS84" v="456.55"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 405.7-->
+      <!--tag ele:ODN = 405.658-->
+      <!--tag ele:WGS84 = 456.55-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK08T014-->
     </node>
   </create>
   <create>
@@ -1083,11 +1218,13 @@
       <!--Ele: OSM: 147 OS: 147.401-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4832 OS: S4832-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="147.11"/>
-      <tag k="ele:ODN" v="147.401"/>
-      <tag k="ele:WGS84" v="195.26"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 147.11-->
+      <!--tag ele:ODN = 147.401-->
+      <!--tag ele:WGS84 = 195.26-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP69S009-->
     </node>
   </create>
   <create>
@@ -1099,11 +1236,13 @@
       <!--Ele: OSM: NA OS: 356.497-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S9464 OS: S9464-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="356.27"/>
-      <tag k="ele:ODN" v="356.497"/>
-      <tag k="ele:WGS84" v="410.13"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 356.27-->
+      <!--tag ele:ODN = 356.497-->
+      <!--tag ele:WGS84 = 410.13-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT18S003-->
     </node>
   </create>
   <create>
@@ -1115,11 +1254,13 @@
       <!--Ele: OSM: 250.6 OS: 250.551-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S6659 OS: 6659-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="250.12"/>
-      <tag k="ele:ODN" v="250.551"/>
-      <tag k="ele:WGS84" v="301.53"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 250.12-->
+      <!--tag ele:ODN = 250.551-->
+      <!--tag ele:WGS84 = 301.53-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY86S004-->
     </node>
   </create>
   <create>
@@ -1131,11 +1272,13 @@
       <!--Ele: OSM: 505.4 OS: 505.361-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S6992 OS: S6992-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="505.37"/>
-      <tag k="ele:ODN" v="505.361"/>
-      <tag k="ele:WGS84" v="558.2"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 505.37-->
+      <!--tag ele:ODN = 505.361-->
+      <!--tag ele:WGS84 = 558.2-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45S019-->
     </node>
   </create>
   <create>
@@ -1147,11 +1290,13 @@
       <!--Ele: OSM: 350.2 OS: 350.827-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S4561-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="350.59"/>
-      <tag k="ele:ODN" v="350.827"/>
-      <tag k="ele:WGS84" v="402.65"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 350.59-->
+      <!--tag ele:ODN = 350.827-->
+      <!--tag ele:WGS84 = 402.65-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD74S008-->
     </node>
   </create>
   <create>
@@ -1163,11 +1308,13 @@
       <!--Ele: OSM: 524 OS: 517.273-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S4230 OS: S4230-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="517.36"/>
-      <tag k="ele:ODN" v="517.273"/>
-      <tag k="ele:WGS84" v="567.89"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 517.36-->
+      <!--tag ele:ODN = 517.273-->
+      <!--tag ele:WGS84 = 567.89-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK39S008-->
     </node>
   </create>
   <create>
@@ -1179,11 +1326,13 @@
       <!--Ele: OSM: 188 OS: 187.893-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2061 OS: S2061-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="187.58"/>
-      <tag k="ele:ODN" v="187.893"/>
-      <tag k="ele:WGS84" v="235.81"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 187.58-->
+      <!--tag ele:ODN = 187.893-->
+      <!--tag ele:WGS84 = 235.81-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP69S014-->
     </node>
   </create>
   <create>
@@ -1195,11 +1344,13 @@
       <!--Ele: OSM: 112 OS: 112.059-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4547 OS: S4547-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="111.72"/>
-      <tag k="ele:ODN" v="112.059"/>
-      <tag k="ele:WGS84" v="156.92"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 111.72-->
+      <!--tag ele:ODN = 112.059-->
+      <!--tag ele:WGS84 = 156.92-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TQ00T104-->
     </node>
   </create>
   <create>
@@ -1211,11 +1362,13 @@
       <!--Ele: OSM: 198 OS: 198.141-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3610 OS: S3610-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="197.87"/>
-      <tag k="ele:ODN" v="198.141"/>
-      <tag k="ele:WGS84" v="251.61"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 197.87-->
+      <!--tag ele:ODN = 198.141-->
+      <!--tag ele:WGS84 = 251.61-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NS77T099-->
     </node>
   </create>
   <create>
@@ -1227,11 +1380,13 @@
       <!--Ele: OSM: NA OS: 234.116-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4824 OS: S4824-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="233.91"/>
-      <tag k="ele:ODN" v="234.116"/>
-      <tag k="ele:WGS84" v="288.79"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 233.91-->
+      <!--tag ele:ODN = 234.116-->
+      <!--tag ele:WGS84 = 288.79-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NS29T070-->
     </node>
   </create>
   <create>
@@ -1243,11 +1398,13 @@
       <!--Ele: OSM: NA OS: 356.53-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2528 OS: S2528-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="356.54"/>
-      <tag k="ele:ODN" v="356.53"/>
-      <tag k="ele:WGS84" v="410.51"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 356.54-->
+      <!--tag ele:ODN = 356.53-->
+      <!--tag ele:WGS84 = 410.51-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SN94T048-->
     </node>
   </create>
   <create>
@@ -1259,11 +1416,13 @@
       <!--Ele: OSM: 132.670 OS: 132.67-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S8379 OS: S8379-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="132.52"/>
-      <tag k="ele:ODN" v="132.67"/>
-      <tag k="ele:WGS84" v="186.97"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 132.52-->
+      <!--tag ele:ODN = 132.67-->
+      <!--tag ele:WGS84 = 186.97-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH62S023-->
     </node>
   </create>
   <create>
@@ -1275,11 +1434,13 @@
       <!--Ele: OSM: NA OS: 62.794-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5271 OS: S5271-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="62.5"/>
-      <tag k="ele:ODN" v="62.794"/>
-      <tag k="ele:WGS84" v="107.57"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 62.5-->
+      <!--tag ele:ODN = 62.794-->
+      <!--tag ele:WGS84 = 107.57-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TG12T038-->
     </node>
   </create>
   <create>
@@ -1291,11 +1452,13 @@
       <!--Ele: OSM: NA OS: 79.942-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S7721 OS: S7721-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="79.63"/>
-      <tag k="ele:ODN" v="79.942"/>
-      <tag k="ele:WGS84" v="124.91"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 79.63-->
+      <!--tag ele:ODN = 79.942-->
+      <!--tag ele:WGS84 = 124.91-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TF92T011-->
     </node>
   </create>
   <create>
@@ -1307,11 +1470,13 @@
       <!--Ele: OSM: 187 OS: 187.223-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3063 OS: S3063-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="186.81"/>
-      <tag k="ele:ODN" v="187.223"/>
-      <tag k="ele:WGS84" v="238.29"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 186.81-->
+      <!--tag ele:ODN = 187.223-->
+      <!--tag ele:WGS84 = 238.29-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT48S006-->
     </node>
   </create>
   <create>
@@ -1323,11 +1488,13 @@
       <!--Ele: OSM: 118.619 OS: 118.619-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7758 OS: S7758-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="118.15"/>
-      <tag k="ele:ODN" v="118.619"/>
-      <tag k="ele:WGS84" v="171.43"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 118.15-->
+      <!--tag ele:ODN = 118.619-->
+      <!--tag ele:WGS84 = 171.43-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SW63T050-->
     </node>
   </create>
   <create>
@@ -1339,11 +1506,13 @@
       <!--Ele: OSM: NA OS: 120.536-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S4029-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="120.26"/>
-      <tag k="ele:ODN" v="120.536"/>
-      <tag k="ele:WGS84" v="165.24"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 120.26-->
+      <!--tag ele:ODN = 120.536-->
+      <!--tag ele:WGS84 = 165.24-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TR26T020-->
     </node>
   </create>
   <create>
@@ -1355,11 +1524,13 @@
       <!--Ele: OSM: NA OS: 202.335-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2293 OS: S2293-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="202.22"/>
-      <tag k="ele:ODN" v="202.335"/>
-      <tag k="ele:WGS84" v="252.81"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 202.22-->
+      <!--tag ele:ODN = 202.335-->
+      <!--tag ele:WGS84 = 252.81-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SJ90S016-->
     </node>
   </create>
   <create>
@@ -1371,11 +1542,13 @@
       <!--Ele: OSM: 302 OS: 301.517-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2652 OS: S2652-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="301.31"/>
-      <tag k="ele:ODN" v="301.517"/>
-      <tag k="ele:WGS84" v="355.02"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 301.31-->
+      <!--tag ele:ODN = 301.517-->
+      <!--tag ele:WGS84 = 355.02-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT18T002-->
     </node>
   </create>
   <create>
@@ -1387,11 +1560,13 @@
       <!--Ele: OSM: 108.24 OS: 108.237-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7256 OS: S7256-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="108.17"/>
-      <tag k="ele:ODN" v="108.237"/>
-      <tag k="ele:WGS84" v="162.86"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 108.17-->
+      <!--tag ele:ODN = 108.237-->
+      <!--tag ele:WGS84 = 162.86-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57S016-->
     </node>
   </create>
   <create>
@@ -1403,11 +1578,13 @@
       <!--Ele: OSM: NA OS: 101.336-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S2140 OS: S2140-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="101.04"/>
-      <tag k="ele:ODN" v="101.336"/>
-      <tag k="ele:WGS84" v="146.13"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 101.04-->
+      <!--tag ele:ODN = 101.336-->
+      <!--tag ele:WGS84 = 146.13-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = PP263-->
     </node>
   </create>
   <create>
@@ -1419,11 +1596,13 @@
       <!--Ele: OSM: 59.679 OS: 59.679-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: 10345 OS: 10345-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="59.63"/>
-      <tag k="ele:ODN" v="59.679"/>
-      <tag k="ele:WGS84" v="114.33"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 59.63-->
+      <!--tag ele:ODN = 59.679-->
+      <!--tag ele:WGS84 = 114.33-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T073-->
     </node>
   </create>
   <create>
@@ -1435,11 +1614,13 @@
       <!--Ele: OSM: 114.674 OS: 114.674-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7311 OS: S7311-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="114.54"/>
-      <tag k="ele:ODN" v="114.674"/>
-      <tag k="ele:WGS84" v="169.26"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 114.54-->
+      <!--tag ele:ODN = 114.674-->
+      <!--tag ele:WGS84 = 169.26-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T041-->
     </node>
   </create>
   <create>
@@ -1451,11 +1632,13 @@
       <!--Ele: OSM: 321 OS: 321.432-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2153 OS: S2153-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="321.3"/>
-      <tag k="ele:ODN" v="321.432"/>
-      <tag k="ele:WGS84" v="371.2"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 321.3-->
+      <!--tag ele:ODN = 321.432-->
+      <!--tag ele:WGS84 = 371.2-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK39T017-->
     </node>
   </create>
   <create>
@@ -1467,11 +1650,13 @@
       <!--Ele: OSM: 114.129 OS: 114.129-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7688 OS: S7688-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="113.98"/>
-      <tag k="ele:ODN" v="114.129"/>
-      <tag k="ele:WGS84" v="167.04"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 113.98-->
+      <!--tag ele:ODN = 114.129-->
+      <!--tag ele:WGS84 = 167.04-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SW63T009-->
     </node>
   </create>
   <create>
@@ -1483,11 +1668,13 @@
       <!--Ele: OSM: 232.8 OS: 232.836-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S6476 OS: S6476-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="232.52"/>
-      <tag k="ele:ODN" v="232.836"/>
-      <tag k="ele:WGS84" v="285.16"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 232.52-->
+      <!--tag ele:ODN = 232.836-->
+      <!--tag ele:WGS84 = 285.16-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY45T060-->
     </node>
   </create>
   <create>
@@ -1499,11 +1686,13 @@
       <!--Ele: OSM: 91.4 OS: 91.385-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S5706 OS: S5706-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="91.43"/>
-      <tag k="ele:ODN" v="91.385"/>
-      <tag k="ele:WGS84" v="144.54"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 91.43-->
+      <!--tag ele:ODN = 91.385-->
+      <!--tag ele:WGS84 = 144.54-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY11T052-->
     </node>
   </create>
   <create>
@@ -1515,11 +1704,13 @@
       <!--Ele: OSM: 308 OS: 308.856-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S3944-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="308.66"/>
-      <tag k="ele:ODN" v="308.856"/>
-      <tag k="ele:WGS84" v="360.74"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 308.66-->
+      <!--tag ele:ODN = 308.856-->
+      <!--tag ele:WGS84 = 360.74-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST11S029-->
     </node>
   </create>
   <create>
@@ -1531,11 +1722,13 @@
       <!--Ele: OSM: 380 OS: 380.356-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4150 OS: S4150-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="380.49"/>
-      <tag k="ele:ODN" v="380.356"/>
-      <tag k="ele:WGS84" v="431.05"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 380.49-->
+      <!--tag ele:ODN = 380.356-->
+      <!--tag ele:WGS84 = 431.05-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK39T056-->
     </node>
   </create>
   <create>
@@ -1547,11 +1740,13 @@
       <!--Ele: OSM: 254.2 OS: 254.221-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: 10416 OS: 10416-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="253.96"/>
-      <tag k="ele:ODN" v="254.221"/>
-      <tag k="ele:WGS84" v="306.59"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 253.96-->
+      <!--tag ele:ODN = 254.221-->
+      <!--tag ele:WGS84 = 306.59-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY71T014-->
     </node>
   </create>
   <create>
@@ -1563,11 +1758,13 @@
       <!--Ele: OSM: 149 OS: 149.022-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S6812 OS: S6812-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="148.59"/>
-      <tag k="ele:ODN" v="149.022"/>
-      <tag k="ele:WGS84" v="198.66"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 148.59-->
+      <!--tag ele:ODN = 149.022-->
+      <!--tag ele:WGS84 = 198.66-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NK03T028-->
     </node>
   </create>
   <create>
@@ -1579,11 +1776,13 @@
       <!--Ele: OSM: 164.415 OS: 164.415-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S2338 OS: S2338-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="164.21"/>
-      <tag k="ele:ODN" v="164.415"/>
-      <tag k="ele:WGS84" v="213.7"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 164.21-->
+      <!--tag ele:ODN = 164.415-->
+      <!--tag ele:WGS84 = 213.7-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP38S049-->
     </node>
   </create>
   <create>
@@ -1595,11 +1794,13 @@
       <!--Ele: OSM: 131 OS: 131.118-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S4839 OS: S4839-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="130.83"/>
-      <tag k="ele:ODN" v="131.118"/>
-      <tag k="ele:WGS84" v="178.86"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 130.83-->
+      <!--tag ele:ODN = 131.118-->
+      <!--tag ele:WGS84 = 178.86-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP69T032-->
     </node>
   </create>
   <create>
@@ -1611,11 +1812,13 @@
       <!--Ele: OSM: NA OS: 45.479-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S7722 OS: S7722-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="45.22"/>
-      <tag k="ele:ODN" v="45.479"/>
-      <tag k="ele:WGS84" v="90.85"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 45.22-->
+      <!--tag ele:ODN = 45.479-->
+      <!--tag ele:WGS84 = 90.85-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TL78T022-->
     </node>
   </create>
   <create>
@@ -1627,11 +1830,13 @@
       <!--Ele: OSM: NA OS: 46.417-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S6132 OS: S6132-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="46.16"/>
-      <tag k="ele:ODN" v="46.417"/>
-      <tag k="ele:WGS84" v="91.73"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 46.16-->
+      <!--tag ele:ODN = 46.417-->
+      <!--tag ele:WGS84 = 91.73-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TM17T034-->
     </node>
   </create>
   <create>
@@ -1643,11 +1848,13 @@
       <!--Ele: OSM: 191.953 OS: 191.953-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S1737 OS: S1737-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="191.44"/>
-      <tag k="ele:ODN" v="191.953"/>
-      <tag k="ele:WGS84" v="244.79"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 191.44-->
+      <!--tag ele:ODN = 191.953-->
+      <!--tag ele:WGS84 = 244.79-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = PP175-->
     </node>
   </create>
   <create>
@@ -1659,11 +1866,13 @@
       <!--Ele: OSM: 81 OS: 80.647-->
       <!--Type: OSM: pillar / pillar OS: PILLAR-->
       <!--FB: OSM: S1644 OS: S1644-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="80.16"/>
-      <tag k="ele:ODN" v="80.647"/>
-      <tag k="ele:WGS84" v="129.36"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 80.16-->
+      <!--tag ele:ODN = 80.647-->
+      <!--tag ele:WGS84 = 129.36-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK54S018-->
     </node>
   </create>
   <create>
@@ -1675,11 +1884,13 @@
       <!--Ele: OSM: 101 OS: 100.894-->
       <!--Type: OSM: pillar / pillar OS: PILLAR-->
       <!--FB: OSM: S4668 OS: S4668-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="100.41"/>
-      <tag k="ele:ODN" v="100.894"/>
-      <tag k="ele:WGS84" v="149.62"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 100.41-->
+      <!--tag ele:ODN = 100.894-->
+      <!--tag ele:WGS84 = 149.62-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK73T072-->
     </node>
   </create>
   <create>
@@ -1691,11 +1902,13 @@
       <!--Ele: OSM: NA OS: 219.443-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S1508 OS: S1508-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="219.23"/>
-      <tag k="ele:ODN" v="219.443"/>
-      <tag k="ele:WGS84" v="268.9"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 219.23-->
+      <!--tag ele:ODN = 219.443-->
+      <!--tag ele:WGS84 = 268.9-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST86S012-->
     </node>
   </create>
   <create>
@@ -1707,11 +1920,13 @@
       <!--Ele: OSM: 158 OS: 158.215-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2092 OS: S2092-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="157.97"/>
-      <tag k="ele:ODN" v="158.215"/>
-      <tag k="ele:WGS84" v="205.88"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 157.97-->
+      <!--tag ele:ODN = 158.215-->
+      <!--tag ele:WGS84 = 205.88-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP69S017-->
     </node>
   </create>
   <create>
@@ -1723,11 +1938,13 @@
       <!--Ele: OSM: 171.3 OS: 171.687-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: NA OS: S1701-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="171.41"/>
-      <tag k="ele:ODN" v="171.687"/>
-      <tag k="ele:WGS84" v="218.64"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 171.41-->
+      <!--tag ele:ODN = 171.687-->
+      <!--tag ele:WGS84 = 218.64-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SU54S007-->
     </node>
   </create>
   <create>
@@ -1739,11 +1956,13 @@
       <!--Ele: OSM: 221 OS: 221.699-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2477 OS: S2477-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="221.42"/>
-      <tag k="ele:ODN" v="221.699"/>
-      <tag k="ele:WGS84" v="269.92"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 221.42-->
+      <!--tag ele:ODN = 221.699-->
+      <!--tag ele:WGS84 = 269.92-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST86S009-->
     </node>
   </create>
   <create>
@@ -1755,11 +1974,13 @@
       <!--Ele: OSM: NA OS: 77.946-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S5281 OS: S5281-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="77.62"/>
-      <tag k="ele:ODN" v="77.946"/>
-      <tag k="ele:WGS84" v="122.54"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 77.62-->
+      <!--tag ele:ODN = 77.946-->
+      <!--tag ele:WGS84 = 122.54-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TG12T054-->
     </node>
   </create>
   <create>
@@ -1771,11 +1992,13 @@
       <!--Ele: OSM: 123.825 OS: 123.825-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S4980 OS: S4980-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="123.53"/>
-      <tag k="ele:ODN" v="123.825"/>
-      <tag k="ele:WGS84" v="172.93"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 123.53-->
+      <!--tag ele:ODN = 123.825-->
+      <!--tag ele:WGS84 = 172.93-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SP26T025-->
     </node>
   </create>
   <create>
@@ -1787,11 +2010,13 @@
       <!--Ele: OSM: 104.134 OS: 104.134-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7695 OS: S7695-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="104.04"/>
-      <tag k="ele:ODN" v="104.134"/>
-      <tag k="ele:WGS84" v="157.07"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 104.04-->
+      <!--tag ele:ODN = 104.134-->
+      <!--tag ele:WGS84 = 157.07-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SW63S006-->
     </node>
   </create>
   <create>
@@ -1803,11 +2028,13 @@
       <!--Ele: OSM: 247.735 OS: 247.735-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S1707 OS: S1707-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="247.27"/>
-      <tag k="ele:ODN" v="247.735"/>
-      <tag k="ele:WGS84" v="300.82"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 247.27-->
+      <!--tag ele:ODN = 247.735-->
+      <!--tag ele:WGS84 = 300.82-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = PP178-->
     </node>
   </create>
   <create>
@@ -1819,11 +2046,13 @@
       <!--Ele: OSM: 152.1 OS: 152.067-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S6721 OS: S6721-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="151.59"/>
-      <tag k="ele:ODN" v="152.067"/>
-      <tag k="ele:WGS84" v="201.77"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 151.59-->
+      <!--tag ele:ODN = 152.067-->
+      <!--tag ele:WGS84 = 201.77-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NZ42T186-->
     </node>
   </create>
   <create>
@@ -1835,11 +2064,13 @@
       <!--Ele: OSM: NA OS: 141.29-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S3230-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="141.07"/>
-      <tag k="ele:ODN" v="141.29"/>
-      <tag k="ele:WGS84" v="190.45"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 141.07-->
+      <!--tag ele:ODN = 141.29-->
+      <!--tag ele:WGS84 = 190.45-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST86T048-->
     </node>
   </create>
   <create>
@@ -1851,11 +2082,13 @@
       <!--Ele: OSM: 60.661 OS: 60.661-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S7216 OS: S7216-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="60.62"/>
-      <tag k="ele:ODN" v="60.661"/>
-      <tag k="ele:WGS84" v="115.3"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 60.62-->
+      <!--tag ele:ODN = 60.661-->
+      <!--tag ele:WGS84 = 115.3-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SH57T043-->
     </node>
   </create>
   <create>
@@ -1867,11 +2100,13 @@
       <!--Ele: OSM: 642 OS: 642.335-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: NA-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="642.52"/>
-      <tag k="ele:ODN" v="642.335"/>
-      <tag k="ele:WGS84" v="695.14"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 642.52-->
+      <!--tag ele:ODN = 642.335-->
+      <!--tag ele:WGS84 = 695.14-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SO11T003-->
     </node>
   </create>
   <create>
@@ -1883,11 +2118,13 @@
       <!--Ele: OSM: 153 OS: 153.049-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S5405-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="152.72"/>
-      <tag k="ele:ODN" v="153.049"/>
-      <tag k="ele:WGS84" v="205.22"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 152.72-->
+      <!--tag ele:ODN = 153.049-->
+      <!--tag ele:WGS84 = 205.22-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD47T054-->
     </node>
   </create>
   <create>
@@ -1899,11 +2136,13 @@
       <!--Ele: OSM: 211 OS: 210.936-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S3247 OS: 3247-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="210.6"/>
-      <tag k="ele:ODN" v="210.936"/>
-      <tag k="ele:WGS84" v="261.1"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 210.6-->
+      <!--tag ele:ODN = 210.936-->
+      <!--tag ele:WGS84 = 261.1-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST57T020-->
     </node>
   </create>
   <create>
@@ -1915,11 +2154,13 @@
       <!--Ele: OSM: 129 OS: 129.826-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: NA OS: S3755-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="129.49"/>
-      <tag k="ele:ODN" v="129.826"/>
-      <tag k="ele:WGS84" v="180.91"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 129.49-->
+      <!--tag ele:ODN = 129.826-->
+      <!--tag ele:WGS84 = 180.91-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = ST11S020-->
     </node>
   </create>
   <create>
@@ -1931,11 +2172,13 @@
       <!--Ele: OSM: 221.2 OS: 221.217-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
       <!--FB: OSM: S5709 OS: S5709-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="221.13"/>
-      <tag k="ele:ODN" v="221.217"/>
-      <tag k="ele:WGS84" v="274.35"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 221.13-->
+      <!--tag ele:ODN = 221.217-->
+      <!--tag ele:WGS84 = 274.35-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY11T065-->
     </node>
   </create>
   <create>
@@ -1947,11 +2190,13 @@
       <!--Ele: OSM: 74 OS: 74.528-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: S7186 OS: S7186-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="74.11"/>
-      <tag k="ele:ODN" v="74.528"/>
-      <tag k="ele:WGS84" v="125.48"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 74.11-->
+      <!--tag ele:ODN = 74.528-->
+      <!--tag ele:WGS84 = 125.48-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NT86T031-->
     </node>
   </create>
   <create>
@@ -1963,11 +2208,13 @@
       <!--Ele: OSM: 359 OS: 358.969-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S1752 OS: S1752-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="358.82"/>
-      <tag k="ele:ODN" v="358.969"/>
-      <tag k="ele:WGS84" v="408.87"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 358.82-->
+      <!--tag ele:ODN = 358.969-->
+      <!--tag ele:WGS84 = 408.87-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK39T023-->
     </node>
   </create>
   <create>
@@ -1979,11 +2226,13 @@
       <!--Ele: OSM: 399 OS: 399.257-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--FB: OSM: NA OS: S2641-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="399.11"/>
-      <tag k="ele:ODN" v="399.257"/>
-      <tag k="ele:WGS84" v="450.1"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 399.11-->
+      <!--tag ele:ODN = 399.257-->
+      <!--tag ele:WGS84 = 450.1-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SD80S035-->
     </node>
   </create>
   <create>
@@ -1995,11 +2244,13 @@
       <!--Ele: OSM: 214 OS: 214.182-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S3986 OS: S3986-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="213.86"/>
-      <tag k="ele:ODN" v="214.182"/>
-      <tag k="ele:WGS84" v="258.88"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 213.86-->
+      <!--tag ele:ODN = 214.182-->
+      <!--tag ele:WGS84 = 258.88-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = TQ00S020-->
     </node>
   </create>
   <create>
@@ -2011,11 +2262,13 @@
       <!--Ele: OSM: 140 OS: 140.235-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
       <!--FB: OSM: S2576 OS: S2576-->
+      <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="139.79"/>
-      <tag k="ele:ODN" v="140.235"/>
-      <tag k="ele:WGS84" v="188.98"/>
-      <!--NOTE: probably need to add new ref:os tag-->
+      <!--tag ele:EGM96 = 139.79-->
+      <!--tag ele:ODN = 140.235-->
+      <!--tag ele:WGS84 = 188.98-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SK54S022-->
     </node>
   </create>
 </osmChange>

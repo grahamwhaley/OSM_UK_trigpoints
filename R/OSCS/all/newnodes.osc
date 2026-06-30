@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM new Nodes. Generated on: 2026-06-27-->
+  <!--OSM new Nodes. Generated on: 2026-06-30-->
   <!--4437 nodes to process-->
+  <!--Note, geometries are in ETRS89-->
   <create>
     <node id="-1" changeset="1" version="1" lat="56.8704026" lon="-4.1988496">
       <!--OS Name A' Bhuideaneach Bheag OS New Name NN96S001-->

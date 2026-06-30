@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes for potential edit/merge. Generated on: 2026-06-27-->
+  <!--OSM Nodes for potential edit/merge. Generated on: 2026-06-30-->
   <!--205 nodes to process-->
+  <!--Note, geometries are in ETRS89-->
   <modify>
     <node id="11697850761" changeset="1" version="1" lat="53.1321725" lon="-1.7398674">
       <!--OS Name Aleck Low OS New Name SK26T001-->
