@@ -9,7 +9,7 @@ Presently (as of 2026/06/02) the OSM data for UK trigpoints represents maybe onl
 pillar trigpoints - likely less as many OSM nodes do not represent current trigpoints afaict.
 
 This is a work in progress. If the data is successfully imported into OSM then this repository will
-be updated accordingly.
+be updated accordingly. Progress and current status can be seen in the [ROADMAP.md](ROADMAP.md) file.
 
 If you are looking for the slippy map view of current status, have a look at the
 [github.io page for this repository](https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html).
