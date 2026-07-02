@@ -63,7 +63,7 @@ Proposed in issue [#4](https://github.com/grahamwhaley/OSM_UK_trigpoints/issues/
 - [ ] **Add `ref:os` to all nodes** as the primary indicator that a node has been checked or
   created against OS data, enabling automated detection of already-processed nodes in future.
   <!-- no issue yet -->
-- [ ] ** Wait for the 14-day review period to complete ** -- 
+- [ ] **Wait for the 14-day review period to complete** -- 
 - [ ] **Hand-fix the 5 OSM upstream nodes with existing `ref:os`** -- Fix those 5 nodes, and
   whilst there we may as well do a complete fix on them (referring to the `osc` files for guidance)
   and then wait for their results to trickle through OSM and geofabrik, and then check how the code
