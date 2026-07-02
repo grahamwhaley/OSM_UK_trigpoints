@@ -53,6 +53,9 @@ do_height_conversion = 1
 # If we set this before we've imported, all 'good' nodes fail
 check_ref_os = 0	#Check if ref:os tags match - indicating known 'good' nodes
 
+# Use the new 'node filter' code (tag compare/missing logic to get better 'edit' candidates)
+use_new_filter_logic = 1
+
 # If we set this before we've imported, 60 out of 66 good nodes fail
 check_pillar = 0	#Check if structure=='pillar', and fail if not
 
@@ -496,12 +499,12 @@ OS_benchmark_csv <- read.csv(OS_benchmark_csv_file, header=TRUE,
 	colClasses=c("EASTING"="character", "NORTHING"="character") )
 message(" Benchmark file has ", nrow(OS_benchmark_csv), " entries")
 # Now, see if we can filter this down to just trigpoints, which have the abbrv 'TP'
-# But... also appear with extra spacing, such as 'TP $' and ' T P [$]'
+# But... also appear with extra spacing, such as 'TP $' and ' T P [$]' and ' T P$'
 # Staring at the acronym decoder for the dataset, 'P' on its own can stand for 'pillar/pole/post',
 # but there is nothing for 'T' on its own, so I'm currently taking forms of 'T P' to be a badly
 # typed version of 'TP'???
 # Note - " TP$" excludes accidentally picking up " GTP$" entries
-os_b_df <- subset(OS_benchmark_csv, grepl(" TP$| TP | T P ", OS_benchmark_csv$DESCRIPTION))
+os_b_df <- subset(OS_benchmark_csv, grepl(" TP$| TP | T P | T P$", OS_benchmark_csv$DESCRIPTION))
 message(" Benchmark trimmed to trigpoints has ", nrow(os_b_df), " entries")
 # Now let's translate their positions to WSG84
 
@@ -1084,7 +1087,8 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 #    probably do a manual check of why, and see if there are any corrections to be done
 
 # Process the nodes!
-{
+if( !use_new_filter_logic ) {
+	# Original (old) method
 	message(" Filtering new nodes according to name and FB matches")
 	# presume all are new nodes by default
 	os_sf$new_node = TRUE
@@ -1187,14 +1191,11 @@ ggsave("/data/polar_snap.jpg", plot=p_polar)
 
 	if( !check_ref_os ) { message(">>> SKIPPED ref:os matching stage") }
 	if( !check_pillar ) { message(">>> SKIPPED survey_point:structure matching stage") }
-}
 
-
-if( generate_osc ) {
 	# We have four categories to work out...
 	#
 	# 'good' nodes - good match between OS and OSM, and small snap distance
-	# 'edit' nodes - good match between OS and OSM, and snappable distance
+	# 'edit' nodes - fair match between OS and OSM, and small snap distance
 	# 'new' nodes  - no OSM match for OS trigpoint, so create a new OSM node
 	# 'review' nodes - good match between OS and OSM position, but failed other matches,
 	#   so qualify for a human review to see what's going on...
@@ -1221,21 +1222,127 @@ if( generate_osc ) {
 	#  and have passed their sanity checks
 	editnode_df = filter(os_sf, new_node == FALSE & distance <= max_snap_distance )
 	editnode_df = filter(editnode_df, distance >= min_snap_distance )
+} else {
+	message(">>>Using new filter methods")
+	os_sf$failed_field_match = FALSE
+	os_sf$fields_missing = FALSE
 
-	num_new_nodes = nrow(newnode_df)
-	num_review_nodes = nrow(reviewnode_df)
-	num_good_nodes = nrow(goodnode_df)
-	num_edit_nodes = nrow(editnode_df)
-
-	message("Node count: New: ", num_new_nodes,
-		" Review: ", num_review_nodes,
-		" Good: ", num_good_nodes,
-		" Edit: ", num_edit_nodes
+	#       OS     OSM
+	compare_tags = data.frame(
+		name = c("Trig.Name", "name"),
+		ele = c("HEIGHT", "ele"),
+		ref = c("FB", "ref")
 		)
-	message(" That should add up to (total)",
-		num_new_nodes + num_review_nodes + num_good_nodes + num_edit_nodes,
-		" == (nrow OS) ", nrow(os_sf) )
 
+	# These are tags that will be difficult or impossible to match until we have done our first
+	# import, so for now, park them here and DO NOT CHECK THEM. But, FIXME later after we've started
+	# to fix the upstream OSM nodes
+	#       OS     OSM
+	extra_compare_tags = data.frame(
+		type = c("TYPE.OF.MARK", "survey_point_structure"),
+		type = c("egm96_height", "ele_EGM96"),
+		type = c("HEIGHT", "ele_ODN"),
+		type = c("etrs89_height", "ele_WGS84"),
+		type = c("New.Name", "ref_os")
+		)
+
+	compare_tags <- t(compare_tags)
+	colnames(compare_tags) <- c("OS", "OSF")
+
+	for(i in 1:nrow(os_sf) ) {
+		os_row <- as.data.frame(os_sf[i,])
+		osm_row <- as.data.frame(osm_sf[os_row$nearest_osm_id,])
+		osb_row <- as.data.frame(os_b_sf[os_row$nearest_osb_id,])
+
+		if(debug) message("Process: ", os_row$New.Name)
+
+		for( j in 1:nrow(compare_tags) ) {
+			OSn <- compare_tags[j,1]
+			OSMn <- compare_tags[j,2]
+
+			if(debug) message("  Look at: ", OSn, " : ", OSMn)
+
+			OSv <- os_row[,OSn]
+			OSMv <- osm_row[,OSMn]
+
+			# We can get NA for FB in OS - so, check for both here
+			if( !is.na(OSv) && !is.na(OSMv) ) {
+				if(debug) message("  Compare: ", OSv, " : ", OSMv)
+
+				# We might need to mildly specialise some comparisons, at least initially
+				# FIXME - once we have started doing real imports upstream then we should
+				# re-check that these relaxations make sense
+				switch(OSn,
+					# FIXME - make this a strict check once we have started to do
+					# imports
+					HEIGHT={	# Check heights are within 1m of each other
+						diff = abs(as.numeric(OSv) - as.numeric(OSMv))
+						res = diff <= 1
+					},
+					{	#default
+						res = OSv == OSMv
+					}
+				)
+
+				#Sometimes we hit an NA, for instance if a height is not pure numeric,
+				# like '114 ft' - sigh. So, that'll be a fail then!
+				if( is.na(res) ) res = FALSE
+
+				if( res == TRUE ) {
+					if(debug) message("    PASS")
+				} else {
+					if(debug) message("    FAIL")
+					os_sf[i,]$failed_field_match = TRUE
+				}
+			} else {
+				# Check if it was the OS that had a field missing!
+				# This is not quite right, maybe - if both OS and OSM have an FB entry missing for
+				# instance... then that might not really be a failure - and how do we 'fix' it
+				# in the upstream OSM data to make the node ultimately 'good'?
+				if( is.na(OSMv) ) {
+					if(debug) message("    OSM has field missing")
+					os_sf[i,]$fields_missing = TRUE
+				}
+			}
+		}
+	}
+
+	# And now count up our types!
+
+	# If an OS node is not near an OSM node, it is 'new' no matter what
+	newnode_df = filter(os_sf, distance > max_snap_distance)
+
+	# If a node is 'near' and had any mismatched fields, it needs review
+	reviewnode_df = filter(os_sf, failed_field_match == TRUE & distance <= max_snap_distance)
+
+	# Now, extract all the nodes that are near and did *not* have any field mismatches
+	nomismatch_df = filter(os_sf, failed_field_match == FALSE & distance <= max_snap_distance)
+
+	# Any node that was near, had no field mismatches but had some fields missing can be
+	# auto merged (aka - an 'edit' node)
+	editnode_df = filter(nomismatch_df, fields_missing == TRUE)
+
+	# FIXME - we should probably filter out only good nodes that are within **min_snap_distance**
+	# of their OS nodes tbh ... FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME 
+	# Any node that was near, had no field mismatches and no fields missing must be GOOD already!
+	goodnode_df = filter(nomismatch_df, fields_missing == FALSE)
+}
+
+num_new_nodes = nrow(newnode_df)
+num_review_nodes = nrow(reviewnode_df)
+num_good_nodes = nrow(goodnode_df)
+num_edit_nodes = nrow(editnode_df)
+
+message("Node count: New: ", num_new_nodes,
+	" Review: ", num_review_nodes,
+	" Good: ", num_good_nodes,
+	" Edit: ", num_edit_nodes
+	)
+message(" That should add up to (total)",
+	num_new_nodes + num_review_nodes + num_good_nodes + num_edit_nodes,
+	" == (nrow OS) ", nrow(os_sf) )
+
+if( generate_osc ) {
 	############################ NEW NODES ###################################
 	# Now generate the new elements XML
 	message(">>> Generate new node OSC file")
@@ -1659,79 +1766,83 @@ if( generate_osc ) {
 	###############################################################################
 	############################ JS generation ###################################
 	###############################################################################
+} else {
+	message(" Skipping OSC file generation")
+}
 
-	if( generate_js ) {
-		message(">>> Generating slippy leaflet JS files")
+if( generate_js ) {
+	message(">>> Generating slippy leaflet JS files")
 
-		############################ NEW NODES ###################################
-		newnode_file = "/data/newnodes.js"
-		message(">>>  generate new nodes js")
+	############################ NEW NODES ###################################
+	newnode_file = "/data/newnodes.js"
+	message(">>>  generate new nodes js")
 
-		write(paste("var newnode_array = ["), file=newnode_file, append=FALSE)
+	write(paste("var newnode_array = ["), file=newnode_file, append=FALSE)
 
-		for(i in 1:nrow(newnode_df)) {
-			os_row <- newnode_df[i,]
-			osm_row <- osm_sf[os_row$nearest_osm_id,]
-			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+	for(i in 1:nrow(newnode_df)) {
+		os_row <- newnode_df[i,]
+		osm_row <- osm_sf[os_row$nearest_osm_id,]
+		osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
-			os_coords=st_coordinates(os_row$geometry)
-			write(paste(sep="", "\t[",
-				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
-				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html("New Node", os_row, osb_row, osm_row),
-				"],"),
-				file=newnode_file,append=TRUE)
-		}
-		write("];", file=newnode_file, append=TRUE)
+		os_coords=st_coordinates(os_row$geometry)
+		write(paste(sep="", "\t[",
+			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+			node_compare_html("New Node", os_row, osb_row, osm_row),
+			"],"),
+			file=newnode_file,append=TRUE)
+	}
+	write("];", file=newnode_file, append=TRUE)
 
-		############################ REVIEW NODES ###################################
-		reviewnode_file = "/data/reviewnodes.js"
-		message(">>>  generate review nodes js")
+	############################ REVIEW NODES ###################################
+	reviewnode_file = "/data/reviewnodes.js"
+	message(">>>  generate review nodes js")
 
-		write(paste("var reviewnode_array = ["), file=reviewnode_file, append=FALSE)
+	write(paste("var reviewnode_array = ["), file=reviewnode_file, append=FALSE)
 
-		for(i in 1:nrow(reviewnode_df)) {
-			os_row <- reviewnode_df[i,]
-			osm_row <- osm_sf[os_row$nearest_osm_id,]
-			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+	for(i in 1:nrow(reviewnode_df)) {
+		os_row <- reviewnode_df[i,]
+		osm_row <- osm_sf[os_row$nearest_osm_id,]
+		osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
-			os_coords=st_coordinates(os_row$geometry)
-			write(paste(sep="", "\t[",
-				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
-				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html("Review Node",os_row, osb_row, osm_row),
-				"],"),
-				file=reviewnode_file,append=TRUE)
-		}
-		write("];", file=reviewnode_file, append=TRUE)
+		os_coords=st_coordinates(os_row$geometry)
+		write(paste(sep="", "\t[",
+			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+			node_compare_html("Review Node",os_row, osb_row, osm_row),
+			"],"),
+			file=reviewnode_file,append=TRUE)
+	}
+	write("];", file=reviewnode_file, append=TRUE)
 
-		############################ GOOD NODES ###################################
-		goodnode_file = "/data/goodnodes.js"
-		message(">>>  generate good nodes js")
+	############################ GOOD NODES ###################################
+	goodnode_file = "/data/goodnodes.js"
+	message(">>>  generate good nodes js")
 
-		write(paste("var goodnode_array = ["), file=goodnode_file, append=FALSE)
+	write(paste("var goodnode_array = ["), file=goodnode_file, append=FALSE)
 
-		for(i in 1:nrow(goodnode_df)) {
-			os_row <- goodnode_df[i,]
-			osm_row <- osm_sf[os_row$nearest_osm_id,]
-			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+	for(i in 1:nrow(goodnode_df)) {
+		os_row <- goodnode_df[i,]
+		osm_row <- osm_sf[os_row$nearest_osm_id,]
+		osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
-			os_coords=st_coordinates(os_row$geometry)
-			write(paste(sep="", "\t[",
-				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
-				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				node_compare_html("Good Node", os_row, osb_row, osm_row),
-				"],"),
-				file=goodnode_file,append=TRUE)
-		}
-		write("];", file=goodnode_file, append=TRUE)
+		os_coords=st_coordinates(os_row$geometry)
+		write(paste(sep="", "\t[",
+			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+			node_compare_html("Good Node", os_row, osb_row, osm_row),
+			"],"),
+			file=goodnode_file,append=TRUE)
+	}
+	write("];", file=goodnode_file, append=TRUE)
 
-		############################ EDIT NODES ###################################
-		editnode_file = "/data/editnodes.js"
-		message(">>>  generate edit nodes js")
+	############################ EDIT NODES ###################################
+	editnode_file = "/data/editnodes.js"
+	message(">>>  generate edit nodes js")
 
-		write(paste("var editnode_array = ["), file=editnode_file, append=FALSE)
+	write(paste("var editnode_array = ["), file=editnode_file, append=FALSE)
 
+	if( nrow(editnode_df) != 0 ) {
 		for(i in 1:nrow(editnode_df)) {
 			os_row <- editnode_df[i,]
 			osm_row <- osm_sf[os_row$nearest_osm_id,]
@@ -1745,82 +1856,78 @@ if( generate_osc ) {
 				"],"),
 				file=editnode_file,append=TRUE)
 		}
-		write("];", file=editnode_file, append=TRUE)
-
-		############################ STATUS text ###################################
-		# Also dump some status text into a js var so we can load and display that
-		status_file = "/data/statustext.js"
-		message(">>>  generate status text js")
-
-		txt = paste(sep=" ", "Data gathered on:", Sys.Date(), "<br>")
-		txt = paste(sep=" ", txt,
-			"Total OS nodes:", nrow(os_sf),
-			"New:", num_new_nodes,
-			"Review:", num_review_nodes,
-			"Good:", num_good_nodes,
-			"Edit:", num_edit_nodes,
-			"<br>"
-			)
-		num_fbs = nrow(filter(os_sf, !is.na(FB)))
-		txt = paste(sep=" ", txt,
-			"OSM nodes shown:", nrow(osm_sf),
-			"OS nodes with FBs:",num_fbs,
-			"Total FBs:",nrow(os_b_sf)
-			)
-		write(
-			paste(
-				"var status_text = \"",
-				txt,
-				"\""
-			),
-			file=status_file, append=FALSE)
-
-		############################ OSM nodes ###################################
-		# And dump out the OSM nodes - that way we optionally can have them enabled
-		# on the map for comparison purposes
-		osmnode_file = "/data/osmnodes.js"
-		message(">>>  generate OSM nodes js")
-
-		write(paste("var osmnode_array = ["), file=osmnode_file, append=FALSE)
-
-		for(i in 1:nrow(osm_sf)) {
-			osm_row <- osm_sf[i,]
-
-			os_coords=st_coordinates(osm_row$geometry)
-			write(paste(sep="", "\t[",
-				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
-				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				osm_node_html(osm_row),
-				"],"
-				),
-				file=osmnode_file,append=TRUE)
-		}
-		write("];", file=osmnode_file, append=TRUE)
-
-		############################ FB NODES ###################################
-		fbnode_file = "/data/fbnodes.js"
-		message(">>>  generate fb nodes js")
-
-		write(paste("var fbnode_array = ["), file=fbnode_file, append=FALSE)
-
-		for(i in 1:nrow(os_b_sf)) {
-			osb_row <- os_b_sf[i,]
-
-			os_coords=st_coordinates(osb_row$geometry)
-			write(paste(sep="", "\t[",
-				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
-				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-				osb_node_html(osb_row),
-				"],"),
-				file=fbnode_file,append=TRUE)
-		}
-		write("];", file=fbnode_file, append=TRUE)
 	}
+	write("];", file=editnode_file, append=TRUE)
+
+	############################ STATUS text ###################################
+	# Also dump some status text into a js var so we can load and display that
+	status_file = "/data/statustext.js"
+	message(">>>  generate status text js")
+
+	txt = paste(sep=" ", "Data gathered on:", Sys.Date(), "<br>")
+	txt = paste(sep=" ", txt,
+		"Total OS nodes:", nrow(os_sf),
+		"New:", num_new_nodes,
+		"Review:", num_review_nodes,
+		"Good:", num_good_nodes,
+		"Edit:", num_edit_nodes,
+		"<br>"
+		)
+	num_fbs = nrow(filter(os_sf, !is.na(FB)))
+	txt = paste(sep=" ", txt,
+		"OSM nodes shown:", nrow(osm_sf),
+		"OS nodes with FBs:",num_fbs,
+		"Total FBs:",nrow(os_b_sf)
+		)
+	write(
+		paste(
+			"var status_text = \"",
+			txt,
+			"\""
+		),
+		file=status_file, append=FALSE)
+
+	############################ OSM nodes ###################################
+	# And dump out the OSM nodes - that way we optionally can have them enabled
+	# on the map for comparison purposes
+	osmnode_file = "/data/osmnodes.js"
+	message(">>>  generate OSM nodes js")
+
+	write(paste("var osmnode_array = ["), file=osmnode_file, append=FALSE)
+
+	for(i in 1:nrow(osm_sf)) {
+		osm_row <- osm_sf[i,]
+
+		os_coords=st_coordinates(osm_row$geometry)
+		write(paste(sep="", "\t[",
+			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+			osm_node_html(osm_row),
+			"],"
+			),
+			file=osmnode_file,append=TRUE)
+	}
+	write("];", file=osmnode_file, append=TRUE)
+
+	############################ FB NODES ###################################
+	fbnode_file = "/data/fbnodes.js"
+	message(">>>  generate fb nodes js")
+
+	write(paste("var fbnode_array = ["), file=fbnode_file, append=FALSE)
+
+	for(i in 1:nrow(os_b_sf)) {
+		osb_row <- os_b_sf[i,]
+
+		os_coords=st_coordinates(osb_row$geometry)
+		write(paste(sep="", "\t[",
+			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+			osb_node_html(osb_row),
+			"],"),
+			file=fbnode_file,append=TRUE)
+	}
+	write("];", file=fbnode_file, append=TRUE)
 } else {
-	message(" Skipping OSC file generation")
-	message("  Found ", nrow(newnode_df), " New OSM trigpoints")
-	message("  Found ", nrow(reviewnode_df), " Reviewable OSM trigpoints")
-	message("  Found ", nrow(goodnode_df), " Good (already matched) OSM trigpoints")
-	message("  Found ", nrow(editnode_df), " editable (snapable) OSM trigpoints")
+	message(">>> Skipping slippy leaflet JS file generation")
 }
 
