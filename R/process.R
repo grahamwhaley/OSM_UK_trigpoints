@@ -72,6 +72,10 @@ DIST_DIGITS = 2
 #Number of decimal digits to show when storing heights - that are not raw ODN heights
 HEIGHT_DIGITS = 2
 
+#If we are doing fuzzy height compares (OS-vs-OSM or OS-vs-FB), what tolerance do we have for
+# differences before we treat them as a fail?
+HEIGHT_TOLERANCE = 1
+
 ####################################################################################################### 
 ###################################### Global data type things ###################################
 ####################################################################################################### 
@@ -251,6 +255,8 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 					"<td>", os_r$HEIGHT, "</td>",
 				"<tr><td>ele:WGS84</td>",
 					"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
+				"<tr><td>os:ref</td>",
+					"<td>", os_r$New.Name, "</td>",
 			"</table><br>"
 			)
 
@@ -264,7 +270,10 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 		if( os_r$osb_distance <= osb_max_distance ) {
 			s = paste(sep="", s,
 				"OSB FB is ",
-				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>")
+				round(os_r$osb_distance, digits=DIST_DIGITS), " m away.")
+			s = paste(sep="", s,
+				" ele: ",
+				round(osb_r$HEIGHT, digits=HEIGHT_DIGITS), "<br>")
 		} else {
 			s = paste(sep="", s,
 				"<span style='color: red'>",
@@ -306,6 +315,8 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 					"<td>", os_r$HEIGHT, "</td>",
 				"<tr><td>ele:WGS84</td>",
 					"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
+				"<tr><td>os:ref</td>",
+					"<td>", os_r$New.Name, "</td>",
 			"</table><br>"
 			)
 
@@ -317,7 +328,10 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 		if( os_r$osb_distance <= osb_max_distance ) {
 			s = paste(sep="", s,
 				"OSB FB is ",
-				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>")
+				round(os_r$osb_distance, digits=DIST_DIGITS), " m away.")
+			s = paste(sep="", s,
+				" ele: ",
+				round(osb_r$HEIGHT, digits=HEIGHT_DIGITS), "<br>")
 		} else {
 			s = paste(sep="", s,
 				"<span style='color: red'>",
@@ -1227,6 +1241,9 @@ if( !use_new_filter_logic ) {
 	os_sf$failed_field_match = FALSE
 	os_sf$fields_missing = FALSE
 
+	os_zero_height_tps = 0
+	os_mismatch_height_tps = 0
+
 	#       OS     OSM
 	compare_tags = data.frame(
 		name = c("Trig.Name", "name"),
@@ -1277,7 +1294,7 @@ if( !use_new_filter_logic ) {
 					# imports
 					HEIGHT={	# Check heights are within 1m of each other
 						diff = abs(as.numeric(OSv) - as.numeric(OSMv))
-						res = diff <= 1
+						res = diff <= HEIGHT_TOLERANCE
 					},
 					{	#default
 						res = OSv == OSMv
@@ -1305,7 +1322,30 @@ if( !use_new_filter_logic ) {
 				}
 			}
 		}
+
+		# And then... I've found that some trigpoints are coming in with ele of 0, where they obviously
+		# are not physically at 0! Let's try and filter these in two ways:
+		#  - we can sanity check ele against fb heights - and if there is a big difference then mark
+		#    them for review (tag fail)
+		#  - any trigpoing with ele=0 should go for review!
+		if( os_row$HEIGH == 0 ) {
+			os_sf[i,]$failed_field_match = TRUE
+			os_zero_height_tps = os_zero_height_tps + 1
+		}
+
+		# Only check this if we have a FB associated!
+		if( !is.na(os_row$FB) ) {
+			height_diff = abs(as.numeric(os_row$HEIGHT) - as.numeric(osb_row$HEIGHT))
+
+			if( height_diff > HEIGHT_TOLERANCE ) {
+				os_sf[i,]$failed_field_match = TRUE
+				os_mismatch_height_tps = os_mismatch_height_tps + 1
+			}
+		}
 	}
+
+	message(">>> Got ", os_zero_height_tps, " Zero height TPs")
+	message(">>> Got ", os_mismatch_height_tps, " Mismatched height TP/FBs")
 
 	# And now count up our types!
 
@@ -1821,18 +1861,20 @@ if( generate_js ) {
 
 	write(paste("var goodnode_array = ["), file=goodnode_file, append=FALSE)
 
-	for(i in 1:nrow(goodnode_df)) {
-		os_row <- goodnode_df[i,]
-		osm_row <- osm_sf[os_row$nearest_osm_id,]
-		osb_row <- os_b_sf[os_row$nearest_osb_id,]
+	if( nrow(goodnode_df) != 0 ) {
+		for(i in 1:nrow(goodnode_df)) {
+			os_row <- goodnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
-		os_coords=st_coordinates(os_row$geometry)
-		write(paste(sep="", "\t[",
-			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
-			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-			node_compare_html("Good Node", os_row, osb_row, osm_row),
-			"],"),
-			file=goodnode_file,append=TRUE)
+			os_coords=st_coordinates(os_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				node_compare_html("Good Node", os_row, osb_row, osm_row),
+				"],"),
+				file=goodnode_file,append=TRUE)
+		}
 	}
 	write("];", file=goodnode_file, append=TRUE)
 
