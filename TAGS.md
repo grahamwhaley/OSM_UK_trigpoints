@@ -1,4 +1,4 @@
-# tag keys appearing in `man_made=trig_point` nodes
+# tag keys appearing in `man_made=survey_point` nodes
 
 A table showing the keys and frequencies of occurence in OSM data to aid in discussions
 around adding new or modifying existing keys during data updates.
