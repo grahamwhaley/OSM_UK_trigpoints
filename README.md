@@ -73,7 +73,7 @@ I downloaded my data from [geofabrik.de](https://download.geofabrik.de/europe/un
 and used [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis) to extract all entries with the tag
 `man_made=survey_point`. I got 2804 nodes from that export.
 
-After filtering out items where the `survery_point` and `survey_point:structure` tags indicate they
+After filtering out items where the `survey_point` and `survey_point:structure` tags indicate they
 are not pillars, we end up with 2558 OSM datapoints.
 
 In summary for the potential pillar datapoints we have then:
@@ -584,11 +584,3 @@ and path forward. Then, given the whole idea is not shot down, and if we think w
 to do an automatic import, we should study the
 [OSM import guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines)
 and write an [import plan](https://wiki.openstreetmap.org/wiki/Import/Plan_Outline).
-
-## TODO
-
-A few thoughts on things left to do, apart from community discussions and documentation on the
-OSM wiki etc.:
-
-  - See if the missing 1/3rd of the trigpoint data in the Benchmark CSV is hiding in there somewhere.
-	I have a feeling it is not, but we should stare harder to confirm.
