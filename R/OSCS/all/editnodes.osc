@@ -1,28 +1,8 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes for potential edit/merge. Generated on: 2026-07-02-->
-  <!--774 nodes to process-->
+  <!--OSM Nodes for potential edit/merge. Generated on: 2026-07-03-->
+  <!--772 nodes to process-->
   <!--Note, geometries are in ETRS89-->
-  <modify>
-    <node id="4452420827" changeset="1" version="1" lat="50.6763963" lon="-2.6289094">
-      <!--OS Name Abbotsbury Castle OS New Name ST70S001-->
-      <!--Move bearing -164.858444712127 degrees for 2.47 m-->
-      <!-- from lat: 50.6764178 lon: -2.6289003-->
-      <!--Add new name: ST70S001-->
-      <tag k="name" v="ST70S001"/>
-      <!--Ref field already set: OS BM S5769-->
-      <!--Add new ref:os: ST70S001-->
-      <tag k="ref:os" v="ST70S001"/>
-      <!--Add new ele: 215.831 in EGM96-->
-      <tag k="ele" v="215.56"/>
-      <!--And add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="215.56"/>
-      <tag k="ele:ODN" v="215.831"/>
-      <tag k="ele:WGS84" v="265.07"/>
-      <!--Add new structure: pillar-->
-      <tag k="survey_point:structure" v="pillar"/>
-    </node>
-  </modify>
   <modify>
     <node id="1928556421" changeset="1" version="1" lat="52.2910632" lon="-0.3514606">
       <!--OS Name Agden Hill OS New Name TL36T001-->
@@ -1166,6 +1146,8 @@
       <!-- from lat: 50.3992157 lon: -3.4849904-->
       <!--Add new name: SX76S029-->
       <tag k="name" v="SX76S029"/>
+      <!--Add new FB ref: S3520-->
+      <tag k="ref" v="S3520"/>
       <!--Add new ref:os: SX76S029-->
       <tag k="ref:os" v="SX76S029"/>
       <!--Add new ele: 59.685 in EGM96-->
@@ -3219,6 +3201,8 @@
       <!-- from lat: 56.0296021 lon: -3.4157263-->
       <!--Add new name: NT18S011-->
       <tag k="name" v="NT18S011"/>
+      <!--Add new FB ref: S3239-->
+      <tag k="ref" v="S3239"/>
       <!--Add new ref:os: NT18S011-->
       <tag k="ref:os" v="NT18S011"/>
       <!--Add new ele: 85.182 in EGM96-->
@@ -4267,6 +4251,8 @@
       <!-- from lat: 53.6819309 lon: -2.2687107-->
       <!--Add new name: SE02T008-->
       <tag k="name" v="SE02T008"/>
+      <!--Add new FB ref: S4554-->
+      <tag k="ref" v="S4554"/>
       <!--Add new ref:os: SE02T008-->
       <tag k="ref:os" v="SE02T008"/>
       <!--Add new ele: 439.841 in EGM96-->
@@ -5135,6 +5121,8 @@
       <!-- from lat: 51.1646568 lon: -4.1923137-->
       <!--Add new name: PP165-->
       <tag k="name" v="PP165"/>
+      <!--Add new FB ref: S1601-->
+      <tag k="ref" v="S1601"/>
       <!--Add new ref:os: PP165-->
       <tag k="ref:os" v="PP165"/>
       <!--ele field already set: 199-->
@@ -5549,6 +5537,8 @@
       <!-- from lat: 50.8534364 lon: -1.0364003-->
       <!--Add new name: SU31T072-->
       <tag k="name" v="SU31T072"/>
+      <!--Add new FB ref: S2708-->
+      <tag k="ref" v="S2708"/>
       <!--Add new ref:os: SU31T072-->
       <tag k="ref:os" v="SU31T072"/>
       <!--ele field already set: 96-->
@@ -6728,6 +6718,8 @@
       <!-- from lat: 50.7140926 lon: -1.2017406-->
       <!--Add new name: SU31T003-->
       <tag k="name" v="SU31T003"/>
+      <!--Add new FB ref: S2490-->
+      <tag k="ref" v="S2490"/>
       <!--Add new ref:os: SU31T003-->
       <tag k="ref:os" v="SU31T003"/>
       <!--Add new ele: 62.048 in EGM96-->
@@ -7302,6 +7294,8 @@
       <!-- from lat: 53.1243371 lon: -1.9242054-->
       <!--Add new name: SK26T012-->
       <tag k="name" v="SK26T012"/>
+      <!--Add new FB ref: S4170-->
+      <tag k="ref" v="S4170"/>
       <!--Add new ref:os: SK26T012-->
       <tag k="ref:os" v="SK26T012"/>
       <!--ele field already set: 425-->
@@ -8364,6 +8358,8 @@
       <!-- from lat: 55.6201986 lon: -2.7926332-->
       <!--Add new name: NT72T061-->
       <tag k="name" v="NT72T061"/>
+      <!--Add new FB ref: S7525-->
+      <tag k="ref" v="S7525"/>
       <!--Add new ref:os: NT72T061-->
       <tag k="ref:os" v="NT72T061"/>
       <!--Add new ele: 302.681 in EGM96-->
@@ -8621,6 +8617,8 @@
       <!-- from lat: 52.3255213 lon: -3.0190576-->
       <!--Add new name: SO59T006-->
       <tag k="name" v="SO59T006"/>
+      <!--Add new FB ref: S5202-->
+      <tag k="ref" v="S5202"/>
       <!--Add new ref:os: SO59T006-->
       <tag k="ref:os" v="SO59T006"/>
       <!--Add new ele: 416.96 in EGM96-->
@@ -9396,6 +9394,8 @@
       <!-- from lat: 52.1241046 lon: -1.0211035-->
       <!--Add new name: SP74T038-->
       <tag k="name" v="SP74T038"/>
+      <!--Add new FB ref: S7335-->
+      <tag k="ref" v="S7335"/>
       <!--Add new ref:os: SP74T038-->
       <tag k="ref:os" v="SP74T038"/>
       <!--Add new ele: 120.499 in EGM96-->
@@ -9491,6 +9491,8 @@
       <!--Move bearing -134.244893888127 degrees for 5.54 m-->
       <!-- from lat: 53.1627679 lon: -1.6350091-->
       <!--Name field already set: Moor Plantations-->
+      <!--Add new FB ref: 4151-->
+      <tag k="ref" v="4151"/>
       <!--Add new ref:os: SK39S009-->
       <tag k="ref:os" v="SK39S009"/>
       <!--ele field already set: 323-->
@@ -9817,6 +9819,8 @@
       <!-- from lat: 51.6741713 lon: -3.0716208-->
       <!--Add new name: PPP73-->
       <tag k="name" v="PPP73"/>
+      <!--Add new FB ref: S2978-->
+      <tag k="ref" v="S2978"/>
       <!--Add new ref:os: PPP73-->
       <tag k="ref:os" v="PPP73"/>
       <!--Add new ele: 472.824 in EGM96-->
@@ -10538,6 +10542,8 @@
       <!-- from lat: 51.9917087 lon: 0.1844426-->
       <!--Add new name: TL74T040-->
       <tag k="name" v="TL74T040"/>
+      <!--Add new FB ref: S4520-->
+      <tag k="ref" v="S4520"/>
       <!--Add new ref:os: TL74T040-->
       <tag k="ref:os" v="TL74T040"/>
       <!--Add new ele: 106.801 in EGM96-->
@@ -10638,6 +10644,8 @@
       <!-- from lat: 52.761935 lon: -1.1035601-->
       <!--Add new name: SK73T020-->
       <tag k="name" v="SK73T020"/>
+      <!--Add new FB ref: S4611-->
+      <tag k="ref" v="S4611"/>
       <!--Add new ref:os: SK73T020-->
       <tag k="ref:os" v="SK73T020"/>
       <!--Add new ele: 101.117 in EGM96-->
@@ -11190,6 +11198,8 @@
       <!-- from lat: 50.6599491 lon: -1.1932361-->
       <!--Add new name: SU31T010-->
       <tag k="name" v="SU31T010"/>
+      <!--Add new FB ref: S2519-->
+      <tag k="ref" v="S2519"/>
       <!--Add new ref:os: SU31T010-->
       <tag k="ref:os" v="SU31T010"/>
       <!--ele field already set: 60-->
@@ -11473,32 +11483,14 @@
     </node>
   </modify>
   <modify>
-    <node id="5026184347" changeset="1" version="1" lat="53.2463797" lon="-4.6040986">
-      <!--OS Name Rhoscolyn OS New Name SH57S019-->
-      <!--Move bearing 55.7382320930528 degrees for 0.74 m-->
-      <!-- from lat: 53.246376 lon: -4.6041078-->
-      <!--Add new name: SH57S019-->
-      <tag k="name" v="SH57S019"/>
-      <!--Ref field already set: OS BM S7233-->
-      <!--Add new ref:os: SH57S019-->
-      <tag k="ref:os" v="SH57S019"/>
-      <!--Add new ele: 62.944 in EGM96-->
-      <tag k="ele" v="62.76"/>
-      <!--And add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="62.76"/>
-      <tag k="ele:ODN" v="62.944"/>
-      <tag k="ele:WGS84" v="117.55"/>
-      <!--Add new structure: pillar-->
-      <tag k="survey_point:structure" v="pillar"/>
-    </node>
-  </modify>
-  <modify>
     <node id="9450153713" changeset="1" version="1" lat="51.5343141" lon="-3.2328774">
       <!--OS Name Rhubina OS New Name ST07T004-->
       <!--Move bearing 151.879152495697 degrees for 0.49 m-->
       <!-- from lat: 51.534318 lon: -3.2328808-->
       <!--Add new name: ST07T004-->
       <tag k="name" v="ST07T004"/>
+      <!--Add new FB ref: S2301-->
+      <tag k="ref" v="S2301"/>
       <!--Add new ref:os: ST07T004-->
       <tag k="ref:os" v="ST07T004"/>
       <!--Add new ele: 181.231 in EGM96-->
@@ -11555,6 +11547,8 @@
       <!-- from lat: 51.9770154 lon: 0.2297-->
       <!--Add new name: TL74T045-->
       <tag k="name" v="TL74T045"/>
+      <!--Add new FB ref: S4440-->
+      <tag k="ref" v="S4440"/>
       <!--Add new ref:os: TL74T045-->
       <tag k="ref:os" v="TL74T045"/>
       <!--Add new ele: 105.329 in EGM96-->
@@ -12670,6 +12664,8 @@
       <!-- from lat: 50.4456055 lon: -3.5814088-->
       <!--Add new name: SX76T106-->
       <tag k="name" v="SX76T106"/>
+      <!--Add new FB ref: S4292-->
+      <tag k="ref" v="S4292"/>
       <!--Add new ref:os: SX76T106-->
       <tag k="ref:os" v="SX76T106"/>
       <!--Add new ele: 108.264 in EGM96-->
@@ -12982,6 +12978,8 @@
       <!-- from lat: 52.1820047 lon: -2.9717726-->
       <!--Add new name: SO45T033-->
       <tag k="name" v="SO45T033"/>
+      <!--Add new FB ref: S8076-->
+      <tag k="ref" v="S8076"/>
       <!--Add new ref:os: SO45T033-->
       <tag k="ref:os" v="SO45T033"/>
       <!--Add new ele: 192.886 in EGM96-->
@@ -13695,6 +13693,8 @@
       <!-- from lat: 51.2829527 lon: 0.7323761-->
       <!--Add new name: TQ87S049-->
       <tag k="name" v="TQ87S049"/>
+      <!--Add new FB ref: 3494-->
+      <tag k="ref" v="3494"/>
       <!--Add new ref:os: TQ87S049-->
       <tag k="ref:os" v="TQ87S049"/>
       <!--Add new ele: 150.379 in EGM96-->
@@ -13888,6 +13888,8 @@
       <!-- from lat: 56.6711953 lon: -2.7933878-->
       <!--Add new name: NO42S016-->
       <tag k="name" v="NO42S016"/>
+      <!--Add new FB ref: S4480-->
+      <tag k="ref" v="S4480"/>
       <!--Add new ref:os: NO42S016-->
       <tag k="ref:os" v="NO42S016"/>
       <!--Add new ele: 251.993 in EGM96-->
@@ -13906,6 +13908,8 @@
       <!--Move bearing 158.377748058631 degrees for 0.76 m-->
       <!-- from lat: 51.8485293 lon: -3.4217021-->
       <!--Name field already set: Twyn Mwyalchod-->
+      <!--Add new FB ref: S2166-->
+      <tag k="ref" v="S2166"/>
       <!--Add new ref:os: SO11T003-->
       <tag k="ref:os" v="SO11T003"/>
       <!--ele field already set: 642-->
@@ -13924,6 +13928,8 @@
       <!-- from lat: 51.4905694 lon: -3.2558314-->
       <!--Add new name: ST07T283-->
       <tag k="name" v="ST07T283"/>
+      <!--Add new FB ref: 10658-->
+      <tag k="ref" v="10658"/>
       <!--Add new ref:os: ST07T283-->
       <tag k="ref:os" v="ST07T283"/>
       <!--Add new ele: 76.815 in EGM96-->
@@ -14318,6 +14324,8 @@
       <!-- from lat: 55.9364852 lon: -2.8995371-->
       <!--Add new name: NT48T033-->
       <tag k="name" v="NT48T033"/>
+      <!--Add new FB ref: S3143-->
+      <tag k="ref" v="S3143"/>
       <!--Add new ref:os: NT48T033-->
       <tag k="ref:os" v="NT48T033"/>
       <!--Add new ele: 128.174 in EGM96-->
@@ -14432,6 +14440,8 @@
       <!--Move bearing 153.466498137399 degrees for 2.49 m-->
       <!-- from lat: 56.5268939 lon: -3.1703811-->
       <!--Name field already set: Westerkeith Hill-->
+      <!--Add new FB ref: S4604-->
+      <tag k="ref" v="S4604"/>
       <!--Add new ref:os: NO42S017-->
       <tag k="ref:os" v="NO42S017"/>
       <!--ele field already set: 353-->
@@ -14818,6 +14828,8 @@
       <!-- from lat: 53.5781886 lon: -1.8131028-->
       <!--Add new name: SE02T049-->
       <tag k="name" v="SE02T049"/>
+      <!--Add new FB ref: S4400-->
+      <tag k="ref" v="S4400"/>
       <!--Add new ref:os: SE02T049-->
       <tag k="ref:os" v="SE02T049"/>
       <!--Add new ele: 323.59 in EGM96-->

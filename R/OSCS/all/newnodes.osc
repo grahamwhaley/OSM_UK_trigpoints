@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM new Nodes. Generated on: 2026-07-02-->
+  <!--OSM new Nodes. Generated on: 2026-07-03-->
   <!--4437 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
@@ -1078,7 +1078,8 @@
       <tag k="ele:ODN" v="361.014"/>
       <tag k="ele:WGS84" v="416.31"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 7.88 m-->
+      <tag k="ref" v="S8686"/>
       <tag k="ref:os" v="NS04T008"/>
       <!-- Distance to nearest OSM node 1464975379 is 5893.31 m-->
     </node>
@@ -1128,7 +1129,8 @@
       <tag k="ele:ODN" v="3.8"/>
       <tag k="ele:WGS84" v="50.07"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.34 m-->
+      <tag k="ref" v="S8069"/>
       <tag k="ref:os" v="TL49T006"/>
       <!-- Distance to nearest OSM node 312631368 is 24768.39 m-->
     </node>
@@ -1677,7 +1679,8 @@
       <tag k="ele:ODN" v="158.035"/>
       <tag k="ele:WGS84" v="205.22"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.05 m-->
+      <tag k="ref" v="S4756"/>
       <tag k="ref:os" v="SP91T003"/>
       <!-- Distance to nearest OSM node 206344835 is 8710.06 m-->
     </node>
@@ -1710,7 +1713,8 @@
       <tag k="ele:ODN" v="54.592"/>
       <tag k="ele:WGS84" v="101.72"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.65 m-->
+      <tag k="ref" v="2705"/>
       <tag k="ref:os" v="SU31T029"/>
       <!-- Distance to nearest OSM node 9744107502 is 4117.77 m-->
     </node>
@@ -1861,7 +1865,8 @@
       <tag k="ele:ODN" v="58.524"/>
       <tag k="ele:WGS84" v="103.51"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.85 m-->
+      <tag k="ref" v="S5112"/>
       <tag k="ref:os" v="TQ53T003"/>
       <!-- Distance to nearest OSM node 375621920 is 12730.11 m-->
     </node>
@@ -2455,7 +2460,8 @@
       <tag k="ele:ODN" v="72.405"/>
       <tag k="ele:WGS84" v="122.36"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 10.85 m-->
+      <tag k="ref" v="S3246"/>
       <tag k="ref:os" v="ST57T013"/>
       <!-- Distance to nearest OSM node 5894788704 is 4499.82 m-->
     </node>
@@ -3113,7 +3119,8 @@
       <tag k="ele:ODN" v="90.787"/>
       <tag k="ele:WGS84" v="139.63"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.44 m-->
+      <tag k="ref" v="S4971"/>
       <tag k="ref:os" v="SP26T003"/>
       <!-- Distance to nearest OSM node 2568315214 is 3352.25 m-->
     </node>
@@ -3294,7 +3301,8 @@
       <tag k="ele:ODN" v="184.751"/>
       <tag k="ele:WGS84" v="238.43"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.13 m-->
+      <tag k="ref" v="S7916"/>
       <tag k="ref:os" v="NX99T003"/>
       <!-- Distance to nearest OSM node 530908034 is 49.46 m-->
     </node>
@@ -4188,7 +4196,8 @@
       <tag k="ele:ODN" v="260.519"/>
       <tag k="ele:WGS84" v="310.81"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.78 m-->
+      <tag k="ref" v="S4241"/>
       <tag k="ref:os" v="SE22S016"/>
       <!-- Distance to nearest OSM node 2064732394 is 6055.41 m-->
     </node>
@@ -4204,7 +4213,8 @@
       <tag k="ele:ODN" v="319.168"/>
       <tag k="ele:WGS84" v="369.38"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 11.37 m-->
+      <tag k="ref" v="S4323"/>
       <tag k="ref:os" v="NZ42S003"/>
       <!-- Distance to nearest OSM node 433977740 is 5514.9 m-->
     </node>
@@ -4422,7 +4432,8 @@
       <tag k="ele:ODN" v="147.078"/>
       <tag k="ele:WGS84" v="198.74"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.07 m-->
+      <tag k="ref" v="S3410"/>
       <tag k="ref:os" v="SX76T029"/>
       <!-- Distance to nearest OSM node 1843671191 is 9858.14 m-->
     </node>
@@ -6474,7 +6485,8 @@
       <tag k="ele:ODN" v="99.236"/>
       <tag k="ele:WGS84" v="148.99"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 8.27 m-->
+      <tag k="ref" v="S3254"/>
       <tag k="ref:os" v="ST57T019"/>
       <!-- Distance to nearest OSM node 5894788704 is 8008.96 m-->
     </node>
@@ -7964,7 +7976,8 @@
       <tag k="ele:ODN" v="290.544"/>
       <tag k="ele:WGS84" v="344.52"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.33 m-->
+      <tag k="ref" v="S3660"/>
       <tag k="ref:os" v="NS77T038"/>
       <!-- Distance to nearest OSM node 8561011508 is 11189.73 m-->
     </node>
@@ -7980,7 +7993,8 @@
       <tag k="ele:ODN" v="314.8"/>
       <tag k="ele:WGS84" v="366.52"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.32 m-->
+      <tag k="ref" v="S7402"/>
       <tag k="ref:os" v="NT72S002"/>
       <!-- Distance to nearest OSM node 534691015 is 5568.97 m-->
     </node>
@@ -8917,7 +8931,8 @@
       <tag k="ele:ODN" v="92.918"/>
       <tag k="ele:WGS84" v="141.77"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.15 m-->
+      <tag k="ref" v="S1634"/>
       <tag k="ref:os" v="SK54T025"/>
       <!-- Distance to nearest OSM node 5305542729 is 1188.57 m-->
     </node>
@@ -9504,7 +9519,8 @@
       <tag k="ele:ODN" v="53.574"/>
       <tag k="ele:WGS84" v="98.71"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 11.25 m-->
+      <tag k="ref" v="S5274"/>
       <tag k="ref:os" v="TG12T006"/>
       <!-- Distance to nearest OSM node 5682884633 is 6976.25 m-->
     </node>
@@ -10379,7 +10395,8 @@
       <tag k="ele:ODN" v="78.01"/>
       <tag k="ele:WGS84" v="125.03"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.21 m-->
+      <tag k="ref" v="S6787"/>
       <tag k="ref:os" v="TL08T003"/>
       <!-- Distance to nearest OSM node 5435444415 is 8788.94 m-->
     </node>
@@ -10547,7 +10564,8 @@
       <tag k="ele:ODN" v="102.047"/>
       <tag k="ele:WGS84" v="153.01"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 8.7 m-->
+      <tag k="ref" v="2733"/>
       <tag k="ref:os" v="SK08S003"/>
       <!-- Distance to nearest OSM node 8442979753 is 5763.43 m-->
     </node>
@@ -10647,7 +10665,8 @@
       <tag k="ele:ODN" v="109.03"/>
       <tag k="ele:WGS84" v="154.67"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.56 m-->
+      <tag k="ref" v="S4046"/>
       <tag k="ref:os" v="TQ00T007"/>
       <!-- Distance to nearest OSM node 3030385872 is 4264.5 m-->
     </node>
@@ -10697,7 +10716,8 @@
       <tag k="ele:ODN" v="69.21"/>
       <tag k="ele:WGS84" v="121.99"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.76 m-->
+      <tag k="ref" v="S6621"/>
       <tag k="ref:os" v="NY45T010"/>
       <!-- Distance to nearest OSM node 1454295478 is 20896.08 m-->
     </node>
@@ -10979,7 +10999,8 @@
       <tag k="ele:ODN" v="127.244"/>
       <tag k="ele:WGS84" v="177.04"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.6 m-->
+      <tag k="ref" v="S3687"/>
       <tag k="ref:os" v="NZ29T003"/>
       <!-- Distance to nearest OSM node 6081657261 is 6910.51 m-->
     </node>
@@ -11949,7 +11970,8 @@
       <tag k="ele:ODN" v="167.393"/>
       <tag k="ele:WGS84" v="215.56"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.67 m-->
+      <tag k="ref" v="6078"/>
       <tag k="ref:os" v="ST70T010"/>
       <!-- Distance to nearest OSM node 8889817612 is 1696.78 m-->
     </node>
@@ -12015,7 +12037,8 @@
       <tag k="ele:ODN" v="18.3"/>
       <tag k="ele:WGS84" v="62.73"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.46 m-->
+      <tag k="ref" v="S3812"/>
       <tag k="ref:os" v="TG41T047"/>
       <!-- Distance to nearest OSM node 2668210791 is 25185.84 m-->
     </node>
@@ -12300,7 +12323,8 @@
       <tag k="ele:ODN" v="183.858"/>
       <tag k="ele:WGS84" v="234.35"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 0.72 m-->
+      <tag k="ref" v="S1835"/>
       <tag k="ref:os" v="SJ90S004"/>
       <!-- Distance to nearest OSM node 29579135 is 3082.78 m-->
     </node>
@@ -12715,7 +12739,8 @@
       <tag k="ele:ODN" v="303.87"/>
       <tag k="ele:WGS84" v="355.6"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.08 m-->
+      <tag k="ref" v="S6441"/>
       <tag k="ref:os" v="NY86T013"/>
       <!-- Distance to nearest OSM node 3450940222 is 7252.97 m-->
     </node>
@@ -15619,7 +15644,8 @@
       <tag k="ele:ODN" v="34.314"/>
       <tag k="ele:WGS84" v="80.13"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.96 m-->
+      <tag k="ref" v="S1984"/>
       <tag k="ref:os" v="TL36T007"/>
       <!-- Distance to nearest OSM node 6762899733 is 9235.44 m-->
     </node>
@@ -16258,7 +16284,8 @@
       <tag k="ele:ODN" v="83.353"/>
       <tag k="ele:WGS84" v="129.14"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 10.91 m-->
+      <tag k="ref" v="S1985"/>
       <tag k="ref:os" v="TL74T062"/>
       <!-- Distance to nearest OSM node 366020909 is 9213.34 m-->
     </node>
@@ -16274,7 +16301,8 @@
       <tag k="ele:ODN" v="91.927"/>
       <tag k="ele:WGS84" v="137.5"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.25 m-->
+      <tag k="ref" v="S4357"/>
       <tag k="ref:os" v="TL74T020"/>
       <!-- Distance to nearest OSM node 9029606713 is 18058.55 m-->
     </node>
@@ -16490,7 +16518,8 @@
       <tag k="ele:ODN" v="118.024"/>
       <tag k="ele:WGS84" v="171.02"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.97 m-->
+      <tag k="ref" v="S2286"/>
       <tag k="ref:os" v="SN61T001"/>
       <!-- Distance to nearest OSM node 1923897749 is 2070.53 m-->
     </node>
@@ -16906,7 +16935,8 @@
       <tag k="ele:ODN" v="304.028"/>
       <tag k="ele:WGS84" v="354.09"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.46 m-->
+      <tag k="ref" v="S4707"/>
       <tag k="ref:os" v="SJ90T027"/>
       <!-- Distance to nearest OSM node 1126925754 is 1036.95 m-->
     </node>
@@ -17764,7 +17794,8 @@
       <tag k="ele:ODN" v="284.896"/>
       <tag k="ele:WGS84" v="339.55"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.72 m-->
+      <tag k="ref" v="S8148"/>
       <tag k="ref:os" v="NC20S020"/>
       <!-- Distance to nearest OSM node 651297923 is 14869.88 m-->
     </node>
@@ -18141,7 +18172,8 @@
       <tag k="ele:ODN" v="200.654"/>
       <tag k="ele:WGS84" v="250.12"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 0.71 m-->
+      <tag k="ref" v="S4159"/>
       <tag k="ref:os" v="SK39T04O"/>
       <!-- Distance to nearest OSM node 7598537383 is 2841.47 m-->
     </node>
@@ -18208,7 +18240,8 @@
       <tag k="ele:ODN" v="226.335"/>
       <tag k="ele:WGS84" v="276.29"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.61 m-->
+      <tag k="ref" v="3623"/>
       <tag k="ref:os" v="NZ29S007"/>
       <!-- Distance to nearest OSM node 1987953499 is 5900.46 m-->
     </node>
@@ -19354,7 +19387,8 @@
       <tag k="ele:ODN" v="92.625"/>
       <tag k="ele:WGS84" v="140.23"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.11 m-->
+      <tag k="ref" v="S2543"/>
       <tag k="ref:os" v="SU31T053"/>
       <!-- Distance to nearest OSM node 3195039668 is 4395.4 m-->
     </node>
@@ -19902,7 +19936,8 @@
       <tag k="ele:ODN" v="121.343"/>
       <tag k="ele:WGS84" v="170.29"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 10.93 m-->
+      <tag k="ref" v="S3424"/>
       <tag k="ref:os" v="SP38T004"/>
       <!-- Distance to nearest OSM node 10073285622 is 7383.16 m-->
     </node>
@@ -20353,7 +20388,8 @@
       <tag k="ele:ODN" v="95.222"/>
       <tag k="ele:WGS84" v="148.58"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.56 m-->
+      <tag k="ref" v="S7915"/>
       <tag k="ref:os" v="NX99T010"/>
       <!-- Distance to nearest OSM node 524745271 is 32.67 m-->
     </node>
@@ -22049,7 +22085,8 @@
       <tag k="ele:ODN" v="272.725"/>
       <tag k="ele:WGS84" v="323.08"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.48 m-->
+      <tag k="ref" v="S1758"/>
       <tag k="ref:os" v="SE02T051"/>
       <!-- Distance to nearest OSM node 9262040840 is 3764.02 m-->
     </node>
@@ -22133,7 +22170,8 @@
       <tag k="ele:ODN" v="91.333"/>
       <tag k="ele:WGS84" v="140.49"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.42 m-->
+      <tag k="ref" v="S4007"/>
       <tag k="ref:os" v="SK34T017"/>
       <!-- Distance to nearest OSM node 3847891923 is 4958.73 m-->
     </node>
@@ -22200,7 +22238,8 @@
       <tag k="ele:ODN" v="15.886"/>
       <tag k="ele:WGS84" v="61.82"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.67 m-->
+      <tag k="ref" v="S1983"/>
       <tag k="ref:os" v="TL49T019"/>
       <!-- Distance to nearest OSM node 312631368 is 15068.84 m-->
     </node>
@@ -22249,7 +22288,8 @@
       <tag k="ele:ODN" v="4.736"/>
       <tag k="ele:WGS84" v="51.41"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.11 m-->
+      <tag k="ref" v="10456"/>
       <tag k="ref:os" v="TF22T006"/>
       <!-- Distance to nearest OSM node 3663838100 is 12974.83 m-->
     </node>
@@ -22542,7 +22582,8 @@
       <tag k="ele:ODN" v="290.05"/>
       <tag k="ele:WGS84" v="344.22"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.91 m-->
+      <tag k="ref" v="5811"/>
       <tag k="ref:os" v="SN55T010"/>
       <!-- Distance to nearest OSM node 7498245631 is 9689.65 m-->
     </node>
@@ -23101,7 +23142,8 @@
       <tag k="ele:ODN" v="268.69"/>
       <tag k="ele:WGS84" v="320.82"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.84 m-->
+      <tag k="ref" v="5430"/>
       <tag k="ref:os" v="SO59T037"/>
       <!-- Distance to nearest OSM node 12669951524 is 3019.74 m-->
     </node>
@@ -23318,7 +23360,8 @@
       <tag k="ele:ODN" v="93.134"/>
       <tag k="ele:WGS84" v="138.59"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.26 m-->
+      <tag k="ref" v="S4366"/>
       <tag k="ref:os" v="TL74T024"/>
       <!-- Distance to nearest OSM node 9029606713 is 10005.67 m-->
     </node>
@@ -23973,7 +24016,8 @@
       <tag k="ele:ODN" v="291.532"/>
       <tag k="ele:WGS84" v="343.18"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.77 m-->
+      <tag k="ref" v="S7893"/>
       <tag k="ref:os" v="SO45S003"/>
       <!-- Distance to nearest OSM node 2897480634 is 16.15 m-->
     </node>
@@ -24235,7 +24279,8 @@
       <tag k="ele:ODN" v="96.95"/>
       <tag k="ele:WGS84" v="145.89"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.78 m-->
+      <tag k="ref" v="11801"/>
       <tag k="ref:os" v="SK54T024"/>
       <!-- Distance to nearest OSM node 5305542729 is 2203.7 m-->
     </node>
@@ -25840,7 +25885,8 @@
       <tag k="ele:ODN" v="131.216"/>
       <tag k="ele:WGS84" v="184.63"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.18 m-->
+      <tag k="ref" v="S2499"/>
       <tag k="ref:os" v="SN94T074"/>
       <!-- Distance to nearest OSM node 1818237272 is 2977.29 m-->
     </node>
@@ -26190,7 +26236,8 @@
       <tag k="ele:ODN" v="81.314"/>
       <tag k="ele:WGS84" v="131.33"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.3 m-->
+      <tag k="ref" v="S3838"/>
       <tag k="ref:os" v="SO96T015"/>
       <!-- Distance to nearest OSM node 1493733260 is 5031.7 m-->
     </node>
@@ -26408,7 +26455,8 @@
       <tag k="ele:ODN" v="131.841"/>
       <tag k="ele:WGS84" v="183.57"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.47 m-->
+      <tag k="ref" v="S3500"/>
       <tag k="ref:os" v="SX76T047"/>
       <!-- Distance to nearest OSM node 11362290717 is 6429.63 m-->
     </node>
@@ -27155,7 +27203,8 @@
       <tag k="ele:ODN" v="208.583"/>
       <tag k="ele:WGS84" v="261.9"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 0.83 m-->
+      <tag k="ref" v="S5660"/>
       <tag k="ref:os" v="NY11T018"/>
       <!-- Distance to nearest OSM node 443666347 is 2474.96 m-->
     </node>
@@ -27188,7 +27237,8 @@
       <tag k="ele:ODN" v="190.298"/>
       <tag k="ele:WGS84" v="238.34"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.71 m-->
+      <tag k="ref" v="S2502"/>
       <tag k="ref:os" v="ST86T020"/>
       <!-- Distance to nearest OSM node 4363587842 is 10731.51 m-->
     </node>
@@ -27337,7 +27387,8 @@
       <tag k="ele:ODN" v="98.563"/>
       <tag k="ele:WGS84" v="145.5"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.04 m-->
+      <tag k="ref" v="S6838"/>
       <tag k="ref:os" v="TL05T012"/>
       <!-- Distance to nearest OSM node 7498912745 is 12015.69 m-->
     </node>
@@ -27755,7 +27806,8 @@
       <tag k="ele:ODN" v="47.17"/>
       <tag k="ele:WGS84" v="91.92"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.71 m-->
+      <tag k="ref" v="S4063"/>
       <tag k="ref:os" v="TR26T010"/>
       <!-- Distance to nearest OSM node 266182460 is 4298.9 m-->
     </node>
@@ -28105,7 +28157,8 @@
       <tag k="ele:ODN" v="150.181"/>
       <tag k="ele:WGS84" v="204.42"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.16 m-->
+      <tag k="ref" v="S5799"/>
       <tag k="ref:os" v="SN55T015"/>
       <!-- Distance to nearest OSM node 3611692071 is 3491.41 m-->
     </node>
@@ -28404,7 +28457,8 @@
       <tag k="ele:ODN" v="155.05"/>
       <tag k="ele:WGS84" v="203.76"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.25 m-->
+      <tag k="ref" v="S1798"/>
       <tag k="ref:os" v="SK58S016"/>
       <!-- Distance to nearest OSM node 2919632384 is 3456.26 m-->
     </node>
@@ -28689,7 +28743,8 @@
       <tag k="ele:ODN" v="42.854"/>
       <tag k="ele:WGS84" v="88.28"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.06 m-->
+      <tag k="ref" v="S6258"/>
       <tag k="ref:os" v="TQ13T014"/>
       <!-- Distance to nearest OSM node 503349065 is 8599.22 m-->
     </node>
@@ -28940,7 +28995,8 @@
       <tag k="ele:ODN" v="101.885"/>
       <tag k="ele:WGS84" v="151.81"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 7.31 m-->
+      <tag k="ref" v="S6983"/>
       <tag k="ref:os" v="NK03T015"/>
       <!-- Distance to nearest OSM node 1210731707 is 4217.03 m-->
     </node>
@@ -29191,7 +29247,8 @@
       <tag k="ele:ODN" v="19.647"/>
       <tag k="ele:WGS84" v="65.92"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.79 m-->
+      <tag k="ref" v="S8129"/>
       <tag k="ref:os" v="TL49T016"/>
       <!-- Distance to nearest OSM node 312631368 is 10723.22 m-->
     </node>
@@ -30947,7 +31004,8 @@
       <tag k="ele:ODN" v="236.759"/>
       <tag k="ele:WGS84" v="288.59"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 8.46 m-->
+      <tag k="ref" v="3922"/>
       <tag k="ref:os" v="ST11T033"/>
       <!-- Distance to nearest OSM node 1773889622 is 14007.46 m-->
     </node>
@@ -31313,7 +31371,8 @@
       <tag k="ele:ODN" v="44.037"/>
       <tag k="ele:WGS84" v="98.62"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.81 m-->
+      <tag k="ref" v="S7333"/>
       <tag k="ref:os" v="SH57T022"/>
       <!-- Distance to nearest OSM node 8739316285 is 6834.81 m-->
     </node>
@@ -31612,7 +31671,8 @@
       <tag k="ele:ODN" v="36.46"/>
       <tag k="ele:WGS84" v="81.37"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.56 m-->
+      <tag k="ref" v="S4528"/>
       <tag k="ref:os" v="TM23S007"/>
       <!-- Distance to nearest OSM node 1118516172 is 5861.1 m-->
     </node>
@@ -31760,7 +31820,8 @@
       <tag k="ele:ODN" v="85.755"/>
       <tag k="ele:WGS84" v="139.98"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.32 m-->
+      <tag k="ref" v="S6762"/>
       <tag k="ref:os" v="SN02T009"/>
       <!-- Distance to nearest OSM node 1497696154 is 4942.31 m-->
     </node>
@@ -31995,7 +32056,8 @@
       <tag k="ele:ODN" v="69.719"/>
       <tag k="ele:WGS84" v="114.35"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.85 m-->
+      <tag k="ref" v="S5291"/>
       <tag k="ref:os" v="TQ53T025"/>
       <!-- Distance to nearest OSM node 12180682355 is 6670.39 m-->
     </node>
@@ -32459,7 +32521,8 @@
       <tag k="ele:ODN" v="183.16"/>
       <tag k="ele:WGS84" v="239.99"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.8 m-->
+      <tag k="ref" v="S8987"/>
       <tag k="ref:os" v="NG24S054"/>
       <!-- Distance to nearest OSM node 633530740 is 8333.04 m-->
     </node>
@@ -32760,7 +32823,8 @@
       <tag k="ele:ODN" v="4.379"/>
       <tag k="ele:WGS84" v="51.02"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.26 m-->
+      <tag k="ref" v="S8719"/>
       <tag k="ref:os" v="TF22S017"/>
       <!-- Distance to nearest OSM node 3663838100 is 13246.59 m-->
     </node>
@@ -33610,7 +33674,8 @@
       <tag k="ele:ODN" v="142.99"/>
       <tag k="ele:WGS84" v="193.14"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.39 m-->
+      <tag k="ref" v="S6460"/>
       <tag k="ref:os" v="NT86S007"/>
       <!-- Distance to nearest OSM node 2996799173 is 7968.68 m-->
     </node>
@@ -33778,7 +33843,8 @@
       <tag k="ele:ODN" v="106.597"/>
       <tag k="ele:WGS84" v="153.72"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.7 m-->
+      <tag k="ref" v="S6835"/>
       <tag k="ref:os" v="TL05T018"/>
       <!-- Distance to nearest OSM node 13381261825 is 15227.81 m-->
     </node>
@@ -33828,7 +33894,8 @@
       <tag k="ele:ODN" v="171.031"/>
       <tag k="ele:WGS84" v="220.6"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.91 m-->
+      <tag k="ref" v="S1902"/>
       <tag k="ref:os" v="SE44T149"/>
       <!-- Distance to nearest OSM node 7169657109 is 46.39 m-->
     </node>
@@ -34988,7 +35055,8 @@
       <tag k="ele:ODN" v="253.486"/>
       <tag k="ele:WGS84" v="304.48"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.28 m-->
+      <tag k="ref" v="S2788"/>
       <tag k="ref:os" v="SD80T051"/>
       <!-- Distance to nearest OSM node 3690600309 is 2555.81 m-->
     </node>
@@ -35780,7 +35848,8 @@
       <tag k="ele:ODN" v="99.654"/>
       <tag k="ele:WGS84" v="151.27"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.03 m-->
+      <tag k="ref" v="3540"/>
       <tag k="ref:os" v="SX76T008"/>
       <!-- Distance to nearest OSM node 413183677 is 7761.5 m-->
     </node>
@@ -36653,7 +36722,8 @@
       <tag k="ele:ODN" v="68.909"/>
       <tag k="ele:WGS84" v="119.61"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.86 m-->
+      <tag k="ref" v="S6548"/>
       <tag k="ref:os" v="ND25S017"/>
       <!-- Distance to nearest OSM node 12820840244 is 22093.6 m-->
     </node>
@@ -36735,7 +36805,8 @@
       <tag k="ele:ODN" v="212.241"/>
       <tag k="ele:WGS84" v="263.19"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.19 m-->
+      <tag k="ref" v="S4787"/>
       <tag k="ref:os" v="PP391"/>
       <!-- Distance to nearest OSM node 12820840244 is 26795.83 m-->
     </node>
@@ -36887,7 +36958,8 @@
       <tag k="ele:ODN" v="94.405"/>
       <tag k="ele:WGS84" v="143.65"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.98 m-->
+      <tag k="ref" v="S6116"/>
       <tag k="ref:os" v="NK03T002"/>
       <!-- Distance to nearest OSM node 4355665366 is 4572.98 m-->
     </node>
@@ -37021,7 +37093,8 @@
       <tag k="ele:ODN" v="114.473"/>
       <tag k="ele:WGS84" v="164.57"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.1 m-->
+      <tag k="ref" v="S2200"/>
       <tag k="ref:os" v="SK22S017"/>
       <!-- Distance to nearest OSM node 4949333530 is 8311.17 m-->
     </node>
@@ -37239,7 +37312,8 @@
       <tag k="ele:ODN" v="67.735"/>
       <tag k="ele:WGS84" v="112.8"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.71 m-->
+      <tag k="ref" v="S4353"/>
       <tag k="ref:os" v="TM23T028"/>
       <!-- Distance to nearest OSM node 10297991410 is 7801.13 m-->
     </node>
@@ -37606,7 +37680,8 @@
       <tag k="ele:ODN" v="69.079"/>
       <tag k="ele:WGS84" v="118.31"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.17 m-->
+      <tag k="ref" v="S4023"/>
       <tag k="ref:os" v="ST86T024"/>
       <!-- Distance to nearest OSM node 566585491 is 2101.84 m-->
     </node>
@@ -38027,7 +38102,8 @@
       <tag k="ele:ODN" v="7.498"/>
       <tag k="ele:WGS84" v="53.98"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.98 m-->
+      <tag k="ref" v="S6822"/>
       <tag k="ref:os" v="TL08T025"/>
       <!-- Distance to nearest OSM node 5435444415 is 24324.52 m-->
     </node>
@@ -38597,7 +38673,8 @@
       <tag k="ele:ODN" v="353.635"/>
       <tag k="ele:WGS84" v="406.15"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 0.71 m-->
+      <tag k="ref" v="S7581"/>
       <tag k="ref:os" v="NT72T052"/>
       <!-- Distance to nearest OSM node 6945709653 is 7942.59 m-->
     </node>
@@ -38848,7 +38925,8 @@
       <tag k="ele:ODN" v="228.801"/>
       <tag k="ele:WGS84" v="278.79"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.7 m-->
+      <tag k="ref" v="S1800"/>
       <tag k="ref:os" v="SE22S021"/>
       <!-- Distance to nearest OSM node 313246322 is 2015.51 m-->
     </node>
@@ -42124,7 +42202,8 @@
       <tag k="ele:ODN" v="157.892"/>
       <tag k="ele:WGS84" v="203.16"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.61 m-->
+      <tag k="ref" v="3351"/>
       <tag k="ref:os" v="TQ47T233"/>
       <!-- Distance to nearest OSM node 1538769967 is 4067.41 m-->
     </node>
@@ -42339,7 +42418,8 @@
       <tag k="ele:ODN" v="150.266"/>
       <tag k="ele:WGS84" v="200.53"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.66 m-->
+      <tag k="ref" v="S3727"/>
       <tag k="ref:os" v="ST11T046"/>
       <!-- Distance to nearest OSM node 2096689302 is 7580.69 m-->
     </node>
@@ -42569,7 +42649,8 @@
       <tag k="ele:ODN" v="70.884"/>
       <tag k="ele:WGS84" v="116.16"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.2 m-->
+      <tag k="ref" v="S7601"/>
       <tag k="ref:os" v="TF71T009"/>
       <!-- Distance to nearest OSM node 4362361164 is 7521.56 m-->
     </node>
@@ -43202,7 +43283,8 @@
       <tag k="ele:ODN" v="349.319"/>
       <tag k="ele:WGS84" v="402.42"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.6 m-->
+      <tag k="ref" v="S3216"/>
       <tag k="ref:os" v="SJ44T026"/>
       <!-- Distance to nearest OSM node 8738554961 is 5574.2 m-->
     </node>
@@ -43301,7 +43383,8 @@
       <tag k="ele:ODN" v="264.578"/>
       <tag k="ele:WGS84" v="317.89"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.48 m-->
+      <tag k="ref" v="S2000"/>
       <tag k="ref:os" v="SN61S009"/>
       <!-- Distance to nearest OSM node 3101253389 is 6276.31 m-->
     </node>
@@ -43334,7 +43417,8 @@
       <tag k="ele:ODN" v="193.383"/>
       <tag k="ele:WGS84" v="247.32"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.87 m-->
+      <tag k="ref" v="S2390"/>
       <tag k="ref:os" v="SN41T009"/>
       <!-- Distance to nearest OSM node 2337427860 is 8848.29 m-->
     </node>
@@ -43501,7 +43585,8 @@
       <tag k="ele:ODN" v="278.251"/>
       <tag k="ele:WGS84" v="331.99"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.9 m-->
+      <tag k="ref" v="11721"/>
       <tag k="ref:os" v="SN94T075"/>
       <!-- Distance to nearest OSM node 12587692269 is 8750.77 m-->
     </node>
@@ -43651,7 +43736,8 @@
       <tag k="ele:ODN" v="144.61"/>
       <tag k="ele:WGS84" v="192.78"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.5 m-->
+      <tag k="ref" v="2994"/>
       <tag k="ref:os" v="PPP54"/>
       <!-- Distance to nearest OSM node 7948796358 is 7431.56 m-->
     </node>
@@ -44403,7 +44489,8 @@
       <tag k="ele:ODN" v="70.594"/>
       <tag k="ele:WGS84" v="118.63"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.87 m-->
+      <tag k="ref" v="S4683"/>
       <tag k="ref:os" v="SK73T017"/>
       <!-- Distance to nearest OSM node 4299308205 is 6324.15 m-->
     </node>
@@ -44554,7 +44641,8 @@
       <tag k="ele:ODN" v="255.529"/>
       <tag k="ele:WGS84" v="306.46"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.43 m-->
+      <tag k="ref" v="S3720"/>
       <tag k="ref:os" v="ST11T051"/>
       <!-- Distance to nearest OSM node 8951894785 is 8442.66 m-->
     </node>
@@ -45057,7 +45145,8 @@
       <tag k="ele:ODN" v="38.855"/>
       <tag k="ele:WGS84" v="88.04"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.98 m-->
+      <tag k="ref" v="6120"/>
       <tag k="ref:os" v="NK03S012"/>
       <!-- Distance to nearest OSM node 772981280 is 12629.97 m-->
     </node>
@@ -45323,7 +45412,8 @@
       <tag k="ele:ODN" v="85.392"/>
       <tag k="ele:WGS84" v="134.19"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.65 m-->
+      <tag k="ref" v="S4383"/>
       <tag k="ref:os" v="NZ42T039"/>
       <!-- Distance to nearest OSM node 5345652573 is 5117.12 m-->
     </node>
@@ -45735,7 +45825,8 @@
       <tag k="ele:ODN" v="12.694"/>
       <tag k="ele:WGS84" v="57.02"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.11 m-->
+      <tag k="ref" v="S3811"/>
       <tag k="ref:os" v="TG41T034"/>
       <!-- Distance to nearest OSM node 2668210791 is 28461.07 m-->
     </node>
@@ -46172,7 +46263,8 @@
       <tag k="ele:ODN" v="177.652"/>
       <tag k="ele:WGS84" v="229.85"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.77 m-->
+      <tag k="ref" v="S7023"/>
       <tag k="ref:os" v="NY45T045"/>
       <!-- Distance to nearest OSM node 433601111 is 6889.26 m-->
     </node>
@@ -46337,7 +46429,8 @@
       <tag k="ele:ODN" v="665.253"/>
       <tag k="ele:WGS84" v="718.99"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.57 m-->
+      <tag k="ref" v="S6089"/>
       <tag k="ref:os" v="NO02S015"/>
       <!-- Distance to nearest OSM node 609674035 is 12618.11 m-->
     </node>
@@ -48403,7 +48496,8 @@
       <tag k="ele:ODN" v="218.148"/>
       <tag k="ele:WGS84" v="270.5"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.83 m-->
+      <tag k="ref" v="S4800"/>
       <tag k="ref:os" v="SN80T060"/>
       <!-- Distance to nearest OSM node 13189241687 is 7608.1 m-->
     </node>
@@ -49367,7 +49461,8 @@
       <tag k="ele:ODN" v="308.558"/>
       <tag k="ele:WGS84" v="360.14"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.38 m-->
+      <tag k="ref" v="S4424"/>
       <tag k="ref:os" v="SE02T032"/>
       <!-- Distance to nearest OSM node 10236338134 is 3903.57 m-->
     </node>
@@ -49532,7 +49627,8 @@
       <tag k="ele:ODN" v="171.638"/>
       <tag k="ele:WGS84" v="225.8"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.08 m-->
+      <tag k="ref" v="S3589"/>
       <tag k="ref:os" v="NS77T096"/>
       <!-- Distance to nearest OSM node 8676794175 is 3871.15 m-->
     </node>
@@ -50660,7 +50756,8 @@
       <tag k="ele:ODN" v="530.662"/>
       <tag k="ele:WGS84" v="583.07"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.34 m-->
+      <tag k="ref" v="S2343"/>
       <tag k="ref:os" v="ST07T012"/>
       <!-- Distance to nearest OSM node 13189241688 is 1115.38 m-->
     </node>
@@ -51094,7 +51191,8 @@
       <tag k="ele:ODN" v="119.908"/>
       <tag k="ele:WGS84" v="170.71"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.7 m-->
+      <tag k="ref" v="S7273"/>
       <tag k="ref:os" v="SO52T049"/>
       <!-- Distance to nearest OSM node 538839570 is 4109.41 m-->
     </node>
@@ -51498,7 +51596,8 @@
       <tag k="ele:ODN" v="223.896"/>
       <tag k="ele:WGS84" v="271.52"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.88 m-->
+      <tag k="ref" v="S4273"/>
       <tag k="ref:os" v="NZ42T082"/>
       <!-- Distance to nearest OSM node 11241757404 is 5914.27 m-->
     </node>
@@ -51684,7 +51783,8 @@
       <tag k="ele:ODN" v="112.334"/>
       <tag k="ele:WGS84" v="163.96"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.25 m-->
+      <tag k="ref" v="S4754"/>
       <tag k="ref:os" v="SJ44T042"/>
       <!-- Distance to nearest OSM node 1338056661 is 7124.21 m-->
     </node>
@@ -52202,7 +52302,8 @@
       <tag k="ele:ODN" v="139.985"/>
       <tag k="ele:WGS84" v="188.34"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.13 m-->
+      <tag k="ref" v="S4975"/>
       <tag k="ref:os" v="NZ42T129"/>
       <!-- Distance to nearest OSM node 2441423104 is 3420.99 m-->
     </node>
@@ -53473,7 +53574,8 @@
       <tag k="ele:ODN" v="77.437"/>
       <tag k="ele:WGS84" v="122.71"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.61 m-->
+      <tag k="ref" v="S4012"/>
       <tag k="ref:os" v="TQ00T060"/>
       <!-- Distance to nearest OSM node 303787217 is 4484.92 m-->
     </node>
@@ -53624,7 +53726,8 @@
       <tag k="ele:ODN" v="374.081"/>
       <tag k="ele:WGS84" v="424.67"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.06 m-->
+      <tag k="ref" v="S4145"/>
       <tag k="ref:os" v="SK26T021"/>
       <!-- Distance to nearest OSM node 7796690296 is 3912.44 m-->
     </node>
@@ -53724,7 +53827,8 @@
       <tag k="ele:ODN" v="74.636"/>
       <tag k="ele:WGS84" v="126.19"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.63 m-->
+      <tag k="ref" v="S4823"/>
       <tag k="ref:os" v="NO42T029"/>
       <!-- Distance to nearest OSM node 6208634695 is 5347.66 m-->
     </node>
@@ -54057,7 +54161,8 @@
       <tag k="ele:ODN" v="229.349"/>
       <tag k="ele:WGS84" v="282.07"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 8.88 m-->
+      <tag k="ref" v="S4330"/>
       <tag k="ref:os" v="SN80T024"/>
       <!-- Distance to nearest OSM node 272330545 is 7178.2 m-->
     </node>
@@ -54240,7 +54345,8 @@
       <tag k="ele:ODN" v="241.429"/>
       <tag k="ele:WGS84" v="295.73"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.69 m-->
+      <tag k="ref" v="S5809"/>
       <tag k="ref:os" v="SN55T039"/>
       <!-- Distance to nearest OSM node 7058853836 is 4853.48 m-->
     </node>
@@ -54354,7 +54460,8 @@
       <tag k="ele:ODN" v="197.266"/>
       <tag k="ele:WGS84" v="244.86"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.89 m-->
+      <tag k="ref" v="2601"/>
       <tag k="ref:os" v="SU31T112"/>
       <!-- Distance to nearest OSM node 4220506037 is 16.17 m-->
     </node>
@@ -54420,7 +54527,8 @@
       <tag k="ele:ODN" v="144.95"/>
       <tag k="ele:WGS84" v="199.27"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.56 m-->
+      <tag k="ref" v="S5792"/>
       <tag k="ref:os" v="SN55T041"/>
       <!-- Distance to nearest OSM node 9573497868 is 6517.37 m-->
     </node>
@@ -54436,7 +54544,8 @@
       <tag k="ele:ODN" v="196.964"/>
       <tag k="ele:WGS84" v="251.27"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.68 m-->
+      <tag k="ref" v="5796"/>
       <tag k="ref:os" v="SN55S024"/>
       <!-- Distance to nearest OSM node 12572430186 is 6422.48 m-->
     </node>
@@ -54518,7 +54627,8 @@
       <tag k="ele:ODN" v="165.104"/>
       <tag k="ele:WGS84" v="219.39"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.97 m-->
+      <tag k="ref" v="S6383"/>
       <tag k="ref:os" v="SN02T031"/>
       <!-- Distance to nearest OSM node 9573497868 is 9402.63 m-->
     </node>
@@ -54534,7 +54644,8 @@
       <tag k="ele:ODN" v="367.93"/>
       <tag k="ele:WGS84" v="420.72"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.66 m-->
+      <tag k="ref" v="S2035"/>
       <tag k="ref:os" v="SN80T070"/>
       <!-- Distance to nearest OSM node 272782837 is 172.89 m-->
     </node>
@@ -55284,7 +55395,8 @@
       <tag k="ele:ODN" v="77.608"/>
       <tag k="ele:WGS84" v="122.9"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 0.37 m-->
+      <tag k="ref" v="S1850"/>
       <tag k="ref:os" v="TQ47T401"/>
       <!-- Distance to nearest OSM node 27001242 is 4894.34 m-->
     </node>
@@ -55334,7 +55446,8 @@
       <tag k="ele:ODN" v="259.595"/>
       <tag k="ele:WGS84" v="313.69"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.04 m-->
+      <tag k="ref" v="5866"/>
       <tag k="ref:os" v="SN55T045"/>
       <!-- Distance to nearest OSM node 7498245631 is 12892.9 m-->
     </node>
@@ -55350,7 +55463,8 @@
       <tag k="ele:ODN" v="119.886"/>
       <tag k="ele:WGS84" v="165.04"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.53 m-->
+      <tag k="ref" v="S5191"/>
       <tag k="ref:os" v="TQ53S014"/>
       <!-- Distance to nearest OSM node 1760471366 is 11326.32 m-->
     </node>
@@ -55890,7 +56004,8 @@
       <tag k="ele:ODN" v="51.538"/>
       <tag k="ele:WGS84" v="96.87"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.48 m-->
+      <tag k="ref" v="S3846"/>
       <tag k="ref:os" v="TL81T023"/>
       <!-- Distance to nearest OSM node 7798774634 is 2501.25 m-->
     </node>
@@ -56244,7 +56359,8 @@
       <tag k="ele:ODN" v="125.608"/>
       <tag k="ele:WGS84" v="173.59"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.43 m-->
+      <tag k="ref" v="S6234"/>
       <tag k="ref:os" v="SU19T022"/>
       <!-- Distance to nearest OSM node 530774702 is 9034.72 m-->
     </node>
@@ -56694,7 +56810,8 @@
       <tag k="ele:ODN" v="123.879"/>
       <tag k="ele:WGS84" v="169.98"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.16 m-->
+      <tag k="ref" v="S2626"/>
       <tag k="ref:os" v="TA30T010"/>
       <!-- Distance to nearest OSM node 2654179907 is 15308.34 m-->
     </node>
@@ -56727,7 +56844,8 @@
       <tag k="ele:ODN" v="61.353"/>
       <tag k="ele:WGS84" v="106.74"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.61 m-->
+      <tag k="ref" v="S3869"/>
       <tag k="ref:os" v="TL81T016"/>
       <!-- Distance to nearest OSM node 7798774634 is 5229.23 m-->
     </node>
@@ -57080,7 +57198,8 @@
       <tag k="ele:ODN" v="0.819"/>
       <tag k="ele:WGS84" v="46.52"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.52 m-->
+      <tag k="ref" v="S7534"/>
       <tag k="ref:os" v="TL78T017"/>
       <!-- Distance to nearest OSM node 4381186691 is 8658.34 m-->
     </node>
@@ -57215,7 +57334,8 @@
       <tag k="ele:ODN" v="111.504"/>
       <tag k="ele:WGS84" v="163.62"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.76 m-->
+      <tag k="ref" v="S3393"/>
       <tag k="ref:os" v="SX76T042"/>
       <!-- Distance to nearest OSM node 3018433642 is 5255.31 m-->
     </node>
@@ -57280,7 +57400,8 @@
       <tag k="ele:ODN" v="354.561"/>
       <tag k="ele:WGS84" v="407.95"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.32 m-->
+      <tag k="ref" v="2498"/>
       <tag k="ref:os" v="SN94S044"/>
       <!-- Distance to nearest OSM node 9671772267 is 5655.16 m-->
     </node>
@@ -58183,7 +58304,8 @@
       <tag k="ele:ODN" v="140.595"/>
       <tag k="ele:WGS84" v="193.37"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.13 m-->
+      <tag k="ref" v="S6947"/>
       <tag k="ref:os" v="NY45T059"/>
       <!-- Distance to nearest OSM node 8125057079 is 7818.48 m-->
     </node>
@@ -59742,7 +59864,8 @@
       <tag k="ele:ODN" v="20.652"/>
       <tag k="ele:WGS84" v="68.78"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.54 m-->
+      <tag k="ref" v="S6159"/>
       <tag k="ref:os" v="SK73T095"/>
       <!-- Distance to nearest OSM node 4299308205 is 2764.72 m-->
     </node>
@@ -63406,7 +63529,8 @@
       <tag k="ele:ODN" v="47.734"/>
       <tag k="ele:WGS84" v="95.74"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 6.64 m-->
+      <tag k="ref" v="S6039"/>
       <tag k="ref:os" v="ST70T060"/>
       <!-- Distance to nearest OSM node 3382531060 is 4612.32 m-->
     </node>
@@ -63472,7 +63596,8 @@
       <tag k="ele:ODN" v="105.107"/>
       <tag k="ele:WGS84" v="154.88"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 14.43 m-->
+      <tag k="ref" v="S5469"/>
       <tag k="ref:os" v="NO89T056"/>
       <!-- Distance to nearest OSM node 7533372084 is 2327.41 m-->
     </node>
@@ -64908,7 +65033,8 @@
       <tag k="ele:ODN" v="179.767"/>
       <tag k="ele:WGS84" v="230.68"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 2.67 m-->
+      <tag k="ref" v="S7089"/>
       <tag k="ref:os" v="NJ45T041"/>
       <!-- Distance to nearest OSM node 4253020632 is 20058.57 m-->
     </node>
@@ -65910,7 +66036,8 @@
       <tag k="ele:ODN" v="93.537"/>
       <tag k="ele:WGS84" v="147.34"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.55 m-->
+      <tag k="ref" v="S6305"/>
       <tag k="ref:os" v="SN02T042"/>
       <!-- Distance to nearest OSM node 4499356929 is 2582.74 m-->
     </node>
@@ -66024,7 +66151,8 @@
       <tag k="ele:ODN" v="67.162"/>
       <tag k="ele:WGS84" v="118.83"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.42 m-->
+      <tag k="ref" v="S7132"/>
       <tag k="ref:os" v="NO46T014"/>
       <!-- Distance to nearest OSM node 2949194187 is 11615.4 m-->
     </node>
@@ -66089,7 +66217,8 @@
       <tag k="ele:ODN" v="146.657"/>
       <tag k="ele:WGS84" v="196.35"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 7.8 m-->
+      <tag k="ref" v="S7587"/>
       <tag k="ref:os" v="SE38T089"/>
       <!-- Distance to nearest OSM node 2471866778 is 7402.67 m-->
     </node>
@@ -66507,7 +66636,8 @@
       <tag k="ele:ODN" v="100.428"/>
       <tag k="ele:WGS84" v="148.47"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.38 m-->
+      <tag k="ref" v="S4625"/>
       <tag k="ref:os" v="SK73T027"/>
       <!-- Distance to nearest OSM node 7948796358 is 7654.59 m-->
     </node>
@@ -66707,7 +66837,8 @@
       <tag k="ele:ODN" v="150.903"/>
       <tag k="ele:WGS84" v="200.3"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.11 m-->
+      <tag k="ref" v="3576"/>
       <tag k="ref:os" v="NZ29S025"/>
       <!-- Distance to nearest OSM node 6258671792 is 8239.96 m-->
     </node>
@@ -66956,7 +67087,8 @@
       <tag k="ele:ODN" v="206.252"/>
       <tag k="ele:WGS84" v="255.49"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.33 m-->
+      <tag k="ref" v="S3218"/>
       <tag k="ref:os" v="ST86S014"/>
       <!-- Distance to nearest OSM node 10202271276 is 7091.35 m-->
     </node>
@@ -67253,7 +67385,8 @@
       <tag k="ele:ODN" v="125.12"/>
       <tag k="ele:WGS84" v="180.12"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.29 m-->
+      <tag k="ref" v="S8189"/>
       <tag k="ref:os" v="NX29S018"/>
       <!-- Distance to nearest OSM node 9413956204 is 24401.98 m-->
     </node>
@@ -67850,7 +67983,8 @@
       <tag k="ele:ODN" v="186.65"/>
       <tag k="ele:WGS84" v="240.94"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.56 m-->
+      <tag k="ref" v="S5797"/>
       <tag k="ref:os" v="SN55T048"/>
       <!-- Distance to nearest OSM node 12572430186 is 7012.04 m-->
     </node>
@@ -68268,7 +68402,8 @@
       <tag k="ele:ODN" v="416.762"/>
       <tag k="ele:WGS84" v="468.89"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.65 m-->
+      <tag k="ref" v="2323"/>
       <tag k="ref:os" v="ST07S031"/>
       <!-- Distance to nearest OSM node 9471427840 is 5064.83 m-->
     </node>
@@ -68402,7 +68537,8 @@
       <tag k="ele:ODN" v="160.861"/>
       <tag k="ele:WGS84" v="215.17"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.71 m-->
+      <tag k="ref" v="S6342"/>
       <tag k="ref:os" v="SN02T045"/>
       <!-- Distance to nearest OSM node 1497696135 is 3202.18 m-->
     </node>
@@ -68936,7 +69072,8 @@
       <tag k="ele:ODN" v="67.878"/>
       <tag k="ele:WGS84" v="118.07"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.98 m-->
+      <tag k="ref" v="S7137"/>
       <tag k="ref:os" v="SO52T062"/>
       <!-- Distance to nearest OSM node 2164459111 is 4065.78 m-->
     </node>
@@ -71538,7 +71675,8 @@
       <tag k="ele:ODN" v="282.784"/>
       <tag k="ele:WGS84" v="337.34"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.14 m-->
+      <tag k="ref" v="S4335"/>
       <tag k="ref:os" v="NS44S022"/>
       <!-- Distance to nearest OSM node 12990196575 is 7984.13 m-->
     </node>
@@ -71669,7 +71807,8 @@
       <tag k="ele:ODN" v="173.677"/>
       <tag k="ele:WGS84" v="223.42"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 4.69 m-->
+      <tag k="ref" v="S4072"/>
       <tag k="ref:os" v="SE22T033"/>
       <!-- Distance to nearest OSM node 7494700796 is 3877.79 m-->
     </node>
@@ -72191,7 +72330,8 @@
       <tag k="ele:ODN" v="139.659"/>
       <tag k="ele:WGS84" v="188.58"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 3.83 m-->
+      <tag k="ref" v="S5720"/>
       <tag k="ref:os" v="ST53T040"/>
       <!-- Distance to nearest OSM node 10903510937 is 15699 m-->
     </node>
@@ -73180,7 +73320,8 @@
       <tag k="ele:ODN" v="107.064"/>
       <tag k="ele:WGS84" v="156.07"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 1.6 m-->
+      <tag k="ref" v="S4314"/>
       <tag k="ref:os" v="SP38T025"/>
       <!-- Distance to nearest OSM node 10082411026 is 5529.08 m-->
     </node>

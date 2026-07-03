@@ -59,6 +59,10 @@ use_new_filter_logic = 1
 # If we set this before we've imported, 60 out of 66 good nodes fail
 check_pillar = 0	#Check if structure=='pillar', and fail if not
 
+# Debug only - search for 'missing' FBs. In particular, look for all the OS nodes we have with
+# NA FBs, and see if they have a valid OSM ref that might indicate the FB we are missing
+look_for_missing_fbs = 0
+
 max_snap_distance = set_units(15, "m")	#How near a neighbour will we consider to be 'the same'
 min_snap_distance = set_units(1	,"m")   #At what distance do we not bother to 'snap' co-ordinates?
 osb_max_distance = set_units(15, "m")   #And test for OSB neighbour matching
@@ -122,15 +126,35 @@ osm_good_types = c(
 clean_osb_desc <- function(s) {
 	os <- s
 
+	############# WARNING ########################
+	# By their very nature, some of these things are order dependant, and it is not always
+	# easy or obvious to see why or how. Be careful adding things...
+
 	## Strip out things we don't want
 	s <- gsub(" tp", " ", s)
 	s <- gsub("tp ", " ", s)
+	s <- gsub(" t p( |$)", " ", s)
+	s <- gsub("( |^)t p ", " ", s)
 	s <- gsub("fl br ", " ", s)
+	s <- gsub("fl bkt( |$)", " ", s)
+	s <- gsub("(^| )flbr ", " ", s)
+	s <- gsub("(^| )br ", " ", s)
+	s <- gsub("( +|^)fb ", " ", s)
 	s <- gsub(" nbm ", " ", s)
 	s <- gsub("^nbm ", " ", s)
 	s <- gsub(" no s[0-9]{3,5}", " ", s)
+	s <- gsub(" no[0-9]{3,5}", " ", s)
 	s <- gsub(" s[0-9]{3,5}", " ", s)
 	s <- gsub("^s[0-9]{3,5}", " ", s)
+
+	# Sigh, it's easy to run into an issue here whereby earlier delete/subs have left multiple
+	# spaces at the front of a string, and we then struggle to match for instance:
+	#  'no '
+	#  ' no '
+	#  '  no '
+
+	s <- gsub("^ *on ", "", s)
+	s <- gsub("^ *no ", "", s)
 
 	# Note - some of the ordering here matters, such as we get things like ' sw face$',
 	# so we need to be careful about matching the spaces. It might make sense when we match
@@ -147,18 +171,41 @@ clean_osb_desc <- function(s) {
 	s <- gsub(" sw ", " ", s)
 	s <- gsub(" se ", " ", s)
 
-	s <- gsub(" face", "", s)
+	s <- gsub(" face", " ", s)
+	s <- gsub(" side road( |$)", " ", s)
+	s <- gsub(" side tk( |$)", " ", s)
+	s <- gsub(" fence( |$)", " ", s)
+	s <- gsub(" hedge( |$)", " ", s)
+	s <- gsub(" junc( |$)", " ", s)
+	s <- gsub(" side( |$)", " ", s)
 
 	# And we should not have any series of numbers should we? ... anywhere
 	s <- gsub("[0-9]{1,6}", " ", s)
+	# but that transforms things like '8.8 m' into '. m' ... so now drop those!
+	  # first, a pretty specific one - there are 3 of these in the data
+	s <- gsub("\\(gps heighted +\\. +m\\)", " ", s)
+	s <- gsub("\\(gps height +\\. +m\\)", " ", s)
+	s <- gsub(" +\\. +m ", " ", s)
+	s <- gsub(" m ", " ", s)
+
+	# And some more rather specific ones!
+	s <- gsub(" forty foot drain", " ", s)
+	s <- gsub(" \\(height suspect trig adjustment \\)", " ", s)
 
 	## Now some translations of what is left
 	## First, stick a space on the end of the string... to simplify the number of scans
 	s <- gsub("$", " ", s)
 	s <- gsub(" rd ", " road ", s)
+	s <- gsub(" ft ", " fort ", s)
 	s <- gsub(" fm ", " farm ", s)
+	s <- gsub(" br ", " bridge ", s)
+	s <- gsub(" ho( |$)", " house ", s)
+	# Frustratingly, this also turns 'st' (as in saint) to street, and causes at least one fail.
+	s <- gsub(" st( |$)", " street ", s)
+	s <- gsub(" hts", " height ", s)
 	s <- gsub(" mtn", " mountain ", s)
 	s <- gsub(" resr", " reservoir", s)
+	s <- gsub(" res( |$)", " reservoir", s)
 
 	# And handle the remaining spaces
 	s <- gsub(" +", " ", s)		## drop multiple spaces
@@ -198,10 +245,14 @@ clean_os_desc <- function(s) {
 
 #Fuzzy string matching - try and work out if we think string 'm' might contain (a corrupted
 # form of) string 's'
-fuzzywuzzy <- function(s, m) {
+fuzzywuzzy <- function(s, m, debug) {
 	# Looking at the failed matches, 0.18 is definitely too high - it matches things that should fail
 	# 1.7 might be a touch optimistic, but is looking pretty good...
-	jw_cutoff = 0.1
+	#jw_cutoff = 0.1
+	# But, now staring at the data as it stands, 0.24-ish covers most of the 'should be a match'
+	# things, and cuts out all the 'should be a fail' things. But, of course, this boundary is...
+	# *** FUZZY ***
+	jw_cutoff = 0.24
 
 	jw = stringdist(s, m, method=c("jw"))
 
@@ -213,7 +264,9 @@ fuzzywuzzy <- function(s, m) {
 		#message(" jw score: [", s, "] [", m, "] ", jw, " PASS")
 		return(TRUE)
 	} else {
-		#message(" jw score: [", s, "] [", m, "] ", jw, " FAIL")
+		if( debug ) {
+			message("   fuzzy fail: jw score: [", s, "] [", m, "] ", jw, " FAIL")
+		}
 		return(FALSE)
 	}
 }
@@ -899,6 +952,7 @@ lines <- st_set_crs(lines, 4937)
 os_total_points = nrow(os_sf)
 osm_total_points = nrow(osm_sf)
 
+
 ####################################################################################################### 
 ############################## Try to match OS trigpoints to OS benchmark flush bracket data ##########
 ####################################################################################################### 
@@ -911,6 +965,8 @@ os_sf$FB = NA
 
 fuzzymatches_osb = 0
 fuzzymatches_osm = 0
+
+fuzzy_mismatches = 0
 
 for(i in 1:nrow(os_sf)) {
 	r <- os_sf[i,]
@@ -929,9 +985,13 @@ for(i in 1:nrow(os_sf)) {
 				s = clean_osb_desc(tolower(s))
 				x = clean_os_desc(tolower(x))
 				#message(" try fuzzywuzzy OSB on [", x, "] [", s, "]")
-				if( fuzzywuzzy(x, s) == TRUE ) {
+				if( fuzzywuzzy(x, s, look_for_missing_fbs) == TRUE ) {
 					os_sf[i,]$osb_name_match = TRUE
 					fuzzymatches_osb <- fuzzymatches_osb + 1
+				} else {
+					if( look_for_missing_fbs ) {
+						message("  failed fuzzywuzzy OSB on [", x, "] [", s, "]")
+					}
 				}
 			}
 		}
@@ -944,6 +1004,17 @@ for(i in 1:nrow(os_sf)) {
 			if( identical(tolower(osm_r$ref), tolower(os_sf[i,]$FB)) ) {
 				os_sf[i,]$osb_fb_match = TRUE
 			}
+		} else {
+			# Otherwise - if we are searching for missing FBs, and we found one that
+			# was near but failed a name check - print that out in case the name check
+			# failed for some fuzzy reason we can fix!
+			if( look_for_missing_fbs ) {
+				if( r$osb_distance <= osb_max_distance ) {
+					message(">>> FB failed name check: OS [", r$Trig.Name, "] vs [",
+						osb_r$DESCRIPTION, "]")
+					fuzzy_mismatches = fuzzy_mismatches + 1
+				}
+			}
 		}
 
 		# Check if the OS name matches the OSM name
@@ -954,7 +1025,7 @@ for(i in 1:nrow(os_sf)) {
 			} else {
 				x = clean_os_desc(tolower(x))
 				#message(" try fuzzywuzzy OSM on [", x, "] [", s, "]")
-				if( fuzzywuzzy(x, s) == TRUE ) {
+				if( fuzzywuzzy(x, s, FALSE) == TRUE ) {
 					os_sf[i,]$osm_name_match = TRUE
 					fuzzymatches_osm <- fuzzymatches_osm + 1
 				}
@@ -963,11 +1034,46 @@ for(i in 1:nrow(os_sf)) {
 	}
 }
 
+if( look_for_missing_fbs ) {
+	message(">>> Got ", fuzzy_mismatches, " fuzzy FB name mismatches")
+}
+
 message("matching OSM names: ", nrow(filter(os_sf, osm_name_match==TRUE)) )
 message("matching OSB names: ", nrow(filter(os_sf, osb_name_match==TRUE)) )
 message("matching OSB FBs: ", nrow(filter(os_sf, osb_fb_match==TRUE)) )
 message(" got ", fuzzymatches_osb, " extra OSB matches due to fuzzing")
 message(" got ", fuzzymatches_osm, " extra OSM matches due to fuzzing")
+
+####################################################################################################### 
+############################## Search for potentially missing FB numbers ##############################
+####################################################################################################### 
+if( look_for_missing_fbs ) {
+	missing_FBs = 0
+
+	message(">>> Searching for missing FBs")
+
+	for(i in 1:nrow(os_sf)) {
+		os_r <- os_sf[i,]
+		osm_r <- osm_sf[os_r$nearest_osm_id,]
+		osb_r <- os_b_sf[os_r$nearest_osb_id,]
+
+		if( is.na(os_r$FB) ) {
+			if( !is.na(osm_r$ref) ) {
+				if( os_r$osb_distance <= osb_max_distance ) {
+					message("  TP ", os_r$Trig.Name, " missing FB [", osm_r$ref, "]")
+					missing_FBs = missing_FBs + 1
+				}
+			}
+		}
+	}
+
+	message(">>> Found ", missing_FBs, " potential missing FBs")
+
+	# And, our work is done, so quit now rather than doing lots more processing we don't
+	# need...
+	stop("Quitting, as FB search done")
+
+}
 
 ####################################################################################################### 
 ############################################# And generate some plots #################################

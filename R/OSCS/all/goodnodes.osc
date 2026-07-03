@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-07-02-->
-  <!--315 nodes to process-->
+  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-07-03-->
+  <!--307 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
     <node id="11697850761" changeset="1" version="1" lat="53.1321761" lon="-1.7398482">
@@ -659,7 +659,7 @@
       <!--Name: OSM: Broadhalfpenny Down OS: Broadhalfpenny Down-->
       <!--Ele: OSM: 152 OS: 152.561-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
-      <!--FB: OSM: S2645 OS: NA-->
+      <!--FB: OSM: S2645 OS: S2645-->
       <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
       <!--tag ele:EGM96 = 152.24-->
@@ -1336,24 +1336,6 @@
     </node>
   </create>
   <create>
-    <node id="9461313616" changeset="1" version="1" lat="50.8606749" lon="-4.4922541">
-      <!--Lat: OSM: 50.8606749 OS 50.8606749-->
-      <!--Lon: OSM: -4.4922541 OS -4.4922543-->
-      <!--Separation distance: 0.02 m-->
-      <!--Name: OSM: Collaton Farm OS: Collaton Farm-->
-      <!--Ele: OSM: 182.175 OS: 182.175-->
-      <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: SS30/9 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 182.14-->
-      <!--tag ele:ODN = 182.175-->
-      <!--tag ele:WGS84 = 235.6-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30S009-->
-    </node>
-  </create>
-  <create>
     <node id="8423667383" changeset="1" version="1" lat="54.4897813" lon="-2.1207838">
       <!--Lat: OSM: 54.4897813 OS 54.4897826-->
       <!--Lon: OSM: -2.1207838 OS -2.1207736-->
@@ -1433,7 +1415,7 @@
       <!--Name: OSM: Craig Fawr OS: Craig Fawr-->
       <!--Ele: OSM: 152.933 OS: 152.933-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: S3535 OS: NA-->
+      <!--FB: OSM: S3535 OS: S3535-->
       <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
       <!--tag ele:EGM96 = 152.91-->
@@ -1775,7 +1757,7 @@
       <!--Name: OSM: Dudhill Farm OS: Dudhill Farm-->
       <!--Ele: OSM: 220.278 OS: 220.278-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: S3835 OS: NA-->
+      <!--FB: OSM: S3835 OS: S3835-->
       <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
       <!--tag ele:EGM96 = 220.21-->
@@ -1927,24 +1909,6 @@
       <!--tag ele:WGS84 = 591.81-->
       <!--NOTE: probably need to add new ref:os tag:-->
       <!--tag ref:os = SD80T038-->
-    </node>
-  </create>
-  <create>
-    <node id="7554871194" changeset="1" version="1" lat="54.8056516" lon="-1.6208284">
-      <!--Lat: OSM: 54.8056516 OS 54.8056583-->
-      <!--Lon: OSM: -1.6208284 OS -1.6208282-->
-      <!--Separation distance: 0.75 m-->
-      <!--Name: OSM: Findon Cottages OS: Findon Cottages-->
-      <!--Ele: OSM: 153.3 OS: 153.286-->
-      <!--Type: OSM: NA / NA OS: PILLAR-->
-      <!--FB: OSM: OS BM S4176 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 152.79-->
-      <!--tag ele:ODN = 153.286-->
-      <!--tag ele:WGS84 = 202.77-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42T026-->
     </node>
   </create>
   <create>
@@ -2974,24 +2938,6 @@
     </node>
   </create>
   <create>
-    <node id="8075829252" changeset="1" version="1" lat="54.7663209" lon="-2.1302815">
-      <!--Lat: OSM: 54.7663209 OS 54.7663202-->
-      <!--Lon: OSM: -2.1302815 OS -2.1302704-->
-      <!--Separation distance: 0.72 m-->
-      <!--Name: OSM: Lintzgarth Common OS: Lintzgarth Common-->
-      <!--Ele: OSM: 554.5 OS: 554.47-->
-      <!--Type: OSM: NA / NA OS: PILLAR-->
-      <!--FB: OSM: NY86S011 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 554.11-->
-      <!--tag ele:ODN = 554.47-->
-      <!--tag ele:WGS84 = 605.56-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86S011-->
-    </node>
-  </create>
-  <create>
     <node id="8125057090" changeset="1" version="1" lat="54.608021" lon="-2.894467">
       <!--Lat: OSM: 54.608021 OS 54.6080211-->
       <!--Lon: OSM: -2.894467 OS -2.8944671-->
@@ -3640,24 +3586,6 @@
     </node>
   </create>
   <create>
-    <node id="9461313606" changeset="1" version="1" lat="50.374891" lon="-4.3530546">
-      <!--Lat: OSM: 50.374891 OS 50.3748909-->
-      <!--Lon: OSM: -4.3530546 OS -4.3530548-->
-      <!--Separation distance: 0.02 m-->
-      <!--Name: OSM: Narkurs Resr OS: Narkurs Resr-->
-      <!--Ele: OSM: 151.491 OS: 151.491-->
-      <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: SX76/T82 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 151.17-->
-      <!--tag ele:ODN = 151.491-->
-      <!--tag ele:WGS84 = 203.93-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX76T082-->
-    </node>
-  </create>
-  <create>
     <node id="8423720717" changeset="1" version="1" lat="54.4620644" lon="-1.9130293">
       <!--Lat: OSM: 54.4620644 OS 54.4620646-->
       <!--Lon: OSM: -1.9130293 OS -1.9130183-->
@@ -4007,7 +3935,7 @@
       <!--Name: OSM: Pen-Y-Ffrith OS: Pen-Y-Ffrith-->
       <!--Ele: OSM: 395.938 OS: 395.938-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: S3114 OS: NA-->
+      <!--FB: OSM: S3114 OS: S3114-->
       <!--NOTE: probably need to change existing ele tag to EGM96-->
       <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
       <!--tag ele:EGM96 = 396.09-->
@@ -4375,24 +4303,6 @@
       <!--tag ele:WGS84 = 167.04-->
       <!--NOTE: probably need to add new ref:os tag:-->
       <!--tag ref:os = SW63T009-->
-    </node>
-  </create>
-  <create>
-    <node id="8066927602" changeset="1" version="1" lat="54.847135" lon="-2.0146072">
-      <!--Lat: OSM: 54.847135 OS 54.8471328-->
-      <!--Lon: OSM: -2.0146072 OS -2.0145882-->
-      <!--Separation distance: 1.24 m-->
-      <!--Name: OSM: Roughside Moor OS: Roughside Moor-->
-      <!--Ele: OSM: 384.0 OS: 383.95-->
-      <!--Type: OSM: NA / NA OS: PILLAR-->
-      <!--FB: OSM: NY86T044 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 383.49-->
-      <!--tag ele:ODN = 383.95-->
-      <!--tag ele:WGS84 = 434.58-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86T044-->
     </node>
   </create>
   <create>
@@ -4990,24 +4900,6 @@
     </node>
   </create>
   <create>
-    <node id="9461313617" changeset="1" version="1" lat="50.9242178" lon="-4.2604066">
-      <!--Lat: OSM: 50.9242178 OS 50.9242178-->
-      <!--Lon: OSM: -4.2604066 OS -4.2604068-->
-      <!--Separation distance: 0.01 m-->
-      <!--Name: OSM: Thornehill Head OS: Thornehill Head-->
-      <!--Ele: OSM: 195.699 OS: 195.699-->
-      <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: SS30/T40 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 195.69-->
-      <!--tag ele:ODN = 195.699-->
-      <!--tag ele:WGS84 = 248.95-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30T040-->
-    </node>
-  </create>
-  <create>
     <node id="13078172037" changeset="1" version="1" lat="52.2052541" lon="-1.9207164">
       <!--Lat: OSM: 52.2052541 OS 52.2052518-->
       <!--Lon: OSM: -1.9207164 OS -1.9207214-->
@@ -5113,24 +5005,6 @@
       <!--tag ele:WGS84 = 300.82-->
       <!--NOTE: probably need to add new ref:os tag:-->
       <!--tag ref:os = PP178-->
-    </node>
-  </create>
-  <create>
-    <node id="9461313584" changeset="1" version="1" lat="50.666381" lon="-4.6231345">
-      <!--Lat: OSM: 50.666381 OS 50.6663809-->
-      <!--Lon: OSM: -4.6231345 OS -4.6231347-->
-      <!--Separation distance: 0.02 m-->
-      <!--Name: OSM: Trewannion Down OS: Trewannion Down-->
-      <!--Ele: OSM: 307.829 OS: 307.829-->
-      <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: SS30/T44 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 307.6-->
-      <!--tag ele:ODN = 307.829-->
-      <!--tag ele:WGS84 = 360.99-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30T044-->
     </node>
   </create>
   <create>
@@ -5419,24 +5293,6 @@
       <!--tag ele:WGS84 = 125.48-->
       <!--NOTE: probably need to add new ref:os tag:-->
       <!--tag ref:os = NT86T031-->
-    </node>
-  </create>
-  <create>
-    <node id="9461313609" changeset="1" version="1" lat="50.9213971" lon="-4.3816348">
-      <!--Lat: OSM: 50.9213971 OS 50.921397-->
-      <!--Lon: OSM: -4.3816348 OS -4.381635-->
-      <!--Separation distance: 0.01 m-->
-      <!--Name: OSM: Whitely OS: Whitely-->
-      <!--Ele: OSM: 217.697 OS: 217.697-->
-      <!--Type: OSM: pillar / NA OS: PILLAR-->
-      <!--FB: OSM: SS30/T47 OS: NA-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 217.74-->
-      <!--tag ele:ODN = 217.697-->
-      <!--tag ele:WGS84 = 271.12-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30T047-->
     </node>
   </create>
   <create>

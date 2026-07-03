@@ -1,8 +1,27 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes for potential review. Generated on: 2026-07-02-->
-  <!--555 nodes to process-->
+  <!--OSM Nodes for potential review. Generated on: 2026-07-03-->
+  <!--565 nodes to process-->
   <!--Note, geometries are in ETRS89-->
+  <create>
+    <node id="4452420827" changeset="1" version="1" lat="50.6764178" lon="-2.6289003">
+      <!--OS Name Abbotsbury Castle OS New Name ST70S001-->
+      <!--OS node co-ords are 50.6763963 , -2.6289094-->
+      <!--That is 2.47 m from its nearest OSM node-->
+      <!--OS node called [ Abbotsbury Castle ]. OSM node has no name-->
+      <!--ele tag is in EGM96-->
+      <!--Add new ele: 215.56-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 215.56-->
+      <!-- ele:ODN = 215.831-->
+      <!-- ele:WGS84 = 265.07-->
+      <!--survey_point tag is empty (good)-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: OS BM S5769-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S5769 at 3.75 m away-->
+    </node>
+  </create>
   <create>
     <node id="8542056676" changeset="1" version="1" lat="53.3114462" lon="-1.7306529">
       <!--OS Name Abney Moor OS New Name SK39S011-->
@@ -1091,7 +1110,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: OS BM S6705-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S6705 at 5.1 m away-->
     </node>
   </create>
   <create>
@@ -2463,6 +2482,24 @@
     </node>
   </create>
   <create>
+    <node id="9461313616" changeset="1" version="1" lat="50.8606749" lon="-4.4922541">
+      <!--OS Name Collaton Farm OS New Name SS30S009-->
+      <!--OS node co-ords are 50.8606749 , -4.4922543-->
+      <!--That is 0.02 m from its nearest OSM node-->
+      <!--OS node called [ Collaton Farm ] vs OSM [ Collaton Farm ]-->
+      <!--ele field already set: 182.175-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 182.14-->
+      <!-- ele:ODN = 182.175-->
+      <!-- ele:WGS84 = 235.6-->
+      <!--survey_point tag not empty (good) pillar-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: SS30/9-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S5635 at 4.41 m away-->
+    </node>
+  </create>
+  <create>
     <node id="9967749557" changeset="1" version="1" lat="51.059394" lon="-1.9402723">
       <!--OS Name Compton Hut OS New Name SU15S025-->
       <!--OS node co-ords are 51.0593092 , -1.9403778-->
@@ -2843,7 +2880,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S2522 at 7.93 m away-->
     </node>
   </create>
   <create>
@@ -3779,6 +3816,24 @@
     </node>
   </create>
   <create>
+    <node id="7554871194" changeset="1" version="1" lat="54.8056516" lon="-1.6208284">
+      <!--OS Name Findon Cottages OS New Name NZ42T026-->
+      <!--OS node co-ords are 54.8056583 , -1.6208282-->
+      <!--That is 0.75 m from its nearest OSM node-->
+      <!--OS node called [ Findon Cottages ] vs OSM [ Findon Cottages ]-->
+      <!--ele field already set: 153.3-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 152.79-->
+      <!-- ele:ODN = 153.286-->
+      <!-- ele:WGS84 = 202.77-->
+      <!--survey_point tag is empty (good)-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: OS BM S4176-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S4176 at 4.51 m away-->
+    </node>
+  </create>
+  <create>
     <node id="12118520519" changeset="1" version="1" lat="59.2864405" lon="-3.0025836">
       <!--OS Name Fitty Hill OS New Name PP460-->
       <!--OS node co-ords are 59.2864431 , -3.0026156-->
@@ -4591,7 +4646,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S7285 at 6.42 m away-->
     </node>
   </create>
   <create>
@@ -5120,7 +5175,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S3973 at 5.34 m away-->
     </node>
   </create>
   <create>
@@ -5247,7 +5302,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S1725-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S1725 at 3.99 m away-->
     </node>
   </create>
   <create>
@@ -5482,7 +5537,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: 603509-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is 3492 at 11.79 m away-->
     </node>
   </create>
   <create>
@@ -5902,6 +5957,24 @@
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
       <!--OS node has no FB-->
+    </node>
+  </create>
+  <create>
+    <node id="8075829252" changeset="1" version="1" lat="54.7663209" lon="-2.1302815">
+      <!--OS Name Lintzgarth Common OS New Name NY86S011-->
+      <!--OS node co-ords are 54.7663202 , -2.1302704-->
+      <!--That is 0.72 m from its nearest OSM node-->
+      <!--OS node called [ Lintzgarth Common ] vs OSM [ Lintzgarth Common ]-->
+      <!--ele field already set: 554.5-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 554.11-->
+      <!-- ele:ODN = 554.47-->
+      <!-- ele:WGS84 = 605.56-->
+      <!--survey_point tag is empty (good)-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: NY86S011-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S6630 at 2.86 m away-->
     </node>
   </create>
   <create>
@@ -6822,6 +6895,24 @@
     </node>
   </create>
   <create>
+    <node id="9461313606" changeset="1" version="1" lat="50.374891" lon="-4.3530546">
+      <!--OS Name Narkurs Resr OS New Name SX76T082-->
+      <!--OS node co-ords are 50.3748909 , -4.3530548-->
+      <!--That is 0.02 m from its nearest OSM node-->
+      <!--OS node called [ Narkurs Resr ] vs OSM [ Narkurs Resr ]-->
+      <!--ele field already set: 151.491-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 151.17-->
+      <!-- ele:ODN = 151.491-->
+      <!-- ele:WGS84 = 203.93-->
+      <!--survey_point tag not empty (good) pillar-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: SX76/T82-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S3482 at 9.78 m away-->
+    </node>
+  </create>
+  <create>
     <node id="8728358480" changeset="1" version="1" lat="53.1222159" lon="-3.1752966">
       <!--OS Name Nerquis Mountain OS New Name SJ44T039-->
       <!--OS node co-ords are 53.1222106 , -3.1753003-->
@@ -6836,7 +6927,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S3118-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S3118 at 3.6 m away-->
     </node>
   </create>
   <create>
@@ -7185,7 +7276,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S5005-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S5005 at 2.61 m away-->
     </node>
   </create>
   <create>
@@ -7531,7 +7622,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM ref is: S4454-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is 4454 at 2.6 m away-->
     </node>
   </create>
   <create>
@@ -7753,6 +7844,25 @@
     </node>
   </create>
   <create>
+    <node id="5026184347" changeset="1" version="1" lat="53.246376" lon="-4.6041078">
+      <!--OS Name Rhoscolyn OS New Name SH57S019-->
+      <!--OS node co-ords are 53.2463797 , -4.6040986-->
+      <!--That is 0.74 m from its nearest OSM node-->
+      <!--OS node called [ Rhoscolyn ]. OSM node has no name-->
+      <!--ele tag is in EGM96-->
+      <!--Add new ele: 62.76-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 62.76-->
+      <!-- ele:ODN = 62.944-->
+      <!-- ele:WGS84 = 117.55-->
+      <!--survey_point tag is empty (good)-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: OS BM S7233-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S7233 at 1.17 m away-->
+    </node>
+  </create>
+  <create>
     <node id="258585937" changeset="1" version="1" lat="51.5763992" lon="-4.2816199">
       <!--OS Name Rhossili Down OS New Name SN41T018-->
       <!--OS node co-ords are 51.5764049 , -4.2815981-->
@@ -7897,6 +8007,24 @@
       <!--OSM ref is: OSBM S7133-->
       <!--OSM node has no ref:os-->
       <!--OS FB is S7133 at 3.11 m away-->
+    </node>
+  </create>
+  <create>
+    <node id="8066927602" changeset="1" version="1" lat="54.847135" lon="-2.0146072">
+      <!--OS Name Roughside Moor OS New Name NY86T044-->
+      <!--OS node co-ords are 54.8471328 , -2.0145882-->
+      <!--That is 1.24 m from its nearest OSM node-->
+      <!--OS node called [ Roughside Moor ] vs OSM [ Roughside Moor ]-->
+      <!--ele field already set: 384.0-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 383.49-->
+      <!-- ele:ODN = 383.95-->
+      <!-- ele:WGS84 = 434.58-->
+      <!--survey_point tag is empty (good)-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: NY86T044-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S6694 at 4.13 m away-->
     </node>
   </create>
   <create>
@@ -8242,7 +8370,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is 6025 at 9.76 m away-->
     </node>
   </create>
   <create>
@@ -8807,7 +8935,7 @@
       <!--Add new survey_point:structure: pillar-->
       <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S3278 at 5.43 m away-->
     </node>
   </create>
   <create>
@@ -8995,6 +9123,24 @@
     </node>
   </create>
   <create>
+    <node id="9461313617" changeset="1" version="1" lat="50.9242178" lon="-4.2604066">
+      <!--OS Name Thornehill Head OS New Name SS30T040-->
+      <!--OS node co-ords are 50.9242178 , -4.2604068-->
+      <!--That is 0.01 m from its nearest OSM node-->
+      <!--OS node called [ Thornehill Head ] vs OSM [ Thornehill Head ]-->
+      <!--ele field already set: 195.699-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 195.69-->
+      <!-- ele:ODN = 195.699-->
+      <!-- ele:WGS84 = 248.95-->
+      <!--survey_point tag not empty (good) pillar-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: SS30/T40-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S5488 at 3.51 m away-->
+    </node>
+  </create>
+  <create>
     <node id="1883499587" changeset="1" version="1" lat="52.9487899" lon="0.5650952">
       <!--OS Name Thornham OS New Name TF71T015-->
       <!--OS node co-ords are 52.9487911 , 0.5650854-->
@@ -9137,6 +9283,24 @@
       <!--OSM ref is: PP173-->
       <!--OSM node has no ref:os-->
       <!--OS FB is S1755 at 0.29 m away-->
+    </node>
+  </create>
+  <create>
+    <node id="9461313584" changeset="1" version="1" lat="50.666381" lon="-4.6231345">
+      <!--OS Name Trewannion Down OS New Name SS30T044-->
+      <!--OS node co-ords are 50.6663809 , -4.6231347-->
+      <!--That is 0.02 m from its nearest OSM node-->
+      <!--OS node called [ Trewannion Down ] vs OSM [ Trewannion Down ]-->
+      <!--ele field already set: 307.829-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 307.6-->
+      <!-- ele:ODN = 307.829-->
+      <!-- ele:WGS84 = 360.99-->
+      <!--survey_point tag not empty (good) pillar-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: SS30/T44-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S5692 at 0.27 m away-->
     </node>
   </create>
   <create>
@@ -9726,6 +9890,24 @@
       <!--OSM ref is: S5002-->
       <!--OSM node has no ref:os-->
       <!--OS node has no FB-->
+    </node>
+  </create>
+  <create>
+    <node id="9461313609" changeset="1" version="1" lat="50.9213971" lon="-4.3816348">
+      <!--OS Name Whitely OS New Name SS30T047-->
+      <!--OS node co-ords are 50.921397 , -4.381635-->
+      <!--That is 0.01 m from its nearest OSM node-->
+      <!--OS node called [ Whitely ] vs OSM [ Whitely ]-->
+      <!--ele field already set: 217.697-->
+      <!--And add new ele:* tags-->
+      <!-- ele:EGM96 = 217.74-->
+      <!-- ele:ODN = 217.697-->
+      <!-- ele:WGS84 = 271.12-->
+      <!--survey_point tag not empty (good) pillar-->
+      <!--Add new survey_point:structure: pillar-->
+      <!--OSM ref is: SS30/T47-->
+      <!--OSM node has no ref:os-->
+      <!--OS FB is S5575 at 4.35 m away-->
     </node>
   </create>
   <create>
