@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="mk/MarkerCluster.Default.css" />
 	<script type="text/javascript" src="mk/leaflet.markercluster.js"></script>
 
+	<script type="text/javascript" src="permalink/leaflet.permalink.js"></script>
+
 	<script type="text/javascript" src="data/newnodes.js"></script>
 	<script type="text/javascript" src="data/reviewnodes.js"></script>
 	<script type="text/javascript" src="data/goodnodes.js"></script>
@@ -66,9 +68,10 @@ Thus, Good nodes are not yet 'perfectly' good.
 	//Sort out our attributions
 	var IconsAttrib = ' | <a href="https://github.com/pointhi/leaflet-color-markers/">Markers</a> under BSD Licence.'
 	var MarkerClusterAttrib = ' | <a href="https://github.com/leaflet/leaflet.markercluster/">MarkerCluster</a>'
+	var PermalinkAttrib = ' | <a href="https://github.com/hupe13/leaflet-permalink">Permalink</a>'
 	var OSMAttrib = '<a href="http://openstreetmap.org">OpenStreetMap</a>.';
 
-	var all_attribs = '&copy; ' + OSMAttrib + IconsAttrib + MarkerClusterAttrib;
+	var all_attribs = '&copy; ' + OSMAttrib + IconsAttrib + PermalinkAttrib + MarkerClusterAttrib;
 
 	//And add the OSM layer
 	var OSMmap = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -195,6 +198,10 @@ Thus, Good nodes are not yet 'perfectly' good.
 	};
 
 	L.control.layers(baselayers, overlays).addTo(map);
+
+	map.whenReady( function() {
+		L.Permalink.setup(map);
+		});
                 
 </script>
 
