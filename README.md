@@ -573,8 +573,8 @@ OSM nodes...
 | Height | `ele` | Use the height from the OS Trigpoint csv in *metres* | 
 | Type | `survey_point:structure`=`pillar` | Seems to be common on OSM nodes |
 | FB   | `ref` | Seems to be predominant in existing data. |
-| Source | ??? | We should identify a tag to add an OS source reference |
-| `New.Name` | OS_ref | Store the unique OS trigpoint identifier in a unique OS tag - open to discussion! |
+| Source | `source`='Ordnance Survey (OGL)' | 184 exising OSM nodes already use this as `source` |
+| `New.Name` | `ref:os` | Store the unique OS trigpoint identifier in a unique OS tag - open to discussion! |
 
 ## Next Steps
 
