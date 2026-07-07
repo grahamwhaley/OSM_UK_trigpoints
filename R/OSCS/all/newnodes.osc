@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM new Nodes. Generated on: 2026-07-03-->
+  <!--OSM new Nodes. Generated on: 2026-07-07-->
   <!--4437 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
@@ -1179,7 +1179,8 @@
       <tag k="ele:ODN" v="0"/>
       <tag k="ele:WGS84" v="48.88"/>
       <tag k="survey_point:structure" v="pillar"/>
-      <!--No Flush Bracket name to add as a ref-->
+      <!--Nearest FB is at 5.68 m-->
+      <tag k="ref" v="S1648"/>
       <tag k="ref:os" v="SK54S006"/>
       <!-- Distance to nearest OSM node 13541642471 is 1682.14 m-->
     </node>

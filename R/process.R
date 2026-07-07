@@ -182,7 +182,7 @@ clean_osb_desc <- function(s) {
 	# And we should not have any series of numbers should we? ... anywhere
 	s <- gsub("[0-9]{1,6}", " ", s)
 	# but that transforms things like '8.8 m' into '. m' ... so now drop those!
-	  # first, a pretty specific one - there are 3 of these in the data
+	  # some pretty specific ones
 	s <- gsub("\\(gps heighted +\\. +m\\)", " ", s)
 	s <- gsub("\\(gps height +\\. +m\\)", " ", s)
 	s <- gsub(" +\\. +m ", " ", s)
@@ -191,6 +191,9 @@ clean_osb_desc <- function(s) {
 	# And some more rather specific ones!
 	s <- gsub(" forty foot drain", " ", s)
 	s <- gsub(" \\(height suspect trig adjustment \\)", " ", s)
+	s <- gsub("\\(value given by mason land surveys +july +\\.", " ", s)
+	s <- gsub("rivet base", " ", s)
+	s <- gsub("altitude", " ", s)
 
 	## Now some translations of what is left
 	## First, stick a space on the end of the string... to simplify the number of scans
