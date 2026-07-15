@@ -207,6 +207,7 @@ within >4km.
       <tag k="ref" v="S2681"/>
       <tag k="ref:os" v="NT18T005"/>
       <!-- Distance to nearest OSM node 8561011506 is 4085.55 m-->
+      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
 ```

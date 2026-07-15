@@ -578,7 +578,7 @@ os_b_df <- subset(OS_benchmark_csv, grepl(" TP$| TP | T P | T P$", OS_benchmark_
 message(" Benchmark trimmed to trigpoints has ", nrow(os_b_df), " entries")
 # Now let's translate their positions to WSG84
 
-message(" translating from BNG to WGS84")
+message(" translating from BNG to ETRS89")
 # The easting/northing looks different in this dataset - oh oh, they are in national grid!
 os_b_df$BNG <- as_bng_reference(paste(os_b_df$NG.LETTERS, os_b_df$EASTING, os_b_df$NORTHING))
 #os_b_df$nEASTING <- gsub(" ", "", paste(os_b_df$NG.LETTERS, os_b_df$EASTING))
@@ -1568,6 +1568,9 @@ if( generate_osc ) {
 
 		cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", round(os_row$distance, digits=DIST_DIGITS), "m")
 		newXMLCommentNode(cmt, parent=node)
+		attrs = c( k="note", v=
+			"Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import")
+		newXMLNode("tag", attrs=attrs, parent=node)
 	}
 	saveXML(newnode_doc, file="/data/newnodes.osc")
 
