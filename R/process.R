@@ -46,6 +46,16 @@ generate_osc = 1	#Produce OsmChangeset files or not
 # (but, that could be trivially fixed in the code if need be)
 generate_js = 1		#Produce slippy map leaflet javascript files
 
+# the code has the ability to generate multiple ele: subtags, such as:
+#  ele:ODN
+#  ele:EGM96
+#  ele:WGS84
+#
+# but, there is no traceable (as in proposal, rfc, vote) agreement in OSM on what datum ele
+# is relative to, and we are not here to try and fix that longstanding and potentially unsolveable
+# problem. afaict almost all of the ele tags in the UK are ODN in metres, so we'll stick with that.
+generate_extended_ele = 0		#Default to simple ele == ODN
+
 # We might need heights in EGM96 for OSM tags, rather than ODN (the UK normal 'heights') - optionall
 # do the work to do the conversion, and then as least we have the data available if we need it.
 do_height_conversion = 1
@@ -301,20 +311,32 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 			"</table><br>"
 			)
 
-		# new ele:* table
-		s = paste(sep="", s,
-			"<table style='border:1px solid black;'>",
-				"<tr><th>Item</th><th>OS</th></tr>",
-				"<tr><td>ele:EGM96</td>",
-					"<td>", round(os_r$egm96_height, digits=HEIGHT_DIGITS), "</td>",
-				"<tr><td>ele:ODN</td>",
-					"<td>", os_r$HEIGHT, "</td>",
-				"<tr><td>ele:WGS84</td>",
-					"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
-				"<tr><td>os:ref</td>",
-					"<td>", os_r$New.Name, "</td>",
-			"</table><br>"
-			)
+		if (generate_extended_ele) {
+			# new ele:* table
+			s = paste(sep="", s,
+				"<table style='border:1px solid black;'>",
+					"<tr><th>Item</th><th>OS</th></tr>",
+					"<tr><td>ele:EGM96</td>",
+						"<td>", round(os_r$egm96_height, digits=HEIGHT_DIGITS), "</td>",
+					"<tr><td>ele:ODN</td>",
+						"<td>", os_r$HEIGHT, "</td>",
+					"<tr><td>ele:WGS84</td>",
+						"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
+					"<tr><td>os:ref</td>",
+						"<td>", os_r$New.Name, "</td>",
+				"</table><br>"
+				)
+		} else {
+			# simple single ele == ODN
+			s = paste(sep="", s,
+				"<table style='border:1px solid black;'>",
+					"<tr><th>Item</th><th>OS</th></tr>",
+					"<tr><td>os:ref</td>",
+						"<td>", os_r$New.Name, "</td>",
+				# FIXME - need to add datum_aligned and purpose tags to the new item table
+				"</table><br>"
+				)
+		}
 
 		s = paste(sep="", s,
 			"<span style='color: red'>",
@@ -329,7 +351,7 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 				round(os_r$osb_distance, digits=DIST_DIGITS), " m away.")
 			s = paste(sep="", s,
 				" ele: ",
-				round(osb_r$HEIGHT, digits=HEIGHT_DIGITS), "<br>")
+				osb_r$HEIGHT, "<br>")
 		} else {
 			s = paste(sep="", s,
 				"<span style='color: red'>",
@@ -361,20 +383,32 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 			"</table><br>"
 			)
 
-		# new ele:* table
-		s = paste(sep="", s,
-			"<table style='border:1px solid black;'>",
-				"<tr><th>Item</th><th>OS</th></tr>",
-				"<tr><td>ele:EGM96</td>",
-					"<td>", round(os_r$egm96_height, digits=HEIGHT_DIGITS), "</td>",
-				"<tr><td>ele:ODN</td>",
-					"<td>", os_r$HEIGHT, "</td>",
-				"<tr><td>ele:WGS84</td>",
-					"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
-				"<tr><td>os:ref</td>",
-					"<td>", os_r$New.Name, "</td>",
-			"</table><br>"
-			)
+		if( generate_extended_ele ) {
+			# new ele:* table
+			s = paste(sep="", s,
+				"<table style='border:1px solid black;'>",
+					"<tr><th>Item</th><th>OS</th></tr>",
+					"<tr><td>ele:EGM96</td>",
+						"<td>", round(os_r$egm96_height, digits=HEIGHT_DIGITS), "</td>",
+					"<tr><td>ele:ODN</td>",
+						"<td>", os_r$HEIGHT, "</td>",
+					"<tr><td>ele:WGS84</td>",
+						"<td>", round(os_r$etrs89_height, digits=HEIGHT_DIGITS), "</td>",
+					"<tr><td>os:ref</td>",
+						"<td>", os_r$New.Name, "</td>",
+				"</table><br>"
+				)
+		} else {
+			# simple ele = ODN table
+			s = paste(sep="", s,
+				"<table style='border:1px solid black;'>",
+					"<tr><th>Item</th><th>OS</th></tr>",
+					"<tr><td>os:ref</td>",
+						"<td>", os_r$New.Name, "</td>",
+				# FIXME - need to add datum_aligned and purpose tags to the new item table
+				"</table><br>"
+				)
+		}
 
 		s = paste(sep="", s,
 			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
@@ -387,7 +421,7 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 				round(os_r$osb_distance, digits=DIST_DIGITS), " m away.")
 			s = paste(sep="", s,
 				" ele: ",
-				round(osb_r$HEIGHT, digits=HEIGHT_DIGITS), "<br>")
+				osb_r$HEIGHT, "<br>")
 		} else {
 			s = paste(sep="", s,
 				"<span style='color: red'>",
@@ -1363,14 +1397,27 @@ if( !use_new_filter_logic ) {
 	# These are tags that will be difficult or impossible to match until we have done our first
 	# import, so for now, park them here and DO NOT CHECK THEM. But, FIXME later after we've started
 	# to fix the upstream OSM nodes
+	# NOTE - I think we'll need to fix/change the column names if we do the optional append
+	# on generate_extended_ele - but, given we don't use these right now, I'm going to leave it
+	# as-is as a hint/example of what we might do in the future....
+
 	#       OS     OSM
 	extra_compare_tags = data.frame(
 		type = c("TYPE.OF.MARK", "survey_point_structure"),
-		type = c("egm96_height", "ele_EGM96"),
-		type = c("HEIGHT", "ele_ODN"),
-		type = c("etrs89_height", "ele_WGS84"),
 		type = c("New.Name", "ref_os")
 		)
+
+	# Only check for extended ele fields if that is enabled
+	if( generate_extended_ele ) {
+		# DON'T check for extended ele fields as well
+		#       OS     OSM
+		extra_compare_tags <- cbind(extra_compare_tags,
+			data.frame(
+				type = c("egm96_height", "ele_EGM96"),
+				type = c("HEIGHT", "ele_ODN"),
+				type = c("etrs89_height", "ele_WGS84")
+			) )
+	}
 
 	compare_tags <- t(compare_tags)
 	colnames(compare_tags) <- c("OS", "OSF")
@@ -1534,16 +1581,23 @@ if( generate_osc ) {
 		attrs = c( k="name", v=os_row$Trig.Name)
 		newXMLNode("tag", attrs=attrs, parent=node)
 
-		cmt = paste(sep=" ", "ele tag is in EGM96")
-		newXMLCommentNode(cmt, parent=node)
-		attrs = c( k="ele", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="ele:ODN", v=os_row$HEIGHT)
-		newXMLNode("tag", attrs=attrs, parent=node)
-		attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
-		newXMLNode("tag", attrs=attrs, parent=node)
+		if( generate_extended_ele ) {
+			cmt = paste(sep=" ", "ele tag is in EGM96")
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="ele", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="ele:ODN", v=os_row$HEIGHT)
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+			newXMLNode("tag", attrs=attrs, parent=node)
+		} else {
+			cmt = paste(sep=" ", "ele tag is in ODN")
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="ele", v=os_row$HEIGHT)
+			newXMLNode("tag", attrs=attrs, parent=node)
+		}
 
 		attrs = c( k="survey_point:structure", v="pillar")
 		newXMLNode("tag", attrs=attrs, parent=node)
@@ -1631,24 +1685,33 @@ if( generate_osc ) {
 
 		if( is.na(osm_row$ele) ) {
 			# We can fill the ele slot
-			cmt = paste(sep=" ", "ele tag is in EGM96")
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "Add new ele:", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-			newXMLCommentNode(cmt, parent=node)
+			if( generate_extended_ele ) {
+				cmt = paste(sep=" ", "ele tag is in EGM96")
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", "Add new ele:", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+				newXMLCommentNode(cmt, parent=node)
+			} else {
+				cmt = paste(sep=" ", "ele tag is in ODN")
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+				newXMLCommentNode(cmt, parent=node)
+			}
 		} else {
 			cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
 			newXMLCommentNode(cmt, parent=node)
 		}
 
-		cmt = paste(sep=" ", "And add new ele:* tags")
-		newXMLCommentNode(cmt, parent=node)
+		if( generate_extended_ele ) {
+			cmt = paste(sep=" ", "And add new ele:* tags")
+			newXMLCommentNode(cmt, parent=node)
 
-		cmt = paste(sep=" ", " ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-		newXMLCommentNode(cmt, parent=node)
-		cmt = paste(sep=" ", " ele:ODN =", os_row$HEIGHT)
-		newXMLCommentNode(cmt, parent=node)
-		cmt = paste(sep=" ", " ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
-		newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", " ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", " ele:ODN =", os_row$HEIGHT)
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", " ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+			newXMLCommentNode(cmt, parent=node)
+		}
 
 		# Just note if 'survey_point' is set or not - we don't generate those
 		if( is.na(osm_row$survey_point) )
@@ -1759,19 +1822,21 @@ if( generate_osc ) {
 			}
 			newXMLCommentNode(cmt, parent=node)
 
-			# FIXME - and, probalby going to need to change 'ele' from OSM default ODN to
-			# EGM96
-			cmt = paste(sep=" ", "NOTE: probably need to change existing ele tag to EGM96")
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags")
-			newXMLCommentNode(cmt, parent=node)
+			if( generate_extended_ele ) {
+				# FIXME - and, probalby going to need to change 'ele' from OSM default ODN to
+				# EGM96
+				cmt = paste(sep=" ", "NOTE: probably need to change existing ele tag to EGM96")
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", "NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags")
+				newXMLCommentNode(cmt, parent=node)
 
-			cmt = paste(sep=" ", "tag ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "tag ele:ODN =", os_row$HEIGHT)
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "tag ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
-			newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", "tag ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", "tag ele:ODN =", os_row$HEIGHT)
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", "tag ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+				newXMLCommentNode(cmt, parent=node)
+			}
 
 			# FIXME - add ref:os code here!
 			cmt = paste(sep=" ", "NOTE: probably need to add new ref:os tag:")
@@ -1876,24 +1941,33 @@ if( generate_osc ) {
 
 			if( is.na(osm_row$ele) ) {
 				# We can fill the ele slot
-				cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT, "in EGM96")
-				newXMLCommentNode(cmt, parent=node)
-				attrs = c( k="ele", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-				newXMLNode("tag", attrs=attrs, parent=node)
+				if( generate_extended_ele ) {
+					cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT, "in EGM96")
+					newXMLCommentNode(cmt, parent=node)
+					attrs = c( k="ele", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+					newXMLNode("tag", attrs=attrs, parent=node)
+				} else {
+					cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT, "in ODN")
+					newXMLCommentNode(cmt, parent=node)
+					attrs = c( k="ele", v=os_row$HEIGHT)
+					newXMLNode("tag", attrs=attrs, parent=node)
+				}
 			} else {
 				cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
 				newXMLCommentNode(cmt, parent=node)
 			}
 
-			# FIXME - in the future we should check if these already exist?
-			cmt = paste(sep=" ", "And add new ele:[EGM96/ODN/WGS84] tags")
-			newXMLCommentNode(cmt, parent=node)
-			attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-			newXMLNode("tag", attrs=attrs, parent=node)
-			attrs = c( k="ele:ODN", v=os_row$HEIGHT)
-			newXMLNode("tag", attrs=attrs, parent=node)
-			attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
-			newXMLNode("tag", attrs=attrs, parent=node)
+			if( generate_extended_ele ) {
+				# FIXME - in the future we should check if these already exist?
+				cmt = paste(sep=" ", "And add new ele:[EGM96/ODN/WGS84] tags")
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+				newXMLNode("tag", attrs=attrs, parent=node)
+				attrs = c( k="ele:ODN", v=os_row$HEIGHT)
+				newXMLNode("tag", attrs=attrs, parent=node)
+				attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+				newXMLNode("tag", attrs=attrs, parent=node)
+			}
 
 			if( is.na(osm_row$survey_point_structure) && is.na(osm_row$survey_point) ) {
 				# We can fill the structure slot
