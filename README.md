@@ -197,12 +197,11 @@ within >4km.
       <!--OS Name Camilty Hill OS New Name NT18T005-->
       <tag k="man_made" v="survey_point"/>
       <tag k="name" v="Camilty Hill"/>
-      <!--ele tag is in EGM96-->
-      <tag k="ele" v="290.25"/>
-      <tag k="ele:EGM96" v="290.25"/>
-      <tag k="ele:ODN" v="290.453"/>
-      <tag k="ele:WGS84" v="343.85"/>
+      <!--ele tag is in ODN-->
+      <tag k="ele" v="290.453"/>
       <tag k="survey_point:structure" v="pillar"/>
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 2.98 m-->
       <tag k="ref" v="S2681"/>
       <tag k="ref:os" v="NT18T005"/>
@@ -218,43 +217,37 @@ Nodes that could do with human review.
 
 ```xml
   <create>
-    <node id="8381906378" changeset="1" version="1" lat="55.8553947" lon="-3.4478905">
-      <!--OS Name Corston Hill OS New Name NT18S004-->
-      <!--OS node co-ords are 55.8553828 , -3.4478707-->
-      <!--That is 1.81 m from its nearest OSM node-->
-      <!--OS node called [ Corston Hill ]. OSM node has no name-->
-      <!--ele tag is in EGM96-->
-      <!--Add new ele: 348.01-->
-      <!--And add new ele:* tags-->
-      <!-- ele:EGM96 = 348.01-->
-      <!-- ele:ODN = 348.227-->
-      <!-- ele:WGS84 = 401.42-->
-      <!--survey_point tag is empty (good)-->
+    <node id="9461313633" changeset="1" version="1" lat="50.870067" lon="-4.219551">
+      <!--OS Name Berry OS New Name SS30T054-->
+      <!--OS node co-ords are 50.8700669 , -4.2195512-->
+      <!--That is 0.02 m from its nearest OSM node-->
+      <!--OS node called [ Berry ] vs OSM [ Berry ]-->
+      <!--ele field already set: 176.015-->
+      <!--survey_point tag not empty (good) pillar-->
       <!--Add new survey_point:structure: pillar-->
-      <!--OSM node has no ref-->
+      <!--Add new survey_point:datum_aligned: yes-->
+      <!--Add new survey_point:purpose: both-->
+      <!--OSM ref is: SS30/T54-->
       <!--OSM node has no ref:os-->
-      <!--OS FB is S2698 at 3.54 m away-->
+      <!--OS FB is S5484 at 4.86 m away-->
     </node>
   </create>
   <create>
-    <node id="8561034217" changeset="1" version="1" lat="55.892738" lon="-3.7548167">
-      <!--OS Name Eastcraigs Hill OS New Name NS77S023-->
-      <!--OS node co-ords are 55.8927374 , -3.7548172-->
-      <!--That is 0.07 m from its nearest OSM node-->
-      <!--OS node called [ Eastcraigs Hill ] vs OSM [ Eastcraigs Hill ]-->
-      <!--ele field already set: 250-->
-      <!--And add new ele:* tags-->
-      <!-- ele:EGM96 = 249.68-->
-      <!-- ele:ODN = 249.936-->
-      <!-- ele:WGS84 = 303.52-->
+    <node id="10161920587" changeset="1" version="1" lat="50.9768064" lon="-1.2040348">
+      <!--OS Name Berry Hill OS New Name SU31T038-->
+      <!--OS node co-ords are 50.9768156 , -1.2040431-->
+      <!--That is 1.18 m from its nearest OSM node-->
+      <!--OS node called [ Berry Hill ] vs OSM [ Stephen's Castle Down ]-->
+      <!--ele field already set: 119-->
       <!--survey_point tag is empty (good)-->
       <!--Add new survey_point:structure: pillar-->
-      <!--OSM ref is: S3616-->
+      <!--Add new survey_point:datum_aligned: yes-->
+      <!--Add new survey_point:purpose: both-->
+      <!--OSM node has no ref-->
       <!--OSM node has no ref:os-->
-      <!--OS node has no FB-->
+      <!--OS FB is S2637 at 1.98 m away-->
     </node>
   </create>
-
 ```
 
 ### Good nodes
@@ -268,10 +261,6 @@ current suggestion is the `ref:os` tag, as that is already present in the OSM da
 existing instances that do contain an OS ref, but in the 'old' style'. That will greatly aid the
 automatic detection of nodes that do not need further checking in the future.
 
-FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME
-we need to fix the new tags in the good.osc file
-FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME
-
 ```xml
   <create>
     <node id="8561011513" changeset="1" version="1" lat="55.808063" lon="-3.5852169">
@@ -281,12 +270,9 @@ FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FI
       <!--Name: OSM: Pearie Law OS: Pearie Law-->
       <!--Ele: OSM: 302 OS: 301.517-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--Datum_aligned: OSM: NA OS: yes-->
+      <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2652 OS: S2652-->
-      <!--NOTE: probably need to change existing ele tag to EGM96-->
-      <!--NOTE: probably need to add new ele:[EGM96/ODN/WGS84] tags-->
-      <!--tag ele:EGM96 = 301.31-->
-      <!--tag ele:ODN = 301.517-->
-      <!--tag ele:WGS84 = 355.02-->
       <!--NOTE: probably need to add new ref:os tag:-->
       <!--tag ref:os = NT18T002-->
     </node>
@@ -309,14 +295,14 @@ to fill out the entry.
       <!--Ref field already set: S3084-->
       <!--Add new ref:os: NT18S001-->
       <tag k="ref:os" v="NT18S001"/>
-      <!--Add new ele: 562.438 in EGM96-->
-      <tag k="ele" v="562.29"/>
-      <!--And add new ele:[EGM96/ODN/WGS84] tags-->
-      <tag k="ele:EGM96" v="562.29"/>
-      <tag k="ele:ODN" v="562.438"/>
-      <tag k="ele:WGS84" v="615.74"/>
+      <!--Add new ele: 562.438 in ODN-->
+      <tag k="ele" v="562.438"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
+      <!--Add new datum_aligned: yes-->
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <!--Add new purpose: both-->
+      <tag k="survey_point:purpose" v="both"/>
     </node>
   </modify>
 ```
@@ -576,6 +562,9 @@ OSM nodes...
 | FB   | `ref` | Seems to be predominant in existing data. |
 | Source | `source`='Ordnance Survey (OGL)' | 184 exising OSM nodes already use this as `source` |
 | `New.Name` | `ref:os` | Store the unique OS trigpoint identifier in a unique OS tag - open to discussion! |
+| - | `survey_point:datum_aligned`=`yes` | Pillars are by definition aligned |
+| - | `survey_point:purpose`=`both` | Pillars have both X/Y and Z values |
+| - | `note`=`Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import` | Try to ensure they only get editied if really need be |
 
 ## Next Steps
 
