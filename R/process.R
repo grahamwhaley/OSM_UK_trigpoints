@@ -67,6 +67,7 @@ check_ref_os = 0	#Check if ref:os tags match - indicating known 'good' nodes
 use_new_filter_logic = 1
 
 # If we set this before we've imported, 60 out of 66 good nodes fail
+#  Note - it also now checks for datum_aligned and purpose...
 check_pillar = 0	#Check if structure=='pillar', and fail if not
 
 # Debug only - search for 'missing' FBs. In particular, look for all the OS nodes we have with
@@ -308,6 +309,10 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 					"<td>", fb, "</td>",
 				"<tr><td>Structure</td>",
 					"<td>", os_r$TYPE.OF.MARK, "</td>",
+				"<tr><td>Datum_aligned</td>",
+					"<td>", "yes", "</td>",
+				"<tr><td>Purpose</td>",
+					"<td>", "both", "</td>",
 			"</table><br>"
 			)
 
@@ -380,6 +385,12 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 				"<tr><td>Structure</td>",
 					"<td>", os_r$TYPE.OF.MARK, "</td>",
 					"<td>", osm_r$survey_point_structure, "</td></tr>",
+				"<tr><td>Datum aligned</td>",
+					"<td>", "yes", "</td>",
+					"<td>", osm_r$survey_point_datum_aligned, "</td></tr>",
+				"<tr><td>Purpose</td>",
+					"<td>", "both", "</td>",
+					"<td>", osm_r$survey_point_purpose, "</td></tr>",
 			"</table><br>"
 			)
 
@@ -458,6 +469,10 @@ osm_node_html <- function(osm_r) {
 				"<td>", osm_r$ref, "</td></tr>",
 			"<tr><td>Structure</td>",
 				"<td>", osm_r$survey_point_structure, "</td></tr>",
+			"<tr><td>Datum aligned</td>",
+				"<td>", osm_r$survey_point_datum_aligned, "</td></tr>",
+			"<tr><td>Purpose</td>",
+				"<td>", osm_r$survey_point_purpose, "</td></tr>",
 			"<tr><td>Survey_pt</td>",
 				"<td>", osm_r$survey_point, "</td></tr>",
 			"<tr><td>ref:os</td>",
@@ -1327,6 +1342,7 @@ if( !use_new_filter_logic ) {
 				# 'pillar' tag. We are really looking for 'survey_point:structure', and not just
 				# 'survey_point' as found in some nodes...
 				if( os_sf[i,]$new_node == FALSE && r$distance <= min_snap_distance) {
+					# Check type is pillar
 					if( !is.na(osm_r$survey_point_structure) ) {
 						if( osm_r$survey_point_structure != "pillar" ) {
 							message("*** Good node gone bad: [", osm_r$survey_point_struture, "] != [pillar]")
@@ -1341,13 +1357,45 @@ if( !use_new_filter_logic ) {
 						message("*** Good node has NA survey_point:structure - mark as bad")
 						os_sf[i,]$new_node = TRUE
 					}
+
+					# check datum_aligned is yes
+					if( !is.na(osm_r$survey_point_datum_aligned) ) {
+						if( osm_r$survey_point_structure != "yes" ) {
+							message("*** Good node gone bad: [", osm_r$survey_point_datum_aligned, "] != [yes]")
+							# datum failure, so force this to be a new node, which as it is at a close
+							# distance, should force it into the review list...
+							os_sf[i,]$new_node = TRUE
+						} else {
+							message("*** Good node matches: [", osm_r$survey_point_datum_aligned, "] == [yes]")
+						}
+					} else
+					{
+						message("*** Good node has NA survey_point:datum_aligned - mark as bad")
+						os_sf[i,]$new_node = TRUE
+					}
+
+					# check purpose
+					if( !is.na(osm_r$survey_point_purpose) ) {
+						if( osm_r$survey_point_structure != "both" ) {
+							message("*** Good node gone bad: [", osm_r$survey_point_purpose, "] != [both]")
+							# purpose failure, so force this to be a new node, which as it is at a close
+							# distance, should force it into the review list...
+							os_sf[i,]$new_node = TRUE
+						} else {
+							message("*** Good node matches: [", osm_r$survey_point_purpose, "] == [both]")
+						}
+					} else
+					{
+						message("*** Good node has NA survey_point:purpose - mark as bad")
+						os_sf[i,]$new_node = TRUE
+					}
 				}
 			}
 		}
 	}
 
 	if( !check_ref_os ) { message(">>> SKIPPED ref:os matching stage") }
-	if( !check_pillar ) { message(">>> SKIPPED survey_point:structure matching stage") }
+	if( !check_pillar ) { message(">>> SKIPPED survey_point:[structure|datum_aligned|purpose] matching stage") }
 
 	# We have four categories to work out...
 	#
@@ -1406,6 +1454,16 @@ if( !use_new_filter_logic ) {
 		type = c("TYPE.OF.MARK", "survey_point_structure"),
 		type = c("New.Name", "ref_os")
 		)
+
+	### FIXME - we also need to add checks for:
+	#   survey_point_datum_aligned = true
+	#   survey_point_purpose = both
+	#
+	# but we can't just add them to the compare_tags table as is, as that only
+	# compares variables of OS vs OSM - and in the above case 'true' and 'both' are
+	# static strings - so me might have to have another table of static strings we
+	# check against....
+	message("WARNING: FIXME: We are not checking for valid datum_aligned and purpose yet")
 
 	# Only check for extended ele fields if that is enabled
 	if( generate_extended_ele ) {
@@ -1601,6 +1659,10 @@ if( generate_osc ) {
 
 		attrs = c( k="survey_point:structure", v="pillar")
 		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="survey_point:datum_aligned", v="yes")
+		newXMLNode("tag", attrs=attrs, parent=node)
+		attrs = c( k="survey_point:purpose", v="both")
+		newXMLNode("tag", attrs=attrs, parent=node)
 
 		if( !is.na(os_row$FB) ) {
 			if( os_row$osb_distance <= osb_max_distance ) {
@@ -1729,6 +1791,24 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 		}
 
+		if( is.na(osm_row$survey_point_datum_aligned) ) {
+			# We can fill the survey_point:datum_aligned
+			cmt = paste(sep=" ", "Add new survey_point:datum_aligned: yes")
+			newXMLCommentNode(cmt, parent=node)
+		} else {
+			cmt = paste(sep=" ", "survey_point:datum_aligned field already set:", osm_row$survey_point_datum_aligned)
+			newXMLCommentNode(cmt, parent=node)
+		}
+
+		if( is.na(osm_row$survey_point_purpose) ) {
+			# We can fill the survey_point:purpose
+			cmt = paste(sep=" ", "Add new survey_point:purpose: both")
+			newXMLCommentNode(cmt, parent=node)
+		} else {
+			cmt = paste(sep=" ", "survey_point:purpose field already set:", osm_row$survey_point_purpose)
+			newXMLCommentNode(cmt, parent=node)
+		}
+
 		if (!is.na(osm_row$ref) ) {
 			cmt = paste(sep=" ", "OSM ref is:", osm_row$ref)
 		} else {
@@ -1810,10 +1890,18 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 			cmt = paste(sep=" ", "Ele: OSM:", osm_row$ele, "OS:", os_row$HEIGHT)
 			newXMLCommentNode(cmt, parent=node)
+
 			cmt = paste(sep=" ", "Type: OSM:", osm_row$survey_point,
 				"/", osm_row$survey_point_structure,
 				"OS:", os_row$TYPE.OF.MARK)
 			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "Datum_aligned: OSM:", osm_row$survey_point_datum_aligned,
+				"OS: yes")
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "Purpose: OSM:", osm_row$survey_point_purpose,
+				"OS: both")
+			newXMLCommentNode(cmt, parent=node)
+
 			if( os_row$osb_distance <= osb_max_distance ) {
 				cmt = paste(sep=" ", "FB: OSM:", osm_row$ref, "OS:", os_row$FB)
 			} else {
@@ -1979,6 +2067,28 @@ if( generate_osc ) {
 				cmt = paste(sep=" ", "survey_point[_structure] field already set:",
 					osm_row$survey_point,
 					"/", osm_row$survey_point_structure)
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( is.na(osm_row$survey_point_datum_aligned) ) {
+				# We can fill the datum_aligned slot
+				cmt = paste(sep=" ", "Add new datum_aligned: yes")
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="survey_point:datum_aligned", v="yes")
+				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				cmt = paste(sep=" ", "survey_point:datum_aligned field already set:", osm_row$survey_point_datum_aligned)
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( is.na(osm_row$survey_point_purpose) ) {
+				# We can fill the purpose slot
+				cmt = paste(sep=" ", "Add new purpose: both")
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="survey_point:purpose", v="both")
+				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				cmt = paste(sep=" ", "survey_point:purpose field already set:", osm_row$survey_point_purpose)
 				newXMLCommentNode(cmt, parent=node)
 			}
 
