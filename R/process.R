@@ -446,6 +446,33 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 	return(s)
 }
 
+# Generate HTML table info for individual OS node
+os_node_html <- function(title, os_r) {
+
+	s = paste(sep="",
+		"\"",
+		"<center>", title, "</center><br>",
+		"<table style='border:1px solid black;'>",
+			"<tr><th>Item</th><th>OS</th></tr>",
+			"<tr><td>Name</td>",
+				"<td>", os_r$Trig.Name, "</td>",
+			"<tr><td>ele</td>",
+				"<td>", os_r$HEIGHT, "</td>",
+			"<tr><td>Structure</td>",
+				"<td>", os_r$TYPE.OF.MARK, "</td>",
+			"<tr><td>Station</td>",
+				"<td>", os_r$STATION.NAME, "</td>",
+			"<tr><td>New Name</td>",
+				"<td>", os_r$New.Name, "</td>",
+			"<tr><td>Note</td>",
+				"<td>", os_r$COMMENT, "</td>",
+		"</table><br>"
+		)
+	s = paste(sep="", s, "\"")
+
+	return(s)
+}
+
 # Generate HTML table info for an OSM node
 osm_node_html <- function(osm_r) {
 
@@ -914,6 +941,9 @@ if( 1 ) {
 	## Drop anything that is not a PILLAR!
 	os_sf_not_pillar <- os_sf[-(which(os_sf$TYPE.OF.MARK %in% "PILLAR")),]
 	os_sf <- os_sf[(which(os_sf$TYPE.OF.MARK %in% "PILLAR")),]
+
+	os_sf_destroyed <- os_sf_destroyed[(which(os_sf_destroyed$TYPE.OF.MARK %in% "PILLAR")),]
+
 	new_num_os = nrow(os_sf)
 	new_num_os_not_pillar = nrow(os_sf_not_pillar)
 	message(" dropped OS items not pillars: ", new_num_os_not_pillar)
@@ -1586,6 +1616,7 @@ num_new_nodes = nrow(newnode_df)
 num_review_nodes = nrow(reviewnode_df)
 num_good_nodes = nrow(goodnode_df)
 num_edit_nodes = nrow(editnode_df)
+num_destroyed_nodes = nrow(os_sf_destroyed)
 
 message("Node count: New: ", num_new_nodes,
 	" Review: ", num_review_nodes,
@@ -2197,6 +2228,25 @@ if( generate_js ) {
 	}
 	write("];", file=editnode_file, append=TRUE)
 
+	############################ DESTROYED NODES ###################################
+	destroyednode_file = "/data/destroyednodes.js"
+	message(">>>  generate destroyed nodes js")
+
+	write(paste("var destroyednode_array = ["), file=destroyednode_file, append=FALSE)
+
+	for(i in 1:nrow(os_sf_destroyed)) {
+		os_row <- os_sf_destroyed[i,]
+
+		os_coords=st_coordinates(os_row$geometry)
+		write(paste(sep="", "\t[",
+			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+			os_node_html("Destroyed Node", os_row),
+			"],"),
+			file=destroyednode_file,append=TRUE)
+	}
+	write("];", file=destroyednode_file, append=TRUE)
+
 	############################ STATUS text ###################################
 	# Also dump some status text into a js var so we can load and display that
 	status_file = "/data/statustext.js"
@@ -2209,6 +2259,7 @@ if( generate_js ) {
 		"Review:", num_review_nodes,
 		"Good:", num_good_nodes,
 		"Edit:", num_edit_nodes,
+		"Destroyed:", num_destroyed_nodes,
 		"<br>"
 		)
 	num_fbs = nrow(filter(os_sf, !is.na(FB)))

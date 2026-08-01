@@ -19,6 +19,7 @@
 	<script type="text/javascript" src="data/reviewnodes.js"></script>
 	<script type="text/javascript" src="data/goodnodes.js"></script>
 	<script type="text/javascript" src="data/editnodes.js"></script>
+	<script type="text/javascript" src="data/destroyednodes.js"></script>
 	<script type="text/javascript" src="data/osmnodes.js"></script>
 	<script type="text/javascript" src="data/fbnodes.js"></script>
 	<script type="text/javascript" src="data/statustext.js"></script>
@@ -53,6 +54,7 @@ Thus, Good nodes are not yet 'perfectly' good.
  <img src="icons/marker-icon-2x-orange.png" height=20px> Review
  <img src="icons/marker-icon-2x-green.png" height=20px> Good
  <img src="icons/marker-icon-2x-blue.png" height=20px> Edit
+ <img src="icons/marker-icon-2x-black.png" height=20px> Destroyed
  <img src="icons/marker-icon-2x-violet.png" height=20px> OSM
  <img src="icons/marker-icon-2x-grey.png" height=20px> FB
 </center>
@@ -62,6 +64,7 @@ Thus, Good nodes are not yet 'perfectly' good.
 	var review_markers = L.markerClusterGroup();
 	var good_markers = L.markerClusterGroup();
 	var edit_markers = L.markerClusterGroup();
+	var destroyed_markers = L.markerClusterGroup();
 	var osm_markers = L.markerClusterGroup();
 	var fb_markers = L.markerClusterGroup();
 
@@ -111,6 +114,15 @@ Thus, Good nodes are not yet 'perfectly' good.
 		iconAnchor: [12, 41],
 		popupAnchor: [1, -34],
 		shadowSize: [41, 41]
+		});
+
+	var blackIcon = new L.Icon({
+		iconUrl: 'icons/marker-icon-black.png',
+		shadowUrl: 'icons/marker-shadow.png',
+		iconSize: [12, 20],
+		iconAnchor: [6, 20],
+		popupAnchor: [1, -15],
+		shadowSize: [20, 20]
 		});
 
 	var orangeIcon = new L.Icon({
@@ -165,6 +177,12 @@ Thus, Good nodes are not yet 'perfectly' good.
 		edit_markers.addLayer(m);
 	}
 
+	for( j in destroyednode_array ) {
+		var m = L.marker([ destroyednode_array[j][0], destroyednode_array[j][1] ], {icon: blackIcon})
+		m.bindPopup(destroyednode_array[j][2]).openPopup();
+		destroyed_markers.addLayer(m);
+	}
+
 	for( j in osmnode_array ) {
 		var m = L.marker([ osmnode_array[j][0], osmnode_array[j][1] ], {icon: violetIcon})
 		m.bindPopup(osmnode_array[j][2]).openPopup();
@@ -181,6 +199,8 @@ Thus, Good nodes are not yet 'perfectly' good.
 	map.addLayer(review_markers);
 	map.addLayer(good_markers);
 	map.addLayer(edit_markers);
+	<!-- //this layer off by default map.addLayer(destroyed_markers); -->
+
 	map.addLayer(osm_markers);
 	map.addLayer(fb_markers);
 
@@ -193,6 +213,7 @@ Thus, Good nodes are not yet 'perfectly' good.
 		"Review": review_markers,
 		"Good": good_markers,
 		"Edit": edit_markers,
+		"Destroyed": destroyed_markers,
 		"OSM": osm_markers,
 		"FB": fb_markers
 	};
