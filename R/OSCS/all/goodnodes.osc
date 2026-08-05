@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-07-26-->
-  <!--307 nodes to process-->
+  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-08-05-->
+  <!--309 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
     <node id="11697850761" changeset="1" version="1" lat="53.1321761" lon="-1.7398482">
       <!--Lat: OSM: 53.1321761 OS 53.1321725-->
       <!--Lon: OSM: -1.7398482 OS -1.7398674-->
       <!--Separation distance: 1.34 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1321725,-1.7398674,15z-->
       <!--Name: OSM: Aleck Low OS: Aleck Low-->
       <!--Ele: OSM: 393.6 OS: 393.557-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -23,6 +24,7 @@
       <!--Lat: OSM: 52.5847839 OS 52.584789-->
       <!--Lon: OSM: -0.8223651 OS -0.8223865-->
       <!--Separation distance: 1.55 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.584789,-0.8223865,15z-->
       <!--Name: OSM: Allexton OS: Allexton-->
       <!--Ele: OSM: 170 OS: 170.459-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -38,6 +40,7 @@
       <!--Lat: OSM: 52.727433 OS 52.727447-->
       <!--Lon: OSM: -3.242168 OS -3.2421671-->
       <!--Separation distance: 1.56 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.727447,-3.2421671,15z-->
       <!--Name: OSM: Allt-Y-Main OS: Allt-Y-Main-->
       <!--Ele: OSM: 356.616 OS: 356.616-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -53,6 +56,7 @@
       <!--Lat: OSM: 53.5220433 OS 53.5220399-->
       <!--Lon: OSM: -1.9969976 OS -1.997003-->
       <!--Separation distance: 0.52 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.5220399,-1.997003,15z-->
       <!--Name: OSM: Alphin Pike OS: Alphin Pike-->
       <!--Ele: OSM: 469 OS: 468.922-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -68,6 +72,7 @@
       <!--Lat: OSM: 53.0606517 OS 53.0606407-->
       <!--Lon: OSM: -1.5455411 OS -1.54546-->
       <!--Separation distance: 5.56 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0606407,-1.54546,15z-->
       <!--Name: OSM: Alport Heights OS: Alport Heights-->
       <!--Ele: OSM: 315 OS: 314.824-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -83,6 +88,7 @@
       <!--Lat: OSM: 53.053638 OS 53.0535916-->
       <!--Lon: OSM: -1.2455342 OS -1.2456365-->
       <!--Separation distance: 8.57 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0535916,-1.2456365,15z-->
       <!--Name: OSM: Annesley Park OS: Annesley Park-->
       <!--Ele: OSM: 177 OS: 177.485-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -98,6 +104,7 @@
       <!--Lat: OSM: 52.78699 OS 52.787007-->
       <!--Lon: OSM: -3.687854 OS -3.6878666-->
       <!--Separation distance: 2.07 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.787007,-3.6878666,15z-->
       <!--Name: OSM: Aran Fawddwy OS: Aran Fawddwy-->
       <!--Ele: OSM: 906.780 OS: 906.78-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -113,6 +120,7 @@
       <!--Lat: OSM: 52.917096 OS 52.9171149-->
       <!--Lon: OSM: -3.74595 OS -3.7459542-->
       <!--Separation distance: 2.12 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9171149,-3.7459542,15z-->
       <!--Name: OSM: Arenig OS: Arenig-->
       <!--Ele: OSM: 854.049 OS: 854.049-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -128,6 +136,7 @@
       <!--Lat: OSM: 54.1902271 OS 54.1902268-->
       <!--Lon: OSM: -2.8351902 OS -2.8351891-->
       <!--Separation distance: 0.08 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.1902268,-2.8351891,15z-->
       <!--Name: OSM: Arnside Knott OS: Arnside Knott-->
       <!--Ele: OSM: 159 OS: 159.114-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -143,6 +152,7 @@
       <!--Lat: OSM: 52.4416504 OS 52.4416391-->
       <!--Lon: OSM: -0.9002876 OS -0.9002444-->
       <!--Separation distance: 3.18 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.4416391,-0.9002444,15z-->
       <!--Name: OSM: Arthingworth OS: Arthingworth-->
       <!--Ele: OSM: 147 OS: 146.745-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -158,6 +168,7 @@
       <!--Lat: OSM: 52.1592056 OS 52.159209-->
       <!--Lon: OSM: -1.7206128 OS -1.7206225-->
       <!--Separation distance: 0.76 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.159209,-1.7206225,15z-->
       <!--Name: OSM: Ash Hill OS: Ash Hill-->
       <!--Ele: OSM: 85 OS: 84.908-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -173,6 +184,7 @@
       <!--Lat: OSM: 53.1686648 OS 53.1686667-->
       <!--Lon: OSM: -1.4651401 OS -1.4652146-->
       <!--Separation distance: 4.97 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1686667,-1.4652146,15z-->
       <!--Name: OSM: Ashover OS: Ashover-->
       <!--Ele: OSM: 299 OS: 299.414-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -188,6 +200,7 @@
       <!--Lat: OSM: 52.8404802 OS 52.8404502-->
       <!--Lon: OSM: -1.5372806 OS -1.5373517-->
       <!--Separation distance: 5.83 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8404502,-1.5373517,15z-->
       <!--Name: OSM: Askew Hill OS: Askew Hill-->
       <!--Ele: OSM: 78 OS: 77.998-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -203,6 +216,7 @@
       <!--Lat: OSM: 56.9744392 OS 56.9744277-->
       <!--Lon: OSM: -6.2915318 OS -6.2915342-->
       <!--Separation distance: 1.29 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.9744277,-6.2915342,15z-->
       <!--Name: OSM: Askival OS: Askival-->
       <!--Ele: OSM: 812 OS: 811.987-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -218,6 +232,7 @@
       <!--Lat: OSM: 51.6948195 OS 51.6948223-->
       <!--Lon: OSM: -0.7274399 OS -0.7274421-->
       <!--Separation distance: 0.35 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.6948223,-0.7274421,15z-->
       <!--Name: OSM: Atkins Farm OS: Atkins Farm-->
       <!--Ele: OSM: 193 OS: 193.529-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -233,6 +248,7 @@
       <!--Lat: OSM: 53.4153796 OS 53.415374-->
       <!--Lon: OSM: -1.7041249 OS -1.7041337-->
       <!--Separation distance: 0.85 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.415374,-1.7041337,15z-->
       <!--Name: OSM: Back Tor OS: Back Tor-->
       <!--Ele: OSM: 538 OS: 538.276-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -248,6 +264,7 @@
       <!--Lat: OSM: 55.854672 OS 55.8546703-->
       <!--Lon: OSM: -3.5073222 OS -3.5073228-->
       <!--Separation distance: 0.2 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8546703,-3.5073228,15z-->
       <!--Name: OSM: Balgreen OS: Balgreen-->
       <!--Ele: OSM: 210 OS: 209.976-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -263,6 +280,7 @@
       <!--Lat: OSM: 55.9227298 OS 55.9227297-->
       <!--Lon: OSM: -3.6218519 OS -3.6218533-->
       <!--Separation distance: 0.09 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.9227297,-3.6218533,15z-->
       <!--Name: OSM: Ballencrieff Hill OS: Ballencrieff Hill-->
       <!--Ele: OSM: 312 OS: 312.203-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -278,6 +296,7 @@
       <!--Lat: OSM: 52.1494041 OS 52.1494171-->
       <!--Lon: OSM: 0.0357296 OS 0.0357518-->
       <!--Separation distance: 2.1 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1494171,0.0357518,15z-->
       <!--Name: OSM: Barrington Hill OS: Barrington Hill-->
       <!--Ele: OSM: 58.216 OS: 58.216-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -293,6 +312,7 @@
       <!--Lat: OSM: 50.1067417 OS 50.1067417-->
       <!--Lon: OSM: -5.6453923 OS -5.6453923-->
       <!--Separation distance: 0 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.1067417,-5.6453923,15z-->
       <!--Name: OSM: Bartinney OS: Bartinney-->
       <!--Ele: OSM: 224.602 OS: 224.602-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -308,6 +328,7 @@
       <!--Lat: OSM: 52.4303705 OS 52.4303488-->
       <!--Lon: OSM: -2.0074163 OS -2.0073943-->
       <!--Separation distance: 2.84 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.4303488,-2.0073943,15z-->
       <!--Name: OSM: Bartley Farm OS: Bartley Farm-->
       <!--Ele: OSM: 211.668 OS: 211.668-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -323,6 +344,7 @@
       <!--Lat: OSM: 51.6787199 OS 51.6786991-->
       <!--Lon: OSM: -2.2116334 OS -2.211675-->
       <!--Separation distance: 3.68 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.6786991,-2.211675,15z-->
       <!--Name: OSM: Barton End OS: Barton End-->
       <!--Ele: OSM: 190 OS: 190.969-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -338,6 +360,7 @@
       <!--Lat: OSM: 51.1614695 OS 51.1614704-->
       <!--Lon: OSM: -3.253331 OS -3.2533855-->
       <!--Separation distance: 3.8 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.1614704,-3.2533855,15z-->
       <!--Name: OSM: Beacon Hill OS: Beacon Hill-->
       <!--Ele: OSM: 310.4 OS: 310.847-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -353,6 +376,7 @@
       <!--Lat: OSM: 53.9678982 OS 53.9679055-->
       <!--Lon: OSM: -1.8507739 OS -1.8507657-->
       <!--Separation distance: 0.97 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.9679055,-1.8507657,15z-->
       <!--Name: OSM: Beamsley Beacon OS: Beamsley Beacon-->
       <!--Ele: OSM: 393.192 OS: 393.192-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -368,6 +392,7 @@
       <!--Lat: OSM: 58.4730407 OS 58.4730541-->
       <!--Lon: OSM: -4.8103836 OS -4.8103835-->
       <!--Separation distance: 1.49 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#58.4730541,-4.8103835,15z-->
       <!--Name: OSM: Beinn Spionnaidh OS: Beinn Spionnaidh-->
       <!--Ele: OSM: 773 OS: 772.972-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -383,6 +408,7 @@
       <!--Lat: OSM: 52.4048165 OS 52.4048082-->
       <!--Lon: OSM: -1.8937299 OS -1.8937377-->
       <!--Separation distance: 1.07 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.4048082,-1.8937377,15z-->
       <!--Name: OSM: Bells Lane OS: Bells Lane-->
       <!--Ele: OSM: 173.184 OS: 173.184-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -398,6 +424,7 @@
       <!--Lat: OSM: 50.427543 OS 50.4275429-->
       <!--Lon: OSM: -4.8575734 OS -4.8575736-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.4275429,-4.8575736,15z-->
       <!--Name: OSM: Belowda Beacon OS: Belowda Beacon-->
       <!--Ele: OSM: 226.771 OS: 226.771-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -413,6 +440,7 @@
       <!--Lat: OSM: 54.340718 OS 54.3407174-->
       <!--Lon: OSM: -2.6978809 OS -2.6978649-->
       <!--Separation distance: 1.04 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.3407174,-2.6978649,15z-->
       <!--Name: OSM: Benson Knott OS: Benson Knott-->
       <!--Ele: OSM: 317.6 OS: 317.601-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -428,6 +456,7 @@
       <!--Lat: OSM: 53.2541312 OS 53.2541406-->
       <!--Lon: OSM: -1.5844227 OS -1.5844012-->
       <!--Separation distance: 1.77 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2541406,-1.5844012,15z-->
       <!--Name: OSM: Birchen Edge OS: Birchen Edge-->
       <!--Ele: OSM: 310 OS: 310.283-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -443,6 +472,7 @@
       <!--Lat: OSM: 51.1357817 OS 51.1357892-->
       <!--Lon: OSM: -3.2188898 OS -3.2188789-->
       <!--Separation distance: 1.13 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.1357892,-3.2188789,15z-->
       <!--Name: OSM: Black Hill OS: Black Hill-->
       <!--Ele: OSM: 358 OS: 358.341-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -458,6 +488,7 @@
       <!--Lat: OSM: 55.8640984 OS 55.8640985-->
       <!--Lon: OSM: -3.8736168 OS -3.873617-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8640985,-3.873617,15z-->
       <!--Name: OSM: Black Hill Wester Bracco OS: Black Hill Wester Bracco-->
       <!--Ele: OSM: 285 OS: 285.024-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -473,6 +504,7 @@
       <!--Lat: OSM: 50.8956768 OS 50.8956313-->
       <!--Lon: OSM: -0.0472988 OS -0.0473365-->
       <!--Separation distance: 5.71 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.8956313,-0.0473365,15z-->
       <!--Name: OSM: Blackcap OS: Blackcap-->
       <!--Ele: OSM: 206 OS: 206.718-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -488,6 +520,7 @@
       <!--Lat: OSM: 53.09458 OS 53.0945973-->
       <!--Lon: OSM: -1.562629 OS -1.5626305-->
       <!--Separation distance: 1.92 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0945973,-1.5626305,15z-->
       <!--Name: OSM: Bolehill East OS: Bolehill East-->
       <!--Ele: OSM: 322.350 OS: 322.35-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -503,6 +536,7 @@
       <!--Lat: OSM: 54.7144723 OS 54.7144671-->
       <!--Lon: OSM: -2.0612048 OS -2.0612274-->
       <!--Separation distance: 1.56 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7144671,-2.0612274,15z-->
       <!--Name: OSM: Bollihope Carrs OS: Bollihope Carrs-->
       <!--Ele: OSM: 540.72 OS: 540.715-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -518,6 +552,7 @@
       <!--Lat: OSM: 53.3179857 OS 53.3179803-->
       <!--Lon: OSM: -1.8036251 OS -1.8036245-->
       <!--Separation distance: 0.6 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3179803,-1.8036245,15z-->
       <!--Name: OSM: Bradwell Moor OS: Bradwell Moor-->
       <!--Ele: OSM: 471 OS: 471.028-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -533,6 +568,7 @@
       <!--Lat: OSM: 50.1242751 OS 50.1242751-->
       <!--Lon: OSM: -5.1926599 OS -5.1926598-->
       <!--Separation distance: 0 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.1242751,-5.1926598,15z-->
       <!--Name: OSM: Brill Hill OS: Brill Hill-->
       <!--Ele: OSM: 165.701 OS: 165.701-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -548,6 +584,7 @@
       <!--Lat: OSM: 50.9388705 OS 50.9389209-->
       <!--Lon: OSM: -1.0469151 OS -1.0468507-->
       <!--Separation distance: 7.2 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.9389209,-1.0468507,15z-->
       <!--Name: OSM: Broadhalfpenny Down OS: Broadhalfpenny Down-->
       <!--Ele: OSM: 152 OS: 152.561-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -563,6 +600,7 @@
       <!--Lat: OSM: 54.5445253 OS 54.5445176-->
       <!--Lon: OSM: -2.0803149 OS -2.080306-->
       <!--Separation distance: 1.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5445176,-2.080306,15z-->
       <!--Name: OSM: Brown Rigg OS: Brown Rigg-->
       <!--Ele: OSM: 419.1 OS: 419.1-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -578,6 +616,7 @@
       <!--Lat: OSM: 50.5905925 OS 50.5905924-->
       <!--Lon: OSM: -4.6027534 OS -4.6027536-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.5905924,-4.6027536,15z-->
       <!--Name: OSM: Brown Willy OS: Brown Willy-->
       <!--Ele: OSM: 420.014 OS: 420.014-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -593,6 +632,7 @@
       <!--Lat: OSM: 54.398475 OS 54.398475-->
       <!--Lon: OSM: -2.7956608 OS -2.795661-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.398475,-2.795661,15z-->
       <!--Name: OSM: Brunt Knott OS: Brunt Knott-->
       <!--Ele: OSM: 427.0 OS: 427.024-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -608,6 +648,7 @@
       <!--Lat: OSM: 52.91457 OS 52.9145844-->
       <!--Lon: OSM: -3.270986 OS -3.2709879-->
       <!--Separation distance: 1.6 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9145844,-3.2709879,15z-->
       <!--Name: OSM: Bryn Du OS: Bryn Du-->
       <!--Ele: OSM: 561.746 OS: 561.746-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -623,6 +664,7 @@
       <!--Lat: OSM: 53.302621 OS 53.3026371-->
       <!--Lon: OSM: -3.753913 OS -3.7539206-->
       <!--Separation distance: 1.86 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3026371,-3.7539206,15z-->
       <!--Name: OSM: Bryn Euryn OS: Bryn Euryn-->
       <!--Ele: OSM: 130.878 OS: 130.878-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -638,6 +680,7 @@
       <!--Lat: OSM: 53.2726974 OS 53.2726973-->
       <!--Lon: OSM: -3.8271103 OS -3.8271106-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2726973,-3.8271106,15z-->
       <!--Name: OSM: Bryn Iocyn OS: Bryn Iocyn-->
       <!--Ele: OSM: 118.46 OS: 118.46-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -653,6 +696,7 @@
       <!--Lat: OSM: 53.2181735 OS 53.2181734-->
       <!--Lon: OSM: -4.129772 OS -4.1297721-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2181734,-4.1297721,15z-->
       <!--Name: OSM: Bryniau OS: Bryniau-->
       <!--Ele: OSM: 117.536 OS: 117.536-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -668,6 +712,7 @@
       <!--Lat: OSM: 52.875646 OS 52.8756643-->
       <!--Lon: OSM: -3.702276 OS -3.7022817-->
       <!--Separation distance: 2.07 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8756643,-3.7022817,15z-->
       <!--Name: OSM: Brynllech OS: Brynllech-->
       <!--Ele: OSM: 338.023 OS: 338.023-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -683,6 +728,7 @@
       <!--Lat: OSM: 52.430779 OS 52.4307673-->
       <!--Lon: OSM: -2.1760656 OS -2.1760753-->
       <!--Separation distance: 1.46 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.4307673,-2.1760753,15z-->
       <!--Name: OSM: Bunkers Hill OS: Bunkers Hill-->
       <!--Ele: OSM: 146.706 OS: 146.706-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -698,6 +744,7 @@
       <!--Lat: OSM: 54.7323833 OS 54.7323673-->
       <!--Lon: OSM: -2.3309805 OS -2.3309056-->
       <!--Separation distance: 5.13 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7323673,-2.3309056,15z-->
       <!--Name: OSM: Burnhope Seat OS: Burnhope Seat-->
       <!--Ele: OSM: 747.4 OS: 747.369-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -713,6 +760,7 @@
       <!--Lat: OSM: 54.0166764 OS 54.0166785-->
       <!--Lon: OSM: -2.8008494 OS -2.800849-->
       <!--Separation distance: 0.23 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.0166785,-2.800849,15z-->
       <!--Name: OSM: Burrow Heights OS: Burrow Heights-->
       <!--Ele: OSM: 59.6 OS: 59.588-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -728,6 +776,7 @@
       <!--Lat: OSM: 53.0048076 OS 53.0048076-->
       <!--Lon: OSM: -4.3463357 OS -4.3463359-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0048076,-4.3463359,15z-->
       <!--Name: OSM: Bwlch Mawr OS: Bwlch Mawr-->
       <!--Ele: OSM: 509.625 OS: 509.625-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -743,6 +792,7 @@
       <!--Lat: OSM: 53.3096088 OS 53.3096087-->
       <!--Lon: OSM: -4.1241733 OS -4.1241735-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3096087,-4.1241735,15z-->
       <!--Name: OSM: Bwrdd Arthur OS: Bwrdd Arthur-->
       <!--Ele: OSM: 164.287 OS: 164.287-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -758,6 +808,7 @@
       <!--Lat: OSM: 52.883872 OS 52.8838872-->
       <!--Lon: OSM: -3.380242 OS -3.3802428-->
       <!--Separation distance: 1.69 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8838872,-3.3802428,15z-->
       <!--Name: OSM: Cader Berwyn OS: Cader Berwyn-->
       <!--Ele: OSM: 826.922 OS: 826.922-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -773,6 +824,7 @@
       <!--Lat: OSM: 52.6996019 OS 52.6996186-->
       <!--Lon: OSM: -3.9088153 OS -3.9088231-->
       <!--Separation distance: 1.93 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6996186,-3.9088231,15z-->
       <!--Name: OSM: Cader Idris OS: Cader Idris-->
       <!--Ele: OSM: 893.368 OS: 893.368-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -788,6 +840,7 @@
       <!--Lat: OSM: 53.2101205 OS 53.21012-->
       <!--Lon: OSM: -1.6453885 OS -1.6454079-->
       <!--Separation distance: 1.29 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.21012,-1.6454079,15z-->
       <!--Name: OSM: Calton Pastures OS: Calton Pastures-->
       <!--Ele: OSM: 290 OS: 289.758-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -803,6 +856,7 @@
       <!--Lat: OSM: 50.5109877 OS 50.5109877-->
       <!--Lon: OSM: -4.4371317 OS -4.4371318-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.5109877,-4.4371318,15z-->
       <!--Name: OSM: Caradon Hill OS: Caradon Hill-->
       <!--Ele: OSM: 369.701 OS: 369.701-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -818,6 +872,7 @@
       <!--Lat: OSM: 52.886468 OS 52.8864862-->
       <!--Lon: OSM: -4.559863 OS -4.5598761-->
       <!--Separation distance: 2.21 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8864862,-4.5598761,15z-->
       <!--Name: OSM: Carn Fadryn OS: Carn Fadryn-->
       <!--Ele: OSM: 371.551 OS: 371.551-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -833,6 +888,7 @@
       <!--Lat: OSM: 50.2233367 OS 50.2233367-->
       <!--Lon: OSM: -5.2046053 OS -5.2046054-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.2233367,-5.2046054,15z-->
       <!--Name: OSM: Carn Marth OS: Carn Marth-->
       <!--Ele: OSM: 235.738 OS: 235.738-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -848,6 +904,7 @@
       <!--Lat: OSM: 50.213479 OS 50.213479-->
       <!--Lon: OSM: -5.5371662 OS -5.5371663-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.213479,-5.5371663,15z-->
       <!--Name: OSM: Carn Naun OS: Carn Naun-->
       <!--Ele: OSM: 96.926 OS: 96.926-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -863,6 +920,7 @@
       <!--Lat: OSM: 52.958711 OS 52.958726-->
       <!--Lon: OSM: -3.757661 OS -3.7576725-->
       <!--Separation distance: 1.84 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.958726,-3.7576725,15z-->
       <!--Name: OSM: Carnedd Bachgen OS: Carnedd Bachgen-->
       <!--Ele: OSM: 688.848 OS: 688.848-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -878,6 +936,7 @@
       <!--Lat: OSM: 53.0732068 OS 53.0732066-->
       <!--Lon: OSM: -3.9340013 OS -3.9340014-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0732066,-3.9340014,15z-->
       <!--Name: OSM: Carnedd Moel Siabod OS: Carnedd Moel Siabod-->
       <!--Ele: OSM: 872.337 OS: 872.337-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -893,6 +952,7 @@
       <!--Lat: OSM: 52.986762 OS 52.9867771-->
       <!--Lon: OSM: -3.6830306 OS -3.6830303-->
       <!--Separation distance: 1.68 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9867771,-3.6830303,15z-->
       <!--Name: OSM: Carnedd Y Filiast OS: Carnedd Y Filiast-->
       <!--Ele: OSM: 669.645 OS: 669.645-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -908,6 +968,7 @@
       <!--Lat: OSM: 50.1830428 OS 50.1830428-->
       <!--Lon: OSM: -5.2293288 OS -5.2293289-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.1830428,-5.2293289,15z-->
       <!--Name: OSM: Carnmenellis OS: Carnmenellis-->
       <!--Ele: OSM: 252 OS: 251.908-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -923,6 +984,7 @@
       <!--Lat: OSM: 54.3400742 OS 54.3400922-->
       <!--Lon: OSM: -3.0393313 OS -3.0393131-->
       <!--Separation distance: 2.33 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.3400922,-3.0393131,15z-->
       <!--Name: OSM: Carron Crag OS: Carron Crag-->
       <!--Ele: OSM: 314 OS: 314.428-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -938,6 +1000,7 @@
       <!--Lat: OSM: 53.1611649 OS 53.1611648-->
       <!--Lon: OSM: -3.8498798 OS -3.8498799-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1611648,-3.8498799,15z-->
       <!--Name: OSM: Cefn Cyfarwydd OS: Cefn Cyfarwydd-->
       <!--Ele: OSM: 419.1 OS: 419.1-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -953,6 +1016,7 @@
       <!--Lat: OSM: 53.1208475 OS 53.1208474-->
       <!--Lon: OSM: -4.1709075 OS -4.1709077-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1208474,-4.1709077,15z-->
       <!--Name: OSM: Cefn Du OS: Cefn Du-->
       <!--Ele: OSM: 441.35 OS: 441.35-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -968,6 +1032,7 @@
       <!--Lat: OSM: 53.2379512 OS 53.2379576-->
       <!--Lon: OSM: -3.4829066 OS -3.4829116-->
       <!--Separation distance: 0.79 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2379576,-3.4829116,15z-->
       <!--Name: OSM: Cefn Meiriadog OS: Cefn Meiriadog-->
       <!--Ele: OSM: 164.125 OS: 164.125-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -983,6 +1048,7 @@
       <!--Lat: OSM: 52.951476 OS 52.9514911-->
       <!--Lon: OSM: -4.252855 OS -4.2528607-->
       <!--Separation distance: 1.72 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9514911,-4.2528607,15z-->
       <!--Name: OSM: Cefn-Uchaf OS: Cefn-Uchaf-->
       <!--Ele: OSM: 111.834 OS: 111.834-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -998,6 +1064,7 @@
       <!--Lat: OSM: 53.281582 OS 53.2815988-->
       <!--Lon: OSM: -3.625971 OS -3.6259761-->
       <!--Separation distance: 1.9 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2815988,-3.6259761,15z-->
       <!--Name: OSM: Cefn-Yr-Ogof OS: Cefn-Yr-Ogof-->
       <!--Ele: OSM: 203.972 OS: 203.972-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1013,6 +1080,7 @@
       <!--Lat: OSM: 52.1435991 OS 52.1436082-->
       <!--Lon: OSM: 0.0490131 OS 0.0490382-->
       <!--Separation distance: 1.99 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1436082,0.0490382,15z-->
       <!--Name: OSM: Chapel Hill OS: Chapel Hill-->
       <!--Ele: OSM: 61.462 OS: 61.462-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1028,6 +1096,7 @@
       <!--Lat: OSM: 51.0619623 OS 51.0619833-->
       <!--Lon: OSM: -3.2394776 OS -3.2394221-->
       <!--Separation distance: 4.53 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.0619833,-3.2394221,15z-->
       <!--Name: OSM: Chapel Leigh OS: Chapel Leigh-->
       <!--Ele: OSM: 169 OS: 168.865-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1043,6 +1112,7 @@
       <!--Lat: OSM: 51.5374583 OS 51.5374482-->
       <!--Lon: OSM: -1.6585031 OS -1.6584972-->
       <!--Separation distance: 1.19 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.5374482,-1.6584972,15z-->
       <!--Name: OSM: Charlbury Hill OS: Charlbury Hill-->
       <!--Ele: OSM: 253 OS: 253.06-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1058,6 +1128,7 @@
       <!--Lat: OSM: 54.4878241 OS 54.4878243-->
       <!--Lon: OSM: -2.0355244 OS -2.0355176-->
       <!--Separation distance: 0.44 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4878243,-2.0355176,15z-->
       <!--Name: OSM: Citron Seat OS: Citron Seat-->
       <!--Ele: OSM: 446.2 OS: 446.227-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1073,6 +1144,7 @@
       <!--Lat: OSM: 54.5936444 OS 54.5936442-->
       <!--Lon: OSM: -3.0323783 OS -3.0323783-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5936442,-3.0323783,15z-->
       <!--Name: OSM: Clough Head OS: Clough Head-->
       <!--Ele: OSM: 726.3 OS: 726.338-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1088,6 +1160,7 @@
       <!--Lat: OSM: 53.3821091 OS 53.3821076-->
       <!--Lon: OSM: -2.0213846 OS -2.021379-->
       <!--Separation distance: 0.41 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3821076,-2.021379,15z-->
       <!--Name: OSM: Cobden Edge OS: Cobden Edge-->
       <!--Ele: OSM: 328 OS: 327.788-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1103,6 +1176,7 @@
       <!--Lat: OSM: 52.3404921 OS 52.3404945-->
       <!--Lon: OSM: -1.9824474 OS -1.9824479-->
       <!--Separation distance: 0.27 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.3404945,-1.9824479,15z-->
       <!--Name: OSM: Cobley Hill Farm OS: Cobley Hill Farm-->
       <!--Ele: OSM: 192 OS: 191.856-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1118,6 +1192,7 @@
       <!--Lat: OSM: 54.4897813 OS 54.4897826-->
       <!--Lon: OSM: -2.1207838 OS -2.1207736-->
       <!--Separation distance: 0.67 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4897826,-2.1207736,15z-->
       <!--Name: OSM: Collinsons Hill OS: Collinsons Hill-->
       <!--Ele: OSM: 434.6 OS: 434.644-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1133,6 +1208,7 @@
       <!--Lat: OSM: 50.4017164 OS 50.4017163-->
       <!--Lon: OSM: -4.985936 OS -4.9859362-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.4017163,-4.9859362,15z-->
       <!--Name: OSM: Coswarth Farm OS: Coswarth Farm-->
       <!--Ele: OSM: 123.444 OS: 123.444-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1148,6 +1224,7 @@
       <!--Lat: OSM: 52.2138467 OS 52.2138639-->
       <!--Lon: OSM: 0.042598 OS 0.0426237-->
       <!--Separation distance: 2.59 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.2138639,0.0426237,15z-->
       <!--Name: OSM: Coton OS: Coton-->
       <!--Ele: OSM: 62.904 OS: 62.904-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1163,6 +1240,7 @@
       <!--Lat: OSM: 54.5720293 OS 54.5720293-->
       <!--Lon: OSM: -3.250341 OS -3.250341-->
       <!--Separation distance: 0 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5720293,-3.250341,15z-->
       <!--Name: OSM: Crag Hill OS: Crag Hill-->
       <!--Ele: OSM: 839.4 OS: 839.419-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1178,6 +1256,7 @@
       <!--Lat: OSM: 53.312055 OS 53.3120759-->
       <!--Lon: OSM: -3.413127 OS -3.4131279-->
       <!--Separation distance: 2.33 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3120759,-3.4131279,15z-->
       <!--Name: OSM: Craig Fawr OS: Craig Fawr-->
       <!--Ele: OSM: 152.933 OS: 152.933-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1193,6 +1272,7 @@
       <!--Lat: OSM: 52.674055 OS 52.6740682-->
       <!--Lon: OSM: -3.769462 OS -3.769465-->
       <!--Separation distance: 1.48 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6740682,-3.769465,15z-->
       <!--Name: OSM: Craig Goch OS: Craig Goch-->
       <!--Ele: OSM: 468.782 OS: 468.782-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1208,6 +1288,7 @@
       <!--Lat: OSM: 55.9554791 OS 55.9555296-->
       <!--Lon: OSM: -4.7935397 OS -4.7936662-->
       <!--Separation distance: 9.67 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.9555296,-4.7936662,15z-->
       <!--Name: OSM: Craigs Top OS: Craigs Top-->
       <!--Ele: OSM: 130 OS: 130.149-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1223,6 +1304,7 @@
       <!--Lat: OSM: 57.7256141 OS 57.7256105-->
       <!--Lon: OSM: -5.1980322 OS -5.198039-->
       <!--Separation distance: 0.57 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.7256105,-5.198039,15z-->
       <!--Name: OSM: Creag Rainich OS: Creag Rainich-->
       <!--Ele: OSM: 807 OS: 807.11-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1238,6 +1320,7 @@
       <!--Lat: OSM: 50.169502 OS 50.169502-->
       <!--Lon: OSM: -5.2722732 OS -5.2722732-->
       <!--Separation distance: 0 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.169502,-5.2722732,15z-->
       <!--Name: OSM: Crowan Beacon OS: Crowan Beacon-->
       <!--Ele: OSM: 222.571 OS: 222.571-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1253,6 +1336,7 @@
       <!--Lat: OSM: 52.1271619 OS 52.1271761-->
       <!--Lon: OSM: -0.0907959 OS -0.0907707-->
       <!--Separation distance: 2.34 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1271761,-0.0907707,15z-->
       <!--Name: OSM: Croydon Hill OS: Croydon Hill-->
       <!--Ele: OSM: 78.144 OS: 78.144-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1268,6 +1352,7 @@
       <!--Lat: OSM: 53.6233565 OS 53.6233631-->
       <!--Lon: OSM: -1.9524088 OS -1.9524028-->
       <!--Separation distance: 0.84 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.6233631,-1.9524028,15z-->
       <!--Name: OSM: Cupwith Hill OS: Cupwith Hill-->
       <!--Ele: OSM: 426 OS: 426.604-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1283,6 +1368,7 @@
       <!--Lat: OSM: 54.5575526 OS 54.5575501-->
       <!--Lon: OSM: -2.023378 OS -2.0233666-->
       <!--Separation distance: 0.79 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5575501,-2.0233666,15z-->
       <!--Name: OSM: Currack Rigg OS: Currack Rigg-->
       <!--Ele: OSM: 304.2 OS: 304.19-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1298,6 +1384,7 @@
       <!--Lat: OSM: 52.7463062 OS 52.746301-->
       <!--Lon: OSM: -4.0430135 OS -4.0430007-->
       <!--Separation distance: 1.04 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.746301,-4.0430007,15z-->
       <!--Name: OSM: Cwmmaria OS: Cwmmaria-->
       <!--Ele: OSM: 461.162 OS: 461.162-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1313,6 +1400,7 @@
       <!--Lat: OSM: 53.038303 OS 53.0383223-->
       <!--Lon: OSM: -3.174173 OS -3.174169-->
       <!--Separation distance: 2.17 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0383223,-3.174169,15z-->
       <!--Name: OSM: Cyrn-Y-Brain OS: Cyrn-Y-Brain-->
       <!--Ele: OSM: 562.356 OS: 562.356-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1328,6 +1416,7 @@
       <!--Lat: OSM: 53.5120886 OS 53.5121031-->
       <!--Lon: OSM: -1.813772 OS -1.8138057-->
       <!--Separation distance: 2.75 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.5121031,-1.8138057,15z-->
       <!--Name: OSM: Dead Edge End OS: Dead Edge End-->
       <!--Ele: OSM: 499 OS: 499.591-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1343,6 +1432,7 @@
       <!--Lat: OSM: 51.0959887 OS 51.0959957-->
       <!--Lon: OSM: -3.2567905 OS -3.256789-->
       <!--Separation distance: 0.79 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.0959957,-3.256789,15z-->
       <!--Name: OSM: Deans Cross OS: Deans Cross-->
       <!--Ele: OSM: 157.7 OS: 157.682-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1358,6 +1448,7 @@
       <!--Lat: OSM: 55.9110784 OS 55.9110783-->
       <!--Lon: OSM: -3.5470716 OS -3.547072-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.9110783,-3.547072,15z-->
       <!--Name: OSM: Dechmont Law OS: Dechmont Law-->
       <!--Ele: OSM: 217 OS: 217.051-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1373,6 +1464,7 @@
       <!--Lat: OSM: 50.4672286 OS 50.4672285-->
       <!--Lon: OSM: -4.9584398 OS -4.95844-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.4672285,-4.95844,15z-->
       <!--Name: OSM: Denzell Downs OS: Denzell Downs-->
       <!--Ele: OSM: 185.013 OS: 185.013-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1388,6 +1480,7 @@
       <!--Lat: OSM: 52.791593 OS 52.7916077-->
       <!--Lon: OSM: -3.986776 OS -3.9867812-->
       <!--Separation distance: 1.67 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.7916077,-3.9867812,15z-->
       <!--Name: OSM: Diphwys OS: Diphwys-->
       <!--Ele: OSM: 750.722 OS: 750.722-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1403,6 +1496,7 @@
       <!--Lat: OSM: 50.7610025 OS 50.7610025-->
       <!--Lon: OSM: -4.5999044 OS -4.5999045-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.7610025,-4.5999045,15z-->
       <!--Name: OSM: Dizzard Point OS: Dizzard Point-->
       <!--Ele: OSM: 164.579 OS: 164.579-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1418,6 +1512,7 @@
       <!--Lat: OSM: 52.9752226 OS 52.9752213-->
       <!--Lon: OSM: -1.442669 OS -1.4426861-->
       <!--Separation distance: 1.16 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9752213,-1.4426861,15z-->
       <!--Name: OSM: Drum Hill OS: Drum Hill-->
       <!--Ele: OSM: 157 OS: 156.658-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1433,6 +1528,7 @@
       <!--Lat: OSM: 51.1557912 OS 51.1557968-->
       <!--Lon: OSM: 0.0463244 OS 0.0463214-->
       <!--Separation distance: 0.66 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.1557968,0.0463214,15z-->
       <!--Name: OSM: Dry Hill OS: Dry Hill-->
       <!--Ele: OSM: 172 OS: 172.553-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1448,6 +1544,7 @@
       <!--Lat: OSM: 54.7990444 OS 54.799037-->
       <!--Lon: OSM: -2.1363265 OS -2.1363173-->
       <!--Separation distance: 1.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.799037,-2.1363173,15z-->
       <!--Name: OSM: Dry Rigg OS: Dry Rigg-->
       <!--Ele: OSM: 561.1 OS: 561.136-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1463,6 +1560,7 @@
       <!--Lat: OSM: 52.2789941 OS 52.2789901-->
       <!--Lon: OSM: -2.4607831 OS -2.460793-->
       <!--Separation distance: 0.81 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.2789901,-2.460793,15z-->
       <!--Name: OSM: Dudhill Farm OS: Dudhill Farm-->
       <!--Ele: OSM: 220.278 OS: 220.278-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1478,6 +1576,7 @@
       <!--Lat: OSM: 54.6420632 OS 54.6420578-->
       <!--Lon: OSM: -2.4277331 OS -2.4277438-->
       <!--Separation distance: 0.91 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6420578,-2.4277438,15z-->
       <!--Name: OSM: Dufton OS: Dufton-->
       <!--Ele: OSM: 692.8 OS: 692.81-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1493,6 +1592,7 @@
       <!--Lat: OSM: 55.892738 OS 55.8927374-->
       <!--Lon: OSM: -3.7548167 OS -3.7548172-->
       <!--Separation distance: 0.07 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8927374,-3.7548172,15z-->
       <!--Name: OSM: Eastcraigs Hill OS: Eastcraigs Hill-->
       <!--Ele: OSM: 250 OS: 249.936-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1508,6 +1608,7 @@
       <!--Lat: OSM: 53.8219879 OS 53.8219776-->
       <!--Lon: OSM: -1.7255106 OS -1.7255008-->
       <!--Separation distance: 1.31 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.8219776,-1.7255008,15z-->
       <!--Name: OSM: Eccleshill OS: Eccleshill-->
       <!--Ele: OSM: 212.2 OS: 212.244-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1523,6 +1624,7 @@
       <!--Lat: OSM: 50.8242468 OS 50.8242468-->
       <!--Lon: OSM: -4.5575017 OS -4.5575018-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.8242468,-4.5575018,15z-->
       <!--Name: OSM: Efford Beacon OS: Efford Beacon-->
       <!--Ele: OSM: 60.234 OS: 60.234-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1538,6 +1640,7 @@
       <!--Lat: OSM: 52.6501638 OS 52.6501789-->
       <!--Lon: OSM: -0.723312 OS -0.7233217-->
       <!--Separation distance: 1.81 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6501789,-0.7233217,15z-->
       <!--Name: OSM: Egleton OS: Egleton-->
       <!--Ele: OSM: 150 OS: 150.33-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1553,6 +1656,7 @@
       <!--Lat: OSM: 51.8938628 OS 51.8938546-->
       <!--Lon: OSM: -3.5157539 OS -3.5157684-->
       <!--Separation distance: 1.35 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.8938546,-3.5157684,15z-->
       <!--Name: OSM: Fan Frynych OS: Fan Frynych-->
       <!--Ele: OSM: 629 OS: 629.107-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1568,6 +1672,7 @@
       <!--Lat: OSM: 51.0593636 OS 51.0593523-->
       <!--Lon: OSM: -1.4259236 OS -1.4258968-->
       <!--Separation distance: 2.26 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.0593523,-1.4258968,15z-->
       <!--Name: OSM: Farley Mount OS: Farley Mount-->
       <!--Ele: OSM: 174 OS: 174.74-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1583,6 +1688,7 @@
       <!--Lat: OSM: 53.5072001 OS 53.50721-->
       <!--Lon: OSM: -1.9314431 OS -1.9314631-->
       <!--Separation distance: 1.73 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.50721,-1.9314631,15z-->
       <!--Name: OSM: Featherbed Moss OS: Featherbed Moss-->
       <!--Ele: OSM: 541 OS: 541.02-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1598,6 +1704,7 @@
       <!--Lat: OSM: 50.833771 OS 50.8337691-->
       <!--Lon: OSM: 0.1082883 OS 0.1082803-->
       <!--Separation distance: 0.6 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.8337691,0.1082803,15z-->
       <!--Name: OSM: Firle Beacon OS: Firle Beacon-->
       <!--Ele: OSM: 218 OS: 217.743-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1613,6 +1720,7 @@
       <!--Lat: OSM: 53.3057711 OS 53.305775-->
       <!--Lon: OSM: -1.5738988 OS -1.5738896-->
       <!--Separation distance: 0.75 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.305775,-1.5738896,15z-->
       <!--Name: OSM: Flask Edge OS: Flask Edge-->
       <!--Ele: OSM: 395 OS: 395.429-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1628,6 +1736,7 @@
       <!--Lat: OSM: 54.6493661 OS 54.6493662-->
       <!--Lon: OSM: -2.8320565 OS -2.832057-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6493662,-2.832057,15z-->
       <!--Name: OSM: Flusco Pike OS: Flusco Pike-->
       <!--Ele: OSM: 280.7 OS: 280.729-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1643,6 +1752,7 @@
       <!--Lat: OSM: 52.943112 OS 52.9431238-->
       <!--Lon: OSM: -3.209929 OS -3.2099248-->
       <!--Separation distance: 1.34 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9431238,-3.2099248,15z-->
       <!--Name: OSM: Foel OS: Foel-->
       <!--Ele: OSM: 522.427 OS: 522.427-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1658,6 +1768,7 @@
       <!--Lat: OSM: 52.967729 OS 52.9677457-->
       <!--Lon: OSM: -3.559217 OS -3.5592169-->
       <!--Separation distance: 1.85 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9677457,-3.5592169,15z-->
       <!--Name: OSM: Foel Goch OS: Foel Goch-->
       <!--Ele: OSM: 611.12 OS: 611.124-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1673,6 +1784,7 @@
       <!--Lat: OSM: 52.7626071 OS 52.7626191-->
       <!--Lon: OSM: -3.9251319 OS -3.9251375-->
       <!--Separation distance: 1.39 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.7626191,-3.9251375,15z-->
       <!--Name: OSM: Foel Ispri OS: Foel Ispri-->
       <!--Ele: OSM: 320.954 OS: 320.954-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1688,6 +1800,7 @@
       <!--Lat: OSM: 52.834714 OS 52.8347303-->
       <!--Lon: OSM: -3.579255 OS -3.5792539-->
       <!--Separation distance: 1.81 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8347303,-3.5792539,15z-->
       <!--Name: OSM: Foel Y Geifr OS: Foel Y Geifr-->
       <!--Ele: OSM: 626.668 OS: 626.668-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1703,6 +1816,7 @@
       <!--Lat: OSM: 50.5800713 OS 50.5800712-->
       <!--Lon: OSM: -4.5066335 OS -4.5066337-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.5800712,-4.5066337,15z-->
       <!--Name: OSM: Fox Tor OS: Fox Tor-->
       <!--Ele: OSM: 322.993 OS: 322.993-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1718,6 +1832,7 @@
       <!--Lat: OSM: 52.955251 OS 52.9552646-->
       <!--Lon: OSM: -3.452033 OS -3.4520347-->
       <!--Separation distance: 1.51 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9552646,-3.4520347,15z-->
       <!--Name: OSM: Gaerwen OS: Gaerwen-->
       <!--Ele: OSM: 391.972 OS: 391.972-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1733,6 +1848,7 @@
       <!--Lat: OSM: 53.0222331 OS 53.0222332-->
       <!--Lon: OSM: -4.2211612 OS -4.2211613-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0222332,-4.2211613,15z-->
       <!--Name: OSM: Garnedd Goch OS: Garnedd Goch-->
       <!--Ele: OSM: 701.954 OS: 701.954-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1748,6 +1864,7 @@
       <!--Lat: OSM: 53.0755458 OS 53.0755456-->
       <!--Lon: OSM: -4.0751921 OS -4.0751922-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0755456,-4.0751922,15z-->
       <!--Name: OSM: Garnedd Ugain OS: Garnedd Ugain-->
       <!--Ele: OSM: 1065.885 OS: 1065.885-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1763,6 +1880,7 @@
       <!--Lat: OSM: 53.2029204 OS 53.2029202-->
       <!--Lon: OSM: -3.8089191 OS -3.8089192-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2029202,-3.8089192,15z-->
       <!--Name: OSM: Garth Mountain OS: Garth Mountain-->
       <!--Ele: OSM: 234.074 OS: 234.074-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1778,6 +1896,7 @@
       <!--Lat: OSM: 52.834966 OS 52.8349765-->
       <!--Lon: OSM: -3.36389 OS -3.36389-->
       <!--Separation distance: 1.17 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8349765,-3.36389,15z-->
       <!--Name: OSM: Glan-Hafon OS: Glan-Hafon-->
       <!--Ele: OSM: 607.161 OS: 607.161-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1793,6 +1912,7 @@
       <!--Lat: OSM: 54.5880995 OS 54.5880994-->
       <!--Lon: OSM: -2.918202 OS -2.9182022-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5880994,-2.9182022,15z-->
       <!--Name: OSM: Gowbarrow Fell OS: Gowbarrow Fell-->
       <!--Ele: OSM: 481.3 OS: 481.279-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1808,6 +1928,7 @@
       <!--Lat: OSM: 53.2585661 OS 53.2585745-->
       <!--Lon: OSM: -1.52848 OS -1.5286802-->
       <!--Separation distance: 13.35 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2585745,-1.5286802,15z-->
       <!--Name: OSM: Grange Hill OS: Grange Hill-->
       <!--Ele: OSM: 299 OS: 299.045-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1823,6 +1944,7 @@
       <!--Lat: OSM: 51.0005784 OS 51.0006096-->
       <!--Lon: OSM: -1.2433808 OS -1.2432414-->
       <!--Separation distance: 10.35 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.0006096,-1.2432414,15z-->
       <!--Name: OSM: Green Hill OS: Green Hill-->
       <!--Ele: OSM: 129 OS: 128.753-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1838,6 +1960,7 @@
       <!--Lat: OSM: 54.6954688 OS 54.6954688-->
       <!--Lon: OSM: -2.9225555 OS -2.9225559-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6954688,-2.9225559,15z-->
       <!--Name: OSM: Greystoke Park OS: Greystoke Park-->
       <!--Ele: OSM: 365.6 OS: 365.613-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1853,6 +1976,7 @@
       <!--Lat: OSM: 51.5849545 OS 51.5849443-->
       <!--Lon: OSM: -1.0957455 OS -1.0956512-->
       <!--Separation distance: 6.61 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.5849443,-1.0956512,15z-->
       <!--Name: OSM: Grims Ditch OS: Grims Ditch-->
       <!--Ele: OSM: 98 OS: 98.727-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1868,6 +1992,7 @@
       <!--Lat: OSM: 52.905698 OS 52.9057163-->
       <!--Lon: OSM: -3.642429 OS -3.6424375-->
       <!--Separation distance: 2.11 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9057163,-3.6424375,15z-->
       <!--Name: OSM: Gwastadros OS: Gwastadros-->
       <!--Ele: OSM: 360.578 OS: 360.578-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1883,6 +2008,7 @@
       <!--Lat: OSM: 53.2903641 OS 53.290364-->
       <!--Lon: OSM: -4.3403898 OS -4.34039-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.290364,-4.34039,15z-->
       <!--Name: OSM: Hafod OS: Hafod-->
       <!--Ele: OSM: 82.113 OS: 82.113-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1898,6 +2024,7 @@
       <!--Lat: OSM: 50.3289645 OS 50.3289645-->
       <!--Lon: OSM: -4.5293064 OS -4.5293065-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.3289645,-4.5293065,15z-->
       <!--Name: OSM: Hard Head OS: Hard Head-->
       <!--Ele: OSM: 133.502 OS: 133.502-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1909,10 +2036,27 @@
     </node>
   </create>
   <create>
+    <node id="433635443" changeset="1" version="1" lat="54.6926278" lon="-2.4185888">
+      <!--Lat: OSM: 54.6926278 OS 54.6923594-->
+      <!--Lon: OSM: -2.4185888 OS -2.41859-->
+      <!--Separation distance: 29.85 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6923594,-2.41859,15z-->
+      <!--Name: OSM: Hard Hill OS: Hard Hill-->
+      <!--Ele: OSM: 678.2 OS: 678.18-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--Datum_aligned: OSM: NA OS: yes-->
+      <!--Purpose: OSM: NA OS: both-->
+      <!--FB: OSM: NY71T002 OS: FB too far at  m-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = NY71T002-->
+    </node>
+  </create>
+  <create>
     <node id="29537161" changeset="1" version="1" lat="54.6548206" lon="-2.1074183">
       <!--Lat: OSM: 54.6548206 OS 54.6548142-->
       <!--Lon: OSM: -2.1074183 OS -2.1074066-->
       <!--Separation distance: 1.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6548142,-2.1074066,15z-->
       <!--Name: OSM: Hardberry Hill OS: Hardberry Hill-->
       <!--Ele: OSM: 529.7 OS: 529.742-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1928,6 +2072,7 @@
       <!--Lat: OSM: 55.7590635 OS 55.7590639-->
       <!--Lon: OSM: -3.6394063 OS -3.6394064-->
       <!--Separation distance: 0.04 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.7590639,-3.6394064,15z-->
       <!--Name: OSM: Hardgatehead Farm OS: Hardgatehead Farm-->
       <!--Ele: OSM: 278 OS: 277.709-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1943,6 +2088,7 @@
       <!--Lat: OSM: 52.678924 OS 52.6789401-->
       <!--Lon: OSM: -3.017541 OS -3.0175448-->
       <!--Separation distance: 1.81 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6789401,-3.0175448,15z-->
       <!--Name: OSM: Hargrave Bank OS: Hargrave Bank-->
       <!--Ele: OSM: 324.825 OS: 324.825-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -1958,6 +2104,7 @@
       <!--Lat: OSM: 53.2096457 OS 53.2096504-->
       <!--Lon: OSM: -1.5509652 OS -1.5509407-->
       <!--Separation distance: 1.71 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2096504,-1.5509407,15z-->
       <!--Name: OSM: Harland South OS: Harland South-->
       <!--Ele: OSM: 367.128 OS: 367.128-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -1973,6 +2120,7 @@
       <!--Lat: OSM: 50.8911376 OS 50.8911129-->
       <!--Lon: OSM: -1.6298617 OS -1.6298765-->
       <!--Separation distance: 2.93 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.8911129,-1.6298765,15z-->
       <!--Name: OSM: Hart Hill OS: Hart Hill-->
       <!--Ele: OSM: 104 OS: 104.442-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -1988,6 +2136,7 @@
       <!--Lat: OSM: 52.1561017 OS 52.1561136-->
       <!--Lon: OSM: -0.1066912 OS -0.1066597-->
       <!--Separation distance: 2.53 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1561136,-0.1066597,15z-->
       <!--Name: OSM: Hatley Wilds OS: Hatley Wilds-->
       <!--Ele: OSM: 81.037 OS: 81.037-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2003,6 +2152,7 @@
       <!--Lat: OSM: 50.42198 OS 50.4219799-->
       <!--Lon: OSM: -4.7295621 OS -4.7295622-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.4219799,-4.7295622,15z-->
       <!--Name: OSM: Helman Tor OS: Helman Tor-->
       <!--Ele: OSM: 209.702 OS: 209.702-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2018,6 +2168,7 @@
       <!--Lat: OSM: 54.5274226 OS 54.5274225-->
       <!--Lon: OSM: -3.0186785 OS -3.0186786-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5274225,-3.0186786,15z-->
       <!--Name: OSM: Helvellyn OS: Helvellyn-->
       <!--Ele: OSM: 949.1 OS: 949.147-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2033,6 +2184,7 @@
       <!--Lat: OSM: 54.7448468 OS 54.7448466-->
       <!--Lon: OSM: -2.9772726 OS -2.9772728-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7448466,-2.9772728,15z-->
       <!--Name: OSM: Hewer Hill Quarry OS: Hewer Hill Quarry-->
       <!--Ele: OSM: 257.1 OS: 257.12-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2048,6 +2200,7 @@
       <!--Lat: OSM: 52.91474 OS 52.9147375-->
       <!--Lon: OSM: -1.2668676 OS -1.2668793-->
       <!--Separation distance: 0.84 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9147375,-1.2668793,15z-->
       <!--Name: OSM: High Acre OS: High Acre-->
       <!--Ele: OSM: 66 OS: 66.376-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2063,6 +2216,7 @@
       <!--Lat: OSM: 54.4054932 OS 54.4054932-->
       <!--Lon: OSM: -3.0179429 OS -3.0179431-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4054932,-3.0179431,15z-->
       <!--Name: OSM: High Arnside OS: High Arnside-->
       <!--Ele: OSM: 322.3 OS: 322.329-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2078,6 +2232,7 @@
       <!--Lat: OSM: 54.687638 OS 54.6876377-->
       <!--Lon: OSM: -2.8086938 OS -2.8086938-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6876377,-2.8086938,15z-->
       <!--Name: OSM: High Dykes OS: High Dykes-->
       <!--Ele: OSM: 197.8 OS: 197.803-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2093,6 +2248,7 @@
       <!--Lat: OSM: 54.6864163 OS 54.6863991-->
       <!--Lon: OSM: -1.7268456 OS -1.7268561-->
       <!--Separation distance: 2.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6863991,-1.7268561,15z-->
       <!--Name: OSM: High House OS: High House-->
       <!--Ele: OSM: 172.0 OS: 171.98-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2108,6 +2264,7 @@
       <!--Lat: OSM: 54.705474 OS 54.7054741-->
       <!--Lon: OSM: -3.058762 OS -3.0587621-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7054741,-3.0587621,15z-->
       <!--Name: OSM: High Pike OS: High Pike-->
       <!--Ele: OSM: 658.4 OS: 658.368-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2123,6 +2280,7 @@
       <!--Lat: OSM: 54.4760997 OS 54.4760997-->
       <!--Lon: OSM: -3.1114447 OS -3.1114451-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4760997,-3.1114451,15z-->
       <!--Name: OSM: High Raise OS: High Raise-->
       <!--Ele: OSM: 762.3 OS: 762.304-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2138,6 +2296,7 @@
       <!--Lat: OSM: 54.552623 OS 54.552623-->
       <!--Lon: OSM: -3.1037453 OS -3.1037456-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.552623,-3.1037456,15z-->
       <!--Name: OSM: High Seat OS: High Seat-->
       <!--Ele: OSM: 608.7 OS: 608.685-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2153,6 +2312,7 @@
       <!--Lat: OSM: 54.7549269 OS 54.7549265-->
       <!--Lon: OSM: -2.2795601 OS -2.2795574-->
       <!--Separation distance: 0.18 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7549265,-2.2795574,15z-->
       <!--Name: OSM: Highwatch Currick OS: Highwatch Currick-->
       <!--Ele: OSM: 639.5 OS: 639.47-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2168,6 +2328,7 @@
       <!--Lat: OSM: 57.4239041 OS 57.4239031-->
       <!--Lon: OSM: -1.9279876 OS -1.9279881-->
       <!--Separation distance: 0.12 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.4239031,-1.9279881,15z-->
       <!--Name: OSM: Hobshill OS: Hobshill-->
       <!--Ele: OSM: 76 OS: 76.452-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2183,6 +2344,7 @@
       <!--Lat: OSM: 53.7986325 OS 53.79864-->
       <!--Lon: OSM: -1.6469603 OS -1.6469605-->
       <!--Separation distance: 0.83 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.79864,-1.6469605,15z-->
       <!--Name: OSM: Hough Top OS: Hough Top-->
       <!--Ele: OSM: 135 OS: 135.309-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2198,6 +2360,7 @@
       <!--Lat: OSM: 54.7190105 OS 54.7190107-->
       <!--Lon: OSM: -2.9443146 OS -2.9443146-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7190107,-2.9443146,15z-->
       <!--Name: OSM: How Hill OS: How Hill-->
       <!--Ele: OSM: 317.0 OS: 317.013-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2213,6 +2376,7 @@
       <!--Lat: OSM: 51.733777 OS 51.7337623-->
       <!--Lon: OSM: -1.3108956 OS -1.3108879-->
       <!--Separation distance: 1.72 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.7337623,-1.3108879,15z-->
       <!--Name: OSM: Hurst Hill OS: Hurst Hill-->
       <!--Ele: OSM: 158 OS: 158.944-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2228,6 +2392,7 @@
       <!--Lat: OSM: 50.4776161 OS 50.477616-->
       <!--Lon: OSM: -4.8200461 OS -4.8200463-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.477616,-4.8200463,15z-->
       <!--Name: OSM: Hustyn Barrow OS: Hustyn Barrow-->
       <!--Ele: OSM: 184.099 OS: 184.099-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2243,6 +2408,7 @@
       <!--Lat: OSM: 54.7285801 OS 54.7285798-->
       <!--Lon: OSM: -2.8510651 OS -2.8510654-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7285798,-2.8510654,15z-->
       <!--Name: OSM: Hutton Bank OS: Hutton Bank-->
       <!--Ele: OSM: 202.8 OS: 202.804-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2258,6 +2424,7 @@
       <!--Lat: OSM: 57.504249 OS 57.504292-->
       <!--Lon: OSM: -1.9617866 OS -1.9619688-->
       <!--Separation distance: 11.89 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.504292,-1.9619688,15z-->
       <!--Name: OSM: Inverquhomery OS: Inverquhomery-->
       <!--Ele: OSM: 66 OS: 66.117-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2273,6 +2440,7 @@
       <!--Lat: OSM: 53.056424 OS 53.056424-->
       <!--Lon: OSM: -3.8087127 OS -3.8087131-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.056424,-3.8087131,15z-->
       <!--Name: OSM: Iwerddon OS: Iwerddon-->
       <!--Ele: OSM: 363.321 OS: 363.321-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2288,6 +2456,7 @@
       <!--Lat: OSM: 54.4626675 OS 54.4626675-->
       <!--Lon: OSM: -2.8260354 OS -2.8260355-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4626675,-2.8260355,15z-->
       <!--Name: OSM: Kentmere Pike OS: Kentmere Pike-->
       <!--Ele: OSM: 730.9 OS: 730.91-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2303,6 +2472,7 @@
       <!--Lat: OSM: 52.5803916 OS 52.5803977-->
       <!--Lon: OSM: -0.8712809 OS -0.8713067-->
       <!--Separation distance: 1.87 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5803977,-0.8713067,15z-->
       <!--Name: OSM: Keythorpe OS: Keythorpe-->
       <!--Ele: OSM: 179 OS: 179.31-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2318,6 +2488,7 @@
       <!--Lat: OSM: 54.798289 OS 54.7982821-->
       <!--Lon: OSM: -2.2823227 OS -2.2823188-->
       <!--Separation distance: 0.81 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7982821,-2.2823188,15z-->
       <!--Name: OSM: Killhope Law OS: Killhope Law-->
       <!--Ele: OSM: 673.0 OS: 672.998-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2333,6 +2504,7 @@
       <!--Lat: OSM: 50.5476943 OS 50.5476943-->
       <!--Lon: OSM: -4.4673675 OS -4.4673677-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.5476943,-4.4673677,15z-->
       <!--Name: OSM: Kilmar Tor OS: Kilmar Tor-->
       <!--Ele: OSM: 390.448 OS: 390.448-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2348,6 +2520,7 @@
       <!--Lat: OSM: 55.865611 OS 55.865611-->
       <!--Lon: OSM: -3.7845044 OS -3.7845064-->
       <!--Separation distance: 0.13 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.865611,-3.7845064,15z-->
       <!--Name: OSM: Knowehead OS: Knowehead-->
       <!--Ele: OSM: 251 OS: 251.069-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2363,6 +2536,7 @@
       <!--Lat: OSM: 52.5406473 OS 52.5406499-->
       <!--Lon: OSM: -0.9025134 OS -0.9025132-->
       <!--Separation distance: 0.29 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5406499,-0.9025132,15z-->
       <!--Name: OSM: Langton Caudle OS: Langton Caudle-->
       <!--Ele: OSM: 147 OS: 147.401-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2378,6 +2552,7 @@
       <!--Lat: OSM: 56.2339411 OS 56.2338761-->
       <!--Lon: OSM: -2.9258158 OS -2.9258184-->
       <!--Separation distance: 7.23 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.2338761,-2.9258184,15z-->
       <!--Name: OSM: Largo Law OS: Largo Law-->
       <!--Ele: OSM: 290 OS: 290.587-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2393,6 +2568,7 @@
       <!--Lat: OSM: 52.3824728 OS 52.3824307-->
       <!--Lon: OSM: -2.0174727 OS -2.0174304-->
       <!--Separation distance: 5.5 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.3824307,-2.0174304,15z-->
       <!--Name: OSM: Lickey Hill OS: Lickey Hill-->
       <!--Ele: OSM: 285.829 OS: 285.829-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2408,6 +2584,7 @@
       <!--Lat: OSM: 52.638043 OS 52.6379835-->
       <!--Lon: OSM: -0.9308952 OS -0.930916-->
       <!--Separation distance: 6.76 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6379835,-0.930916,15z-->
       <!--Name: OSM: Life Hill OS: Life Hill-->
       <!--Ele: OSM: 220 OS: 220.266-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2423,6 +2600,7 @@
       <!--Lat: OSM: 52.0588676 OS 52.0588748-->
       <!--Lon: OSM: -0.0724559 OS -0.0724236-->
       <!--Separation distance: 2.35 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.0588748,-0.0724236,15z-->
       <!--Name: OSM: Limlow Hill OS: Limlow Hill-->
       <!--Ele: OSM: 59.051 OS: 59.051-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2438,6 +2616,7 @@
       <!--Lat: OSM: 54.6457555 OS 54.6457557-->
       <!--Lon: OSM: -3.2728554 OS -3.2728556-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6457557,-3.2728556,15z-->
       <!--Name: OSM: Ling Fell OS: Ling Fell-->
       <!--Ele: OSM: 373.7 OS: 373.684-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2453,6 +2632,7 @@
       <!--Lat: OSM: 54.608021 OS 54.6080211-->
       <!--Lon: OSM: -2.894467 OS -2.8944671-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6080211,-2.8944671,15z-->
       <!--Name: OSM: Little Mell Fell OS: Little Mell Fell-->
       <!--Ele: OSM: 505.4 OS: 505.361-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2468,6 +2648,7 @@
       <!--Lat: OSM: 53.325014 OS 53.325027-->
       <!--Lon: OSM: -3.783646 OS -3.7836509-->
       <!--Separation distance: 1.48 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.325027,-3.7836509,15z-->
       <!--Name: OSM: Little Ormes Head OS: Little Ormes Head-->
       <!--Ele: OSM: 141.716 OS: 141.716-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2483,6 +2664,7 @@
       <!--Lat: OSM: 53.400149 OS 53.4001684-->
       <!--Lon: OSM: -4.298461 OS -4.2984734-->
       <!--Separation distance: 2.31 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.4001684,-4.2984734,15z-->
       <!--Name: OSM: Llaneilian OS: Llaneilian-->
       <!--Ele: OSM: 177.393 OS: 177.393-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2498,6 +2680,7 @@
       <!--Lat: OSM: 54.5554241 OS 54.555424-->
       <!--Lon: OSM: -2.8413515 OS -2.8413518-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.555424,-2.8413518,15z-->
       <!--Name: OSM: Loadpot Hill OS: Loadpot Hill-->
       <!--Ele: OSM: 671.5 OS: 671.474-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2513,6 +2696,7 @@
       <!--Lat: OSM: 54.4374766 OS 54.4374766-->
       <!--Lon: OSM: -3.0083509 OS -3.0083513-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4374766,-3.0083513,15z-->
       <!--Name: OSM: Loughrigg Fell OS: Loughrigg Fell-->
       <!--Ele: OSM: 335.3 OS: 335.28-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2528,6 +2712,7 @@
       <!--Lat: OSM: 52.3465208 OS 52.3465301-->
       <!--Lon: OSM: -2.586393 OS -2.5863303-->
       <!--Separation distance: 4.38 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.3465301,-2.5863303,15z-->
       <!--Name: OSM: Lower Nash Farm OS: Lower Nash Farm-->
       <!--Ele: OSM: 179.707 OS: 179.707-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2543,6 +2728,7 @@
       <!--Lat: OSM: 52.6039911 OS 52.6040078-->
       <!--Lon: OSM: -0.5804107 OS -0.580416-->
       <!--Separation distance: 1.9 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6040078,-0.580416,15z-->
       <!--Name: OSM: Luffenham Heath OS: Luffenham Heath-->
       <!--Ele: OSM: 90.860 OS: 90.86-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2558,6 +2744,7 @@
       <!--Lat: OSM: 53.0431702 OS 53.0432014-->
       <!--Lon: OSM: -1.6753985 OS -1.6753605-->
       <!--Separation distance: 4.3 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0432014,-1.6753605,15z-->
       <!--Name: OSM: Madge Hill OS: Madge Hill-->
       <!--Ele: OSM: 298 OS: 298.444-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2573,6 +2760,7 @@
       <!--Lat: OSM: 53.088507 OS 53.088518-->
       <!--Lon: OSM: -3.495026 OS -3.4950264-->
       <!--Separation distance: 1.22 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.088518,-3.4950264,15z-->
       <!--Name: OSM: Marial Gwyn OS: Marial Gwyn-->
       <!--Ele: OSM: 519.781 OS: 519.781-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2588,6 +2776,7 @@
       <!--Lat: OSM: 54.6156828 OS 54.6156807-->
       <!--Lon: OSM: -2.2708064 OS -2.2708031-->
       <!--Separation distance: 0.31 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6156807,-2.2708031,15z-->
       <!--Name: OSM: Mickle Fell OS: Mickle Fell-->
       <!--Ele: OSM: 758.3 OS: 758.342-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2603,6 +2792,7 @@
       <!--Lat: OSM: 54.2824184 OS 54.28242-->
       <!--Lon: OSM: -1.8399326 OS -1.8399489-->
       <!--Separation distance: 1.07 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.28242,-1.8399489,15z-->
       <!--Name: OSM: Middleham Low Moor OS: Middleham Low Moor-->
       <!--Ele: OSM: 235.9 OS: 235.915-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2618,6 +2808,7 @@
       <!--Lat: OSM: 52.674924 OS 52.6749353-->
       <!--Lon: OSM: -3.39765 OS -3.3976518-->
       <!--Separation distance: 1.26 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6749353,-3.3976518,15z-->
       <!--Name: OSM: Moel Bentyrch OS: Moel Bentyrch-->
       <!--Ele: OSM: 335.584 OS: 335.584-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2633,6 +2824,7 @@
       <!--Lat: OSM: 53.108395 OS 53.1084145-->
       <!--Lon: OSM: -3.239751 OS -3.2397448-->
       <!--Separation distance: 2.21 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1084145,-3.2397448,15z-->
       <!--Name: OSM: Moel Gyw OS: Moel Gyw-->
       <!--Ele: OSM: 466.953 OS: 466.953-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2648,6 +2840,7 @@
       <!--Lat: OSM: 53.0005106 OS 53.0005105-->
       <!--Lon: OSM: -4.140104 OS -4.140104-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0005105,-4.140104,15z-->
       <!--Name: OSM: Moel Hebog OS: Moel Hebog-->
       <!--Ele: OSM: 783.031 OS: 783.031-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2663,6 +2856,7 @@
       <!--Lat: OSM: 53.002575 OS 53.0025871-->
       <!--Lon: OSM: -3.253675 OS -3.2536701-->
       <!--Separation distance: 1.38 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0025871,-3.2536701,15z-->
       <!--Name: OSM: Moel Morfydd OS: Moel Morfydd-->
       <!--Ele: OSM: 549.554 OS: 549.554-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2678,6 +2872,7 @@
       <!--Lat: OSM: 52.88878 OS 52.8887917-->
       <!--Lon: OSM: -3.870801 OS -3.870806-->
       <!--Separation distance: 1.34 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8887917,-3.870806,15z-->
       <!--Name: OSM: Moel Oernant OS: Moel Oernant-->
       <!--Ele: OSM: 503.834 OS: 503.834-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2693,6 +2888,7 @@
       <!--Lat: OSM: 53.100765 OS 53.1007809-->
       <!--Lon: OSM: -3.702714 OS -3.7027194-->
       <!--Separation distance: 1.8 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1007809,-3.7027194,15z-->
       <!--Name: OSM: Moel Seisiog OS: Moel Seisiog-->
       <!--Ele: OSM: 467.868 OS: 467.868-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2708,6 +2904,7 @@
       <!--Lat: OSM: 53.207272 OS 53.20729-->
       <!--Lon: OSM: -4.02333 OS -4.0233306-->
       <!--Separation distance: 2 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.20729,-4.0233306,15z-->
       <!--Name: OSM: Moel Wnion OS: Moel Wnion-->
       <!--Ele: OSM: 580.339 OS: 580.339-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2723,6 +2920,7 @@
       <!--Lat: OSM: 52.98423 OS 52.9842432-->
       <!--Lon: OSM: -4.000151 OS -4.0001559-->
       <!--Separation distance: 1.5 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9842432,-4.0001559,15z-->
       <!--Name: OSM: Moel Wyn OS: Moel Wyn-->
       <!--Ele: OSM: 770.534 OS: 770.534-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2738,6 +2936,7 @@
       <!--Lat: OSM: 52.891989 OS 52.892007-->
       <!--Lon: OSM: -3.995662 OS -3.9956736-->
       <!--Separation distance: 2.15 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.892007,-3.9956736,15z-->
       <!--Name: OSM: Moel Ysgyfarnogod OS: Moel Ysgyfarnogod-->
       <!--Ele: OSM: 623.316 OS: 623.316-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2753,6 +2952,7 @@
       <!--Lat: OSM: 53.229978 OS 53.2299919-->
       <!--Lon: OSM: -3.65233 OS -3.6523423-->
       <!--Separation distance: 1.74 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2299919,-3.6523423,15z-->
       <!--Name: OSM: Moelfre Uchaf OS: Moelfre Uchaf-->
       <!--Ele: OSM: 396.300 OS: 396.3-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2768,6 +2968,7 @@
       <!--Lat: OSM: 52.927906 OS 52.927918-->
       <!--Lon: OSM: -4.159681 OS -4.1596847-->
       <!--Separation distance: 1.36 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.927918,-4.1596847,15z-->
       <!--Name: OSM: Moel-Y-Gest OS: Moel-Y-Gest-->
       <!--Ele: OSM: 262.127 OS: 262.127-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2783,6 +2984,7 @@
       <!--Lat: OSM: 53.071597 OS 53.0716092-->
       <!--Lon: OSM: -3.242679 OS -3.2426853-->
       <!--Separation distance: 1.42 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0716092,-3.2426853,15z-->
       <!--Name: OSM: Moel-Y-Waen OS: Moel-Y-Waen-->
       <!--Ele: OSM: 412.068 OS: 412.068-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2798,6 +3000,7 @@
       <!--Lat: OSM: 52.2185004 OS 52.2185145-->
       <!--Lon: OSM: -0.0534443 OS -0.0534198-->
       <!--Separation distance: 2.29 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.2185145,-0.0534198,15z-->
       <!--Name: OSM: Monk Field OS: Monk Field-->
       <!--Ele: OSM: 72.021 OS: 72.021-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2813,6 +3016,7 @@
       <!--Lat: OSM: 52.4373798 OS 52.4373809-->
       <!--Lon: OSM: -0.9829227 OS -0.982931-->
       <!--Separation distance: 0.58 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.4373809,-0.982931,15z-->
       <!--Name: OSM: Moot Hill OS: Moot Hill-->
       <!--Ele: OSM: 188 OS: 187.893-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2828,6 +3032,7 @@
       <!--Lat: OSM: 50.8245354 OS 50.824532-->
       <!--Lon: OSM: -0.0757748 OS -0.0757819-->
       <!--Separation distance: 0.63 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.824532,-0.0757819,15z-->
       <!--Name: OSM: Mount Pleasant OS: Mount Pleasant-->
       <!--Ele: OSM: 112 OS: 112.059-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2843,6 +3048,7 @@
       <!--Lat: OSM: 53.1149014 OS 53.1148689-->
       <!--Lon: OSM: -2.2130177 OS -2.2129932-->
       <!--Separation distance: 3.97 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1148689,-2.2129932,15z-->
       <!--Name: OSM: Mow Cop OS: Mow Cop-->
       <!--Ele: OSM: 335 OS: 335.575-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2858,6 +3064,7 @@
       <!--Lat: OSM: 55.9460794 OS 55.9460791-->
       <!--Lon: OSM: -3.733465 OS -3.7334649-->
       <!--Separation distance: 0.04 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.9460791,-3.7334649,15z-->
       <!--Name: OSM: Muirhead OS: Muirhead-->
       <!--Ele: OSM: 198 OS: 198.141-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -2873,6 +3080,7 @@
       <!--Lat: OSM: 53.0478623 OS 53.047874-->
       <!--Lon: OSM: -1.8249623 OS -1.8249495-->
       <!--Separation distance: 1.56 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.047874,-1.8249495,15z-->
       <!--Name: OSM: Musden Low OS: Musden Low-->
       <!--Ele: OSM: 360 OS: 359.712-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -2888,6 +3096,7 @@
       <!--Lat: OSM: 52.763993 OS 52.7640048-->
       <!--Lon: OSM: -3.57407 OS -3.5740721-->
       <!--Separation distance: 1.32 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.7640048,-3.5740721,15z-->
       <!--Name: OSM: Mynydd Coch OS: Mynydd Coch-->
       <!--Ele: OSM: 569.366 OS: 569.366-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2903,6 +3112,7 @@
       <!--Lat: OSM: 53.2848649 OS 53.2848648-->
       <!--Lon: OSM: -4.1910008 OS -4.1910009-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2848648,-4.1910009,15z-->
       <!--Name: OSM: Mynydd Llwydiarth OS: Mynydd Llwydiarth-->
       <!--Ele: OSM: 158.5 OS: 158.496-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2918,6 +3128,7 @@
       <!--Lat: OSM: 52.8481193 OS 52.8481338-->
       <!--Lon: OSM: -3.2890158 OS -3.2890162-->
       <!--Separation distance: 1.61 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8481338,-3.2890162,15z-->
       <!--Name: OSM: Mynydd Mawr OS: Mynydd Mawr-->
       <!--Ele: OSM: 534.314 OS: 534.314-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2933,6 +3144,7 @@
       <!--Lat: OSM: 52.839029 OS 52.8390443-->
       <!--Lon: OSM: -3.123791 OS -3.1237901-->
       <!--Separation distance: 1.7 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8390443,-3.1237901,15z-->
       <!--Name: OSM: Mynydd Myfyr OS: Mynydd Myfyr-->
       <!--Ele: OSM: 341.180 OS: 341.18-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2948,6 +3160,7 @@
       <!--Lat: OSM: 52.8497961 OS 52.8497998-->
       <!--Lon: OSM: -4.4832286 OS -4.4832229-->
       <!--Separation distance: 0.56 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8497998,-4.4832229,15z-->
       <!--Name: OSM: Mynydd Tir-Y-Cwmwd OS: Mynydd Tir-Y-Cwmwd-->
       <!--Ele: OSM: 132.670 OS: 132.67-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2963,6 +3176,7 @@
       <!--Lat: OSM: 53.385986 OS 53.385971-->
       <!--Lon: OSM: -4.535174 OS -4.5351643-->
       <!--Separation distance: 1.79 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.385971,-4.5351643,15z-->
       <!--Name: OSM: Mynydd-Y-Garn OS: Mynydd-Y-Garn-->
       <!--Ele: OSM: 170.08 OS: 170.078-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2978,6 +3192,7 @@
       <!--Lat: OSM: 52.791064 OS 52.7910743-->
       <!--Lon: OSM: -3.256734 OS -3.2567365-->
       <!--Separation distance: 1.16 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.7910743,-3.2567365,15z-->
       <!--Name: OSM: Mynydd-Y-Glyn OS: Mynydd-Y-Glyn-->
       <!--Ele: OSM: 389.534 OS: 389.534-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -2993,6 +3208,7 @@
       <!--Lat: OSM: 54.4620644 OS 54.4620646-->
       <!--Lon: OSM: -1.9130293 OS -1.9130183-->
       <!--Separation distance: 0.71 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4620646,-1.9130183,15z-->
       <!--Name: OSM: Newsham Moor OS: Newsham Moor-->
       <!--Ele: OSM: 447.1 OS: 447.141-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3008,6 +3224,7 @@
       <!--Lat: OSM: 55.3918931 OS 55.3918792-->
       <!--Lon: OSM: -1.6102353 OS -1.6102783-->
       <!--Separation distance: 3.12 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.3918792,-1.6102783,15z-->
       <!--Name: OSM: Night Fold Field OS: Night Fold Field-->
       <!--Ele: OSM: 47.896 OS: 47.896-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3023,6 +3240,7 @@
       <!--Lat: OSM: 51.6664315 OS 51.6664392-->
       <!--Lon: OSM: -4.7880193 OS -4.7880389-->
       <!--Separation distance: 1.6 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.6664392,-4.7880389,15z-->
       <!--Name: OSM: Norchard Beacon OS: Norchard Beacon-->
       <!--Ele: OSM: 110 OS: 109.462-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3038,6 +3256,7 @@
       <!--Lat: OSM: 56.0487964 OS 56.0487885-->
       <!--Lon: OSM: -2.7138172 OS -2.7138108-->
       <!--Separation distance: 0.97 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.0487885,-2.7138108,15z-->
       <!--Name: OSM: North Berwick Law OS: North Berwick Law-->
       <!--Ele: OSM: 187 OS: 187.223-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3053,6 +3272,7 @@
       <!--Lat: OSM: 50.2560889 OS 50.2560889-->
       <!--Lon: OSM: -5.216329 OS -5.2163291-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.2560889,-5.2163291,15z-->
       <!--Name: OSM: North Downs OS: North Downs-->
       <!--Ele: OSM: 118.619 OS: 118.619-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3068,6 +3288,7 @@
       <!--Lat: OSM: 53.1922079 OS 53.1921915-->
       <!--Lon: OSM: -1.6771601 OS -1.6771635-->
       <!--Separation distance: 1.84 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1921915,-1.6771635,15z-->
       <!--Name: OSM: Noton Barn OS: Noton Barn-->
       <!--Ele: OSM: 209 OS: 208.705-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3083,6 +3304,7 @@
       <!--Lat: OSM: 53.1482091 OS 53.1482013-->
       <!--Lon: OSM: -1.5958993 OS -1.5959574-->
       <!--Separation distance: 3.97 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1482013,-1.5959574,15z-->
       <!--Name: OSM: Oaker Hill OS: Oaker Hill-->
       <!--Ele: OSM: 194 OS: 193.523-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3098,6 +3320,7 @@
       <!--Lat: OSM: 52.1423203 OS 52.1423323-->
       <!--Lon: OSM: 0.004131 OS 0.0041568-->
       <!--Separation distance: 2.21 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1423323,0.0041568,15z-->
       <!--Name: OSM: Orwell OS: Orwell-->
       <!--Ele: OSM: 70.146 OS: 70.146-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3113,6 +3336,7 @@
       <!--Lat: OSM: 50.558725 OS 50.5587249-->
       <!--Lon: OSM: -4.2097224 OS -4.2097226-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.5587249,-4.2097226,15z-->
       <!--Name: OSM: Ottery OS: Ottery-->
       <!--Ele: OSM: 177.347 OS: 177.347-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3128,6 +3352,7 @@
       <!--Lat: OSM: 53.3443756 OS 53.344387-->
       <!--Lon: OSM: -1.5806285 OS -1.5805874-->
       <!--Separation distance: 3.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.344387,-1.5805874,15z-->
       <!--Name: OSM: Ox Stones OS: Ox Stones-->
       <!--Ele: OSM: 420 OS: 419.535-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3143,6 +3368,7 @@
       <!--Lat: OSM: 53.049762 OS 53.0497772-->
       <!--Lon: OSM: -3.109829 OS -3.109825-->
       <!--Separation distance: 1.71 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0497772,-3.109825,15z-->
       <!--Name: OSM: Park Lead Mines OS: Park Lead Mines-->
       <!--Ele: OSM: 456.495 OS: 456.495-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3158,6 +3384,7 @@
       <!--Lat: OSM: 55.808063 OS 55.8080627-->
       <!--Lon: OSM: -3.5852169 OS -3.5852171-->
       <!--Separation distance: 0.04 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8080627,-3.5852171,15z-->
       <!--Name: OSM: Pearie Law OS: Pearie Law-->
       <!--Ele: OSM: 302 OS: 301.517-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3173,6 +3400,7 @@
       <!--Lat: OSM: 50.3301358 OS 50.3301357-->
       <!--Lon: OSM: -4.5973452 OS -4.5973453-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.3301357,-4.5973453,15z-->
       <!--Name: OSM: Pencarrow Head OS: Pencarrow Head-->
       <!--Ele: OSM: 136.55 OS: 136.55-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3188,6 +3416,7 @@
       <!--Lat: OSM: 52.677495 OS 52.6775149-->
       <!--Lon: OSM: -4.032998 OS -4.0330065-->
       <!--Separation distance: 2.28 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6775149,-4.0330065,15z-->
       <!--Name: OSM: Pengarn OS: Pengarn-->
       <!--Ele: OSM: 458.724 OS: 458.724-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3203,6 +3432,7 @@
       <!--Lat: OSM: 54.2762358 OS 54.2762406-->
       <!--Lon: OSM: -1.9234564 OS -1.9234446-->
       <!--Separation distance: 0.94 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.2762406,-1.9234446,15z-->
       <!--Name: OSM: Penhill OS: Penhill-->
       <!--Ele: OSM: 526.7 OS: 526.694-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3218,6 +3448,7 @@
       <!--Lat: OSM: 53.08356 OS 53.0835755-->
       <!--Lon: OSM: -3.0985 OS -3.0985037-->
       <!--Separation distance: 1.74 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0835755,-3.0985037,15z-->
       <!--Name: OSM: Pen-Llun-Y-Gwr OS: Pen-Llun-Y-Gwr-->
       <!--Ele: OSM: 378.582 OS: 378.582-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3233,6 +3464,7 @@
       <!--Lat: OSM: 53.2494026 OS 53.2494024-->
       <!--Lon: OSM: -4.2280338 OS -4.2280341-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2494024,-4.2280341,15z-->
       <!--Name: OSM: Penmynydd OS: Penmynydd-->
       <!--Ele: OSM: 108.24 OS: 108.237-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3248,6 +3480,7 @@
       <!--Lat: OSM: 50.5883831 OS 50.588383-->
       <!--Lon: OSM: -4.9269797 OS -4.9269799-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.588383,-4.9269799,15z-->
       <!--Name: OSM: Pentire Head OS: Pentire Head-->
       <!--Ele: OSM: 83.21 OS: 83.21-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3263,6 +3496,7 @@
       <!--Lat: OSM: 52.9502627 OS 52.9502611-->
       <!--Lon: OSM: -4.3473079 OS -4.3472992-->
       <!--Separation distance: 0.61 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9502611,-4.3472992,15z-->
       <!--Name: OSM: Pentyrch OS: Pentyrch-->
       <!--Ele: OSM: 222 OS: 222.199-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3278,6 +3512,7 @@
       <!--Lat: OSM: 53.080402 OS 53.0804126-->
       <!--Lon: OSM: -3.173214 OS -3.1732158-->
       <!--Separation distance: 1.18 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0804126,-3.1732158,15z-->
       <!--Name: OSM: Pen-Y-Ffrith OS: Pen-Y-Ffrith-->
       <!--Ele: OSM: 395.938 OS: 395.938-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3293,6 +3528,7 @@
       <!--Lat: OSM: 53.182335 OS 53.182335-->
       <!--Lon: OSM: -4.1766694 OS -4.1766697-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.182335,-4.1766697,15z-->
       <!--Name: OSM: Pen-Y-Graig OS: Pen-Y-Graig-->
       <!--Ele: OSM: 141.145 OS: 141.145-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3308,6 +3544,7 @@
       <!--Lat: OSM: 53.0560665 OS 53.0560663-->
       <!--Lon: OSM: -4.2799248 OS -4.2799249-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0560663,-4.2799249,15z-->
       <!--Name: OSM: Pen-Y-Groes OS: Pen-Y-Groes-->
       <!--Ele: OSM: 138.117 OS: 138.117-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3323,6 +3560,7 @@
       <!--Lat: OSM: 53.1258892 OS 53.1258891-->
       <!--Lon: OSM: -3.829167 OS -3.8291671-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1258891,-3.8291671,15z-->
       <!--Name: OSM: Pen-Y-Gwaith OS: Pen-Y-Gwaith-->
       <!--Ele: OSM: 309.981 OS: 309.981-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3338,6 +3576,7 @@
       <!--Lat: OSM: 54.4974729 OS 54.4974727-->
       <!--Lon: OSM: -3.2811329 OS -3.281133-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4974727,-3.281133,15z-->
       <!--Name: OSM: Pillar OS: Pillar-->
       <!--Ele: OSM: 892.8 OS: 892.759-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3353,6 +3592,7 @@
       <!--Lat: OSM: 51.7056839 OS 51.7056887-->
       <!--Lon: OSM: -0.8124979 OS -0.8124854-->
       <!--Separation distance: 1.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.7056887,-0.8124854,15z-->
       <!--Name: OSM: Pink Hill OS: Pink Hill-->
       <!--Ele: OSM: 234 OS: 234.193-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3368,6 +3608,7 @@
       <!--Lat: OSM: 54.5443312 OS 54.5443312-->
       <!--Lon: OSM: -2.9203231 OS -2.9203235-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5443312,-2.9203235,15z-->
       <!--Name: OSM: Place Fell OS: Place Fell-->
       <!--Ele: OSM: 657.1 OS: 657.148-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3383,6 +3624,7 @@
       <!--Lat: OSM: 53.1917062 OS 53.1917063-->
       <!--Lon: OSM: -4.2469366 OS -4.2469369-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1917063,-4.2469369,15z-->
       <!--Name: OSM: Porthamel OS: Porthamel-->
       <!--Ele: OSM: 59.679 OS: 59.679-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3398,6 +3640,7 @@
       <!--Lat: OSM: 53.242173 OS 53.2421908-->
       <!--Lon: OSM: -3.78955 OS -3.7895617-->
       <!--Separation distance: 2.13 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2421908,-3.7895617,15z-->
       <!--Name: OSM: Prenol OS: Prenol-->
       <!--Ele: OSM: 180.700 OS: 180.7-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3413,6 +3656,7 @@
       <!--Lat: OSM: 54.6856869 OS 54.6856872-->
       <!--Lon: OSM: -2.0483588 OS -2.0483586-->
       <!--Separation distance: 0.04 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6856872,-2.0483586,15z-->
       <!--Name: OSM: Raven Seat OS: Raven Seat-->
       <!--Ele: OSM: 588.87 OS: 588.873-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3428,6 +3672,7 @@
       <!--Lat: OSM: 54.47066 OS 54.4706578-->
       <!--Lon: OSM: -2.9327466 OS -2.9327347-->
       <!--Separation distance: 0.81 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4706578,-2.9327347,15z-->
       <!--Name: OSM: Red Screes OS: Red Screes-->
       <!--Ele: OSM: 776.6 OS: 776.63-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3443,6 +3688,7 @@
       <!--Lat: OSM: 52.779848 OS 52.779858-->
       <!--Lon: OSM: -3.402434 OS -3.4024381-->
       <!--Separation distance: 1.14 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.779858,-3.4024381,15z-->
       <!--Name: OSM: Rhial Gwm OS: Rhial Gwm-->
       <!--Ele: OSM: 540.715 OS: 540.715-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3458,6 +3704,7 @@
       <!--Lat: OSM: 53.03128 OS 53.0312946-->
       <!--Lon: OSM: -3.770424 OS -3.7704336-->
       <!--Separation distance: 1.75 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0312946,-3.7704336,15z-->
       <!--Name: OSM: Rhiw Lwyd OS: Rhiw Lwyd-->
       <!--Ele: OSM: 398.678 OS: 398.678-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3473,6 +3720,7 @@
       <!--Lat: OSM: 53.306529 OS 53.3065288-->
       <!--Lon: OSM: -4.2725715 OS -4.2725715-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3065288,-4.2725715,15z-->
       <!--Name: OSM: Rhuddlan Fawr OS: Rhuddlan Fawr-->
       <!--Ele: OSM: 114.674 OS: 114.674-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3488,6 +3736,7 @@
       <!--Lat: OSM: 53.3489413 OS 53.3489364-->
       <!--Lon: OSM: -1.5514521 OS -1.551455-->
       <!--Separation distance: 0.58 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3489364,-1.551455,15z-->
       <!--Name: OSM: Ringinglow OS: Ringinglow-->
       <!--Ele: OSM: 321 OS: 321.432-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3503,6 +3752,7 @@
       <!--Lat: OSM: 53.6502163 OS 53.6502181-->
       <!--Lon: OSM: -1.9968473 OS -1.9968365-->
       <!--Separation distance: 0.74 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.6502181,-1.9968365,15z-->
       <!--Name: OSM: Rishworth Moor OS: Rishworth Moor-->
       <!--Ele: OSM: 435 OS: 435.239-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3518,6 +3768,7 @@
       <!--Lat: OSM: 52.9190488 OS 52.9190622-->
       <!--Lon: OSM: -1.3120871 OS -1.312109-->
       <!--Separation distance: 2.09 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9190622,-1.312109,15z-->
       <!--Name: OSM: Risley OS: Risley-->
       <!--Ele: OSM: 79 OS: 79.321-->
       <!--Type: OSM: pillar / pillar OS: PILLAR-->
@@ -3533,6 +3784,7 @@
       <!--Lat: OSM: 53.3919141 OS 53.3919216-->
       <!--Lon: OSM: -1.6064881 OS -1.6064712-->
       <!--Separation distance: 1.4 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.3919216,-1.6064712,15z-->
       <!--Name: OSM: Rod Moor OS: Rod Moor-->
       <!--Ele: OSM: 384 OS: 383.734-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3548,6 +3800,7 @@
       <!--Lat: OSM: 54.5905792 OS 54.5905829-->
       <!--Lon: OSM: -2.0682876 OS -2.0682749-->
       <!--Separation distance: 0.92 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5905829,-2.0682749,15z-->
       <!--Name: OSM: Romaldkirk Moor OS: Romaldkirk Moor-->
       <!--Ele: OSM: 410.0 OS: 409.956-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3563,6 +3816,7 @@
       <!--Lat: OSM: 50.3994487 OS 50.3994486-->
       <!--Lon: OSM: -4.7148521 OS -4.7148523-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.3994486,-4.7148523,15z-->
       <!--Name: OSM: Roselath OS: Roselath-->
       <!--Ele: OSM: 211.836 OS: 211.836-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3578,6 +3832,7 @@
       <!--Lat: OSM: 50.066517 OS 50.066517-->
       <!--Lon: OSM: -5.1039871 OS -5.1039871-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.066517,-5.1039871,15z-->
       <!--Name: OSM: Roskruge Beacon OS: Roskruge Beacon-->
       <!--Ele: OSM: 114.129 OS: 114.129-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3593,6 +3848,7 @@
       <!--Lat: OSM: 54.6734835 OS 54.6734836-->
       <!--Lon: OSM: -2.7164621 OS -2.7164622-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6734836,-2.7164622,15z-->
       <!--Name: OSM: Roundthorn OS: Roundthorn-->
       <!--Ele: OSM: 232.8 OS: 232.836-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3608,6 +3864,7 @@
       <!--Lat: OSM: 53.003241 OS 53.0032528-->
       <!--Lon: OSM: -3.139319 OS -3.1393251-->
       <!--Separation distance: 1.37 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0032528,-3.1393251,15z-->
       <!--Name: OSM: Ruabon Mountain South OS: Ruabon Mountain South-->
       <!--Ele: OSM: 502.773 OS: 502.773-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3623,6 +3880,7 @@
       <!--Lat: OSM: 52.9314006 OS 52.9313706-->
       <!--Lon: OSM: -1.3189809 OS -1.3189573-->
       <!--Separation distance: 3.7 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9313706,-1.3189573,15z-->
       <!--Name: OSM: Sandiacre OS: Sandiacre-->
       <!--Ele: OSM: 133 OS: 133.167-->
       <!--Type: OSM: pillar / pillar OS: PILLAR-->
@@ -3638,6 +3896,7 @@
       <!--Lat: OSM: 54.6661002 OS 54.6660999-->
       <!--Lon: OSM: -3.2086039 OS -3.2086039-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6660999,-3.2086039,15z-->
       <!--Name: OSM: Scarness OS: Scarness-->
       <!--Ele: OSM: 91.4 OS: 91.385-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3653,6 +3912,7 @@
       <!--Lat: OSM: 52.899268 OS 52.8992816-->
       <!--Lon: OSM: -3.107673 OS -3.1076685-->
       <!--Separation distance: 1.55 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8992816,-3.1076685,15z-->
       <!--Name: OSM: Selattyn OS: Selattyn-->
       <!--Ele: OSM: 371.856 OS: 371.856-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3668,6 +3928,7 @@
       <!--Lat: OSM: 55.024528 OS 55.0245559-->
       <!--Lon: OSM: -2.3140461 OS -2.3140504-->
       <!--Separation distance: 3.12 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.0245559,-2.3140504,15z-->
       <!--Name: OSM: Sewingshields Crags OS: Sewingshields Crags-->
       <!--Ele: OSM: 325.5 OS: 325.526-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3683,6 +3944,7 @@
       <!--Lat: OSM: 54.5487067 OS 54.5487036-->
       <!--Lon: OSM: -2.1427498 OS -2.1427398-->
       <!--Separation distance: 0.73 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.5487036,-2.1427398,15z-->
       <!--Name: OSM: Shacklesborough OS: Shacklesborough-->
       <!--Ele: OSM: 454.2 OS: 454.152-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3698,6 +3960,7 @@
       <!--Lat: OSM: 53.1598869 OS 53.1598838-->
       <!--Lon: OSM: -1.8361256 OS -1.8361146-->
       <!--Separation distance: 0.81 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1598838,-1.8361146,15z-->
       <!--Name: OSM: Sheen Hill OS: Sheen Hill-->
       <!--Ele: OSM: 380 OS: 380.356-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3713,6 +3976,7 @@
       <!--Lat: OSM: 54.5844321 OS 54.584432-->
       <!--Lon: OSM: -2.685806 OS -2.685806-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.584432,-2.685806,15z-->
       <!--Name: OSM: Sheriffs Park OS: Sheriffs Park-->
       <!--Ele: OSM: 254.2 OS: 254.221-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3728,6 +3992,7 @@
       <!--Lat: OSM: 53.2232166 OS 53.2232249-->
       <!--Lon: OSM: -2.0368103 OS -2.0367257-->
       <!--Separation distance: 5.71 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2232249,-2.0367257,15z-->
       <!--Name: OSM: Shutlingsloe OS: Shutlingsloe-->
       <!--Ele: OSM: 506 OS: 506.028-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3743,6 +4008,7 @@
       <!--Lat: OSM: 52.870512 OS 52.8705265-->
       <!--Lon: OSM: -3.493253 OS -3.493261-->
       <!--Separation distance: 1.7 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8705265,-3.493261,15z-->
       <!--Name: OSM: Sian Llwyd OS: Sian Llwyd-->
       <!--Ele: OSM: 648.614 OS: 648.614-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3758,6 +4024,7 @@
       <!--Lat: OSM: 53.2975669 OS 53.2975618-->
       <!--Lon: OSM: -1.6782946 OS -1.6783118-->
       <!--Separation distance: 1.28 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2975618,-1.6783118,15z-->
       <!--Name: OSM: Sir William Hill OS: Sir William Hill-->
       <!--Ele: OSM: 429 OS: 429.231-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3773,6 +4040,7 @@
       <!--Lat: OSM: 57.4632055 OS 57.4632017-->
       <!--Lon: OSM: -2.0249105 OS -2.0249072-->
       <!--Separation distance: 0.47 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.4632017,-2.0249072,15z-->
       <!--Name: OSM: Skelmuir Hill OS: Skelmuir Hill-->
       <!--Ele: OSM: 149 OS: 149.022-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3788,6 +4056,7 @@
       <!--Lat: OSM: 54.6514346 OS 54.6514344-->
       <!--Lon: OSM: -3.1477813 OS -3.1477815-->
       <!--Separation distance: 0.03 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6514344,-3.1477815,15z-->
       <!--Name: OSM: Skiddaw OS: Skiddaw-->
       <!--Ele: OSM: 931.2 OS: 931.164-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3803,6 +4072,7 @@
       <!--Lat: OSM: 52.3031546 OS 52.3031478-->
       <!--Lon: OSM: -1.8636203 OS -1.8636226-->
       <!--Separation distance: 0.77 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.3031478,-1.8636226,15z-->
       <!--Name: OSM: Skilts OS: Skilts-->
       <!--Ele: OSM: 164.415 OS: 164.415-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3818,6 +4088,7 @@
       <!--Lat: OSM: 52.5391482 OS 52.5391411-->
       <!--Lon: OSM: -0.8467328 OS -0.8467412-->
       <!--Separation distance: 0.98 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5391411,-0.8467412,15z-->
       <!--Name: OSM: Slawston Hill OS: Slawston Hill-->
       <!--Ele: OSM: 131 OS: 131.118-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3833,6 +4104,7 @@
       <!--Lat: OSM: 55.6029779 OS 55.602972-->
       <!--Lon: OSM: -2.5800961 OS -2.5801092-->
       <!--Separation distance: 1.05 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.602972,-2.5801092,15z-->
       <!--Name: OSM: Smailholm OS: Smailholm-->
       <!--Ele: OSM: 207 OS: 207.492-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -3848,6 +4120,7 @@
       <!--Lat: OSM: 53.5263102 OS 53.5263123-->
       <!--Lon: OSM: -1.8024031 OS -1.8023813-->
       <!--Separation distance: 1.46 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.5263123,-1.8023813,15z-->
       <!--Name: OSM: Snailsden OS: Snailsden-->
       <!--Ele: OSM: 475 OS: 475.71-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3863,6 +4136,7 @@
       <!--Lat: OSM: 53.4993491 OS 53.4993554-->
       <!--Lon: OSM: -1.7658738 OS -1.7658598-->
       <!--Separation distance: 1.16 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.4993554,-1.7658598,15z-->
       <!--Name: OSM: South Nab OS: South Nab-->
       <!--Ele: OSM: 461 OS: 460.894-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3878,6 +4152,7 @@
       <!--Lat: OSM: 50.3073058 OS 50.3073058-->
       <!--Lon: OSM: -5.217328 OS -5.2173281-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.3073058,-5.2173281,15z-->
       <!--Name: OSM: St Agnes Beacon OS: St Agnes Beacon-->
       <!--Ele: OSM: 191.953 OS: 191.953-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3893,6 +4168,7 @@
       <!--Lat: OSM: 50.5080281 OS 50.508028-->
       <!--Lon: OSM: -4.6384301 OS -4.6384303-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.508028,-4.6384303,15z-->
       <!--Name: OSM: St Bellarmins Tor OS: St Bellarmins Tor-->
       <!--Ele: OSM: 268.528 OS: 268.528-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3908,6 +4184,7 @@
       <!--Lat: OSM: 50.4783871 OS 50.478387-->
       <!--Lon: OSM: -4.8659976 OS -4.8659977-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.478387,-4.8659977,15z-->
       <!--Name: OSM: St Breock Downs OS: St Breock Downs-->
       <!--Ele: OSM: 216.103 OS: 216.103-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3919,10 +4196,27 @@
     </node>
   </create>
   <create>
+    <node id="7374665046" changeset="1" version="1" lat="50.7550614" lon="-1.7939734">
+      <!--Lat: OSM: 50.7550614 OS 50.7556859-->
+      <!--Lon: OSM: -1.7939734 OS -1.7934481-->
+      <!--Separation distance: 78.66 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.7556859,-1.7934481,15z-->
+      <!--Name: OSM: St Catherines Hill Bosley Heath OS: St Catherines Hill Bosley Heath-->
+      <!--Ele: OSM: 45.5 OS: 45.52-->
+      <!--Type: OSM: NA / NA OS: PILLAR-->
+      <!--Datum_aligned: OSM: NA OS: yes-->
+      <!--Purpose: OSM: NA OS: both-->
+      <!--FB: OSM: SU31T188 OS: NA-->
+      <!--NOTE: probably need to add new ref:os tag:-->
+      <!--tag ref:os = SU31T188-->
+    </node>
+  </create>
+  <create>
     <node id="4623790519" changeset="1" version="1" lat="52.9270481" lon="-1.2640829">
       <!--Lat: OSM: 52.9270481 OS 52.9270479-->
       <!--Lon: OSM: -1.2640829 OS -1.2640924-->
       <!--Separation distance: 0.64 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9270479,-1.2640924,15z-->
       <!--Name: OSM: Stapleford OS: Stapleford-->
       <!--Ele: OSM: 81 OS: 80.647-->
       <!--Type: OSM: pillar / pillar OS: PILLAR-->
@@ -3938,6 +4232,7 @@
       <!--Lat: OSM: 52.9439962 OS 52.9439991-->
       <!--Lon: OSM: -1.2600535 OS -1.2600634-->
       <!--Separation distance: 0.74 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.9439991,-1.2600634,15z-->
       <!--Name: OSM: Stapleford Hill OS: Stapleford Hill-->
       <!--Ele: OSM: 101 OS: 100.894-->
       <!--Type: OSM: pillar / pillar OS: PILLAR-->
@@ -3953,6 +4248,7 @@
       <!--Lat: OSM: 50.3147541 OS 50.314754-->
       <!--Lon: OSM: -4.8295135 OS -4.8295137-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.314754,-4.8295137,15z-->
       <!--Name: OSM: Sticker Down OS: Sticker Down-->
       <!--Ele: OSM: 120.396 OS: 120.396-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -3968,6 +4264,7 @@
       <!--Lat: OSM: 52.5591455 OS 52.5591492-->
       <!--Lon: OSM: -0.7824508 OS -0.782459-->
       <!--Separation distance: 0.69 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5591492,-0.782459,15z-->
       <!--Name: OSM: Stockerston OS: Stockerston-->
       <!--Ele: OSM: 158 OS: 158.215-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3983,6 +4280,7 @@
       <!--Lat: OSM: 51.2727034 OS 51.2727051-->
       <!--Lon: OSM: -2.0643149 OS -2.064307-->
       <!--Separation distance: 0.58 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.2727051,-2.064307,15z-->
       <!--Name: OSM: Stoke Hill OS: Stoke Hill-->
       <!--Ele: OSM: 221 OS: 221.699-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -3998,6 +4296,7 @@
       <!--Lat: OSM: 53.2356646 OS 53.2356644-->
       <!--Lon: OSM: -3.9052071 OS -3.9052072-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2356644,-3.9052072,15z-->
       <!--Name: OSM: Tal-Y-Fan OS: Tal-Y-Fan-->
       <!--Ele: OSM: 610.209 OS: 610.209-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4013,6 +4312,7 @@
       <!--Lat: OSM: 52.6353457 OS 52.6353572-->
       <!--Lon: OSM: -3.907553 OS -3.9075671-->
       <!--Separation distance: 1.6 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6353572,-3.9075671,15z-->
       <!--Name: OSM: Taren Gesail OS: Taren Gesail-->
       <!--Ele: OSM: 666.597 OS: 666.597-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4028,6 +4328,7 @@
       <!--Lat: OSM: 55.5035814 OS 55.5035462-->
       <!--Lon: OSM: -2.2381672 OS -2.2381055-->
       <!--Separation distance: 5.51 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.5035462,-2.2381055,15z-->
       <!--Name: OSM: The Curr OS: The Curr-->
       <!--Ele: OSM: 564 OS: 564.184-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4043,6 +4344,7 @@
       <!--Lat: OSM: 52.975039 OS 52.975055-->
       <!--Lon: OSM: -4.436593 OS -4.4366015-->
       <!--Separation distance: 1.86 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.975055,-4.4366015,15z-->
       <!--Name: OSM: The Rivals OS: The Rivals-->
       <!--Ele: OSM: 564.184 OS: 564.184-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4058,6 +4360,7 @@
       <!--Lat: OSM: 53.1721519 OS 53.1721457-->
       <!--Lon: OSM: -1.9998659 OS -1.9998524-->
       <!--Separation distance: 1.14 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1721457,-1.9998524,15z-->
       <!--Name: OSM: The Roaches OS: The Roaches-->
       <!--Ele: OSM: 506 OS: 505.596-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4073,6 +4376,7 @@
       <!--Lat: OSM: 54.6537755 OS 54.6537741-->
       <!--Lon: OSM: -2.2462495 OS -2.2462411-->
       <!--Separation distance: 0.56 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6537741,-2.2462411,15z-->
       <!--Name: OSM: Thistle Green OS: Thistle Green-->
       <!--Ele: OSM: 544.4 OS: 544.372-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4088,6 +4392,7 @@
       <!--Lat: OSM: 52.2052541 OS 52.2052518-->
       <!--Lon: OSM: -1.9207164 OS -1.9207214-->
       <!--Separation distance: 0.42 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.2052518,-1.9207214,15z-->
       <!--Name: OSM: Thornhill OS: Thornhill-->
       <!--Ele: OSM: 123.825 OS: 123.825-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4103,6 +4408,7 @@
       <!--Lat: OSM: 51.1045551 OS 51.1045733-->
       <!--Lon: OSM: 1.0839759 OS 1.0840295-->
       <!--Separation distance: 4.25 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.1045733,1.0840295,15z-->
       <!--Name: OSM: Tolsford Hill OS: Tolsford Hill-->
       <!--Ele: OSM: 181 OS: 181.776-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4118,6 +4424,7 @@
       <!--Lat: OSM: 50.483051 OS 50.4830509-->
       <!--Lon: OSM: -4.7665784 OS -4.7665785-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.4830509,-4.7665785,15z-->
       <!--Name: OSM: Tregainlands OS: Tregainlands-->
       <!--Ele: OSM: 117.043 OS: 117.043-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4133,6 +4440,7 @@
       <!--Lat: OSM: 50.0423578 OS 50.0423578-->
       <!--Lon: OSM: -5.0806509 OS -5.0806509-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.0423578,-5.0806509,15z-->
       <!--Name: OSM: Tregellast OS: Tregellast-->
       <!--Ele: OSM: 104.134 OS: 104.134-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4148,6 +4456,7 @@
       <!--Lat: OSM: 50.5684082 OS 50.5684081-->
       <!--Lon: OSM: -4.7573917 OS -4.7573919-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.5684081,-4.7573919,15z-->
       <!--Name: OSM: Trelill Beacon OS: Trelill Beacon-->
       <!--Ele: OSM: 161.239 OS: 161.239-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4163,6 +4472,7 @@
       <!--Lat: OSM: 50.1950265 OS 50.1950265-->
       <!--Lon: OSM: -5.5339944 OS -5.5339945-->
       <!--Separation distance: 0 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.1950265,-5.5339945,15z-->
       <!--Name: OSM: Trendrine Hill OS: Trendrine Hill-->
       <!--Ele: OSM: 247.735 OS: 247.735-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4178,6 +4488,7 @@
       <!--Lat: OSM: 50.1817996 OS 50.1817996-->
       <!--Lon: OSM: -5.4964185 OS -5.4964186-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.1817996,-5.4964186,15z-->
       <!--Name: OSM: Trink Hill OS: Trink Hill-->
       <!--Ele: OSM: 211.836 OS: 211.836-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4193,6 +4504,7 @@
       <!--Lat: OSM: 54.7258161 OS 54.7258087-->
       <!--Lon: OSM: -1.670594 OS -1.670596-->
       <!--Separation distance: 0.84 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7258087,-1.670596,15z-->
       <!--Name: OSM: Tripsy Bank OS: Tripsy Bank-->
       <!--Ele: OSM: 152.1 OS: 152.067-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4208,6 +4520,7 @@
       <!--Lat: OSM: 51.6271189 OS 51.6271118-->
       <!--Lon: OSM: -3.0964979 OS -3.0964991-->
       <!--Separation distance: 0.8 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.6271118,-3.0964991,15z-->
       <!--Name: OSM: Twmbarlwm OS: Twmbarlwm-->
       <!--Ele: OSM: 419 OS: 419.096-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4223,6 +4536,7 @@
       <!--Lat: OSM: 53.1427781 OS 53.1427782-->
       <!--Lon: OSM: -4.2706716 OS -4.2706719-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1427782,-4.2706719,15z-->
       <!--Name: OSM: Twt Hill OS: Twt Hill-->
       <!--Ele: OSM: 60.661 OS: 60.661-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4238,6 +4552,7 @@
       <!--Lat: OSM: 53.010513 OS 53.0105306-->
       <!--Lon: OSM: -3.507592 OS -3.5075928-->
       <!--Separation distance: 1.96 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0105306,-3.5075928,15z-->
       <!--Name: OSM: Ty'N-Y-Pistyll OS: Ty'N-Y-Pistyll-->
       <!--Ele: OSM: 470.611 OS: 470.611-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4253,6 +4568,7 @@
       <!--Lat: OSM: 52.717012 OS 52.7170242-->
       <!--Lon: OSM: -3.79939 OS -3.7993991-->
       <!--Separation distance: 1.49 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.7170242,-3.7993991,15z-->
       <!--Name: OSM: Waen Oer OS: Waen Oer-->
       <!--Ele: OSM: 670.255 OS: 670.255-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4268,6 +4584,7 @@
       <!--Lat: OSM: 51.9223453 OS 51.9223422-->
       <!--Lon: OSM: -0.414935 OS -0.4148949-->
       <!--Separation distance: 2.77 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.9223422,-0.4148949,15z-->
       <!--Name: OSM: Warden Hill OS: Warden Hill-->
       <!--Ele: OSM: 195 OS: 195.276-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4283,6 +4600,7 @@
       <!--Lat: OSM: 51.0455757 OS 51.045557-->
       <!--Lon: OSM: -0.964593 OS -0.9646036-->
       <!--Separation distance: 2.21 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.045557,-0.9646036,15z-->
       <!--Name: OSM: Warren Corner OS: Warren Corner-->
       <!--Ele: OSM: 246 OS: 246.54-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4298,6 +4616,7 @@
       <!--Lat: OSM: 53.0147374 OS 53.0147373-->
       <!--Lon: OSM: -1.860544 OS -1.8605257-->
       <!--Separation distance: 1.22 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0147373,-1.8605257,15z-->
       <!--Name: OSM: Weaver Hill OS: Weaver Hill-->
       <!--Ele: OSM: 371 OS: 371.209-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4313,6 +4632,7 @@
       <!--Lat: OSM: 50.9628015 OS 50.9627211-->
       <!--Lon: OSM: -0.9160525 OS -0.9160288-->
       <!--Separation distance: 9.09 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.9627211,-0.9160288,15z-->
       <!--Name: OSM: West Harting Down OS: West Harting Down-->
       <!--Ele: OSM: 216 OS: 215.877-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4328,6 +4648,7 @@
       <!--Lat: OSM: 53.5756839 OS 53.575689-->
       <!--Lon: OSM: -1.8860626 OS -1.8860383-->
       <!--Separation distance: 1.7 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.575689,-1.8860383,15z-->
       <!--Name: OSM: West Nab OS: West Nab-->
       <!--Ele: OSM: 500 OS: 500.502-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4343,6 +4664,7 @@
       <!--Lat: OSM: 54.6880228 OS 54.6880229-->
       <!--Lon: OSM: -2.1207792 OS -2.1207743-->
       <!--Separation distance: 0.32 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6880229,-2.1207743,15z-->
       <!--Name: OSM: Westernhope Moor OS: Westernhope Moor-->
       <!--Ele: OSM: 675.74 OS: 675.741-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4358,6 +4680,7 @@
       <!--Lat: OSM: 54.7324287 OS 54.7324285-->
       <!--Lon: OSM: -3.2870558 OS -3.2870559-->
       <!--Separation distance: 0.02 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7324285,-3.2870559,15z-->
       <!--Name: OSM: Wharrels Hill OS: Wharrels Hill-->
       <!--Ele: OSM: 221.2 OS: 221.217-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4373,6 +4696,7 @@
       <!--Lat: OSM: 54.4309565 OS 54.4309585-->
       <!--Lon: OSM: -2.7358448 OS -2.7358409-->
       <!--Separation distance: 0.34 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4309585,-2.7358409,15z-->
       <!--Name: OSM: White Howe OS: White Howe-->
       <!--Ele: OSM: 530.4 OS: 530.352-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4388,6 +4712,7 @@
       <!--Lat: OSM: 53.8173911 OS 53.8174331-->
       <!--Lon: OSM: -1.6387355 OS -1.6387327-->
       <!--Separation distance: 4.68 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.8174331,-1.6387327,15z-->
       <!--Name: OSM: Whitecote OS: Whitecote-->
       <!--Ele: OSM: 104 OS: 104.82-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4403,6 +4728,7 @@
       <!--Lat: OSM: 56.0281322 OS 56.028138-->
       <!--Lon: OSM: -2.6530188 OS -2.6530306-->
       <!--Separation distance: 0.97 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.028138,-2.6530306,15z-->
       <!--Name: OSM: Whitekirk Hill OS: Whitekirk Hill-->
       <!--Ele: OSM: 74 OS: 74.528-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4418,6 +4744,7 @@
       <!--Lat: OSM: 53.4712963 OS 53.4713006-->
       <!--Lon: OSM: -1.6252739 OS -1.6252693-->
       <!--Separation distance: 0.57 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.4713006,-1.6252693,15z-->
       <!--Name: OSM: Whitwell Moor OS: Whitwell Moor-->
       <!--Ele: OSM: 359 OS: 358.969-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4433,6 +4760,7 @@
       <!--Lat: OSM: 50.8097253 OS 50.8097253-->
       <!--Lon: OSM: 0.1962488 OS 0.1962486-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.8097253,0.1962486,15z-->
       <!--Name: OSM: Wilmington Hill OS: Wilmington Hill-->
       <!--Ele: OSM: 214 OS: 214.182-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4448,6 +4776,7 @@
       <!--Lat: OSM: 52.984751 OS 52.984743-->
       <!--Lon: OSM: -1.2486091 OS -1.2486052-->
       <!--Separation distance: 0.93 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.984743,-1.2486052,15z-->
       <!--Name: OSM: Windmill Hill OS: Windmill Hill-->
       <!--Ele: OSM: 140 OS: 140.235-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4463,6 +4792,7 @@
       <!--Lat: OSM: 51.7240201 OS 51.7240216-->
       <!--Lon: OSM: -0.8077905 OS -0.8077893-->
       <!--Separation distance: 0.18 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.7240216,-0.8077893,15z-->
       <!--Name: OSM: Windsor Hill OS: Windsor Hill-->
       <!--Ele: OSM: 247 OS: 247.559-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4478,6 +4808,7 @@
       <!--Lat: OSM: 55.7204115 OS 55.7203645-->
       <!--Lon: OSM: -3.5911536 OS -3.5912164-->
       <!--Separation distance: 6.54 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.7203645,-3.5912164,15z-->
       <!--Name: OSM: Windy Gate OS: Windy Gate-->
       <!--Ele: OSM: 294 OS: 294.384-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4493,6 +4824,7 @@
       <!--Lat: OSM: 52.5460891 OS 52.5461218-->
       <!--Lon: OSM: -1.0505231 OS -1.050582-->
       <!--Separation distance: 5.39 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5461218,-1.050582,15z-->
       <!--Name: OSM: Wistow OS: Wistow-->
       <!--Ele: OSM: 123 OS: 123.157-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4508,6 +4840,7 @@
       <!--Lat: OSM: 54.7813867 OS 54.7813891-->
       <!--Lon: OSM: -2.2069229 OS -2.2069107-->
       <!--Separation distance: 0.83 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7813891,-2.2069107,15z-->
       <!--Name: OSM: Wolfcleugh Common OS: Wolfcleugh Common-->
       <!--Ele: OSM: 607.5 OS: 607.466-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4523,6 +4856,7 @@
       <!--Lat: OSM: 53.1219184 OS 53.1219254-->
       <!--Lon: OSM: -1.7966509 OS -1.7966661-->
       <!--Separation distance: 1.28 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.1219254,-1.7966661,15z-->
       <!--Name: OSM: Wolfscote Hill OS: Wolfscote Hill-->
       <!--Ele: OSM: 388 OS: 388.144-->
       <!--Type: OSM: NA / pillar OS: PILLAR-->
@@ -4538,6 +4872,7 @@
       <!--Lat: OSM: 50.6034717 OS 50.6034859-->
       <!--Lon: OSM: -1.202366 OS -1.2023342-->
       <!--Separation distance: 2.75 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.6034859,-1.2023342,15z-->
       <!--Name: OSM: Wroxall Down OS: Wroxall Down-->
       <!--Ele: OSM: 235 OS: 235.04-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4553,6 +4888,7 @@
       <!--Lat: OSM: 52.6553365 OS 52.6553376-->
       <!--Lon: OSM: -3.2100145 OS -3.2099853-->
       <!--Separation distance: 1.97 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6553376,-3.2099853,15z-->
       <!--Name: OSM: Y Golfa OS: Y Golfa-->
       <!--Ele: OSM: 341.68 OS: 341.68-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
@@ -4568,6 +4904,7 @@
       <!--Lat: OSM: 52.930066 OS 52.930082-->
       <!--Lon: OSM: -4.124644 OS -4.1246438-->
       <!--Separation distance: 1.78 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.930082,-4.1246438,15z-->
       <!--Name: OSM: Ynys Cerig-Duan OS: Ynys Cerig-Duan-->
       <!--Ele: OSM: 19.491 OS: 19.491-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4583,6 +4920,7 @@
       <!--Lat: OSM: 52.684622 OS 52.684632-->
       <!--Lon: OSM: -3.121361 OS -3.1213512-->
       <!--Separation distance: 1.29 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.684632,-3.1213512,15z-->
       <!--Name: OSM: Yr Allt OS: Yr Allt-->
       <!--Ele: OSM: 228.295 OS: 228.295-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->
@@ -4598,6 +4936,7 @@
       <!--Lat: OSM: 50.1975167 OS 50.1975168-->
       <!--Lon: OSM: -5.5748278 OS -5.5748277-->
       <!--Separation distance: 0.01 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.1975168,-5.5748277,15z-->
       <!--Name: OSM: Zennor Cliff OS: Zennor Cliff-->
       <!--Ele: OSM: 95.707 OS: 95.707-->
       <!--Type: OSM: pillar / NA OS: PILLAR-->

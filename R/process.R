@@ -74,9 +74,15 @@ check_pillar = 0	#Check if structure=='pillar', and fail if not
 # NA FBs, and see if they have a valid OSM ref that might indicate the FB we are missing
 look_for_missing_fbs = 0
 
-max_snap_distance = set_units(15, "m")	#How near a neighbour will we consider to be 'the same'
+max_snap_distance = set_units(150, "m")	#How near a neighbour will we consider to be 'the same'
 min_snap_distance = set_units(1	,"m")   #At what distance do we not bother to 'snap' co-ordinates?
 osb_max_distance = set_units(15, "m")   #And test for OSB neighbour matching
+
+# When we do an extended search outside the 'snap' distance, how far away will we
+# consider a match to be potentially valid.
+# Mostly only applies to the Names - if we match a FB or other ref then it probably needs
+# a look at!
+max_extended_search_distance = set_units(10000, "m")
 
 #Number of decimal places to generate output in. Generally applying to the coordinates.
 OSM_DIGITS = 7
@@ -342,30 +348,8 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 				"</table><br>"
 				)
 		}
-
-		s = paste(sep="", s,
-			"<span style='color: red'>",
-			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
-			osm_r$osm_id, "</a> is ",
-			round(os_r$distance, digits=DIST_DIGITS), " m away<br>",
-			"</span>" )
-
-		if( os_r$osb_distance <= osb_max_distance ) {
-			s = paste(sep="", s,
-				"OSB FB is ",
-				round(os_r$osb_distance, digits=DIST_DIGITS), " m away.")
-			s = paste(sep="", s,
-				" ele: ",
-				osb_r$HEIGHT, "<br>")
-		} else {
-			s = paste(sep="", s,
-				"<span style='color: red'>",
-				"OSB FB is ",
-				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>",
-				"</span>" )
-		}
-		s = paste(sep="", s, "\"")
 	} else {
+		# OSM Node is close - populate its column as well
 		s = "\""
 		s = paste(sep="", s, "<center>", title, "</center><br>")
 
@@ -420,28 +404,43 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 				"</table><br>"
 				)
 		}
-
-		s = paste(sep="", s,
-			"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
-			osm_r$osm_id, "</a> is ",
-			round(os_r$distance, digits=DIST_DIGITS), " m away<br>" )
-
-		if( os_r$osb_distance <= osb_max_distance ) {
-			s = paste(sep="", s,
-				"OSB FB is ",
-				round(os_r$osb_distance, digits=DIST_DIGITS), " m away.")
-			s = paste(sep="", s,
-				" ele: ",
-				osb_r$HEIGHT, "<br>")
-		} else {
-			s = paste(sep="", s,
-				"<span style='color: red'>",
-				"OSB FB is ",
-				round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>",
-				"</span>" )
-		}
-		s = paste(sep="", s, "\"")
 	}
+
+	s = paste(sep="", s,
+		"OSM <a href=\\\"http://openstreetmap.org/node/", osm_r$osm_id, "\\\">",
+		osm_r$osm_id, "</a> is ",
+		round(os_r$distance, digits=DIST_DIGITS), " m away<br>" )
+
+	if( os_r$osb_distance <= osb_max_distance ) {
+		s = paste(sep="", s,
+			"OSB FB is ",
+			round(os_r$osb_distance, digits=DIST_DIGITS), " m away.")
+		s = paste(sep="", s,
+			" ele: ",
+			osb_r$HEIGHT, "<br>")
+	} else {
+		s = paste(sep="", s,
+			"<span style='color: red'>",
+			"OSB FB is ",
+			round(os_r$osb_distance, digits=DIST_DIGITS), " m away<br>",
+			"</span>" )
+	}
+
+	if( !is.na(os_r$extended_name_match_id) ) {
+		s = paste(sep="", s,
+			"Extended name match OSM <a href=\\\"http://openstreetmap.org/node/", os_r$extended_name_match_id, "\\\">",
+			os_r$extended_name_match_id, "</a> is ",
+			round(os_r$extended_name_match_distance, digits=DIST_DIGITS), " m away<br>" )
+	}
+
+	if( !is.na(os_r$extended_ref_match_id) ) {
+		s = paste(sep="", s,
+			"Extended ref match OSM <a href=\\\"http://openstreetmap.org/node/", os_r$extended_ref_match_id, "\\\">",
+			os_r$extended_ref_match_id, "</a> is ",
+			round(os_r$extended_ref_match_distance, digits=DIST_DIGITS), " m away<br>" )
+	}
+
+	s = paste(sep="", s, "\"")
 
 	return(s)
 }
@@ -514,6 +513,37 @@ osm_node_html <- function(osm_r) {
 	s = paste(sep="", s, "\"")
 
 	return(s)
+}
+
+#Generate a slippy map url from a node geometry
+slippy_node_url <- function(r) {
+	os_coords=st_coordinates(r$geometry)
+	lat=round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS)
+	lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS)
+
+	url = paste(sep="",
+		"https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#",
+		lat,
+		",",
+		lon,
+		",15z"
+		)
+	return(url)
+}
+
+#Generate an OSM map url from a node geometry
+osm_node_url <- function(r) {
+	os_coords=st_coordinates(r$geometry)
+	lat=round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS)
+	lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS)
+
+	url = paste(sep="",
+		"https://www.openstreetmap.org/#map=15/",
+		lat,
+		"/",
+		lon
+		)
+	return(url)
 }
 
 # Generate HTML table info for an FB node
@@ -719,9 +749,9 @@ if(trim_dataset) {
 		#subdivision_name="Bristol, City of"	# pretty small
 		#subdivision_name="Torbay"				#Has 'goodish' nodes, 1.5m away from their refs.
 		subdivision_name="West Lothian"			#Has all 4 types! including 'good'
+		#subdivision_name="Lancashire"				#Has an 'errata' 250m displaced point
 
 		message("Loading county shapefile")
-		#subdivision_name="Isle of Wight"
 
 		# Shapefile acquired from data.gov.uk. As we are not pushing any of the
 		# actual data from this shapefile into OSM, licensing should be fine. We are
@@ -1125,6 +1155,86 @@ message("matching OSB names: ", nrow(filter(os_sf, osb_name_match==TRUE)) )
 message("matching OSB FBs: ", nrow(filter(os_sf, osb_fb_match==TRUE)) )
 message(" got ", fuzzymatches_osb, " extra OSB matches due to fuzzing")
 message(" got ", fuzzymatches_osm, " extra OSM matches due to fuzzing")
+
+
+####################################################################################################### 
+############################## Search harder for matching OSM nodes ###################################
+####################################################################################################### 
+
+# We have currently pruned on distance - if any OSM node was too close then we discount the OS node
+# for import. Now we will try a little harder and see if we can find:
+# - any OSM node with a matching FB number, Station.Name or New.Name
+# - any OSM node with a matching (or near matching?) name
+if(1)
+{
+	os_sf$extended_name_match_id = NA
+	os_sf$extended_name_match_distance = NA
+	os_sf$extended_ref_match_id = NA
+	os_sf$extended_ref_match_distance = NA
+
+	extra_matches = 0
+
+	message(">>> Searching for any matching FB, Station.Name, New.Name or Trig.Name OS/OSM matches")
+	for(i in 1:nrow(os_sf)) {
+		os_r <- os_sf[i,]
+		row_match = 0
+
+		# Only search OS nodes that are not yet discounted from the import
+		if( os_r$distance > max_snap_distance ) {
+			if( !is.na(os_r$FB) ) {
+				fb_match = filter(osm_sf, ref==os_r$FB)
+				if( nrow(fb_match) > 0 ) {
+					d <- st_distance(st_zm(fb_match), st_zm(os_r), by_element = TRUE)
+					#message(" Got FB match: ", os_r$FB, " == ", fb_match[1,]$ref,
+					#	" distance: ", d)
+					row_match = row_match + 1
+					os_sf[i,]$extended_ref_match_id = fb_match[1,]$osm_id
+					os_sf[i,]$extended_ref_match_distance = d
+				}
+			}
+
+			sn_match = filter(osm_sf, tolower(ref)==tolower(os_r$STATION.NAME))
+			if( nrow(sn_match) > 0 ) {
+				d <- st_distance(st_zm(sn_match), st_zm(os_r), by_element = TRUE)
+				#message(" Got STATION.NAME match: ", os_r$STATION.NAME, " == ", sn_match[1,]$ref,
+				#	" distance: ", d)
+				row_match = row_match + 1
+				os_sf[i,]$extended_ref_match_id = fb_match[1,]$osm_id
+				os_sf[i,]$extended_ref_match_distance = d
+			}
+
+			nn_match = filter(osm_sf, tolower(ref)==tolower(os_r$New.Name))
+			if( nrow(nn_match) > 0 ) {
+				d <- st_distance(st_zm(nn_match), st_zm(os_r), by_element = TRUE)
+				#message(" Got New.Name match: ", os_r$New.Name, " == ", nn_match[1,]$ref,
+				#	" distance: ", d)
+				row_match = row_match + 1
+				os_sf[i,]$extended_ref_match_id = fb_match[1,]$osm_id
+				os_sf[i,]$extended_ref_match_distance = d
+			}
+
+			name_match = filter(osm_sf, tolower(name)==tolower(os_r$Trig.Name))
+			if( nrow(name_match) > 0 ) {
+				#message("  matched ", nrow(name_match), " names")
+				nearest_id = st_nearest_feature(st_zm(os_r), st_zm(name_match))
+				d <- st_distance(st_zm(name_match[nearest_id,]), st_zm(os_r), by_element = TRUE)
+				#message(" Got Trig.Name match: ", os_r$Trig.Name, " == ", name_match[nearest_id,]$name,
+				# " distance: ", d)
+				if( d > max_extended_search_distance ) {
+				#	message("  Ignoring as too far away")
+				} else {
+					row_match = row_match + 1
+					os_sf[i,]$extended_name_match_id = fb_match[1,]$osm_id
+					os_sf[i,]$extended_name_match_distance = d
+				}
+			}
+		}
+
+		if( row_match != 0 ) extra_matches = extra_matches + 1
+	}
+	message(">>>  extended search done")
+	message(">>>  got ", extra_matches, " extra matches")
+}
 
 ####################################################################################################### 
 ############################## Search for potentially missing FB numbers ##############################
@@ -1610,6 +1720,15 @@ if( !use_new_filter_logic ) {
 	# of their OS nodes tbh ... FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME 
 	# Any node that was near, had no field mismatches and no fields missing must be GOOD already!
 	goodnode_df = filter(nomismatch_df, fields_missing == FALSE)
+
+	# And find any nodes that got a match in the 'extended' search...
+	extnode_df = filter(os_sf, !is.na(extended_name_match_id) | !is.na(extended_ref_match_id))
+
+	# Add those extended nodes to the review set
+	reviewnode_df = rbind(reviewnode_df, extnode_df)
+
+	# And remove them from the new node set
+	newnode_df = setdiff(newnode_df, extnode_df)
 }
 
 num_new_nodes = nrow(newnode_df)
@@ -1617,6 +1736,7 @@ num_review_nodes = nrow(reviewnode_df)
 num_good_nodes = nrow(goodnode_df)
 num_edit_nodes = nrow(editnode_df)
 num_destroyed_nodes = nrow(os_sf_destroyed)
+num_extended_nodes = nrow(extnode_df)
 
 message("Node count: New: ", num_new_nodes,
 	" Review: ", num_review_nodes,
@@ -1626,6 +1746,7 @@ message("Node count: New: ", num_new_nodes,
 message(" That should add up to (total)",
 	num_new_nodes + num_review_nodes + num_good_nodes + num_edit_nodes,
 	" == (nrow OS) ", nrow(os_sf) )
+message("  And got Extended: ", num_extended_nodes)
 
 if( generate_osc ) {
 	############################ NEW NODES ###################################
@@ -1662,6 +1783,8 @@ if( generate_osc ) {
 		node = newXMLNode("node", attrs=attrs, parent=mod)
 
 		cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
+		newXMLCommentNode(cmt, parent=node)
+		cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
 		newXMLCommentNode(cmt, parent=node)
 
 		# As this is a new node, we can add all our trigpoint defined fields
@@ -1762,6 +1885,34 @@ if( generate_osc ) {
 
 		cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
 		newXMLCommentNode(cmt, parent=node)
+		cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
+		newXMLCommentNode(cmt, parent=node)
+
+		if( !is.na(os_row$extended_name_match_id) ) {
+			cmt = paste(sep="", "Extended name match at ",
+				round(os_row$extended_name_match_distance, DIST_DIGITS), " m",
+				" OSM <a href=\\\"http://openstreetmap.org/node/",
+				os_row$extended_name_match_id
+				, "\\\">")
+			newXMLCommentNode(cmt, parent=node)
+
+			osm_row = filter(osm_sf, osm_id==os_row$extended_name_match_id)
+			cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+			newXMLCommentNode(cmt, parent=node)
+		}
+
+		if( !is.na(os_row$extended_ref_match_id) ) {
+			cmt = paste(sep="", "Extended ref match at ",
+				round(os_row$extended_ref_match_distance, DIST_DIGITS), " m",
+				" OSM <a href=\\\"http://openstreetmap.org/node/",
+				os_row$extended_ref_match_id
+				, "\\\">")
+			newXMLCommentNode(cmt, parent=node)
+
+			osm_row = filter(osm_sf, osm_id==os_row$extended_ref_match_id)
+			cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+			newXMLCommentNode(cmt, parent=node)
+		}
 
 		# Add comments describing what the OS co-ords are
 		cmt = paste(sep=" ", "OS node co-ords are", round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS),
@@ -1916,6 +2067,34 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 			cmt = paste(sep=" ", "Separation distance:", round(os_row$distance, digits=DIST_DIGITS), "m")
 			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
+			newXMLCommentNode(cmt, parent=node)
+
+			if( !is.na(os_row$extended_name_match_id) ) {
+				cmt = paste(sep="", "Extended name match at ",
+					round(os_row$extended_name_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_name_match_id
+					, "\\\">")
+				newXMLCommentNode(cmt, parent=node)
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_name_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( !is.na(os_row$extended_ref_match_id) ) {
+				cmt = paste(sep="", "Extended ref match at ",
+					round(os_row$extended_ref_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_ref_match_id
+					, "\\\">")
+				newXMLCommentNode(cmt, parent=node)
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_ref_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+				newXMLCommentNode(cmt, parent=node)
+			}
 
 			cmt = paste(sep=" ", "Name: OSM:", osm_row$name, "OS:", os_row$Trig.Name)
 			newXMLCommentNode(cmt, parent=node)
@@ -2009,6 +2188,35 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 			b = snappable_df[i,]$bearing <- bearing(st_zm(osm_coords), st_zm(os_coords))
 			cmt = paste(sep=" ", "Move bearing", b, "degrees for", round(os_row$distance, digits=DIST_DIGITS), "m")
+			cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
+			newXMLCommentNode(cmt, parent=node)
+
+			if( !is.na(os_row$extended_name_match_id) ) {
+				cmt = paste(sep="", "Extended name match at ",
+					round(os_row$extended_name_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_name_match_id
+					, "\\\">")
+				newXMLCommentNode(cmt, parent=node)
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_name_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( !is.na(os_row$extended_ref_match_id) ) {
+				cmt = paste(sep="", "Extended ref match at ",
+					round(os_row$extended_ref_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_ref_match_id
+					, "\\\">")
+				newXMLCommentNode(cmt, parent=node)
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_ref_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+				newXMLCommentNode(cmt, parent=node)
+			}
+
 			newXMLCommentNode(cmt, parent=node)
 			cmt = paste(sep=" ", " from lat:", round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
 				"lon:", round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS) )
@@ -2130,13 +2338,137 @@ if( generate_osc ) {
 
 	saveXML(editnode_doc, file="/data/editnodes.osc")
 
-	###############################################################################
-	############################ JS generation ###################################
-	###############################################################################
+	############################ EXTENDED SEARCH NODES ###################################
+	# Now generate the extended elements XML - this XML is not intended to be used
+	# for any import, but as a reference to help track these strange nodes down
+	message(">>> Generate extended node OSC file")
+	extnode_doc = newXMLDoc()
+	attrs = c(
+		version="0.6",
+		generator="github.com/grahamwhaley/OSM_UK_trigpoints"
+	)
+	root = newXMLNode("osmChange", attrs=attrs, doc=extnode_doc)
+
+	cmt = paste(sep=" ", "OSM new Nodes. Generated on:", Sys.Date())
+	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", nrow(extnode_df), "nodes to process")
+	newXMLCommentNode(cmt, parent=root)
+	cmt = paste(sep=" ", "Note, geometries are in ETRS89")
+	newXMLCommentNode(cmt, parent=root)
+
+	if( nrow(extnode_df) != 0 ) {
+		for(i in 1:nrow(extnode_df)) {
+			os_row <- extnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
+
+			mod = newXMLNode("create", parent=root)
+			os_coords=st_coordinates(os_row$geometry)
+			attrs = c(
+				id=-i,	#New node
+				changeset="1",		#FIXME - what should this be??
+				version="1",		#FIXME - what should this be??
+				lat=round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS),
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS)
+				)
+			node = newXMLNode("node", attrs=attrs, parent=mod)
+
+			cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
+			newXMLCommentNode(cmt, parent=node)
+
+			cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
+			newXMLCommentNode(cmt, parent=node)
+
+			if( !is.na(os_row$extended_name_match_id) ) {
+				cmt = paste(sep="", "Extended name match at ",
+					round(os_row$extended_name_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_name_match_id
+					, "\\\">")
+				newXMLCommentNode(cmt, parent=node)
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_name_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( !is.na(os_row$extended_ref_match_id) ) {
+				cmt = paste(sep="", "Extended ref match at ",
+					round(os_row$extended_ref_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_ref_match_id
+					, "\\\">")
+				newXMLCommentNode(cmt, parent=node)
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_ref_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			# As this is a new node, we can add all our trigpoint defined fields
+			attrs = c( k="man_made", v="survey_point")
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="name", v=os_row$Trig.Name)
+			newXMLNode("tag", attrs=attrs, parent=node)
+
+			if( generate_extended_ele ) {
+				cmt = paste(sep=" ", "ele tag is in EGM96")
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="ele", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+				newXMLNode("tag", attrs=attrs, parent=node)
+				attrs = c( k="ele:EGM96", v=round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+				newXMLNode("tag", attrs=attrs, parent=node)
+				attrs = c( k="ele:ODN", v=os_row$HEIGHT)
+				newXMLNode("tag", attrs=attrs, parent=node)
+				attrs = c( k="ele:WGS84", v=round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+				newXMLNode("tag", attrs=attrs, parent=node)
+			} else {
+				cmt = paste(sep=" ", "ele tag is in ODN")
+				newXMLCommentNode(cmt, parent=node)
+				attrs = c( k="ele", v=os_row$HEIGHT)
+				newXMLNode("tag", attrs=attrs, parent=node)
+			}
+
+			attrs = c( k="survey_point:structure", v="pillar")
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="survey_point:datum_aligned", v="yes")
+			newXMLNode("tag", attrs=attrs, parent=node)
+			attrs = c( k="survey_point:purpose", v="both")
+			newXMLNode("tag", attrs=attrs, parent=node)
+
+			if( !is.na(os_row$FB) ) {
+				if( os_row$osb_distance <= osb_max_distance ) {
+					cmt = paste(sep=" ", "Nearest FB is at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
+					newXMLCommentNode(cmt, parent=node)
+					attrs = c( k="ref", v=os_row$FB)
+					newXMLNode("tag", attrs=attrs, parent=node)
+				} else {
+					cmt = paste(sep=" ", "FB too far away to add at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
+					newXMLCommentNode(cmt, parent=node)
+				}
+			} else {
+				cmt = paste(sep=" ", "No Flush Bracket name to add as a ref")
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			attrs = c( k="ref:os", v=os_row$New.Name)
+			newXMLNode("tag", attrs=attrs, parent=node)
+
+			cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", round(os_row$distance, digits=DIST_DIGITS), "m")
+			newXMLCommentNode(cmt, parent=node)
+			attrs = c( k="note", v=
+				"Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import")
+			newXMLNode("tag", attrs=attrs, parent=node)
+		}
+	}
+	saveXML(extnode_doc, file="/data/extnodes.osc")
 } else {
 	message(" Skipping OSC file generation")
 }
 
+###############################################################################
+############################ JS generation ###################################
+###############################################################################
 if( generate_js ) {
 	message(">>> Generating slippy leaflet JS files")
 

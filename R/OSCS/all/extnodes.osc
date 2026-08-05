@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
+  <!--OSM new Nodes. Generated on: 2026-08-05-->
+  <!--6 nodes to process-->
+  <!--Note, geometries are in ETRS89-->
+  <create>
+    <node id="-1" changeset="1" version="1" lat="53.8799113" lon="-2.6584275">
+      <!--OS Name Beacon Fell OS New Name SD74S001-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.8799113,-2.6584275,15z-->
+      <!--Extended name match at 247.07 m OSM <a href=\"http://openstreetmap.org/node/29517101\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.879814,-2.6621933,15z-->
+      <!--Extended ref match at 247.07 m OSM <a href=\"http://openstreetmap.org/node/29517101\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.879814,-2.6621933,15z-->
+      <tag k="man_made" v="survey_point"/>
+      <tag k="name" v="Beacon Fell"/>
+      <!--ele tag is in ODN-->
+      <tag k="ele" v="266.398"/>
+      <tag k="survey_point:structure" v="pillar"/>
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <tag k="survey_point:purpose" v="both"/>
+      <!--Nearest FB is at 2.24 m-->
+      <tag k="ref" v="S4701"/>
+      <tag k="ref:os" v="SD74S001"/>
+      <!-- Distance to nearest OSM node 29517101 is 247.07 m-->
+      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+    </node>
+  </create>
+  <create>
+    <node id="-2" changeset="1" version="1" lat="52.8227221" lon="-1.3115632">
+      <!--OS Name Bleak House Hill OS New Name SK54T025-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.8227221,-1.3115632,15z-->
+      <!--Extended ref match at 1188.57 m OSM <a href=\"http://openstreetmap.org/node/5305542729\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.816262,-1.325655,15z-->
+      <tag k="man_made" v="survey_point"/>
+      <tag k="name" v="Bleak House Hill"/>
+      <!--ele tag is in ODN-->
+      <tag k="ele" v="92.918"/>
+      <tag k="survey_point:structure" v="pillar"/>
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <tag k="survey_point:purpose" v="both"/>
+      <!--Nearest FB is at 5.15 m-->
+      <tag k="ref" v="S1634"/>
+      <tag k="ref:os" v="SK54T025"/>
+      <!-- Distance to nearest OSM node 5305542729 is 1188.57 m-->
+      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+    </node>
+  </create>
+  <create>
+    <node id="-3" changeset="1" version="1" lat="51.3071332" lon="0.1062243">
+      <!--OS Name Knockholt Beeches OS New Name TQ47T399-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.3071332,0.1062243,15z-->
+      <!--Extended ref match at 29778.15 m OSM <a href=\"http://openstreetmap.org/node/4267733568\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.2474523,-0.3111137,15z-->
+      <tag k="man_made" v="survey_point"/>
+      <tag k="name" v="Knockholt Beeches"/>
+      <!--ele tag is in ODN-->
+      <tag k="ele" v="236.936"/>
+      <tag k="survey_point:structure" v="pillar"/>
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <tag k="survey_point:purpose" v="both"/>
+      <!--Nearest FB is at 3.29 m-->
+      <tag k="ref" v="S3358"/>
+      <tag k="ref:os" v="TQ47T399"/>
+      <!-- Distance to nearest OSM node 4267733568 is 5337.81 m-->
+      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+    </node>
+  </create>
+  <create>
+    <node id="-4" changeset="1" version="1" lat="52.5870316" lon="-0.9240143">
+      <!--OS Name Millfield Clump OS New Name SP69S013-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5870316,-0.9240143,15z-->
+      <!--Extended name match at 1175.9 m OSM <a href=\"http://openstreetmap.org/node/13530010907\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5805599,-0.9102492,15z-->
+      <!--Extended ref match at 1175.9 m OSM <a href=\"http://openstreetmap.org/node/13530010907\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.5805599,-0.9102492,15z-->
+      <tag k="man_made" v="survey_point"/>
+      <tag k="name" v="Millfield Clump"/>
+      <!--ele tag is in ODN-->
+      <tag k="ele" v="189.829"/>
+      <tag k="survey_point:structure" v="pillar"/>
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <tag k="survey_point:purpose" v="both"/>
+      <!--Nearest FB is at 0.88 m-->
+      <tag k="ref" v="S4898"/>
+      <tag k="ref:os" v="SP69S013"/>
+      <!-- Distance to nearest OSM node 13530010907 is 1175.9 m-->
+      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+    </node>
+  </create>
+  <create>
+    <node id="-5" changeset="1" version="1" lat="51.9502447" lon="-2.7780853">
+      <!--OS Name Orcop Hill OS New Name SO52T051-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.9502447,-2.7780853,15z-->
+      <!--Extended ref match at 15708.79 m OSM <a href=\"http://openstreetmap.org/node/7837019906\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.0455212,-2.6086682,15z-->
+      <tag k="man_made" v="survey_point"/>
+      <tag k="name" v="Orcop Hill"/>
+      <!--ele tag is in ODN-->
+      <tag k="ele" v="293.025"/>
+      <tag k="survey_point:structure" v="pillar"/>
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <tag k="survey_point:purpose" v="both"/>
+      <!--Nearest FB is at 8.49 m-->
+      <tag k="ref" v="S6409"/>
+      <tag k="ref:os" v="SO52T051"/>
+      <!-- Distance to nearest OSM node 7837019906 is 4328.98 m-->
+      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+    </node>
+  </create>
+  <create>
+    <node id="-6" changeset="1" version="1" lat="51.1756692" lon="-3.8610639">
+      <!--OS Name Parracombe OS New Name PP140-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.1756692,-3.8610639,15z-->
+      <!--Extended ref match at 184191.01 m OSM <a href=\"http://openstreetmap.org/node/1126925754\">-->
+      <!--OSM node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.4161448,-2.0858219,15z-->
+      <tag k="man_made" v="survey_point"/>
+      <tag k="name" v="Parracombe"/>
+      <!--ele tag is in ODN-->
+      <tag k="ele" v="480.093"/>
+      <tag k="survey_point:structure" v="pillar"/>
+      <tag k="survey_point:datum_aligned" v="yes"/>
+      <tag k="survey_point:purpose" v="both"/>
+      <!--Nearest FB is at 3.44 m-->
+      <tag k="ref" v="S1588"/>
+      <tag k="ref:os" v="PP140"/>
+      <!-- Distance to nearest OSM node 1126925754 is 3395.62 m-->
+      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+    </node>
+  </create>
+</osmChange>
