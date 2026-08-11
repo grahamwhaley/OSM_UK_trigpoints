@@ -61,6 +61,7 @@ generate_extended_ele = 0		#Default to simple ele == ODN
 do_height_conversion = 1
 
 # If we set this before we've imported, all 'good' nodes fail
+# FIXME - we are now transitioning to ref:GB:complete_trig_archive
 check_ref_os = 0	#Check if ref:os tags match - indicating known 'good' nodes
 
 # Use the new 'node filter' code (tag compare/missing logic to get better 'edit' candidates)
@@ -96,6 +97,10 @@ HEIGHT_DIGITS = 2
 #If we are doing fuzzy height compares (OS-vs-OSM or OS-vs-FB), what tolerance do we have for
 # differences before we treat them as a fail?
 HEIGHT_TOLERANCE = 1
+
+# string constants used in tag generate
+tag_operator = "Ordnance Survey"
+tag_wikidata = "Q548721"
 
 ####################################################################################################### 
 ###################################### Global data type things ###################################
@@ -344,7 +349,6 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 					"<tr><th>Item</th><th>OS</th></tr>",
 					"<tr><td>os:ref</td>",
 						"<td>", os_r$New.Name, "</td>",
-				# FIXME - need to add datum_aligned and purpose tags to the new item table
 				"</table><br>"
 				)
 		}
@@ -400,7 +404,6 @@ node_compare_html <- function(title, os_r, osb_r, osm_r) {
 					"<tr><th>Item</th><th>OS</th></tr>",
 					"<tr><td>os:ref</td>",
 						"<td>", os_r$New.Name, "</td>",
-				# FIXME - need to add datum_aligned and purpose tags to the new item table
 				"</table><br>"
 				)
 		}
@@ -567,6 +570,43 @@ osb_node_html <- function( osb_r) {
 	return(s)
 }
 
+static_xml_tags <- function(node, new_name, as_comment) {
+
+	if(as_comment) {
+		cmt = paste(sep=" ", "operator:", tag_operator)
+		newXMLCommentNode(cmt, parent=node)
+	} else {
+		attrs = c( k="operator", v=tag_operator)
+		newXMLNode("tag", attrs=attrs, parent=node)
+	}
+
+	if(as_comment) {
+		cmt = paste(sep=" ", "operator:wikidata:", tag_wikidata)
+		newXMLCommentNode(cmt, parent=node)
+	} else {
+		attrs = c( k="operator:wikidata", v=tag_wikidata)
+		newXMLNode("tag", attrs=attrs, parent=node)
+	}
+
+	if(as_comment){
+		cmt = paste(sep=" ", "ref:GB:complete_trig_archive:", new_name)
+		newXMLCommentNode(cmt, parent=node)
+	} else {
+		attrs = c( k="ref:GB:complete_trig_archive", v=new_name)
+		newXMLNode("tag", attrs=attrs, parent=node)
+	}
+
+	if(as_comment){
+		cmt = paste(sep=" ", "note:", 
+			"Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import")
+		newXMLCommentNode(cmt, parent=node)
+	} else {
+		attrs = c( k="note", v=
+			"Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import")
+		newXMLNode("tag", attrs=attrs, parent=node)
+	}
+}
+
 ####################################################################################################### 
 ###################################### Read raw data ###############################################
 ####################################################################################################### 
@@ -697,9 +737,7 @@ colnames(new_coords) <- c("nEASTING", "nNORTHING")
 os_b_df <- cbind(os_b_df, new_coords)
 
 # EPSG:27700 rather than EPSG:7405 as we are not pulling in the height. We don't use the
-# height of the benchmarks. Having said that, FIXME - later on maybe we should do a compare
-# of the trig height vs benchmark height to ensure they are 'near' - and if not, note the
-# problem and stick the node in the review pack??
+# height of the benchmarks.
 os_b_sf_27700 <- st_as_sf(os_b_df, coords=c("nEASTING", "nNORTHING"), crs=27700)
 # And then into ETRS89
 os_b_sf <- os_b_sf_27700 %>% st_transform(crs=4937)
@@ -1458,6 +1496,7 @@ if( !use_new_filter_logic ) {
 				# If we get here and a node is qualifying as 'good', then finally check if
 				# it has a matching ref:os - which is the ultimate indicator that we have
 				# already 'fixed' this node in the past, and it needs no further attention
+				# FIXME - we should now be looking for the ref:GB_complete_trig_archive
 				if( os_sf[i,]$new_node == FALSE && r$distance <= min_snap_distance) {
 					if( !is.na(osm_r$ref_os) ) {
 						if( osm_r$ref_os != r$New.Name ) {
@@ -1535,6 +1574,9 @@ if( !use_new_filter_logic ) {
 	}
 
 	if( !check_ref_os ) { message(">>> SKIPPED ref:os matching stage") }
+	if( !check_ref_os ) { message(">>> SKIPPED ref:GB:complete_trigpoint_archive matching stage") }
+	if( !check_ref_os ) { message(">>> SKIPPED operator matching stage") }
+	if( !check_ref_os ) { message(">>> SKIPPED operator:wikidata matching stage") }
 	if( !check_pillar ) { message(">>> SKIPPED survey_point:[structure|datum_aligned|purpose] matching stage") }
 
 	# We have four categories to work out...
@@ -1833,14 +1875,10 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 		}
 
-		attrs = c( k="ref:os", v=os_row$New.Name)
-		newXMLNode("tag", attrs=attrs, parent=node)
-
 		cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", round(os_row$distance, digits=DIST_DIGITS), "m")
 		newXMLCommentNode(cmt, parent=node)
-		attrs = c( k="note", v=
-			"Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import")
-		newXMLNode("tag", attrs=attrs, parent=node)
+
+		static_xml_tags(node, os_row$New.Name, FALSE)
 	}
 	saveXML(newnode_doc, file="/data/newnodes.osc")
 
@@ -1998,12 +2036,11 @@ if( generate_osc ) {
 		}
 		newXMLCommentNode(cmt, parent=node)
 
+		# somewhat depricated - we generate ref:GB:complete_trig_archive instead
 		if (!is.na(osm_row$ref_os) ) {
 			cmt = paste(sep=" ", "OSM ref:os is:", osm_row$ref_os)
-		} else {
-			cmt = paste(sep=" ", "OSM node has no ref:os")
+			newXMLCommentNode(cmt, parent=node)
 		}
-		newXMLCommentNode(cmt, parent=node)
 
 		#Not necessary, but can help with debugging
 		#cmt = paste(sep=" ", "Nearest FB ref is", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
@@ -2019,6 +2056,7 @@ if( generate_osc ) {
 			cmt = paste(sep=" ", "OS node has no FB")
 		}
 		newXMLCommentNode(cmt, parent=node)
+		static_xml_tags(node, os_row$New.Name, FALSE)
 	}
 	saveXML(reviewnode_doc, file="/data/reviewnodes.osc")
 
@@ -2136,11 +2174,8 @@ if( generate_osc ) {
 				newXMLCommentNode(cmt, parent=node)
 			}
 
-			# FIXME - add ref:os code here!
-			cmt = paste(sep=" ", "NOTE: probably need to add new ref:os tag:")
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", "tag ref:os =", os_row$New.Name)
-			newXMLCommentNode(cmt, parent=node)
+			# FIXME - and check operator and note tags as well!
+			static_xml_tags(node, os_row$New.Name, TRUE)
 		}
 	}
 
@@ -2188,6 +2223,11 @@ if( generate_osc ) {
 			newXMLCommentNode(cmt, parent=node)
 			b = snappable_df[i,]$bearing <- bearing(st_zm(osm_coords), st_zm(os_coords))
 			cmt = paste(sep=" ", "Move bearing", b, "degrees for", round(os_row$distance, digits=DIST_DIGITS), "m")
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", " from lat:", round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
+				"lon:", round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS) )
+			newXMLCommentNode(cmt, parent=node)
+
 			cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
 			newXMLCommentNode(cmt, parent=node)
 
@@ -2217,19 +2257,14 @@ if( generate_osc ) {
 				newXMLCommentNode(cmt, parent=node)
 			}
 
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", " from lat:", round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
-				"lon:", round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS) )
-			newXMLCommentNode(cmt, parent=node)
-
 			osm_row <- osm_sf[os_row$nearest_osm_id,]
 			osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
 			if( is.na(osm_row$name) ) {
 				# We can fill the name slot
-				cmt = paste(sep=" ", "Add new name:", os_row$New.Name)
+				cmt = paste(sep=" ", "Add new name:", os_row$Trig.Name)
 				newXMLCommentNode(cmt, parent=node)
-				attrs = c( k="name", v=os_row$New.Name)
+				attrs = c( k="name", v=os_row$Trig.Name)
 				newXMLNode("tag", attrs=attrs, parent=node)
 			} else {
 				cmt = paste(sep=" ", "Name field already set:", osm_row$name)
@@ -2250,6 +2285,8 @@ if( generate_osc ) {
 				newXMLCommentNode(cmt, parent=node)
 			}
 
+		#FIXME - might want to change this to work on ref:GB:complete_trig_archive instead
+		if(0) {
 			if( is.na(osm_row$ref_os) ) {
 				# We need to set the ref:os
 				cmt = paste(sep=" ", "Add new ref:os:", os_row$New.Name)
@@ -2265,6 +2302,7 @@ if( generate_osc ) {
 				}
 				newXMLCommentNode(cmt, parent=node)
 			}
+		}
 
 			if( is.na(osm_row$ele) ) {
 				# We can fill the ele slot
@@ -2333,6 +2371,10 @@ if( generate_osc ) {
 
 			# And store that bearing for later
 			snappable_df[i,]$bearing <- b
+
+			cmt = paste(sep=" ", "Very likely need to add all these new tags:")
+			newXMLCommentNode(cmt, parent=node)
+			static_xml_tags(node, os_row$New.Name, FALSE)
 		}
 	}
 
@@ -2451,14 +2493,10 @@ if( generate_osc ) {
 				newXMLCommentNode(cmt, parent=node)
 			}
 
-			attrs = c( k="ref:os", v=os_row$New.Name)
-			newXMLNode("tag", attrs=attrs, parent=node)
-
 			cmt = paste(sep=" ", " Distance to nearest OSM node", osm_row$osm_id, "is", round(os_row$distance, digits=DIST_DIGITS), "m")
 			newXMLCommentNode(cmt, parent=node)
-			attrs = c( k="note", v=
-				"Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import")
-			newXMLNode("tag", attrs=attrs, parent=node)
+
+			static_xml_tags(node, os_row$New.Name, FALSE)
 		}
 	}
 	saveXML(extnode_doc, file="/data/extnodes.osc")

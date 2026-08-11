@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM new Nodes. Generated on: 2026-08-05-->
+  <!--OSM new Nodes. Generated on: 2026-08-11-->
   <!--6 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
@@ -20,9 +20,11 @@
       <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 2.24 m-->
       <tag k="ref" v="S4701"/>
-      <tag k="ref:os" v="SD74S001"/>
       <!-- Distance to nearest OSM node 29517101 is 247.07 m-->
-      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="SD74S001"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
   <create>
@@ -40,9 +42,11 @@
       <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 5.15 m-->
       <tag k="ref" v="S1634"/>
-      <tag k="ref:os" v="SK54T025"/>
       <!-- Distance to nearest OSM node 5305542729 is 1188.57 m-->
-      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="SK54T025"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
   <create>
@@ -60,9 +64,11 @@
       <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 3.29 m-->
       <tag k="ref" v="S3358"/>
-      <tag k="ref:os" v="TQ47T399"/>
       <!-- Distance to nearest OSM node 4267733568 is 5337.81 m-->
-      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="TQ47T399"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
   <create>
@@ -82,9 +88,11 @@
       <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 0.88 m-->
       <tag k="ref" v="S4898"/>
-      <tag k="ref:os" v="SP69S013"/>
       <!-- Distance to nearest OSM node 13530010907 is 1175.9 m-->
-      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="SP69S013"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
   <create>
@@ -102,9 +110,11 @@
       <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 8.49 m-->
       <tag k="ref" v="S6409"/>
-      <tag k="ref:os" v="SO52T051"/>
       <!-- Distance to nearest OSM node 7837019906 is 4328.98 m-->
-      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="SO52T051"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
   <create>
@@ -122,9 +132,11 @@
       <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 3.44 m-->
       <tag k="ref" v="S1588"/>
-      <tag k="ref:os" v="PP140"/>
       <!-- Distance to nearest OSM node 1126925754 is 3395.62 m-->
-      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="PP140"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
 </osmChange>

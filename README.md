@@ -104,14 +104,17 @@ Here is a rough outline of how we process the data:
     - Calculate and record which OS benchmark node is nearest to each OS trigpoint and how far away it is
 	- Extract the Flush Bracket data from OS Benchmark data
   - Sanity check the data
-    - Ensure we only use 'neighbours' that are not too far away (<=15m is a good start)
+    - Ensure we only use 'neighbours' that are not too far away (settled on <=150m)
 	- Do a name check between OS trigpoints and their OS benchmark neighbours
+	- Do an extra check for:
+	  - Any OSM node name duplicates within 10km, to try and pick up wildly errant OS nodes
+	  - Any duplicate flush bracket labels that potentially indicate wrong data somewhere
   - And then try to make sense of it all...
     - If we have an OS Benchmark pillar within 15m of an OS pillar, and we can match up their
 	  respective names, then assign the Benchmark Flush Bracket number to the OS pillar.
-    - If we have an OSM node within 15m of an OS trigpoint, mark the pair as potentially 'snappable,
+    - If we have an OSM node within 150m of an OS trigpoint, mark the pair as potentially 'snappable',
 	  that is - can we update the OSM node with new co-ordinates from the OS pillar.
-    - If an OS pillar does not have an OSM node within 15m of it, mark that OS pillar data as a
+    - If an OS pillar does not have an OSM node within 150m of it, mark that OS pillar data as a
 	  potentially new OSM node.
     
 Sadly the OSM `man_made=survey_point` data is quite inconsistent in the use of tags and their contents,
@@ -193,8 +196,9 @@ within >4km.
 
 ```xml
   <create>
-    <node id="-795" changeset="1" version="1" lat="55.8184475" lon="-3.5182668">
+    <node id="-767" changeset="1" version="1" lat="55.8184475" lon="-3.5182668">
       <!--OS Name Camilty Hill OS New Name NT18T005-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8184475,-3.5182668,15z-->
       <tag k="man_made" v="survey_point"/>
       <tag k="name" v="Camilty Hill"/>
       <!--ele tag is in ODN-->
@@ -204,9 +208,11 @@ within >4km.
       <tag k="survey_point:purpose" v="both"/>
       <!--Nearest FB is at 2.98 m-->
       <tag k="ref" v="S2681"/>
-      <tag k="ref:os" v="NT18T005"/>
       <!-- Distance to nearest OSM node 8561011506 is 4085.55 m-->
-      <tag k="note" v="Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="NT18T005"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
 ```
@@ -219,6 +225,7 @@ Nodes that could do with human review.
   <create>
     <node id="9461313633" changeset="1" version="1" lat="50.870067" lon="-4.219551">
       <!--OS Name Berry OS New Name SS30T054-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.8700669,-4.2195512,15z-->
       <!--OS node co-ords are 50.8700669 , -4.2195512-->
       <!--That is 0.02 m from its nearest OSM node-->
       <!--OS node called [ Berry ] vs OSM [ Berry ]-->
@@ -228,13 +235,17 @@ Nodes that could do with human review.
       <!--Add new survey_point:datum_aligned: yes-->
       <!--Add new survey_point:purpose: both-->
       <!--OSM ref is: SS30/T54-->
-      <!--OSM node has no ref:os-->
       <!--OS FB is S5484 at 4.86 m away-->
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="SS30T054"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
   <create>
     <node id="10161920587" changeset="1" version="1" lat="50.9768064" lon="-1.2040348">
       <!--OS Name Berry Hill OS New Name SU31T038-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#50.9768156,-1.2040431,15z-->
       <!--OS node co-ords are 50.9768156 , -1.2040431-->
       <!--That is 1.18 m from its nearest OSM node-->
       <!--OS node called [ Berry Hill ] vs OSM [ Stephen's Castle Down ]-->
@@ -244,8 +255,11 @@ Nodes that could do with human review.
       <!--Add new survey_point:datum_aligned: yes-->
       <!--Add new survey_point:purpose: both-->
       <!--OSM node has no ref-->
-      <!--OSM node has no ref:os-->
       <!--OS FB is S2637 at 1.98 m away-->
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="SU31T038"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </create>
 ```
@@ -255,11 +269,10 @@ Nodes that could do with human review.
 Here we see an example of an OSM and OS node closely matching on all fields, and has thus
 been classified as 'good' already.
 
-Long term I suspect it would be nice to have one of the tags (probably a new or infrequently used
-tag) to be a strong indicator that the node has been checked or created against the OS data -
-current suggestion is the `ref:os` tag, as that is already present in the OSM data (there being 5
-existing instances that do contain an OS ref, but in the 'old' style'. That will greatly aid the
-automatic detection of nodes that do not need further checking in the future.
+Long term I suspect it would be nice to have one of the tags (probably the
+`ref:GB:complete_trig_archive` tag) to be a strong indicator that the node has been checked or
+created against the OS data.
+That will greatly aid the automatic detection of nodes that do not need further checking in the future.
 
 ```xml
   <create>
@@ -267,14 +280,17 @@ automatic detection of nodes that do not need further checking in the future.
       <!--Lat: OSM: 55.808063 OS 55.8080627-->
       <!--Lon: OSM: -3.5852169 OS -3.5852171-->
       <!--Separation distance: 0.04 m-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8080627,-3.5852171,15z-->
       <!--Name: OSM: Pearie Law OS: Pearie Law-->
       <!--Ele: OSM: 302 OS: 301.517-->
       <!--Type: OSM: NA / NA OS: PILLAR-->
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2652 OS: S2652-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT18T002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT18T002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
 ```
@@ -291,10 +307,9 @@ to fill out the entry.
       <!--OS Name West Cairn Hill OS New Name NT18S001-->
       <!--Move bearing -107.328643666515 degrees for 1.15 m-->
       <!-- from lat: 55.8105941 lon: -3.4259629-->
+      <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.810591,-3.4259805,15z-->
       <!--Name field already set: West Cairn Hill-->
       <!--Ref field already set: S3084-->
-      <!--Add new ref:os: NT18S001-->
-      <tag k="ref:os" v="NT18S001"/>
       <!--Add new ele: 562.438 in ODN-->
       <tag k="ele" v="562.438"/>
       <!--Add new structure: pillar-->
@@ -303,6 +318,11 @@ to fill out the entry.
       <tag k="survey_point:datum_aligned" v="yes"/>
       <!--Add new purpose: both-->
       <tag k="survey_point:purpose" v="both"/>
+      <!--Very likely need to add all these new tags:-->
+      <tag k="operator" v="Ordnance Survey"/>
+      <tag k="operator:wikidata" v="Q548721"/>
+      <tag k="ref:GB:complete_trig_archive" v="NT18S001"/>
+      <tag k="note" v="Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import"/>
     </node>
   </modify>
 ```

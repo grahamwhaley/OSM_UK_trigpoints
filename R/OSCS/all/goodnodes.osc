@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-08-05-->
+  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-08-11-->
   <!--309 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
@@ -15,8 +15,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4115 OS: S4115-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK26T001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK26T001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -31,8 +33,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5194 OS: S5194-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69T001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69T001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -47,8 +51,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4747 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44S002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44S002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -63,8 +69,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2803 OS: S2803-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD80S001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD80S001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -79,8 +87,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1547 OS: S1547-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP056-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP056-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -95,8 +105,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2574 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK54T031-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK54T031-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -111,8 +123,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1608 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP102-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP102-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -127,8 +141,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1614 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP118-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP118-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -143,8 +159,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5406 OS: S5406-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47T001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47T001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -159,8 +177,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4902 OS: S4902-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69T003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69T003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -175,8 +195,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5065 OS: S5065-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP26T001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP26T001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -191,8 +213,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1730 OS: S1730-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK56S008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK56S008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -207,8 +231,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2237 OS: S2237-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK22S004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK22S004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -223,8 +249,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6141 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP374-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP374-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -239,8 +267,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4507 OS: S4507-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP91T005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP91T005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -255,8 +285,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2145 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -271,8 +303,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2685 OS: S2685-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT18T014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT18T014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -287,8 +321,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3241 OS: S3241-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT18T059-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT18T059-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -303,8 +339,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 11491 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36T099-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36T099-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -319,8 +357,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1706 OS: S1706-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP180-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP180-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -335,8 +375,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3070 OS: S3070-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK10T007-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK10T007-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -351,8 +393,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6317 OS: S6317-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU19T003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU19T003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -367,8 +411,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3757 OS: S3757-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = ST11S001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: ST11S001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -383,8 +429,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: both OS: both-->
       <!--FB: OSM: S5299 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD96S001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD96S001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -399,8 +447,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6098 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NC35S002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NC35S002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -415,8 +465,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3131 OS: S3131-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK10T008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK10T008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -431,8 +483,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/T2 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06T002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06T002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -447,8 +501,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SD47T005 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47T005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47T005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -463,8 +519,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2154 OS: S2154-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -479,8 +537,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3750 OS: S3750-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = ST11S005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: ST11S005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -495,8 +555,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3615 OS: S3615-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NS77S007-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NS77S007-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -511,8 +573,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: horizontal OS: both-->
       <!--FB: OSM: S3978 OS: S3978-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TQ00T011-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TQ00T011-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -527,8 +591,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1716 OS: S1716-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK56S022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK56S022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -543,8 +609,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86T008 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86T008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86T008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -559,8 +627,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4189 OS: S4189-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T035-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T035-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -575,8 +645,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7694 OS: S7694-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63S002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63S002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -591,8 +663,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2645 OS: S2645-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU31T037-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU31T037-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -607,8 +681,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42S004 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42S004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42S004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -623,8 +699,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1772 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP172-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP172-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -639,8 +717,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5519 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -655,8 +735,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3109 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T011-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T011-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -671,8 +753,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7330 OS: S7330-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -687,8 +771,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7339 OS: S7339-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -703,8 +789,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7304 OS: S7304-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -719,8 +807,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8287 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -735,8 +825,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1889 OS: S1889-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ90S003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ90S003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -751,8 +843,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86S006 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -767,8 +861,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5337 OS: S5337-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47S008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47S008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -783,8 +879,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7437 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -799,8 +897,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7298 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -815,8 +915,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1545 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP087-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP087-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -831,8 +933,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1603 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP105-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP105-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -847,8 +951,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4152 OS: S4152-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T037-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T037-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -863,8 +969,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX76/24 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX76S024-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX76S024-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -879,8 +987,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8325 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -895,8 +1005,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7938 OS: S7938-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63T015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63T015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -911,8 +1023,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8139 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63S015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63S015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -927,8 +1041,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8547 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -943,8 +1059,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7317 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -959,8 +1077,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8519 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -975,8 +1095,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1731 OS: S1731-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP177-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP177-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -991,8 +1113,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4428 OS: S4428-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47T014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47T014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1007,8 +1131,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7480 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1023,8 +1149,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7314 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T010-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T010-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1039,8 +1167,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3510 OS: S3510-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD30T026-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD30T026-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1055,8 +1185,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8130 OS: S8130-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1071,8 +1203,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3550 OS: S3550-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD30T003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD30T003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1087,8 +1221,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5061 OS: S5061-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36T008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36T008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1103,8 +1239,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3731 OS: S3731-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = ST11S008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: ST11S008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1119,8 +1257,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2435 OS: S2435-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU19T047-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU19T047-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1135,8 +1275,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42T010 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42T010-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42T010-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1151,8 +1293,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5946 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1167,8 +1311,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2770 OS: S2770-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD80S013-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD80S013-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1183,8 +1329,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5503 OS: S5503-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP26T008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP26T008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1199,8 +1347,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42T013 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42T013-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42T013-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1215,8 +1365,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/3 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1231,8 +1383,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5074 OS: S5074-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1247,8 +1401,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5993 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1263,8 +1419,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3535 OS: S3535-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD30T063-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD30T063-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1279,8 +1437,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8459 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1295,8 +1455,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5013 OS: S5013-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NS29T114-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NS29T114-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1311,8 +1473,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S9342 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NH16S004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NH16S004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1327,8 +1491,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7904 OS: S7904-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63T023-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63T023-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1343,8 +1509,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5950 OS: S5950-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36T012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36T012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1359,8 +1527,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4369 OS: S4369-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE02T011-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE02T011-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1375,8 +1545,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42T015 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42T015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42T015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1391,8 +1563,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8451 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1407,8 +1581,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1546 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP103-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP103-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1423,8 +1599,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1779 OS: S1779-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE02T057-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE02T057-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1439,8 +1617,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3734 OS: S3734-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = ST11T027-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: ST11T027-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1455,8 +1635,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3242 OS: S3242-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT18T015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT18T015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1471,8 +1653,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/4 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1487,8 +1671,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8456 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S007-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S007-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1503,8 +1689,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5612 OS: S5612-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30S011-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SS30S011-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1519,8 +1707,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1720 OS: S1720-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK54T017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK54T017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1535,8 +1725,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5095 OS: S5095-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TQ53S005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TQ53S005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1551,8 +1743,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86T022 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86T022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86T022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1567,8 +1761,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3835 OS: S3835-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO96T014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO96T014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1583,8 +1779,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY71T007 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71T007-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71T007-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1599,8 +1797,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3616 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NS77S023-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NS77S023-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1615,8 +1815,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4196 OS: S4196-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE22T090-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE22T090-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1631,8 +1833,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SS30/T13 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30T013-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SS30T013-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1647,8 +1851,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6767 OS: S6767-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL08T016-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL08T016-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1663,8 +1869,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2511 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SN94S021-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SN94S021-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1679,8 +1887,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: both OS: both-->
       <!--FB: OSM: 11621 OS: 11621-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU54S020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU54S020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1695,8 +1905,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2628 OS: S2628-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD80T038-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD80T038-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1711,8 +1923,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1836 OS: S1836-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP199-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP199-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1727,8 +1941,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2131 OS: S2131-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39S001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39S001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1743,8 +1959,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6481 OS: S6481-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45T022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45T022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1759,8 +1977,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3127 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T016-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T016-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1775,8 +1995,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8550 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1791,8 +2013,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8452 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S009-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S009-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1807,8 +2031,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8545 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1823,8 +2049,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SS30/T51 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30T051-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SS30T051-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1839,8 +2067,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8552 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S007-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S007-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1855,8 +2085,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7485 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1871,8 +2103,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1618 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP111-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP111-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1887,8 +2121,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7338 OS: S7338-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1903,8 +2139,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10335 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO19S007-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO19S007-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1919,8 +2157,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10790 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71T013-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71T013-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1935,8 +2175,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1838 OS: S1838-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK58S028-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK58S028-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1951,8 +2193,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2635 OS: S2635-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU31T077-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU31T077-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1967,8 +2211,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6953 OS: S6953-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45S014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45S014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1983,8 +2229,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: vertical OS: both-->
       <!--FB: OSM: S5729 OS: S5729-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU59T017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU59T017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -1999,8 +2247,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8508 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2015,8 +2265,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7315 OS: S7315-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T023-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T023-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2031,8 +2283,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/6 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2047,8 +2301,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY71T002 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71T002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71T002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2063,8 +2319,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY71T005 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71T005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71T005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2079,8 +2337,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2664 OS: S2664-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT18T001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT18T001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2095,8 +2355,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4752 OS: S4752-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2111,8 +2373,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: T1SK3068 OS: NA-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP052-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP052-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2127,8 +2391,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: both OS: both-->
       <!--FB: OSM: S2714 OS: S2714-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU31T082-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU31T082-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2143,8 +2409,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5951 OS: S5951-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2159,8 +2427,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/T15 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06T015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06T015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2175,8 +2445,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5948 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2191,8 +2463,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7000 OS: S7000-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45T027-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45T027-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2207,8 +2481,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4622 OS: S4622-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK73T051-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK73T051-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2223,8 +2499,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5334 OS: S5334-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47T028-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47T028-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2239,8 +2517,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6995 OS: S6995-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45T029-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45T029-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2255,8 +2535,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4211 OS: S4211-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42T032-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42T032-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2271,8 +2553,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6945 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45S016-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45S016-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2287,8 +2571,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5989 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2303,8 +2589,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5987 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2319,8 +2607,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86T035 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86T035-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86T035-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2335,8 +2625,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6808 OS: S6808-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NK03T018-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NK03T018-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2351,8 +2643,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3880 OS: S3880-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE44T042-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE44T042-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2367,8 +2661,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6996 OS: S6996-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45T033-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45T033-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2383,8 +2679,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3700 OS: S3700-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU59S005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU59S005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2399,8 +2697,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/T17 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06T017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06T017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2415,8 +2715,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6994 OS: S6994-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45T034-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45T034-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2431,8 +2733,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6977 OS: S6977-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NK03T022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NK03T022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2447,8 +2751,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8549 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S009-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S009-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2463,8 +2769,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5636 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47S025-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47S025-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2479,8 +2787,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4849 OS: S4849-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69T025-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69T025-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2495,8 +2805,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86S012 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2511,8 +2823,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SS30/T52 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SS30T052-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SS30T052-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2527,8 +2841,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3614 OS: S3614-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NS77T087-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NS77T087-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2543,8 +2859,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4832 OS: S4832-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69S009-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69S009-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2559,8 +2877,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3152 OS: S3152-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT48T042-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT48T042-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2575,8 +2895,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3147 OS: S3147-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP38S059-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP38S059-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2591,8 +2913,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4856 OS: NA-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2607,8 +2931,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5956 OS: S5956-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36T022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36T022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2623,8 +2949,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5771 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S018-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S018-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2639,8 +2967,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6992 OS: S6992-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45S019-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45S019-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2655,8 +2985,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7323 OS: S7323-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T024-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T024-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2671,8 +3003,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1630 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP116-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP116-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2687,8 +3021,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10789 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71S005-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71S005-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2703,8 +3039,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5470 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47T063-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47T063-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2719,8 +3057,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3806 OS: S3806-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO96T035-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO96T035-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2735,8 +3075,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6793 OS: S6793-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL08T030-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL08T030-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2751,8 +3093,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2274 OS: S2274-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK34S003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK34S003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2767,8 +3111,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8581 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S011-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S011-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2783,8 +3129,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY71S002 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71S002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71S002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2799,8 +3147,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SE38T060 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE38T060-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE38T060-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2815,8 +3165,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10347 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO19S010-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO19S010-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2831,8 +3183,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3103 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44S029-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44S029-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2847,8 +3201,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8510 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2863,8 +3219,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3104 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44S030-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44S030-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2879,8 +3237,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: No Flush Bracket OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S016-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S016-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2895,8 +3255,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8548 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2911,8 +3273,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7321 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S011-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S011-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2927,8 +3291,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8450 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2943,8 +3309,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8455 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2959,8 +3327,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7336 OS: S7336-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T029-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T029-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2975,8 +3345,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8380 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S018-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S018-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -2991,8 +3363,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3101 OS: S3101-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T074-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T074-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3007,8 +3381,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S9369 OS: S9369-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36T083-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36T083-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3023,8 +3399,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2061 OS: S2061-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69S014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69S014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3039,8 +3417,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: horizontal OS: both-->
       <!--FB: OSM: S4547 OS: S4547-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TQ00T104-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TQ00T104-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3055,8 +3435,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2666 OS: S2666-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ95S038-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ95S038-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3071,8 +3453,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3610 OS: S3610-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NS77T099-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NS77T099-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3087,8 +3471,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4125 OS: S4125-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK26T018-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK26T018-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3103,8 +3489,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10331 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO19S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO19S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3119,8 +3507,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7329 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T030-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T030-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3135,8 +3525,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3095 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T038-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T038-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3151,8 +3543,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3117 OS: S3117-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44S019-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44S019-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3167,8 +3561,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8379 OS: S8379-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S023-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S023-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3183,8 +3579,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7334 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3199,8 +3597,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4727 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44S020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44S020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3215,8 +3615,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42S021 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42S021-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42S021-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3231,8 +3633,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3689 OS: S3689-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ29T021-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ29T021-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3247,8 +3651,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: both OS: both-->
       <!--FB: OSM: S6310 OS: S6310-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SN02S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SN02S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3263,8 +3669,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3063 OS: S3063-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT48S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT48S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3279,8 +3687,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7758 OS: S7758-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63T050-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63T050-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3295,8 +3705,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4183 OS: S4183-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK26T019-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK26T019-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3311,8 +3723,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4141 OS: S4141-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK26T020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK26T020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3327,8 +3741,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5059 OS: S5059-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL36S018-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL36S018-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3343,8 +3759,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX76/T212 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX76T212-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX76T212-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3359,8 +3777,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2159 OS: S2159-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39S010-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39S010-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3375,8 +3795,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3108 OS: S3108-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44S022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44S022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3391,8 +3813,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2652 OS: S2652-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT18T002-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT18T002-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3407,8 +3831,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/T20 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06T020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06T020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3423,8 +3849,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8449 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S024-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S024-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3439,8 +3867,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SE38S014 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE38S014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE38S014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3455,8 +3885,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3107 OS: S3107-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T046-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T046-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3471,8 +3903,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7256 OS: S7256-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S016-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S016-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3487,8 +3921,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/8 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3503,8 +3939,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8323 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62T051-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62T051-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3519,8 +3957,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3114 OS: S3114-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T047-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T047-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3535,8 +3975,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7303 OS: S7303-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3551,8 +3993,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7269 OS: S7269-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T037-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T037-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3567,8 +4011,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8518 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S016-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S016-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3583,8 +4029,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5988 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3599,8 +4047,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4758 OS: S4758-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP91T036-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP91T036-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3615,8 +4065,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5957 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11S021-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11S021-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3631,8 +4083,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10345 OS: 10345-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T073-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T073-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3647,8 +4101,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7341 OS: S7341-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T038-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T038-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3663,8 +4119,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42S039 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42S039-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42S039-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3679,8 +4137,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5639 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47S033-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47S033-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3695,8 +4155,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10339 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO19S014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO19S014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3711,8 +4173,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8546 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3727,8 +4191,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7311 OS: S7311-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T041-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T041-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3743,8 +4209,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2153 OS: S2153-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3759,8 +4227,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4490 OS: S4490-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE02T037-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE02T037-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3775,8 +4245,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4623 OS: S4623-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK73T066-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK73T066-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3791,8 +4263,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2299 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T019-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T019-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3807,8 +4281,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42T057 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42T057-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42T057-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3823,8 +4299,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/10 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S010-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S010-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3839,8 +4317,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7688 OS: S7688-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63T009-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63T009-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3855,8 +4335,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6476 OS: S6476-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY45T060-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY45T060-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3871,8 +4353,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3111 OS: S3111-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T051-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T051-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3887,8 +4371,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1641 OS: S1641-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK54S017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK54S017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3903,8 +4389,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5706 OS: S5706-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11T052-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11T052-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3919,8 +4407,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3122 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T053-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T053-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3935,8 +4425,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86T045 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86T045-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86T045-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3951,8 +4443,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NZ42S031 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42S031-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42S031-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3967,8 +4461,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4150 OS: S4150-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T056-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T056-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3983,8 +4479,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: 10416 OS: 10416-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71T014-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71T014-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -3999,8 +4497,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2760 OS: S2760-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK08S007-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK08S007-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4015,8 +4515,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8457 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S018-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S018-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4031,8 +4533,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4148 OS: S4148-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T027-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T027-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4047,8 +4551,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6812 OS: S6812-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NK03T028-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NK03T028-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4063,8 +4569,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1543 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP003-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP003-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4079,8 +4587,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2338 OS: S2338-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP38S049-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP38S049-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4095,8 +4605,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4839 OS: S4839-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69T032-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69T032-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4111,8 +4623,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7476 OS: S7476-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT72T093-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT72T093-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4127,8 +4641,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1780 OS: S1780-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE02T054-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE02T054-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4143,8 +4659,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1770 OS: S1770-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE02T056-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE02T056-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4159,8 +4677,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1737 OS: S1737-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP175-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP175-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4175,8 +4695,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/T26 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06T026-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06T026-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4191,8 +4713,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/11 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S011-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S011-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4207,8 +4731,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SU31T188 OS: NA-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU31T188-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU31T188-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4223,8 +4749,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1644 OS: S1644-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK54S018-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK54S018-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4239,8 +4767,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4668 OS: S4668-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK73T072-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK73T072-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4255,8 +4785,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/12 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S012-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S012-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4271,8 +4803,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2092 OS: S2092-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69S017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69S017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4287,8 +4821,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: both OS: both-->
       <!--FB: OSM: S2477 OS: S2477-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = ST86S009-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: ST86S009-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4303,8 +4839,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7319 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57S020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57S020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4319,8 +4857,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8454 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S032-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S032-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4335,8 +4875,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7378 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT72T098-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT72T098-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4351,8 +4893,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1620 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62T067-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62T067-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4367,8 +4911,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2598 OS: S2598-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK08T020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK08T020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4383,8 +4929,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY71T004 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY71T004-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY71T004-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4399,8 +4947,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4980 OS: S4980-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP26T025-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP26T025-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4415,8 +4965,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1787 OS: S1787-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TQ94T008-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TQ94T008-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4431,8 +4983,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/T42 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06T042-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06T042-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4447,8 +5001,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7695 OS: S7695-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63S006-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63S006-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4463,8 +5019,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: SX06/13 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SX06S013-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SX06S013-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4479,8 +5037,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1707 OS: S1707-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP178-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP178-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4495,8 +5055,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7868 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63T086-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63T086-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4511,8 +5073,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S6721 OS: S6721-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NZ42T186-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NZ42T186-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4527,8 +5091,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: TP6626 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO11S017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO11S017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4543,8 +5109,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7216 OS: S7216-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH57T043-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH57T043-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4559,8 +5127,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8554 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH95S019-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH95S019-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4575,8 +5145,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8453 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62S034-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62S034-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4591,8 +5163,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4541 OS: S4541-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TL32S010-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TL32S010-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4607,8 +5181,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1668 OS: S1668-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU54S017-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU54S017-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4623,8 +5199,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1539 OS: S1539-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = PP051-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: PP051-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4639,8 +5217,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1673 OS: S1673-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU54T021-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU54T021-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4655,8 +5235,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1756 OS: S1756-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE02T053-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE02T053-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4671,8 +5253,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86S015 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86S015-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86S015-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4687,8 +5271,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5709 OS: S5709-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY11T065-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY11T065-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4703,8 +5289,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S5671 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SD47S038-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SD47S038-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4719,8 +5307,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3807 OS: S3807-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SE44T040-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SE44T040-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4735,8 +5325,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S7186 OS: S7186-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NT86T031-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NT86T031-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4751,8 +5343,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S1752 OS: S1752-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK39T023-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK39T023-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4767,8 +5361,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3986 OS: S3986-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = TQ00S020-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: TQ00S020-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4783,8 +5379,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2576 OS: S2576-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK54S022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK54S022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4799,8 +5397,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2027 OS: S2027-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP91S016-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP91S016-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4815,8 +5415,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S3585 OS: S3585-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NS77T073-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NS77T073-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4831,8 +5433,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4861 OS: S4861-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SP69T104-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SP69T104-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4847,8 +5451,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: NY86T055 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = NY86T055-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: NY86T055-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4863,8 +5469,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4187 OS: S4187-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SK26T024-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SK26T024-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4879,8 +5487,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S2517 OS: S2517-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SU31T001-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SU31T001-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4895,8 +5505,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S9900 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SO19S022-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SO19S022-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4911,8 +5523,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8186 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SH62T061-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SH62T061-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4927,8 +5541,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S4755 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SJ44T072-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SJ44T072-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
   <create>
@@ -4943,8 +5559,10 @@
       <!--Datum_aligned: OSM: NA OS: yes-->
       <!--Purpose: OSM: NA OS: both-->
       <!--FB: OSM: S8143 OS: FB too far at  m-->
-      <!--NOTE: probably need to add new ref:os tag:-->
-      <!--tag ref:os = SW63S025-->
+      <!--operator: Ordnance Survey-->
+      <!--operator:wikidata: Q548721-->
+      <!--ref:GB:complete_trig_archive: SW63S025-->
+      <!--note: Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import-->
     </node>
   </create>
 </osmChange>
