@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM new Nodes. Generated on: 2026-08-11-->
+  <!--OSM new Nodes. Generated on: 2026-08-15-->
   <!--6 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
@@ -15,6 +15,7 @@
       <tag k="name" v="Beacon Fell"/>
       <!--ele tag is in ODN-->
       <tag k="ele" v="266.398"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=266.18"/>
       <tag k="survey_point:structure" v="pillar"/>
       <tag k="survey_point:datum_aligned" v="yes"/>
       <tag k="survey_point:purpose" v="both"/>
@@ -37,6 +38,7 @@
       <tag k="name" v="Bleak House Hill"/>
       <!--ele tag is in ODN-->
       <tag k="ele" v="92.918"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=92.5"/>
       <tag k="survey_point:structure" v="pillar"/>
       <tag k="survey_point:datum_aligned" v="yes"/>
       <tag k="survey_point:purpose" v="both"/>
@@ -59,6 +61,7 @@
       <tag k="name" v="Knockholt Beeches"/>
       <!--ele tag is in ODN-->
       <tag k="ele" v="236.936"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=236.55"/>
       <tag k="survey_point:structure" v="pillar"/>
       <tag k="survey_point:datum_aligned" v="yes"/>
       <tag k="survey_point:purpose" v="both"/>
@@ -83,6 +86,7 @@
       <tag k="name" v="Millfield Clump"/>
       <!--ele tag is in ODN-->
       <tag k="ele" v="189.829"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=189.57"/>
       <tag k="survey_point:structure" v="pillar"/>
       <tag k="survey_point:datum_aligned" v="yes"/>
       <tag k="survey_point:purpose" v="both"/>
@@ -105,6 +109,7 @@
       <tag k="name" v="Orcop Hill"/>
       <!--ele tag is in ODN-->
       <tag k="ele" v="293.025"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=292.9"/>
       <tag k="survey_point:structure" v="pillar"/>
       <tag k="survey_point:datum_aligned" v="yes"/>
       <tag k="survey_point:purpose" v="both"/>
@@ -127,6 +132,7 @@
       <tag k="name" v="Parracombe"/>
       <!--ele tag is in ODN-->
       <tag k="ele" v="480.093"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=480.17"/>
       <tag k="survey_point:structure" v="pillar"/>
       <tag k="survey_point:datum_aligned" v="yes"/>
       <tag k="survey_point:purpose" v="both"/>

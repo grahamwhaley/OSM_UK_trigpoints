@@ -1,1 +1,1 @@
-var status_text = " Data gathered on: 2026-08-05 <br> Total OS nodes: 6081 New: 4289 Review: 620 Good: 309 Edit: 863 Destroyed: 1030 <br> OSM nodes shown: 2560 OS nodes with FBs: 4013 Total FBs: 4220 "
+var status_text = " Data gathered on: 2026-08-15 <br> Total OS nodes: 6081 New: 4289 Review: 620 Good: 309 Edit: 863 Destroyed: 1030 <br> OSM nodes shown: 2560 OS nodes with FBs: 4013 Total FBs: 4220 "
