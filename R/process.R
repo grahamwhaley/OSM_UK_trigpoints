@@ -21,6 +21,19 @@ version="v1.0"
 # XML code generation, to match OSM
 options(digits=3+7)
 
+# Set the PROJ datapath very early, before we load the sf library, as the
+# library reads and set the path at load time (not runtime).
+PROJ_DATA_PATH="/data/data"
+
+# Set the proj download cache file dir if we have not already
+if ( !exists("process_has_set_cache_path") ) {
+	message("Adding PROJ cache path")
+	Sys.setenv("XDG_DATA_HOME" = PROJ_DATA_PATH)
+	process_has_set_cache_path = TRUE
+} else {
+	message("PROJ cache path already set")
+}
+
 library(tidyverse)
 
 # Enable PROJ network fetching in the env *before* loading the sf library. We enable this so
@@ -105,14 +118,14 @@ tag_wikidata = "Q548721"
 ####################################################################################################### 
 ###################################### Global data type things ###################################
 ####################################################################################################### 
-OS_csv_file="/data/data/CompleteTrigArchive.csv"
-OSM_OSM_file="/data/data/gb_trigpoints.osm"
+OS_csv_file=file.path(PROJ_DATA_PATH, "CompleteTrigArchive.csv")
+OSM_OSM_file=file.path(PROJ_DATA_PATH, "gb_trigpoints.osm")
 
 OSM_CONFIG_FILE="/data/my_osmconf.ini"	#GDAL osm read config file
 READ_SF_OPTIONS="CONFIG_FILE=/data/my_osmconf.ini"
 
-OS_csv_file="/data/data/CompleteTrigArchive.csv"
-OS_benchmark_csv_file="/data/data/CompleteBenchMarkArchive.csv"
+OS_csv_file=file.path(PROJ_DATA_PATH, "CompleteTrigArchive.csv")
+OS_benchmark_csv_file=file.path(PROJ_DATA_PATH, "CompleteBenchMarkArchive.csv")
 
 # These are the OSM survey_point and survey_point_structure entries that we are happy to drop as
 # being 'not pillars'
@@ -626,7 +639,7 @@ static_xml_tags <- function(node, new_name, as_comment) {
 if ( !exists("process_has_set_data_path") ) {
 	message("Adding local data path to GDAL/PROJ paths")
 	sf_proj_search_paths(
-		paths = c( sf_proj_search_paths(), "/data/data"),
+		paths = c( sf_proj_search_paths(), PROJ_DATA_PATH),
 		with_proj = NA )
 	process_has_set_data_path = TRUE
 } else {
@@ -796,7 +809,7 @@ if(trim_dataset) {
 		# merely using this data to filter our main data down into subsets to make it
 		# easier to evaluate or do a number of smaller controlled OSM updates - we are
 		# *not* using it to change, enhance or add to our base OS/OSM data...
-		county_shapefile="/data/data/counties/CTYUA_DEC_2024_UK_BUC.shp"
+		county_shapefile=file.path(PROJ_DATA_PATH, "counties/CTYUA_DEC_2024_UK_BUC.shp")
 		# FIXME - we should proabaly do a 'file exists' check and handle it gracefully
 		# if it does not. At present we fall on our face.
 		county_shapes=read_sf(county_shapefile)

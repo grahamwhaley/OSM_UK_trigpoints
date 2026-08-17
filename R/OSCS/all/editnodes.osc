@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes for potential edit/merge. Generated on: 2026-08-15-->
+  <!--OSM Nodes for potential edit/merge. Generated on: 2026-08-17-->
   <!--863 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <modify>
@@ -65,7 +65,7 @@
       <tag k="ref" v="S8894"/>
       <!--Add new ele: 10.984 in ODN-->
       <tag k="ele" v="10.984"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=10.77"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=10.76"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -112,7 +112,7 @@
       <tag k="name" v="Allermuir Hill"/>
       <!--Add new ele: 493.776 in ODN-->
       <tag k="ele" v="493.776"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=493.5"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=493.51"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -158,7 +158,7 @@
       <tag k="name" v="An Sgurr (Eigg)"/>
       <!--Add new ele: 393.801 in ODN-->
       <tag k="ele" v="393.801"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=393.6"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=393.62"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -207,7 +207,7 @@
       <tag k="name" v="Anwoth"/>
       <!--Add new ele: 84.734 in ODN-->
       <tag k="ele" v="84.734"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=84.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=84.33"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -233,7 +233,7 @@
       <tag k="ref" v="S6706"/>
       <!--Add new ele: 95.835 in ODN-->
       <tag k="ele" v="95.835"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=95.82"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=95.79"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -372,7 +372,7 @@
       <tag k="ref" v="S2567"/>
       <!--Add new ele: 95.353 in ODN-->
       <tag k="ele" v="95.353"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=94.93"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=94.94"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -421,7 +421,7 @@
       <!--Ref field already set: S8074-->
       <!--Add new ele: 610.209 in ODN-->
       <tag k="ele" v="610.209"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=610.23"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=610.22"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -469,7 +469,7 @@
       <!--Ref field already set: S8267-->
       <!--Add new ele: 3.764 in ODN-->
       <tag k="ele" v="3.764"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=3.32"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=3.34"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -495,7 +495,7 @@
       <tag k="ref" v="S2518"/>
       <!--Add new ele: 116.902 in ODN-->
       <tag k="ele" v="116.902"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=116.54"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=116.55"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -520,7 +520,7 @@
       <!--Ref field already set: S5925-->
       <!--Add new ele: 229.209 in ODN-->
       <tag k="ele" v="229.209"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=228.81"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=228.83"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -543,7 +543,7 @@
       <!--Name field already set: Balunton Hill-->
       <!--Add new ele: 337.718 in ODN-->
       <tag k="ele" v="337.718"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=337.62"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=337.6"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -616,7 +616,7 @@
       <!--Ref field already set: S6580-->
       <!--Add new ele: 279.501 in ODN-->
       <tag k="ele" v="279.501"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=279.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=279.11"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -642,7 +642,7 @@
       <tag k="ref" v="S2962"/>
       <!--Add new ele: 279.422 in ODN-->
       <tag k="ele" v="279.422"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=279.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=279.13"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -666,7 +666,7 @@
       <tag k="name" v="Barend Hill"/>
       <!--Add new ele: 188.976 in ODN-->
       <tag k="ele" v="188.976"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=188.5"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=188.49"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -858,7 +858,7 @@
       <tag k="ref" v="S4550"/>
       <!--Add new ele: 230.8 in ODN-->
       <tag k="ele" v="230.8"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=230.55"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=230.54"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -908,7 +908,7 @@
       <!--Ref field already set: S4718-->
       <!--Add new ele: 408.078 in ODN-->
       <tag k="ele" v="408.078"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=407.89"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=407.85"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -933,7 +933,7 @@
       <!--Ref field already set: S4245-->
       <!--Add new ele: 92.783 in ODN-->
       <tag k="ele" v="92.783"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=92.42"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=92.41"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -957,7 +957,7 @@
       <tag k="name" v="Beinn A Chasteil"/>
       <!--Add new ele: 788.212 in ODN-->
       <tag k="ele" v="788.212"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=788.07"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=788.08"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1168,7 +1168,7 @@
       <!--Ref field already set: S9404-->
       <!--Add new ele: 611.733 in ODN-->
       <tag k="ele" v="611.733"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=611.29"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=611.27"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1193,7 +1193,7 @@
       <!--Ref field already set: S8995-->
       <!--Add new ele: 190.56 in ODN-->
       <tag k="ele" v="190.56"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=190.25"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=190.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1315,7 +1315,7 @@
       <tag k="name" v="Ben Donich"/>
       <!--Add new ele: 846.734 in ODN-->
       <tag k="ele" v="846.734"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=846.75"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=846.76"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1340,7 +1340,7 @@
       <!--Ref field already set: S7672-->
       <!--Add new ele: 872.947 in ODN-->
       <tag k="ele" v="872.947"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=872.59"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=872.57"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1428,7 +1428,7 @@
       <!--Ref field already set: S8982-->
       <!--Add new ele: 90.958 in ODN-->
       <tag k="ele" v="90.958"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=90.68"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=90.66"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1523,7 +1523,7 @@
       <!--Ref field already set: S7216-->
       <!--Add new ele: 840.028 in ODN-->
       <tag k="ele" v="840.028"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=840.05"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=840.04"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1616,7 +1616,7 @@
       <!--Ref field already set: S9442-->
       <!--Add new ele: 903.122 in ODN-->
       <tag k="ele" v="903.122"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=902.88"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=902.84"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1688,7 +1688,7 @@
       <tag k="name" v="Bharrain"/>
       <!--Add new ele: 721.461 in ODN-->
       <tag k="ele" v="721.461"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=721.41"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=721.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1783,7 +1783,7 @@
       <!--Ref field already set: S3227-->
       <!--Add new ele: 220.083 in ODN-->
       <tag k="ele" v="220.083"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=219.77"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=219.78"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -1856,7 +1856,7 @@
       <!--Ref field already set: S2431-->
       <!--Add new ele: 297.454 in ODN-->
       <tag k="ele" v="297.454"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=297.31"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=297.34"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -2040,7 +2040,7 @@
       <!--Ref field already set: S5195-->
       <!--Add new ele: 650.748 in ODN-->
       <tag k="ele" v="650.748"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=650.78"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=650.77"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2110,7 +2110,7 @@
       <!--Ref field already set: S1675-->
       <!--Add new ele: 280.452 in ODN-->
       <tag k="ele" v="280.452"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=280.21"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=280.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2202,7 +2202,7 @@
       <tag k="name" v="Blaen-Y-Glyn"/>
       <!--Add new ele: 441.96 in ODN-->
       <tag k="ele" v="441.96"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=441.96"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=441.94"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2253,7 +2253,7 @@
       <!--Ref field already set: S8979-->
       <!--Add new ele: 110.096 in ODN-->
       <tag k="ele" v="110.096"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=109.79"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=109.77"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2277,7 +2277,7 @@
       <tag k="name" v="Blaven"/>
       <!--Add new ele: 928.116 in ODN-->
       <tag k="ele" v="928.116"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=928.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=928.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2301,7 +2301,7 @@
       <tag k="name" v="Blea Moor"/>
       <!--Add new ele: 535.533 in ODN-->
       <tag k="ele" v="535.533"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=535.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=535.31"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2325,7 +2325,7 @@
       <tag k="name" v="Bloodybush Edge"/>
       <!--Add new ele: 610.209 in ODN-->
       <tag k="ele" v="610.209"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=609.93"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=609.91"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2422,7 +2422,7 @@
       <tag k="ref" v="S7403"/>
       <!--Add new ele: 326.59 in ODN-->
       <tag k="ele" v="326.59"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=326.19"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=326.17"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2470,7 +2470,7 @@
       <tag k="ref" v="S1751"/>
       <!--Add new ele: 61.371 in ODN-->
       <tag k="ele" v="61.371"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=60.97"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=60.96"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2496,7 +2496,7 @@
       <tag k="ref" v="S1802"/>
       <!--Add new ele: 139.089 in ODN-->
       <tag k="ele" v="139.089"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=138.76"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=138.75"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2547,7 +2547,7 @@
       <!--Ref field already set: S4038-->
       <!--Add new ele: 206.553 in ODN-->
       <tag k="ele" v="206.553"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.23"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.27"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2648,7 +2648,7 @@
       <tag k="ref" v="S3087"/>
       <!--Add new ele: 208.394 in ODN-->
       <tag k="ele" v="208.394"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=208.05"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=208.06"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2674,7 +2674,7 @@
       <tag k="ref" v="S5079"/>
       <!--Add new ele: 121.977 in ODN-->
       <tag k="ele" v="121.977"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.68"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.67"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2750,7 +2750,7 @@
       <tag k="name" v="Braygate Street Resr"/>
       <!--Add new ele: 123.151 in ODN-->
       <tag k="ele" v="123.151"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=122.71"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=122.72"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2796,7 +2796,7 @@
       <!--Ref field already set: SJ44S005-->
       <!--Add new ele: 365.76 in ODN-->
       <tag k="ele" v="365.76"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=365.51"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=365.49"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -2821,7 +2821,7 @@
       <tag k="ref" v="S6152"/>
       <!--Add new ele: 47.545 in ODN-->
       <tag k="ele" v="47.545"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=47.29"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=47.28"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2845,7 +2845,7 @@
       <!--Ref field already set: S5540-->
       <!--Add new ele: 113.099 in ODN-->
       <tag k="ele" v="113.099"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=112.71"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=112.7"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2871,7 +2871,7 @@
       <tag k="ref" v="S1585"/>
       <!--Add new ele: 265.243 in ODN-->
       <tag k="ele" v="265.243"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=264.57"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=264.54"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2920,7 +2920,7 @@
       <tag k="ref" v="S3828"/>
       <!--Add new ele: 152.332 in ODN-->
       <tag k="ele" v="152.332"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=152.22"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=152.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2946,7 +2946,7 @@
       <tag k="ref" v="S9106"/>
       <!--Add new ele: 94.594 in ODN-->
       <tag k="ele" v="94.594"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=93.8"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=93.78"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2971,7 +2971,7 @@
       <tag k="ref" v="S1892"/>
       <!--Add new ele: 229.907 in ODN-->
       <tag k="ele" v="229.907"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=229.53"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=229.52"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -2995,7 +2995,7 @@
       <!--Ref field already set: S3822-->
       <!--Add new ele: 59.981 in ODN-->
       <tag k="ele" v="59.981"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=59.69"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=59.71"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3043,7 +3043,7 @@
       <!--Ref field already set: S6127-->
       <!--Add new ele: 840.333 in ODN-->
       <tag k="ele" v="840.333"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=840.19"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=840.18"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3142,7 +3142,7 @@
       <tag k="name" v="Broomcroft"/>
       <!--Add new ele: 205.517 in ODN-->
       <tag k="ele" v="205.517"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=205.43"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=205.42"/>
       <!--survey_point[_structure] field already set: trig_point / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -3190,7 +3190,7 @@
       <tag k="ref" v="S2493"/>
       <!--Add new ele: 49.03 in ODN-->
       <tag k="ele" v="49.03"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=48.67"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=48.69"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3236,7 +3236,7 @@
       <!--Ref field already set: S4387-->
       <!--Add new ele: 220.547 in ODN-->
       <tag k="ele" v="220.547"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=220.25"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=220.23"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -3283,7 +3283,7 @@
       <tag k="ref" v="S2784"/>
       <!--Add new ele: 307.982 in ODN-->
       <tag k="ele" v="307.982"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=307.81"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=307.8"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3333,7 +3333,7 @@
       <tag k="ref" v="S5344"/>
       <!--Add new ele: 436.961 in ODN-->
       <tag k="ele" v="436.961"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=436.66"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=436.65"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3380,7 +3380,7 @@
       <tag k="ref" v="S5819"/>
       <!--Add new ele: 264.499 in ODN-->
       <tag k="ele" v="264.499"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=263.86"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=263.85"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3457,7 +3457,7 @@
       <tag k="ref" v="S4994"/>
       <!--Add new ele: 181.224 in ODN-->
       <tag k="ele" v="181.224"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=180.96"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=180.95"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3530,7 +3530,7 @@
       <tag k="ref" v="S6326"/>
       <!--Add new ele: 135.187 in ODN-->
       <tag k="ele" v="135.187"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=134.64"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=134.63"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3577,7 +3577,7 @@
       <tag k="name" v="Buittle Mains"/>
       <!--Add new ele: 182.575 in ODN-->
       <tag k="ele" v="182.575"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=182.11"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=182.1"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3603,7 +3603,7 @@
       <tag k="ref" v="S6696"/>
       <!--Add new ele: 426.997 in ODN-->
       <tag k="ele" v="426.997"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=426.61"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=426.6"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3629,7 +3629,7 @@
       <tag k="ref" v="S2557"/>
       <!--Add new ele: 174.257 in ODN-->
       <tag k="ele" v="174.257"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=174.03"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=174.04"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3652,7 +3652,7 @@
       <!--Name field already set: Burn Fell-->
       <!--Add new ele: 431.596 in ODN-->
       <tag k="ele" v="431.596"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=431.41"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=431.42"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3704,7 +3704,7 @@
       <tag k="ref" v="10459"/>
       <!--Add new ele: 72.466 in ODN-->
       <tag k="ele" v="72.466"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=72.13"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=72.14"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3730,7 +3730,7 @@
       <tag k="ref" v="5896"/>
       <!--Add new ele: 77.602 in ODN-->
       <tag k="ele" v="77.602"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=77.43"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=77.44"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3801,7 +3801,7 @@
       <!--Ref field already set: S1501-->
       <!--Add new ele: 270.997 in ODN-->
       <tag k="ele" v="270.997"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=270.75"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=270.76"/>
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -3869,7 +3869,7 @@
       <tag k="name" v="Cairn Mon Earn"/>
       <!--Add new ele: 379.78 in ODN-->
       <tag k="ele" v="379.78"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=379.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=379.11"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3919,7 +3919,7 @@
       <tag k="ref" v="S4484"/>
       <!--Add new ele: 183.151 in ODN-->
       <tag k="ele" v="183.151"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=182.79"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=182.8"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3968,7 +3968,7 @@
       <tag k="ref" v="S1872"/>
       <!--Add new ele: 242.739 in ODN-->
       <tag k="ele" v="242.739"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=242.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=242.35"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -3992,7 +3992,7 @@
       <tag k="name" v="Calf Top"/>
       <!--Add new ele: 609.6 in ODN-->
       <tag k="ele" v="609.6"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=609.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=609.33"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4088,7 +4088,7 @@
       <!--Ref field already set: S2283-->
       <!--Add new ele: 273.359 in ODN-->
       <tag k="ele" v="273.359"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=273.17"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=273.16"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4132,7 +4132,7 @@
       <tag k="name" v="Carn A'Ghaill (Canna)"/>
       <!--Add new ele: 210.616 in ODN-->
       <tag k="ele" v="210.616"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=210.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=210.16"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4156,7 +4156,7 @@
       <tag k="name" v="Carn Beag"/>
       <!--Add new ele: 550.164 in ODN-->
       <tag k="ele" v="550.164"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=550.02"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=550"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4225,7 +4225,7 @@
       <tag k="name" v="Carn Ferg"/>
       <!--Add new ele: 524.865 in ODN-->
       <tag k="ele" v="524.865"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=524.08"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=524.06"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4249,7 +4249,7 @@
       <tag k="name" v="Carn Geuradainn"/>
       <!--Add new ele: 594.969 in ODN-->
       <tag k="ele" v="594.969"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=594.8"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=594.78"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4359,7 +4359,7 @@
       <tag k="name" v="Carradale"/>
       <!--Add new ele: 230.124 in ODN-->
       <tag k="ele" v="230.124"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=229.97"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=229.96"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -4484,7 +4484,7 @@
       <tag k="ref" v="S7413"/>
       <!--Add new ele: 3.941 in ODN-->
       <tag k="ele" v="3.941"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=3.31"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=3.35"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4535,7 +4535,7 @@
       <tag k="ref" v="S7300"/>
       <!--Add new ele: 169.7 in ODN-->
       <tag k="ele" v="169.7"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=169.2"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=169.24"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4581,7 +4581,7 @@
       <tag k="ref" v="S4552"/>
       <!--Add new ele: 160.218 in ODN-->
       <tag k="ele" v="160.218"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=159.96"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=159.95"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4632,7 +4632,7 @@
       <tag k="ref" v="2968"/>
       <!--Add new ele: 163.93 in ODN-->
       <tag k="ele" v="163.93"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=163.5"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=163.51"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4682,7 +4682,7 @@
       <tag k="ref" v="S7414"/>
       <!--Add new ele: 207.233 in ODN-->
       <tag k="ele" v="207.233"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.8"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.81"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4776,7 +4776,7 @@
       <!--Ref field already set: S5822-->
       <!--Add new ele: 141.024 in ODN-->
       <tag k="ele" v="141.024"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=140.78"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=140.77"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4800,7 +4800,7 @@
       <tag k="name" v="Chaipaval"/>
       <!--Add new ele: 365.76 in ODN-->
       <tag k="ele" v="365.76"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=365.52"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=365.5"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4873,7 +4873,7 @@
       <tag k="ref" v="S1499"/>
       <!--Add new ele: 221.979 in ODN-->
       <tag k="ele" v="221.979"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=221.81"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=221.82"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4899,7 +4899,7 @@
       <tag k="ref" v="S5099"/>
       <!--Add new ele: 75.377 in ODN-->
       <tag k="ele" v="75.377"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=75.01"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=75.02"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4948,7 +4948,7 @@
       <tag k="ref" v="S6315"/>
       <!--Add new ele: 196.09 in ODN-->
       <tag k="ele" v="196.09"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=195.92"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=195.93"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -4972,7 +4972,7 @@
       <tag k="name" v="Cheviot"/>
       <!--Add new ele: 817.473 in ODN-->
       <tag k="ele" v="817.473"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=817.16"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=817.15"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5020,7 +5020,7 @@
       <!--Ref field already set: S2694-->
       <!--Add new ele: 10.713 in ODN-->
       <tag k="ele" v="10.713"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=10.27"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=10.29"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5068,7 +5068,7 @@
       <tag k="name" v="Chosen Hill"/>
       <!--Add new ele: 154.454 in ODN-->
       <tag k="ele" v="154.454"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=154.21"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=154.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5159,7 +5159,7 @@
       <!--Ref field already set: S1854-->
       <!--Add new ele: 121.179 in ODN-->
       <tag k="ele" v="121.179"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=120.77"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=120.76"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5281,7 +5281,7 @@
       <!--Ref field already set: S8559-->
       <!--Add new ele: 413.308 in ODN-->
       <tag k="ele" v="413.308"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=413.54"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=413.52"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5352,7 +5352,7 @@
       <tag k="ref" v="S8177"/>
       <!--Add new ele: 269.342 in ODN-->
       <tag k="ele" v="269.342"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=268.89"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=268.9"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5424,7 +5424,7 @@
       <!--Ref field already set: S2183-->
       <!--Add new ele: 257.799 in ODN-->
       <tag k="ele" v="257.799"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=257.57"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=257.58"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5521,7 +5521,7 @@
       <!--Ref field already set: S5656-->
       <!--Add new ele: 532.485 in ODN-->
       <tag k="ele" v="532.485"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=532.52"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=532.5"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5546,7 +5546,7 @@
       <!--Ref field already set: S8051-->
       <!--Add new ele: 114.525 in ODN-->
       <tag k="ele" v="114.525"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=114.02"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=114.03"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5590,7 +5590,7 @@
       <tag k="name" v="Conistone Moor"/>
       <!--Add new ele: 512.673 in ODN-->
       <tag k="ele" v="512.673"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=512.53"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=512.52"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -5615,7 +5615,7 @@
       <tag k="ref" v="S1939"/>
       <!--Add new ele: 138.885 in ODN-->
       <tag k="ele" v="138.885"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=138.56"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=138.57"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5662,7 +5662,7 @@
       <tag k="ref" v="S6313"/>
       <!--Add new ele: 188.616 in ODN-->
       <tag k="ele" v="188.616"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=188.45"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=188.46"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5756,7 +5756,7 @@
       <!--Ref field already set: S6188-->
       <!--Add new ele: 780.897 in ODN-->
       <tag k="ele" v="780.897"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=781.05"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=781.04"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5781,7 +5781,7 @@
       <!--Ref field already set: S7972-->
       <!--Add new ele: 813.816 in ODN-->
       <tag k="ele" v="813.816"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=813.72"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=813.69"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5831,7 +5831,7 @@
       <tag k="name" v="Corwar Mains Hill"/>
       <!--Add new ele: 193.852 in ODN-->
       <tag k="ele" v="193.852"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=193.76"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=193.75"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5855,7 +5855,7 @@
       <tag k="name" v="Cosh Outside"/>
       <!--Add new ele: 599.541 in ODN-->
       <tag k="ele" v="599.541"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=599.36"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=599.35"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5928,7 +5928,7 @@
       <tag k="ref" v="S4554"/>
       <!--Add new ele: 439.841 in ODN-->
       <tag k="ele" v="439.841"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=439.72"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=439.73"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -5976,7 +5976,7 @@
       <tag k="name" v="Craig Veann"/>
       <!--Add new ele: 711.098 in ODN-->
       <tag k="ele" v="711.098"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=710.98"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=710.95"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6000,7 +6000,7 @@
       <tag k="name" v="Craigairie Fell"/>
       <!--Add new ele: 321.564 in ODN-->
       <tag k="ele" v="321.564"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=321.51"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=321.5"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6026,7 +6026,7 @@
       <tag k="ref" v="S3145"/>
       <!--Add new ele: 103.26 in ODN-->
       <tag k="ele" v="103.26"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=102.82"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=102.86"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6072,7 +6072,7 @@
       <tag k="name" v="Craiglich"/>
       <!--Add new ele: 476.707 in ODN-->
       <tag k="ele" v="476.707"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=475.98"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=475.94"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6301,7 +6301,7 @@
       <!--Name field already set: Crugyn Ci-->
       <!--Add new ele: 532.79 in ODN-->
       <tag k="ele" v="532.79"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=532.78"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=532.74"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6327,7 +6327,7 @@
       <tag k="ref" v="S5621"/>
       <!--Add new ele: 429.932 in ODN-->
       <tag k="ele" v="429.932"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=429.75"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=429.73"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6398,7 +6398,7 @@
       <tag k="ref" v="S8723"/>
       <!--Add new ele: 29.586 in ODN-->
       <tag k="ele" v="29.586"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=28.95"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=29.01"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6423,7 +6423,7 @@
       <!--Ref field already set: S3745-->
       <!--Add new ele: 250.06 in ODN-->
       <tag k="ele" v="250.06"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=250.05"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=250.04"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6448,7 +6448,7 @@
       <!--Ref field already set: S8225-->
       <!--Add new ele: 213.664 in ODN-->
       <tag k="ele" v="213.664"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=213.43"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=213.42"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6496,7 +6496,7 @@
       <tag k="ref" v="S4294"/>
       <!--Add new ele: 86.81 in ODN-->
       <tag k="ele" v="86.81"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=86.46"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=86.45"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6595,7 +6595,7 @@
       <!--Ref field already set: S7817-->
       <!--Add new ele: 569.366 in ODN-->
       <tag k="ele" v="569.366"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=569.09"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=569.07"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6621,7 +6621,7 @@
       <tag k="ref" v="S4337"/>
       <!--Add new ele: 32.616 in ODN-->
       <tag k="ele" v="32.616"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=32.31"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=32.3"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6646,7 +6646,7 @@
       <!--Ref field already set: S5848-->
       <!--Add new ele: 142.036 in ODN-->
       <tag k="ele" v="142.036"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=142.3"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=142.31"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -6694,7 +6694,7 @@
       <tag k="ref" v="S4664"/>
       <!--Add new ele: 146.679 in ODN-->
       <tag k="ele" v="146.679"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=146.2"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=146.19"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6761,7 +6761,7 @@
       <tag k="ref" v="S6314"/>
       <!--Add new ele: 201.954 in ODN-->
       <tag k="ele" v="201.954"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=201.82"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=201.83"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6787,7 +6787,7 @@
       <tag k="ref" v="S7420"/>
       <!--Add new ele: 33.497 in ODN-->
       <tag k="ele" v="33.497"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=32.94"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=32.96"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6880,7 +6880,7 @@
       <tag k="name" v="Dunan Thalasgair (Eigg)"/>
       <!--Add new ele: 335.889 in ODN-->
       <tag k="ele" v="335.889"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=335.69"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=335.71"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6905,7 +6905,7 @@
       <!--Ref field already set: S4607-->
       <!--Add new ele: 174.421 in ODN-->
       <tag k="ele" v="174.421"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=174"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=174.01"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -6929,7 +6929,7 @@
       <tag k="name" v="Dundreich"/>
       <!--Add new ele: 622.706 in ODN-->
       <tag k="ele" v="622.706"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=622.52"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=622.5"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7051,7 +7051,7 @@
       <tag k="ref" v="4458"/>
       <!--Add new ele: 216.627 in ODN-->
       <tag k="ele" v="216.627"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=216.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=216.38"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7100,7 +7100,7 @@
       <!--Ref field already set: S4518-->
       <!--Add new ele: 19.833 in ODN-->
       <tag k="ele" v="19.833"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=19.53"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=19.52"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7152,7 +7152,7 @@
       <tag k="ref" v="S3142"/>
       <!--Add new ele: 191.911 in ODN-->
       <tag k="ele" v="191.911"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=191.54"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=191.57"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7198,7 +7198,7 @@
       <tag k="name" v="East Denwick"/>
       <!--Add new ele: 48.158 in ODN-->
       <tag k="ele" v="48.158"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=47.3"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=47.29"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7222,7 +7222,7 @@
       <tag k="name" v="East Wirren"/>
       <!--Add new ele: 634.288 in ODN-->
       <tag k="ele" v="634.288"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=633.89"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=633.86"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7271,7 +7271,7 @@
       <!--Ref field already set: S7416-->
       <!--Add new ele: 3.526 in ODN-->
       <tag k="ele" v="3.526"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=3.03"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=3.02"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7345,7 +7345,7 @@
       <tag k="ref" v="S9509"/>
       <!--Add new ele: 118.777 in ODN-->
       <tag k="ele" v="118.777"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=118.79"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=118.81"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7371,7 +7371,7 @@
       <tag k="ref" v="10455"/>
       <!--Add new ele: 61.456 in ODN-->
       <tag k="ele" v="61.456"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=60.59"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=60.57"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7397,7 +7397,7 @@
       <tag k="ref" v="S2751"/>
       <!--Add new ele: 59.664 in ODN-->
       <tag k="ele" v="59.664"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=59.26"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=59.27"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7447,7 +7447,7 @@
       <tag k="ref" v="S1833"/>
       <!--Add new ele: 175.717 in ODN-->
       <tag k="ele" v="175.717"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=175.38"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=175.37"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7592,7 +7592,7 @@
       <tag k="ref" v="S5533"/>
       <!--Add new ele: 381.057 in ODN-->
       <tag k="ele" v="381.057"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=381.1"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=381.08"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7616,7 +7616,7 @@
       <tag k="name" v="Fionn Bheinn"/>
       <!--Add new ele: 933.602 in ODN-->
       <tag k="ele" v="933.602"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=933.5"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=933.48"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7640,7 +7640,7 @@
       <tag k="name" v="Fitful Head"/>
       <!--Add new ele: 283.464 in ODN-->
       <tag k="ele" v="283.464"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=282.95"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=282.98"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7664,7 +7664,7 @@
       <!--Ref field already set: S3870-->
       <!--Add new ele: 283.704 in ODN-->
       <tag k="ele" v="283.704"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=283.54"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=283.55"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7689,7 +7689,7 @@
       <tag k="ref" v="S5343"/>
       <!--Add new ele: 219.449 in ODN-->
       <tag k="ele" v="219.449"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=219.13"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=219.12"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7714,7 +7714,7 @@
       <!--Ref field already set: S6411-->
       <!--Add new ele: 150.857 in ODN-->
       <tag k="ele" v="150.857"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=150.58"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=150.59"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7738,7 +7738,7 @@
       <tag k="name" v="Foel Fadian"/>
       <!--Add new ele: 564.184 in ODN-->
       <tag k="ele" v="564.184"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=564.06"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=564.04"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -7813,7 +7813,7 @@
       <!--Ref field already set: S6320-->
       <!--Add new ele: 201.68 in ODN-->
       <tag k="ele" v="201.68"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=201.53"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=201.55"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -7836,7 +7836,7 @@
       <tag k="name" v="Foudland Hill"/>
       <!--Add new ele: 466.953 in ODN-->
       <tag k="ele" v="466.953"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=466.75"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=466.71"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -7911,7 +7911,7 @@
       <tag k="ref" v="S3407"/>
       <!--Add new ele: 182.224 in ODN-->
       <tag k="ele" v="182.224"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=181.88"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=181.87"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -8003,7 +8003,7 @@
       <!--Ref field already set: S4874-->
       <!--Add new ele: 599.846 in ODN-->
       <tag k="ele" v="599.846"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=599.84"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=599.82"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8099,7 +8099,7 @@
       <!--Ref field already set: S6429-->
       <!--Add new ele: 366.832 in ODN-->
       <tag k="ele" v="366.832"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=366.71"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=366.72"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8149,7 +8149,7 @@
       <tag k="name" v="Geallaig Hill"/>
       <!--Add new ele: 743.407 in ODN-->
       <tag k="ele" v="743.407"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=742.85"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=742.81"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8223,7 +8223,7 @@
       <tag k="ref" v="S5260"/>
       <!--Add new ele: 207.187 in ODN-->
       <tag k="ele" v="207.187"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.35"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.33"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8273,7 +8273,7 @@
       <tag k="name" v="Glas Maol"/>
       <!--Add new ele: 1068.324 in ODN-->
       <tag k="ele" v="1068.324"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=1068.22"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=1068.16"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8323,7 +8323,7 @@
       <tag k="ref" v="S2093"/>
       <!--Add new ele: 123.681 in ODN-->
       <tag k="ele" v="123.681"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=123.47"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=123.46"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8347,7 +8347,7 @@
       <tag k="name" v="Glendhu Hill"/>
       <!--Add new ele: 513.892 in ODN-->
       <tag k="ele" v="513.892"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=513.61"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=513.6"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8397,7 +8397,7 @@
       <!--Ref field already set: S1607-->
       <!--Add new ele: 874.471 in ODN-->
       <tag k="ele" v="874.471"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=874.41"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=874.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8539,7 +8539,7 @@
       <tag k="ref" v="S7573"/>
       <!--Add new ele: 275.92 in ODN-->
       <tag k="ele" v="275.92"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=275.49"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=275.44"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8563,7 +8563,7 @@
       <tag k="name" v="Gragareth Fell"/>
       <!--Add new ele: 627.278 in ODN-->
       <tag k="ele" v="627.278"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=627.04"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=627.03"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8589,7 +8589,7 @@
       <tag k="ref" v="3528"/>
       <!--Add new ele: 180.533 in ODN-->
       <tag k="ele" v="180.533"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=180.18"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=180.17"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8634,7 +8634,7 @@
       <tag k="name" v="Great Links"/>
       <!--Add new ele: 586.74 in ODN-->
       <tag k="ele" v="586.74"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=586.45"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=586.41"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8678,7 +8678,7 @@
       <tag k="name" v="Great Stickle"/>
       <!--Add new ele: 305.409 in ODN-->
       <tag k="ele" v="305.409"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=305.4"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=305.39"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8702,7 +8702,7 @@
       <tag k="name" v="Great Whernside"/>
       <!--Add new ele: 704.088 in ODN-->
       <tag k="ele" v="704.088"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=703.96"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=703.95"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8793,7 +8793,7 @@
       <tag k="ref" v="S4723"/>
       <!--Add new ele: 384.685 in ODN-->
       <tag k="ele" v="384.685"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=384.59"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=384.56"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -8843,7 +8843,7 @@
       <tag k="name" v="Greensheen Hill"/>
       <!--Add new ele: 205.74 in ODN-->
       <tag k="ele" v="205.74"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=205.19"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=205.18"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9033,7 +9033,7 @@
       <tag k="ref" v="S4615"/>
       <!--Add new ele: 474.131 in ODN-->
       <tag k="ele" v="474.131"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=474.01"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=474.02"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9057,7 +9057,7 @@
       <tag k="name" v="Halferne"/>
       <!--Add new ele: 169.773 in ODN-->
       <tag k="ele" v="169.773"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=169.32"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=169.31"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9156,7 +9156,7 @@
       <tag k="name" v="Harleys Mountain"/>
       <!--Add new ele: 385.876 in ODN-->
       <tag k="ele" v="385.876"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=385.81"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=385.8"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9208,7 +9208,7 @@
       <tag k="ref" v="S3925"/>
       <!--Add new ele: 224.137 in ODN-->
       <tag k="ele" v="224.137"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=223.92"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=223.91"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9258,7 +9258,7 @@
       <tag k="ref" v="S8071"/>
       <!--Add new ele: 200.299 in ODN-->
       <tag k="ele" v="200.299"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=200.27"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=200.26"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9330,7 +9330,7 @@
       <!--Ref field already set: S1556-->
       <!--Add new ele: 808.329 in ODN-->
       <tag k="ele" v="808.329"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=808.21"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=808.17"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9454,7 +9454,7 @@
       <tag k="ref" v="S2490"/>
       <!--Add new ele: 62.048 in ODN-->
       <tag k="ele" v="62.048"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=61.7"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=61.72"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9504,7 +9504,7 @@
       <tag k="ref" v="S2643"/>
       <!--Add new ele: 32.031 in ODN-->
       <tag k="ele" v="32.031"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=31.6"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=31.62"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9553,7 +9553,7 @@
       <tag k="name" v="Hedgehope Hill"/>
       <!--Add new ele: 715.975 in ODN-->
       <tag k="ele" v="715.975"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=715.65"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=715.64"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9628,7 +9628,7 @@
       <tag k="name" v="Helli Ness"/>
       <!--Add new ele: 39.014 in ODN-->
       <tag k="ele" v="39.014"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=38.66"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=38.67"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9654,7 +9654,7 @@
       <tag k="ref" v="S3684"/>
       <!--Add new ele: 107 in ODN-->
       <tag k="ele" v="107"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=106.47"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=106.48"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9703,7 +9703,7 @@
       <tag k="ref" v="3739"/>
       <!--Add new ele: 106.32 in ODN-->
       <tag k="ele" v="106.32"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=106.21"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=106.22"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9729,7 +9729,7 @@
       <tag k="ref" v="S6408"/>
       <!--Add new ele: 70.335 in ODN-->
       <tag k="ele" v="70.335"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=70.03"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=70.05"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9875,7 +9875,7 @@
       <!--Ref field already set: S5272-->
       <!--Add new ele: 63.252 in ODN-->
       <tag k="ele" v="63.252"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=63.03"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=63.04"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -9970,7 +9970,7 @@
       <!--Ref field already set: S6186-->
       <!--Add new ele: 90.446 in ODN-->
       <tag k="ele" v="90.446"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=89.91"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=89.88"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10042,7 +10042,7 @@
       <tag k="ref" v="S3907"/>
       <!--Add new ele: 157.133 in ODN-->
       <tag k="ele" v="157.133"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=156.84"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=156.82"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10066,7 +10066,7 @@
       <!--Ref field already set: S5943-->
       <!--Add new ele: 244.489 in ODN-->
       <tag k="ele" v="244.489"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=244.28"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=244.29"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10137,7 +10137,7 @@
       <!--Ref field already set: S7884-->
       <!--Add new ele: 167.53 in ODN-->
       <tag k="ele" v="167.53"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=167.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=167.41"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10185,7 +10185,7 @@
       <tag k="name" v="Hill Of Corrachree"/>
       <!--Add new ele: 294.436 in ODN-->
       <tag k="ele" v="294.436"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=293.81"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=293.76"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10211,7 +10211,7 @@
       <tag k="ref" v="10575"/>
       <!--Add new ele: 102.644 in ODN-->
       <tag k="ele" v="102.644"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=101.8"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=101.79"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10235,7 +10235,7 @@
       <tag k="name" v="Hill Of Ollaberry"/>
       <!--Add new ele: 117.957 in ODN-->
       <tag k="ele" v="117.957"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=117.09"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=117.08"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10259,7 +10259,7 @@
       <tag k="name" v="Hill Of Quheyin"/>
       <!--Add new ele: 67.97 in ODN-->
       <tag k="ele" v="67.97"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=67.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=67.11"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10283,7 +10283,7 @@
       <tag k="name" v="Hill Of Tillymorgan"/>
       <!--Add new ele: 381.304 in ODN-->
       <tag k="ele" v="381.304"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=381.04"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=381"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -10330,7 +10330,7 @@
       <!--Ref field already set: S4027-->
       <!--Add new ele: 139.496 in ODN-->
       <tag k="ele" v="139.496"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=139.08"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=139.07"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10356,7 +10356,7 @@
       <tag k="ref" v="S1747"/>
       <!--Add new ele: 303.215 in ODN-->
       <tag k="ele" v="303.215"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=302.99"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=302.98"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10406,7 +10406,7 @@
       <!--Ref field already set: S1535-->
       <!--Add new ele: 272.848 in ODN-->
       <tag k="ele" v="272.848"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=272.62"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=272.64"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10432,7 +10432,7 @@
       <tag k="ref" v="3569"/>
       <!--Add new ele: 57.86 in ODN-->
       <tag k="ele" v="57.86"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=57.37"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=57.38"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10556,7 +10556,7 @@
       <tag k="ref" v="S4048"/>
       <!--Add new ele: 178.472 in ODN-->
       <tag k="ele" v="178.472"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=178.15"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=178.17"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10653,7 +10653,7 @@
       <!--Ref field already set: S5275-->
       <!--Add new ele: 58.497 in ODN-->
       <tag k="ele" v="58.497"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=58.23"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=58.24"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10677,7 +10677,7 @@
       <tag k="name" v="Hoon Mount"/>
       <!--Add new ele: 83.85 in ODN-->
       <tag k="ele" v="83.85"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=83.59"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=83.56"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -10768,7 +10768,7 @@
       <tag k="ref" v="S2534"/>
       <!--Add new ele: 205.453 in ODN-->
       <tag k="ele" v="205.453"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=205.27"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=205.28"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -10791,7 +10791,7 @@
       <!--Ref field already set: S2801-->
       <!--Add new ele: 244.172 in ODN-->
       <tag k="ele" v="244.172"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=243.98"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=243.97"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10815,7 +10815,7 @@
       <tag k="name" v="Hound Hillock"/>
       <!--Add new ele: 516.636 in ODN-->
       <tag k="ele" v="516.636"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=516.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=516.1"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10862,7 +10862,7 @@
       <tag k="name" v="Hundleshope Heights"/>
       <!--Add new ele: 683.971 in ODN-->
       <tag k="ele" v="683.971"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=683.76"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=683.72"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -10885,7 +10885,7 @@
       <tag k="name" v="Hunter Bark"/>
       <!--Add new ele: 315.468 in ODN-->
       <tag k="ele" v="315.468"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=315.21"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=315.2"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10911,7 +10911,7 @@
       <tag k="ref" v="S4931"/>
       <!--Add new ele: 5.163 in ODN-->
       <tag k="ele" v="5.163"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=4.69"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=4.7"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10957,7 +10957,7 @@
       <!--Ref field already set: S3865-->
       <!--Add new ele: 104.732 in ODN-->
       <tag k="ele" v="104.732"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=104.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=104.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -10983,7 +10983,7 @@
       <tag k="ref" v="S2031"/>
       <!--Add new ele: 273.408 in ODN-->
       <tag k="ele" v="273.408"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=273.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=273.38"/>
       <!--survey_point[_structure] field already set: trig_point / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -11008,7 +11008,7 @@
       <tag k="ref" v="4062"/>
       <!--Add new ele: 27.691 in ODN-->
       <tag k="ele" v="27.691"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=27.38"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=27.39"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11060,7 +11060,7 @@
       <tag k="ref" v="S6245"/>
       <!--Add new ele: 7.354 in ODN-->
       <tag k="ele" v="7.354"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=6.95"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=6.94"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11134,7 +11134,7 @@
       <tag k="name" v="Kessock Ord"/>
       <!--Add new ele: 163.677 in ODN-->
       <tag k="ele" v="163.677"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=163.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=163.15"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11160,7 +11160,7 @@
       <tag k="ref" v="S6250"/>
       <!--Add new ele: 136.772 in ODN-->
       <tag k="ele" v="136.772"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=136.52"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=136.54"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11185,7 +11185,7 @@
       <!--Ref field already set: S5297-->
       <!--Add new ele: 226.725 in ODN-->
       <tag k="ele" v="226.725"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=226.58"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=226.59"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -11230,7 +11230,7 @@
       <tag k="name" v="Kilnsey Moor"/>
       <!--Add new ele: 450.494 in ODN-->
       <tag k="ele" v="450.494"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=450.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=450.31"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11256,7 +11256,7 @@
       <tag k="ref" v="3202"/>
       <!--Add new ele: 45.092 in ODN-->
       <tag k="ele" v="45.092"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=44.65"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=44.67"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -11281,7 +11281,7 @@
       <tag k="ref" v="S5917"/>
       <!--Add new ele: 222.22 in ODN-->
       <tag k="ele" v="222.22"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=221.7"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=221.71"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -11349,7 +11349,7 @@
       <tag k="ref" v="S4499"/>
       <!--Add new ele: 334.487 in ODN-->
       <tag k="ele" v="334.487"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=334.25"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=334.24"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11396,7 +11396,7 @@
       <!--Name field already set: Knowe Fell-->
       <!--Add new ele: 593.445 in ODN-->
       <tag k="ele" v="593.445"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=593.31"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=593.29"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11420,7 +11420,7 @@
       <tag k="name" v="Knowe Hill"/>
       <!--Add new ele: 209.397 in ODN-->
       <tag k="ele" v="209.397"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=209.35"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=209.34"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11444,7 +11444,7 @@
       <tag k="name" v="Knowes Of Bratta"/>
       <!--Add new ele: 91.44 in ODN-->
       <tag k="ele" v="91.44"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=90.57"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=90.55"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11495,7 +11495,7 @@
       <tag k="ref" v="S3712"/>
       <!--Add new ele: 219.309 in ODN-->
       <tag k="ele" v="219.309"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=219.05"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=219.02"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11542,7 +11542,7 @@
       <!--Ref field already set: S8752-->
       <!--Add new ele: 804.672 in ODN-->
       <tag k="ele" v="804.672"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=804.74"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=804.73"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11590,7 +11590,7 @@
       <!--Ref field already set: S4043-->
       <!--Add new ele: 143.652 in ODN-->
       <tag k="ele" v="143.652"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=143.36"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=143.39"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11660,7 +11660,7 @@
       <tag k="name" v="Langcliffe"/>
       <!--Add new ele: 440.131 in ODN-->
       <tag k="ele" v="440.131"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=439.91"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=439.9"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11685,7 +11685,7 @@
       <tag k="ref" v="S5305"/>
       <!--Add new ele: 278.398 in ODN-->
       <tag k="ele" v="278.398"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=278.19"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=278.17"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11711,7 +11711,7 @@
       <tag k="ref" v="S7525"/>
       <!--Add new ele: 302.681 in ODN-->
       <tag k="ele" v="302.681"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=302.25"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=302.21"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11736,7 +11736,7 @@
       <!--Ref field already set: S2277-->
       <!--Add new ele: 133.487 in ODN-->
       <tag k="ele" v="133.487"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=133.25"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=133.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11784,7 +11784,7 @@
       <tag k="ref" v="S7878"/>
       <!--Add new ele: 245.568 in ODN-->
       <tag k="ele" v="245.568"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=245.2"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=245.21"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11810,7 +11810,7 @@
       <tag k="ref" v="S6883"/>
       <!--Add new ele: 290.511 in ODN-->
       <tag k="ele" v="290.511"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=290.36"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=290.35"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11835,7 +11835,7 @@
       <!--Ref field already set: S2432-->
       <!--Add new ele: 295.101 in ODN-->
       <tag k="ele" v="295.101"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=294.93"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=294.96"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11883,7 +11883,7 @@
       <tag k="name" v="Lethen Bar"/>
       <!--Add new ele: 258.372 in ODN-->
       <tag k="ele" v="258.372"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=257.99"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=258.01"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11933,7 +11933,7 @@
       <tag k="ref" v="S4406"/>
       <!--Add new ele: 327.3 in ODN-->
       <tag k="ele" v="327.3"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=327.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=327.13"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11959,7 +11959,7 @@
       <tag k="ref" v="S7014"/>
       <!--Add new ele: 220.876 in ODN-->
       <tag k="ele" v="220.876"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=220.7"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=220.71"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -11985,7 +11985,7 @@
       <tag k="ref" v="S4085"/>
       <!--Add new ele: 71.716 in ODN-->
       <tag k="ele" v="71.716"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=71.36"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=71.37"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12033,7 +12033,7 @@
       <tag k="name" v="Llanbedr Hill"/>
       <!--Add new ele: 479.145 in ODN-->
       <tag k="ele" v="479.145"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=479.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=479.13"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12059,7 +12059,7 @@
       <tag k="ref" v="S5202"/>
       <!--Add new ele: 416.96 in ODN-->
       <tag k="ele" v="416.96"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=416.93"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=416.91"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12085,7 +12085,7 @@
       <tag k="ref" v="S2456"/>
       <!--Add new ele: 4.931 in ODN-->
       <tag k="ele" v="4.931"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=4.53"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=4.57"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12111,7 +12111,7 @@
       <tag k="ref" v="6288"/>
       <!--Add new ele: 52.053 in ODN-->
       <tag k="ele" v="52.053"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=51.78"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=51.79"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12136,7 +12136,7 @@
       <tag k="ref" v="S5891"/>
       <!--Add new ele: 90.004 in ODN-->
       <tag k="ele" v="90.004"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=89.76"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=89.77"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12162,7 +12162,7 @@
       <tag k="ref" v="S7208"/>
       <!--Add new ele: 195.389 in ODN-->
       <tag k="ele" v="195.389"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=195.17"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=195.18"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12233,7 +12233,7 @@
       <tag k="name" v="Loudoun Hill"/>
       <!--Add new ele: 316.077 in ODN-->
       <tag k="ele" v="316.077"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=315.95"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=315.94"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12281,7 +12281,7 @@
       <tag k="name" v="Low Green Field Lings"/>
       <!--Add new ele: 500.786 in ODN-->
       <tag k="ele" v="500.786"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=500.59"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=500.58"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12305,7 +12305,7 @@
       <!--Ref field already set: S5724-->
       <!--Add new ele: 186.69 in ODN-->
       <tag k="ele" v="186.69"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=186.38"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=186.37"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12329,7 +12329,7 @@
       <tag k="name" v="Lower Chapel"/>
       <!--Add new ele: 423.367 in ODN-->
       <tag k="ele" v="423.367"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=423.38"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=423.37"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12355,7 +12355,7 @@
       <tag k="ref" v="S5389"/>
       <!--Add new ele: 239.06 in ODN-->
       <tag k="ele" v="239.06"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=238.82"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=238.81"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12404,7 +12404,7 @@
       <!--Ref field already set: S2407-->
       <!--Add new ele: 255.44 in ODN-->
       <tag k="ele" v="255.44"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=255.32"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=255.33"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -12454,7 +12454,7 @@
       <!--Ref field already set: S9526-->
       <!--Add new ele: 197.51 in ODN-->
       <tag k="ele" v="197.51"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=197.23"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=197.24"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12478,7 +12478,7 @@
       <!--Ref field already set: 11145-->
       <!--Add new ele: 30.949 in ODN-->
       <tag k="ele" v="30.949"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=30.66"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=30.64"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12502,7 +12502,7 @@
       <tag k="name" v="Mailer Hill"/>
       <!--Add new ele: 182.27 in ODN-->
       <tag k="ele" v="182.27"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=181.75"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=181.77"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12570,7 +12570,7 @@
       <!--Name field already set: Maol Donn-->
       <!--Add new ele: 368.198 in ODN-->
       <tag k="ele" v="368.198"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=368.03"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=368.02"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12595,7 +12595,7 @@
       <!--Ref field already set: 6933-->
       <!--Add new ele: 684.276 in ODN-->
       <tag k="ele" v="684.276"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=684.2"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=684.21"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12641,7 +12641,7 @@
       <!--Ref field already set: S7270-->
       <!--Add new ele: 231.05 in ODN-->
       <tag k="ele" v="231.05"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=230.91"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=230.92"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12711,7 +12711,7 @@
       <!--Ref field already set: S2700-->
       <!--Add new ele: 63.825 in ODN-->
       <tag k="ele" v="63.825"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=63.33"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=63.35"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12737,7 +12737,7 @@
       <tag k="ref" v="S3868"/>
       <!--Add new ele: 51.294 in ODN-->
       <tag k="ele" v="51.294"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=50.99"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=51"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12784,7 +12784,7 @@
       <!--Ref field already set: S5151-->
       <!--Add new ele: 296.219 in ODN-->
       <tag k="ele" v="296.219"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=296.06"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=296.07"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12810,7 +12810,7 @@
       <tag k="ref" v="11601"/>
       <!--Add new ele: 32.659 in ODN-->
       <tag k="ele" v="32.659"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=32.16"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=32.18"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12881,7 +12881,7 @@
       <tag k="name" v="Meikle Dornell"/>
       <!--Add new ele: 175.869 in ODN-->
       <tag k="ele" v="175.869"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=175.41"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=175.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12907,7 +12907,7 @@
       <tag k="ref" v="S7733"/>
       <!--Add new ele: 40.297 in ODN-->
       <tag k="ele" v="40.297"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=39.72"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=39.77"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -12932,7 +12932,7 @@
       <!--Ref field already set: S8292-->
       <!--Add new ele: 746.455 in ODN-->
       <tag k="ele" v="746.455"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=746.28"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=746.25"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13001,7 +13001,7 @@
       <!--Ref field already set: S1586-->
       <!--Add new ele: 844.6 in ODN-->
       <tag k="ele" v="844.6"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=844.56"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=844.54"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13049,7 +13049,7 @@
       <tag k="name" v="Meugher"/>
       <!--Add new ele: 575.462 in ODN-->
       <tag k="ele" v="575.462"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=575.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=575.33"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -13073,7 +13073,7 @@
       <tag k="ref" v="S5298"/>
       <!--Add new ele: 178.003 in ODN-->
       <tag k="ele" v="178.003"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=177.69"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=177.68"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13096,7 +13096,7 @@
       <!--Name field already set: Mid Hill-->
       <!--Add new ele: 412.394 in ODN-->
       <tag k="ele" v="412.394"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=412.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=412.38"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13264,7 +13264,7 @@
       <tag k="ref" v="S2961"/>
       <!--Add new ele: 554.334 in ODN-->
       <tag k="ele" v="554.334"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=554.48"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=554.47"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13287,7 +13287,7 @@
       <!--Name field already set: Moel Hywel-->
       <!--Add new ele: 505.663 in ODN-->
       <tag k="ele" v="505.663"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=505.6"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=505.56"/>
       <!--survey_point[_structure] field already set: trig_point / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -13311,7 +13311,7 @@
       <!--Ref field already set: BS8087-->
       <!--Add new ele: 641.604 in ODN-->
       <tag k="ele" v="641.604"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=641.37"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=641.38"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13335,7 +13335,7 @@
       <tag k="name" v="Moncreiffe Hill"/>
       <!--Add new ele: 185.318 in ODN-->
       <tag k="ele" v="185.318"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=184.81"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=184.83"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13432,7 +13432,7 @@
       <!--Ref field already set: 10759-->
       <!--Add new ele: 859.536 in ODN-->
       <tag k="ele" v="859.536"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=859.18"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=859.16"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13457,7 +13457,7 @@
       <!--Ref field already set: S8741-->
       <!--Add new ele: 871.118 in ODN-->
       <tag k="ele" v="871.118"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=870.68"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=870.63"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13481,7 +13481,7 @@
       <tag k="name" v="Moughton"/>
       <!--Add new ele: 427.634 in ODN-->
       <tag k="ele" v="427.634"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=427.43"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=427.39"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13506,7 +13506,7 @@
       <!--Ref field already set: S1584-->
       <!--Add new ele: 778.764 in ODN-->
       <tag k="ele" v="778.764"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=778.17"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=778.15"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13531,7 +13531,7 @@
       <!--Ref field already set: S2654-->
       <!--Add new ele: 535.533 in ODN-->
       <tag k="ele" v="535.533"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=535.37"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=535.36"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13582,7 +13582,7 @@
       <tag k="ref" v="S4034"/>
       <!--Add new ele: 122.069 in ODN-->
       <tag k="ele" v="122.069"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.74"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.76"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13766,7 +13766,7 @@
       <!--Ref field already set: S2290-->
       <!--Add new ele: 382.88 in ODN-->
       <tag k="ele" v="382.88"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=382.66"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=382.67"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13816,7 +13816,7 @@
       <tag k="name" v="Mynydd March Hywel"/>
       <!--Add new ele: 418.185 in ODN-->
       <tag k="ele" v="418.185"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=418.02"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=418.03"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13914,7 +13914,7 @@
       <tag k="ref" v="S2754"/>
       <!--Add new ele: 285.176 in ODN-->
       <tag k="ele" v="285.176"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=285.02"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=285.01"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -13988,7 +13988,7 @@
       <tag k="ref" v="S5193"/>
       <!--Add new ele: 395.816 in ODN-->
       <tag k="ele" v="395.816"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=395.64"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=395.63"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -14011,7 +14011,7 @@
       <tag k="name" v="Newchurch Hill"/>
       <!--Add new ele: 424.891 in ODN-->
       <tag k="ele" v="424.891"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=424.89"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=424.88"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14035,7 +14035,7 @@
       <tag k="name" v="Newton Tors"/>
       <!--Add new ele: 537.057 in ODN-->
       <tag k="ele" v="537.057"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=536.63"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=536.62"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14108,7 +14108,7 @@
       <tag k="ref" v="S4334"/>
       <!--Add new ele: 284.686 in ODN-->
       <tag k="ele" v="284.686"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=284.45"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=284.44"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14133,7 +14133,7 @@
       <!--Ref field already set: S4793-->
       <!--Add new ele: 285.612 in ODN-->
       <tag k="ele" v="285.612"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=285.19"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=285.22"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -14204,7 +14204,7 @@
       <tag k="ref" v="S3442"/>
       <!--Add new ele: 516.913 in ODN-->
       <tag k="ele" v="516.913"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=516.44"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=516.42"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14230,7 +14230,7 @@
       <tag k="ref" v="S3373"/>
       <!--Add new ele: 165.457 in ODN-->
       <tag k="ele" v="165.457"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=165.17"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=165.18"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14254,7 +14254,7 @@
       <tag k="name" v="North Nab"/>
       <!--Add new ele: 319.43 in ODN-->
       <tag k="ele" v="319.43"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=319.17"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=319.16"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14278,7 +14278,7 @@
       <!--Ref field already set: S4795-->
       <!--Add new ele: 93.524 in ODN-->
       <tag k="ele" v="93.524"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=93.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=93.14"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14304,7 +14304,7 @@
       <tag k="ref" v="S3280"/>
       <!--Add new ele: 97.913 in ODN-->
       <tag k="ele" v="97.913"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=97.58"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=97.59"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14329,7 +14329,7 @@
       <!--Ref field already set: OS BM S5462-->
       <!--Add new ele: 522.122 in ODN-->
       <tag k="ele" v="522.122"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=522.04"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=522.02"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14425,7 +14425,7 @@
       <!--Ref field already set: S2730-->
       <!--Add new ele: 197.708 in ODN-->
       <tag k="ele" v="197.708"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=197.42"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=197.44"/>
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -14498,7 +14498,7 @@
       <tag k="name" v="Ordiquhill"/>
       <!--Add new ele: 249.326 in ODN-->
       <tag k="ele" v="249.326"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=249.18"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=249.17"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14594,7 +14594,7 @@
       <!--Ref field already set: S7271-->
       <!--Add new ele: 211.006 in ODN-->
       <tag k="ele" v="211.006"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=210.85"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=210.87"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14619,7 +14619,7 @@
       <!--Ref field already set: S5301-->
       <!--Add new ele: 283.57 in ODN-->
       <tag k="ele" v="283.57"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=283.4"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=283.42"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14643,7 +14643,7 @@
       <tag k="name" v="Papa Stour"/>
       <!--Add new ele: 87.172 in ODN-->
       <tag k="ele" v="87.172"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=86.32"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=86.28"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14667,7 +14667,7 @@
       <!--Ref field already set: S2293-->
       <!--Add new ele: 202.335 in ODN-->
       <tag k="ele" v="202.335"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=202.22"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=202.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14714,7 +14714,7 @@
       <tag k="ref" v="84466"/>
       <!--Add new ele: 110.255 in ODN-->
       <tag k="ele" v="110.255"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=109.95"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=109.96"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14766,7 +14766,7 @@
       <tag k="ref" v="S7305"/>
       <!--Add new ele: 147.611 in ODN-->
       <tag k="ele" v="147.611"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=147.37"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=147.34"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14792,7 +14792,7 @@
       <tag k="ref" v="S5078"/>
       <!--Add new ele: 156.92 in ODN-->
       <tag k="ele" v="156.92"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=156.62"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=156.61"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -14866,7 +14866,7 @@
       <tag k="ref" v="S4611"/>
       <!--Add new ele: 101.117 in ODN-->
       <tag k="ele" v="101.117"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=100.69"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=100.68"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -14983,7 +14983,7 @@
       <tag k="ref" v="S7471"/>
       <!--Add new ele: 237.094 in ODN-->
       <tag k="ele" v="237.094"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=236.52"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=236.51"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15035,7 +15035,7 @@
       <tag k="ref" v="S3834"/>
       <!--Add new ele: 190.323 in ODN-->
       <tag k="ele" v="190.323"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=190.22"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=190.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15059,7 +15059,7 @@
       <tag k="name" v="Pen-Y-Bannau"/>
       <!--Add new ele: 352.653 in ODN-->
       <tag k="ele" v="352.653"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=352.64"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=352.6"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15084,7 +15084,7 @@
       <!--Ref field already set: BMS5776-->
       <!--Add new ele: 694.639 in ODN-->
       <tag k="ele" v="694.639"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=694.48"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=694.46"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15110,7 +15110,7 @@
       <tag k="ref" v="S3164"/>
       <!--Add new ele: 187.11 in ODN-->
       <tag k="ele" v="187.11"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=186.7"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=186.74"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15135,7 +15135,7 @@
       <!--Ref field already set: S1507-->
       <!--Add new ele: 277.063 in ODN-->
       <tag k="ele" v="277.063"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=276.95"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=276.96"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -15229,7 +15229,7 @@
       <!--Ref field already set: S5057-->
       <!--Add new ele: 121.606 in ODN-->
       <tag k="ele" v="121.606"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.44"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.45"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15254,7 +15254,7 @@
       <!--Ref field already set: S1578-->
       <!--Add new ele: 753.16 in ODN-->
       <tag k="ele" v="753.16"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=753.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=753.1"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15378,7 +15378,7 @@
       <tag k="ref" v="S2385"/>
       <!--Add new ele: 107.947 in ODN-->
       <tag k="ele" v="107.947"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=107.55"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=107.56"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15404,7 +15404,7 @@
       <tag k="ref" v="S8182"/>
       <!--Add new ele: 20.345 in ODN-->
       <tag k="ele" v="20.345"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=20.36"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=20.37"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15499,7 +15499,7 @@
       <!--Ref field already set: S5953-->
       <!--Add new ele: 128.32 in ODN-->
       <tag k="ele" v="128.32"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=127.94"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=127.93"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15524,7 +15524,7 @@
       <!--Ref field already set: S6102-->
       <!--Add new ele: 185.504 in ODN-->
       <tag k="ele" v="185.504"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=185.13"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=185.14"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15549,7 +15549,7 @@
       <!--Ref field already set: S3229-->
       <!--Add new ele: 114.906 in ODN-->
       <tag k="ele" v="114.906"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=114.57"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=114.58"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15598,7 +15598,7 @@
       <!--Ref field already set: S1536-->
       <!--Add new ele: 660.501 in ODN-->
       <tag k="ele" v="660.501"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=660.53"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=660.52"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15644,7 +15644,7 @@
       <!--Ref field already set: NZ42T051-->
       <!--Add new ele: 521.512 in ODN-->
       <tag k="ele" v="521.512"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=521.2"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=521.18"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15670,7 +15670,7 @@
       <tag k="ref" v="S1521"/>
       <!--Add new ele: 265.803 in ODN-->
       <tag k="ele" v="265.803"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=265.48"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=265.46"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15719,7 +15719,7 @@
       <tag k="ref" v="S3124"/>
       <!--Add new ele: 227.46 in ODN-->
       <tag k="ele" v="227.46"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=227.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=227.11"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -15768,7 +15768,7 @@
       <tag k="ref" v="S4886"/>
       <!--Add new ele: 88.468 in ODN-->
       <tag k="ele" v="88.468"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=87.97"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=87.95"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15792,7 +15792,7 @@
       <tag k="name" v="Resr Mount Hill"/>
       <!--Add new ele: 111.697 in ODN-->
       <tag k="ele" v="111.697"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=111.3"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=111.29"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15864,7 +15864,7 @@
       <!--Ref field already set: S3160-->
       <!--Add new ele: 233.376 in ODN-->
       <tag k="ele" v="233.376"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=233.05"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=233.06"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15910,7 +15910,7 @@
       <tag k="name" v="Rhobell Fawr"/>
       <!--Add new ele: 734.568 in ODN-->
       <tag k="ele" v="734.568"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=734.61"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=734.59"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -15961,7 +15961,7 @@
       <tag k="ref" v="S3085"/>
       <!--Add new ele: 116.887 in ODN-->
       <tag k="ele" v="116.887"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=116.57"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=116.58"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -16104,7 +16104,7 @@
       <!--Ref field already set: S5026-->
       <!--Add new ele: 198.494 in ODN-->
       <tag k="ele" v="198.494"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=198.27"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=198.28"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -16151,7 +16151,7 @@
       <tag k="name" v="Ronas Hill"/>
       <!--Add new ele: 449.884 in ODN-->
       <tag k="ele" v="449.884"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=449.06"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=449.04"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16346,7 +16346,7 @@
       <tag k="name" v="Royl Field"/>
       <!--Add new ele: 293.522 in ODN-->
       <tag k="ele" v="293.522"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=293.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=293.15"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16371,7 +16371,7 @@
       <!--Ref field already set: S7496-->
       <!--Add new ele: 424.586 in ODN-->
       <tag k="ele" v="424.586"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=424.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=424.09"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16397,7 +16397,7 @@
       <tag k="ref" v="S6746"/>
       <!--Add new ele: 376.107 in ODN-->
       <tag k="ele" v="376.107"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=375.99"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=375.98"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16422,7 +16422,7 @@
       <!--Ref field already set: OS BM S8899-->
       <!--Add new ele: 124.904 in ODN-->
       <tag k="ele" v="124.904"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=124.68"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=124.67"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16474,7 +16474,7 @@
       <tag k="ref" v="S7714"/>
       <!--Add new ele: 359.374 in ODN-->
       <tag k="ele" v="359.374"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=359.12"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=359.11"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -16498,7 +16498,7 @@
       <!--Ref field already set: S2648-->
       <!--Add new ele: 103.36 in ODN-->
       <tag k="ele" v="103.36"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=103.01"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=103"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16524,7 +16524,7 @@
       <tag k="ref" v="S2423"/>
       <!--Add new ele: 198.946 in ODN-->
       <tag k="ele" v="198.946"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=198.8"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=198.81"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -16592,7 +16592,7 @@
       <tag k="ref" v="S6333"/>
       <!--Add new ele: 107.728 in ODN-->
       <tag k="ele" v="107.728"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=107.19"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=107.18"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16617,7 +16617,7 @@
       <!--Ref field already set: S1788-->
       <!--Add new ele: 96.834 in ODN-->
       <tag k="ele" v="96.834"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=96.41"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=96.39"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16641,7 +16641,7 @@
       <tag k="name" v="Scout Hill"/>
       <!--Add new ele: 284.988 in ODN-->
       <tag k="ele" v="284.988"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=284.63"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=284.61"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -16664,7 +16664,7 @@
       <tag k="name" v="Seatallan"/>
       <!--Add new ele: 692.2 in ODN-->
       <tag k="ele" v="692.2"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=692.3"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=692.31"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16712,7 +16712,7 @@
       <!--Ref field already set: 10768-->
       <!--Add new ele: 741.578 in ODN-->
       <tag k="ele" v="741.578"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=741.24"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=741.23"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16762,7 +16762,7 @@
       <tag k="name" v="Shalloch On Minnoch"/>
       <!--Add new ele: 769.924 in ODN-->
       <tag k="ele" v="769.924"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=769.92"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=769.91"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16812,7 +16812,7 @@
       <tag k="ref" v="S5381"/>
       <!--Add new ele: 338.422 in ODN-->
       <tag k="ele" v="338.422"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=338.22"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=338.21"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16864,7 +16864,7 @@
       <tag k="ref" v="3224"/>
       <!--Add new ele: 131.53 in ODN-->
       <tag k="ele" v="131.53"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=131.18"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=131.16"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16888,7 +16888,7 @@
       <tag k="name" v="Shepherds Hill"/>
       <!--Add new ele: 41.775 in ODN-->
       <tag k="ele" v="41.775"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=41.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=41.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -16912,7 +16912,7 @@
       <tag k="name" v="Shiel Hill"/>
       <!--Add new ele: 505.968 in ODN-->
       <tag k="ele" v="505.968"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=505.94"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=505.93"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -16935,7 +16935,7 @@
       <tag k="name" v="Shillhope Law"/>
       <!--Add new ele: 501.396 in ODN-->
       <tag k="ele" v="501.396"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=501.1"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=501.08"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17008,7 +17008,7 @@
       <tag k="ref" v="S1991"/>
       <!--Add new ele: 162.598 in ODN-->
       <tag k="ele" v="162.598"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=162.39"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=162.38"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17034,7 +17034,7 @@
       <tag k="ref" v="S3093"/>
       <!--Add new ele: 79.113 in ODN-->
       <tag k="ele" v="79.113"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=78.86"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=78.85"/>
       <!--survey_point[_structure] field already set: trig_point / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -17081,7 +17081,7 @@
       <tag k="name" v="Simon Howe"/>
       <!--Add new ele: 260.299 in ODN-->
       <tag k="ele" v="260.299"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=260.16"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=260.14"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17107,7 +17107,7 @@
       <tag k="ref" v="S3831"/>
       <!--Add new ele: 69.863 in ODN-->
       <tag k="ele" v="69.863"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=69.46"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=69.47"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -17130,7 +17130,7 @@
       <!--Ref field already set: S4866-->
       <!--Add new ele: 203.786 in ODN-->
       <tag k="ele" v="203.786"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=203.55"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=203.53"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -17180,7 +17180,7 @@
       <tag k="ref" v="6747"/>
       <!--Add new ele: 296.701 in ODN-->
       <tag k="ele" v="296.701"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=296.51"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=296.5"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--survey_point:datum_aligned field already set: yes-->
       <!--survey_point:purpose field already set: horizontal-->
@@ -17225,7 +17225,7 @@
       <!--Ref field already set: S4006-->
       <!--Add new ele: 111.919 in ODN-->
       <tag k="ele" v="111.919"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=111.64"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=111.62"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17251,7 +17251,7 @@
       <tag k="ref" v="S6304"/>
       <!--Add new ele: 79.357 in ODN-->
       <tag k="ele" v="79.357"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=79.31"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=79.3"/>
       <!--survey_point[_structure] field already set: triangulation_pillar / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -17297,7 +17297,7 @@
       <tag k="name" v="Smearsett Scar"/>
       <!--Add new ele: 363.321 in ODN-->
       <tag k="ele" v="363.321"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=363.11"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=363.08"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17322,7 +17322,7 @@
       <tag k="ref" v="S2577"/>
       <!--Add new ele: 403.03 in ODN-->
       <tag k="ele" v="403.03"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=402.79"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=402.78"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17490,7 +17490,7 @@
       <!--Ref field already set: S6132-->
       <!--Add new ele: 46.417 in ODN-->
       <tag k="ele" v="46.417"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=46.16"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=46.15"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17516,7 +17516,7 @@
       <tag k="ref" v="S4292"/>
       <!--Add new ele: 108.264 in ODN-->
       <tag k="ele" v="108.264"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=107.94"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=107.93"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17540,7 +17540,7 @@
       <tag k="name" v="St Ninians Isle"/>
       <!--Add new ele: 59.436 in ODN-->
       <tag k="ele" v="59.436"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=58.98"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=58.99"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17664,7 +17664,7 @@
       <!--Ref field already set: S5828-->
       <!--Add new ele: 99.084 in ODN-->
       <tag k="ele" v="99.084"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=98.77"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=98.76"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17689,7 +17689,7 @@
       <!--Ref field already set: S3996-->
       <!--Add new ele: 188.954 in ODN-->
       <tag k="ele" v="188.954"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=188.64"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=188.66"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -17712,7 +17712,7 @@
       <tag k="name" v="Stiperstones"/>
       <!--Add new ele: 537.362 in ODN-->
       <tag k="ele" v="537.362"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=537.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=537.31"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17763,7 +17763,7 @@
       <tag k="ref" v="S3144"/>
       <!--Add new ele: 70.308 in ODN-->
       <tag k="ele" v="70.308"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=69.91"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=69.95"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17789,7 +17789,7 @@
       <tag k="ref" v="S7004"/>
       <!--Add new ele: 90.293 in ODN-->
       <tag k="ele" v="90.293"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=89.75"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=89.72"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17881,7 +17881,7 @@
       <tag k="ref" v="S6322"/>
       <!--Add new ele: 190.628 in ODN-->
       <tag k="ele" v="190.628"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=190.26"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=190.24"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -17904,7 +17904,7 @@
       <tag k="name" v="Sulber"/>
       <!--Add new ele: 348.691 in ODN-->
       <tag k="ele" v="348.691"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=348.5"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=348.47"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -17956,7 +17956,7 @@
       <tag k="ref" v="S5952"/>
       <!--Add new ele: 54.973 in ODN-->
       <tag k="ele" v="54.973"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=54.68"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=54.67"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18074,7 +18074,7 @@
       <tag k="ref" v="S2578"/>
       <!--Add new ele: 203.289 in ODN-->
       <tag k="ele" v="203.289"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=202.93"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=202.94"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18145,7 +18145,7 @@
       <tag k="name" v="Tap Of Noth"/>
       <!--Add new ele: 563.88 in ODN-->
       <tag k="ele" v="563.88"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=563.93"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=563.9"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18169,7 +18169,7 @@
       <!--Ref field already set: S5281-->
       <!--Add new ele: 77.946 in ODN-->
       <tag k="ele" v="77.946"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=77.62"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=77.63"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18218,7 +18218,7 @@
       <tag k="name" v="Thack Moor"/>
       <!--Add new ele: 609.6 in ODN-->
       <tag k="ele" v="609.6"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=609.41"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=609.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18264,7 +18264,7 @@
       <!--Ref field already set: 8764-->
       <!--Add new ele: 787.603 in ODN-->
       <tag k="ele" v="787.603"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=787.6"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=787.61"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18377,7 +18377,7 @@
       <!--Ref field already set: S6957-->
       <!--Add new ele: 896.721 in ODN-->
       <tag k="ele" v="896.721"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=896.5"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=896.46"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18471,7 +18471,7 @@
       <tag k="ref" v="S5184"/>
       <!--Add new ele: 126.181 in ODN-->
       <tag k="ele" v="126.181"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=126.08"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=126.09"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -18495,7 +18495,7 @@
       <!--Ref field already set: S5016-->
       <!--Add new ele: 317.202 in ODN-->
       <tag k="ele" v="317.202"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=317"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=317.01"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -18520,7 +18520,7 @@
       <tag k="ref" v="S2786"/>
       <!--Add new ele: 182.593 in ODN-->
       <tag k="ele" v="182.593"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=182.38"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=182.37"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18572,7 +18572,7 @@
       <tag k="ref" v="S1894"/>
       <!--Add new ele: 110.008 in ODN-->
       <tag k="ele" v="110.008"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=109.57"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=109.58"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18622,7 +18622,7 @@
       <tag k="ref" v="S5300"/>
       <!--Add new ele: 195.309 in ODN-->
       <tag k="ele" v="195.309"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=195.01"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=195"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18646,7 +18646,7 @@
       <tag k="name" v="Three Brethren"/>
       <!--Add new ele: 464.82 in ODN-->
       <tag k="ele" v="464.82"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=464.44"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=464.4"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18696,7 +18696,7 @@
       <tag k="ref" v="S3497"/>
       <!--Add new ele: 91.123 in ODN-->
       <tag k="ele" v="91.123"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=90.97"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=90.98"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -18766,7 +18766,7 @@
       <tag k="name" v="Toddun"/>
       <!--Add new ele: 528.523 in ODN-->
       <tag k="ele" v="528.523"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=528.49"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=528.48"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18790,7 +18790,7 @@
       <tag k="name" v="Toll Creagach"/>
       <!--Add new ele: 1054.303 in ODN-->
       <tag k="ele" v="1054.303"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=1054.31"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=1054.3"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18840,7 +18840,7 @@
       <tag k="name" v="Top End"/>
       <!--Add new ele: 249.63 in ODN-->
       <tag k="ele" v="249.63"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=249.33"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=249.32"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18892,7 +18892,7 @@
       <tag k="ref" v="4291"/>
       <!--Add new ele: 64.303 in ODN-->
       <tag k="ele" v="64.303"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=63.96"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=63.95"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18941,7 +18941,7 @@
       <tag k="ref" v="3494"/>
       <!--Add new ele: 150.379 in ODN-->
       <tag k="ele" v="150.379"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=150.08"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=150.09"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -18986,7 +18986,7 @@
       <tag k="name" v="Town Hill"/>
       <!--Add new ele: 320.344 in ODN-->
       <tag k="ele" v="320.344"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=320.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=320.12"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19057,7 +19057,7 @@
       <!--Ref field already set: S1722-->
       <!--Add new ele: 194.072 in ODN-->
       <tag k="ele" v="194.072"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=193.59"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=193.62"/>
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -19082,7 +19082,7 @@
       <tag k="ref" v="S2268"/>
       <!--Add new ele: 415.232 in ODN-->
       <tag k="ele" v="415.232"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=415.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=415.13"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19154,7 +19154,7 @@
       <tag k="ref" v="S4044"/>
       <!--Add new ele: 206.331 in ODN-->
       <tag k="ele" v="206.331"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.02"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=206.05"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19278,7 +19278,7 @@
       <tag k="name" v="Uamh Bheag"/>
       <!--Add new ele: 662.635 in ODN-->
       <tag k="ele" v="662.635"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=662.51"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=662.5"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19329,7 +19329,7 @@
       <tag k="ref" v="S2429"/>
       <!--Add new ele: 140.494 in ODN-->
       <tag k="ele" v="140.494"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=140.42"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=140.43"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -19401,7 +19401,7 @@
       <tag k="ref" v="S2486"/>
       <!--Add new ele: 137.662 in ODN-->
       <tag k="ele" v="137.662"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=137.44"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=137.45"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19427,7 +19427,7 @@
       <tag k="ref" v="6751"/>
       <!--Add new ele: 150.345 in ODN-->
       <tag k="ele" v="150.345"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=150.48"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=150.46"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19473,7 +19473,7 @@
       <tag k="name" v="Warlaw Pike"/>
       <!--Add new ele: 402.031 in ODN-->
       <tag k="ele" v="402.031"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=401.62"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=401.61"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19499,7 +19499,7 @@
       <tag k="ref" v="S5094"/>
       <!--Add new ele: 88.812 in ODN-->
       <tag k="ele" v="88.812"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=88.51"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=88.53"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19525,7 +19525,7 @@
       <tag k="ref" v="S6381"/>
       <!--Add new ele: 72.027 in ODN-->
       <tag k="ele" v="72.027"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=71.83"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=71.81"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19572,7 +19572,7 @@
       <!--Ref field already set: S3781-->
       <!--Add new ele: 116.098 in ODN-->
       <tag k="ele" v="116.098"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=115.82"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=115.84"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19620,7 +19620,7 @@
       <!--Ref field already set: S5425-->
       <!--Add new ele: 324.334 in ODN-->
       <tag k="ele" v="324.334"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=324.27"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=324.26"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19646,7 +19646,7 @@
       <tag k="ref" v="S7409"/>
       <!--Add new ele: 43.729 in ODN-->
       <tag k="ele" v="43.729"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=43.15"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=43.2"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19670,7 +19670,7 @@
       <tag k="name" v="Water Crag"/>
       <!--Add new ele: 668.121 in ODN-->
       <tag k="ele" v="668.121"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=667.96"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=667.93"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19719,7 +19719,7 @@
       <tag k="ref" v="S3236"/>
       <!--Add new ele: 67.312 in ODN-->
       <tag k="ele" v="67.312"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=66.98"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=66.97"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19822,7 +19822,7 @@
       <tag k="ref" v="S5814"/>
       <!--Add new ele: 176.963 in ODN-->
       <tag k="ele" v="176.963"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=176.89"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=176.87"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19848,7 +19848,7 @@
       <tag k="ref" v="S3143"/>
       <!--Add new ele: 128.174 in ODN-->
       <tag k="ele" v="128.174"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=127.79"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=127.8"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -19942,7 +19942,7 @@
       <tag k="ref" v="S1610"/>
       <!--Add new ele: 197.696 in ODN-->
       <tag k="ele" v="197.696"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=197.34"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=197.35"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20041,7 +20041,7 @@
       <tag k="ref" v="S3217"/>
       <!--Add new ele: 121.523 in ODN-->
       <tag k="ele" v="121.523"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.29"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=121.3"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20158,7 +20158,7 @@
       <!--Ref field already set: S5731-->
       <!--Add new ele: 87.626 in ODN-->
       <tag k="ele" v="87.626"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=87.25"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=87.24"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20183,7 +20183,7 @@
       <!--Ref field already set: 2987-->
       <!--Add new ele: 261.143 in ODN-->
       <tag k="ele" v="261.143"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=260.95"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=260.96"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -20229,7 +20229,7 @@
       <tag k="ref" v="5338"/>
       <!--Add new ele: 245.007 in ODN-->
       <tag k="ele" v="245.007"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=244.77"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=244.75"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20301,7 +20301,7 @@
       <!--Ref field already set: 10677-->
       <!--Add new ele: 225.57 in ODN-->
       <tag k="ele" v="225.57"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=224.74"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=224.73"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -20347,7 +20347,7 @@
       <tag k="name" v="Wild Boar Fell"/>
       <!--Add new ele: 708.66 in ODN-->
       <tag k="ele" v="708.66"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=708.5"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=708.45"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20373,7 +20373,7 @@
       <tag k="ref" v="S4691"/>
       <!--Add new ele: 88.111 in ODN-->
       <tag k="ele" v="88.111"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=87.62"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=87.59"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20419,7 +20419,7 @@
       <!--Ref field already set: S2409-->
       <!--Add new ele: 253.255 in ODN-->
       <tag k="ele" v="253.255"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=253.14"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=253.15"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -20468,7 +20468,7 @@
       <tag k="ref" v="S2425"/>
       <!--Add new ele: 289.675 in ODN-->
       <tag k="ele" v="289.675"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=289.54"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=289.56"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20519,7 +20519,7 @@
       <!--Ref field already set: S5031-->
       <!--Add new ele: 265.346 in ODN-->
       <tag k="ele" v="265.346"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=265.21"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=265.23"/>
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
       <tag k="survey_point:datum_aligned" v="yes"/>
@@ -20542,7 +20542,7 @@
       <tag k="name" v="Wolfhole Crag"/>
       <!--Add new ele: 527.913 in ODN-->
       <tag k="ele" v="527.913"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=527.79"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=527.77"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20592,7 +20592,7 @@
       <!--Ref field already set: S8460-->
       <!--Add new ele: 119.432 in ODN-->
       <tag k="ele" v="119.432"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=118.87"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=118.89"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20713,7 +20713,7 @@
       <tag k="ref" v="S8577"/>
       <!--Add new ele: 7.391 in ODN-->
       <tag k="ele" v="7.391"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=7.06"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=7.05"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20764,7 +20764,7 @@
       <!--Ref field already set: S4642-->
       <!--Add new ele: 142.359 in ODN-->
       <tag k="ele" v="142.359"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=142.03"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=142.02"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20812,7 +20812,7 @@
       <!--Ref field already set: S2715-->
       <!--Add new ele: 29.608 in ODN-->
       <tag k="ele" v="29.608"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=29.11"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=29.13"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->
@@ -20836,7 +20836,7 @@
       <tag k="name" v="Yockenthwaite Moor"/>
       <!--Add new ele: 643.128 in ODN-->
       <tag k="ele" v="643.128"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=642.94"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=642.92"/>
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
       <!--Add new datum_aligned: yes-->

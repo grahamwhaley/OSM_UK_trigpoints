@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-08-15-->
+  <!--OSM Nodes that already look 'good' on OSM. Generated on: 2026-08-17-->
   <!--309 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <create>
