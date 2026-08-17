@@ -115,9 +115,9 @@ HEIGHT_TOLERANCE = 1
 tag_operator = "Ordnance Survey"
 tag_wikidata = "Q548721"
 
-####################################################################################################### 
+#######################################################################################################
 ###################################### Global data type things ###################################
-####################################################################################################### 
+#######################################################################################################
 OS_csv_file=file.path(PROJ_DATA_PATH, "CompleteTrigArchive.csv")
 OSM_OSM_file=file.path(PROJ_DATA_PATH, "gb_trigpoints.osm")
 
@@ -152,9 +152,9 @@ osm_good_types = c(
 	"trig_point"
 	)
 
-####################################################################################################### 
+#######################################################################################################
 ###################################### functions ######################################################
-####################################################################################################### 
+#######################################################################################################
 
 # Try to clean up an OSB description field to just leave the name. Possibly non-trivial!
 #  Note - strings should be all lower by the time they reach here
@@ -610,7 +610,7 @@ static_xml_tags <- function(node, new_name, as_comment) {
 	}
 
 	if(as_comment){
-		cmt = paste(sep=" ", "note:", 
+		cmt = paste(sep=" ", "note:",
 			"Please do not move this node without first reading https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import")
 		newXMLCommentNode(cmt, parent=node)
 	} else {
@@ -620,9 +620,9 @@ static_xml_tags <- function(node, new_name, as_comment) {
 	}
 }
 
-####################################################################################################### 
+#######################################################################################################
 ###################################### Read raw data ###############################################
-####################################################################################################### 
+#######################################################################################################
 
 # EPSG:27700 : OSBG36
 # EPSG:7405  : OSGB36 + ODN
@@ -755,9 +755,9 @@ os_b_sf_27700 <- st_as_sf(os_b_df, coords=c("nEASTING", "nNORTHING"), crs=27700)
 # And then into ETRS89
 os_b_sf <- os_b_sf_27700 %>% st_transform(crs=4937)
 
-####################################################################################################### 
+#######################################################################################################
 ###################### Reduce the dataset if needed - helps with speed of development ###########
-####################################################################################################### 
+#######################################################################################################
 
 # Reduce the data to a subset to make it easier to view whislt debugging
 if(trim_dataset) {
@@ -837,7 +837,7 @@ if(trim_dataset) {
 		sub_point <- data.frame(place = sub_name, lat = sub_lat, lon = sub_lon) %>% st_as_sf(coords = c('lat', 'lon')) %>% st_set_crs(4937)
 		sub_poly <- st_buffer(sub_point, sub_span)
 	}
-  
+
 	message(">>>  Applying sub poly filter")
 	## st_intersection is dropping the Z from the geometry! - but, we have done our 3D
 	# work earlier, and have HEIGHT for the ODN, so if we sequence things carefully then
@@ -857,9 +857,9 @@ if(trim_dataset) {
 	chosen_zoom=6
 }
 
-####################################################################################################### 
+#######################################################################################################
 ###################### Extract the Flush Bracket numbers from the OS benchmark data ####### ###########
-####################################################################################################### 
+#######################################################################################################
 
 ## And let's try to extract the flush bracket data into its own column
 message(" extracting FB numbers from OS benchmarks")
@@ -975,9 +975,9 @@ for(i in 1:nrow(os_b_sf)) {
 
 message(" Found ", sum(!is.na(os_b_sf$FB)), " FB's. Got ", sum(is.na(os_b_sf$FB)), " empty entries")
 
-####################################################################################################### 
+#######################################################################################################
 ############################################# Drop OSM items that are not pillars #####################
-####################################################################################################### 
+#######################################################################################################
 
 message(" Dropping OSM non-pillar items")
 
@@ -1002,9 +1002,9 @@ message(" Drop ", sum(osm_sf$drop == TRUE), " OSM nodes as not pillars")
 osm_sf <- filter(osm_sf, drop==FALSE)
 message(">>  After dropping drops we have ", nrow(osm_sf), " rows of osm")
 
-####################################################################################################### 
+#######################################################################################################
 ############################################# Drop deleted and non-pillar OS items  ###################
-####################################################################################################### 
+#######################################################################################################
 # Drop OS items very early if we are not going to use them, as having them in the dataset
 # vastly increases the compute cost of neighbour calcs for instance.
 if( 1 ) {
@@ -1032,9 +1032,9 @@ if( 1 ) {
 }
 
 
-####################################################################################################### 
+#######################################################################################################
 ############################################# Find nearest OSM neighbour for each OS ##################
-####################################################################################################### 
+#######################################################################################################
 ## Calculate the nearest points between the sets
 if(1) {
 	# find the nearest OSM points to each OS point - use if trying to 'snap' OSM to OS points
@@ -1070,9 +1070,9 @@ shortest_snap=min(nearest_dist)
 longest_snap=max(nearest_dist)
 message(" Shortest snap distance is ", shortest_snap, "m. Longest snap is ", longest_snap, "m.")
 
-####################################################################################################### 
+#######################################################################################################
 ############################################# And find nearest Benchmark to each OS trigpoint ########
-####################################################################################################### 
+#######################################################################################################
 message(" Calculate nearest Benchmark to each OS trigpoint")
 # And try calculating the nearest OS Benchmark for each OS Trigpoint
 osb_nearest_id = st_nearest_feature(os_sf, os_b_sf)
@@ -1096,9 +1096,9 @@ longest_osb_snap=max(osb_nearest_dist)
 message(" Shortest snap distance (from OS point to OS benchmark nearest neighbour) is ", shortest_osb_snap, "m.")
 message(" Longest snap distance (from OS point to OS benchmark nearest neighbour) is ", longest_osb_snap, "m.")
 
-####################################################################################################### 
+#######################################################################################################
 ############################################# Separate snappable from not ############################
-####################################################################################################### 
+#######################################################################################################
 ## OK, now iterate the list of OS points and check how well, or not, their chose OSM neighbours
 dist_df <- data.frame(distances=as.vector(nearest_dist))
 dist_df$distances <- set_units(dist_df$distances, "m")
@@ -1116,9 +1116,9 @@ os_total_points = nrow(os_sf)
 osm_total_points = nrow(osm_sf)
 
 
-####################################################################################################### 
+#######################################################################################################
 ############################## Try to match OS trigpoints to OS benchmark flush bracket data ##########
-####################################################################################################### 
+#######################################################################################################
 message("Trying to match OS trigpoints to OS benchmarks and OSM trigpoints")
 
 os_sf$osb_name_match = FALSE
@@ -1208,9 +1208,9 @@ message(" got ", fuzzymatches_osb, " extra OSB matches due to fuzzing")
 message(" got ", fuzzymatches_osm, " extra OSM matches due to fuzzing")
 
 
-####################################################################################################### 
+#######################################################################################################
 ############################## Search harder for matching OSM nodes ###################################
-####################################################################################################### 
+#######################################################################################################
 
 # We have currently pruned on distance - if any OSM node was too close then we discount the OS node
 # for import. Now we will try a little harder and see if we can find:
@@ -1287,9 +1287,9 @@ if(1)
 	message(">>>  got ", extra_matches, " extra matches")
 }
 
-####################################################################################################### 
+#######################################################################################################
 ############################## Search for potentially missing FB numbers ##############################
-####################################################################################################### 
+#######################################################################################################
 if( look_for_missing_fbs ) {
 	missing_FBs = 0
 
@@ -1318,9 +1318,9 @@ if( look_for_missing_fbs ) {
 
 }
 
-####################################################################################################### 
+#######################################################################################################
 ############################################# And generate some plots #################################
-####################################################################################################### 
+#######################################################################################################
 message(">>> Plotting")
 
 if(1) {
@@ -1353,7 +1353,7 @@ if(1) {
 
 ## Now, in order to make a 'better' graph (that is, the easiest way I can think to get an index
 #  added), we should try and get the data in a 'tidy' format containing all snappable/new/deleted
-#  points... 
+#  points...
 
 message(">>>  Build tidy data to plot")
 # And the OSM points
@@ -1423,9 +1423,9 @@ p_polar <- ggplot(data = snappable_df, aes(bearing, drop_units(distance))) +
 
 ggsave("/data/polar_snap.jpg", plot=p_polar)
 
-####################################################################################################### 
+#######################################################################################################
 ############################################# Generate the OsmChange files ############################
-####################################################################################################### 
+#######################################################################################################
 
 # Try to figure out what is a 'new node', and what is a 'snap/merge' node...
 # We have a number of factors to consider:
@@ -1772,7 +1772,7 @@ if( !use_new_filter_logic ) {
 	editnode_df = filter(nomismatch_df, fields_missing == TRUE)
 
 	# FIXME - we should probably filter out only good nodes that are within **min_snap_distance**
-	# of their OS nodes tbh ... FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME 
+	# of their OS nodes tbh ... FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME
 	# Any node that was near, had no field mismatches and no fields missing must be GOOD already!
 	goodnode_df = filter(nomismatch_df, fields_missing == FALSE)
 
@@ -1915,168 +1915,170 @@ if( generate_osc ) {
 	cmt = paste(sep=" ", "Note, geometries are in ETRS89")
 	newXMLCommentNode(cmt, parent=root)
 
-	for(i in 1:nrow(reviewnode_df)) {
-		os_row <- reviewnode_df[i,]
-		osm_row <- osm_sf[os_row$nearest_osm_id,]
-		osb_row <- os_b_sf[os_row$nearest_osb_id,]
+	if( nrow(reviewnode_df) != 0 ) {
+		for(i in 1:nrow(reviewnode_df)) {
+			os_row <- reviewnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
-		# Let's try to make a comment?
-		mod = newXMLNode("create", parent=root)
-		osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
-		os_coords=st_coordinates(os_row$geometry)
-		attrs = c(
-			id=osm_sf[os_row$nearest_osm_id,]$osm_id,
-			changeset="1",		#FIXME - what should this be??
-			version="1",		#FIXME - what should this be??
-			# We could use either OS or OSM co-ords here. Using the OSM ones should
-			# show the point to review directly on top of the one in the OSM layer you are
-			# comparing against. Lets at least drop a comment about where the new coords
-			# might be...
-			lat=round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
-			lon=round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS)
-			)
-		node = newXMLNode("node", attrs=attrs, parent=mod)
+			# Let's try to make a comment?
+			mod = newXMLNode("create", parent=root)
+			osm_coords=st_coordinates(osm_sf[os_row$nearest_osm_id,])
+			os_coords=st_coordinates(os_row$geometry)
+			attrs = c(
+				id=osm_sf[os_row$nearest_osm_id,]$osm_id,
+				changeset="1",		#FIXME - what should this be??
+				version="1",		#FIXME - what should this be??
+				# We could use either OS or OSM co-ords here. Using the OSM ones should
+				# show the point to review directly on top of the one in the OSM layer you are
+				# comparing against. Lets at least drop a comment about where the new coords
+				# might be...
+				lat=round(as.double(osm_coords[,"Y"]), digits=OSM_DIGITS),
+				lon=round(as.double(osm_coords[,"X"]), digits=OSM_DIGITS)
+				)
+			node = newXMLNode("node", attrs=attrs, parent=mod)
 
-		cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
-		newXMLCommentNode(cmt, parent=node)
-		cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
-		newXMLCommentNode(cmt, parent=node)
-
-		if( !is.na(os_row$extended_name_match_id) ) {
-			cmt = paste(sep="", "Extended name match at ",
-				round(os_row$extended_name_match_distance, DIST_DIGITS), " m",
-				" OSM <a href=\\\"http://openstreetmap.org/node/",
-				os_row$extended_name_match_id
-				, "\\\">")
+			cmt = paste(sep=" ", "OS Name", os_row$Trig.Name, "OS New Name", os_row$New.Name)
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "OS node Slippy URL:", slippy_node_url(os_row))
 			newXMLCommentNode(cmt, parent=node)
 
-			osm_row = filter(osm_sf, osm_id==os_row$extended_name_match_id)
-			cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
-			newXMLCommentNode(cmt, parent=node)
-		}
-
-		if( !is.na(os_row$extended_ref_match_id) ) {
-			cmt = paste(sep="", "Extended ref match at ",
-				round(os_row$extended_ref_match_distance, DIST_DIGITS), " m",
-				" OSM <a href=\\\"http://openstreetmap.org/node/",
-				os_row$extended_ref_match_id
-				, "\\\">")
-			newXMLCommentNode(cmt, parent=node)
-
-			osm_row = filter(osm_sf, osm_id==os_row$extended_ref_match_id)
-			cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
-			newXMLCommentNode(cmt, parent=node)
-		}
-
-		# Add comments describing what the OS co-ords are
-		cmt = paste(sep=" ", "OS node co-ords are", round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS),
-			",", round(as.double(os_coords[,"X"]), digits=OSM_DIGITS) )
-		newXMLCommentNode(cmt, parent=node)
-		cmt = paste(sep=" ", "That is", round(os_row$distance, digits=DIST_DIGITS), "m from its nearest OSM node")
-		newXMLCommentNode(cmt, parent=node)
-		if( !is.na(osm_row$name) ) {
-			cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "] vs OSM [", osm_row$name, "]")
-		} else {
-			cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "]. OSM node has no name") 
-		}
-		newXMLCommentNode(cmt, parent=node)
-
-		if( is.na(osm_row$ele) ) {
-			# We can fill the ele slot
-			if( generate_extended_ele ) {
-				cmt = paste(sep=" ", "ele tag is in EGM96")
+			if( !is.na(os_row$extended_name_match_id) ) {
+				cmt = paste(sep="", "Extended name match at ",
+					round(os_row$extended_name_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_name_match_id
+					, "\\\">")
 				newXMLCommentNode(cmt, parent=node)
-				cmt = paste(sep=" ", "Add new ele:", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_name_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
 				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( !is.na(os_row$extended_ref_match_id) ) {
+				cmt = paste(sep="", "Extended ref match at ",
+					round(os_row$extended_ref_match_distance, DIST_DIGITS), " m",
+					" OSM <a href=\\\"http://openstreetmap.org/node/",
+					os_row$extended_ref_match_id
+					, "\\\">")
+				newXMLCommentNode(cmt, parent=node)
+
+				osm_row = filter(osm_sf, osm_id==os_row$extended_ref_match_id)
+				cmt = paste(sep=" ", "OSM node Slippy URL:", slippy_node_url(osm_row))
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			# Add comments describing what the OS co-ords are
+			cmt = paste(sep=" ", "OS node co-ords are", round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS),
+				",", round(as.double(os_coords[,"X"]), digits=OSM_DIGITS) )
+			newXMLCommentNode(cmt, parent=node)
+			cmt = paste(sep=" ", "That is", round(os_row$distance, digits=DIST_DIGITS), "m from its nearest OSM node")
+			newXMLCommentNode(cmt, parent=node)
+			if( !is.na(osm_row$name) ) {
+				cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "] vs OSM [", osm_row$name, "]")
 			} else {
-				cmt = paste(sep=" ", "ele tag is in ODN")
-				newXMLCommentNode(cmt, parent=node)
-				cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+				cmt = paste(sep=" ", "OS node called [", os_row$Trig.Name, "]. OSM node has no name")
+			}
+			newXMLCommentNode(cmt, parent=node)
+
+			if( is.na(osm_row$ele) ) {
+				# We can fill the ele slot
+				if( generate_extended_ele ) {
+					cmt = paste(sep=" ", "ele tag is in EGM96")
+					newXMLCommentNode(cmt, parent=node)
+					cmt = paste(sep=" ", "Add new ele:", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+					newXMLCommentNode(cmt, parent=node)
+				} else {
+					cmt = paste(sep=" ", "ele tag is in ODN")
+					newXMLCommentNode(cmt, parent=node)
+					cmt = paste(sep=" ", "Add new ele:", os_row$HEIGHT)
+					newXMLCommentNode(cmt, parent=node)
+					cmt = paste(sep="", "Add new note:ele=ele value in ODN. ele:EGM96=", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+					newXMLCommentNode(cmt, parent=node)
+				}
+			} else {
+				cmt = paste(sep=" ", "ele field already set:", osm_row$ele, ": OSM val:", os_row$HEIGHT)
 				newXMLCommentNode(cmt, parent=node)
 				cmt = paste(sep="", "Add new note:ele=ele value in ODN. ele:EGM96=", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 				newXMLCommentNode(cmt, parent=node)
 			}
-		} else {
-			cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep="", "Add new note:ele=ele value in ODN. ele:EGM96=", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-			newXMLCommentNode(cmt, parent=node)
-		}
 
-		if( generate_extended_ele ) {
-			cmt = paste(sep=" ", "And add new ele:* tags")
-			newXMLCommentNode(cmt, parent=node)
+			if( generate_extended_ele ) {
+				cmt = paste(sep=" ", "And add new ele:* tags")
+				newXMLCommentNode(cmt, parent=node)
 
-			cmt = paste(sep=" ", " ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", " ele:ODN =", os_row$HEIGHT)
-			newXMLCommentNode(cmt, parent=node)
-			cmt = paste(sep=" ", " ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
-			newXMLCommentNode(cmt, parent=node)
-		}
-
-		# Just note if 'survey_point' is set or not - we don't generate those
-		if( is.na(osm_row$survey_point) )
-			cmt = paste(sep=" ", "survey_point tag is empty (good)")
-		else
-			cmt = paste(sep=" ", "survey_point tag not empty (good)", osm_row$survey_point)
-		newXMLCommentNode(cmt, parent=node)
-
-		if( is.na(osm_row$survey_point_structure) ) {
-			# We can fill the survey_point:structure
-			cmt = paste(sep=" ", "Add new survey_point:structure: pillar")
-			newXMLCommentNode(cmt, parent=node)
-		} else {
-			cmt = paste(sep=" ", "survey_point:structure field already set:", osm_row$survey_point_structure)
-			newXMLCommentNode(cmt, parent=node)
-		}
-
-		if( is.na(osm_row$survey_point_datum_aligned) ) {
-			# We can fill the survey_point:datum_aligned
-			cmt = paste(sep=" ", "Add new survey_point:datum_aligned: yes")
-			newXMLCommentNode(cmt, parent=node)
-		} else {
-			cmt = paste(sep=" ", "survey_point:datum_aligned field already set:", osm_row$survey_point_datum_aligned)
-			newXMLCommentNode(cmt, parent=node)
-		}
-
-		if( is.na(osm_row$survey_point_purpose) ) {
-			# We can fill the survey_point:purpose
-			cmt = paste(sep=" ", "Add new survey_point:purpose: both")
-			newXMLCommentNode(cmt, parent=node)
-		} else {
-			cmt = paste(sep=" ", "survey_point:purpose field already set:", osm_row$survey_point_purpose)
-			newXMLCommentNode(cmt, parent=node)
-		}
-
-		if (!is.na(osm_row$ref) ) {
-			cmt = paste(sep=" ", "OSM ref is:", osm_row$ref)
-		} else {
-			cmt = paste(sep=" ", "OSM node has no ref")
-		}
-		newXMLCommentNode(cmt, parent=node)
-
-		# somewhat depricated - we generate ref:GB:complete_trig_archive instead
-		if (!is.na(osm_row$ref_os) ) {
-			cmt = paste(sep=" ", "OSM ref:os is:", osm_row$ref_os)
-			newXMLCommentNode(cmt, parent=node)
-		}
-
-		#Not necessary, but can help with debugging
-		#cmt = paste(sep=" ", "Nearest FB ref is", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
-		#newXMLCommentNode(cmt, parent=node)
-
-		if (!is.na(os_row$FB) ) {
-			if( os_row$osb_distance <= osb_max_distance ) {
-				cmt = paste(sep=" ", "OS FB is", os_row$FB, "at", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
-			} else {
-				cmt = paste(sep=" ", "OS FB is too far away at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
+				cmt = paste(sep=" ", " ele:EGM96 =", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", " ele:ODN =", os_row$HEIGHT)
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep=" ", " ele:WGS84 =", round(os_row$etrs89_height, digits=HEIGHT_DIGITS))
+				newXMLCommentNode(cmt, parent=node)
 			}
-		} else {
-			cmt = paste(sep=" ", "OS node has no FB")
+
+			# Just note if 'survey_point' is set or not - we don't generate those
+			if( is.na(osm_row$survey_point) )
+				cmt = paste(sep=" ", "survey_point tag is empty (good)")
+			else
+				cmt = paste(sep=" ", "survey_point tag not empty (good)", osm_row$survey_point)
+			newXMLCommentNode(cmt, parent=node)
+
+			if( is.na(osm_row$survey_point_structure) ) {
+				# We can fill the survey_point:structure
+				cmt = paste(sep=" ", "Add new survey_point:structure: pillar")
+				newXMLCommentNode(cmt, parent=node)
+			} else {
+				cmt = paste(sep=" ", "survey_point:structure field already set:", osm_row$survey_point_structure)
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( is.na(osm_row$survey_point_datum_aligned) ) {
+				# We can fill the survey_point:datum_aligned
+				cmt = paste(sep=" ", "Add new survey_point:datum_aligned: yes")
+				newXMLCommentNode(cmt, parent=node)
+			} else {
+				cmt = paste(sep=" ", "survey_point:datum_aligned field already set:", osm_row$survey_point_datum_aligned)
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if( is.na(osm_row$survey_point_purpose) ) {
+				# We can fill the survey_point:purpose
+				cmt = paste(sep=" ", "Add new survey_point:purpose: both")
+				newXMLCommentNode(cmt, parent=node)
+			} else {
+				cmt = paste(sep=" ", "survey_point:purpose field already set:", osm_row$survey_point_purpose)
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			if (!is.na(osm_row$ref) ) {
+				cmt = paste(sep=" ", "OSM ref is:", osm_row$ref)
+			} else {
+				cmt = paste(sep=" ", "OSM node has no ref")
+			}
+			newXMLCommentNode(cmt, parent=node)
+
+			# somewhat depricated - we generate ref:GB:complete_trig_archive instead
+			if (!is.na(osm_row$ref_os) ) {
+				cmt = paste(sep=" ", "OSM ref:os is:", osm_row$ref_os)
+				newXMLCommentNode(cmt, parent=node)
+			}
+
+			#Not necessary, but can help with debugging
+			#cmt = paste(sep=" ", "Nearest FB ref is", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
+			#newXMLCommentNode(cmt, parent=node)
+
+			if (!is.na(os_row$FB) ) {
+				if( os_row$osb_distance <= osb_max_distance ) {
+					cmt = paste(sep=" ", "OS FB is", os_row$FB, "at", round(os_row$osb_distance, digits=DIST_DIGITS), "m away")
+				} else {
+					cmt = paste(sep=" ", "OS FB is too far away at", round(os_row$osb_distance, digits=DIST_DIGITS), "m")
+				}
+			} else {
+				cmt = paste(sep=" ", "OS node has no FB")
+			}
+			newXMLCommentNode(cmt, parent=node)
+			static_xml_tags(node, os_row$New.Name, FALSE)
 		}
-		newXMLCommentNode(cmt, parent=node)
-		static_xml_tags(node, os_row$New.Name, FALSE)
 	}
 	saveXML(reviewnode_doc, file="/data/reviewnodes.osc")
 
@@ -2157,6 +2159,10 @@ if( generate_osc ) {
 			cmt = paste(sep=" ", "Name: OSM:", osm_row$name, "OS:", os_row$Trig.Name)
 			newXMLCommentNode(cmt, parent=node)
 			cmt = paste(sep=" ", "Ele: OSM:", osm_row$ele, "OS:", os_row$HEIGHT)
+			newXMLCommentNode(cmt, parent=node)
+			# FIXME - we should check if the note:ele tag already exists and compare it against
+			# what is expected.
+			cmt = paste(sep="", "Add new note:ele=ele value in ODN. ele:EGM96=", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 			newXMLCommentNode(cmt, parent=node)
 
 			cmt = paste(sep=" ", "Type: OSM:", osm_row$survey_point,
@@ -2341,7 +2347,9 @@ if( generate_osc ) {
 					newXMLNode("tag", attrs=attrs, parent=node)
 				}
 			} else {
-				cmt = paste(sep=" ", "ele field already set:", osm_row$ele)
+				cmt = paste(sep=" ", "ele field already set:", osm_row$ele, ": OSM val:", os_row$HEIGHT)
+				newXMLCommentNode(cmt, parent=node)
+				cmt = paste(sep="", "Add new note:ele=ele value in ODN. ele:EGM96=", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 				newXMLCommentNode(cmt, parent=node)
 			}
 
@@ -2563,18 +2571,20 @@ if( generate_js ) {
 
 	write(paste("var reviewnode_array = ["), file=reviewnode_file, append=FALSE)
 
-	for(i in 1:nrow(reviewnode_df)) {
-		os_row <- reviewnode_df[i,]
-		osm_row <- osm_sf[os_row$nearest_osm_id,]
-		osb_row <- os_b_sf[os_row$nearest_osb_id,]
+	if( nrow(reviewnode_df) != 0 ) {
+		for(i in 1:nrow(reviewnode_df)) {
+			os_row <- reviewnode_df[i,]
+			osm_row <- osm_sf[os_row$nearest_osm_id,]
+			osb_row <- os_b_sf[os_row$nearest_osb_id,]
 
-		os_coords=st_coordinates(os_row$geometry)
-		write(paste(sep="", "\t[",
-			round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
-			lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
-			node_compare_html("Review Node",os_row, osb_row, osm_row),
-			"],"),
-			file=reviewnode_file,append=TRUE)
+			os_coords=st_coordinates(os_row$geometry)
+			write(paste(sep="", "\t[",
+				round(as.double(os_coords[,"Y"]), digits=OSM_DIGITS), ",",
+				lon=round(as.double(os_coords[,"X"]), digits=OSM_DIGITS), ",",
+				node_compare_html("Review Node",os_row, osb_row, osm_row),
+				"],"),
+				file=reviewnode_file,append=TRUE)
+		}
 	}
 	write("];", file=reviewnode_file, append=TRUE)
 
