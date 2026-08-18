@@ -442,7 +442,8 @@ First, you will need to obtain and install some data files
 
 #### Getting the data
 
-Before processing we need to obtain three sets of data, and one needs a little preparation:
+Before processing we need to obtain three sets of data, and one needs a little preparation. Also
+see the [R/data](R/data/README.md) for more information.
 
 ##### OS Trigpoint data
 
@@ -574,21 +575,9 @@ Well, that's probably a fair start. Now, let's consider what interesting data we
 
 ### tags proposal
 
-I guess I should make a first pass stab at what we are going to store where. We'll start with any
-'new' trigpoints, as that saves us having to work out any potential merging and clashes with existing
-OSM nodes...
-
-| Item | tag | Notes |
-| ---- | --- | ----- |
-| Name | `name` | Use the `Trig.Name` from the OS Trigpoint csv |
-| Height | `ele` | Use the height from the OS Trigpoint csv in *metres* | 
-| Type | `survey_point:structure`=`pillar` | Seems to be common on OSM nodes |
-| FB   | `ref` | Seems to be predominant in existing data. |
-| Source | `source`='Ordnance Survey (OGL)' | 184 exising OSM nodes already use this as `source` |
-| `New.Name` | `ref:os` | Store the unique OS trigpoint identifier in a unique OS tag - open to discussion! |
-| - | `survey_point:datum_aligned`=`yes` | Pillars are by definition aligned |
-| - | `survey_point:purpose`=`both` | Pillars have both X/Y and Z values |
-| - | `note`=`Do not move this node, see - https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import` | Try to ensure they only get editied if really need be |
+The tagging plan has matured over time. Please see the
+[tagging plan on the OSM wiki page](https://wiki.openstreetmap.org/wiki/OS_Pillar_Trigpoint_Import#Tagging_Plans)
+for the most upto date information.
 
 ## Next Steps
 
