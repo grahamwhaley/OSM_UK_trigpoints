@@ -1998,7 +1998,7 @@ if( generate_osc ) {
 					newXMLCommentNode(cmt, parent=node)
 				}
 			} else {
-				cmt = paste(sep=" ", "ele field already set:", osm_row$ele, ": OSM val:", os_row$HEIGHT)
+				cmt = paste(sep=" ", "ele field already set: OSM:", osm_row$ele, " OS:", os_row$HEIGHT)
 				newXMLCommentNode(cmt, parent=node)
 				cmt = paste(sep="", "Add new note:ele=ele value in ODN. ele:EGM96=", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 				newXMLCommentNode(cmt, parent=node)
@@ -2347,7 +2347,7 @@ if( generate_osc ) {
 					newXMLNode("tag", attrs=attrs, parent=node)
 				}
 			} else {
-				cmt = paste(sep=" ", "ele field already set:", osm_row$ele, ": OSM val:", os_row$HEIGHT)
+				cmt = paste(sep=" ", "ele field already set: OSM:", osm_row$ele, " OS:", os_row$HEIGHT)
 				newXMLCommentNode(cmt, parent=node)
 				cmt = paste(sep="", "Add new note:ele=ele value in ODN. ele:EGM96=", round(os_row$egm96_height, digits=HEIGHT_DIGITS))
 				newXMLCommentNode(cmt, parent=node)

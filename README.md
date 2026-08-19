@@ -203,7 +203,7 @@ within >4km.
       <tag k="name" v="Camilty Hill"/>
       <!--ele tag is in ODN-->
       <tag k="ele" v="290.453"/>
-      <tag k="note:ele" v="ele value in ODN. ele:EGM96=290.25"/>
+      <tag k="note:ele" v="ele value in ODN. ele:EGM96=290.26"/>
       <tag k="survey_point:structure" v="pillar"/>
       <tag k="survey_point:datum_aligned" v="yes"/>
       <tag k="survey_point:purpose" v="both"/>
@@ -230,8 +230,8 @@ Nodes that could do with human review.
       <!--OS node co-ords are 50.8700669 , -4.2195512-->
       <!--That is 0.02 m from its nearest OSM node-->
       <!--OS node called [ Berry ] vs OSM [ Berry ]-->
-      <!--ele field already set: 176.015-->
-      <!--Add new note:ele=ele value in ODN. ele:EGM96=175.95-->
+      <!--ele field already set: OSM: 176.015  OS: 176.015-->
+      <!--Add new note:ele=ele value in ODN. ele:EGM96=175.92-->
       <!--survey_point tag not empty (good) pillar-->
       <!--Add new survey_point:structure: pillar-->
       <!--Add new survey_point:datum_aligned: yes-->
@@ -251,8 +251,8 @@ Nodes that could do with human review.
       <!--OS node co-ords are 50.9768156 , -1.2040431-->
       <!--That is 1.18 m from its nearest OSM node-->
       <!--OS node called [ Berry Hill ] vs OSM [ Stephen's Castle Down ]-->
-      <!--ele field already set: 119-->
-      <!--Add new note:ele=ele value in ODN. ele:EGM96=118.04-->
+      <!--ele field already set: OSM: 119  OS: 118.39-->
+      <!--Add new note:ele=ele value in ODN. ele:EGM96=118.05-->
       <!--survey_point tag is empty (good)-->
       <!--Add new survey_point:structure: pillar-->
       <!--Add new survey_point:datum_aligned: yes-->

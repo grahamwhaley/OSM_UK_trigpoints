@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <osmChange version="0.6" generator="github.com/grahamwhaley/OSM_UK_trigpoints">
-  <!--OSM Nodes for potential edit/merge. Generated on: 2026-08-17-->
+  <!--OSM Nodes for potential edit/merge. Generated on: 2026-08-19-->
   <!--863 nodes to process-->
   <!--Note, geometries are in ETRS89-->
   <modify>
@@ -88,7 +88,7 @@
       <!--Add new name: Allanshill-->
       <tag k="name" v="Allanshill"/>
       <!--Ref field already set: S7097-->
-      <!--ele field already set: 143 : OSM val: 143.243-->
+      <!--ele field already set: OSM: 143  OS: 143.243-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=142.85-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -135,7 +135,7 @@
       <!--Name field already set: An Cabar-->
       <!--Add new FB ref: S9494-->
       <tag k="ref" v="S9494"/>
-      <!--ele field already set: 558.19 : OSM val: 558.192-->
+      <!--ele field already set: OSM: 558.19  OS: 558.192-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=557.93-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -259,7 +259,7 @@
       <tag k="name" v="Ashe Warren"/>
       <!--Add new FB ref: S7692-->
       <tag k="ref" v="S7692"/>
-      <!--ele field already set: 152 : OSM val: 152.723-->
+      <!--ele field already set: OSM: 152  OS: 152.723-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=152.43-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -283,7 +283,7 @@
       <!--Add new name: Askwith Moor (1985)-->
       <tag k="name" v="Askwith Moor (1985)"/>
       <!--Ref field already set: S7875-->
-      <!--ele field already set: 300.8 : OSM val: 300.581-->
+      <!--ele field already set: OSM: 300.8  OS: 300.581-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=300.24-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -308,7 +308,7 @@
       <tag k="name" v="Aston Grove"/>
       <!--Add new FB ref: S4973-->
       <tag k="ref" v="S4973"/>
-      <!--ele field already set: 117 : OSM val: 117.043-->
+      <!--ele field already set: OSM: 117  OS: 117.043-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=116.82-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -330,7 +330,7 @@
       <!-- from lat: 57.2995374 lon: -5.5999153-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.299479,-5.5997809,15z-->
       <!--Name field already set: Auchtertyre Hill-->
-      <!--ele field already set: 452 : OSM val: 452.628-->
+      <!--ele field already set: OSM: 452  OS: 452.628-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=452.34-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -352,7 +352,7 @@
       <!-- from lat: 54.2923807 lon: -2.4306318-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.2923787,-2.4306389,15z-->
       <!--Name field already set: Aye Gill Pike-->
-      <!--ele field already set: 556.3 : OSM val: 556.564-->
+      <!--ele field already set: OSM: 556.3  OS: 556.564-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=556.31-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -403,7 +403,7 @@
       <tag k="name" v="Baddesley"/>
       <!--Add new FB ref: S2470-->
       <tag k="ref" v="S2470"/>
-      <!--ele field already set: 57 : OSM val: 56.97-->
+      <!--ele field already set: OSM: 57  OS: 56.97-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=56.52-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -452,7 +452,7 @@
       <!--Add new name: Bagborough-->
       <tag k="name" v="Bagborough"/>
       <!--Ref field already set: S1526-->
-      <!--ele field already set: 384 : OSM val: 384.617-->
+      <!--ele field already set: OSM: 384  OS: 384.617-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=384.55-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -574,7 +574,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1079815,-3.3919445,15z-->
       <!--Add new name: Banc Y Celyn-->
       <tag k="name" v="Banc Y Celyn"/>
-      <!--ele field already set: 472 : OSM val: 472.44-->
+      <!--ele field already set: OSM: 472  OS: 472.44-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=472.42-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -699,7 +699,7 @@
       <!--Name field already set: Barford Down-->
       <!--Add new FB ref: S2605-->
       <tag k="ref" v="S2605"/>
-      <!--ele field already set: 109 : OSM val: 109.731-->
+      <!--ele field already set: OSM: 109  OS: 109.731-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=109.24-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -724,7 +724,7 @@
       <tag k="name" v="Barkestone"/>
       <!--Add new FB ref: S1750-->
       <tag k="ref" v="S1750"/>
-      <!--ele field already set: 63.8127441 : OSM val: 64.745-->
+      <!--ele field already set: OSM: 63.8127441  OS: 64.745-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=64.31-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -748,7 +748,7 @@
       <!--Name field already set: Barnbauchle Hill-->
       <!--Add new FB ref: S7916-->
       <tag k="ref" v="S7916"/>
-      <!--ele field already set: 184 : OSM val: 184.751-->
+      <!--ele field already set: OSM: 184  OS: 184.751-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=184.27-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -771,7 +771,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.2777616,-4.6595521,15z-->
       <!--Add new name: Barony Hill-->
       <tag k="name" v="Barony Hill"/>
-      <!--ele field already set: 320 : OSM val: 320.649-->
+      <!--ele field already set: OSM: 320  OS: 320.649-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=320.55-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -796,7 +796,7 @@
       <tag k="name" v="Bathampton Down"/>
       <!--Add new FB ref: S3228-->
       <tag k="ref" v="S3228"/>
-      <!--ele field already set: 204 : OSM val: 204.267-->
+      <!--ele field already set: OSM: 204  OS: 204.267-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=204.06-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1116,7 +1116,7 @@
       <!-- from lat: 57.0098569 lon: -3.7237921-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.009858,-3.7237954,15z-->
       <!--Name field already set: Beinn Bhrotain-->
-      <!--ele field already set: 1157 : OSM val: 1157.02-->
+      <!--ele field already set: OSM: 1157  OS: 1157.02-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=1156.78-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1138,7 +1138,7 @@
       <!-- from lat: 56.09334 lon: -4.7544215-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.0933308,-4.7544195,15z-->
       <!--Name field already set: Beinn Chaorach-->
-      <!--ele field already set: 713 : OSM val: 713.536-->
+      <!--ele field already set: OSM: 713  OS: 713.536-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=713.49-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1160,7 +1160,7 @@
       <!-- from lat: 57.8999019 lon: -6.9142328-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.8998955,-6.9142367,15z-->
       <!--Name field already set: Beinn Dhubh-->
-      <!--ele field already set: 506 : OSM val: 506.577-->
+      <!--ele field already set: OSM: 506  OS: 506.577-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=506.38-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1379,7 +1379,7 @@
       <!-- from lat: 56.6960025 lon: -6.0234499-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.6959948,-6.0234859,15z-->
       <!--Name field already set: Ben Hiant-->
-      <!--ele field already set: 528 : OSM val: 527.913-->
+      <!--ele field already set: OSM: 528  OS: 527.913-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=527.85-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1401,7 +1401,7 @@
       <!-- from lat: 58.4131317 lon: -4.6079325-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#58.4131012,-4.6078744,15z-->
       <!--Name field already set: Ben Hope-->
-      <!--ele field already set: 927 : OSM val: 927.506-->
+      <!--ele field already set: OSM: 927  OS: 927.506-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=927.11-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1423,7 +1423,7 @@
       <!-- from lat: 58.551055 lon: -4.5129219-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#58.5510184,-4.5130862,15z-->
       <!--Name field already set: Ben Hutig-->
-      <!--ele field already set: 408 : OSM val: 408.127-->
+      <!--ele field already set: OSM: 408  OS: 408.127-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=407.59-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1519,7 +1519,7 @@
       <!-- from lat: 56.1903623 lon: -4.6332874-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.1903159,-4.6330874,15z-->
       <!--Name field already set: Ben Lomond-->
-      <!--ele field already set: 974 : OSM val: 973.836-->
+      <!--ele field already set: OSM: 974  OS: 973.836-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=973.78-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1567,7 +1567,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.0800102,-7.2914335,15z-->
       <!--Add new name: Ben Scrien (Eriskay I)-->
       <tag k="name" v="Ben Scrien (Eriskay I)"/>
-      <!--ele field already set: 185 : OSM val: 185.623-->
+      <!--ele field already set: OSM: 185  OS: 185.623-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=185.55-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1589,7 +1589,7 @@
       <!-- from lat: 57.3909574 lon: -6.1425559-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.390997,-6.1425324,15z-->
       <!--Name field already set: Ben Tianavaig-->
-      <!--ele field already set: 413 : OSM val: 413.308-->
+      <!--ele field already set: OSM: 413  OS: 413.308-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=413.15-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1663,7 +1663,7 @@
       <!--Add new name: Bengairn-->
       <tag k="name" v="Bengairn"/>
       <!--Ref field already set: S8424-->
-      <!--ele field already set: 391 : OSM val: 391.363-->
+      <!--ele field already set: OSM: 391  OS: 391.363-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=390.98-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1736,7 +1736,7 @@
       <!--Add new name: Big Morton-->
       <tag k="name" v="Big Morton"/>
       <!--Ref field already set: S7753-->
-      <!--ele field already set: 417 : OSM val: 417.576-->
+      <!--ele field already set: OSM: 417  OS: 417.576-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=417.28-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1760,7 +1760,7 @@
       <!--Name field already set: Bignall Hill-->
       <!--Add new FB ref: S2676-->
       <tag k="ref" v="S2676"/>
-      <!--ele field already set: 236 : OSM val: 236.588-->
+      <!--ele field already set: OSM: 236  OS: 236.588-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=236.38-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1785,7 +1785,7 @@
       <tag k="name" v="Bignor Beacon"/>
       <!--Add new FB ref: S1519-->
       <tag k="ref" v="S1519"/>
-      <!--ele field already set: 245 : OSM val: 245.126-->
+      <!--ele field already set: OSM: 245  OS: 245.126-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=244.87-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1834,7 +1834,7 @@
       <!--Add new name: Binsey-->
       <tag k="name" v="Binsey"/>
       <!--Ref field already set: S5707-->
-      <!--ele field already set: 447.4 : OSM val: 447.446-->
+      <!--ele field already set: OSM: 447.4  OS: 447.446-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=447.44-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -1932,7 +1932,7 @@
       <!--Name field already set: Bishopstone Down-->
       <!--Add new FB ref: S2209-->
       <tag k="ref" v="S2209"/>
-      <!--ele field already set: 181 : OSM val: 181.13-->
+      <!--ele field already set: OSM: 181  OS: 181.13-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=180.72-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -1956,7 +1956,7 @@
       <!--Add new name: Black Combe-->
       <tag k="name" v="Black Combe"/>
       <!--Ref field already set: 11602-->
-      <!--ele field already set: 600 : OSM val: 600.76-->
+      <!--ele field already set: OSM: 600  OS: 600.76-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=600.69-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -1978,7 +1978,7 @@
       <!--Add new name: Black Edge-->
       <tag k="name" v="Black Edge"/>
       <!--Ref field already set: S2775-->
-      <!--ele field already set: 506.4 : OSM val: 507.187-->
+      <!--ele field already set: OSM: 506.4  OS: 507.187-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=507.28-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -2023,7 +2023,7 @@
       <!-- from lat: 55.6674442 lon: -3.1013854-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.6674333,-3.1013395,15z-->
       <!--Name field already set: Black Law-->
-      <!--ele field already set: 538 : OSM val: 537.972-->
+      <!--ele field already set: OSM: 538  OS: 537.972-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=537.68-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -2094,7 +2094,7 @@
       <!-- from lat: 55.6984142 lon: -3.46545-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.6984115,-3.4654328,15z-->
       <!--Name field already set: Black Mount-->
-      <!--ele field already set: 516 : OSM val: 516.026-->
+      <!--ele field already set: OSM: 516  OS: 516.026-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=515.79-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -2167,7 +2167,7 @@
       <!--Name field already set: Blackford Hill-->
       <!--Add new FB ref: S3014-->
       <tag k="ref" v="S3014"/>
-      <!--ele field already set: 164 : OSM val: 164.759-->
+      <!--ele field already set: OSM: 164  OS: 164.759-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=164.4-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -2189,7 +2189,7 @@
       <!-- from lat: 55.7236046 lon: -3.0916934-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.7235943,-3.0916807,15z-->
       <!--Name field already set: Blackhope Scar-->
-      <!--ele field already set: 651 : OSM val: 651.662-->
+      <!--ele field already set: OSM: 651  OS: 651.662-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=651.47-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -2409,7 +2409,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.8389579,-2.6295202,15z-->
       <!--Add new name: Blotting Raise-->
       <tag k="name" v="Blotting Raise"/>
-      <!--ele field already set: 591.3 : OSM val: 591.616-->
+      <!--ele field already set: OSM: 591.3  OS: 591.616-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=591.42-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -2433,7 +2433,7 @@
       <!--Add new name: Bole Hill-->
       <tag k="name" v="Bole Hill"/>
       <!--Ref field already set: S4153-->
-      <!--ele field already set: 355 : OSM val: 355.762-->
+      <!--ele field already set: OSM: 355  OS: 355.762-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=355.81-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -2483,7 +2483,7 @@
       <!--Add new name: Botallack Head-->
       <tag k="name" v="Botallack Head"/>
       <!--Ref field already set: S8138-->
-      <!--ele field already set: 98.755 : OSM val: 98.755-->
+      <!--ele field already set: OSM: 98.755  OS: 98.755-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=98.3-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -2635,7 +2635,7 @@
       <tag k="name" v="Bradenstoke"/>
       <!--Add new FB ref: S2397-->
       <tag k="ref" v="S2397"/>
-      <!--ele field already set: 156 : OSM val: 156.633-->
+      <!--ele field already set: OSM: 156  OS: 156.633-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=156.42-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -2813,7 +2813,7 @@
       <!--Add new name: Breck-->
       <tag k="name" v="Breck"/>
       <!--Ref field already set: S9325-->
-      <!--ele field already set: 18.897 : OSM val: 18.897-->
+      <!--ele field already set: OSM: 18.897  OS: 18.897-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=18.05-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -2935,7 +2935,7 @@
       <!--Name field already set: Brims Hill-->
       <!--Add new FB ref: 6547-->
       <tag k="ref" v="6547"/>
-      <!--ele field already set: 115 : OSM val: 115.269-->
+      <!--ele field already set: OSM: 115  OS: 115.269-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=114.69-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3061,7 +3061,7 @@
       <tag k="name" v="Broad Hill"/>
       <!--Add new FB ref: S5395-->
       <tag k="ref" v="S5395"/>
-      <!--ele field already set: 28.6 : OSM val: 28.599-->
+      <!--ele field already set: OSM: 28.6  OS: 28.599-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=27.99-->
       <!--survey_point[_structure] field already set: triangulation / NA-->
       <!--Add new datum_aligned: yes-->
@@ -3161,7 +3161,7 @@
       <!--Add new name: Brompton Ralph-->
       <tag k="name" v="Brompton Ralph"/>
       <!--Ref field already set: S3737-->
-      <!--ele field already set: 393.5 : OSM val: 393.481-->
+      <!--ele field already set: OSM: 393.5  OS: 393.481-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=393.55-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3208,7 +3208,7 @@
       <!--Name field already set: Broomfield Hill-->
       <!--Add new FB ref: S3735-->
       <tag k="ref" v="S3735"/>
-      <!--ele field already set: 290 : OSM val: 290.611-->
+      <!--ele field already set: OSM: 290  OS: 290.611-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=290.52-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3258,7 +3258,7 @@
       <!--Name field already set: Broughton Down-->
       <!--Add new FB ref: 2622-->
       <tag k="ref" v="2622"/>
-      <!--ele field already set: 138 : OSM val: 138.616-->
+      <!--ele field already set: OSM: 138  OS: 138.616-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=138.2-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -3303,7 +3303,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.4073714,-4.7126103,15z-->
       <!--Add new name: Brown Carrick-->
       <tag k="name" v="Brown Carrick"/>
-      <!--ele field already set: 287 : OSM val: 287.731-->
+      <!--ele field already set: OSM: 287  OS: 287.731-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=287.43-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3401,7 +3401,7 @@
       <!-- from lat: 51.1306837 lon: -0.8536217-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.1306769,-0.8535684,15z-->
       <!--Name field already set: Broxhead Common-->
-      <!--ele field already set: 105 : OSM val: 105.436-->
+      <!--ele field already set: OSM: 105  OS: 105.436-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=105.2-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3528,7 +3528,7 @@
       <!--Name field already set: Buckland Hill-->
       <!--Add new FB ref: 2177-->
       <tag k="ref" v="2177"/>
-      <!--ele field already set: 316 : OSM val: 316.772-->
+      <!--ele field already set: OSM: 316  OS: 316.772-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=316.81-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3553,7 +3553,7 @@
       <tag k="name" v="Buckstone"/>
       <!--Add new FB ref: S6974-->
       <tag k="ref" v="S6974"/>
-      <!--ele field already set: 279 : OSM val: 278.98-->
+      <!--ele field already set: OSM: 279  OS: 278.98-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=278.81-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3603,7 +3603,7 @@
       <!--Name field already set: Bugmore Hill-->
       <!--Add new FB ref: S1646-->
       <tag k="ref" v="S1646"/>
-      <!--ele field already set: 157 : OSM val: 157.404-->
+      <!--ele field already set: OSM: 157  OS: 157.404-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=157.13-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3804,7 +3804,7 @@
       <!--Add new name: Burthallan-->
       <tag k="name" v="Burthallan"/>
       <!--Ref field already set: S7906-->
-      <!--ele field already set: 92.659 : OSM val: 92.659-->
+      <!--ele field already set: OSM: 92.659  OS: 92.659-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=92.18-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -3875,7 +3875,7 @@
       <!--Name field already set: Butter Hill-->
       <!--Add new FB ref: S5435-->
       <tag k="ref" v="S5435"/>
-      <!--ele field already set: 302 : OSM val: 302.3-->
+      <!--ele field already set: OSM: 302  OS: 302.3-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=302.13-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3898,7 +3898,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.8422425,-3.7568364,15z-->
       <!--Add new name: Bwlch Y Ddau-Wynt-->
       <tag k="name" v="Bwlch Y Ddau-Wynt"/>
-      <!--ele field already set: 471 : OSM val: 471.83-->
+      <!--ele field already set: OSM: 471  OS: 471.83-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=471.87-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -3996,7 +3996,7 @@
       <!--Add new name: Cairnsmore Of Deugh-->
       <tag k="name" v="Cairnsmore Of Deugh"/>
       <!--Ref field already set: S1697-->
-      <!--ele field already set: 797 : OSM val: 797.052-->
+      <!--ele field already set: OSM: 797  OS: 797.052-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=796.96-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4119,7 +4119,7 @@
       <!-- from lat: 56.1015839 lon: -4.110993-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.1015749,-4.111021,15z-->
       <!--Name field already set: Carleatheran-->
-      <!--ele field already set: 485 : OSM val: 485.546-->
+      <!--ele field already set: OSM: 485  OS: 485.546-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=485.34-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4165,7 +4165,7 @@
       <!-- from lat: 57.8917273 lon: -4.7049689-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.89172,-4.7049678,15z-->
       <!--Name field already set: Carn A Choin Deirg-->
-      <!--ele field already set: 703 : OSM val: 702.564-->
+      <!--ele field already set: OSM: 703  OS: 702.564-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=702.26-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -4259,7 +4259,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.008289,-5.0672895,15z-->
       <!--Add new name: Carn Fawr-->
       <tag k="name" v="Carn Fawr"/>
-      <!--ele field already set: 213 : OSM val: 213.36-->
+      <!--ele field already set: OSM: 213  OS: 213.36-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=213.62-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -4330,7 +4330,7 @@
       <!--Add new name: Carn Gloose-->
       <tag k="name" v="Carn Gloose"/>
       <!--Ref field already set: S8141-->
-      <!--ele field already set: 94.792 : OSM val: 94.792-->
+      <!--ele field already set: OSM: 94.792  OS: 94.792-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=94.32-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -4352,7 +4352,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1020633,-3.748453,15z-->
       <!--Add new name: Carn Twrch-->
       <tag k="name" v="Carn Twrch"/>
-      <!--ele field already set: 487 : OSM val: 487.07-->
+      <!--ele field already set: OSM: 487  OS: 487.07-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=487.05-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4375,7 +4375,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.9916354,-4.7832222,15z-->
       <!--Add new name: Carnedd Meibion-Owen-->
       <tag k="name" v="Carnedd Meibion-Owen"/>
-      <!--ele field already set: 244 : OSM val: 244.19-->
+      <!--ele field already set: OSM: 244  OS: 244.19-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=244.47-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -4396,7 +4396,7 @@
       <!-- from lat: 52.676217 lon: -3.5928042-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.6762319,-3.5928321,15z-->
       <!--Name field already set: Carnedd Wen-->
-      <!--ele field already set: 523 : OSM val: 523.036-->
+      <!--ele field already set: OSM: 523  OS: 523.036-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=522.94-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4520,7 +4520,7 @@
       <tag k="name" v="Carruchan"/>
       <!--Add new FB ref: S7914-->
       <tag k="ref" v="S7914"/>
-      <!--ele field already set: 76 : OSM val: 76.117-->
+      <!--ele field already set: OSM: 76  OS: 76.117-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=75.56-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4619,7 +4619,7 @@
       <!-- from lat: 55.6552397 lon: -3.487396-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.6552322,-3.4874051,15z-->
       <!--Name field already set: Castle Hill-->
-      <!--ele field already set: 303 : OSM val: 302.971-->
+      <!--ele field already set: OSM: 303  OS: 302.971-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=302.72-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4769,7 +4769,7 @@
       <!--Name field already set: Cefn Bryn-->
       <!--Add new FB ref: 11122-->
       <tag k="ref" v="11122"/>
-      <!--ele field already set: 186 : OSM val: 186.101-->
+      <!--ele field already set: OSM: 186  OS: 186.101-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=185.73-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4792,7 +4792,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.0590179,-3.9481558,15z-->
       <!--Add new name: Cefn Coed-->
       <tag k="name" v="Cefn Coed"/>
-      <!--ele field already set: 283 : OSM val: 283.464-->
+      <!--ele field already set: OSM: 283  OS: 283.464-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=283.38-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -4889,7 +4889,7 @@
       <!--Name field already set: Chaldon Down-->
       <!--Add new FB ref: 6034-->
       <tag k="ref" v="6034"/>
-      <!--ele field already set: 178 : OSM val: 178.228-->
+      <!--ele field already set: OSM: 178  OS: 178.228-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=177.87-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -4989,7 +4989,7 @@
       <!--Name field already set: Cheesefoot Head-->
       <!--Add new FB ref: S1628-->
       <tag k="ref" v="S1628"/>
-      <!--ele field already set: 176 : OSM val: 176.384-->
+      <!--ele field already set: OSM: 176  OS: 176.384-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=176.07-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5063,7 +5063,7 @@
       <!--Name field already set: Chillerton Down-->
       <!--Add new FB ref: S2507-->
       <tag k="ref" v="S2507"/>
-      <!--ele field already set: 167 : OSM val: 167.094-->
+      <!--ele field already set: OSM: 167  OS: 167.094-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=166.84-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5113,7 +5113,7 @@
       <tag k="name" v="Chilworth"/>
       <!--Add new FB ref: S2723-->
       <tag k="ref" v="S2723"/>
-      <!--ele field already set: 91 : OSM val: 91.089-->
+      <!--ele field already set: OSM: 91  OS: 91.089-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=90.65-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5161,7 +5161,7 @@
       <!--Add new name: Church Farm-->
       <tag k="name" v="Church Farm"/>
       <!--Ref field already set: S7863-->
-      <!--ele field already set: 95.402 : OSM val: 95.402-->
+      <!--ele field already set: OSM: 95.402  OS: 95.402-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=95.06-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -5185,7 +5185,7 @@
       <tag k="name" v="Cissbury Ring"/>
       <!--Add new FB ref: S4047-->
       <tag k="ref" v="S4047"/>
-      <!--ele field already set: 184 : OSM val: 183.824-->
+      <!--ele field already set: OSM: 184  OS: 183.824-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=183.52-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5207,7 +5207,7 @@
       <!-- from lat: 56.1154734 lon: -4.8759068-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.115658,-4.8755331,15z-->
       <!--Name field already set: Clach Bheinn-->
-      <!--ele field already set: 437 : OSM val: 437.692-->
+      <!--ele field already set: OSM: 437  OS: 437.692-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=437.63-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5256,7 +5256,7 @@
       <tag k="name" v="Clavering"/>
       <!--Add new FB ref: S4364-->
       <tag k="ref" v="S4364"/>
-      <!--ele field already set: 119 : OSM val: 118.948-->
+      <!--ele field already set: OSM: 119  OS: 118.948-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=118.64-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5330,7 +5330,7 @@
       <!--Name field already set: Cliff End-->
       <!--Add new FB ref: 3981-->
       <tag k="ref" v="3981"/>
-      <!--ele field already set: 97 : OSM val: 96.996-->
+      <!--ele field already set: OSM: 97  OS: 96.996-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=96.65-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5401,7 +5401,7 @@
       <!-- from lat: 57.6284922 lon: -4.4399417-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.6284941,-4.4399447,15z-->
       <!--Name field already set: Cnoc A' Bhreacaich-->
-      <!--ele field already set: 338 : OSM val: 338.937-->
+      <!--ele field already set: OSM: 338  OS: 338.937-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=338.59-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5475,7 +5475,7 @@
       <!-- from lat: 52.388199 lon: -1.9706158-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.3882179,-1.9705931,15z-->
       <!--Name field already set: Cofton Common-->
-      <!--ele field already set: 201.338 : OSM val: 201.338-->
+      <!--ele field already set: OSM: 201.338  OS: 201.338-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=201.25-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5549,7 +5549,7 @@
       <tag k="name" v="Coldtown Beacon"/>
       <!--Add new FB ref: S6634-->
       <tag k="ref" v="S6634"/>
-      <!--ele field already set: 366 : OSM val: 365.729-->
+      <!--ele field already set: OSM: 366  OS: 365.729-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=365.37-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5646,7 +5646,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.1699533,-0.4532152,15z-->
       <!--Add new name: Coneyhurst Hill-->
       <tag k="name" v="Coneyhurst Hill"/>
-      <!--ele field already set: 257 : OSM val: 257.187-->
+      <!--ele field already set: OSM: 257  OS: 257.187-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=256.92-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -5716,7 +5716,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.3931961,-1.9125585,15z-->
       <!--Add new name: Copperthwaite Moor-->
       <tag k="name" v="Copperthwaite Moor"/>
-      <!--ele field already set: 430 : OSM val: 430.377-->
+      <!--ele field already set: OSM: 430  OS: 430.377-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=430.04-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -5765,7 +5765,7 @@
       <!--Add new name: Corbar Hill-->
       <tag k="name" v="Corbar Hill"/>
       <!--Ref field already set: S2767-->
-      <!--ele field already set: 437 : OSM val: 437.046-->
+      <!--ele field already set: OSM: 437  OS: 437.046-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=437.15-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5812,7 +5812,7 @@
       <!--Add new name: Correen Hill-->
       <tag k="name" v="Correen Hill"/>
       <!--Ref field already set: Clova Hill-->
-      <!--ele field already set: 487 : OSM val: 487.68-->
+      <!--ele field already set: OSM: 487  OS: 487.68-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=487.49-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5960,7 +5960,7 @@
       <!--Name field already set: Court Down-->
       <!--Add new FB ref: S3968-->
       <tag k="ref" v="S3968"/>
-      <!--ele field already set: 316 : OSM val: 316.19-->
+      <!--ele field already set: OSM: 316  OS: 316.19-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=316.37-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -5985,7 +5985,7 @@
       <tag k="name" v="Court Farm W Blatchington"/>
       <!--Add new FB ref: S4032-->
       <tag k="ref" v="S4032"/>
-      <!--ele field already set: 137 : OSM val: 137.385-->
+      <!--ele field already set: OSM: 137  OS: 137.385-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=137.08-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6036,7 +6036,7 @@
       <tag k="name" v="Craig Hill"/>
       <!--Add new FB ref: S7915-->
       <tag k="ref" v="S7915"/>
-      <!--ele field already set: 95 : OSM val: 95.222-->
+      <!--ele field already set: OSM: 95  OS: 95.222-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=94.69-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6133,7 +6133,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.0917433,-4.4121191,15z-->
       <!--Add new name: Craiglee-->
       <tag k="name" v="Craiglee"/>
-      <!--ele field already set: 530.66 : OSM val: 531.571-->
+      <!--ele field already set: OSM: 530.66  OS: 531.571-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=531.39-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6180,7 +6180,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8526767,-5.0905464,15z-->
       <!--Add new name: Cranslagmorie Hill-->
       <tag k="name" v="Cranslagmorie Hill"/>
-      <!--ele field already set: 139 : OSM val: 139.47-->
+      <!--ele field already set: OSM: 139  OS: 139.47-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=139.22-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6227,7 +6227,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.0947044,-1.4882734,15z-->
       <!--Add new name: Crich Mount-->
       <tag k="name" v="Crich Mount"/>
-      <!--ele field already set: 286 : OSM val: 286.429-->
+      <!--ele field already set: OSM: 286  OS: 286.429-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=286.28-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -6273,7 +6273,7 @@
       <!-- from lat: 54.7029614 lon: -2.4867054-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7029472,-2.4867014,15z-->
       <!--Name field already set: Cross Fell-->
-      <!--ele field already set: 893 : OSM val: 893.368-->
+      <!--ele field already set: OSM: 893  OS: 893.368-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=893.19-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6297,7 +6297,7 @@
       <!--Name field already set: Crow Hill-->
       <!--Add new FB ref: S4371-->
       <tag k="ref" v="S4371"/>
-      <!--ele field already set: 383 : OSM val: 383.801-->
+      <!--ele field already set: OSM: 383  OS: 383.801-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=383.61-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6347,7 +6347,7 @@
       <!--Name field already set: Cruban Beag-->
       <!--Add new FB ref: 10757-->
       <tag k="ref" v="10757"/>
-      <!--ele field already set: 590 : OSM val: 590.047-->
+      <!--ele field already set: OSM: 590  OS: 590.047-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=589.92-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6369,7 +6369,7 @@
       <!-- from lat: 51.8977268 lon: -3.0736038-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.8977213,-3.0735919,15z-->
       <!--Name field already set: Crug Mawr-->
-      <!--ele field already set: 550 : OSM val: 550.468-->
+      <!--ele field already set: OSM: 550  OS: 550.468-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=550.52-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6442,7 +6442,7 @@
       <!--Add new name: Cudden Point-->
       <tag k="name" v="Cudden Point"/>
       <!--Ref field already set: S8075-->
-      <!--ele field already set: 62.038 : OSM val: 62.038-->
+      <!--ele field already set: OSM: 62.038  OS: 62.038-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=61.56-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -6465,7 +6465,7 @@
       <!--Add new name: Culardoch-->
       <tag k="name" v="Culardoch"/>
       <!--Ref field already set: S8729-->
-      <!--ele field already set: 900.379 : OSM val: 900.379-->
+      <!--ele field already set: OSM: 900.379  OS: 900.379-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=899.98-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6565,7 +6565,7 @@
       <!--Add new name: Cutsdean Hill-->
       <tag k="name" v="Cutsdean Hill"/>
       <!--Ref field already set: S1522-->
-      <!--ele field already set: 305.5 : OSM val: 305.491-->
+      <!--ele field already set: OSM: 305.5  OS: 305.491-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=305.36-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -6640,7 +6640,7 @@
       <!--Name field already set: Deacon Hill-->
       <!--Add new FB ref: S2636-->
       <tag k="ref" v="S2636"/>
-      <!--ele field already set: 143 : OSM val: 143.06-->
+      <!--ele field already set: OSM: 143  OS: 143.06-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=142.72-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6764,7 +6764,7 @@
       <!--Name field already set: Dionscourt Hill-->
       <!--Add new FB ref: S7893-->
       <tag k="ref" v="S7893"/>
-      <!--ele field already set: 291 : OSM val: 291.532-->
+      <!--ele field already set: OSM: 291  OS: 291.532-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=291.43-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6812,7 +6812,7 @@
       <!-- from lat: 55.9668144 lon: -4.48931-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.96681,-4.4893244,15z-->
       <!--Name field already set: Doughnot Hill-->
-      <!--ele field already set: 374 : OSM val: 374.599-->
+      <!--ele field already set: OSM: 374  OS: 374.599-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=374.35-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -6833,7 +6833,7 @@
       <!-- from lat: 56.1362448 lon: -4.7525805-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.1362415,-4.7523982,15z-->
       <!--Name field already set: Doune Hill-->
-      <!--ele field already set: 734 : OSM val: 734.263-->
+      <!--ele field already set: OSM: 734  OS: 734.263-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=734.23-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6908,7 +6908,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.2118275,-3.6665926,15z-->
       <!--Add new name: Drygarn-->
       <tag k="name" v="Drygarn"/>
-      <!--ele field already set: 641 : OSM val: 641.604-->
+      <!--ele field already set: OSM: 641  OS: 641.604-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=641.66-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -6956,7 +6956,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.4592726,-4.2905238,15z-->
       <!--Add new name: Dunain Hill-->
       <tag k="name" v="Dunain Hill"/>
-      <!--ele field already set: 281 : OSM val: 281.635-->
+      <!--ele field already set: OSM: 281  OS: 281.635-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=281.17-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7054,7 +7054,7 @@
       <tag k="name" v="Dunley Wood"/>
       <!--Add new FB ref: S3778-->
       <tag k="ref" v="S3778"/>
-      <!--ele field already set: 226 : OSM val: 226.518-->
+      <!--ele field already set: OSM: 226  OS: 226.518-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=226.22-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7103,7 +7103,7 @@
       <tag k="name" v="Dunsapie Tank"/>
       <!--Add new FB ref: S3016-->
       <tag k="ref" v="S3016"/>
-      <!--ele field already set: 91.13 : OSM val: 91.44-->
+      <!--ele field already set: OSM: 91.13  OS: 91.44-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=91.03-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7277,7 +7277,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.322322,-2.4145749,15z-->
       <!--Add new name: East Baugh Fell-->
       <tag k="name" v="East Baugh Fell"/>
-      <!--ele field already set: 676 : OSM val: 676.046-->
+      <!--ele field already set: OSM: 676  OS: 676.046-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=675.81-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7350,7 +7350,7 @@
       <tag k="name" v="Eastacott Hill"/>
       <!--Add new FB ref: S1601-->
       <tag k="ref" v="S1601"/>
-      <!--ele field already set: 199 : OSM val: 199.872-->
+      <!--ele field already set: OSM: 199  OS: 199.872-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=199.78-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7399,7 +7399,7 @@
       <!--Name field already set: Ecton Hill-->
       <!--Add new FB ref: S2765-->
       <tag k="ref" v="S2765"/>
-      <!--ele field already set: 369 : OSM val: 369.661-->
+      <!--ele field already set: OSM: 369  OS: 369.661-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=369.76-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7626,7 +7626,7 @@
       <!--Name field already set: Farteg Hill-->
       <!--Add new FB ref: S2036-->
       <tag k="ref" v="S2036"/>
-      <!--ele field already set: 352 : OSM val: 352.766-->
+      <!--ele field already set: OSM: 352  OS: 352.766-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=352.65-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -7650,7 +7650,7 @@
       <tag k="name" v="Fellbarrow"/>
       <!--Add new FB ref: S5229-->
       <tag k="ref" v="S5229"/>
-      <!--ele field already set: 415.4 : OSM val: 416.143-->
+      <!--ele field already set: OSM: 415.4  OS: 416.143-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=416.25-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7674,7 +7674,7 @@
       <!--Name field already set: Ferryton-->
       <!--Add new FB ref: S8039-->
       <tag k="ref" v="S8039"/>
-      <!--ele field already set: 69 : OSM val: 69.491-->
+      <!--ele field already set: OSM: 69  OS: 69.491-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=69.01-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7897,7 +7897,7 @@
       <tag k="name" v="Fort Purbrook"/>
       <!--Add new FB ref: S2708-->
       <tag k="ref" v="S2708"/>
-      <!--ele field already set: 96 : OSM val: 96.624-->
+      <!--ele field already set: OSM: 96  OS: 96.624-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=96.27-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -7969,7 +7969,7 @@
       <tag k="name" v="Four Marks"/>
       <!--Add new FB ref: S1672-->
       <tag k="ref" v="S1672"/>
-      <!--ele field already set: 215 : OSM val: 214.987-->
+      <!--ele field already set: OSM: 215  OS: 214.987-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=214.76-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8044,7 +8044,7 @@
       <!--Name field already set: Frankley Beeches-->
       <!--Add new FB ref: S2330-->
       <tag k="ref" v="S2330"/>
-      <!--ele field already set: 256.275 : OSM val: 256.275-->
+      <!--ele field already set: OSM: 256.275  OS: 256.275-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=256.22-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8068,7 +8068,7 @@
       <!--Add new name: Frog Hill-->
       <tag k="name" v="Frog Hill"/>
       <!--Ref field already set: S2160-->
-      <!--ele field already set: 56 : OSM val: 56.144-->
+      <!--ele field already set: OSM: 56  OS: 56.144-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=55.88-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8092,7 +8092,7 @@
       <!--Add new name: Frythens-->
       <tag k="name" v="Frythens"/>
       <!--Ref field already set: S7937-->
-      <!--ele field already set: 60.664 : OSM val: 60.664-->
+      <!--ele field already set: OSM: 60.664  OS: 60.664-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=60.17-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -8188,7 +8188,7 @@
       <!-- from lat: 52.1457844 lon: -3.385062-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.1457694,-3.3850735,15z-->
       <!--Name field already set: Garth-->
-      <!--ele field already set: 280 : OSM val: 280.72-->
+      <!--ele field already set: OSM: 280  OS: 280.72-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=280.65-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8288,7 +8288,7 @@
       <tag k="name" v="Gedney Drove End"/>
       <!--Add new FB ref: 10673-->
       <tag k="ref" v="10673"/>
-      <!--ele field already set: 4 : OSM val: 3.761-->
+      <!--ele field already set: OSM: 4  OS: 3.761-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=3.31-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -8562,7 +8562,7 @@
       <!--Add new name: Goldenberry Hill-->
       <tag k="name" v="Goldenberry Hill"/>
       <!--Ref field already set: S4814-->
-      <!--ele field already set: 140 : OSM val: 139.939-->
+      <!--ele field already set: OSM: 140  OS: 139.939-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=139.57-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8586,7 +8586,7 @@
       <!--Add new name: Goodern-->
       <tag k="name" v="Goodern"/>
       <!--Ref field already set: S7691-->
-      <!--ele field already set: 109.785 : OSM val: 109.785-->
+      <!--ele field already set: OSM: 109.785  OS: 109.785-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=109.42-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -8609,7 +8609,7 @@
       <!--Add new name: Goonhilly Down-->
       <tag k="name" v="Goonhilly Down"/>
       <!--Ref field already set: S1732-->
-      <!--ele field already set: 112.916 : OSM val: 112.916-->
+      <!--ele field already set: OSM: 112.916  OS: 112.916-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=112.76-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -8632,7 +8632,7 @@
       <!--Add new name: Gore Heath-->
       <tag k="name" v="Gore Heath"/>
       <!--Ref field already set: S2541-->
-      <!--ele field already set: 44 : OSM val: 44.317-->
+      <!--ele field already set: OSM: 44  OS: 44.317-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=43.93-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8732,7 +8732,7 @@
       <!--Add new name: Great Knoutberry Hill-->
       <tag k="name" v="Great Knoutberry Hill"/>
       <!--Ref field already set: S8285-->
-      <!--ele field already set: 672 : OSM val: 672.41-->
+      <!--ele field already set: OSM: 672  OS: 672.41-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=672.18-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -8776,7 +8776,7 @@
       <!-- from lat: 54.3708653 lon: -2.2345109-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.3708845,-2.2344962,15z-->
       <!--Name field already set: Great Shunner Fell-->
-      <!--ele field already set: 716 : OSM val: 716.28-->
+      <!--ele field already set: OSM: 716  OS: 716.28-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=716.08-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -8845,7 +8845,7 @@
       <!-- from lat: 54.4043415 lon: -2.4656829-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4043284,-2.4656994,15z-->
       <!--Name field already set: Green Bell-->
-      <!--ele field already set: 605.0 : OSM val: 605.332-->
+      <!--ele field already set: OSM: 605.0  OS: 605.332-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=605.1-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8869,7 +8869,7 @@
       <!--Name field already set: Green Hill-->
       <!--Add new FB ref: S6658-->
       <tag k="ref" v="S6658"/>
-      <!--ele field already set: 529.8 : OSM val: 529.842-->
+      <!--ele field already set: OSM: 529.8  OS: 529.842-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=529.54-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -8891,7 +8891,7 @@
       <!-- from lat: 55.3898733 lon: -3.7375373-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.3898698,-3.7375085,15z-->
       <!--Name field already set: Green Lowther-->
-      <!--ele field already set: 732 : OSM val: 732.739-->
+      <!--ele field already set: OSM: 732  OS: 732.739-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=732.65-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9040,7 +9040,7 @@
       <tag k="name" v="Grovely Hill"/>
       <!--Add new FB ref: S2207-->
       <tag k="ref" v="S2207"/>
-      <!--ele field already set: 144 : OSM val: 144.1-->
+      <!--ele field already set: OSM: 144  OS: 144.1-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=143.69-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9064,7 +9064,7 @@
       <!--Add new name: Gun-->
       <tag k="name" v="Gun"/>
       <!--Ref field already set: S2615-->
-      <!--ele field already set: 386 : OSM val: 385.669-->
+      <!--ele field already set: OSM: 386  OS: 385.669-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=385.64-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -9087,7 +9087,7 @@
       <!--Name field already set: Gussage Hill-->
       <!--Add new FB ref: 2591-->
       <tag k="ref" v="2591"/>
-      <!--ele field already set: 117 : OSM val: 117.451-->
+      <!--ele field already set: OSM: 117  OS: 117.451-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=117.03-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9112,7 +9112,7 @@
       <tag k="name" v="Hackpen Hill"/>
       <!--Add new FB ref: S2403-->
       <tag k="ref" v="S2403"/>
-      <!--ele field already set: 272 : OSM val: 272.122-->
+      <!--ele field already set: OSM: 272  OS: 272.122-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=271.96-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9136,7 +9136,7 @@
       <!--Add new name: Hafod-->
       <tag k="name" v="Hafod"/>
       <!--Ref field already set: Hafod TP3560-->
-      <!--ele field already set: 356 : OSM val: 356.512-->
+      <!--ele field already set: OSM: 356  OS: 356.512-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=356.38-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9210,7 +9210,7 @@
       <!--Add new name: Halnaker Hill-->
       <tag k="name" v="Halnaker Hill"/>
       <!--Ref field already set: S4110-->
-      <!--ele field already set: 127 : OSM val: 127.101-->
+      <!--ele field already set: OSM: 127  OS: 127.101-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=126.8-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9436,7 +9436,7 @@
       <!-- from lat: 53.4137466 lon: -1.934102-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.4137448,-1.9341147,15z-->
       <!--Name field already set: Harry Hut-->
-      <!--ele field already set: 441 : OSM val: 440.74-->
+      <!--ele field already set: OSM: 441  OS: 440.74-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=440.74-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9536,7 +9536,7 @@
       <tag k="name" v="Hatchet Moor"/>
       <!--Add new FB ref: S2706-->
       <tag k="ref" v="S2706"/>
-      <!--ele field already set: 39 : OSM val: 39.672-->
+      <!--ele field already set: OSM: 39  OS: 39.672-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=39.22-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9561,7 +9561,7 @@
       <tag k="name" v="Hatterrall Hill"/>
       <!--Add new FB ref: S6114-->
       <tag k="ref" v="S6114"/>
-      <!--ele field already set: 464 : OSM val: 464.387-->
+      <!--ele field already set: OSM: 464  OS: 464.387-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=464.39-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9612,7 +9612,7 @@
       <tag k="name" v="Hay Banks"/>
       <!--Add new FB ref: S3708-->
       <tag k="ref" v="S3708"/>
-      <!--ele field already set: 177 : OSM val: 177.088-->
+      <!--ele field already set: OSM: 177  OS: 177.088-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=176.61-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9812,7 +9812,7 @@
       <!--Name field already set: Helsby Hill-->
       <!--Add new FB ref: S3499-->
       <tag k="ref" v="S3499"/>
-      <!--ele field already set: 141 : OSM val: 141.265-->
+      <!--ele field already set: OSM: 141  OS: 141.265-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=140.97-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9889,7 +9889,7 @@
       <tag k="name" v="Heversham Head"/>
       <!--Add new FB ref: S5398-->
       <tag k="ref" v="S5398"/>
-      <!--ele field already set: 123 : OSM val: 122.95-->
+      <!--ele field already set: OSM: 123  OS: 122.95-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=122.56-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9914,7 +9914,7 @@
       <tag k="name" v="Heyshott Down"/>
       <!--Add new FB ref: S4055-->
       <tag k="ref" v="S4055"/>
-      <!--ele field already set: 233 : OSM val: 233.87-->
+      <!--ele field already set: OSM: 233  OS: 233.87-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=233.63-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9938,7 +9938,7 @@
       <!--Add new name: High Blind How-->
       <tag k="name" v="High Blind How"/>
       <!--Ref field already set: S5641-->
-      <!--ele field already set: 269 : OSM val: 269.443-->
+      <!--ele field already set: OSM: 269  OS: 269.443-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=269.29-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -9989,7 +9989,7 @@
       <tag k="name" v="High Cademan"/>
       <!--Add new FB ref: S1635-->
       <tag k="ref" v="S1635"/>
-      <!--ele field already set: 197 : OSM val: 197.108-->
+      <!--ele field already set: OSM: 197  OS: 197.108-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=196.78-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10039,7 +10039,7 @@
       <tag k="name" v="High Dole"/>
       <!--Add new FB ref: S3974-->
       <tag k="ref" v="S3974"/>
-      <!--ele field already set: 125 : OSM val: 125.818-->
+      <!--ele field already set: OSM: 125  OS: 125.818-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=125.49-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10087,7 +10087,7 @@
       <!--Name field already set: High Haume-->
       <!--Add new FB ref: S5373-->
       <tag k="ref" v="S5373"/>
-      <!--ele field already set: 156 : OSM val: 156.539-->
+      <!--ele field already set: OSM: 156  OS: 156.539-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=156.43-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10135,7 +10135,7 @@
       <!--Name field already set: High Neb-->
       <!--Add new FB ref: S2157-->
       <tag k="ref" v="S2157"/>
-      <!--ele field already set: 458 : OSM val: 458.138-->
+      <!--ele field already set: OSM: 458  OS: 458.138-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=458.09-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10159,7 +10159,7 @@
       <!--Name field already set: High Park-->
       <!--Add new FB ref: S5767-->
       <tag k="ref" v="S5767"/>
-      <!--ele field already set: 247 : OSM val: 247.531-->
+      <!--ele field already set: OSM: 247  OS: 247.531-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=247.6-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10233,7 +10233,7 @@
       <!--Add new name: Higher Trolvis Quarry-->
       <tag k="name" v="Higher Trolvis Quarry"/>
       <!--Ref field already set: S7608-->
-      <!--ele field already set: 201.43 : OSM val: 201.43-->
+      <!--ele field already set: OSM: 201.43  OS: 201.43-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=201.1-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -10257,7 +10257,7 @@
       <tag k="name" v="Hill Barn"/>
       <!--Add new FB ref: S5825-->
       <tag k="ref" v="S5825"/>
-      <!--ele field already set: 235 : OSM val: 235.442-->
+      <!--ele field already set: OSM: 235  OS: 235.442-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=235.24-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10307,7 +10307,7 @@
       <tag k="name" v="Hill House"/>
       <!--Add new FB ref: S4170-->
       <tag k="ref" v="S4170"/>
-      <!--ele field already set: 425 : OSM val: 425.284-->
+      <!--ele field already set: OSM: 425  OS: 425.284-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=425.38-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10452,7 +10452,7 @@
       <!--Add new name: Hill Of Wirren-->
       <tag k="name" v="Hill Of Wirren"/>
       <!--Ref field already set: tp3915-->
-      <!--ele field already set: 678 : OSM val: 678.18-->
+      <!--ele field already set: OSM: 678  OS: 678.18-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=677.77-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10604,7 +10604,7 @@
       <tag k="name" v="Hodbarrow"/>
       <!--Add new FB ref: S5454-->
       <tag k="ref" v="S5454"/>
-      <!--ele field already set: 20.4 : OSM val: 20.439-->
+      <!--ele field already set: OSM: 20.4  OS: 20.439-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=20.32-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10753,7 +10753,7 @@
       <!--Add new name: Holtham-->
       <tag k="name" v="Holtham"/>
       <!--Ref field already set: S1670-->
-      <!--ele field already set: 221 : OSM val: 220.714-->
+      <!--ele field already set: OSM: 221  OS: 220.714-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=220.5-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10778,7 +10778,7 @@
       <tag k="name" v="Holybourne"/>
       <!--Add new FB ref: S1679-->
       <tag k="ref" v="S1679"/>
-      <!--ele field already set: 225 : OSM val: 225.235-->
+      <!--ele field already set: OSM: 225  OS: 225.235-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=224.99-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10849,7 +10849,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4611299,-1.9945021,15z-->
       <!--Add new name: Hoove Faggergill-->
       <tag k="name" v="Hoove Faggergill"/>
-      <!--ele field already set: 553 : OSM val: 553.516-->
+      <!--ele field already set: OSM: 553  OS: 553.516-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=553.25-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -10870,7 +10870,7 @@
       <!-- from lat: 54.1973393 lon: -2.1744897-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.1973984,-2.1744736,15z-->
       <!--Name field already set: Horse Head-->
-      <!--ele field already set: 605.0 : OSM val: 605.332-->
+      <!--ele field already set: OSM: 605.0  OS: 605.332-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=605.15-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -10991,7 +10991,7 @@
       <!--Name field already set: How Barrow-->
       <!--Add new FB ref: S5588-->
       <tag k="ref" v="S5588"/>
-      <!--ele field already set: 170 : OSM val: 170.032-->
+      <!--ele field already set: OSM: 170  OS: 170.032-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=169.79-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -11087,7 +11087,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.1661805,-2.3978996,15z-->
       <!--Add new name: Ingleborough-->
       <tag k="name" v="Ingleborough"/>
-      <!--ele field already set: 723 : OSM val: 723.595-->
+      <!--ele field already set: OSM: 723  OS: 723.595-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=723.36-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -11361,7 +11361,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.2400854,-3.9557925,15z-->
       <!--Add new name: Kilnmark-->
       <tag k="name" v="Kilnmark"/>
-      <!--ele field already set: 346 : OSM val: 345.948-->
+      <!--ele field already set: OSM: 346  OS: 345.948-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=345.7-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -11458,7 +11458,7 @@
       <!--Name field already set: Kinver Edge-->
       <!--Add new FB ref: S2291-->
       <tag k="ref" v="S2291"/>
-      <!--ele field already set: 164 : OSM val: 163.936-->
+      <!--ele field already set: OSM: 164  OS: 163.936-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=163.83-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -11480,7 +11480,7 @@
       <!-- from lat: 55.4239619 lon: -4.005882-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.4239571,-4.0058534,15z-->
       <!--Name field already set: Kirkland Hill-->
-      <!--ele field already set: 511 : OSM val: 510.844-->
+      <!--ele field already set: OSM: 511  OS: 510.844-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=510.78-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -11677,7 +11677,7 @@
       <tag k="name" v="Ladbroke"/>
       <!--Add new FB ref: S2350-->
       <tag k="ref" v="S2350"/>
-      <!--ele field already set: 138 : OSM val: 138.552-->
+      <!--ele field already set: OSM: 138  OS: 138.552-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=138.34-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -11724,7 +11724,7 @@
       <!--Name field already set: Ladder Hill-->
       <!--Add new FB ref: 2771-->
       <tag k="ref" v="2771"/>
-      <!--ele field already set: 405.65 : OSM val: 405.658-->
+      <!--ele field already set: OSM: 405.65  OS: 405.658-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=405.69-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -11797,7 +11797,7 @@
       <!--Add new name: Lands End-->
       <tag k="name" v="Lands End"/>
       <!--Ref field already set: S8142-->
-      <!--ele field already set: 66.446 : OSM val: 66.446-->
+      <!--ele field already set: OSM: 66.446  OS: 66.446-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=65.95-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -11919,7 +11919,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4947873,-3.4039672,15z-->
       <!--Add new name: Lank Rigg-->
       <tag k="name" v="Lank Rigg"/>
-      <!--ele field already set: 541 : OSM val: 541.324-->
+      <!--ele field already set: OSM: 541  OS: 541.324-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=541.45-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12171,7 +12171,7 @@
       <tag k="name" v="Little Wart"/>
       <!--Add new FB ref: 10652-->
       <tag k="ref" v="10652"/>
-      <!--ele field already set: 80 : OSM val: 80.96-->
+      <!--ele field already set: OSM: 80  OS: 80.96-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=80.17-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12348,7 +12348,7 @@
       <!--Name field already set: Longridge Fell-->
       <!--Add new FB ref: S4561-->
       <tag k="ref" v="S4561"/>
-      <!--ele field already set: 350.2 : OSM val: 350.827-->
+      <!--ele field already set: OSM: 350.2  OS: 350.827-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=350.6-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12373,7 +12373,7 @@
       <tag k="name" v="Loose Howe"/>
       <!--Add new FB ref: 2955-->
       <tag k="ref" v="2955"/>
-      <!--ele field already set: 433 : OSM val: 432.444-->
+      <!--ele field already set: OSM: 433  OS: 432.444-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=432.36-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12422,7 +12422,7 @@
       <tag k="name" v="Lough Down"/>
       <!--Add new FB ref: 5726-->
       <tag k="ref" v="5726"/>
-      <!--ele field already set: 138 : OSM val: 138.217-->
+      <!--ele field already set: OSM: 138  OS: 138.217-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=137.86-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12545,7 +12545,7 @@
       <tag k="name" v="Loxhore"/>
       <!--Add new FB ref: S5329-->
       <tag k="ref" v="S5329"/>
-      <!--ele field already set: 257 : OSM val: 257.879-->
+      <!--ele field already set: OSM: 257  OS: 257.879-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=257.91-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12691,7 +12691,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.0229482,-2.6234621,15z-->
       <!--Add new name: Mallowdale Pike-->
       <tag k="name" v="Mallowdale Pike"/>
-      <!--ele field already set: 561 : OSM val: 560.832-->
+      <!--ele field already set: OSM: 561  OS: 560.832-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=560.68-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12715,7 +12715,7 @@
       <!--Name field already set: Manshead End-->
       <!--Add new FB ref: S4404-->
       <tag k="ref" v="S4404"/>
-      <!--ele field already set: 417.3 : OSM val: 417.259-->
+      <!--ele field already set: OSM: 417.3  OS: 417.259-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=417.11-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12786,7 +12786,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.2201524,-2.6213481,15z-->
       <!--Add new name: March Head-->
       <tag k="name" v="March Head"/>
-      <!--ele field already set: 454 : OSM val: 453.847-->
+      <!--ele field already set: OSM: 454  OS: 453.847-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=453.55-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12834,7 +12834,7 @@
       <!--Name field already set: Mardy-->
       <!--Add new FB ref: 2307-->
       <tag k="ref" v="2307"/>
-      <!--ele field already set: 9 : OSM val: 9.095-->
+      <!--ele field already set: OSM: 9  OS: 9.095-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=8.6-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -12858,7 +12858,7 @@
       <!--Add new name: Margery-->
       <tag k="name" v="Margery"/>
       <!--Ref field already set: 2965-->
-      <!--ele field already set: 546 : OSM val: 546.201-->
+      <!--ele field already set: OSM: 546  OS: 546.201-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=546.18-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -12932,7 +12932,7 @@
       <!--Add new name: Massingham-->
       <tag k="name" v="Massingham"/>
       <!--Ref field already set: S2141-->
-      <!--ele field already set: 91 : OSM val: 91.817-->
+      <!--ele field already set: OSM: 91  OS: 91.817-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=91.53-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13030,7 +13030,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#57.3660064,-4.148121,15z-->
       <!--Add new name: Meall Na Fuar Ghlaic-->
       <tag k="name" v="Meall Na Fuar Ghlaic"/>
-      <!--ele field already set: 513 : OSM val: 513.9-->
+      <!--ele field already set: OSM: 513  OS: 513.9-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=513.72-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13129,7 +13129,7 @@
       <!--Name field already set: Melbury Hill-->
       <!--Add new FB ref: S6041-->
       <tag k="ref" v="S6041"/>
-      <!--ele field already set: 263 : OSM val: 263.121-->
+      <!--ele field already set: OSM: 263  OS: 263.121-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=262.82-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13151,7 +13151,7 @@
       <!-- from lat: 55.7402285 lon: -3.4006833-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.740188,-3.4007189,15z-->
       <!--Name field already set: Mendick Hill-->
-      <!--ele field already set: 451 : OSM val: 451.713-->
+      <!--ele field already set: OSM: 451  OS: 451.713-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=451.49-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13296,7 +13296,7 @@
       <tag k="name" v="Middle Down"/>
       <!--Add new FB ref: S2416-->
       <tag k="ref" v="S2416"/>
-      <!--ele field already set: 125 : OSM val: 124.48-->
+      <!--ele field already set: OSM: 125  OS: 124.48-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=124.18-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13346,7 +13346,7 @@
       <tag k="name" v="Middle Mains"/>
       <!--Add new FB ref: 3053-->
       <tag k="ref" v="3053"/>
-      <!--ele field already set: 104 : OSM val: 103.836-->
+      <!--ele field already set: OSM: 104  OS: 103.836-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=103.48-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13369,7 +13369,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4057433,-2.5363104,15z-->
       <!--Add new name: Middleton-->
       <tag k="name" v="Middleton"/>
-      <!--ele field already set: 485.9 : OSM val: 485.851-->
+      <!--ele field already set: OSM: 485.9  OS: 485.851-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=485.62-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13417,7 +13417,7 @@
       <!-- from lat: 55.0489478 lon: -3.8842896-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.0491579,-3.8843998,15z-->
       <!--Name field already set: Milharay Hill-->
-      <!--ele field already set: 297 : OSM val: 296.57-->
+      <!--ele field already set: OSM: 297  OS: 296.57-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=296.14-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13564,7 +13564,7 @@
       <!--Name field already set: Moor Plantations-->
       <!--Add new FB ref: 4151-->
       <tag k="ref" v="4151"/>
-      <!--ele field already set: 323 : OSM val: 323.529-->
+      <!--ele field already set: OSM: 323  OS: 323.529-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=323.52-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -13588,7 +13588,7 @@
       <tag k="name" v="Moot Law"/>
       <!--Add new FB ref: S3995-->
       <tag k="ref" v="S3995"/>
-      <!--ele field already set: 258 : OSM val: 258.348-->
+      <!--ele field already set: OSM: 258  OS: 258.348-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=257.91-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13813,7 +13813,7 @@
       <!--Name field already set: Muirends-->
       <!--Add new FB ref: S8132-->
       <tag k="ref" v="S8132"/>
-      <!--ele field already set: 122 : OSM val: 122.511-->
+      <!--ele field already set: OSM: 122  OS: 122.511-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=122.03-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13836,7 +13836,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.1014254,-4.1465816,15z-->
       <!--Add new name: Mulloch Hill-->
       <tag k="name" v="Mulloch Hill"/>
-      <!--ele field already set: 170 : OSM val: 170.383-->
+      <!--ele field already set: OSM: 170  OS: 170.383-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=169.95-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13861,7 +13861,7 @@
       <tag k="name" v="Muncaster Fell"/>
       <!--Add new FB ref: S5763-->
       <tag k="ref" v="S5763"/>
-      <!--ele field already set: 231 : OSM val: 231.346-->
+      <!--ele field already set: OSM: 231  OS: 231.346-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=231.21-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13906,7 +13906,7 @@
       <!-- from lat: 54.6024179 lon: -2.4119561-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.6024075,-2.4119315,15z-->
       <!--Name field already set: Murton Pike-->
-      <!--ele field already set: 594.4 : OSM val: 594.36-->
+      <!--ele field already set: OSM: 594.4  OS: 594.36-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=594.03-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -13928,7 +13928,7 @@
       <!-- from lat: 52.7879344 lon: -4.5389298-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.7879305,-4.5389388,15z-->
       <!--Name field already set: Mynydd Cilan-->
-      <!--ele field already set: 117 : OSM val: 117.71-->
+      <!--ele field already set: OSM: 117  OS: 117.71-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=117.58-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -14076,7 +14076,7 @@
       <tag k="name" v="Mynydd Tynewydd"/>
       <!--Add new FB ref: S2270-->
       <tag k="ref" v="S2270"/>
-      <!--ele field already set: 516 : OSM val: 516.69-->
+      <!--ele field already set: OSM: 516  OS: 516.69-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=516.73-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -14150,7 +14150,7 @@
       <tag k="name" v="New Barn Farm"/>
       <!--Add new FB ref: 2449-->
       <tag k="ref" v="2449"/>
-      <!--ele field already set: 106 : OSM val: 106.033-->
+      <!--ele field already set: OSM: 106  OS: 106.033-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=105.63-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -14245,7 +14245,7 @@
       <!-- from lat: 54.450091 lon: -2.270716-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.4500821,-2.2707211,15z-->
       <!--Name field already set: Nine Standards Rigg-->
-      <!--ele field already set: 662 : OSM val: 662.025-->
+      <!--ele field already set: OSM: 662  OS: 662.025-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=661.81-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -14369,7 +14369,7 @@
       <!--Add new name: North Daren-->
       <tag k="name" v="North Daren"/>
       <!--Ref field already set: ST276-->
-      <!--ele field already set: 610 : OSM val: 610.819-->
+      <!--ele field already set: OSM: 610  OS: 610.819-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=610.91-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -14569,7 +14569,7 @@
       <tag k="name" v="Ockley Hill"/>
       <!--Add new FB ref: S3333-->
       <tag k="ref" v="S3333"/>
-      <!--ele field already set: 202 : OSM val: 202.161-->
+      <!--ele field already set: OSM: 202  OS: 202.161-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=201.81-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -14593,7 +14593,7 @@
       <!--Add new name: Old Fawdon Hill-->
       <tag k="name" v="Old Fawdon Hill"/>
       <!--Ref field already set: S3549-->
-      <!--ele field already set: 315 : OSM val: 315.035-->
+      <!--ele field already set: OSM: 315  OS: 315.035-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=314.63-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -14715,7 +14715,7 @@
       <tag k="name" v="Orton Hill"/>
       <!--Add new FB ref: S1840-->
       <tag k="ref" v="S1840"/>
-      <!--ele field already set: 163 : OSM val: 163.452-->
+      <!--ele field already set: OSM: 163  OS: 163.452-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=163.41-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -14739,7 +14739,7 @@
       <!--Add new name: Outer Edge-->
       <tag k="name" v="Outer Edge"/>
       <!--Ref field already set: S1771-->
-      <!--ele field already set: 542 : OSM val: 541.629-->
+      <!--ele field already set: OSM: 542  OS: 541.629-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=541.62-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -14883,7 +14883,7 @@
       <!-- from lat: 54.1879297 lon: -2.3624134-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.1879199,-2.3624301,15z-->
       <!--Name field already set: Park Fell-->
-      <!--ele field already set: 563 : OSM val: 563.575-->
+      <!--ele field already set: OSM: 563  OS: 563.575-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=563.35-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15010,7 +15010,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.7595654,-2.5560633,15z-->
       <!--Add new name: Pasturehouse Farm-->
       <tag k="name" v="Pasturehouse Farm"/>
-      <!--ele field already set: 634.6 : OSM val: 633.984-->
+      <!--ele field already set: OSM: 634.6  OS: 633.984-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=633.8-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15086,7 +15086,7 @@
       <tag k="name" v="Paulton"/>
       <!--Add new FB ref: S2402-->
       <tag k="ref" v="S2402"/>
-      <!--ele field already set: 155 : OSM val: 155.636-->
+      <!--ele field already set: OSM: 155  OS: 155.636-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=155.45-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15110,7 +15110,7 @@
       <!--Add new name: Pellyn-Wartha-->
       <tag k="name" v="Pellyn-Wartha"/>
       <!--Ref field already set: S7822-->
-      <!--ele field already set: 94.792 : OSM val: 94.792-->
+      <!--ele field already set: OSM: 94.792  OS: 94.792-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=94.42-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -15157,7 +15157,7 @@
       <!--Add new name: Penelwey-->
       <tag k="name" v="Penelwey"/>
       <!--Ref field already set: S7732-->
-      <!--ele field already set: 99.669 : OSM val: 99.669-->
+      <!--ele field already set: OSM: 99.669  OS: 99.669-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=99.37-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -15357,7 +15357,7 @@
       <tag k="name" v="Pirbright Common"/>
       <!--Add new FB ref: 5832-->
       <tag k="ref" v="5832"/>
-      <!--ele field already set: 116 : OSM val: 116.342-->
+      <!--ele field already set: OSM: 116  OS: 116.342-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=116.01-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15381,7 +15381,7 @@
       <!--Name field already set: Pistle Hill-->
       <!--Add new FB ref: S2568-->
       <tag k="ref" v="S2568"/>
-      <!--ele field already set: 96 : OSM val: 96.572-->
+      <!--ele field already set: OSM: 96  OS: 96.572-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=96.08-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15554,7 +15554,7 @@
       <tag k="name" v="Popham Beacon"/>
       <!--Add new FB ref: S1647-->
       <tag k="ref" v="S1647"/>
-      <!--ele field already set: 184 : OSM val: 183.684-->
+      <!--ele field already set: OSM: 184  OS: 183.684-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=183.39-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15631,7 +15631,7 @@
       <tag k="name" v="Portsdown Hill East"/>
       <!--Add new FB ref: S1626-->
       <tag k="ref" v="S1626"/>
-      <!--ele field already set: 115 : OSM val: 115.769-->
+      <!--ele field already set: OSM: 115  OS: 115.769-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=115.41-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15655,7 +15655,7 @@
       <!--Add new name: Predannack Head-->
       <tag k="name" v="Predannack Head"/>
       <!--Ref field already set: S7869-->
-      <!--ele field already set: 81.686 : OSM val: 81.686-->
+      <!--ele field already set: OSM: 81.686  OS: 81.686-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=81.49-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -15679,7 +15679,7 @@
       <tag k="name" v="Preshute"/>
       <!--Add new FB ref: S2415-->
       <tag k="ref" v="S2415"/>
-      <!--ele field already set: 196 : OSM val: 196.376-->
+      <!--ele field already set: OSM: 196  OS: 196.376-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=196.2-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15779,7 +15779,7 @@
       <tag k="name" v="Queens Bower Resr"/>
       <!--Add new FB ref: S2519-->
       <tag k="ref" v="S2519"/>
-      <!--ele field already set: 60 : OSM val: 60.554-->
+      <!--ele field already set: OSM: 60  OS: 60.554-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=60.27-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -15828,7 +15828,7 @@
       <!--Add new name: Raginnis-->
       <tag k="name" v="Raginnis"/>
       <!--Ref field already set: S8137-->
-      <!--ele field already set: 98.755 : OSM val: 98.755-->
+      <!--ele field already set: OSM: 98.755  OS: 98.755-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=98.28-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -16023,7 +16023,7 @@
       <!--Name field already set: Revidge-->
       <!--Add new FB ref: S4171-->
       <tag k="ref" v="S4171"/>
-      <!--ele field already set: 400 : OSM val: 400.293-->
+      <!--ele field already set: OSM: 400  OS: 400.293-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=400.4-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -16048,7 +16048,7 @@
       <tag k="name" v="Reynoldston"/>
       <!--Add new FB ref: S2345-->
       <tag k="ref" v="S2345"/>
-      <!--ele field already set: 154 : OSM val: 154.481-->
+      <!--ele field already set: OSM: 154  OS: 154.481-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=154.12-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -16096,7 +16096,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#51.944894,-3.0131197,15z-->
       <!--Add new name: Rhiw Arw-->
       <tag k="name" v="Rhiw Arw"/>
-      <!--ele field already set: 552 : OSM val: 551.992-->
+      <!--ele field already set: OSM: 552  OS: 551.992-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=552.04-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -16194,7 +16194,7 @@
       <!--Name field already set: Richmond Park-->
       <!--Add new FB ref: S3264-->
       <tag k="ref" v="S3264"/>
-      <!--ele field already set: 56 : OSM val: 56.037-->
+      <!--ele field already set: OSM: 56  OS: 56.037-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=55.64-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -16243,7 +16243,7 @@
       <tag k="name" v="Riversdown"/>
       <!--Add new FB ref: S1657-->
       <tag k="ref" v="S1657"/>
-      <!--ele field already set: 165 : OSM val: 165.969-->
+      <!--ele field already set: OSM: 165  OS: 165.969-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=165.69-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -16292,7 +16292,7 @@
       <tag k="name" v="Robin Cross Hill"/>
       <!--Add new FB ref: S4500-->
       <tag k="ref" v="S4500"/>
-      <!--ele field already set: 329 : OSM val: 329.26-->
+      <!--ele field already set: OSM: 329  OS: 329.26-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=329.13-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -16438,7 +16438,7 @@
       <!--Add new name: Rosemullion-->
       <tag k="name" v="Rosemullion"/>
       <!--Ref field already set: S7605-->
-      <!--ele field already set: 68.927 : OSM val: 68.927-->
+      <!--ele field already set: OSM: 68.927  OS: 68.927-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=68.72-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -16485,7 +16485,7 @@
       <!--Name field already set: Round Hill-->
       <!--Add new FB ref: S2332-->
       <tag k="ref" v="S2332"/>
-      <!--ele field already set: 141 : OSM val: 141.012-->
+      <!--ele field already set: OSM: 141  OS: 141.012-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=140.79-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -16762,7 +16762,7 @@
       <!--Add new name: Sca Fell-->
       <tag k="name" v="Sca Fell"/>
       <!--Ref field already set: S1537-->
-      <!--ele field already set: 977.5 : OSM val: 977.493-->
+      <!--ele field already set: OSM: 977.5  OS: 977.493-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=977.66-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -16783,7 +16783,7 @@
       <!-- from lat: 55.8361771 lon: -3.2921672-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8361823,-3.2921901,15z-->
       <!--Name field already set: Scald Law-->
-      <!--ele field already set: 579 : OSM val: 579.12-->
+      <!--ele field already set: OSM: 579  OS: 579.12-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=578.92-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -16905,7 +16905,7 @@
       <!--Name field already set: Selworthy Beacon-->
       <!--Add new FB ref: S3944-->
       <tag k="ref" v="S3944"/>
-      <!--ele field already set: 308 : OSM val: 308.856-->
+      <!--ele field already set: OSM: 308  OS: 308.856-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=308.66-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17177,7 +17177,7 @@
       <!--Name field already set: Shipton Hill-->
       <!--Add new FB ref: S5959-->
       <tag k="ref" v="S5959"/>
-      <!--ele field already set: 170 : OSM val: 170.328-->
+      <!--ele field already set: OSM: 170  OS: 170.328-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=170.13-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17202,7 +17202,7 @@
       <tag k="name" v="Shootash"/>
       <!--Add new FB ref: S2476-->
       <tag k="ref" v="S2476"/>
-      <!--ele field already set: 79 : OSM val: 79.077-->
+      <!--ele field already set: OSM: 79  OS: 79.077-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=78.59-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17278,7 +17278,7 @@
       <tag k="name" v="Shute Hill"/>
       <!--Add new FB ref: 3743-->
       <tag k="ref" v="3743"/>
-      <!--ele field already set: 163.7 : OSM val: 163.705-->
+      <!--ele field already set: OSM: 163.7  OS: 163.705-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=163.56-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17422,7 +17422,7 @@
       <!--Name field already set: Skirrid Fawr-->
       <!--Add new FB ref: S7287-->
       <tag k="ref" v="S7287"/>
-      <!--ele field already set: 487 : OSM val: 486.579-->
+      <!--ele field already set: OSM: 487  OS: 486.579-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=486.49-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17497,7 +17497,7 @@
       <tag k="name" v="Sledge Green"/>
       <!--Add new FB ref: S5021-->
       <tag k="ref" v="S5021"/>
-      <!--ele field already set: 43.52 : OSM val: 43.516-->
+      <!--ele field already set: OSM: 43.52  OS: 43.516-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=43.2-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -17593,7 +17593,7 @@
       <!-- from lat: 53.2349387 lon: -1.8017522-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.2349449,-1.801756,15z-->
       <!--Name field already set: Sough Top-->
-      <!--ele field already set: 438 : OSM val: 438.607-->
+      <!--ele field already set: OSM: 438  OS: 438.607-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=438.71-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17618,7 +17618,7 @@
       <tag k="name" v="South Barn"/>
       <!--Add new FB ref: S2579-->
       <tag k="ref" v="S2579"/>
-      <!--ele field already set: 125 : OSM val: 124.946-->
+      <!--ele field already set: OSM: 125  OS: 124.946-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=124.6-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17692,7 +17692,7 @@
       <!--Add new name: Sponds Hill-->
       <tag k="name" v="Sponds Hill"/>
       <!--Ref field already set: S2755-->
-      <!--ele field already set: 410 : OSM val: 410.681-->
+      <!--ele field already set: OSM: 410  OS: 410.681-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=410.6-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -17791,7 +17791,7 @@
       <tag k="name" v="Stackpole"/>
       <!--Add new FB ref: S6307-->
       <tag k="ref" v="S6307"/>
-      <!--ele field already set: 82 : OSM val: 82.792-->
+      <!--ele field already set: OSM: 82  OS: 82.792-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=82.52-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18041,7 +18041,7 @@
       <tag k="name" v="Strides Row"/>
       <!--Add new FB ref: S2631-->
       <tag k="ref" v="S2631"/>
-      <!--ele field already set: 80 : OSM val: 80.738-->
+      <!--ele field already set: OSM: 80  OS: 80.738-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=80.25-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -18061,7 +18061,7 @@
       <!-- from lat: 56.0783939 lon: -4.2040528-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#56.0783922,-4.2040441,15z-->
       <!--Name field already set: Stronend-->
-      <!--ele field already set: 511 : OSM val: 511.759-->
+      <!--ele field already set: OSM: 511  OS: 511.759-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=511.57-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18085,7 +18085,7 @@
       <!--Name field already set: Strutforth Hill-->
       <!--Add new FB ref: 10691-->
       <tag k="ref" v="10691"/>
-      <!--ele field already set: 184.1 : OSM val: 184.419-->
+      <!--ele field already set: OSM: 184.1  OS: 184.419-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=184.03-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18210,7 +18210,7 @@
       <!--Name field already set: Sutton Down-->
       <!--Add new FB ref: S2211-->
       <tag k="ref" v="S2211"/>
-      <!--ele field already set: 214 : OSM val: 213.189-->
+      <!--ele field already set: OSM: 214  OS: 213.189-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=212.83-->
       <!--survey_point[_structure] field already set: NA / beacon-->
       <!--Add new datum_aligned: yes-->
@@ -18258,7 +18258,7 @@
       <tag k="name" v="Sweet Hill"/>
       <!--Add new FB ref: S3893-->
       <tag k="ref" v="S3893"/>
-      <!--ele field already set: 129 : OSM val: 129.491-->
+      <!--ele field already set: OSM: 129  OS: 129.491-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=129.2-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18282,7 +18282,7 @@
       <!--Add new name: Sworne Farm-->
       <tag k="name" v="Sworne Farm"/>
       <!--Ref field already set: S7870-->
-      <!--ele field already set: 87.395 : OSM val: 87.395-->
+      <!--ele field already set: OSM: 87.395  OS: 87.395-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=87.19-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -18355,7 +18355,7 @@
       <!--Name field already set: Tallentire Hill-->
       <!--Add new FB ref: S5743-->
       <tag k="ref" v="S5743"/>
-      <!--ele field already set: 222.8 : OSM val: 223.336-->
+      <!--ele field already set: OSM: 222.8  OS: 223.336-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=223.27-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18474,7 +18474,7 @@
       <!-- from lat: 52.0912121 lon: -3.235031-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#52.0912079,-3.2350627,15z-->
       <!--Name field already set: The Begwns-->
-      <!--ele field already set: 415 : OSM val: 414.528-->
+      <!--ele field already set: OSM: 415  OS: 414.528-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=414.49-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18521,7 +18521,7 @@
       <!-- from lat: 54.3679261 lon: -2.5135336-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.3679215,-2.5135333,15z-->
       <!--Name field already set: The Calf-->
-      <!--ele field already set: 676.7 : OSM val: 676.656-->
+      <!--ele field already set: OSM: 676.7  OS: 676.656-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=676.42-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18545,7 +18545,7 @@
       <!--Add new name: The Cloud-->
       <tag k="name" v="The Cloud"/>
       <!--Ref field already set: S2651-->
-      <!--ele field already set: 343 : OSM val: 343.756-->
+      <!--ele field already set: OSM: 343  OS: 343.756-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=343.58-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18567,7 +18567,7 @@
       <!-- from lat: 54.344613 lon: -2.068983-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.3446266,-2.0689944,15z-->
       <!--Name field already set: The Fleak-->
-      <!--ele field already set: 551 : OSM val: 551.078-->
+      <!--ele field already set: OSM: 551  OS: 551.078-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=550.81-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -18591,7 +18591,7 @@
       <tag k="name" v="The Folly"/>
       <!--Add new FB ref: S4109-->
       <tag k="ref" v="S4109"/>
-      <!--ele field already set: 112 : OSM val: 112.434-->
+      <!--ele field already set: OSM: 112  OS: 112.434-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=112.13-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18640,7 +18640,7 @@
       <!--Add new name: The Knavocks-->
       <tag k="name" v="The Knavocks"/>
       <!--Ref field already set: S7935-->
-      <!--ele field already set: 76.096 : OSM val: 76.096-->
+      <!--ele field already set: OSM: 76.096  OS: 76.096-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=75.59-->
       <!--survey_point[_structure] field already set: pillar / NA-->
       <!--Add new datum_aligned: yes-->
@@ -18662,7 +18662,7 @@
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.8253917,-4.8705764,15z-->
       <!--Add new name: The Knock-->
       <tag k="name" v="The Knock"/>
-      <!--ele field already set: 217 : OSM val: 217.322-->
+      <!--ele field already set: OSM: 217  OS: 217.322-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=217.09-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18838,7 +18838,7 @@
       <tag k="name" v="Thorns"/>
       <!--Add new FB ref: S2713-->
       <tag k="ref" v="S2713"/>
-      <!--ele field already set: 15 : OSM val: 15.556-->
+      <!--ele field already set: OSM: 15  OS: 15.556-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=15.12-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18913,7 +18913,7 @@
       <tag k="name" v="Thruxton Down"/>
       <!--Add new FB ref: S1697-->
       <tag k="ref" v="S1697"/>
-      <!--ele field already set: 174 : OSM val: 174.019-->
+      <!--ele field already set: OSM: 174  OS: 174.019-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=173.69-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -18986,7 +18986,7 @@
       <!--Name field already set: Tighnacarn-->
       <!--Add new FB ref: S8134-->
       <tag k="ref" v="S8134"/>
-      <!--ele field already set: 118 : OSM val: 118.274-->
+      <!--ele field already set: OSM: 118  OS: 118.274-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=117.83-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19160,7 +19160,7 @@
       <!--Name field already set: Torrisholme Barrow-->
       <!--Add new FB ref: S5369-->
       <tag k="ref" v="S5369"/>
-      <!--ele field already set: 40 : OSM val: 40.898-->
+      <!--ele field already set: OSM: 40  OS: 40.898-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=40.56-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19208,7 +19208,7 @@
       <!-- from lat: 53.9334393 lon: -2.5578459-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#53.9334367,-2.5578456,15z-->
       <!--Name field already set: Totridge Fell-->
-      <!--ele field already set: 497 : OSM val: 496.824-->
+      <!--ele field already set: OSM: 497  OS: 496.824-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=496.66-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19256,7 +19256,7 @@
       <!--Name field already set: Treborough Common-->
       <!--Add new FB ref: S3748-->
       <tag k="ref" v="S3748"/>
-      <!--ele field already set: 412 : OSM val: 411.94-->
+      <!--ele field already set: OSM: 412  OS: 411.94-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=412.07-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19353,7 +19353,7 @@
       <!--Add new name: Triple Plantation-->
       <tag k="name" v="Triple Plantation"/>
       <!--Ref field already set: S1928-->
-      <!--ele field already set: 143 : OSM val: 143.14-->
+      <!--ele field already set: OSM: 143  OS: 143.14-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=142.84-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19377,7 +19377,7 @@
       <!--Name field already set: Trow Down-->
       <!--Add new FB ref: S2600-->
       <tag k="ref" v="S2600"/>
-      <!--ele field already set: 243 : OSM val: 243.599-->
+      <!--ele field already set: OSM: 243  OS: 243.599-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=243.25-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19479,7 +19479,7 @@
       <!--Name field already set: Twyn Mwyalchod-->
       <!--Add new FB ref: S2166-->
       <tag k="ref" v="S2166"/>
-      <!--ele field already set: 642 : OSM val: 642.335-->
+      <!--ele field already set: OSM: 642  OS: 642.335-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=642.52-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19626,7 +19626,7 @@
       <!--Name field already set: View Field-->
       <!--Add new FB ref: S5405-->
       <tag k="ref" v="S5405"/>
-      <!--ele field already set: 153 : OSM val: 153.049-->
+      <!--ele field already set: OSM: 153  OS: 153.049-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=152.7-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19702,7 +19702,7 @@
       <!--Add new name: Wardlow-->
       <tag k="name" v="Wardlow"/>
       <!--Ref field already set: S4192-->
-      <!--ele field already set: 370 : OSM val: 370.636-->
+      <!--ele field already set: OSM: 370  OS: 370.636-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=370.68-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -19801,7 +19801,7 @@
       <!--Name field already set: Warren Hill-->
       <!--Add new FB ref: 2569-->
       <tag k="ref" v="2569"/>
-      <!--ele field already set: 36 : OSM val: 36.46-->
+      <!--ele field already set: OSM: 36  OS: 36.46-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=36.04-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19849,7 +19849,7 @@
       <!--Name field already set: Warsett Hill-->
       <!--Add new FB ref: S4253-->
       <tag k="ref" v="S4253"/>
-      <!--ele field already set: 166 : OSM val: 166.722-->
+      <!--ele field already set: OSM: 166  OS: 166.722-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=166.33-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -19948,7 +19948,7 @@
       <!--Add new name: Watsons Pike-->
       <tag k="name" v="Watsons Pike"/>
       <!--Ref field already set: NY86T052-->
-      <!--ele field already set: 447.4 : OSM val: 447.446-->
+      <!--ele field already set: OSM: 447.4  OS: 447.446-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=447.08-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20151,7 +20151,7 @@
       <!--Name field already set: West Down Beacon-->
       <!--Add new FB ref: S3755-->
       <tag k="ref" v="S3755"/>
-      <!--ele field already set: 129 : OSM val: 129.826-->
+      <!--ele field already set: OSM: 129  OS: 129.826-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=129.47-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -20173,7 +20173,7 @@
       <!--Name field already set: West Hill-->
       <!--Add new FB ref: S2201-->
       <tag k="ref" v="S2201"/>
-      <!--ele field already set: 198 : OSM val: 198.235-->
+      <!--ele field already set: OSM: 198  OS: 198.235-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=197.89-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20247,7 +20247,7 @@
       <!--Name field already set: Westerkeith Hill-->
       <!--Add new FB ref: S4604-->
       <tag k="ref" v="S4604"/>
-      <!--ele field already set: 353 : OSM val: 353.077-->
+      <!--ele field already set: OSM: 353  OS: 353.077-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=352.63-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20323,7 +20323,7 @@
       <!--Name field already set: Weston Down-->
       <!--Add new FB ref: S1655-->
       <tag k="ref" v="S1655"/>
-      <!--ele field already set: 147 : OSM val: 147.45-->
+      <!--ele field already set: OSM: 147  OS: 147.45-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=147.14-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20394,7 +20394,7 @@
       <!-- from lat: 54.3464501 lon: -1.8694201-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#54.3467396,-1.8690341,15z-->
       <!--Name field already set: Whit Fell-->
-      <!--ele field already set: 411.2 : OSM val: 411.784-->
+      <!--ele field already set: OSM: 411.2  OS: 411.784-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=411.43-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20464,7 +20464,7 @@
       <!-- from lat: 55.6727808 lon: -3.2428051-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.6727789,-3.2427943,15z-->
       <!--Name field already set: White Meldon-->
-      <!--ele field already set: 427 : OSM val: 427.634-->
+      <!--ele field already set: OSM: 427  OS: 427.634-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=427.34-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20538,7 +20538,7 @@
       <!--Add new name: Wholestone Moor-->
       <tag k="name" v="Wholestone Moor"/>
       <!--Ref field already set: S4198-->
-      <!--ele field already set: 380 : OSM val: 380.222-->
+      <!--ele field already set: OSM: 380  OS: 380.222-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=379.99-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20586,7 +20586,7 @@
       <!--Name field already set: Wild Bank-->
       <!--Add new FB ref: S2641-->
       <tag k="ref" v="S2641"/>
-      <!--ele field already set: 399 : OSM val: 399.257-->
+      <!--ele field already set: OSM: 399  OS: 399.257-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=399.11-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20658,7 +20658,7 @@
       <!-- from lat: 55.6775147 lon: -3.0009418-->
       <!--OS node Slippy URL: https://grahamwhaley.github.io/OSM_UK_trigpoints/web/index.html#55.6775215,-3.0009307,15z-->
       <!--Name field already set: Windlestraw Law-->
-      <!--ele field already set: 659 : OSM val: 659.587-->
+      <!--ele field already set: OSM: 659  OS: 659.587-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=659.32-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20707,7 +20707,7 @@
       <tag k="name" v="Winterslow"/>
       <!--Add new FB ref: S2604-->
       <tag k="ref" v="S2604"/>
-      <!--ele field already set: 162 : OSM val: 162.562-->
+      <!--ele field already set: OSM: 162  OS: 162.562-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=162.16-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20881,7 +20881,7 @@
       <!--Name field already set: Woodbury Hill-->
       <!--Add new FB ref: S6035-->
       <tag k="ref" v="S6035"/>
-      <!--ele field already set: 106 : OSM val: 106.423-->
+      <!--ele field already set: OSM: 106  OS: 106.423-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=106.07-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -20906,7 +20906,7 @@
       <tag k="name" v="Woodmans Hill"/>
       <!--Add new FB ref: S6410-->
       <tag k="ref" v="S6410"/>
-      <!--ele field already set: 51 : OSM val: 51.38-->
+      <!--ele field already set: OSM: 51  OS: 51.38-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=51.08-->
       <!--survey_point[_structure] field already set: NA / pillar-->
       <!--Add new datum_aligned: yes-->
@@ -20955,7 +20955,7 @@
       <!--Add new name: Woolbeding-->
       <tag k="name" v="Woolbeding"/>
       <!--Ref field already set: S1676-->
-      <!--ele field already set: 183 : OSM val: 183.882-->
+      <!--ele field already set: OSM: 183  OS: 183.882-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=183.66-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -21056,7 +21056,7 @@
       <!--Add new name: Yes Tor-->
       <tag k="name" v="Yes Tor"/>
       <!--Ref field already set: S1765-->
-      <!--ele field already set: 619 : OSM val: 619.048-->
+      <!--ele field already set: OSM: 619  OS: 619.048-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=618.75-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
@@ -21130,7 +21130,7 @@
       <tag k="name" v="York Hill"/>
       <!--Add new FB ref: S7666-->
       <tag k="ref" v="S7666"/>
-      <!--ele field already set: 63 : OSM val: 63.764-->
+      <!--ele field already set: OSM: 63  OS: 63.764-->
       <!--Add new note:ele=ele value in ODN. ele:EGM96=63.33-->
       <!--Add new structure: pillar-->
       <tag k="survey_point:structure" v="pillar"/>
